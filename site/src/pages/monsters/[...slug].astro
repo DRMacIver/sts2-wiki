@@ -69,6 +69,9 @@ function intentDisplay(intent: { type: string; damage?: number; hits?: number; a
     {monster.data.moves.length > 0 && (
       <>
         <h2 style="margin-top: 1.5rem;">Moveset</h2>
+        {monster.data.move_pattern && (
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">{monster.data.move_pattern}</p>
+        )}
         <div style="margin-top: 0.5rem;">
           {monster.data.moves.map(move => (
             <div class="card-entry" style="margin-bottom: 0.5rem; display: flex; gap: 1rem; align-items: flex-start;">

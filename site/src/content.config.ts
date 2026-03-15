@@ -54,6 +54,7 @@ const monsters = defineCollection({
     min_hp: z.number(),
     max_hp: z.number(),
     is_companion: z.boolean().default(false),
+    move_pattern: z.string().default(''),
     moves: z.array(z.object({
       id: z.string(),
       title: z.string().default(''),

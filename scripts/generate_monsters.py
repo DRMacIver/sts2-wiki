@@ -80,6 +80,7 @@ def main() -> None:
         lines.append(f"max_hp: {monster.get('max_hp', 0)}")
         lines.append(f"is_companion: {str(is_companion).lower()}")
         lines.append(f"moves: {json.dumps(monster.get('moves', []))}")
+        lines.append(f"move_pattern: {escape_yaml(monster.get('move_pattern_desc', ''))}")
         lines.append(f"powers_on_spawn: {json.dumps(monster.get('powers_on_spawn', []))}")
         lines.append(f"encounters: {json.dumps(enc_refs)}")
         lines.append("---")
