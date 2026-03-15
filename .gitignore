@@ -23,6 +23,12 @@ site/src/content/monsters/
 site/src/content/encounters/
 site/src/content/events/
 
+# Decompiled game code (do NOT commit — copyrighted material)
+decompiled/
+
+# Extracted PCK contents (localization, assets)
+extracted/
+
 # Claude enrichment cache
 enriched/
 
