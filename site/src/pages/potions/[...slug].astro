@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const potions = await getCollection('potions');
+  return potions.map(potion => ({
+    params: { slug: potion.id },
+    props: { potion },
+  }));
+}
+
+const { potion } = Astro.props;
+---
+
+<BaseLayout title={potion.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}potions/`} style="font-size: 0.85rem;">&larr; All Potions</a>
+      <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+        <img
+          src={`${import.meta.env.BASE_URL}images/potion_atlas/${potion.data.image}.png`}
+          alt={potion.data.title}
+          style="width: 64px; height: 64px; image-rendering: pixelated;"
+          onerror="this.style.display='none'" />
+        <div>
+          <h1 style="margin: 0;">{potion.data.title}</h1>
+          <div class="card-meta">
+            <span class={`rarity-${potion.data.rarity.toLowerCase()}`}>{potion.data.rarity}</span>
+            &middot; {potion.data.usage}
+            &middot; {potion.data.target}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 1.5rem;">Description</h2>
+    <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={potion.data.description_html || potion.data.description_plain} />
+  </div>
+</BaseLayout>

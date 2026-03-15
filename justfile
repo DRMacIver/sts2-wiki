@@ -70,13 +70,16 @@ extract-ancients:
 extract-images:
     uv run python scripts/extract_images.py "{{sts2_pck}}" extracted/{{version}} site/public/images
 
+extract-potions:
+    uv run python -m scripts.extract_potions decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
 extract-relics:
     uv run python -m scripts.extract_relics decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
 extract-events:
     uv run python -m scripts.extract_events decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract: extract-powers extract-cards extract-monsters extract-encounters extract-relics extract-ancients extract-events
+extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events
 
 # --- Site generation ---
 
@@ -95,13 +98,16 @@ generate-encounters:
 generate-ancients:
     uv run python -m scripts.generate_ancients data/{{version}} site/src/content/ancients
 
+generate-potions:
+    uv run python -m scripts.generate_potions data/{{version}} site/src/content/potions
+
 generate-relics:
     uv run python -m scripts.generate_relics data/{{version}} site/src/content/relics
 
 generate-events:
     uv run python -m scripts.generate_events data/{{version}} site/src/content/events
 
-generate: generate-cards generate-powers generate-monsters generate-encounters generate-relics generate-ancients generate-events
+generate: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events
 
 site-install:
     cd site && npm install

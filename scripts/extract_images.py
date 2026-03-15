@@ -106,46 +106,6 @@ def decode_ctex(data: bytes) -> Image.Image | None:
     return None
 
 
-def extract_atlas_sprites(
-    atlas_image: Image.Image,
-    tpsheet_path: str,
-    output_dir: str,
-) -> int:
-    """Split an atlas image into individual sprites using .tpsheet metadata."""
-    with open(tpsheet_path) as f:
-        tpsheet = json.load(f)
-
-    count = 0
-    for texture in tpsheet.get("textures", []):
-        for sprite in texture.get("sprites", []):
-            filename = sprite["filename"]
-            region = sprite["region"]
-            margin = sprite.get("margin", {"x": 0, "y": 0, "w": 0, "h": 0})
-
-            x, y = region["x"], region["y"]
-            w, h = region["w"], region["h"]
-
-            # Crop from atlas
-            cropped = atlas_image.crop((x, y, x + w, y + h))
-
-            # Apply margin (add padding back)
-            if margin.get("x") or margin.get("y") or margin.get("w") or margin.get("h"):
-                full_w = w + margin.get("x", 0) + margin.get("w", 0)
-                full_h = h + margin.get("y", 0) + margin.get("h", 0)
-                full = Image.new("RGBA", (full_w, full_h), (0, 0, 0, 0))
-                full.paste(cropped, (margin.get("x", 0), margin.get("y", 0)))
-                cropped = full
-
-            # Save
-            out_name = os.path.splitext(filename)[0] + ".png"
-            out_path = os.path.join(output_dir, out_name)
-            os.makedirs(os.path.dirname(out_path), exist_ok=True)
-            cropped.save(out_path, "PNG")
-            count += 1
-
-    return count
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract images from Godot PCK")
     parser.add_argument("pck_path", help="Path to the .pck file")
@@ -204,34 +164,72 @@ def main() -> None:
             print(f"  Skipping {atlas_name}: no .tpsheet found")
             continue
 
-        # Find the .ctex file in PCK for this atlas
-        # Try multiple possible paths
-        ctex_path = None
-        for pck_file_path in pck_index:
-            if atlas_name in pck_file_path and pck_file_path.endswith(".ctex"):
-                ctex_path = pck_file_path
-                break
-
-        if not ctex_path:
-            print(f"  Skipping {atlas_name}: no .ctex found in PCK")
-            continue
-
-        print(f"  Decoding {atlas_name} from {ctex_path}...")
-        ctex_data = read_pck_file(ctex_path)
-        if not ctex_data:
-            print(f"  ERROR: Could not read {ctex_path}")
-            continue
-
-        atlas_image = decode_ctex(ctex_data)
-        if not atlas_image:
-            print(f"  ERROR: Could not decode {ctex_path}")
-            continue
-
-        print(f"  Atlas size: {atlas_image.width}x{atlas_image.height}")
+        # Load tpsheet to find all texture image names
+        with open(tpsheet_path) as tf:
+            tpsheet = json.load(tf)
 
         atlas_output = os.path.join(output_dir, atlas_name)
-        count = extract_atlas_sprites(atlas_image, tpsheet_path, atlas_output)
-        print(f"  Extracted {count} sprites from {atlas_name}")
+
+        # Process each texture in the tpsheet
+        atlas_total = 0
+        for texture in tpsheet.get("textures", []):
+            tex_image_name = texture["image"]  # e.g., "card_atlas_0.png"
+            tex_base = os.path.splitext(tex_image_name)[0]  # "card_atlas_0"
+
+            # Find the .ctex file for this specific texture image
+            ctex_path = None
+            for pck_file_path in pck_index:
+                if tex_base in pck_file_path and pck_file_path.endswith(".ctex"):
+                    ctex_path = pck_file_path
+                    break
+
+            if not ctex_path:
+                print(f"  Skipping {tex_image_name}: no .ctex found in PCK")
+                continue
+
+            print(f"  Decoding {tex_image_name} from {ctex_path}...")
+            ctex_data = read_pck_file(ctex_path)
+            if not ctex_data:
+                print(f"  ERROR: Could not read {ctex_path}")
+                continue
+
+            atlas_image = decode_ctex(ctex_data)
+            if not atlas_image:
+                print(f"  ERROR: Could not decode {ctex_path}")
+                continue
+
+            print(f"  Atlas size: {atlas_image.width}x{atlas_image.height}")
+
+            # Extract sprites from this specific texture
+            count = 0
+            for sprite in texture.get("sprites", []):
+                filename = sprite["filename"]
+                region = sprite["region"]
+                margin = sprite.get("margin", {"x": 0, "y": 0, "w": 0, "h": 0})
+
+                x, y = region["x"], region["y"]
+                w, h = region["w"], region["h"]
+
+                cropped = atlas_image.crop((x, y, x + w, y + h))
+
+                if margin.get("x") or margin.get("y") or margin.get("w") or margin.get("h"):
+                    full_w = w + margin.get("x", 0) + margin.get("w", 0)
+                    full_h = h + margin.get("y", 0) + margin.get("h", 0)
+                    full = Image.new("RGBA", (full_w, full_h), (0, 0, 0, 0))
+                    full.paste(cropped, (margin.get("x", 0), margin.get("y", 0)))
+                    cropped = full
+
+                out_name = os.path.splitext(filename)[0] + ".png"
+                out_path = os.path.join(atlas_output, out_name)
+                os.makedirs(os.path.dirname(out_path), exist_ok=True)
+                cropped.save(out_path, "PNG")
+                count += 1
+
+            print(f"  Extracted {count} sprites from {tex_image_name}")
+            atlas_total += count
+
+        print(f"  Total for {atlas_name}: {atlas_total} sprites")
+        total += atlas_total
         total += count
 
     # Also extract individual card portrait images if available

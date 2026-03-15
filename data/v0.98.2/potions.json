@@ -1,0 +1,1010 @@
+[
+  {
+    "class_name": "Ashwater",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "ashwater",
+    "pool": "Unknown",
+    "loc_key": "ASHWATER",
+    "title": "Ashwater",
+    "description": "Exhaust any number of cards in your Hand."
+  },
+  {
+    "class_name": "AttackPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "attack_potion",
+    "pool": "Shared",
+    "loc_key": "ATTACK_POTION",
+    "title": "Attack Potion",
+    "description": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn."
+  },
+  {
+    "class_name": "BeetleJuice",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Repeat",
+        "base_value": 4
+      },
+      {
+        "type": "DamageDecrease",
+        "base_value": 30
+      }
+    ],
+    "image": "beetle_juice",
+    "pool": "Shared",
+    "loc_key": "BEETLE_JUICE",
+    "title": "Beetle Juice",
+    "description": "Enemy's attacks deal {DamageDecrease}% less damage {Repeat:plural:next turn|for the next {} turns}."
+  },
+  {
+    "class_name": "BlessingOfTheForge",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "blessing_of_the_forge",
+    "pool": "Shared",
+    "loc_key": "BLESSING_OF_THE_FORGE",
+    "title": "Blessing of the Forge",
+    "description": "Upgrade all cards in your Hand for the rest of combat."
+  },
+  {
+    "class_name": "BlockPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 12
+      }
+    ],
+    "image": "block_potion",
+    "pool": "Shared",
+    "loc_key": "BLOCK_POTION",
+    "title": "Block Potion",
+    "description": "Gain {Block} Block."
+  },
+  {
+    "class_name": "BloodPotion",
+    "rarity": "Common",
+    "usage": "AnyTime",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "HealPercent",
+        "base_value": 20
+      }
+    ],
+    "image": "blood_potion",
+    "pool": "Unknown",
+    "loc_key": "BLOOD_POTION",
+    "title": "Blood Potion",
+    "description": "Heal for {HealPercent}% of your Max HP."
+  },
+  {
+    "class_name": "BoneBrew",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Summon",
+        "base_value": 15
+      }
+    ],
+    "image": "bone_brew",
+    "pool": "Unknown",
+    "loc_key": "BONE_BREW",
+    "title": "Bone Brew",
+    "description": "Summon {Summon}."
+  },
+  {
+    "class_name": "BottledPotential",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "bottled_potential",
+    "pool": "Shared",
+    "loc_key": "BOTTLED_POTENTIAL",
+    "title": "Bottled Potential",
+    "description": "Shuffle ALL your cards into your Draw Pile. Draw {Cards} {Cards:plural:card|cards}."
+  },
+  {
+    "class_name": "Clarity",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      },
+      {
+        "type": "Clarity",
+        "base_value": 3
+      }
+    ],
+    "image": "clarity",
+    "pool": "Shared",
+    "loc_key": "CLARITY",
+    "title": "Clarity Extract",
+    "description": "Draw {Cards} {Cards:plural:card|cards}. At the start of your next {ClarityPower:plural:turn|{} turns}, draw 1 additional card."
+  },
+  {
+    "class_name": "ColorlessPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "colorless_potion",
+    "pool": "Shared",
+    "loc_key": "COLORLESS_POTION",
+    "title": "Colorless Potion",
+    "description": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn."
+  },
+  {
+    "class_name": "CosmicConcoction",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "cosmic_concoction",
+    "pool": "Unknown",
+    "loc_key": "COSMIC_CONCOCTION",
+    "title": "Cosmic Concoction",
+    "description": "Add {Cards} Upgraded Colorless {Cards:plural:card|cards} into your Hand."
+  },
+  {
+    "class_name": "CunningPotion",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "cunning_potion",
+    "pool": "Unknown",
+    "loc_key": "CUNNING_POTION",
+    "title": "Cunning Potion",
+    "description": "Add {Cards} Upgraded {Cards:plural:Shiv|Shivs} into your Hand."
+  },
+  {
+    "class_name": "CureAll",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "cure_all",
+    "pool": "Shared",
+    "loc_key": "CURE_ALL",
+    "title": "Cure All",
+    "description": "Gain {Energy:energyIcons()}. Draw {Cards} {Cards:plural:card|cards}."
+  },
+  {
+    "class_name": "DeprecatedPotion",
+    "rarity": "None",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "image": "deprecated_potion",
+    "pool": "DeprecatedPotionPool",
+    "loc_key": "DEPRECATED_POTION",
+    "title": "Deprecated Potion",
+    "description": "This potion has been removed from the game."
+  },
+  {
+    "class_name": "DexterityPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Dexterity",
+        "base_value": 2
+      }
+    ],
+    "image": "dexterity_potion",
+    "pool": "Shared",
+    "loc_key": "DEXTERITY_POTION",
+    "title": "Dexterity Potion",
+    "description": "Gain {DexterityPower} Dexterity."
+  },
+  {
+    "class_name": "DistilledChaos",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Repeat",
+        "base_value": 3
+      }
+    ],
+    "image": "distilled_chaos",
+    "pool": "Shared",
+    "loc_key": "DISTILLED_CHAOS",
+    "title": "Distilled Chaos",
+    "description": "Play the top {Repeat} cards of your Draw Pile."
+  },
+  {
+    "class_name": "DropletOfPrecognition",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "droplet_of_precognition",
+    "pool": "Shared",
+    "loc_key": "DROPLET_OF_PRECOGNITION",
+    "title": "Droplet of Precognition",
+    "description": "Choose a card in your Draw Pile and add it into your Hand."
+  },
+  {
+    "class_name": "Duplicator",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "duplicator",
+    "pool": "Shared",
+    "loc_key": "DUPLICATOR",
+    "title": "Duplicator",
+    "description": "This turn, your next card is played an extra time."
+  },
+  {
+    "class_name": "EnergyPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 2
+      }
+    ],
+    "image": "energy_potion",
+    "pool": "Shared",
+    "loc_key": "ENERGY_POTION",
+    "title": "Energy Potion",
+    "description": "Gain {Energy:energyIcons()}."
+  },
+  {
+    "class_name": "EntropicBrew",
+    "rarity": "Rare",
+    "usage": "AnyTime",
+    "target": "Self",
+    "image": "entropic_brew",
+    "pool": "Shared",
+    "loc_key": "ENTROPIC_BREW",
+    "title": "Entropic Brew",
+    "description": "Fill all your empty potion slots with random potions."
+  },
+  {
+    "class_name": "EssenceOfDarkness",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "essence_of_darkness",
+    "pool": "Unknown",
+    "loc_key": "ESSENCE_OF_DARKNESS",
+    "title": "Essence of Darkness",
+    "description": "Channel a Dark for each of your Orb Slots."
+  },
+  {
+    "class_name": "ExplosiveAmpoule",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AllEnemies",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 10
+      }
+    ],
+    "image": "explosive_ampoule",
+    "pool": "Shared",
+    "loc_key": "EXPLOSIVE_AMPOULE",
+    "title": "Explosive Ampoule",
+    "description": "Deal {Damage} damage to ALL enemies."
+  },
+  {
+    "class_name": "FairyInABottle",
+    "rarity": "Rare",
+    "usage": "Automatic",
+    "target": "Self",
+    "image": "fairy_in_a_bottle",
+    "pool": "Shared",
+    "loc_key": "FAIRY_IN_A_BOTTLE",
+    "title": "Fairy in a Bottle",
+    "description": "When you would die, instead this potion is discarded and you heal to 30% of your Max HP."
+  },
+  {
+    "class_name": "FirePotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 20
+      }
+    ],
+    "image": "fire_potion",
+    "pool": "Shared",
+    "loc_key": "FIRE_POTION",
+    "title": "Fire Potion",
+    "description": "Deal {Damage} damage."
+  },
+  {
+    "class_name": "FlexPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 5
+      }
+    ],
+    "image": "flex_potion",
+    "pool": "Shared",
+    "loc_key": "FLEX_POTION",
+    "title": "Flex Potion",
+    "description": "Gain {StrengthPower} Strength. At the end of your turn, lose {StrengthPower} Strength."
+  },
+  {
+    "class_name": "FocusPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Focus",
+        "base_value": 2
+      }
+    ],
+    "image": "focus_potion",
+    "pool": "Unknown",
+    "loc_key": "FOCUS_POTION",
+    "title": "Focus Potion",
+    "description": "Gain {FocusPower} Focus."
+  },
+  {
+    "class_name": "Fortifier",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "image": "fortifier",
+    "pool": "Shared",
+    "loc_key": "FORTIFIER",
+    "title": "Fortifier",
+    "description": "Triple your Block."
+  },
+  {
+    "class_name": "FoulPotion",
+    "rarity": "Event",
+    "usage": "AnyTime",
+    "target": "TargetedNoCreature",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 12
+      },
+      {
+        "type": "Gold",
+        "base_value": 100
+      }
+    ],
+    "image": "foul_potion",
+    "pool": "EventPotionPool",
+    "loc_key": "FOUL_POTION",
+    "title": "Foul Potion",
+    "description": "Deal {Damage} damage to EVERYONE.\nCan be thrown at the Merchant for {Gold} Gold instead."
+  },
+  {
+    "class_name": "FruitJuice",
+    "rarity": "Rare",
+    "usage": "AnyTime",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 5
+      }
+    ],
+    "image": "fruit_juice",
+    "pool": "Shared",
+    "loc_key": "FRUIT_JUICE",
+    "title": "Fruit Juice",
+    "description": "Gain {MaxHp} Max HP."
+  },
+  {
+    "class_name": "FyshOil",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 1
+      },
+      {
+        "type": "Dexterity",
+        "base_value": 1
+      }
+    ],
+    "image": "fysh_oil",
+    "pool": "Shared",
+    "loc_key": "FYSH_OIL",
+    "title": "Fysh Oil",
+    "description": "Gain {StrengthPower} Strength and {DexterityPower} Dexterity."
+  },
+  {
+    "class_name": "GamblersBrew",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "gamblers_brew",
+    "pool": "Shared",
+    "loc_key": "GAMBLERS_BREW",
+    "title": "Gambler's Brew",
+    "description": "Discard any number of cards, then draw that many."
+  },
+  {
+    "class_name": "GhostInAJar",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Intangible",
+        "base_value": 1
+      }
+    ],
+    "image": "ghost_in_a_jar",
+    "pool": "Unknown",
+    "loc_key": "GHOST_IN_A_JAR",
+    "title": "Ghost in a Jar",
+    "description": "Gain 1 Intangible."
+  },
+  {
+    "class_name": "GigantificationPotion",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Gigantification",
+        "base_value": 1
+      }
+    ],
+    "image": "gigantification_potion",
+    "pool": "Shared",
+    "loc_key": "GIGANTIFICATION_POTION",
+    "title": "Gigantification Potion",
+    "description": "The next Attack you play deals triple damage."
+  },
+  {
+    "class_name": "GlowwaterPotion",
+    "rarity": "Event",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 10
+      }
+    ],
+    "image": "glowwater_potion",
+    "pool": "EventPotionPool",
+    "loc_key": "GLOWWATER_POTION",
+    "title": "Glowwater Potion",
+    "description": "Exhaust your Hand. Draw {Cards} cards."
+  },
+  {
+    "class_name": "HeartOfIron",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Plating",
+        "base_value": 7
+      }
+    ],
+    "image": "heart_of_iron",
+    "pool": "Shared",
+    "loc_key": "HEART_OF_IRON",
+    "title": "Heart of Iron",
+    "description": "Gain {PlatingPower} Plating."
+  },
+  {
+    "class_name": "KingsCourage",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 15
+      }
+    ],
+    "image": "kings_courage",
+    "pool": "Unknown",
+    "loc_key": "KINGS_COURAGE",
+    "title": "King's Courage",
+    "description": "Forge {Forge}."
+  },
+  {
+    "class_name": "LiquidBronze",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Thorns",
+        "base_value": 3
+      }
+    ],
+    "image": "liquid_bronze",
+    "pool": "Shared",
+    "loc_key": "LIQUID_BRONZE",
+    "title": "Liquid Bronze",
+    "description": "Gain {ThornsPower} Thorns."
+  },
+  {
+    "class_name": "LiquidMemories",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "liquid_memories",
+    "pool": "Shared",
+    "loc_key": "LIQUID_MEMORIES",
+    "title": "Liquid Memories",
+    "description": "Put a card from your Discard Pile into your Hand. It costs 0 {energyPrefix:energyIcons(1)} this turn."
+  },
+  {
+    "class_name": "LuckyTonic",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Buffer",
+        "base_value": 1
+      }
+    ],
+    "image": "lucky_tonic",
+    "pool": "Shared",
+    "loc_key": "LUCKY_TONIC",
+    "title": "Lucky Tonic",
+    "description": "Gain {BufferPower} Buffer."
+  },
+  {
+    "class_name": "MazalethsGift",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Ritual",
+        "base_value": 1
+      }
+    ],
+    "image": "mazaleths_gift",
+    "pool": "Shared",
+    "loc_key": "MAZALETHS_GIFT",
+    "title": "Mazaleth's Gift",
+    "description": "Gain {RitualPower} Ritual."
+  },
+  {
+    "class_name": "OrobicAcid",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "orobic_acid",
+    "pool": "Shared",
+    "loc_key": "OROBIC_ACID",
+    "title": "Orobic Acid",
+    "description": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn."
+  },
+  {
+    "class_name": "PoisonPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Poison",
+        "base_value": 6
+      }
+    ],
+    "image": "poison_potion",
+    "pool": "Unknown",
+    "loc_key": "POISON_POTION",
+    "title": "Poison Potion",
+    "description": "Apply {PoisonPower} Poison."
+  },
+  {
+    "class_name": "PotOfGhouls",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "pot_of_ghouls",
+    "pool": "Unknown",
+    "loc_key": "POT_OF_GHOULS",
+    "title": "Pot of Ghouls",
+    "description": "Add {Cards} {Cards:plural:Soul|Souls} into your Hand."
+  },
+  {
+    "class_name": "PotionOfBinding",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AllEnemies",
+    "vars": [
+      {
+        "type": "Vulnerable",
+        "base_value": 1
+      },
+      {
+        "type": "Weak",
+        "base_value": 1
+      }
+    ],
+    "image": "potion_of_binding",
+    "pool": "Shared",
+    "loc_key": "POTION_OF_BINDING",
+    "title": "Potion of Binding",
+    "description": "Apply {WeakPower:diff()} Weak and {VulnerablePower:diff()} Vulnerable to ALL enemies."
+  },
+  {
+    "class_name": "PotionOfCapacity",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Repeat",
+        "base_value": 2
+      }
+    ],
+    "image": "potion_of_capacity",
+    "pool": "Unknown",
+    "loc_key": "POTION_OF_CAPACITY",
+    "title": "Potion of Capacity",
+    "description": "Gain {Repeat} Orb {Repeat:plural:Slot|Slots}."
+  },
+  {
+    "class_name": "PotionOfDoom",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Doom",
+        "base_value": 33
+      }
+    ],
+    "image": "potion_of_doom",
+    "pool": "Unknown",
+    "loc_key": "POTION_OF_DOOM",
+    "title": "Potion of Doom",
+    "description": "Apply {DoomPower} Doom."
+  },
+  {
+    "class_name": "PotionShapedRock",
+    "rarity": "Token",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 15
+      }
+    ],
+    "image": "potion_shaped_rock",
+    "pool": "TokenPotionPool",
+    "loc_key": "POTION_SHAPED_ROCK",
+    "title": "Potion-Shaped Rock",
+    "description": "Deal {Damage} damage."
+  },
+  {
+    "class_name": "PowderedDemise",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Demise",
+        "base_value": 9
+      }
+    ],
+    "image": "powdered_demise",
+    "pool": "Shared",
+    "loc_key": "POWDERED_DEMISE",
+    "title": "Powdered Demise",
+    "description": "Enemy loses {Demise} HP at the end of each of its turns."
+  },
+  {
+    "class_name": "PowerPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "power_potion",
+    "pool": "Shared",
+    "loc_key": "POWER_POTION",
+    "title": "Power Potion",
+    "description": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn."
+  },
+  {
+    "class_name": "RadiantTincture",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Radiance",
+        "base_value": 3
+      }
+    ],
+    "image": "radiant_tincture",
+    "pool": "Shared",
+    "loc_key": "RADIANT_TINCTURE",
+    "title": "Radiant Tincture",
+    "description": "Gain {Energy:energyIcons()}. Gain an additional {energyPrefix:energyIcons(1)} at the start of your next {RadiancePower} {RadiancePower:plural:turn|turns}."
+  },
+  {
+    "class_name": "RegenPotion",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Regen",
+        "base_value": 5
+      }
+    ],
+    "image": "regen_potion",
+    "pool": "Shared",
+    "loc_key": "REGEN_POTION",
+    "title": "Regen Potion",
+    "description": "Gain {RegenPower} Regen."
+  },
+  {
+    "class_name": "ShacklingPotion",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AllEnemies",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 7
+      }
+    ],
+    "image": "shackling_potion",
+    "pool": "Shared",
+    "loc_key": "SHACKLING_POTION",
+    "title": "Shackling Potion",
+    "description": "ALL enemies lose {StrengthPower} Strength this turn."
+  },
+  {
+    "class_name": "ShipInABottle",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 10
+      }
+    ],
+    "image": "ship_in_a_bottle",
+    "pool": "Shared",
+    "loc_key": "SHIP_IN_A_BOTTLE",
+    "title": "Ship in a Bottle",
+    "description": "Gain {Block:diff()} Block. Next turn, gain {Block:diff()} Block."
+  },
+  {
+    "class_name": "SkillPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "skill_potion",
+    "pool": "Shared",
+    "loc_key": "SKILL_POTION",
+    "title": "Skill Potion",
+    "description": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn."
+  },
+  {
+    "class_name": "SneckoOil",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 7
+      }
+    ],
+    "image": "snecko_oil",
+    "pool": "Shared",
+    "loc_key": "SNECKO_OIL",
+    "title": "Snecko Oil",
+    "description": "Draw {Cards} cards. Randomize the cost of cards in your Hand this turn."
+  },
+  {
+    "class_name": "SoldiersStew",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "image": "soldiers_stew",
+    "pool": "Unknown",
+    "loc_key": "SOLDIERS_STEW",
+    "title": "Soldier's Stew",
+    "description": "All cards containing Strike gain 1 Replay this combat."
+  },
+  {
+    "class_name": "SpeedPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Dexterity",
+        "base_value": 5
+      }
+    ],
+    "image": "speed_potion",
+    "pool": "Shared",
+    "loc_key": "SPEED_POTION",
+    "title": "Speed Potion",
+    "description": "Gain {DexterityPower} Dexterity. At the end of your turn, lose {DexterityPower} Dexterity."
+  },
+  {
+    "class_name": "StableSerum",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Repeat",
+        "base_value": 2
+      }
+    ],
+    "image": "stable_serum",
+    "pool": "Shared",
+    "loc_key": "STABLE_SERUM",
+    "title": "Stable Serum",
+    "description": "Retain your Hand for {Repeat} {Repeat:plural:turn|turns}."
+  },
+  {
+    "class_name": "StarPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "vars": [
+      {
+        "type": "Stars",
+        "base_value": 3
+      }
+    ],
+    "image": "star_potion",
+    "pool": "Unknown",
+    "loc_key": "STAR_POTION",
+    "title": "Star Potion",
+    "description": "Gain {Stars:starIcons()}."
+  },
+  {
+    "class_name": "StrengthPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 2
+      }
+    ],
+    "image": "strength_potion",
+    "pool": "Shared",
+    "loc_key": "STRENGTH_POTION",
+    "title": "Strength Potion",
+    "description": "Gain {StrengthPower} Strength."
+  },
+  {
+    "class_name": "SwiftPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyPlayer",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "swift_potion",
+    "pool": "Shared",
+    "loc_key": "SWIFT_POTION",
+    "title": "Swift Potion",
+    "description": "Draw {Cards} {Cards:plural:card|cards}."
+  },
+  {
+    "class_name": "TouchOfInsanity",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target": "Self",
+    "image": "touch_of_insanity",
+    "pool": "Shared",
+    "loc_key": "TOUCH_OF_INSANITY",
+    "title": "Touch of Insanity",
+    "description": "Choose a card in your Hand. It is free to play this combat."
+  },
+  {
+    "class_name": "VulnerablePotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Vulnerable",
+        "base_value": 3
+      }
+    ],
+    "image": "vulnerable_potion",
+    "pool": "Shared",
+    "loc_key": "VULNERABLE_POTION",
+    "title": "Vulnerable Potion",
+    "description": "Apply {VulnerablePower} Vulnerable."
+  },
+  {
+    "class_name": "WeakPotion",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Weak",
+        "base_value": 3
+      }
+    ],
+    "image": "weak_potion",
+    "pool": "Shared",
+    "loc_key": "WEAK_POTION",
+    "title": "Weak Potion",
+    "description": "Apply {WeakPower} Weak."
+  }
+]

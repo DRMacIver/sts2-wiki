@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPotions = await getCollection('potions');
+const potions = allPotions.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const rarities = ['Common', 'Uncommon', 'Rare'];
+---
+
+<BaseLayout title="Potions">
+  <h1>Potions</h1>
+  <p class="card-meta" style="margin-bottom: 1rem;">{potions.length} potions</p>
+
+  <div class="filters">
+    <strong style="align-self: center;">Rarity:</strong>
+    {rarities.map(r => (
+      <button class="filter-btn" data-filter="rarity" data-value={r}>{r}</button>
+    ))}
+  </div>
+
+  <div class="card-grid" id="potion-grid">
+    {potions.map(potion => (
+      <a href={`${import.meta.env.BASE_URL}potions/${potion.id}/`}
+         class="card-entry"
+         data-rarity={potion.data.rarity}
+         style="display: flex; gap: 0.75rem; align-items: flex-start;">
+        <img
+          src={`${import.meta.env.BASE_URL}images/potion_atlas/${potion.data.image}.png`}
+          alt="" style="width: 40px; height: 40px; flex-shrink: 0; image-rendering: pixelated;"
+          onerror="this.style.display='none'" loading="lazy" />
+        <div>
+          <h3 style="margin: 0;">
+            <span class={`rarity-${potion.data.rarity.toLowerCase()}`}>{potion.data.title}</span>
+          </h3>
+          <div class="card-meta">{potion.data.rarity} &middot; {potion.data.usage}</div>
+          <div set:html={potion.data.description_html || potion.data.description_plain} style="font-size: 0.9rem;" />
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.card-entry');
+    const activeFilters: Record<string, string | null> = {};
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = (btn as HTMLElement).dataset.filter!;
+        const value = (btn as HTMLElement).dataset.value!;
+        if (activeFilters[filter] === value) {
+          activeFilters[filter] = null;
+          btn.classList.remove('active');
+        } else {
+          document.querySelectorAll(`[data-filter="${filter}"]`).forEach(b => b.classList.remove('active'));
+          activeFilters[filter] = value;
+          btn.classList.add('active');
+        }
+        items.forEach(item => {
+          const el = item as HTMLElement;
+          let visible = true;
+          for (const [f, v] of Object.entries(activeFilters)) {
+            if (v && el.dataset[f] !== v) visible = false;
+          }
+          el.style.display = visible ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</BaseLayout>

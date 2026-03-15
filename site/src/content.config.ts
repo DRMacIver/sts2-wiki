@@ -122,6 +122,20 @@ const ancients = defineCollection({
   }),
 });
 
+const potions = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/potions' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    rarity: z.string(),
+    usage: z.string().default('Unknown'),
+    target: z.string().default('Unknown'),
+    image: z.string().default(''),
+    description_plain: z.string().default(''),
+    description_html: z.string().default(''),
+  }),
+});
+
 const events = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/events' }),
   schema: z.object({
@@ -135,4 +149,4 @@ const events = defineCollection({
   }),
 });
 
-export const collections = { cards, powers, monsters, encounters, relics, ancients, events };
+export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions };
