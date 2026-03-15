@@ -51,3 +51,4 @@ Thumbs.db
 .claude/*.local.json
 .claude/*.local
 .claude-reliability/
+.spire-codex/

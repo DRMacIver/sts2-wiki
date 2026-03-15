@@ -33,11 +33,18 @@ const { event } = Astro.props;
     {event.data.options.length > 0 && (
       <>
         <h2 style="margin-top: 1.5rem;">Options</h2>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-          {event.data.options.map(opt => (
-            <li style="margin: 0.5rem 0;">{opt}</li>
-          ))}
-        </ul>
+        <div style="margin-top: 0.5rem;">
+          {event.data.options.map(opt => {
+            const title = typeof opt === 'string' ? opt : opt.title;
+            const desc = typeof opt === 'string' ? '' : opt.description;
+            return (
+              <div class="card-entry" style="margin-bottom: 0.5rem;">
+                <h3 style="margin: 0; font-size: 1rem;">{title}</h3>
+                {desc && <div class="card-meta" style="margin-top: 0.25rem;" set:html={desc} />}
+              </div>
+            );
+          })}
+        </div>
       </>
     )}
 

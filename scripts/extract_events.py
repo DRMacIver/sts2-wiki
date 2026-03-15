@@ -17,24 +17,24 @@ from scripts.common import (
 def parse_event_options(content: str) -> list[str]:
     """Extract option localization keys from GenerateInitialOptions() method.
 
-    Looks for EventOption constructor patterns and extracts the option key
-    (first string argument), which is the localization key for that option.
+    EventOption constructor: new EventOption(this, MethodRef, "FULL.LOC.KEY", ...)
+    The loc key is the third argument (a string).
     """
     options: list[str] = []
 
-    # Find GenerateInitialOptions method body
-    gen_section = re.search(r"GenerateInitialOptions\(\).*?\{(.*?)\n\t\}", content, re.DOTALL)
-    if gen_section:
-        body = gen_section.group(1)
-    else:
-        # Fallback: search entire file
-        body = content
-
-    # Match EventOption("OPTION_KEY", ...) or new EventOption("OPTION_KEY" ...)
-    for m in re.finditer(r'(?:new\s+)?EventOption\(\s*"([^"]+)"', body):
-        key = m.group(1)
-        if key not in options:
-            options.append(key)
+    # Find all EventOption constructors with string loc keys
+    # The key is typically the 3rd arg: EventOption(this, Method, "KEY")
+    for m in re.finditer(
+        r'new\s+EventOption\s*\([^"]*"([^"]*options\.[^"]+)"',
+        content,
+    ):
+        full_key = m.group(1)
+        # Extract just the option name from the full key
+        # e.g., "BYRDONIS_NEST.pages.INITIAL.options.EAT" -> "EAT"
+        parts = full_key.split(".")
+        opt_name = parts[-1] if parts else full_key
+        if opt_name not in options:
+            options.append(opt_name)
 
     return options
 
@@ -194,17 +194,15 @@ def main() -> None:
         desc_key = f"{loc_key}.pages.INITIAL.description"
         event["description"] = loc_data.get(desc_key, "")
 
-        # Option titles from localization
-        option_titles: list[str] = []
+        # Option titles and descriptions from localization
+        options: list[dict[str, str]] = []
         for opt_key in event.get("option_keys", []):
             opt_title_key = f"{loc_key}.pages.INITIAL.options.{opt_key}.title"
-            opt_title = loc_data.get(opt_title_key, "")
-            if opt_title:
-                option_titles.append(opt_title)
-            else:
-                # Use the raw key as fallback
-                option_titles.append(opt_key)
-        event["options"] = option_titles
+            opt_desc_key = f"{loc_key}.pages.INITIAL.options.{opt_key}.description"
+            opt_title = loc_data.get(opt_title_key, opt_key)
+            opt_desc = loc_data.get(opt_desc_key, "")
+            options.append({"title": opt_title, "description": opt_desc})
+        event["options"] = options
 
         # Remove the intermediate option_keys from output
         del event["option_keys"]
