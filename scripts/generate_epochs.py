@@ -53,7 +53,15 @@ def main() -> None:
         lines.append(f"era: {escape_yaml(epoch.get('era', ''))}")
         lines.append(f"era_position: {epoch.get('era_position', 0)}")
         lines.append(f"story: {escape_yaml(epoch.get('story', ''))}")
-        lines.append(f"description: {escape_yaml(epoch.get('description', ''))}")
+        from scripts.common import rich_text_to_html
+
+        raw_desc = epoch.get("description", "")
+        lines.append(f"description: {escape_yaml(raw_desc)}")
+        lines.append(f"description_html: {escape_yaml(rich_text_to_html(raw_desc))}")
+        # Image filename: class_name to snake_case
+        image = re.sub(r"(?<=[a-z0-9])([A-Z])", r"_\1", epoch["class_name"])
+        image = re.sub(r"(?<=[A-Z])([A-Z][a-z])", r"_\1", image).lower()
+        lines.append(f"image: {escape_yaml(image)}")
         lines.append(f"unlocks_cards: {json.dumps(epoch.get('unlocks_cards', []))}")
         lines.append(f"unlocks_relics: {json.dumps(epoch.get('unlocks_relics', []))}")
         lines.append(f"unlocks_events: {json.dumps(epoch.get('unlocks_events', []))}")

@@ -165,6 +165,8 @@ const epochs = defineCollection({
     era_position: z.number().default(0),
     story: z.string().default(''),
     description: z.string().default(''),
+    description_html: z.string().default(''),
+    image: z.string().default(''),
     unlocks_cards: z.array(z.string()).default([]),
     unlocks_relics: z.array(z.string()).default([]),
     unlocks_events: z.array(z.string()).default([]),

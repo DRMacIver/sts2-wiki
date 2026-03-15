@@ -17,13 +17,21 @@ const { epoch } = Astro.props;
   <div class="card-detail">
     <div class="card-header">
       <a href={`${import.meta.env.BASE_URL}epochs/`} style="font-size: 0.85rem;">&larr; All Epochs</a>
-      <h1>{epoch.data.title}</h1>
-      <div class="card-meta">{epoch.data.story} &middot; {epoch.data.era} &middot; Position {epoch.data.era_position}</div>
+      <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-top: 0.5rem;">
+        <img
+          src={`${import.meta.env.BASE_URL}images/epoch_atlas/${epoch.data.image}.png`}
+          alt={epoch.data.title}
+          style="width: 200px; border-radius: 6px; flex-shrink: 0;"
+          onerror="this.style.display='none'" />
+        <div>
+          <h1 style="margin: 0;">{epoch.data.title}</h1>
+          <div class="card-meta">{epoch.data.story} &middot; {epoch.data.era} &middot; Position {epoch.data.era_position}</div>
+          {epoch.data.description_html && (
+            <div style="margin-top: 0.75rem;" set:html={epoch.data.description_html} />
+          )}
+        </div>
+      </div>
     </div>
-
-    {epoch.data.description && (
-      <p style="margin: 1rem 0;">{epoch.data.description}</p>
-    )}
 
     {epoch.data.unlocks_cards.length > 0 && (
       <>
