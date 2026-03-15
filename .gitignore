@@ -13,8 +13,17 @@ node_modules/
 site/dist/
 site/.astro/
 
-# Data artifacts
-data/
+# Generated content (regenerated from data/ by `just generate`)
+site/src/content/cards/
+site/src/content/relics/
+site/src/content/potions/
+site/src/content/powers/
+site/src/content/enchantments/
+site/src/content/monsters/
+site/src/content/encounters/
+site/src/content/events/
+
+# Claude enrichment cache
 enriched/
 
 # OS

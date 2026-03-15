@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+  <h1>Slay the Spire 2 Wiki</h1>
+  <p style="margin-top: 1rem; color: var(--text-muted);">
+    An unofficial wiki generated from decompiled game data.
+  </p>
+  <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <a href={`${import.meta.env.BASE_URL}cards/`} class="card-entry" style="display: block; min-width: 200px;">
+      <h3>Cards</h3>
+      <p class="card-meta">All cards by character, type, and rarity</p>
+    </a>
+  </div>
+</BaseLayout>

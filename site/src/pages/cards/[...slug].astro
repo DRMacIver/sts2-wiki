@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const cards = await getCollection('cards');
+  return cards.map(card => ({
+    params: { slug: card.id },
+    props: { card },
+  }));
+}
+
+const { card } = Astro.props;
+const { Content } = await render(card);
+
+const costDisplay = card.data.x_cost ? 'X' : card.data.energy_cost >= 0 ? String(card.data.energy_cost) : 'Unplayable';
+---
+
+<BaseLayout title={card.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}cards/`} style="font-size: 0.85rem;">&larr; All Cards</a>
+      <h1>{card.data.title}</h1>
+      <div class="card-meta">{card.data.character} &middot; {card.data.type} &middot; <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.rarity}</span></div>
+    </div>
+
+    <table class="stat-table">
+      <tr><th>Cost</th><td>{costDisplay}</td></tr>
+      <tr><th>Type</th><td>{card.data.type}</td></tr>
+      <tr><th>Rarity</th><td>{card.data.rarity}</td></tr>
+      <tr><th>Target</th><td>{card.data.target}</td></tr>
+      {card.data.keywords.length > 0 && (
+        <tr><th>Keywords</th><td>{card.data.keywords.join(', ')}</td></tr>
+      )}
+    </table>
+
+    <h2 style="margin-top: 1.5rem;">Description</h2>
+    <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={card.data.description_html || card.data.description_plain} />
+
+    {card.data.upgraded_description_html && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Upgraded</h2>
+        <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={card.data.upgraded_description_html} />
+        {card.data.upgraded_cost !== undefined && card.data.upgraded_cost !== card.data.energy_cost && (
+          <p class="card-meta">Cost: {card.data.upgraded_cost}</p>
+        )}
+      </>
+    )}
+
+    {card.data.vars.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Values</h2>
+        <table class="stat-table">
+          <tr><th>Variable</th><th>Base</th><th>Upgraded</th></tr>
+          {card.data.vars.map(v => (
+            <tr>
+              <td>{v.type}</td>
+              <td>{v.base_value}</td>
+              <td>{v.upgraded_value !== undefined ? v.upgraded_value : '-'}</td>
+            </tr>
+          ))}
+        </table>
+      </>
+    )}
+
+    {card.data.referenced_powers.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Related Powers</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {card.data.referenced_powers.map(p => (
+            <li>{p}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <div style="margin-top: 2rem;">
+      <Content />
+    </div>
+  </div>
+</BaseLayout>
