@@ -169,30 +169,28 @@ def main() -> None:
         if not event:
             continue
 
-        # Localization — event keys use nested page structure:
-        #   EVENT_NAME.pages.INITIAL.title
-        #   EVENT_NAME.pages.INITIAL.description
-        #   EVENT_NAME.pages.INITIAL.options.OPTION_NAME.title
+        # Localization — event title is at EVENT_NAME.title
+        # Description and options at EVENT_NAME.pages.INITIAL.*
         loc_key = class_name_to_loc_key(class_name)
 
-        # Try to find title using the pages.INITIAL.title pattern
-        title_key = f"{loc_key}.pages.INITIAL.title"
+        # Try direct title key first
+        title_key = f"{loc_key}.title"
         if title_key in loc_data:
             event["loc_key"] = loc_key
             event["title"] = loc_data[title_key]
         else:
-            # Fallback: try find_loc_key with the pages suffix
-            found_key = find_loc_key(class_name, loc_data, suffix=".pages.INITIAL.title")
+            # Fallback: try fuzzy match
+            found_key = find_loc_key(class_name, loc_data, suffix=".title")
             if found_key:
                 event["loc_key"] = found_key
-                event["title"] = loc_data.get(f"{found_key}.pages.INITIAL.title", class_name)
+                event["title"] = loc_data.get(f"{found_key}.title", class_name)
                 loc_key = found_key
             else:
                 event["loc_key"] = loc_key
                 event["title"] = class_name
                 event["_loc_missing"] = True
 
-        # Description
+        # Description from initial page
         desc_key = f"{loc_key}.pages.INITIAL.description"
         event["description"] = loc_data.get(desc_key, "")
 

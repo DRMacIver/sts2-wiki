@@ -38,6 +38,10 @@ a:hover {
 .desc-red { color: var(--red); }
 .desc-blue { color: var(--blue); }
 .desc-green { color: var(--green); }
+.desc-orange { color: #ff8844; }
+.desc-purple { color: #bb66ff; }
+.desc-aqua { color: #44dddd; }
+.desc-pink { color: #ff88bb; }
 
 /* Card grid */
 .card-grid {

@@ -137,6 +137,37 @@ def read_cs_files(directory: str) -> Iterator[tuple[str, str]]:
         yield class_name, content
 
 
+_COLOR_TAGS = {
+    "gold": "desc-gold",
+    "red": "desc-red",
+    "blue": "desc-blue",
+    "green": "desc-green",
+    "orange": "desc-orange",
+    "purple": "desc-purple",
+    "aqua": "desc-aqua",
+    "pink": "desc-pink",
+}
+
+
+def rich_text_to_html(text: str) -> str:
+    """Convert game rich text tags to HTML spans."""
+    html = text
+    for tag, css_class in _COLOR_TAGS.items():
+        html = re.sub(
+            rf"\[{tag}\](.*?)\[/{tag}\]",
+            rf'<span class="{css_class}">\1</span>',
+            html,
+        )
+    html = re.sub(r"\[/?(?:sine|wave|shake|b|i|jitter|center|thinky_dots)\]", "", html)
+    html = html.replace("\n", "<br>")
+    return html
+
+
+def strip_rich_text(text: str) -> str:
+    """Strip all game rich text tags for plain text."""
+    return re.sub(r"\[/?[^\]]*\]", "", text)
+
+
 def decompiled_dir(base: str, namespace: str) -> str:
     """Get path to a decompiled namespace directory."""
     return os.path.join(base, namespace)

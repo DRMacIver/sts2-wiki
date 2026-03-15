@@ -26,19 +26,16 @@ def escape_yaml(value: str) -> str:
 
 def render_description_html(desc: str) -> str:
     """Convert game rich text tags to HTML."""
-    html = desc
-    html = re.sub(r"\[gold\](.*?)\[/gold\]", r'<span class="desc-gold">\1</span>', html)
-    html = re.sub(r"\[red\](.*?)\[/red\]", r'<span class="desc-red">\1</span>', html)
-    html = re.sub(r"\[blue\](.*?)\[/blue\]", r'<span class="desc-blue">\1</span>', html)
-    html = re.sub(r"\[green\](.*?)\[/green\]", r'<span class="desc-green">\1</span>', html)
-    html = re.sub(r"\[/?(?:sine|wave|shake|b|i|jitter)\]", "", html)
-    html = html.replace("\n", "<br>")
-    return html
+    from scripts.common import rich_text_to_html
+
+    return rich_text_to_html(desc)
 
 
 def strip_tags(desc: str) -> str:
     """Strip game rich text tags for plain text."""
-    return re.sub(r"\[/?[^\]]*\]", "", desc)
+    from scripts.common import strip_rich_text
+
+    return strip_rich_text(desc)
 
 
 def main() -> None:

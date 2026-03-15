@@ -311,12 +311,15 @@ def render_description(
 
     # Convert rich text tags to HTML spans
     html = rendered
-    html = re.sub(r"\[gold\](.*?)\[/gold\]", r'<span class="desc-gold">\1</span>', html)
-    html = re.sub(r"\[red\](.*?)\[/red\]", r'<span class="desc-red">\1</span>', html)
-    html = re.sub(r"\[blue\](.*?)\[/blue\]", r'<span class="desc-blue">\1</span>', html)
-    html = re.sub(r"\[green\](.*?)\[/green\]", r'<span class="desc-green">\1</span>', html)
-    # Strip other formatting tags
-    html = re.sub(r"\[/?(?:sine|wave|shake|b|i|jitter)\]", "", html)
+    from scripts.common import _COLOR_TAGS as color_tags
+
+    for tag, css_class in color_tags.items():
+        html = re.sub(
+            rf"\[{tag}\](.*?)\[/{tag}\]",
+            rf'<span class="{css_class}">\1</span>',
+            html,
+        )
+    html = re.sub(r"\[/?(?:sine|wave|shake|b|i|jitter|center|thinky_dots)\]", "", html)
     # Convert newlines to <br>
     html = html.replace("\n", "<br>")
 
