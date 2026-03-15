@@ -93,7 +93,9 @@
   },
   {
     "class_name": "BrainLeech",
-    "conditions": [],
+    "conditions": [
+      "Act 3 excluded"
+    ],
     "loc_key": "BRAIN_LEECH",
     "title": "Brain Leech",
     "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]\u201cSHARE KNOWLEDGE???\u201d[/sine][/purple]\n\nYou are unsure how to proceed...",
@@ -193,7 +195,8 @@
   {
     "class_name": "CrystalSphere",
     "conditions": [
-      "Gold >= 100"
+      "Gold >= 100",
+      "Act 2+"
     ],
     "loc_key": "CRYSTAL_SPHERE",
     "title": "Crystal Sphere",
@@ -334,7 +337,10 @@
   {
     "class_name": "FakeMerchant",
     "conditions": [
-      "Gold >= 100"
+      "Gold >= 100",
+      "Act 2+",
+      "Single player only",
+      "OR has FoulPotion"
     ],
     "loc_key": "FAKE_MERCHANT",
     "title": "The Merchant???",
@@ -512,7 +518,9 @@
   },
   {
     "class_name": "PotionCourier",
-    "conditions": [],
+    "conditions": [
+      "Act 2+"
+    ],
     "loc_key": "POTION_COURIER",
     "title": "Potion Courier",
     "description": "There is a [sine]sour[/sine] smell in the air and shortly after, you find a [gold]Potion Courier[/gold] collapsed on the ground.\nUnmoving. Lifeless. [jitter]Dead!?[/jitter]\nWhile their belongings have been ransacked, there is a batch of [green][sine]Foul Smelling Potions[/sine][/green] with a note: \"Recipient: Merchant\".",
@@ -628,7 +636,9 @@
   },
   {
     "class_name": "RoomFullOfCheese",
-    "conditions": [],
+    "conditions": [
+      "Act 3 excluded"
+    ],
     "loc_key": "ROOM_FULL_OF_CHEESE",
     "title": "Room Full of Cheese",
     "description": "This room is full of [b][jitter]cheese!!![/jitter][/b]\n\nYou look around to see if there are any traps and above you is... more [b]cheese[/b]. The candles in this room appear to be made of [b]cheese[/b]. The furniture is also [b]cheese[/b].\nSuddenly, the door behind you slams shut.\n\nIt is made of [b]cheese[/b].",
@@ -855,7 +865,9 @@
   },
   {
     "class_name": "Symbiote",
-    "conditions": [],
+    "conditions": [
+      "Act 2+"
+    ],
     "loc_key": "SYMBIOTE",
     "title": "Symbiote",
     "description": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n[sine]Approach...[/sine]",
@@ -906,7 +918,8 @@
   {
     "class_name": "TeaMaster",
     "conditions": [
-      "Gold >= 150"
+      "Gold >= 150",
+      "Act 3 excluded"
     ],
     "loc_key": "TEA_MASTER",
     "title": "Tea Master",

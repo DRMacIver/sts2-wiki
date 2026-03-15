@@ -107,9 +107,26 @@ def parse_is_allowed(content: str) -> list[str]:
             pct = int(pct * 100)
         conditions.append(f"HP% {m.group(1)} {pct}%")
 
-    # Act requirements: Act == N or ActNumber
+    # Act requirements: Act == N or ActNumber or CurrentActIndex
     for m in re.finditer(r"(?:Act|ActNumber)\s*(>=?|<=?|==)\s*(\d+)", body):
         conditions.append(f"Act {m.group(1)} {m.group(2)}")
+    # CurrentActIndex checks — these appear in rejection clauses
+    # (if condition: return false), so the meaning is inverted:
+    # "if CurrentActIndex < 1: return false" means "requires Act 2+"
+    for m in re.finditer(r"CurrentActIndex\s*(<|>|<=|>=)\s*(\d+)", body):
+        op = m.group(1)
+        idx = int(m.group(2))
+        # In IsAllowed, these are rejection conditions, so invert:
+        # "< 1 → reject" means "requires >= 1" = Act 2+
+        # "> 0 → accept" (in direct return) means Act 2+
+        if op == "<" and idx == 1:
+            conditions.append("Act 2+")
+        elif op == ">" and idx == 0:
+            conditions.append("Act 2+")
+        elif op == "<" and idx == 2:
+            conditions.append("Act 3 excluded")
+        else:
+            conditions.append(f"Act index {op} {idx}")
 
     # HasRelic checks
     for m in re.finditer(r"HasRelic<(\w+)>", body):
@@ -126,6 +143,14 @@ def parse_is_allowed(content: str) -> list[str]:
     # Deck size checks
     for m in re.finditer(r"(?:DeckSize|Deck\.Count)\s*(>=?|<=?)\s*(\d+)", body):
         conditions.append(f"Deck size {m.group(1)} {m.group(2)}")
+
+    # Multiplayer restrictions
+    if re.search(r"Players\.Count\s*>\s*1.*return\s+false", body, re.DOTALL):
+        conditions.append("Single player only")
+
+    # Potion requirements
+    for m in re.finditer(r"Potions\.Any.*?(\w+Potion)", body):
+        conditions.append(f"OR has {m.group(1)}")
 
     return conditions
 
