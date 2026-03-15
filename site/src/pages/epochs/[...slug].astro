@@ -37,9 +37,11 @@ const { epoch } = Astro.props;
       <>
         <h2 style="margin-top: 1.5rem;">Unlocked Cards</h2>
         <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-          {epoch.data.unlocks_cards.map(card => (
-            <li>{card}</li>
-          ))}
+          {epoch.data.unlocks_cards.map(card => {
+            const title = typeof card === 'string' ? card : card.title;
+            const slug = typeof card === 'string' ? card.toLowerCase() : card.slug;
+            return <li><a href={`${import.meta.env.BASE_URL}cards/${slug}/`}>{title}</a></li>;
+          })}
         </ul>
       </>
     )}
@@ -48,9 +50,11 @@ const { epoch } = Astro.props;
       <>
         <h2 style="margin-top: 1.5rem;">Unlocked Relics</h2>
         <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-          {epoch.data.unlocks_relics.map(relic => (
-            <li>{relic}</li>
-          ))}
+          {epoch.data.unlocks_relics.map(relic => {
+            const title = typeof relic === 'string' ? relic : relic.title;
+            const slug = typeof relic === 'string' ? relic.toLowerCase() : relic.slug;
+            return <li><a href={`${import.meta.env.BASE_URL}relics/${slug}/`}>{title}</a></li>;
+          })}
         </ul>
       </>
     )}

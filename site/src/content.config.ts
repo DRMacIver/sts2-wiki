@@ -167,8 +167,14 @@ const epochs = defineCollection({
     description: z.string().default(''),
     description_html: z.string().default(''),
     image: z.string().default(''),
-    unlocks_cards: z.array(z.string()).default([]),
-    unlocks_relics: z.array(z.string()).default([]),
+    unlocks_cards: z.array(z.union([
+      z.string(),
+      z.object({ class_name: z.string(), title: z.string(), slug: z.string() }),
+    ])).default([]),
+    unlocks_relics: z.array(z.union([
+      z.string(),
+      z.object({ class_name: z.string(), title: z.string(), slug: z.string() }),
+    ])).default([]),
     unlocks_events: z.array(z.string()).default([]),
     unlocks_encounters: z.array(z.string()).default([]),
     unlocks_potions: z.array(z.string()).default([]),

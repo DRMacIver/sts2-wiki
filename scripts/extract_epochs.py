@@ -37,7 +37,7 @@ def parse_epoch_file(class_name: str, content: str) -> dict | None:
     # StoryId
     m = re.search(r'StoryId\s*=>\s*"([^"]+)"', content)
     if m:
-        epoch["story"] = m.group(1)
+        epoch["story_id"] = m.group(1)
 
     # Cards unlocked
     cards: list[str] = []
@@ -103,6 +103,34 @@ def main() -> None:
 
     loc_data = load_localization(loc_dir, "epochs")
 
+    # Build story name lookup from STORY_* keys
+    story_names: dict[str, str] = {}
+    for key in loc_data:
+        if key.startswith("STORY_"):
+            story_id = key.removeprefix("STORY_")
+            # Convert MAGNUM_OPUS -> Magnum_Opus to match StoryId format
+            parts = story_id.split("_")
+            camel_id = "_".join(p.capitalize() for p in parts)
+            story_names[camel_id] = loc_data[key]
+            story_names[story_id] = loc_data[key]
+
+    # Build card/relic title lookups for enriching unlock lists
+    import json as json_mod
+
+    card_titles: dict[str, str] = {}
+    cards_path = os.path.join(output_dir, "cards.json")
+    if os.path.exists(cards_path):
+        with open(cards_path) as f:
+            for c in json_mod.load(f):
+                card_titles[c["class_name"]] = c["title"]
+
+    relic_titles: dict[str, str] = {}
+    relics_path = os.path.join(output_dir, "relics.json")
+    if os.path.exists(relics_path):
+        with open(relics_path) as f:
+            for r in json_mod.load(f):
+                relic_titles[r["class_name"]] = r["title"]
+
     epochs_dir = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Timeline.Epochs")
     epochs: list[dict] = []
 
@@ -111,12 +139,43 @@ def main() -> None:
         if not epoch:
             continue
 
+        # Resolve story name from localization
+        story_id = epoch.get("story_id", "")
+        epoch["story"] = story_names.get(story_id, story_id.replace("_", " "))
+
         # Localization
         epoch_id = epoch.get("id", "")
         title_key = f"{epoch_id}.title"
         desc_key = f"{epoch_id}.description"
         epoch["title"] = loc_data.get(title_key, epoch.get("story", class_name))
         epoch["description"] = loc_data.get(desc_key, "")
+
+        # Enrich unlock lists with display names
+        def slugify(name: str) -> str:
+            import re as re_mod
+
+            s = name.lower()
+            s = re_mod.sub(r"[^a-z0-9]+", "-", s)
+            return s.strip("-")
+
+        if "unlocks_cards" in epoch:
+            epoch["unlocks_cards"] = [
+                {
+                    "class_name": c,
+                    "title": card_titles.get(c, c),
+                    "slug": slugify(card_titles.get(c, c)),
+                }
+                for c in epoch["unlocks_cards"]
+            ]
+        if "unlocks_relics" in epoch:
+            epoch["unlocks_relics"] = [
+                {
+                    "class_name": r,
+                    "title": relic_titles.get(r, r),
+                    "slug": slugify(relic_titles.get(r, r)),
+                }
+                for r in epoch["unlocks_relics"]
+            ]
 
         epochs.append(epoch)
 
