@@ -81,17 +81,23 @@ def parse_intent(text: str) -> dict:
         return {"type": "buff"}
     if "DebuffIntent" in text:
         return {"type": "debuff"}
+    if "CardDebuffIntent" in text:
+        return {"type": "debuff"}
 
     m = re.search(r"BlockIntent\((\d+)\)", text)
     if m:
         return {"type": "block", "amount": int(m.group(1))}
     if "BlockIntent" in text:
         return {"type": "block"}
+    if "DefendIntent" in text:
+        return {"type": "block"}
 
     if "StunIntent" in text:
         return {"type": "stun"}
     if "SleepIntent" in text:
         return {"type": "sleep"}
+    if "HiddenIntent" in text:
+        return {"type": "hidden"}
     if "SummonIntent" in text or "SpawnIntent" in text:
         return {"type": "summon"}
     if "HealIntent" in text:

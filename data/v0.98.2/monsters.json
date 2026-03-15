@@ -8,7 +8,7 @@
         "id": "NOTHING",
         "intents": [
           {
-            "type": "HiddenIntent"
+            "type": "hidden"
           }
         ],
         "effects": [],
@@ -75,7 +75,7 @@
             "damage": 5
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [],
@@ -89,7 +89,7 @@
             "damage": 5
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [],
@@ -131,7 +131,7 @@
         "id": "BOOT_UP_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           },
           {
             "type": "buff"
@@ -309,7 +309,7 @@
         "id": "NOTHING",
         "intents": [
           {
-            "type": "HiddenIntent"
+            "type": "hidden"
           }
         ],
         "effects": [],
@@ -343,7 +343,7 @@
             "damage": 7
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -963,7 +963,7 @@
         "id": "RELOAD_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -1052,7 +1052,7 @@
             "damage": 12
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -1144,7 +1144,7 @@
         "id": "SUBMERGE_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -2407,7 +2407,7 @@
         "id": "GUARD_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -2596,7 +2596,7 @@
             "damage": 16
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -2624,7 +2624,7 @@
             "type": "buff"
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -2965,7 +2965,7 @@
             "damage": 12
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -3264,7 +3264,7 @@
         "id": "CURL_AND_GROW_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           },
           {
             "type": "buff"
@@ -3304,7 +3304,7 @@
             "damage": 6
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [],
@@ -3324,7 +3324,7 @@
         "id": "PREP_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [],
@@ -3461,7 +3461,7 @@
         "id": "WINDUP_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           },
           {
             "type": "buff"
@@ -3624,7 +3624,7 @@
             "damage": 6
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -3696,7 +3696,7 @@
         "id": "NOTHING",
         "intents": [
           {
-            "type": "HiddenIntent"
+            "type": "hidden"
           }
         ],
         "effects": [],
@@ -4094,7 +4094,7 @@
         "id": "READY_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -4181,7 +4181,7 @@
             "type": "buff"
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -4436,7 +4436,7 @@
             "type": "buff"
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -4599,7 +4599,7 @@
         "id": "INERTIA_MOVE",
         "intents": [
           {
-            "type": "DefendIntent"
+            "type": "block"
           },
           {
             "type": "buff"
@@ -4771,7 +4771,7 @@
             "damage": 7
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [],
@@ -5329,7 +5329,7 @@
         "id": "NOTHING",
         "intents": [
           {
-            "type": "HiddenIntent"
+            "type": "hidden"
           }
         ],
         "effects": [],
@@ -5767,7 +5767,7 @@
             "type": "debuff"
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           },
           {
             "type": "buff"
@@ -5984,7 +5984,7 @@
             "damage": 6
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [
@@ -6353,7 +6353,7 @@
             "type": "buff"
           },
           {
-            "type": "DefendIntent"
+            "type": "block"
           }
         ],
         "effects": [

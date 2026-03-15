@@ -15,37 +15,48 @@ const hpDisplay = monster.data.min_hp === monster.data.max_hp
   ? String(monster.data.min_hp)
   : `${monster.data.min_hp} - ${monster.data.max_hp}`;
 
-// Map intent types to icon paths (relative to intent_atlas/)
-function intentIconPath(type: string): string {
-  const map: Record<string, string> = {
-    'attack': 'attack/intent_attack_1',
-    'multi_attack': 'attack/intent_attack_5',
-    'buff': 'intent_buff',
-    'debuff': 'intent_debuff',
-    'block': 'intent_defend',
-    'defend': 'intent_defend',
-    'stun': 'intent_stun',
-    'sleep': 'intent_sleep',
-    'summon': 'intent_summon',
-    'heal': 'intent_heal',
-    'escape': 'intent_escape',
-    'status': 'intent_status_card',
-    'death_blow': 'intent_death_blow',
-  };
-  return map[type] || 'intent_unknown';
-}
+// Map intent types to icon paths
+const INTENT_ICONS: Record<string, string> = {
+  'attack': 'attack/intent_attack_1',
+  'multi_attack': 'attack/intent_attack_5',
+  'buff': 'intent_buff',
+  'debuff': 'intent_debuff',
+  'block': 'intent_defend',
+  'defend': 'intent_defend',
+  'stun': 'intent_stun',
+  'sleep': 'intent_sleep',
+  'summon': 'intent_summon',
+  'heal': 'intent_heal',
+  'escape': 'intent_escape',
+  'status': 'intent_status_card',
+  'death_blow': 'intent_death_blow',
+  'hidden': 'intent_hidden',
+};
 
-function intentDisplay(intent: { type: string; damage?: number; hits?: number; amount?: number }): string {
-  if ((intent.type === 'attack' || intent.type === 'multi_attack') && intent.damage) {
-    if (intent.type === 'multi_attack' && intent.hits) {
-      return `${intent.damage} x ${intent.hits}`;
-    }
-    return `${intent.damage}`;
+// Format intent as readable text
+function formatIntent(intent: { type: string; damage?: number; hits?: number; amount?: number }): string {
+  switch (intent.type) {
+    case 'attack':
+      return intent.damage ? `Deal ${intent.damage} damage` : 'Attack';
+    case 'multi_attack':
+      if (intent.damage && intent.hits) return `Deal ${intent.damage} damage x${intent.hits}`;
+      if (intent.damage) return `Deal ${intent.damage} damage (multi)`;
+      return 'Multi-attack';
+    case 'block':
+    case 'defend':
+      return intent.amount ? `Gain ${intent.amount} Block` : 'Block';
+    case 'buff': return 'Buff';
+    case 'debuff': return 'Debuff';
+    case 'stun': return 'Stun';
+    case 'sleep': return 'Sleeping';
+    case 'summon': return 'Summon';
+    case 'heal': return 'Heal';
+    case 'escape': return 'Escape';
+    case 'death_blow': return 'Death Blow';
+    case 'status': return 'Add Status';
+    case 'hidden': return 'Hidden';
+    default: return intent.type;
   }
-  if (intent.type === 'block' && intent.amount) {
-    return `${intent.amount}`;
-  }
-  return '';
 }
 ---
 
@@ -70,40 +81,45 @@ function intentDisplay(intent: { type: string; damage?: number; hits?: number; a
       <>
         <h2 style="margin-top: 1.5rem;">Moveset</h2>
         {monster.data.move_pattern && (
-          <p style="margin: 0.5rem 0; color: var(--text-muted);">{monster.data.move_pattern}</p>
+          <p style="margin: 0.5rem 0; color: var(--text-muted); font-size: 0.9rem;">{monster.data.move_pattern}</p>
         )}
-        <div style="margin-top: 0.5rem;">
-          {monster.data.moves.map(move => (
-            <div class="card-entry" style="margin-bottom: 0.5rem; display: flex; gap: 1rem; align-items: flex-start;">
-              <div style="display: flex; gap: 0.25rem; flex-shrink: 0; min-width: 40px;">
-                {move.intents.map(intent => (
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/intent_atlas/${intentIconPath(intent.type)}.png`}
-                    alt={intent.type}
-                    style="width: 28px; height: 28px;"
-                    onerror="this.style.display='none'" />
-                ))}
-              </div>
-              <div style="flex: 1;">
-                <div style="display: flex; gap: 0.75rem; align-items: baseline;">
-                  <strong>{move.title || move.id}</strong>
-                  <span class="card-meta">
+        <table class="stat-table" style="margin-top: 0.5rem;">
+          <thead>
+            <tr>
+              <th style="width: 36px;"></th>
+              <th>Move</th>
+              <th>Intent</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {monster.data.moves.map(move => (
+              <tr>
+                <td style="padding: 0.4rem;">
+                  <div style="display: flex; gap: 2px;">
                     {move.intents.map(intent => {
-                      const val = intentDisplay(intent);
-                      const label = intent.type === 'multi_attack' ? 'Attack' : intent.type.charAt(0).toUpperCase() + intent.type.slice(1);
-                      return val ? `${label} ${val}` : label;
-                    }).join(' + ')}
-                  </span>
-                </div>
-                {move.effects.length > 0 && (
-                  <div style="margin-top: 0.25rem; color: var(--text-muted); font-size: 0.9rem;">
-                    {move.effects.join(', ')}
+                      const iconPath = INTENT_ICONS[intent.type];
+                      return iconPath ? (
+                        <img
+                          src={`${import.meta.env.BASE_URL}images/intent_atlas/${iconPath}.png`}
+                          alt={intent.type}
+                          style="width: 24px; height: 24px;"
+                          onerror="this.style.display='none'" />
+                      ) : null;
+                    })}
                   </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+                </td>
+                <td><strong>{move.title}</strong></td>
+                <td>
+                  {move.intents.map(intent => formatIntent(intent)).join(', ')}
+                </td>
+                <td style="color: var(--text-muted); font-size: 0.9rem;">
+                  {move.effects.length > 0 ? move.effects.join('. ') : ''}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </>
     )}
 
