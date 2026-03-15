@@ -67,6 +67,9 @@ extract-encounters:
 extract-ancients:
     uv run python -m scripts.extract_ancients decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
+extract-images:
+    uv run python scripts/extract_images.py "{{sts2_pck}}" extracted/{{version}} site/public/images
+
 extract: extract-powers extract-cards extract-monsters extract-encounters extract-ancients
 
 # --- Site generation ---

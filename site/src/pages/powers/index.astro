@@ -8,9 +8,9 @@ const powers = allPowers.sort((a, b) => a.data.title.localeCompare(b.data.title)
 const types = ['Buff', 'Debuff'];
 ---
 
-<BaseLayout title="Powers">
-  <h1>Powers &amp; Status Effects</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{powers.length} powers</p>
+<BaseLayout title="Effects">
+  <h1>Effects</h1>
+  <p class="card-meta" style="margin-bottom: 1rem;">{powers.length} effects</p>
 
   <div class="filters">
     <strong style="align-self: center;">Type:</strong>
@@ -23,14 +23,21 @@ const types = ['Buff', 'Debuff'];
     {powers.map(power => (
       <a href={`${import.meta.env.BASE_URL}powers/${power.id}/`}
          class="card-entry"
-         data-power-type={power.data.power_type}>
-        <h3>
-          <span class={power.data.power_type === 'Debuff' ? 'desc-red' : 'desc-gold'}>{power.data.title}</span>
-        </h3>
-        <div class="card-meta">
-          {power.data.power_type} &middot; {power.data.stack_type}
+         data-power-type={power.data.power_type}
+         style="display: flex; gap: 0.75rem; align-items: flex-start;">
+        <img
+          src={`${import.meta.env.BASE_URL}images/power_atlas/${power.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}.png`}
+          alt="" style="width: 32px; height: 32px; flex-shrink: 0; margin-top: 0.25rem; image-rendering: pixelated;"
+          onerror="this.style.display='none'" />
+        <div>
+          <h3 style="margin: 0;">
+            <span class={power.data.power_type === 'Debuff' ? 'desc-red' : 'desc-gold'}>{power.data.title}</span>
+          </h3>
+          <div class="card-meta">
+            {power.data.power_type} &middot; {power.data.stack_type}
+          </div>
+          <div set:html={power.data.description_html || power.data.description_plain} />
         </div>
-        <div set:html={power.data.description_html || power.data.description_plain} />
       </a>
     ))}
   </div>

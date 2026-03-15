@@ -74,6 +74,19 @@ def build_act_ancient_map(decompiled_dir: str) -> dict[str, list[str]]:
                 if act_class_name not in ancient_to_acts[ancient_class]:
                     ancient_to_acts[ancient_class].append(act_class_name)
 
+    # Check ModelDb for shared ancients (AllSharedAncients)
+    model_db_path = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Models", "ModelDb.cs")
+    if os.path.exists(model_db_path):
+        with open(model_db_path) as f:
+            model_db = f.read()
+        # Find "AllSharedAncients =>" property definition
+        shared_match = re.search(r"AllSharedAncients\s*=>.*?;", model_db, re.DOTALL)
+        if shared_match:
+            shared_block = shared_match.group(0)
+            for sm in re.finditer(r"AncientEvent<(\w+)>", shared_block):
+                ancient_class = sm.group(1)
+                ancient_to_acts[ancient_class] = ["All Acts"]
+
     return ancient_to_acts
 
 

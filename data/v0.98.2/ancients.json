@@ -20,7 +20,9 @@
     "loc_key": "DARV",
     "title": "Darv",
     "epithet": "The Hoarder",
-    "acts": []
+    "acts": [
+      "All Acts"
+    ]
   },
   {
     "class_name": "DeprecatedAncientEvent",

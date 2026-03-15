@@ -24,6 +24,9 @@ site/src/content/encounters/
 site/src/content/events/
 site/src/content/ancients/
 
+# Extracted game images (do NOT commit — copyrighted material)
+site/public/images/
+
 # Astro boilerplate
 site/README.md
 site/public/favicon.ico
