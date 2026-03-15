@@ -61,9 +61,14 @@ const base = import.meta.env.BASE_URL;
 
     <!-- Gold -->
     <h2 class="section-heading" id="gold" style="margin-top: 2rem;">Gold Rewards</h2>
+    <table class="stat-table" style="margin: 0.5rem 0;">
+      <tr><td><strong>Regular fight</strong></td><td>10–20 gold</td></tr>
+      <tr><td><strong>Elite fight</strong></td><td>35–45 gold</td></tr>
+      <tr><td><strong>Boss fight</strong></td><td>100 gold</td></tr>
+      <tr><td><strong>Treasure chest</strong></td><td>42–53 gold</td></tr>
+    </table>
     <div class="desc-text" style="line-height: 1.7;">
-      <p>Gold from combat defaults to <strong>10–20 gold</strong> for all encounter types (regular, elite, and boss) unless a specific encounter overrides it. Individual encounters can define custom amounts. With the <a href={`${base}ascensions/level-03/`}>Poverty</a> ascension, all gold drops are multiplied by 0.75.</p>
-      <p style="margin-top: 0.5rem;"><strong>Treasure chests</strong> give <strong>42–53 gold</strong> (also affected by Poverty).</p>
+      <p>With the <a href={`${base}ascensions/level-03/`}>Poverty</a> ascension, all gold is multiplied by 0.75.</p>
     </div>
 
     <!-- Shop Prices -->

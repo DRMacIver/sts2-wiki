@@ -143,15 +143,19 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     "RelicTrader": {
         "description": (
             "A mysterious figure offers to trade your relics. "
-            "Three of your relics are randomly selected, each paired "
-            "with a new relic from the pool. You may trade one pair.\n\n"
-            "Requires [gold]5+[/gold] tradable relics. Available in Act 2+."
+            "Three of your relics are randomly shuffled and each paired "
+            "with the next relic you would have found from the relic pool. "
+            "You may accept one trade.\n\n"
+            "Requires [gold]5+[/gold] tradable relics (non-Starter, non-Event, "
+            "not used up, no on-pickup effects, not melted, "
+            "doesn't spawn pets). Available in Act 2+."
         ),
         "options": [
             {
                 "title": "Trade a Relic",
-                "description": "Swap one of your relics for a new one from the pool. "
-                "Three trade options are offered — the specific relics are randomly determined.",
+                "description": "Swap one of your relics for the paired one. "
+                "The offered relics are the next 3 from the normal relic pool "
+                "(the same relics you'd get from future elites).",
             },
             {"title": "Leave", "description": "Walk away."},
         ],

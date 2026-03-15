@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const filterOut = new Set(['DeprecatedEvent', 'TheArchitect', 'FakeMerchant']);
+const filterOut = new Set(['DeprecatedEvent', 'TheArchitect']);
 const allEvents = (await getCollection('events'))
   .filter(e => !filterOut.has(e.data.class_name));
 const events = allEvents.sort((a, b) => a.data.title.localeCompare(b.data.title));
