@@ -15,112 +15,114 @@ const hpDisplay = monster.data.min_hp === monster.data.max_hp
   ? String(monster.data.min_hp)
   : `${monster.data.min_hp} - ${monster.data.max_hp}`;
 
-// Map intent types to icon paths
-const INTENT_ICONS: Record<string, string> = {
-  'attack': 'attack/intent_attack_1',
-  'multi_attack': 'attack/intent_attack_5',
-  'buff': 'intent_buff',
-  'debuff': 'intent_debuff',
-  'block': 'intent_defend',
-  'defend': 'intent_defend',
-  'stun': 'intent_stun',
-  'sleep': 'intent_sleep',
-  'summon': 'intent_summon',
-  'heal': 'intent_heal',
-  'escape': 'intent_escape',
-  'status': 'intent_status_card',
-  'death_blow': 'intent_death_blow',
-  'hidden': 'intent_hidden',
-};
+// Build power slug lookup for linking
+const allPowers = await getCollection('powers');
+const powerSlugs: Record<string, string> = {};
+for (const p of allPowers) {
+  powerSlugs[p.data.title.toLowerCase()] = p.id;
+  // Also map class name without "Power" suffix
+  const shortName = p.data.class_name.replace(/Power$/, '');
+  powerSlugs[shortName.toLowerCase()] = p.id;
+}
 
-// Format intent as readable text
-function formatIntent(intent: { type: string; damage?: number; hits?: number; amount?: number }): string {
-  switch (intent.type) {
-    case 'attack':
-      return intent.damage ? `Deal ${intent.damage} damage` : 'Attack';
-    case 'multi_attack':
-      if (intent.damage && intent.hits) return `Deal ${intent.damage} damage x${intent.hits}`;
-      if (intent.damage) return `Deal ${intent.damage} damage (multi)`;
-      return 'Multi-attack';
-    case 'block':
-    case 'defend':
-      return intent.amount ? `Gain ${intent.amount} Block` : 'Block';
-    case 'buff': return 'Buff';
-    case 'debuff': return 'Debuff';
-    case 'stun': return 'Stun';
-    case 'sleep': return 'Sleeping';
-    case 'summon': return 'Summon';
-    case 'heal': return 'Heal';
-    case 'escape': return 'Escape';
-    case 'death_blow': return 'Death Blow';
-    case 'status': return 'Add Status';
-    case 'hidden': return 'Hidden';
-    default: return intent.type;
-  }
+// Convert effect text to HTML with linked effect names
+function linkEffects(effect: string): string {
+  // Match "Apply N EffectName" or "Gain N EffectName" patterns
+  return effect.replace(
+    /(?:Apply|Gain)\s+(\d+)\s+(\w[\w\s]*\w|\w+)/g,
+    (match, amount, name) => {
+      const slug = powerSlugs[name.toLowerCase()];
+      if (slug) {
+        return `${match.startsWith('Apply') ? 'Apply' : 'Gain'} <span class="desc-red">${amount}</span> <a href="${import.meta.env.BASE_URL}powers/${slug}/" class="desc-gold">${name}</a>`;
+      }
+      return match;
+    }
+  );
 }
 ---
 
 <BaseLayout title={monster.data.title}>
-  <div class="card-detail">
+  <div class="card-detail" style="max-width: 900px;">
     <div class="card-header">
       <a href={`${import.meta.env.BASE_URL}monsters/`} style="font-size: 0.85rem;">&larr; All Monsters</a>
-      <h1>{monster.data.title}</h1>
-      <div class="card-meta">
-        HP: {hpDisplay}
-        {monster.data.is_companion && ' · Companion'}
-      </div>
+      <h1>{monster.data.title} <span class="card-meta" style="font-weight: normal;">({hpDisplay} HP)</span></h1>
     </div>
 
-    {monster.data.powers_on_spawn.length > 0 && (
-      <div style="margin: 1rem 0;">
-        <strong>Powers on spawn:</strong> {monster.data.powers_on_spawn.join(', ')}
-      </div>
-    )}
-
     {monster.data.moves.length > 0 && (
-      <>
-        <h2 style="margin-top: 1.5rem;">Moveset</h2>
-        {monster.data.move_pattern && (
-          <p style="margin: 0.5rem 0; color: var(--text-muted); font-size: 0.9rem;">{monster.data.move_pattern}</p>
-        )}
-        <table class="stat-table" style="margin-top: 0.5rem;">
-          <thead>
-            <tr>
-              <th style="width: 36px;"></th>
-              <th>Move</th>
-              <th>Intent</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            {monster.data.moves.map(move => (
-              <tr>
-                <td style="padding: 0.4rem;">
-                  <div style="display: flex; gap: 2px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; align-items: start;">
+        {/* Left column: Moves table */}
+        <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tbody>
+              {monster.data.moves.map(move => (
+                <tr style="border-bottom: 1px solid var(--border);">
+                  <td style="padding: 0.6rem 0.75rem; font-weight: 600; white-space: nowrap; width: 40%;">
+                    {move.title}
+                  </td>
+                  <td style="padding: 0.6rem 0.75rem;">
                     {move.intents.map(intent => {
-                      const iconPath = INTENT_ICONS[intent.type];
-                      return iconPath ? (
-                        <img
-                          src={`${import.meta.env.BASE_URL}images/intent_atlas/${iconPath}.png`}
-                          alt={intent.type}
-                          style="width: 24px; height: 24px;"
-                          onerror="this.style.display='none'" />
-                      ) : null;
-                    })}
-                  </div>
-                </td>
-                <td><strong>{move.title}</strong></td>
-                <td>
-                  {move.intents.map(intent => formatIntent(intent)).join(', ')}
-                </td>
-                <td style="color: var(--text-muted); font-size: 0.9rem;">
-                  {move.effects.length > 0 ? move.effects.join('. ') : ''}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </>
+                      if ((intent.type === 'attack' || intent.type === 'multi_attack') && intent.damage) {
+                        const dmgText = intent.type === 'multi_attack' && intent.hits
+                          ? `${intent.damage}x${intent.hits}`
+                          : String(intent.damage);
+                        return <span class="desc-red">{dmgText}</span>;
+                      }
+                      if (intent.type === 'block' && intent.amount) {
+                        return <span class="desc-blue">Block {intent.amount}</span>;
+                      }
+                      if (intent.type === 'buff') return <span class="desc-gold">Buff</span>;
+                      if (intent.type === 'debuff') return <span class="desc-purple">Debuff</span>;
+                      if (intent.type === 'stun') return <span class="desc-blue">Stun</span>;
+                      if (intent.type === 'sleep') return <span class="desc-blue">Sleep</span>;
+                      if (intent.type === 'summon') return <span class="desc-green">Summon</span>;
+                      if (intent.type === 'heal') return <span class="desc-green">Heal</span>;
+                      if (intent.type === 'escape') return <span>Escape</span>;
+                      if (intent.type === 'status') return <span class="desc-purple">Status</span>;
+                      return <span>{intent.type}</span>;
+                    }).reduce((prev: any, curr: any, i: number) => i === 0 ? [curr] : [...prev, '  ', curr], [] as any[])}
+                    {move.effects.length > 0 && (
+                      <div style="margin-top: 0.25rem; font-size: 0.85rem;">
+                        {move.effects.map(e => (
+                          <span set:html={linkEffects(e)} style="margin-right: 0.5rem;" />
+                        ))}
+                      </div>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Right column: Behavior notes */}
+        <div style="font-size: 0.9rem; color: var(--text-muted);">
+          {monster.data.move_pattern && (
+            <p style="margin-bottom: 1rem;">{monster.data.move_pattern}</p>
+          )}
+
+          {monster.data.powers_on_spawn.length > 0 && (
+            <p>
+              <strong>Innate:</strong>{' '}
+              {monster.data.powers_on_spawn.map((power, i) => {
+                const slug = powerSlugs[power.toLowerCase()];
+                return (
+                  <>
+                    {i > 0 && ', '}
+                    {slug
+                      ? <a href={`${import.meta.env.BASE_URL}powers/${slug}/`} class="desc-gold">{power}</a>
+                      : <span class="desc-gold">{power}</span>
+                    }
+                  </>
+                );
+              })}
+            </p>
+          )}
+
+          {monster.data.is_companion && (
+            <p style="margin-top: 0.5rem;"><em>This is a player companion, not an enemy.</em></p>
+          )}
+        </div>
+      </div>
     )}
 
     {monster.data.encounters.length > 0 && (
