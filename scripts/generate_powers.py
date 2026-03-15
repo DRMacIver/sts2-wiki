@@ -59,6 +59,13 @@ def main() -> None:
 
     count = 0
     for power in powers:
+        # Fix CamelCase titles that lack localization
+        title = power["title"]
+        if title == title.replace(" ", "") and any(c.isupper() for c in title[1:]):
+            # CamelCase → "Camel Case"
+            title = re.sub(r"([a-z])([A-Z])", r"\1 \2", title)
+        power["title"] = title
+
         slug = slugify(power["title"])
         desc = power.get("description", "")
         smart_desc = power.get("smart_description", "")

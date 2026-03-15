@@ -37,6 +37,9 @@ def _resolve_var(match_str: str, var_lookup: dict[str, int]) -> str:
         parts = inner.split(":", 1)
         name = parts[0]
         fmt = parts[1] if len(parts) > 1 else ""
+        # energyPrefix is just a label/icon, not a value
+        if name == "energyPrefix":
+            return "Energy"
         val = var_lookup.get(name)
         if val is not None:
             return f"[gold]{val}[/gold] Energy"

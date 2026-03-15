@@ -165,7 +165,10 @@ def rich_text_to_html(text: str) -> str:
 
 def strip_rich_text(text: str) -> str:
     """Strip all game rich text tags for plain text."""
-    return re.sub(r"\[/?[^\]]*\]", "", text)
+    # Convert icon tags to readable text before stripping
+    result = text.replace("[star]", "\u2605")
+    result = result.replace("[energy]", "Energy")
+    return re.sub(r"\[/?[^\]]*\]", "", result)
 
 
 def decompiled_dir(base: str, namespace: str) -> str:

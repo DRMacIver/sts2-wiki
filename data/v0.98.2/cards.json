@@ -1361,9 +1361,9 @@
     "loc_key": "BLACK_HOLE",
     "title": "Black Hole",
     "description_template": "Whenever you spend or gain {singleStarIcon}, deal {BlackHolePower:diff()} damage to ALL enemies.",
-    "description_plain": "Whenever you spend or gain , deal 3 damage to ALL enemies.",
+    "description_plain": "Whenever you spend or gain \u2605, deal 3 damage to ALL enemies.",
     "description_html": "Whenever you spend or gain [star], deal 3 damage to ALL enemies.",
-    "upgraded_description_plain": "Whenever you spend or gain , deal 4 damage to ALL enemies.",
+    "upgraded_description_plain": "Whenever you spend or gain \u2605, deal 4 damage to ALL enemies.",
     "upgraded_description_html": "Whenever you spend or gain [star], deal 4 damage to ALL enemies."
   },
   {
@@ -2871,9 +2871,9 @@
     "loc_key": "CHILD_OF_THE_STARS",
     "title": "Child of the Stars",
     "description_template": "Whenever you spend {singleStarIcon}, gain {BlockForStars:diff()} [gold]Block[/gold] for each {singleStarIcon} spent.",
-    "description_plain": "Whenever you spend , gain 2 Block for each  spent.",
+    "description_plain": "Whenever you spend \u2605, gain 2 Block for each \u2605 spent.",
     "description_html": "Whenever you spend [star], gain 2 <span class=\"desc-gold\">Block</span> for each [star] spent.",
-    "upgraded_description_plain": "Whenever you spend , gain 3 Block for each  spent.",
+    "upgraded_description_plain": "Whenever you spend \u2605, gain 3 Block for each \u2605 spent.",
     "upgraded_description_html": "Whenever you spend [star], gain 3 <span class=\"desc-gold\">Block</span> for each [star] spent."
   },
   {
@@ -3793,9 +3793,9 @@
     "loc_key": "CRESCENT_SPEAR",
     "title": "Crescent Spear",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a {singleStarIcon} cost.",
-    "description_plain": "Deal X damage.\nDeals 2 additional damage for ALL your cards that have a  cost.",
+    "description_plain": "Deal X damage.\nDeals 2 additional damage for ALL your cards that have a \u2605 cost.",
     "description_html": "Deal X damage.<br>Deals 2 additional damage for ALL your cards that have a [star] cost.",
-    "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for ALL your cards that have a  cost.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for ALL your cards that have a \u2605 cost.",
     "upgraded_description_html": "Deal X damage.<br>Deals 3 additional damage for ALL your cards that have a [star] cost."
   },
   {
@@ -9825,10 +9825,10 @@
     "loc_key": "LIGHTNING_ROD",
     "title": "Lightning Rod",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nAt the start of the next {LightningRodPower:plural:turn|{:diff()} turns}, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
-    "description_plain": "Gain 4 Block.\nAt the start of the next X turns}, Channel 1 Lightning.",
-    "description_html": "Gain 4 <span class=\"desc-gold\">Block</span>.<br>At the start of the next X turns}, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>.",
-    "upgraded_description_plain": "Gain 7 Block.\nAt the start of the next X turns}, Channel 1 Lightning.",
-    "upgraded_description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>At the start of the next X turns}, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>."
+    "description_plain": "Gain 4 Block.\nAt the start of the next X, Channel 1 Lightning.",
+    "description_html": "Gain 4 <span class=\"desc-gold\">Block</span>.<br>At the start of the next X, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>.",
+    "upgraded_description_plain": "Gain 7 Block.\nAt the start of the next X, Channel 1 Lightning.",
+    "upgraded_description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>At the start of the next X, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>."
   },
   {
     "class_name": "Loop",
@@ -10931,10 +10931,10 @@
     "loc_key": "NEOWS_FURY",
     "title": "Neow's Fury",
     "description_template": "Deal {Damage:diff()} damage.\nPut {Cards:plural:a random card|{:diff()} random cards} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
-    "description_plain": "Deal 10 damage.\nPut X random cards} from your Discard Pile into your Hand.",
-    "description_html": "Deal 10 damage.<br>Put X random cards} from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 14 damage.\nPut X random cards} from your Discard Pile into your Hand.",
-    "upgraded_description_html": "Deal 14 damage.<br>Put X random cards} from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal 10 damage.\nPut X from your Discard Pile into your Hand.",
+    "description_html": "Deal 10 damage.<br>Put X from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 14 damage.\nPut X from your Discard Pile into your Hand.",
+    "upgraded_description_html": "Deal 14 damage.<br>Put X from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Neurosurge",
@@ -11117,8 +11117,8 @@
     "loc_key": "NO_ESCAPE",
     "title": "No Escape",
     "description_template": "Apply {CalculationBase:diff()} [gold]Doom[/gold], plus an additional {CalculationExtra:diff()} [gold]Doom[/gold] for every {DoomThreshold:diff()} [gold]Doom[/gold] already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
-    "description_plain": "Apply X Doom, plus an additional X Doom for every 10 Doom already on this enemy.X Doom)|}",
-    "description_html": "Apply X <span class=\"desc-gold\">Doom</span>, plus an additional X <span class=\"desc-gold\">Doom</span> for every 10 <span class=\"desc-gold\">Doom</span> already on this enemy.X <span class=\"desc-gold\">Doom</span>)|}"
+    "description_plain": "Apply X Doom, plus an additional X Doom for every 10 Doom already on this enemy.X",
+    "description_html": "Apply X <span class=\"desc-gold\">Doom</span>, plus an additional X <span class=\"desc-gold\">Doom</span> for every 10 <span class=\"desc-gold\">Doom</span> already on this enemy.X"
   },
   {
     "class_name": "Normality",
@@ -13691,7 +13691,7 @@
     "loc_key": "ROYAL_GAMBLE",
     "title": "Royal Gamble",
     "description_template": "Gain {Stars:diff()} {singleStarIcon}.",
-    "description_plain": "Gain 9 .",
+    "description_plain": "Gain 9 \u2605.",
     "description_html": "Gain 9 [star]."
   },
   {
@@ -14302,8 +14302,8 @@
     "loc_key": "SEVEN_STARS",
     "title": "Seven Stars",
     "description_template": "Deal {Damage:diff()} damage to ALL enemies {Repeat:plural:{} time|{} times}.",
-    "description_plain": "Deal 7 damage to ALL enemies X time|X times}.",
-    "description_html": "Deal 7 damage to ALL enemies X time|X times}."
+    "description_plain": "Deal 7 damage to ALL enemies X.",
+    "description_html": "Deal 7 damage to ALL enemies X."
   },
   {
     "class_name": "Severance",
@@ -15214,8 +15214,8 @@
     "loc_key": "SOVEREIGN_BLADE",
     "title": "Sovereign Blade",
     "description_template": "Deal {Damage:diff()} damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
-    "description_plain": "Deal 10 damageX times}.",
-    "description_html": "Deal 10 damageX times}."
+    "description_plain": "Deal 10 damageX.",
+    "description_html": "Deal 10 damageX."
   },
   {
     "class_name": "Sow",
@@ -15625,8 +15625,8 @@
     "title": "Stack",
     "description_template": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].)|}",
     "vars": [],
-    "description_plain": "Gain Block equal to the number of cards in your Discard PileX|}.",
-    "description_html": "Gain <span class=\"desc-gold\">Block</span> equal to the number of cards in your <span class=\"desc-gold\">Discard Pile</span>X|}."
+    "description_plain": "Gain Block equal to the number of cards in your Discard PileX.",
+    "description_html": "Gain <span class=\"desc-gold\">Block</span> equal to the number of cards in your <span class=\"desc-gold\">Discard Pile</span>X."
   },
   {
     "class_name": "Stampede",
@@ -16882,7 +16882,7 @@
     "title": "The Sealed Throne",
     "description_template": "Whenever you play a card, gain {singleStarIcon}.",
     "vars": [],
-    "description_plain": "Whenever you play a card, gain .",
+    "description_plain": "Whenever you play a card, gain \u2605.",
     "description_html": "Whenever you play a card, gain [star]."
   },
   {
@@ -17108,8 +17108,8 @@
     "loc_key": "TIMES_UP",
     "title": "Time's Up",
     "description_template": "Deal damage equal to the enemy's [gold]Doom[/gold].{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
-    "description_plain": "Deal damage equal to the enemy's Doom.X damage)|}",
-    "description_html": "Deal damage equal to the enemy's <span class=\"desc-gold\">Doom</span>.X damage)|}"
+    "description_plain": "Deal damage equal to the enemy's Doom.X",
+    "description_html": "Deal damage equal to the enemy's <span class=\"desc-gold\">Doom</span>.X"
   },
   {
     "class_name": "ToolsOfTheTrade",

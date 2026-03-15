@@ -330,12 +330,28 @@ def render_description(
     # Convert newlines to <br>
     html = html.replace("\n", "<br>")
 
-    # Plain text: strip all tags
-    plain = re.sub(r"\[/?[^\]]*\]", "", rendered)
+    # Plain text: convert icon tags to text, then strip remaining tags
+    plain = rendered.replace("[star]", "\u2605")
+    plain = plain.replace("[energy]", "Energy")
+    plain = re.sub(r"\[/?[^\]]*\]", "", plain)
+
     # Clean up any remaining unsubstituted placeholders — use "X" for
-    # values that are calculated at runtime rather than "?" which looks broken
-    plain = re.sub(r"\{[^}]*\}", "X", plain)
-    html = re.sub(r"\{[^}]*\}", "X", html)
+    # values that are calculated at runtime rather than "?" which looks broken.
+    # Multi-pass to handle nested braces.
+    for text_ref in ("plain", "html"):
+        t = plain if text_ref == "plain" else html
+        for _ in range(3):
+            t = re.sub(r"\{[^{}]*\}", "X", t)
+        # Clean up residual template artifacts:
+        # "X turns}" → "X turns", "X time|X times}" → "X times"
+        t = re.sub(r"X\s+\w+\|X\s+(\w+)\}", r"X \1", t)  # plural: X time|X times}
+        t = re.sub(r"X\s+(\w+)\)\|?\}", r"X \1", t)  # X damage)|} patterns
+        t = re.sub(r"(\w)\}", r"\1", t)  # stray trailing }
+        t = re.sub(r"\|}", "", t)  # stray |}
+        if text_ref == "plain":
+            plain = t
+        else:
+            html = t
 
     return (plain, html)
 
