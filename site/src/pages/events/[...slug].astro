@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { processBBCode, cleanDescription } from '../../utils';
 
 export async function getStaticPaths() {
   const events = await getCollection('events');
@@ -15,32 +16,33 @@ const { event } = Astro.props;
 
 <BaseLayout title={event.data.title}>
   <div class="card-detail">
+    <a href={`${import.meta.env.BASE_URL}events/`} class="back-link">&larr; All Events</a>
+
     <div class="card-header">
-      <a href={`${import.meta.env.BASE_URL}events/`} style="font-size: 0.85rem;">&larr; All Events</a>
       <h1>{event.data.title}</h1>
       {event.data.acts.length > 0 && (
-        <div class="card-meta">{event.data.acts.join(', ')}</div>
+        <div class="card-meta" style="font-size: 0.9rem;">{event.data.acts.join(', ')}</div>
       )}
     </div>
 
     {event.data.description_html && (
       <>
-        <h2 style="margin-top: 1.5rem;">Description</h2>
-        <div style="margin: 0.75rem 0;" set:html={event.data.description_html} />
+        <h2 class="section-heading">Description</h2>
+        <div class="desc-text" set:html={cleanDescription(processBBCode(event.data.description_html))} />
       </>
     )}
 
     {event.data.options.length > 0 && (
       <>
-        <h2 style="margin-top: 1.5rem;">Options</h2>
+        <h2 class="section-heading">Options</h2>
         <div style="margin-top: 0.5rem;">
           {event.data.options.map(opt => {
             const title = typeof opt === 'string' ? opt : opt.title;
             const desc = typeof opt === 'string' ? '' : opt.description;
             return (
-              <div class="card-entry" style="margin-bottom: 0.5rem;">
-                <h3 style="margin: 0; font-size: 1rem;">{title}</h3>
-                {desc && <div class="card-meta" style="margin-top: 0.25rem;" set:html={desc} />}
+              <div class="event-option">
+                <h3 set:html={cleanDescription(processBBCode(title))} />
+                {desc && <div class="desc-text" style="font-size: 0.9rem;" set:html={cleanDescription(processBBCode(desc))} />}
               </div>
             );
           })}
@@ -50,8 +52,8 @@ const { event } = Astro.props;
 
     {event.data.conditions && (
       <>
-        <h2 style="margin-top: 1.5rem;">Conditions</h2>
-        <p class="card-meta">{event.data.conditions}</p>
+        <h2 class="section-heading">Conditions</h2>
+        <p class="card-meta" style="font-size: 0.9rem;">{event.data.conditions}</p>
       </>
     )}
   </div>

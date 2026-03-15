@@ -81,6 +81,13 @@ def parse_card_file(class_name: str, content: str) -> dict:
     if "HasEnergyCostX => true" in content:
         card["x_cost"] = True
 
+    # Extract star cost (Regent cards)
+    star_match = re.search(r"CanonicalStarCost\s*=>\s*(\d+)", content)
+    if star_match:
+        card["star_cost"] = int(star_match.group(1))
+    if "HasStarCostX => true" in content:
+        card["x_star_cost"] = True
+
     # Extract keywords from CanonicalKeywords property
     keywords = parse_keywords(content)
     if keywords:

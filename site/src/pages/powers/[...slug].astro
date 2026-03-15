@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { cleanDescription } from '../../utils';
 
 export async function getStaticPaths() {
   const powers = await getCollection('powers');
@@ -17,22 +18,29 @@ const iconPath = `${import.meta.env.BASE_URL}images/power_atlas/${iconName}.png`
 
 <BaseLayout title={power.data.title}>
   <div class="card-detail">
+    <a href={`${import.meta.env.BASE_URL}powers/`} class="back-link">&larr; All Effects</a>
+
     <div class="card-header">
-      <a href={`${import.meta.env.BASE_URL}powers/`} style="font-size: 0.85rem;">&larr; All Effects</a>
-      <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
-        <img src={iconPath} alt={power.data.title} style="width: 48px; height: 48px; image-rendering: pixelated;" onerror="this.style.display='none'" />
+      <div class="item-row" style="align-items: center; margin-top: 0.5rem;">
+        <img src={iconPath} alt={power.data.title} class="item-icon-lg" onerror="this.style.display='none'" />
         <div>
-          <h1 style="margin: 0;">{power.data.title}</h1>
-          <div class="card-meta">
-            <span class={power.data.power_type === 'Debuff' ? 'desc-red' : 'desc-gold'}>{power.data.power_type}</span>
-            &middot; {power.data.stack_type}
+          <h1>
+            <span class={power.data.power_type === 'Debuff' ? 'desc-red' : ''}>{power.data.title}</span>
+          </h1>
+          <div class="card-meta" style="font-size: 0.9rem;">
+            <span class={power.data.power_type === 'Debuff' ? 'tag-red' : ''} style="display: inline;">
+              {power.data.power_type}
+            </span>
+            · {power.data.stack_type}
           </div>
         </div>
       </div>
     </div>
 
-    <h2 style="margin-top: 1.5rem;">Description</h2>
-    <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={power.data.description_html || power.data.description_plain} />
-
+    <h2 class="section-heading">Description</h2>
+    {(power.data.description_html || power.data.description_plain)
+      ? <div class="desc-text" style="font-size: 1.05rem;" set:html={cleanDescription(power.data.description_html || power.data.description_plain)} />
+      : <p class="card-meta">No description available.</p>
+    }
   </div>
 </BaseLayout>

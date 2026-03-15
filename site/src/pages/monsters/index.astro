@@ -1,31 +1,42 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { monsterImageName } from '../../utils';
 
-const allMonsters = await getCollection('monsters');
+const testMonsters = new Set(['BigDummy', 'MultiAttackMoveMonster', 'OneHpMonster', 'SingleAttackMoveMonster', 'TenHpMonster', 'TestSubject']);
+const allMonsters = (await getCollection('monsters'))
+  .filter(m => !testMonsters.has(m.data.class_name));
 const enemies = allMonsters.filter(m => !m.data.is_companion).sort((a, b) => a.data.title.localeCompare(b.data.title));
 const companions = allMonsters.filter(m => m.data.is_companion).sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <BaseLayout title="Monsters">
-  <h1>Monsters</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{enemies.length} enemies, {companions.length} companions</p>
+  <div class="page-header">
+    <h1>Monsters</h1>
+    <p class="subtitle">{enemies.length} enemies, {companions.length} companions</p>
+  </div>
 
   <div class="card-grid">
     {enemies.map(monster => (
-      <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry">
-        <h3>{monster.data.title}</h3>
-        <div class="card-meta">
-          HP: {monster.data.min_hp === monster.data.max_hp
-            ? monster.data.min_hp
-            : `${monster.data.min_hp}-${monster.data.max_hp}`}
-          &middot; {monster.data.moves.length} moves
-        </div>
-        {monster.data.encounters.length > 0 && (
-          <div class="card-meta" style="margin-top: 0.25rem;">
-            {monster.data.encounters.map(e => e.title).join(', ')}
+      <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+        <img
+          src={`${import.meta.env.BASE_URL}images/monsters/${monsterImageName(monster.data.class_name)}.png`}
+          alt="" style="width: 56px; height: 56px; object-fit: contain; flex-shrink: 0;"
+          onerror="this.style.display='none'" loading="lazy" />
+        <div>
+          <h3>{monster.data.title}</h3>
+          <div class="card-meta">
+            <span class="desc-red">HP {monster.data.min_hp === monster.data.max_hp
+              ? monster.data.min_hp
+              : `${monster.data.min_hp}–${monster.data.max_hp}`}</span>
+            · {monster.data.moves.length} moves
           </div>
-        )}
+          {monster.data.encounters.length > 0 && (
+            <div class="card-meta" style="margin-top: 0.25rem;">
+              {monster.data.encounters.map(e => e.title).join(', ')}
+            </div>
+          )}
+        </div>
       </a>
     ))}
   </div>
@@ -35,12 +46,18 @@ const companions = allMonsters.filter(m => m.data.is_companion).sort((a, b) => a
       <h2 style="margin-top: 2rem;">Companions</h2>
       <div class="card-grid" style="margin-top: 0.75rem;">
         {companions.map(monster => (
-          <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry">
-            <h3>{monster.data.title}</h3>
-            <div class="card-meta">
-              HP: {monster.data.min_hp === monster.data.max_hp
-                ? monster.data.min_hp
-                : `${monster.data.min_hp}-${monster.data.max_hp}`}
+          <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+            <img
+              src={`${import.meta.env.BASE_URL}images/monsters/${monsterImageName(monster.data.class_name)}.png`}
+              alt="" style="width: 56px; height: 56px; object-fit: contain; flex-shrink: 0;"
+              onerror="this.style.display='none'" loading="lazy" />
+            <div>
+              <h3 class="desc-green">{monster.data.title}</h3>
+              <div class="card-meta">
+                HP {monster.data.min_hp === monster.data.max_hp
+                  ? monster.data.min_hp
+                  : `${monster.data.min_hp}–${monster.data.max_hp}`}
+              </div>
             </div>
           </a>
         ))}

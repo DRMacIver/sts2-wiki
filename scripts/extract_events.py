@@ -17,22 +17,51 @@ from scripts.common import (
 def parse_event_options(content: str) -> list[str]:
     """Extract option localization keys from GenerateInitialOptions() method.
 
-    EventOption constructor: new EventOption(this, MethodRef, "FULL.LOC.KEY", ...)
-    The loc key is the third argument (a string).
+    Handles multiple patterns:
+    - new EventOption(this, Method, "FULL.LOC.KEY", ...)
+    - new EventOption(this, Method, InitialOptionKey("KEY"), ...)
+    - RelicOption<T>(...) constructors
     """
     options: list[str] = []
 
-    # Find all EventOption constructors with string loc keys
-    # The key is typically the 3rd arg: EventOption(this, Method, "KEY")
+    # Pattern 1: Full string loc key containing "options."
     for m in re.finditer(
         r'new\s+EventOption\s*\([^"]*"([^"]*options\.[^"]+)"',
         content,
     ):
         full_key = m.group(1)
-        # Extract just the option name from the full key
-        # e.g., "BYRDONIS_NEST.pages.INITIAL.options.EAT" -> "EAT"
         parts = full_key.split(".")
         opt_name = parts[-1] if parts else full_key
+        if opt_name not in options:
+            options.append(opt_name)
+
+    # Pattern 2: InitialOptionKey("KEY") helper
+    for m in re.finditer(
+        r'InitialOptionKey\(\s*"([^"]+)"\s*\)',
+        content,
+    ):
+        opt_name = m.group(1)
+        if opt_name not in options:
+            options.append(opt_name)
+
+    # Pattern 3: RelicOption<ClassName>() — extract relic class name as option
+    for m in re.finditer(
+        r"RelicOption<(\w+)>\s*\(",
+        content,
+    ):
+        opt_name = m.group(1)
+        if opt_name not in options:
+            options.append(opt_name)
+
+    # Pattern 4: String concatenation with variable + ".options."
+    # e.g., "EVENT_NAME.pages.INITIAL.options." + variableName
+    for m in re.finditer(
+        r'"[^"]*options\.\s*"\s*\+\s*(\w+)',
+        content,
+    ):
+        # Can't resolve the variable, but mark that options exist
+        # We'll use a placeholder
+        opt_name = f"DYNAMIC_{m.group(1)}"
         if opt_name not in options:
             options.append(opt_name)
 
@@ -100,6 +129,61 @@ def parse_is_allowed(content: str) -> list[str]:
     return conditions
 
 
+def parse_event_vars(content: str, cards_loc: dict[str, str]) -> dict[str, str]:
+    """Extract DynamicVar definitions from CanonicalVars.
+
+    Resolves:
+    - StringVar("Name", ModelDb.Card<Class>().Title) → card title
+    - StringVar("Name", "literal") → literal
+    - IntVar("Name", Nm) → N
+    - DamageVar("Name", Nm, ...) → N
+
+    Returns a mapping of var name -> resolved string value.
+    """
+    resolved: dict[str, str] = {}
+
+    # StringVar with card title: new StringVar("VarName", ModelDb.Card<ClassName>().Title)
+    for m in re.finditer(
+        r'new\s+StringVar\s*\(\s*"(\w+)"\s*,\s*ModelDb\.Card<(\w+)>\(\)\.Title\s*\)',
+        content,
+    ):
+        var_name = m.group(1)
+        card_class = m.group(2)
+        card_key = class_name_to_loc_key(card_class)
+        card_title = cards_loc.get(f"{card_key}.title", card_class)
+        resolved[var_name] = card_title
+
+    # StringVar with literal: new StringVar("VarName", "literal")
+    for m in re.finditer(
+        r'new\s+StringVar\s*\(\s*"(\w+)"\s*,\s*"([^"]+)"\s*\)',
+        content,
+    ):
+        resolved[m.group(1)] = m.group(2)
+
+    # IntVar: new IntVar("VarName", Nm) where N is the integer value
+    for m in re.finditer(
+        r'new\s+IntVar\s*\(\s*"(\w+)"\s*,\s*(-?\d+)m',
+        content,
+    ):
+        resolved[m.group(1)] = m.group(2)
+
+    # DamageVar: new DamageVar("VarName", Nm, ...)
+    for m in re.finditer(
+        r'new\s+DamageVar\s*\(\s*"(\w+)"\s*,\s*(-?\d+)m',
+        content,
+    ):
+        resolved[m.group(1)] = m.group(2)
+
+    return resolved
+
+
+def resolve_vars_in_text(text: str, vars_map: dict[str, str]) -> str:
+    """Replace {VarName} placeholders with resolved values."""
+    for name, value in vars_map.items():
+        text = text.replace(f"{{{name}}}", value)
+    return text
+
+
 def parse_event_file(class_name: str, content: str) -> dict | None:
     """Parse a decompiled event .cs file.
 
@@ -156,6 +240,7 @@ def main() -> None:
 
     # Load localization
     loc_data = load_localization(loc_dir, "events")
+    cards_loc = load_localization(loc_dir, "cards")
 
     # Build act assignment map
     act_event_map = build_act_event_map(decompiled_dir)
@@ -168,6 +253,9 @@ def main() -> None:
         event = parse_event_file(class_name, content)
         if not event:
             continue
+
+        # Resolve StringVar definitions (e.g. Card1 = UltimateStrike title)
+        string_vars = parse_event_vars(content, cards_loc)
 
         # Localization — event title is at EVENT_NAME.title
         # Description and options at EVENT_NAME.pages.INITIAL.*
@@ -192,16 +280,43 @@ def main() -> None:
 
         # Description from initial page
         desc_key = f"{loc_key}.pages.INITIAL.description"
-        event["description"] = loc_data.get(desc_key, "")
+        desc = loc_data.get(desc_key, "")
+        event["description"] = resolve_vars_in_text(desc, string_vars)
 
         # Option titles and descriptions from localization
+        # Search INITIAL page first, then try all other pages for the key
         options: list[dict[str, str]] = []
         for opt_key in event.get("option_keys", []):
-            opt_title_key = f"{loc_key}.pages.INITIAL.options.{opt_key}.title"
-            opt_desc_key = f"{loc_key}.pages.INITIAL.options.{opt_key}.description"
-            opt_title = loc_data.get(opt_title_key, opt_key)
-            opt_desc = loc_data.get(opt_desc_key, "")
-            options.append({"title": opt_title, "description": opt_desc})
+            # Skip DYNAMIC_ placeholders
+            if opt_key.startswith("DYNAMIC_"):
+                continue
+
+            opt_title = opt_key
+            opt_desc = ""
+
+            # Try INITIAL page first
+            initial_title_key = f"{loc_key}.pages.INITIAL.options.{opt_key}.title"
+            if initial_title_key in loc_data:
+                opt_title = loc_data[initial_title_key]
+                opt_desc = loc_data.get(
+                    f"{loc_key}.pages.INITIAL.options.{opt_key}.description", ""
+                )
+            else:
+                # Search all pages for this option key
+                suffix = f".options.{opt_key}.title"
+                for lk, lv in loc_data.items():
+                    if lk.startswith(f"{loc_key}.pages.") and lk.endswith(suffix):
+                        opt_title = lv
+                        desc_key = lk.replace(".title", ".description")
+                        opt_desc = loc_data.get(desc_key, "")
+                        break
+
+            options.append(
+                {
+                    "title": resolve_vars_in_text(opt_title, string_vars),
+                    "description": resolve_vars_in_text(opt_desc, string_vars),
+                }
+            )
         event["options"] = options
 
         # Remove the intermediate option_keys from output

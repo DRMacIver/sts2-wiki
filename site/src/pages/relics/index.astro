@@ -1,19 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { cleanDescription } from '../../utils';
 
-const allRelics = await getCollection('relics');
+const allRelics = (await getCollection('relics'))
+  .filter(r => r.data.rarity !== 'None');
 const relics = allRelics.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 const rarities = ['Starter', 'Common', 'Uncommon', 'Rare', 'Shop', 'Event', 'Ancient'];
 ---
 
 <BaseLayout title="Relics">
-  <h1>Relics</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{relics.length} relics</p>
+  <div class="page-header">
+    <h1>Relics</h1>
+    <p class="subtitle">{relics.length} relics</p>
+  </div>
 
   <div class="filters">
-    <strong style="align-self: center;">Rarity:</strong>
+    <span class="filter-label">Rarity</span>
     {rarities.map(r => (
       <button class="filter-btn" data-filter="rarity" data-value={r}>{r}</button>
     ))}
@@ -27,14 +31,17 @@ const rarities = ['Starter', 'Common', 'Uncommon', 'Rare', 'Shop', 'Event', 'Anc
          style="display: flex; gap: 0.75rem; align-items: flex-start;">
         <img
           src={`${import.meta.env.BASE_URL}images/relic_atlas/${relic.data.image}.png`}
-          alt="" style="width: 40px; height: 40px; flex-shrink: 0; image-rendering: pixelated;"
+          alt="" class="item-icon"
           onerror="this.style.display='none'" loading="lazy" />
         <div>
           <h3 style="margin: 0;">
             <span class={`rarity-${relic.data.rarity.toLowerCase()}`}>{relic.data.title}</span>
           </h3>
-          <div class="card-meta">{relic.data.rarity}{relic.data.pool && relic.data.pool !== 'Shared' && relic.data.pool !== 'Unknown' ? ` · ${relic.data.pool}` : ''}</div>
-          <div set:html={relic.data.description_html || relic.data.description_plain} style="font-size: 0.9rem;" />
+          <div class="card-meta">
+            {relic.data.rarity}
+            {relic.data.pool && relic.data.pool !== 'Shared' && relic.data.pool !== 'Unknown' ? ` · ${relic.data.pool}` : ''}
+          </div>
+          <div class="desc-text" style="font-size: 0.85rem; margin-top: 0.25rem;" set:html={cleanDescription(relic.data.description_html || relic.data.description_plain)} />
         </div>
       </a>
     ))}
@@ -42,7 +49,7 @@ const rarities = ['Starter', 'Common', 'Uncommon', 'Rare', 'Shop', 'Event', 'Anc
 
   <script>
     const buttons = document.querySelectorAll('.filter-btn');
-    const items = document.querySelectorAll('.card-entry');
+    const items = document.querySelectorAll('#relic-grid .card-entry');
     const activeFilters: Record<string, string | null> = {};
 
     buttons.forEach(btn => {

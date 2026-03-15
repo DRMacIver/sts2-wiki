@@ -41,6 +41,12 @@ def generate_card_markdown(card: dict) -> str:
     lines.append(f"x_cost: {str(card.get('x_cost', False)).lower()}")
     lines.append(f"pool: {escape_yaml(card.get('character', ''))}")
 
+    # Star cost (Regent cards)
+    if "star_cost" in card:
+        lines.append(f"star_cost: {card['star_cost']}")
+    if card.get("x_star_cost"):
+        lines.append("x_star_cost: true")
+
     # Keywords
     keywords = card.get("keywords", [])
     lines.append(f"keywords: {json.dumps(keywords)}")

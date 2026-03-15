@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { cleanDescription } from '../../utils';
 
 export async function getStaticPaths() {
   const relics = await getCollection('relics');
@@ -15,35 +16,36 @@ const { relic } = Astro.props;
 
 <BaseLayout title={relic.data.title}>
   <div class="card-detail">
+    <a href={`${import.meta.env.BASE_URL}relics/`} class="back-link">&larr; All Relics</a>
+
     <div class="card-header">
-      <a href={`${import.meta.env.BASE_URL}relics/`} style="font-size: 0.85rem;">&larr; All Relics</a>
-      <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+      <div class="item-row" style="align-items: center; margin-top: 0.5rem;">
         <img
           src={`${import.meta.env.BASE_URL}images/relic_atlas/${relic.data.image}.png`}
           alt={relic.data.title}
-          style="width: 64px; height: 64px; image-rendering: pixelated;"
+          class="item-icon-lg"
           onerror="this.style.display='none'" />
         <div>
-          <h1 style="margin: 0;">{relic.data.title}</h1>
-          <div class="card-meta">
+          <h1>{relic.data.title}</h1>
+          <div class="card-meta" style="font-size: 0.9rem;">
             <span class={`rarity-${relic.data.rarity.toLowerCase()}`}>{relic.data.rarity}</span>
             {relic.data.pool && relic.data.pool !== 'Shared' && relic.data.pool !== 'Unknown' && (
-              <> &middot; {relic.data.pool}</>
+              <> · {relic.data.pool}</>
             )}
           </div>
         </div>
       </div>
     </div>
 
-    <h2 style="margin-top: 1.5rem;">Description</h2>
-    <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={relic.data.description_html || relic.data.description_plain} />
+    <h2 class="section-heading">Description</h2>
+    <div class="desc-text" style="font-size: 1.05rem;" set:html={cleanDescription(relic.data.description_html || relic.data.description_plain)} />
 
     {relic.data.flavor && (
-      <p style="margin-top: 1rem; color: var(--text-muted); font-style: italic;">{relic.data.flavor}</p>
+      <p class="flavor">{relic.data.flavor}</p>
     )}
 
     <table class="stat-table" style="margin-top: 1.5rem;">
-      <tr><th>Rarity</th><td>{relic.data.rarity}</td></tr>
+      <tr><th>Rarity</th><td><span class={`rarity-${relic.data.rarity.toLowerCase()}`}>{relic.data.rarity}</span></td></tr>
       {relic.data.character && (
         <tr><th>Character</th><td>{relic.data.character} only</td></tr>
       )}

@@ -29,6 +29,8 @@ const cards = defineCollection({
       slug: z.string(),
     })).default([]),
     x_cost: z.boolean().default(false),
+    star_cost: z.number().optional(),
+    x_star_cost: z.boolean().optional(),
     pool: z.string().default(''),
     unlocked_by: z.string().optional(),
   }),

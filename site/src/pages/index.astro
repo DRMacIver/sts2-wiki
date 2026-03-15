@@ -1,48 +1,68 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const isDeprecated = (item: { data: { class_name: string } }) =>
+  item.data.class_name.includes('Deprecated');
+
+const cards = await getCollection('cards');
+const relics = await getCollection('relics');
+const potions = (await getCollection('potions')).filter(p => !isDeprecated(p));
+const powers = await getCollection('powers');
+const testMonsters = new Set(['BigDummy', 'MultiAttackMoveMonster', 'OneHpMonster', 'SingleAttackMoveMonster', 'TenHpMonster', 'TestSubject']);
+const monsters = (await getCollection('monsters')).filter(m => !testMonsters.has(m.data.class_name));
+const encounters = (await getCollection('encounters')).filter(e => !isDeprecated(e));
+const events = (await getCollection('events')).filter(e => !isDeprecated(e));
+const ancients = await getCollection('ancients');
+const epochs = await getCollection('epochs');
+
+const sections = [
+  { href: 'cards/', label: 'Cards', count: cards.length, desc: 'All playable cards by character, type, and rarity' },
+  { href: 'relics/', label: 'Relics', count: relics.length, desc: 'Passive items with icons and descriptions' },
+  { href: 'potions/', label: 'Potions', count: potions.length, desc: 'Consumable items with effects' },
+  { href: 'powers/', label: 'Effects', count: powers.length, desc: 'Buffs and debuffs applied in combat' },
+  { href: 'monsters/', label: 'Monsters', count: monsters.length, desc: 'Enemies and companions with movesets' },
+  { href: 'encounters/', label: 'Encounters', count: encounters.length, desc: 'Combat encounters across all acts' },
+  { href: 'events/', label: 'Events', count: events.length, desc: 'Random events with choices' },
+  { href: 'ancients/', label: 'Ancients', count: ancients.length, desc: 'Ancient lords with relic offerings' },
+  { href: 'epochs/', label: 'Epochs', count: epochs.length, desc: 'Unlock progression milestones' },
+];
+
+const characters = ['Ironclad', 'Silent', 'Defect', 'Necrobinder', 'Regent'];
+const charCounts = characters.map(ch => ({
+  name: ch,
+  cards: cards.filter(c => c.data.character === ch).length,
+}));
 ---
 
 <BaseLayout title="Home">
-  <h1>Slay the Spire 2 Wiki</h1>
-  <p style="margin-top: 1rem; color: var(--text-muted);">
-    An unofficial wiki generated from decompiled game data (v0.98.2).
-  </p>
-  <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;">
-    <a href={`${import.meta.env.BASE_URL}cards/`} class="card-entry" style="display: block;">
-      <h3>Cards</h3>
-      <p class="card-meta">575 cards by character, type, and rarity</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}powers/`} class="card-entry" style="display: block;">
-      <h3>Effects</h3>
-      <p class="card-meta">241 buffs and debuffs</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}relics/`} class="card-entry" style="display: block;">
-      <h3>Relics</h3>
-      <p class="card-meta">288 relics with icons and descriptions</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}potions/`} class="card-entry" style="display: block;">
-      <h3>Potions</h3>
-      <p class="card-meta">64 potions with icons and descriptions</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}monsters/`} class="card-entry" style="display: block;">
-      <h3>Monsters</h3>
-      <p class="card-meta">117 monsters with movesets and HP</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}encounters/`} class="card-entry" style="display: block;">
-      <h3>Encounters</h3>
-      <p class="card-meta">88 encounters across 4 acts</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}events/`} class="card-entry" style="display: block;">
-      <h3>Events</h3>
-      <p class="card-meta">59 random events with options</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}ancients/`} class="card-entry" style="display: block;">
-      <h3>Ancients</h3>
-      <p class="card-meta">8 ancients with relic offerings</p>
-    </a>
-    <a href={`${import.meta.env.BASE_URL}epochs/`} class="card-entry" style="display: block;">
-      <h3>Epochs</h3>
-      <p class="card-meta">57 unlock progression milestones</p>
-    </a>
+  <div class="hero">
+    <h1>Slay the Spire 2</h1>
+    <p class="tagline">
+      Unofficial reference wiki — {cards.length} cards, {relics.length} relics,
+      {monsters.length} monsters, and more from game data v0.98.2
+    </p>
+  </div>
+
+  <div class="home-grid">
+    {sections.map(s => (
+      <a href={`${import.meta.env.BASE_URL}${s.href}`} class="home-card">
+        <h3>{s.label}</h3>
+        <div class="count">{s.count}</div>
+        <p class="card-meta" style="margin-top: 0.5rem;">{s.desc}</p>
+      </a>
+    ))}
+  </div>
+
+  <h2 style="margin-top: 3rem; text-align: center;">Characters</h2>
+  <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
+    {charCounts.map(ch => (
+      <a href={`${import.meta.env.BASE_URL}cards/?character=${ch.name}`}
+         class="card-entry"
+         style="text-align: center; min-width: 130px;">
+        <h3 class={`char-${ch.name.toLowerCase()}`}>{ch.name}</h3>
+        <div class="card-meta">{ch.cards} cards</div>
+      </a>
+    ))}
   </div>
 </BaseLayout>

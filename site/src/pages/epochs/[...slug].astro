@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { processBBCode, cleanDescription } from '../../utils';
 
 export async function getStaticPaths() {
   const epochs = await getCollection('epochs');
@@ -15,19 +16,23 @@ const { epoch } = Astro.props;
 
 <BaseLayout title={epoch.data.title}>
   <div class="card-detail">
+    <a href={`${import.meta.env.BASE_URL}epochs/`} class="back-link">&larr; All Epochs</a>
+
     <div class="card-header">
-      <a href={`${import.meta.env.BASE_URL}epochs/`} style="font-size: 0.85rem;">&larr; All Epochs</a>
-      <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-top: 0.5rem;">
+      <div class="item-row" style="margin-top: 0.5rem;">
         <img
           src={`${import.meta.env.BASE_URL}images/epoch_atlas/${epoch.data.image}.png`}
           alt={epoch.data.title}
-          style="width: 200px; border-radius: 6px; flex-shrink: 0;"
+          style="width: 200px; border-radius: var(--radius); flex-shrink: 0;"
           onerror="this.style.display='none'" />
         <div>
-          <h1 style="margin: 0;">{epoch.data.title}</h1>
-          <div class="card-meta">{epoch.data.story} &middot; {epoch.data.era} &middot; Position {epoch.data.era_position}</div>
+          <h1>{epoch.data.title}</h1>
+          <div class="card-meta" style="font-size: 0.9rem;">
+            <span class={`char-${epoch.data.story.toLowerCase()}`}>{epoch.data.story}</span>
+            · {epoch.data.era} · Position {epoch.data.era_position}
+          </div>
           {epoch.data.description_html && (
-            <div style="margin-top: 0.75rem;" set:html={epoch.data.description_html} />
+            <div class="desc-text" style="margin-top: 0.75rem;" set:html={cleanDescription(processBBCode(epoch.data.description_html))} />
           )}
         </div>
       </div>
@@ -35,8 +40,8 @@ const { epoch } = Astro.props;
 
     {epoch.data.unlocks_cards.length > 0 && (
       <>
-        <h2 style="margin-top: 1.5rem;">Unlocked Cards</h2>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <h2 class="section-heading">Unlocked Cards</h2>
+        <ul class="linked-list">
           {epoch.data.unlocks_cards.map(card => {
             const title = typeof card === 'string' ? card : card.title;
             const slug = typeof card === 'string' ? card.toLowerCase() : card.slug;
@@ -48,8 +53,8 @@ const { epoch } = Astro.props;
 
     {epoch.data.unlocks_relics.length > 0 && (
       <>
-        <h2 style="margin-top: 1.5rem;">Unlocked Relics</h2>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <h2 class="section-heading">Unlocked Relics</h2>
+        <ul class="linked-list">
           {epoch.data.unlocks_relics.map(relic => {
             const title = typeof relic === 'string' ? relic : relic.title;
             const slug = typeof relic === 'string' ? relic.toLowerCase() : relic.slug;
@@ -61,8 +66,8 @@ const { epoch } = Astro.props;
 
     {epoch.data.unlocks_events.length > 0 && (
       <>
-        <h2 style="margin-top: 1.5rem;">Unlocked Events</h2>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <h2 class="section-heading">Unlocked Events</h2>
+        <ul class="linked-list">
           {epoch.data.unlocks_events.map(event => (
             <li>{event}</li>
           ))}
@@ -72,8 +77,8 @@ const { epoch } = Astro.props;
 
     {epoch.data.unlocks_encounters.length > 0 && (
       <>
-        <h2 style="margin-top: 1.5rem;">Unlocked Encounters</h2>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <h2 class="section-heading">Unlocked Encounters</h2>
+        <ul class="linked-list">
           {epoch.data.unlocks_encounters.map(enc => (
             <li>{enc}</li>
           ))}

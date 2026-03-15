@@ -4,6 +4,19 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const navItems = [
+  { href: 'cards/', label: 'Cards' },
+  { href: 'relics/', label: 'Relics' },
+  { href: 'potions/', label: 'Potions' },
+  { href: 'powers/', label: 'Effects' },
+  { href: 'monsters/', label: 'Monsters' },
+  { href: 'encounters/', label: 'Encounters' },
+  { href: 'events/', label: 'Events' },
+  { href: 'ancients/', label: 'Ancients' },
+  { href: 'epochs/', label: 'Epochs' },
+];
 ---
 
 <!doctype html>
@@ -11,24 +24,89 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} - STS2 Wiki</title>
-    <link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles/global.css`} />
+    <title>{title} — STS2 Wiki</title>
+    <link rel="stylesheet" href={`${base}styles/global.css`} />
+    <meta name="description" content="Unofficial Slay the Spire 2 wiki — cards, relics, potions, monsters, and more from decompiled game data." />
   </head>
   <body>
-    <nav style="background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 0.75rem 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
-      <a href={import.meta.env.BASE_URL} style="font-weight: 700; font-size: 1.1rem;">STS2 Wiki</a>
-      <a href={`${import.meta.env.BASE_URL}cards/`}>Cards</a>
-      <a href={`${import.meta.env.BASE_URL}powers/`}>Effects</a>
-      <a href={`${import.meta.env.BASE_URL}relics/`}>Relics</a>
-      <a href={`${import.meta.env.BASE_URL}potions/`}>Potions</a>
-      <a href={`${import.meta.env.BASE_URL}monsters/`}>Monsters</a>
-      <a href={`${import.meta.env.BASE_URL}encounters/`}>Encounters</a>
-      <a href={`${import.meta.env.BASE_URL}events/`}>Events</a>
-      <a href={`${import.meta.env.BASE_URL}ancients/`}>Ancients</a>
-      <a href={`${import.meta.env.BASE_URL}epochs/`}>Epochs</a>
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href={base} class="nav-brand">STS2 Wiki</a>
+        <div class="nav-links">
+          {navItems.map(item => (
+            <a href={`${base}${item.href}`}>{item.label}</a>
+          ))}
+        </div>
+        <div class="search-box">
+          <input type="text" id="site-search" placeholder="Search..." autocomplete="off" />
+          <div class="search-results" id="search-results"></div>
+        </div>
+      </div>
     </nav>
-    <main style="max-width: 1200px; margin: 0 auto; padding: 1.5rem;">
+    <main class="site-main">
       <slot />
     </main>
+    <footer class="site-footer">
+      Unofficial wiki generated from decompiled game data (v0.98.2).
+      Not affiliated with Mega Crit Games.
+    </footer>
+
+    <script define:vars={{ base }}>
+      // Simple client-side search index (built from nav page titles)
+      const searchInput = document.getElementById('site-search');
+      const searchResults = document.getElementById('search-results');
+      let searchIndex = null;
+
+      async function loadSearchIndex() {
+        if (searchIndex) return searchIndex;
+        try {
+          const resp = await fetch(`${base}search-index.json`);
+          searchIndex = await resp.json();
+          return searchIndex;
+        } catch {
+          return [];
+        }
+      }
+
+      if (searchInput && searchResults) {
+        let debounce;
+        searchInput.addEventListener('input', () => {
+          clearTimeout(debounce);
+          debounce = setTimeout(async () => {
+            const query = searchInput.value.trim().toLowerCase();
+            if (query.length < 2) {
+              searchResults.classList.remove('active');
+              return;
+            }
+            const index = await loadSearchIndex();
+            const matches = index.filter(item =>
+              item.title.toLowerCase().includes(query)
+            ).slice(0, 12);
+
+            if (matches.length === 0) {
+              searchResults.innerHTML = '<div style="padding: 0.75rem 1rem; color: var(--text-muted); font-size: 0.85rem;">No results</div>';
+            } else {
+              searchResults.innerHTML = matches.map(m =>
+                `<a href="${m.url}"><span>${m.title}</span><span class="search-type">${m.type}</span></a>`
+              ).join('');
+            }
+            searchResults.classList.add('active');
+          }, 150);
+        });
+
+        searchInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            searchResults.classList.remove('active');
+            searchInput.blur();
+          }
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.remove('active');
+          }
+        });
+      }
+    </script>
   </body>
 </html>

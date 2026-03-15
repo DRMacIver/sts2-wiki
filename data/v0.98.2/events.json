@@ -15,11 +15,11 @@
         "description": "Heal [green]{Heal}[/green] HP."
       },
       {
-        "title": "LINGER",
-        "description": ""
+        "title": "Linger",
+        "description": "Gain [green]{MaxHp}[/green] Max HP. Take [red]{Damage}[/red] damage."
       },
       {
-        "title": "EXIT_BATHS",
+        "title": "Exit Baths",
         "description": ""
       }
     ],
@@ -33,7 +33,16 @@
     "loc_key": "AMALGAMATOR",
     "title": "Amalgamator",
     "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in\u2014the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \u201cface\u201d is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\u201cOne with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\u201d",
-    "options": [],
+    "options": [
+      {
+        "title": "Combine Strikes",
+        "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+      },
+      {
+        "title": "Combine Defends",
+        "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
+      }
+    ],
     "acts": [
       "Hive"
     ]
@@ -91,11 +100,11 @@
     "options": [
       {
         "title": "Share Knowledge",
-        "description": "Choose [blue]{CardChoiceCount}[/blue] of [blue]{FromCardChoiceCount}[/blue] random cards to add to your [gold]Deck[/gold]."
+        "description": "Choose [blue]1[/blue] of [blue]5[/blue] random cards to add to your [gold]Deck[/gold]."
       },
       {
         "title": "Rip the Leech Off",
-        "description": "Lose [red]{RipHpLoss}[/red] HP. Gain a Colorless card reward."
+        "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
       }
     ],
     "acts": []
@@ -109,11 +118,11 @@
     "options": [
       {
         "title": "Learn Extermination Technique",
-        "description": "Add [gold]{Card1}[/gold] to your [gold]Deck[/gold]."
+        "description": "Add [gold]Exterminate[/gold] to your [gold]Deck[/gold]."
       },
       {
         "title": "Learn Squash Technique",
-        "description": "Add [gold]{Card2}[/gold] to your [gold]Deck[/gold]."
+        "description": "Add [gold]Squash[/gold] to your [gold]Deck[/gold]."
       }
     ],
     "acts": [
@@ -133,7 +142,7 @@
       },
       {
         "title": "Take the Egg",
-        "description": "Add [gold]{Card}[/gold] to your [gold]Deck[/gold]."
+        "description": "Add [gold]Byrdonis Egg[/gold] to your [gold]Deck[/gold]."
       }
     ],
     "acts": [
@@ -169,12 +178,12 @@
         "description": ""
       },
       {
-        "title": "EXTRACT_INSTEAD",
-        "description": ""
+        "title": "Extract Nectar",
+        "description": "Gain [blue]{Prize3}[/blue] [gold]Gold[/gold]."
       },
       {
-        "title": "POLLINOUS_CORE",
-        "description": ""
+        "title": "Enter the Center",
+        "description": "Lose [red]7[/red] HP. Obtain [gold]Pollinous Core[/gold]."
       }
     ],
     "acts": [
@@ -196,7 +205,7 @@
       },
       {
         "title": "Payment Plan",
-        "description": "Gain a [red]{CurseTitle}[/red]. [purple]Divine[/purple] [blue]{PaymentPlanCount}[/blue] times."
+        "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]{PaymentPlanCount}[/blue] times."
       }
     ],
     "acts": []
@@ -217,7 +226,7 @@
         "description": "Heal [green]{Heal}[/green] HP. Fight some [red]enemies[/red]."
       },
       {
-        "title": "FIGHT",
+        "title": "Fight!",
         "description": ""
       }
     ],
@@ -247,11 +256,11 @@
       },
       {
         "title": "Take Some Time",
-        "description": "Lose [red]{TakeTimeHpLoss}[/red] HP. Choose [blue]1[/blue] of [blue]2[/blue] [gold]Doll Relics[/gold]."
+        "description": "Lose [red]5[/red] HP. Choose [blue]1[/blue] of [blue]2[/blue] [gold]Doll Relics[/gold]."
       },
       {
         "title": "Examine Each and Make the Best Choice",
-        "description": "Lose [red]{ExamineHpLoss}[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
+        "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
       }
     ],
     "acts": []
@@ -310,12 +319,12 @@
         "description": "[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold]."
       },
       {
-        "title": "LEAVE",
+        "title": "Leave",
         "description": ""
       },
       {
-        "title": "LOCKED",
-        "description": ""
+        "title": "Broke",
+        "description": "You could eat more but you are out of [gold]Gold[/gold]."
       }
     ],
     "acts": [
@@ -342,7 +351,7 @@
     "options": [
       {
         "title": "Resist",
-        "description": "Remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. Add [red]{ResistCurse}[/red] to your [gold]Deck[/gold]."
+        "description": "Remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
       },
       {
         "title": "Enter Your Hole",
@@ -366,7 +375,7 @@
       },
       {
         "title": "Confront with Truth",
-        "description": "Add [red]{Curse}[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]{Enchantment}[/purple]."
+        "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]{Enchantment}[/purple]."
       },
       {
         "title": "Accept the {Relic}",
@@ -383,7 +392,16 @@
     "loc_key": "HUNGRY_FOR_MUSHROOMS",
     "title": "Hungry for Mushrooms",
     "description": "[sine]How long has it been since you ate?\n...wait, what's that fantastic smell?[/sine]\n\nFollowing the scent, you reach a cozy campground with all manner of [green]tasty mushrooms[/green] being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\n(So hungry that you don't notice the dead adventurer)",
-    "options": [],
+    "options": [
+      {
+        "title": "BigMushroom",
+        "description": ""
+      },
+      {
+        "title": "FragrantMushroom",
+        "description": ""
+      }
+    ],
     "acts": [
       "Glory"
     ]
@@ -417,7 +435,7 @@
     "options": [
       {
         "title": "Solo Quest",
-        "description": "Gain [blue]{SoloGold}[/blue] [gold]Gold[/gold]. Lose [red]{SoloHp}[/red] HP."
+        "description": "Gain [blue]{SoloGold}[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
       },
       {
         "title": "Join Forces",
@@ -437,7 +455,7 @@
     "options": [
       {
         "title": "Capture the Wisp",
-        "description": "Add [red]{Curse}[/red] to your [gold]Deck[/gold]. Obtain the [gold]{Relic}[/gold]."
+        "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]{Relic}[/gold]."
       },
       {
         "title": "Search the Nearby Area",
@@ -528,7 +546,7 @@
         "description": "Fight them for [gold]Greater Rewards[/gold]."
       },
       {
-        "title": "FIGHT",
+        "title": "Fight",
         "description": ""
       }
     ],
@@ -544,7 +562,7 @@
     "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\u201cWe meet once more... it's me, Ranwid!\u201d[/sine]\n\nYou do not know this man.",
     "options": [
       {
-        "title": "Give {Potion}",
+        "title": "Give Potion",
         "description": "Obtain a random [gold]Relic[/gold]."
       },
       {
@@ -556,7 +574,7 @@
         "description": "Obtain a random [gold]Relic[/gold]."
       },
       {
-        "title": "Give {Relic}",
+        "title": "Give Relic",
         "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
       },
       {
@@ -642,7 +660,7 @@
         "description": "Lose [red]{Damage}[/red] HP. Obtain a random [gold]Relic[/gold]."
       },
       {
-        "title": "CONTINUE_FIGHT",
+        "title": "Continue",
         "description": ""
       }
     ],
@@ -679,7 +697,7 @@
     "options": [
       {
         "title": "Read the Back",
-        "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]{Enchantment1}[/purple] [blue]{Enchantment1Amount}[/blue]."
+        "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]{Enchantment1}[/purple] [blue]2[/blue]."
       },
       {
         "title": "Locked",
@@ -687,7 +705,7 @@
       },
       {
         "title": "Read a Random Passage",
-        "description": "Choose a Skill to [gold]Enchant[/gold] with [purple]{Enchantment2}[/purple] [blue]{Enchantment2Amount}[/blue]."
+        "description": "Choose a Skill to [gold]Enchant[/gold] with [purple]{Enchantment2}[/purple] [blue]2[/blue]."
       },
       {
         "title": "Locked",
@@ -695,7 +713,7 @@
       },
       {
         "title": "Read the Entire Book",
-        "description": "Choose a Power to [gold]Enchant[/gold] with [purple]{Enchantment3}[/purple] [blue]{Enchantment3Amount}[/blue]."
+        "description": "Choose a Power to [gold]Enchant[/gold] with [purple]{Enchantment3}[/purple] [blue]2[/blue]."
       },
       {
         "title": "Locked",
@@ -873,12 +891,12 @@
         "description": "Heal [green]{SmashHPGain}[/green] HP."
       },
       {
-        "title": "DECIPHER",
-        "description": ""
+        "title": "Continue Deciphering",
+        "description": "Lose [red]{DecipherMaxHpLoss}[/red] Max HP. [gold]Upgrade[/gold] a random card."
       },
       {
-        "title": "GIVE_UP",
-        "description": ""
+        "title": "Give Up",
+        "description": "Stop reading the text and leave."
       }
     ],
     "acts": [
@@ -957,7 +975,7 @@
         "description": "Fight to obtain the Key."
       },
       {
-        "title": "FIGHT",
+        "title": "Fight",
         "description": ""
       }
     ],
@@ -998,7 +1016,7 @@
       },
       {
         "title": "That",
-        "description": "Add [red]{Curse}[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+        "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
       }
     ],
     "acts": []
@@ -1015,16 +1033,16 @@
         "description": "Create a custom card to add to your [gold]Deck[/gold]."
       },
       {
-        "title": "ATTACK",
-        "description": ""
+        "title": "Weapon",
+        "description": "Make an Attack."
       },
       {
-        "title": "SKILL",
-        "description": ""
+        "title": "Protector",
+        "description": "Make a Skill."
       },
       {
-        "title": "POWER",
-        "description": ""
+        "title": "Gadget",
+        "description": "Make a Power."
       }
     ],
     "acts": [
@@ -1069,16 +1087,16 @@
         "description": "[red]You are not allowed to Reject.[/red]"
       },
       {
-        "title": "GUILTY",
-        "description": ""
+        "title": "DECIDE: Guilty",
+        "description": "Add [red]Regret[/red] to your [gold]Deck[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
       },
       {
-        "title": "INNOCENT",
-        "description": ""
+        "title": "DECIDE: Innocent",
+        "description": "Add [red]Shame[/red] to your [gold]Deck[/gold]. [gold]Upgrade[/gold] [blue]2[/blue] cards."
       },
       {
-        "title": "DOUBLE_DOWN",
-        "description": ""
+        "title": "Double Down",
+        "description": "[red]Face lethal repercussions.[/red]"
       }
     ],
     "acts": [
@@ -1254,11 +1272,11 @@
       },
       {
         "title": "Bird",
-        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]{BirdCard}[/gold]."
+        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
       },
       {
         "title": "Torus",
-        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]{ToricCard}[/gold]."
+        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Toric Toughness[/gold]."
       }
     ],
     "acts": [

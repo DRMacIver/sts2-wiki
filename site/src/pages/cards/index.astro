@@ -1,74 +1,102 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { cleanDescription, charClass } from '../../utils';
 
 const allCards = await getCollection('cards');
 const cards = allCards.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
-const characters = [...new Set(cards.map(c => c.data.character))].sort();
+const playableChars = ['Ironclad', 'Silent', 'Defect', 'Necrobinder', 'Regent'];
+const otherPools = [...new Set(cards.map(c => c.data.character).filter(c => !playableChars.includes(c)))].sort();
 const types = [...new Set(cards.map(c => c.data.type))].sort();
-const rarities = ['Basic', 'Common', 'Uncommon', 'Rare'];
+const rarities = [...new Set(cards.map(c => c.data.rarity))].sort();
 ---
 
 <BaseLayout title="Cards">
-  <h1>Cards</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{cards.length} cards</p>
+  <div class="page-header">
+    <h1>Cards</h1>
+    <p class="subtitle">{cards.length} cards</p>
+  </div>
 
   <div class="filters">
-    <strong style="align-self: center;">Character:</strong>
-    {characters.map(ch => (
+    <span class="filter-label">Character</span>
+    {playableChars.map(ch => (
+      <button class="filter-btn" data-filter="character" data-value={ch}>{ch}</button>
+    ))}
+    {otherPools.map(ch => (
       <button class="filter-btn" data-filter="character" data-value={ch}>{ch}</button>
     ))}
   </div>
   <div class="filters">
-    <strong style="align-self: center;">Type:</strong>
+    <span class="filter-label">Type</span>
     {types.map(t => (
       <button class="filter-btn" data-filter="type" data-value={t}>{t}</button>
     ))}
   </div>
   <div class="filters">
-    <strong style="align-self: center;">Rarity:</strong>
+    <span class="filter-label">Rarity</span>
     {rarities.map(r => (
       <button class="filter-btn" data-filter="rarity" data-value={r}>{r}</button>
     ))}
   </div>
 
   <div class="card-grid" id="card-grid">
-    {cards.map(card => (
-      <a href={`${import.meta.env.BASE_URL}cards/${card.id}/`}
-         class="card-entry"
-         data-character={card.data.character}
-         data-type={card.data.type}
-         data-rarity={card.data.rarity}
-         style="display: flex; gap: 0.75rem;">
-        <img
-          src={`${import.meta.env.BASE_URL}images/card_atlas/${card.data.character.toLowerCase()}/${card.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}.png`}
-          alt="" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0;"
-          onerror={`this.onerror=()=>{this.style.display='none'};this.src='${import.meta.env.BASE_URL}images/card_atlas/${card.data.character.toLowerCase()}/beta/${card.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}.png'`}
-          loading="lazy" />
-        <div>
-        <h3 style="margin: 0;">
-          <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.title}</span>
-          {card.data.x_cost
-            ? <span class="card-meta"> X</span>
-            : card.data.energy_cost >= 0
-              ? <span class="card-meta"> {card.data.energy_cost}</span>
-              : <span class="card-meta"> -</span>
-          }
-        </h3>
-        <div class="card-meta">
-          {card.data.character} &middot; {card.data.type} &middot; {card.data.rarity}
-        </div>
-        <div set:html={card.data.description_html || card.data.description_plain} />
-        </div>
-      </a>
-    ))}
+    {cards.map(card => {
+      const charDir = card.data.character.toLowerCase();
+      const cardFileName = card.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase();
+      const hasStarCost = card.data.star_cost != null || card.data.x_star_cost;
+      return (
+        <a href={`${import.meta.env.BASE_URL}cards/${card.id}/`}
+           class="card-entry card-list-entry"
+           data-character={card.data.character}
+           data-type={card.data.type}
+           data-rarity={card.data.rarity}>
+          <div class="card-list-costs">
+            {card.data.x_cost
+              ? <span class="energy-cost">X</span>
+              : card.data.energy_cost >= 0
+                ? <span class="energy-cost">{card.data.energy_cost}</span>
+                : <span class="energy-cost energy-cost-none">-</span>
+            }
+            {hasStarCost && (
+              <span class="star-cost">
+                {card.data.x_star_cost ? 'X' : card.data.star_cost}
+              </span>
+            )}
+          </div>
+          <img
+            src={`${import.meta.env.BASE_URL}images/card_atlas/${charDir}/${cardFileName}.png`}
+            alt="" class="card-list-art"
+            onerror={`this.onerror=()=>{this.style.display='none'};this.src='${import.meta.env.BASE_URL}images/card_atlas/${charDir}/beta/${cardFileName}.png'`}
+            loading="lazy" />
+          <div class="card-list-info">
+            <h3 class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.title}</h3>
+            <div class="card-meta">
+              <span class={charClass(card.data.character)}>{card.data.character}</span> · {card.data.type}
+            </div>
+            <div class="desc-text" style="font-size: 0.82rem; margin-top: 0.2rem; line-height: 1.4;" set:html={cleanDescription(card.data.description_html || card.data.description_plain)} />
+          </div>
+        </a>
+      );
+    })}
   </div>
 
   <script>
     const buttons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.card-entry');
+    const cards = document.querySelectorAll('#card-grid .card-entry');
     const activeFilters: Record<string, string | null> = {};
+
+    // Check URL params for initial filter
+    const params = new URLSearchParams(window.location.search);
+    const charParam = params.get('character');
+    if (charParam) {
+      activeFilters['character'] = charParam;
+      document.querySelectorAll(`[data-filter="character"][data-value="${charParam}"]`).forEach(b => b.classList.add('active'));
+      cards.forEach(card => {
+        const el = card as HTMLElement;
+        if (el.dataset.character !== charParam) el.style.display = 'none';
+      });
+    }
 
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {

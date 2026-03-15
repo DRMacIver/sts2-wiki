@@ -12,6 +12,7 @@ dist/
 node_modules/
 site/dist/
 site/.astro/
+site/.claude/
 
 # Generated content (regenerated from data/ by `just generate`)
 site/src/content/cards/

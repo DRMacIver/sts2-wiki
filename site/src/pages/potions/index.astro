@@ -1,19 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { cleanDescription } from '../../utils';
 
-const allPotions = await getCollection('potions');
+const allPotions = (await getCollection('potions'))
+  .filter(p => !p.data.class_name.includes('Deprecated'));
 const potions = allPotions.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 const rarities = ['Common', 'Uncommon', 'Rare'];
 ---
 
 <BaseLayout title="Potions">
-  <h1>Potions</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{potions.length} potions</p>
+  <div class="page-header">
+    <h1>Potions</h1>
+    <p class="subtitle">{potions.length} potions</p>
+  </div>
 
   <div class="filters">
-    <strong style="align-self: center;">Rarity:</strong>
+    <span class="filter-label">Rarity</span>
     {rarities.map(r => (
       <button class="filter-btn" data-filter="rarity" data-value={r}>{r}</button>
     ))}
@@ -27,14 +31,14 @@ const rarities = ['Common', 'Uncommon', 'Rare'];
          style="display: flex; gap: 0.75rem; align-items: flex-start;">
         <img
           src={`${import.meta.env.BASE_URL}images/potion_atlas/${potion.data.image}.png`}
-          alt="" style="width: 40px; height: 40px; flex-shrink: 0; image-rendering: pixelated;"
+          alt="" class="item-icon"
           onerror="this.style.display='none'" loading="lazy" />
         <div>
           <h3 style="margin: 0;">
             <span class={`rarity-${potion.data.rarity.toLowerCase()}`}>{potion.data.title}</span>
           </h3>
-          <div class="card-meta">{potion.data.rarity} &middot; {potion.data.usage}</div>
-          <div set:html={potion.data.description_html || potion.data.description_plain} style="font-size: 0.9rem;" />
+          <div class="card-meta">{potion.data.rarity} · {potion.data.usage}</div>
+          <div class="desc-text" style="font-size: 0.85rem; margin-top: 0.25rem;" set:html={cleanDescription(potion.data.description_html || potion.data.description_plain)} />
         </div>
       </a>
     ))}
@@ -42,7 +46,7 @@ const rarities = ['Common', 'Uncommon', 'Rare'];
 
   <script>
     const buttons = document.querySelectorAll('.filter-btn');
-    const items = document.querySelectorAll('.card-entry');
+    const items = document.querySelectorAll('#potion-grid .card-entry');
     const activeFilters: Record<string, string | null> = {};
 
     buttons.forEach(btn => {

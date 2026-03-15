@@ -334,6 +334,7 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "star_cost": 2,
     "vars": [
       {
         "type": "Energy",
@@ -697,6 +698,7 @@
     "type": "Attack",
     "rarity": "Common",
     "target": "AllEnemies",
+    "star_cost": 3,
     "vars": [
       {
         "type": "Damage",
@@ -3067,6 +3069,7 @@
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "star_cost": 1,
     "vars": [
       {
         "type": "Block",
@@ -3213,6 +3216,7 @@
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "star_cost": 5,
     "vars": [
       {
         "type": "Damage",
@@ -3771,6 +3775,7 @@
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "star_cost": 1,
     "vars": [
       {
         "type": "ExtraDamage",
@@ -4440,6 +4445,7 @@
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "star_cost": 6,
     "keywords": [
       "Exhaust",
       "Unplayable"
@@ -4902,6 +4908,7 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "star_cost": 4,
     "vars": [
       {
         "type": "Damage",
@@ -5400,6 +5407,7 @@
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "star_cost": 3,
     "keywords": [
       "Ethereal"
     ],
@@ -6065,6 +6073,7 @@
     "type": "Attack",
     "rarity": "Basic",
     "target": "AnyEnemy",
+    "star_cost": 2,
     "vars": [
       {
         "type": "Damage",
@@ -7236,6 +7245,7 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "star_cost": 3,
     "vars": [
       {
         "type": "Damage",
@@ -7873,6 +7883,7 @@
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "star_cost": 2,
     "vars": [
       {
         "type": "Damage",
@@ -10307,6 +10318,7 @@
     "type": "Attack",
     "rarity": "Ancient",
     "target": "AllEnemies",
+    "star_cost": 2,
     "vars": [
       {
         "type": "Damage",
@@ -11022,6 +11034,7 @@
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "star_cost": 5,
     "vars": [
       {
         "type": "Plating",
@@ -11757,6 +11770,7 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "star_cost": 2,
     "vars": [
       {
         "type": "Block",
@@ -12769,6 +12783,7 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "star_cost": 2,
     "character": "Regent",
     "loc_key": "QUASAR",
     "title": "Quasar",
@@ -13197,6 +13212,7 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "star_cost": 3,
     "vars": [
       {
         "type": "Block",
@@ -13407,6 +13423,7 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AllEnemies",
+    "star_cost": 3,
     "vars": [
       {
         "type": "Strength",
@@ -13653,6 +13670,7 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "star_cost": 5,
     "keywords": [
       "Exhaust",
       "Retain"
@@ -14269,6 +14287,7 @@
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "star_cost": 7,
     "vars": [
       {
         "type": "Damage",
@@ -15641,6 +15660,7 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "RandomEnemy",
+    "x_star_cost": true,
     "vars": [
       {
         "type": "Damage",
@@ -16840,6 +16860,7 @@
     "type": "Power",
     "rarity": "Ancient",
     "target": "Self",
+    "star_cost": 3,
     "keywords": [
       "Innate"
     ],
@@ -16870,6 +16891,7 @@
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "star_cost": 4,
     "vars": [
       {
         "type": "Forge",

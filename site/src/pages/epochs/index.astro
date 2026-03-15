@@ -23,31 +23,41 @@ const sortedStories = Object.keys(byStory).sort((a, b) => {
 ---
 
 <BaseLayout title="Epochs">
-  <h1>Epochs</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{allEpochs.length} epochs — unlock progression</p>
+  <div class="page-header">
+    <h1>Epochs</h1>
+    <p class="subtitle">{allEpochs.length} unlock progression milestones</p>
+  </div>
 
   {sortedStories.map(story => (
     <>
-      <h2 style="margin-top: 1.5rem;">{story}</h2>
-      <div class="card-grid" style="margin-top: 0.5rem;">
-        {byStory[story].map(epoch => (
-          <a href={`${import.meta.env.BASE_URL}epochs/${epoch.id}/`} class="card-entry" style="display: flex; gap: 0.75rem;">
-            <img
-              src={`${import.meta.env.BASE_URL}images/epoch_atlas/${epoch.data.image}.png`}
-              alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0;"
-              onerror="this.style.display='none'" loading="lazy" />
-            <div>
-            <h3 style="margin: 0;">{epoch.data.title}</h3>
-            <div class="card-meta">{epoch.data.era} — Position {epoch.data.era_position}</div>
-            <div style="margin-top: 0.25rem; font-size: 0.85rem;">
-              {epoch.data.unlocks_cards.length > 0 && <span>{epoch.data.unlocks_cards.length} cards </span>}
-              {epoch.data.unlocks_relics.length > 0 && <span>{epoch.data.unlocks_relics.length} relics </span>}
-              {epoch.data.unlocks_events.length > 0 && <span>{epoch.data.unlocks_events.length} events </span>}
-              {epoch.data.unlocks_encounters.length > 0 && <span>{epoch.data.unlocks_encounters.length} encounters </span>}
-            </div>
-            </div>
-          </a>
-        ))}
+      <h2 style="margin-top: 2rem;">
+        <span class={`char-${story.toLowerCase()}`}>{story}</span>
+      </h2>
+      <div class="card-grid" style="margin-top: 0.75rem;">
+        {byStory[story].map(epoch => {
+          const unlockCount = epoch.data.unlocks_cards.length + epoch.data.unlocks_relics.length +
+            epoch.data.unlocks_events.length + epoch.data.unlocks_encounters.length;
+          return (
+            <a href={`${import.meta.env.BASE_URL}epochs/${epoch.id}/`} class="card-entry" style="display: flex; gap: 0.75rem;">
+              <img
+                src={`${import.meta.env.BASE_URL}images/epoch_atlas/${epoch.data.image}.png`}
+                alt="" style="width: 64px; height: 64px; object-fit: cover; border-radius: 4px; flex-shrink: 0;"
+                onerror="this.style.display='none'" loading="lazy" />
+              <div>
+                <h3 style="margin: 0; font-size: 0.95rem;">{epoch.data.title}</h3>
+                <div class="card-meta">{epoch.data.era} · Position {epoch.data.era_position}</div>
+                {unlockCount > 0 && (
+                  <div style="margin-top: 0.25rem; font-size: 0.8rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    {epoch.data.unlocks_cards.length > 0 && <span class="tag">{epoch.data.unlocks_cards.length} cards</span>}
+                    {epoch.data.unlocks_relics.length > 0 && <span class="tag">{epoch.data.unlocks_relics.length} relics</span>}
+                    {epoch.data.unlocks_events.length > 0 && <span class="tag">{epoch.data.unlocks_events.length} events</span>}
+                    {epoch.data.unlocks_encounters.length > 0 && <span class="tag">{epoch.data.unlocks_encounters.length} encounters</span>}
+                  </div>
+                )}
+              </div>
+            </a>
+          );
+        })}
       </div>
     </>
   ))}

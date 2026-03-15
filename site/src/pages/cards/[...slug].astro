@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { cleanDescription, charClass } from '../../utils';
 
 export async function getStaticPaths() {
   const cards = await getCollection('cards');
@@ -14,75 +15,76 @@ const { card } = Astro.props;
 const { Content } = await render(card);
 
 const costDisplay = card.data.x_cost ? 'X' : card.data.energy_cost >= 0 ? String(card.data.energy_cost) : 'Unplayable';
+const hasStarCost = card.data.star_cost != null || card.data.x_star_cost;
+const starCostDisplay = card.data.x_star_cost ? 'X' : card.data.star_cost != null ? String(card.data.star_cost) : null;
 
-// Build card art path with beta fallback
 const charDir = card.data.character.toLowerCase();
 const cardFileName = card.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase();
 const cardArtPath = `${import.meta.env.BASE_URL}images/card_atlas/${charDir}/${cardFileName}.png`;
 const cardArtBetaPath = `${import.meta.env.BASE_URL}images/card_atlas/${charDir}/beta/${cardFileName}.png`;
+
+const descHtml = cleanDescription(card.data.description_html || card.data.description_plain);
+const upgradedHtml = cleanDescription(card.data.upgraded_description_html || '');
 ---
 
 <BaseLayout title={card.data.title}>
   <div class="card-detail">
+    <a href={`${import.meta.env.BASE_URL}cards/`} class="back-link">&larr; All Cards</a>
+
     <div class="card-header">
-      <a href={`${import.meta.env.BASE_URL}cards/`} style="font-size: 0.85rem;">&larr; All Cards</a>
-      <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-top: 0.5rem;">
+      <div class="item-row" style="margin-top: 0.5rem;">
         <img src={cardArtPath} alt={card.data.title}
-          style="width: 250px; border-radius: 6px; flex-shrink: 0;"
+          class="card-art"
           onerror={`this.onerror=()=>{this.style.display='none'};this.src='${cardArtBetaPath}'`} />
         <div>
-          <h1 style="margin: 0;">{card.data.title}</h1>
-          <div class="card-meta">
-            {card.data.character} &middot; {card.data.type} &middot; <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.rarity}</span>
-            {card.data.unlocked_by && ` · Unlocked by ${card.data.unlocked_by} epoch`}
+          <h1 style="display: flex; align-items: center; gap: 0.5rem;">
+            {card.data.title}
+            <span class="energy-cost">{costDisplay}</span>
+            {hasStarCost && <span class="star-cost">{starCostDisplay}</span>}
+          </h1>
+          <div class="card-meta" style="font-size: 0.9rem;">
+            <span class={charClass(card.data.character)}>{card.data.character}</span>
+            · {card.data.type}
+            · <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.rarity}</span>
+            {card.data.unlocked_by && (
+              <> · Unlocked by {card.data.unlocked_by} epoch</>
+            )}
           </div>
         </div>
       </div>
     </div>
 
     <table class="stat-table">
-      <tr><th>Cost</th><td>{costDisplay}</td></tr>
+      <tr><th>Cost</th><td>{costDisplay}{hasStarCost && ` + ${starCostDisplay} Stars`}</td></tr>
       <tr><th>Type</th><td>{card.data.type}</td></tr>
-      <tr><th>Rarity</th><td>{card.data.rarity}</td></tr>
+      <tr><th>Rarity</th><td><span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.rarity}</span></td></tr>
       <tr><th>Target</th><td>{card.data.target}</td></tr>
       {card.data.keywords.length > 0 && (
-        <tr><th>Keywords</th><td>{card.data.keywords.join(', ')}</td></tr>
+        <tr><th>Keywords</th><td>{card.data.keywords.map(k => <span class="tag" style="margin-right: 0.25rem;">{k}</span>)}</td></tr>
       )}
     </table>
 
-    <h2 style="margin-top: 1.5rem;">Description</h2>
-    <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={card.data.description_html || card.data.description_plain} />
-
-    {card.data.upgraded_description_html && (
+    {descHtml && (
       <>
-        <h2 style="margin-top: 1.5rem;">Upgraded</h2>
-        <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={card.data.upgraded_description_html} />
-        {card.data.upgraded_cost !== undefined && card.data.upgraded_cost !== card.data.energy_cost && (
-          <p class="card-meta">Cost: {card.data.upgraded_cost}</p>
-        )}
+        <h2 class="section-heading">Description</h2>
+        <div class="desc-text" style="font-size: 1.05rem;" set:html={descHtml} />
       </>
     )}
 
-    {card.data.vars.length > 0 && (
+    {upgradedHtml && (
       <>
-        <h2 style="margin-top: 1.5rem;">Values</h2>
-        <table class="stat-table">
-          <tr><th>Variable</th><th>Base</th><th>Upgraded</th></tr>
-          {card.data.vars.map(v => (
-            <tr>
-              <td>{v.type}</td>
-              <td>{v.base_value}</td>
-              <td>{v.upgraded_value !== undefined ? v.upgraded_value : '-'}</td>
-            </tr>
-          ))}
-        </table>
+        <h2 class="section-heading">Upgraded</h2>
+        <div class="desc-text" style="font-size: 1.05rem;" set:html={upgradedHtml} />
+        {card.data.upgraded_cost !== undefined && card.data.upgraded_cost !== card.data.energy_cost && (
+          <p class="card-meta" style="margin-top: 0.5rem;">Cost: {card.data.upgraded_cost}</p>
+        )}
       </>
     )}
 
     {card.data.referenced_powers.length > 0 && (
       <>
-        <h2 style="margin-top: 1.5rem;">Related Effects</h2>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <h2 class="section-heading">Related Effects</h2>
+        <ul class="linked-list">
           {card.data.referenced_powers.map(p => (
             <li><a href={`${import.meta.env.BASE_URL}powers/${p.slug}/`}>{p.title}</a></li>
           ))}
