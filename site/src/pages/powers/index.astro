@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPowers = await getCollection('powers');
+const powers = allPowers.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const types = ['Buff', 'Debuff'];
+---
+
+<BaseLayout title="Powers">
+  <h1>Powers &amp; Status Effects</h1>
+  <p class="card-meta" style="margin-bottom: 1rem;">{powers.length} powers</p>
+
+  <div class="filters">
+    <strong style="align-self: center;">Type:</strong>
+    {types.map(t => (
+      <button class="filter-btn" data-filter="powerType" data-value={t}>{t}</button>
+    ))}
+  </div>
+
+  <div class="card-grid" id="power-grid">
+    {powers.map(power => (
+      <a href={`${import.meta.env.BASE_URL}powers/${power.id}/`}
+         class="card-entry"
+         data-power-type={power.data.power_type}>
+        <h3>
+          <span class={power.data.power_type === 'Debuff' ? 'desc-red' : 'desc-gold'}>{power.data.title}</span>
+        </h3>
+        <div class="card-meta">
+          {power.data.power_type} &middot; {power.data.stack_type}
+        </div>
+        <div set:html={power.data.description_html || power.data.description_plain} />
+      </a>
+    ))}
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.card-entry');
+    const activeFilters: Record<string, string | null> = {};
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = (btn as HTMLElement).dataset.filter!;
+        const value = (btn as HTMLElement).dataset.value!;
+
+        if (activeFilters[filter] === value) {
+          activeFilters[filter] = null;
+          btn.classList.remove('active');
+        } else {
+          document.querySelectorAll(`[data-filter="${filter}"]`).forEach(b => b.classList.remove('active'));
+          activeFilters[filter] = value;
+          btn.classList.add('active');
+        }
+
+        items.forEach(item => {
+          const el = item as HTMLElement;
+          let visible = true;
+          for (const [f, v] of Object.entries(activeFilters)) {
+            if (v && el.dataset[f.replace(/([A-Z])/g, (m) => m.toLowerCase())] !== v) visible = false;
+          }
+          el.style.display = visible ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</BaseLayout>

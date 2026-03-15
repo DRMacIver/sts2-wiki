@@ -68,7 +68,7 @@ const costDisplay = card.data.x_cost ? 'X' : card.data.energy_cost >= 0 ? String
         <h2 style="margin-top: 1.5rem;">Related Powers</h2>
         <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
           {card.data.referenced_powers.map(p => (
-            <li>{p}</li>
+            <li><a href={`${import.meta.env.BASE_URL}powers/${p.slug}/`}>{p.title}</a></li>
           ))}
         </ul>
       </>

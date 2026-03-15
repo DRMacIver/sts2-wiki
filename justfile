@@ -29,11 +29,9 @@ format:
 
 # --- Decompile + extract from game ---
 
-# Read current game version from release_info.json
 detect-version:
     @python3 -c "import json; print(json.load(open('{{sts2_release}}'))['version'])"
 
-# Decompile sts2.dll for the current version
 decompile:
     #!/usr/bin/env bash
     if [ -d "decompiled/{{version}}" ]; then
@@ -43,7 +41,6 @@ decompile:
         ~/.dotnet/tools/ilspycmd -p -o "decompiled/{{version}}" "{{sts2_dll}}"
     fi
 
-# Extract localization from PCK for the current version
 extract-pck:
     #!/usr/bin/env bash
     if [ -d "extracted/{{version}}/localization" ]; then
@@ -53,38 +50,55 @@ extract-pck:
         uv run python -m scripts.extract_pck "{{sts2_pck}}" "extracted/{{version}}" --prefix localization/eng
     fi
 
-# --- Extraction pipeline (works from local decompiled/extracted dirs) ---
+# --- Extraction pipeline ---
 
-# Extract card data from decompiled source
 extract-cards:
     uv run python -m scripts.extract_cards decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-# Extract all structured data
-extract: extract-cards
+extract-powers:
+    uv run python -m scripts.extract_powers decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
+extract-monsters:
+    uv run python -m scripts.extract_monsters decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
+extract-encounters:
+    uv run python -m scripts.extract_encounters decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
+extract-ancients:
+    uv run python -m scripts.extract_ancients decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
+extract: extract-powers extract-cards extract-monsters extract-encounters extract-ancients
 
 # --- Site generation ---
 
-# Generate Astro content from extracted data
 generate-cards:
     uv run python -m scripts.generate_cards data/{{version}} site/src/content/cards
 
-# Generate all content
-generate: generate-cards
+generate-powers:
+    uv run python -m scripts.generate_powers data/{{version}} site/src/content/powers
 
-# Install site dependencies
+generate-monsters:
+    uv run python -m scripts.generate_monsters data/{{version}} site/src/content/monsters
+
+generate-encounters:
+    uv run python -m scripts.generate_encounters data/{{version}} site/src/content/encounters
+
+generate-ancients:
+    uv run python -m scripts.generate_ancients data/{{version}} site/src/content/ancients
+
+generate: generate-cards generate-powers generate-monsters generate-encounters generate-ancients
+
 site-install:
     cd site && npm install
 
-# Build the Astro site
 build-site:
     cd site && npm run build
 
 # Full pipeline: extract, generate, build
 build: extract generate build-site
 
-# Preview the site locally
 preview:
     cd site && npm run dev
 
-# Full update from game files: decompile, extract PCK, extract data, generate, build
+# Full update from game files
 update: decompile extract-pck extract generate build-site

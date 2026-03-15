@@ -23,10 +23,82 @@ const cards = defineCollection({
     upgraded_description_plain: z.string().optional(),
     upgraded_description_html: z.string().optional(),
     upgraded_cost: z.number().optional(),
-    referenced_powers: z.array(z.string()).default([]),
+    referenced_powers: z.array(z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    })).default([]),
     x_cost: z.boolean().default(false),
     pool: z.string().default(''),
   }),
 });
 
-export const collections = { cards };
+const powers = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/powers' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    power_type: z.string(),
+    stack_type: z.string(),
+    description_plain: z.string().default(''),
+    description_html: z.string().default(''),
+    smart_description: z.string().default(''),
+  }),
+});
+
+const monsters = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/monsters' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    min_hp: z.number(),
+    max_hp: z.number(),
+    moves: z.array(z.object({
+      id: z.string(),
+      title: z.string().default(''),
+      intents: z.array(z.object({
+        type: z.string(),
+        damage: z.number().optional(),
+        hits: z.number().optional(),
+        amount: z.number().optional(),
+      })).default([]),
+      effects: z.array(z.string()).default([]),
+    })).default([]),
+    powers_on_spawn: z.array(z.string()).default([]),
+    encounters: z.array(z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    })).default([]),
+  }),
+});
+
+const encounters = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/encounters' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    room_type: z.string(),
+    is_weak: z.boolean().default(false),
+    monsters: z.array(z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    })).default([]),
+    tags: z.array(z.string()).default([]),
+    acts: z.array(z.string()).default([]),
+  }),
+});
+
+const ancients = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/ancients' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    epithet: z.string().default(''),
+    relic_offerings: z.array(z.string()).default([]),
+    acts: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { cards, powers, monsters, encounters, ancients };

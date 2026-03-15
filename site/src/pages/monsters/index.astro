@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allMonsters = await getCollection('monsters');
+const monsters = allMonsters.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title="Monsters">
+  <h1>Monsters</h1>
+  <p class="card-meta" style="margin-bottom: 1rem;">{monsters.length} monsters</p>
+
+  <div class="card-grid">
+    {monsters.map(monster => (
+      <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry">
+        <h3>{monster.data.title}</h3>
+        <div class="card-meta">
+          HP: {monster.data.min_hp === monster.data.max_hp
+            ? monster.data.min_hp
+            : `${monster.data.min_hp}-${monster.data.max_hp}`}
+          &middot; {monster.data.moves.length} moves
+        </div>
+        {monster.data.encounters.length > 0 && (
+          <div class="card-meta" style="margin-top: 0.25rem;">
+            {monster.data.encounters.map(e => e.title).join(', ')}
+          </div>
+        )}
+      </a>
+    ))}
+  </div>
+</BaseLayout>

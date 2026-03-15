@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const ancients = await getCollection('ancients');
+  return ancients.map(ancient => ({
+    params: { slug: ancient.id },
+    props: { ancient },
+  }));
+}
+
+const { ancient } = Astro.props;
+---
+
+<BaseLayout title={ancient.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}ancients/`} style="font-size: 0.85rem;">&larr; All Ancients</a>
+      <h1>{ancient.data.title}</h1>
+      {ancient.data.epithet && (
+        <div class="card-meta" style="font-style: italic;">{ancient.data.epithet}</div>
+      )}
+    </div>
+
+    {ancient.data.acts.length > 0 && (
+      <div style="margin: 1rem 0;">
+        <strong>Acts:</strong> {ancient.data.acts.join(', ')}
+      </div>
+    )}
+
+    {ancient.data.relic_offerings.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Relic Offerings</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {ancient.data.relic_offerings.map(relic => (
+            <li>{relic}</li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+</BaseLayout>

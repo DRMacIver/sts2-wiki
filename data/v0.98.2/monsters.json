@@ -1,0 +1,4349 @@
+[
+  {
+    "class_name": "Architect",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "HiddenIntent"
+          }
+        ],
+        "follow_up": "NOTHING",
+        "title": "Nothing"
+      }
+    ],
+    "loc_key": "ARCHITECT",
+    "title": "The Architect"
+  },
+  {
+    "class_name": "AssassinRubyRaider",
+    "min_hp": 19,
+    "max_hp": 24,
+    "moves": [
+      {
+        "id": "KILLSHOT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "KILLSHOT_MOVE",
+        "title": "Killshot"
+      }
+    ],
+    "loc_key": "ASSASSIN_RUBY_RAIDER",
+    "title": "Assassin Raider"
+  },
+  {
+    "class_name": "AxeRubyRaider",
+    "min_hp": 21,
+    "max_hp": 23,
+    "moves": [
+      {
+        "id": "SWING_1",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "SWING_2"
+      },
+      {
+        "id": "SWING_2",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "BIG_SWING"
+      },
+      {
+        "id": "BIG_SWING",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SWING_1",
+        "title": "Big Swing"
+      }
+    ],
+    "loc_key": "AXE_RUBY_RAIDER",
+    "title": "Axe Raider"
+  },
+  {
+    "class_name": "Axebot",
+    "min_hp": 42,
+    "max_hp": 46,
+    "moves": [
+      {
+        "id": "BOOT_UP_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Boot Up"
+      },
+      {
+        "id": "ONE_TWO_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "The One-Two"
+      },
+      {
+        "id": "SHARPEN_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Sharpen"
+      },
+      {
+        "id": "HAMMER_UPPERCUT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Hammer Uppercut"
+      }
+    ],
+    "powers_on_spawn": [
+      "StockPower"
+    ],
+    "loc_key": "AXEBOT",
+    "title": "Axebot"
+  },
+  {
+    "class_name": "BattleFriendV1",
+    "min_hp": 75,
+    "max_hp": 75,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "follow_up": "NOTHING_MOVE",
+        "title": "Nothing"
+      }
+    ],
+    "powers_on_spawn": [
+      "BattlewornDummyTimeLimitPower"
+    ],
+    "loc_key": "BATTLE_FRIEND_V1",
+    "title": "Battle Friend V1.0"
+  },
+  {
+    "class_name": "BattleFriendV2",
+    "min_hp": 150,
+    "max_hp": 150,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "follow_up": "NOTHING_MOVE",
+        "title": "Nothing"
+      }
+    ],
+    "powers_on_spawn": [
+      "BattlewornDummyTimeLimitPower"
+    ],
+    "loc_key": "BATTLE_FRIEND_V2",
+    "title": "Battle Friend V2.0"
+  },
+  {
+    "class_name": "BattleFriendV3",
+    "min_hp": 300,
+    "max_hp": 300,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "follow_up": "NOTHING_MOVE",
+        "title": "Nothing"
+      }
+    ],
+    "powers_on_spawn": [
+      "BattlewornDummyTimeLimitPower"
+    ],
+    "loc_key": "BATTLE_FRIEND_V3",
+    "title": "Battle Friend V3.0"
+  },
+  {
+    "class_name": "BigDummy",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "HiddenIntent"
+          }
+        ],
+        "follow_up": "NOTHING",
+        "title": "Nothing"
+      }
+    ],
+    "loc_key": "BIG_DUMMY",
+    "title": "Big Dummy"
+  },
+  {
+    "class_name": "BowlbugEgg",
+    "min_hp": 23,
+    "max_hp": 24,
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "BITE_MOVE",
+        "title": "Bite"
+      }
+    ],
+    "loc_key": "BOWLBUG_EGG",
+    "title": "Bowlbug (Egg)"
+  },
+  {
+    "class_name": "BowlbugNectar",
+    "min_hp": 36,
+    "max_hp": 39,
+    "moves": [
+      {
+        "id": "THRASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BUFF_MOVE",
+        "title": "Thrash"
+      },
+      {
+        "id": "BUFF_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "THRASH2_MOVE",
+        "title": "Buff"
+      },
+      {
+        "id": "THRASH2_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "THRASH2_MOVE",
+        "title": "Thrash"
+      }
+    ],
+    "loc_key": "BOWLBUG_NECTAR",
+    "title": "Bowlbug (Nectar)"
+  },
+  {
+    "class_name": "BowlbugRock",
+    "min_hp": 46,
+    "max_hp": 49,
+    "moves": [
+      {
+        "id": "HEADBUTT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Headbutt"
+      },
+      {
+        "id": "DIZZY_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "follow_up": "HEADBUTT_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "ImbalancedPower"
+    ],
+    "loc_key": "BOWLBUG_ROCK",
+    "title": "Bowlbug (Rock)"
+  },
+  {
+    "class_name": "BowlbugSilk",
+    "min_hp": 41,
+    "max_hp": 44,
+    "moves": [
+      {
+        "id": "TRASH_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ]
+      }
+    ],
+    "loc_key": "BOWLBUG_SILK",
+    "title": "Bowlbug (Silk)"
+  },
+  {
+    "class_name": "BruteRubyRaider",
+    "min_hp": 31,
+    "max_hp": 34,
+    "moves": [
+      {
+        "id": "BEAT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Beat"
+      }
+    ],
+    "loc_key": "BRUTE_RUBY_RAIDER",
+    "title": "Brute Raider"
+  },
+  {
+    "class_name": "BygoneEffigy",
+    "min_hp": 132,
+    "moves": [
+      {
+        "id": "INITIAL_SLEEP_MOVE",
+        "intents": [
+          {
+            "type": "SleepIntent"
+          }
+        ],
+        "follow_up": "WAKE_MOVE"
+      },
+      {
+        "id": "WAKE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SLASHES_MOVE"
+      },
+      {
+        "id": "SLEEP_MOVE",
+        "intents": [
+          {
+            "type": "SleepIntent"
+          }
+        ],
+        "follow_up": "SLASHES_MOVE",
+        "title": "Sleep"
+      },
+      {
+        "id": "SLASHES_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SLASHES_MOVE",
+        "title": "Slashes"
+      }
+    ],
+    "powers_on_spawn": [
+      "SlowPower"
+    ],
+    "loc_key": "BYGONE_EFFIGY",
+    "title": "Bygone Effigy"
+  },
+  {
+    "class_name": "Byrdonis",
+    "min_hp": 99,
+    "max_hp": 99,
+    "moves": [
+      {
+        "id": "PECK_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "SWOOP_MOVE",
+        "title": "Peck"
+      },
+      {
+        "id": "SWOOP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "PECK_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "TerritorialPower"
+    ],
+    "loc_key": "BYRDONIS",
+    "title": "Byrdonis"
+  },
+  {
+    "class_name": "Byrdpip",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "follow_up": "NOTHING_MOVE",
+        "title": "Nothing"
+      }
+    ],
+    "loc_key": "BYRDPIP",
+    "title": "Byrdpip"
+  },
+  {
+    "class_name": "CalcifiedCultist",
+    "min_hp": 39,
+    "max_hp": 42,
+    "moves": [
+      {
+        "id": "INCANTATION_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Incantation"
+      }
+    ],
+    "loc_key": "CALCIFIED_CULTIST",
+    "title": "Calcified Cultist"
+  },
+  {
+    "class_name": "CeremonialBeast",
+    "min_hp": 262,
+    "moves": [
+      {
+        "id": "STAMP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "PLOW_MOVE",
+        "title": "Stamp"
+      },
+      {
+        "id": "PLOW_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "PLOW_MOVE",
+        "title": "Plow"
+      },
+      {
+        "id": "STUN_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ]
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "CRUSH_MOVE",
+        "title": "Stomp"
+      },
+      {
+        "id": "CRUSH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Crush"
+      }
+    ],
+    "loc_key": "CEREMONIAL_BEAST",
+    "title": "Ceremonial Beast"
+  },
+  {
+    "class_name": "Chomper",
+    "min_hp": 63,
+    "max_hp": 67,
+    "moves": [
+      {
+        "id": "CLAMP_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Clamp"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "CHOMPER",
+    "title": "Chomper"
+  },
+  {
+    "class_name": "CorpseSlug",
+    "min_hp": 27,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "WHIP_SLAP_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "GLOMP_MOVE",
+        "title": "Whip Slap"
+      },
+      {
+        "id": "GLOMP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "GOOP_MOVE"
+      },
+      {
+        "id": "GOOP_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "WHIP_SLAP_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "RavenousPower"
+    ],
+    "loc_key": "CORPSE_SLUG",
+    "title": "Corpse Slug"
+  },
+  {
+    "class_name": "CrossbowRubyRaider",
+    "min_hp": 19,
+    "max_hp": 22,
+    "moves": [
+      {
+        "id": "FIRE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Fire!"
+      }
+    ],
+    "loc_key": "CROSSBOW_RUBY_RAIDER",
+    "title": "Crossbow Raider"
+  },
+  {
+    "class_name": "Crusher",
+    "min_hp": 209,
+    "moves": [
+      {
+        "id": "THRASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "ENLARGING_STRIKE_MOVE",
+        "title": "Thrash"
+      },
+      {
+        "id": "ENLARGING_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BUG_STING_MOVE",
+        "title": "Enlarging Strike"
+      },
+      {
+        "id": "BUG_STING_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "ADAPT_MOVE",
+        "title": "Bug Sting"
+      },
+      {
+        "id": "ADAPT_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "GUARDED_STRIKE_MOVE",
+        "title": "Adapt"
+      },
+      {
+        "id": "GUARDED_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "THRASH_MOVE",
+        "title": "Guarded Strike"
+      }
+    ],
+    "powers_on_spawn": [
+      "BackAttackLeftPower",
+      "CrabRagePower"
+    ],
+    "loc_key": "CRUSHER",
+    "title": "Crusher"
+  },
+  {
+    "class_name": "CubexConstruct",
+    "min_hp": 70,
+    "moves": [
+      {
+        "id": "CHARGE_UP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "REPEATER_MOVE",
+        "title": "Charge Up"
+      },
+      {
+        "id": "REPEATER_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "REPEATER_MOVE_2"
+      },
+      {
+        "id": "REPEATER_MOVE_2",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "EXPEL_BLAST"
+      },
+      {
+        "id": "EXPEL_BLAST",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "REPEATER_MOVE"
+      },
+      {
+        "id": "SUBMERGE_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "CHARGE_UP_MOVE",
+        "title": "Submerge"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "CUBEX_CONSTRUCT",
+    "title": "Cubex Construct"
+  },
+  {
+    "class_name": "DampCultist",
+    "min_hp": 52,
+    "max_hp": 54,
+    "moves": [
+      {
+        "id": "INCANTATION_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Incantation"
+      }
+    ],
+    "loc_key": "DAMP_CULTIST",
+    "title": "Damp Cultist"
+  },
+  {
+    "class_name": "DecimillipedeSegment",
+    "min_hp": 48,
+    "max_hp": 56,
+    "moves": [
+      {
+        "id": "WRITHE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "CONSTRICT_MOVE",
+        "title": "Writhe"
+      },
+      {
+        "id": "BULK_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "WRITHE_MOVE",
+        "title": "Bulk"
+      },
+      {
+        "id": "CONSTRICT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "BULK_MOVE"
+      },
+      {
+        "id": "REATTACH_MOVE",
+        "intents": [
+          {
+            "type": "HealIntent"
+          }
+        ],
+        "title": "Reattach"
+      }
+    ],
+    "powers_on_spawn": [
+      "ReattachPower"
+    ],
+    "loc_key": "DECIMILLIPEDE_SEGMENT",
+    "title": "Decimillipede"
+  },
+  {
+    "class_name": "DevotedSculptor",
+    "min_hp": 172,
+    "moves": [
+      {
+        "id": "FORBIDDEN_INCANTATION_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ]
+      }
+    ],
+    "loc_key": "DEVOTED_SCULPTOR",
+    "title": "Devoted Sculptor"
+  },
+  {
+    "class_name": "Door",
+    "min_hp": 165,
+    "moves": [
+      {
+        "id": "ENFORCE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ]
+      },
+      {
+        "id": "DOOR_SLAM_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "ENFORCE_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "DoorRevivalPower"
+    ],
+    "loc_key": "DOOR",
+    "title": "Door"
+  },
+  {
+    "class_name": "Doormaker",
+    "min_hp": 512,
+    "moves": [
+      {
+        "id": "WHAT_IS_IT_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "follow_up": "BEAM_MOVE"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "GET_BACK_IN_MOVE"
+      },
+      {
+        "id": "GET_BACK_IN_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          },
+          {
+            "type": "EscapeIntent"
+          }
+        ],
+        "follow_up": "GET_BACK_IN_MOVE"
+      }
+    ],
+    "loc_key": "DOORMAKER",
+    "title": "Doormaker"
+  },
+  {
+    "class_name": "Entomancer",
+    "min_hp": 155,
+    "moves": [
+      {
+        "id": "PHEROMONE_SPIT_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "BEES_MOVE",
+        "title": "Pheromone Spit"
+      },
+      {
+        "id": "BEES_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Beeeees!"
+      }
+    ],
+    "powers_on_spawn": [
+      "PersonalHivePower"
+    ],
+    "loc_key": "ENTOMANCER",
+    "title": "Entomancer"
+  },
+  {
+    "class_name": "Exoskeleton",
+    "min_hp": 25,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "SKITTER_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Skitter"
+      },
+      {
+        "id": "MANDIBLE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "ENRAGE_MOVE"
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Enrage"
+      }
+    ],
+    "powers_on_spawn": [
+      "HardToKillPower"
+    ],
+    "loc_key": "EXOSKELETON",
+    "title": "Exoskeleton"
+  },
+  {
+    "class_name": "EyeWithTeeth",
+    "min_hp": 6,
+    "moves": [
+      {
+        "id": "DISTRACT_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "DISTRACT_MOVE",
+        "title": "Distract"
+      }
+    ],
+    "powers_on_spawn": [
+      "IllusionPower"
+    ],
+    "loc_key": "EYE_WITH_TEETH",
+    "title": "Eye With Teeth"
+  },
+  {
+    "class_name": "Fabricator",
+    "min_hp": 155,
+    "moves": [
+      {
+        "id": "FABRICATE_MOVE",
+        "intents": [
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "title": "Fabricate"
+      },
+      {
+        "id": "FABRICATING_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "SummonIntent"
+          }
+        ]
+      },
+      {
+        "id": "DISINTEGRATE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Disintegrate"
+      }
+    ],
+    "loc_key": "FABRICATOR",
+    "title": "Fabricator"
+  },
+  {
+    "class_name": "FakeMerchantMonster",
+    "min_hp": 175,
+    "max_hp": 175,
+    "moves": [
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Swipe"
+      },
+      {
+        "id": "SPEW_COINS_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 2,
+            "hits": 8
+          }
+        ],
+        "title": "Spew Coins"
+      },
+      {
+        "id": "THROW_RELIC_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Throw Relic"
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Enrage"
+      }
+    ],
+    "loc_key": "FAKE_MERCHANT_MONSTER",
+    "title": "The Merchant???"
+  },
+  {
+    "class_name": "FatGremlin",
+    "min_hp": 14,
+    "max_hp": 18,
+    "moves": [
+      {
+        "id": "SPAWNED_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ]
+      }
+    ],
+    "loc_key": "FAT_GREMLIN",
+    "title": "Fat Gremlin"
+  },
+  {
+    "class_name": "FlailKnight",
+    "min_hp": 108,
+    "moves": [
+      {
+        "id": "WAR_CHANT",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ]
+      },
+      {
+        "id": "FLAIL_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Flail"
+      },
+      {
+        "id": "RAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Ram"
+      }
+    ],
+    "loc_key": "FLAIL_KNIGHT",
+    "title": "Flail Knight"
+  },
+  {
+    "class_name": "Flyconid",
+    "min_hp": 51,
+    "max_hp": 53,
+    "moves": [
+      {
+        "id": "VULNERABLE_SPORES_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ]
+      },
+      {
+        "id": "FRAIL_SPORES_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Frail Spores"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Smash"
+      }
+    ],
+    "loc_key": "FLYCONID",
+    "title": "Flyconid"
+  },
+  {
+    "class_name": "Fogmog",
+    "min_hp": 78,
+    "moves": [
+      {
+        "id": "ILLUSION_MOVE",
+        "intents": [
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "follow_up": "SWIPE_MOVE"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ]
+      },
+      {
+        "id": "SWIPE_RANDOM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "HEADBUTT_MOVE"
+      },
+      {
+        "id": "HEADBUTT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SWIPE_MOVE"
+      }
+    ],
+    "loc_key": "FOGMOG",
+    "title": "Fogmog"
+  },
+  {
+    "class_name": "FossilStalker",
+    "min_hp": 54,
+    "max_hp": 56,
+    "moves": [
+      {
+        "id": "TACKLE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Tackle"
+      },
+      {
+        "id": "LATCH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Latch"
+      },
+      {
+        "id": "LASH_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Lash"
+      }
+    ],
+    "powers_on_spawn": [
+      "SuckPower"
+    ],
+    "loc_key": "FOSSIL_STALKER",
+    "title": "Fossil Stalker"
+  },
+  {
+    "class_name": "FrogKnight",
+    "min_hp": 199,
+    "moves": [
+      {
+        "id": "FOR_THE_QUEEN",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "For the Queen"
+      },
+      {
+        "id": "STRIKE_DOWN_EVIL",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FOR_THE_QUEEN",
+        "title": "Strike Down Evil"
+      },
+      {
+        "id": "TONGUE_LASH",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "STRIKE_DOWN_EVIL",
+        "title": "Tongue Lash"
+      },
+      {
+        "id": "BEETLE_CHARGE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "TONGUE_LASH",
+        "title": "Beetle Charge"
+      }
+    ],
+    "powers_on_spawn": [
+      "PlatingPower"
+    ],
+    "loc_key": "FROG_KNIGHT",
+    "title": "Frog Knight"
+  },
+  {
+    "class_name": "FuzzyWurmCrawler",
+    "min_hp": 58,
+    "max_hp": 59,
+    "moves": [
+      {
+        "id": "FIRST_ACID_GOOP",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ]
+      },
+      {
+        "id": "ACID_GOOP",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FIRST_ACID_GOOP",
+        "effects": [
+          "Attack"
+        ],
+        "title": "Acid Goop"
+      }
+    ],
+    "loc_key": "FUZZY_WURM_CRAWLER",
+    "title": "Fuzzy Wurm Crawler"
+  },
+  {
+    "class_name": "GasBomb",
+    "min_hp": 12,
+    "moves": [
+      {
+        "id": "EXPLODE_MOVE",
+        "intents": [
+          {
+            "type": "DeathBlowIntent"
+          }
+        ],
+        "title": "Explode"
+      }
+    ],
+    "powers_on_spawn": [
+      "MinionPower"
+    ],
+    "loc_key": "GAS_BOMB",
+    "title": "Gas Bomb"
+  },
+  {
+    "class_name": "GlobeHead",
+    "min_hp": 158,
+    "moves": [
+      {
+        "id": "THUNDER_STRIKE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "GALVANIC_BURST",
+        "effects": [
+          "Attack"
+        ]
+      },
+      {
+        "id": "SHOCKING_SLAP",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "THUNDER_STRIKE",
+        "effects": [
+          "Apply FrailPower",
+          "Attack"
+        ],
+        "title": "Shocking Slap"
+      },
+      {
+        "id": "GALVANIC_BURST",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SHOCKING_SLAP"
+      }
+    ],
+    "powers_on_spawn": [
+      "GalvanicPower"
+    ],
+    "loc_key": "GLOBE_HEAD",
+    "title": "Globe Head"
+  },
+  {
+    "class_name": "GremlinMerc",
+    "min_hp": 51,
+    "max_hp": 53,
+    "moves": [
+      {
+        "id": "GIMME_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "DOUBLE_SMASH_MOVE",
+        "title": "Gimme"
+      },
+      {
+        "id": "DOUBLE_SMASH_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "HEHE_MOVE",
+        "title": "Double Smash"
+      },
+      {
+        "id": "HEHE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "GIMME_MOVE",
+        "title": "Hehe"
+      }
+    ],
+    "powers_on_spawn": [
+      "SurprisePower"
+    ],
+    "loc_key": "GREMLIN_MERC",
+    "title": "Gremlin Merc"
+  },
+  {
+    "class_name": "Guardbot",
+    "min_hp": 22,
+    "max_hp": 26,
+    "moves": [
+      {
+        "id": "GUARD_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "GUARD_MOVE",
+        "title": "Guard"
+      }
+    ],
+    "loc_key": "GUARDBOT",
+    "title": "Guardbot"
+  },
+  {
+    "class_name": "HauntedShip",
+    "min_hp": 67,
+    "moves": [
+      {
+        "id": "RAMMING_SPEED_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "title": "Ramming Speed"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Swipe"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Stomp"
+      },
+      {
+        "id": "HAUNT_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Haunt"
+      }
+    ],
+    "loc_key": "HAUNTED_SHIP",
+    "title": "Haunted Ship"
+  },
+  {
+    "class_name": "HunterKiller",
+    "min_hp": 126,
+    "moves": [
+      {
+        "id": "TENDERIZING_GOOP_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Tenderizing Goop"
+      },
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Bite"
+      },
+      {
+        "id": "PUNCTURE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Puncture"
+      }
+    ],
+    "loc_key": "HUNTER_KILLER",
+    "title": "Hunter Killer"
+  },
+  {
+    "class_name": "InfestedPrism",
+    "min_hp": 215,
+    "moves": [
+      {
+        "id": "JAB_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "RADIATE_MOVE",
+        "title": "Jab"
+      },
+      {
+        "id": "RADIATE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "WHIRLWIND_MOVE",
+        "title": "Radiate"
+      },
+      {
+        "id": "WHIRLWIND_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "PULSATE_MOVE",
+        "title": "Whirlwind"
+      },
+      {
+        "id": "PULSATE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "JAB_MOVE",
+        "title": "Pulsate"
+      }
+    ],
+    "powers_on_spawn": [
+      "VitalSparkPower"
+    ],
+    "loc_key": "INFESTED_PRISM",
+    "title": "Infested Prism"
+  },
+  {
+    "class_name": "Inklet",
+    "min_hp": 12,
+    "max_hp": 18,
+    "moves": [
+      {
+        "id": "JAB_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Jab"
+      },
+      {
+        "id": "WHIRLWIND_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "JAB_MOVE"
+      },
+      {
+        "id": "PIERCING_GAZE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "JAB_MOVE",
+        "title": "Piercing Gaze"
+      }
+    ],
+    "powers_on_spawn": [
+      "SlipperyPower"
+    ],
+    "loc_key": "INKLET",
+    "title": "Inklet"
+  },
+  {
+    "class_name": "KinFollower",
+    "min_hp": 62,
+    "max_hp": 63,
+    "moves": [
+      {
+        "id": "QUICK_SLASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BOOMERANG_MOVE",
+        "title": "Quick Slash"
+      },
+      {
+        "id": "BOOMERANG_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "POWER_DANCE_MOVE",
+        "title": "Boomerang"
+      },
+      {
+        "id": "POWER_DANCE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "QUICK_SLASH_MOVE",
+        "title": "Power Dance"
+      }
+    ],
+    "powers_on_spawn": [
+      "MinionPower"
+    ],
+    "loc_key": "KIN_FOLLOWER",
+    "title": "Kin Follower"
+  },
+  {
+    "class_name": "KinPriest",
+    "min_hp": 199,
+    "moves": [
+      {
+        "id": "ORB_OF_FRAILTY_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "ORB_OF_WEAKNESS_MOVE"
+      },
+      {
+        "id": "ORB_OF_WEAKNESS_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "BEAM_MOVE"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "RITUAL_MOVE",
+        "title": "Soul Beam"
+      },
+      {
+        "id": "RITUAL_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "ORB_OF_FRAILTY_MOVE",
+        "title": "Dark Ritual"
+      }
+    ],
+    "loc_key": "KIN_PRIEST",
+    "title": "Kin Priest"
+  },
+  {
+    "class_name": "KnowledgeDemon",
+    "min_hp": 399,
+    "moves": [
+      {
+        "id": "CURSE_OF_KNOWLEDGE_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "SLAP_MOVE",
+        "title": "Curse of Knowledge"
+      },
+      {
+        "id": "SLAP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "KNOWLEDGE_OVERWHELMING_MOVE"
+      },
+      {
+        "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "PONDER_MOVE",
+        "title": "Knowledge Overwhelming"
+      },
+      {
+        "id": "PONDER_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "HealIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Ponder"
+      }
+    ],
+    "loc_key": "KNOWLEDGE_DEMON",
+    "title": "Knowledge Demon"
+  },
+  {
+    "class_name": "LagavulinMatriarch",
+    "min_hp": 233,
+    "moves": [
+      {
+        "id": "SLEEP_MOVE",
+        "intents": [
+          {
+            "type": "SleepIntent"
+          }
+        ],
+        "title": "Sleep"
+      },
+      {
+        "id": "SLASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "DISEMBOWEL_MOVE",
+        "title": "Slash"
+      },
+      {
+        "id": "SLASH2_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "SOUL_SIPHON_MOVE"
+      },
+      {
+        "id": "DISEMBOWEL_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "SLASH2_MOVE",
+        "title": "Disembowel"
+      },
+      {
+        "id": "SOUL_SIPHON_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SLASH_MOVE",
+        "title": "Soul Siphon"
+      }
+    ],
+    "powers_on_spawn": [
+      "PlatingPower",
+      "AsleepPower"
+    ],
+    "loc_key": "LAGAVULIN_MATRIARCH",
+    "title": "Lagavulin Matriarch"
+  },
+  {
+    "class_name": "LeafSlimeM",
+    "min_hp": 33,
+    "max_hp": 36,
+    "moves": [
+      {
+        "id": "CLUMP_SHOT",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "STICKY_SHOT",
+        "title": "Clump Shot"
+      },
+      {
+        "id": "STICKY_SHOT",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "CLUMP_SHOT",
+        "title": "Sticky Shot"
+      }
+    ],
+    "loc_key": "LEAF_SLIME_M",
+    "title": "Leaf Slime (M)"
+  },
+  {
+    "class_name": "LeafSlimeS",
+    "min_hp": 12,
+    "max_hp": 16,
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ]
+      },
+      {
+        "id": "GOOP_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "title": "Goop"
+      }
+    ],
+    "loc_key": "LEAF_SLIME_S",
+    "title": "Leaf Slime (S)"
+  },
+  {
+    "class_name": "LivingFog",
+    "min_hp": 82,
+    "moves": [
+      {
+        "id": "ADVANCED_GAS_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "CardDebuffIntent"
+          }
+        ],
+        "follow_up": "BLOAT_MOVE"
+      },
+      {
+        "id": "BLOAT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "follow_up": "SUPER_GAS_BLAST_MOVE",
+        "title": "Bloat"
+      },
+      {
+        "id": "SUPER_GAS_BLAST_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BLOAT_MOVE"
+      }
+    ],
+    "loc_key": "LIVING_FOG",
+    "title": "Living Fog"
+  },
+  {
+    "class_name": "LivingShield",
+    "min_hp": 65,
+    "moves": [
+      {
+        "id": "SHIELD_SLAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Shield Slam"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SMASH_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "RampartPower"
+    ],
+    "loc_key": "LIVING_SHIELD",
+    "title": "Living Shield"
+  },
+  {
+    "class_name": "LouseProgenitor",
+    "min_hp": 138,
+    "max_hp": 141,
+    "moves": [
+      {
+        "id": "WEB_CANNON_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Web Cannon"
+      },
+      {
+        "id": "POUNCE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "WEB_CANNON_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "CurlUpPower"
+    ],
+    "loc_key": "LOUSE_PROGENITOR",
+    "title": "Louse Progenitor"
+  },
+  {
+    "class_name": "MagiKnight",
+    "min_hp": 89,
+    "moves": [
+      {
+        "id": "FIRST_POWER_SHIELD_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "DAMPEN_MOVE"
+      },
+      {
+        "id": "DAMPEN_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "RAM_MOVE"
+      },
+      {
+        "id": "PREP_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "MAGIC_BOMB"
+      },
+      {
+        "id": "MAGIC_BOMB",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "RAM_MOVE",
+        "title": "Magic Bomb"
+      },
+      {
+        "id": "RAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "PREP_MOVE",
+        "title": "Ram"
+      }
+    ],
+    "loc_key": "MAGI_KNIGHT",
+    "title": "Magi Knight"
+  },
+  {
+    "class_name": "Mawler",
+    "min_hp": 76,
+    "moves": [
+      {
+        "id": "RIP_AND_TEAR_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Rip and Tear"
+      },
+      {
+        "id": "ROAR_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Roar"
+      },
+      {
+        "id": "CLAW_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Claw"
+      }
+    ],
+    "loc_key": "MAWLER",
+    "title": "Mawler"
+  },
+  {
+    "class_name": "MechaKnight",
+    "min_hp": 320,
+    "moves": [
+      {
+        "id": "CHARGE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FLAMETHROWER_MOVE",
+        "title": "Charge"
+      },
+      {
+        "id": "FLAMETHROWER_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "WINDUP_MOVE",
+        "title": "Flamethrower"
+      },
+      {
+        "id": "WINDUP_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "HEAVY_CLEAVE_MOVE",
+        "title": "Windup"
+      },
+      {
+        "id": "HEAVY_CLEAVE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FLAMETHROWER_MOVE",
+        "title": "Heavy Cleave"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "MECHA_KNIGHT",
+    "title": "Mecha Knight"
+  },
+  {
+    "class_name": "MultiAttackMoveMonster",
+    "min_hp": 999,
+    "max_hp": 999,
+    "moves": [
+      {
+        "id": "POKE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 1,
+            "hits": 5
+          }
+        ],
+        "follow_up": "POKE"
+      }
+    ],
+    "loc_key": "MULTI_ATTACK_MOVE_MONSTER",
+    "title": "MultiAttackMoveMonster"
+  },
+  {
+    "class_name": "Myte",
+    "min_hp": 64,
+    "max_hp": 69,
+    "moves": [
+      {
+        "id": "TOXIC_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "BITE_MOVE",
+        "title": "Toxic Cornucopia"
+      },
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SUCK_MOVE",
+        "title": "Bite"
+      },
+      {
+        "id": "SUCK_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "TOXIC_MOVE",
+        "title": "Suck"
+      }
+    ],
+    "loc_key": "MYTE",
+    "title": "Myte"
+  },
+  {
+    "class_name": "Nibbit",
+    "min_hp": 44,
+    "max_hp": 48,
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SLICE_MOVE",
+        "title": "Butt"
+      },
+      {
+        "id": "SLICE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "HISS_MOVE"
+      },
+      {
+        "id": "HISS_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "BUTT_MOVE",
+        "title": "Hiss"
+      }
+    ],
+    "loc_key": "NIBBIT",
+    "title": "Nibbit"
+  },
+  {
+    "class_name": "Noisebot",
+    "min_hp": 24,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "NOISE_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "NOISE_MOVE",
+        "title": "Noise"
+      }
+    ],
+    "loc_key": "NOISEBOT",
+    "title": "Noisebot"
+  },
+  {
+    "class_name": "OneHpMonster",
+    "min_hp": 1,
+    "max_hp": 1,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "HiddenIntent"
+          }
+        ],
+        "follow_up": "NOTHING"
+      }
+    ],
+    "loc_key": "ONE_HP_MONSTER",
+    "title": "OneHpMonster"
+  },
+  {
+    "class_name": "Osty",
+    "min_hp": 1,
+    "max_hp": 1,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "follow_up": "NOTHING_MOVE"
+      }
+    ],
+    "loc_key": "OSTY",
+    "title": "Osty"
+  },
+  {
+    "class_name": "Ovicopter",
+    "min_hp": 126,
+    "max_hp": 132,
+    "moves": [
+      {
+        "id": "LAY_EGGS_MOVE",
+        "intents": [
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "follow_up": "SMASH_MOVE",
+        "title": "Lay Eggs"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "TENDERIZER_MOVE",
+        "title": "Smash"
+      },
+      {
+        "id": "TENDERIZER_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Tenderizer"
+      },
+      {
+        "id": "NUTRITIONAL_PASTE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SMASH_MOVE",
+        "title": "Nutritional Paste"
+      }
+    ],
+    "loc_key": "OVICOPTER",
+    "title": "Ovicopter"
+  },
+  {
+    "class_name": "OwlMagistrate",
+    "min_hp": 243,
+    "moves": [
+      {
+        "id": "MAGISTRATE_SCRUTINY",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "PECK_ASSAULT",
+        "title": "Magistrate Scrutiny"
+      },
+      {
+        "id": "PECK_ASSAULT",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "JUDICIAL_FLIGHT",
+        "title": "Peck Assault"
+      },
+      {
+        "id": "JUDICIAL_FLIGHT",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "VERDICT",
+        "title": "Judicial Flight"
+      },
+      {
+        "id": "VERDICT",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "MAGISTRATE_SCRUTINY",
+        "title": "Verdict"
+      }
+    ],
+    "loc_key": "OWL_MAGISTRATE",
+    "title": "Owl Magistrate"
+  },
+  {
+    "class_name": "PaelsLegion",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "follow_up": "NOTHING_MOVE",
+        "title": "Nothing"
+      }
+    ],
+    "loc_key": "PAELS_LEGION",
+    "title": "Pael's Legion"
+  },
+  {
+    "class_name": "Parafright",
+    "min_hp": 21,
+    "moves": [
+      {
+        "id": "SLAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SLAM_MOVE",
+        "title": "Slam"
+      }
+    ],
+    "powers_on_spawn": [
+      "IllusionPower"
+    ],
+    "loc_key": "PARAFRIGHT",
+    "title": "Parafright"
+  },
+  {
+    "class_name": "PhantasmalGardener",
+    "min_hp": 29,
+    "max_hp": 33,
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "LASH_MOVE",
+        "title": "Bite"
+      },
+      {
+        "id": "LASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FLAIL_MOVE",
+        "title": "Lash"
+      },
+      {
+        "id": "FLAIL_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "ENLARGE_MOVE",
+        "title": "Flail"
+      },
+      {
+        "id": "ENLARGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "BITE_MOVE",
+        "title": "Enlarge"
+      }
+    ],
+    "powers_on_spawn": [
+      "SkittishPower"
+    ],
+    "loc_key": "PHANTASMAL_GARDENER",
+    "title": "Phantasmal Gardener"
+  },
+  {
+    "class_name": "PhrogParasite",
+    "min_hp": 66,
+    "max_hp": 68,
+    "moves": [
+      {
+        "id": "INFECT_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "LASH_MOVE",
+        "title": "Infect"
+      },
+      {
+        "id": "LASH_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "INFECT_MOVE",
+        "title": "Lash"
+      }
+    ],
+    "powers_on_spawn": [
+      "InfestedPower"
+    ],
+    "loc_key": "PHROG_PARASITE",
+    "title": "Phrog Parasite"
+  },
+  {
+    "class_name": "PunchConstruct",
+    "min_hp": 60,
+    "moves": [
+      {
+        "id": "READY_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "STRONG_PUNCH_MOVE",
+        "title": "READY"
+      },
+      {
+        "id": "STRONG_PUNCH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FAST_PUNCH_MOVE",
+        "title": "Strong Punch"
+      },
+      {
+        "id": "FAST_PUNCH_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "READY_MOVE",
+        "title": "Fast Punch"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "PUNCH_CONSTRUCT",
+    "title": "Punch Construct"
+  },
+  {
+    "class_name": "Queen",
+    "min_hp": 419,
+    "moves": [
+      {
+        "id": "PUPPET_STRINGS_MOVE",
+        "intents": [
+          {
+            "type": "CardDebuffIntent"
+          }
+        ],
+        "follow_up": "YOUR_MINE_MOVE"
+      },
+      {
+        "id": "YOUR_MINE_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ]
+      },
+      {
+        "id": "OFF_WITH_YOUR_HEAD_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "EXECUTION_MOVE",
+        "title": "Off with Your Head"
+      },
+      {
+        "id": "EXECUTION_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Execution"
+      }
+    ],
+    "loc_key": "QUEEN",
+    "title": "Queen"
+  },
+  {
+    "class_name": "Rocket",
+    "min_hp": 199,
+    "moves": [
+      {
+        "id": "TARGETING_RETICLE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "PRECISION_BEAM_MOVE",
+        "title": "Targeting Reticle"
+      },
+      {
+        "id": "PRECISION_BEAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "CHARGE_UP_MOVE",
+        "title": "Precision Beam"
+      },
+      {
+        "id": "CHARGE_UP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "LASER_MOVE",
+        "title": "Charge Up"
+      },
+      {
+        "id": "LASER_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "RECHARGE_MOVE",
+        "title": "Laser"
+      },
+      {
+        "id": "RECHARGE_MOVE",
+        "intents": [
+          {
+            "type": "SleepIntent"
+          }
+        ],
+        "follow_up": "TARGETING_RETICLE_MOVE",
+        "title": "Recharge"
+      }
+    ],
+    "powers_on_spawn": [
+      "SurroundedPower",
+      "BackAttackRightPower",
+      "CrabRagePower"
+    ],
+    "loc_key": "ROCKET",
+    "title": "Rocket"
+  },
+  {
+    "class_name": "ScrollOfBiting",
+    "min_hp": 32,
+    "max_hp": 39,
+    "moves": [
+      {
+        "id": "CHOMP",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "MORE_TEETH",
+        "title": "Chomp"
+      },
+      {
+        "id": "CHEW",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Chew"
+      },
+      {
+        "id": "MORE_TEETH",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "CHEW",
+        "title": "More Teeth"
+      }
+    ],
+    "powers_on_spawn": [
+      "PaperCutsPower"
+    ],
+    "loc_key": "SCROLL_OF_BITING",
+    "title": "Scroll of Biting"
+  },
+  {
+    "class_name": "Seapunk",
+    "min_hp": 47,
+    "max_hp": 49,
+    "moves": [
+      {
+        "id": "SEA_KICK_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SPINNING_KICK_MOVE",
+        "title": "Sea Kick"
+      },
+      {
+        "id": "SPINNING_KICK_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "BUBBLE_BURP_MOVE",
+        "title": "Spinning Kick"
+      },
+      {
+        "id": "BUBBLE_BURP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "SEA_KICK_MOVE",
+        "title": "Bubble Burp"
+      }
+    ],
+    "loc_key": "SEAPUNK",
+    "title": "Seapunk"
+  },
+  {
+    "class_name": "SewerClam",
+    "min_hp": 58,
+    "moves": [
+      {
+        "id": "PRESSURIZE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Pressurize"
+      }
+    ],
+    "powers_on_spawn": [
+      "PlatingPower"
+    ],
+    "loc_key": "SEWER_CLAM",
+    "title": "Sewer Clam"
+  },
+  {
+    "class_name": "ShrinkerBeetle",
+    "min_hp": 40,
+    "max_hp": 42,
+    "moves": [
+      {
+        "id": "SHRINKER_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "CHOMP_MOVE",
+        "title": "Shrinker"
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "STOMP_MOVE",
+        "title": "Chomp"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "CHOMP_MOVE",
+        "title": "Stomp"
+      }
+    ],
+    "loc_key": "SHRINKER_BEETLE",
+    "title": "Shrinker Beetle"
+  },
+  {
+    "class_name": "SingleAttackMoveMonster",
+    "min_hp": 999,
+    "max_hp": 999,
+    "moves": [
+      {
+        "id": "POKE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 1
+          }
+        ],
+        "follow_up": "POKE"
+      }
+    ],
+    "loc_key": "SINGLE_ATTACK_MOVE_MONSTER",
+    "title": "SingleAttackMoveMonster"
+  },
+  {
+    "class_name": "SkulkingColony",
+    "min_hp": 84,
+    "moves": [
+      {
+        "id": "INERTIA_MOVE",
+        "intents": [
+          {
+            "type": "DefendIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SUPER_CRAB_MOVE",
+        "title": "Inertia"
+      },
+      {
+        "id": "ZOOM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "INERTIA_MOVE",
+        "title": "Zoom"
+      },
+      {
+        "id": "SUPER_CRAB_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "SMASH_MOVE",
+        "title": "Super Crab"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "ZOOM_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "HardenedShellPower"
+    ],
+    "loc_key": "SKULKING_COLONY",
+    "title": "Skulking Colony"
+  },
+  {
+    "class_name": "SlimedBerserker",
+    "min_hp": 276,
+    "moves": [
+      {
+        "id": "VOMIT_ICHOR_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ]
+      },
+      {
+        "id": "LEECHING_HUG_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SMOTHER_MOVE"
+      },
+      {
+        "id": "SMOTHER_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "VOMIT_ICHOR_MOVE"
+      }
+    ],
+    "loc_key": "SLIMED_BERSERKER",
+    "title": "Slimed Berserker"
+  },
+  {
+    "class_name": "SlitheringStrangler",
+    "min_hp": 54,
+    "max_hp": 56,
+    "moves": [
+      {
+        "id": "CONSTRICT",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Constrict"
+      },
+      {
+        "id": "TWACK",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "CONSTRICT"
+      },
+      {
+        "id": "LASH",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "CONSTRICT",
+        "title": "Lash"
+      }
+    ],
+    "loc_key": "SLITHERING_STRANGLER",
+    "title": "Slithering Strangler"
+  },
+  {
+    "class_name": "SludgeSpinner",
+    "min_hp": 41,
+    "max_hp": 42,
+    "moves": [
+      {
+        "id": "OIL_SPRAY_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Oil Spray"
+      },
+      {
+        "id": "SLAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Slam"
+      },
+      {
+        "id": "RAGE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Rage"
+      }
+    ],
+    "loc_key": "SLUDGE_SPINNER",
+    "title": "Sludge Spinner"
+  },
+  {
+    "class_name": "SlumberingBeetle",
+    "min_hp": 89,
+    "moves": [
+      {
+        "id": "SNORE_MOVE",
+        "intents": [
+          {
+            "type": "SleepIntent"
+          }
+        ],
+        "title": "Snore"
+      },
+      {
+        "id": "ROLL_OUT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "ROLL_OUT_MOVE",
+        "title": "Roll Out"
+      }
+    ],
+    "powers_on_spawn": [
+      "PlatingPower",
+      "SlumberPower"
+    ],
+    "loc_key": "SLUMBERING_BEETLE",
+    "title": "Slumbering Beetle"
+  },
+  {
+    "class_name": "SnappingJaxfruit",
+    "min_hp": 34,
+    "max_hp": 36,
+    "moves": [
+      {
+        "id": "ENERGY_ORB_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "ENERGY_ORB_MOVE",
+        "effects": [
+          "Apply StrengthPower",
+          "Attack"
+        ],
+        "title": "Energy Orb"
+      }
+    ],
+    "loc_key": "SNAPPING_JAXFRUIT",
+    "title": "Snapping Jaxfruit"
+  },
+  {
+    "class_name": "SneakyGremlin",
+    "min_hp": 11,
+    "max_hp": 15,
+    "moves": [
+      {
+        "id": "SPAWNED_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ]
+      }
+    ],
+    "loc_key": "SNEAKY_GREMLIN",
+    "title": "Sneaky Gremlin"
+  },
+  {
+    "class_name": "SoulFysh",
+    "min_hp": 221,
+    "moves": [
+      {
+        "id": "BECKON_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "DE_GAS_MOVE"
+      },
+      {
+        "id": "DE_GAS_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "GAZE_MOVE",
+        "title": "De-Gas"
+      },
+      {
+        "id": "GAZE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "FADE_MOVE"
+      },
+      {
+        "id": "FADE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SCREAM_MOVE"
+      },
+      {
+        "id": "SCREAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "BECKON_MOVE",
+        "title": "Scream"
+      }
+    ],
+    "loc_key": "SOUL_FYSH",
+    "title": "Soul Fysh"
+  },
+  {
+    "class_name": "SoulNexus",
+    "min_hp": 254,
+    "moves": [
+      {
+        "id": "SOUL_BURN_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Soul Burn"
+      },
+      {
+        "id": "MAELSTROM_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Maelstrom"
+      },
+      {
+        "id": "DRAIN_LIFE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Drain Life"
+      }
+    ],
+    "loc_key": "SOUL_NEXUS",
+    "title": "Soul Nexus"
+  },
+  {
+    "class_name": "SpectralKnight",
+    "min_hp": 97,
+    "moves": [
+      {
+        "id": "HEX",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "SOUL_SLASH",
+        "title": "Hex"
+      },
+      {
+        "id": "SOUL_SLASH",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Soul Slash"
+      },
+      {
+        "id": "SOUL_FLAME",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "title": "Soul Flame"
+      }
+    ],
+    "loc_key": "SPECTRAL_KNIGHT",
+    "title": "Spectral Knight"
+  },
+  {
+    "class_name": "SpinyToad",
+    "min_hp": 121,
+    "max_hp": 124,
+    "moves": [
+      {
+        "id": "PROTRUDING_SPIKES_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SPIKE_EXPLOSION_MOVE",
+        "title": "Protruding Spikes"
+      },
+      {
+        "id": "SPIKE_EXPLOSION_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "TONGUE_LASH_MOVE",
+        "title": "Spike Explosion"
+      },
+      {
+        "id": "TONGUE_LASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "PROTRUDING_SPIKES_MOVE",
+        "title": "Tongue Lash"
+      }
+    ],
+    "loc_key": "SPINY_TOAD",
+    "title": "Spiny Toad"
+  },
+  {
+    "class_name": "Stabbot",
+    "min_hp": 24,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "STAB_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "STAB_MOVE",
+        "title": "Stab"
+      }
+    ],
+    "loc_key": "STABBOT",
+    "title": "Stabbot"
+  },
+  {
+    "class_name": "TenHpMonster",
+    "min_hp": 10,
+    "max_hp": 10,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "HiddenIntent"
+          }
+        ],
+        "follow_up": "NOTHING"
+      }
+    ],
+    "loc_key": "TEN_HP_MONSTER",
+    "title": "TenHpMonster"
+  },
+  {
+    "class_name": "TerrorEel",
+    "min_hp": 150,
+    "moves": [
+      {
+        "id": "CRASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "ThrashMove"
+      },
+      {
+        "id": "ThrashMove",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "CRASH_MOVE"
+      },
+      {
+        "id": "STUN_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ]
+      }
+    ],
+    "powers_on_spawn": [
+      "ShriekPower"
+    ],
+    "loc_key": "TERROR_EEL",
+    "title": "Terror Eel"
+  },
+  {
+    "class_name": "TestSubject",
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SKULL_BASH_MOVE",
+        "title": "Bite"
+      },
+      {
+        "id": "SKULL_BASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "follow_up": "BITE_MOVE",
+        "title": "Skull Bash"
+      },
+      {
+        "id": "POUNCE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "MULTI_CLAW_MOVE",
+        "title": "Pounce"
+      },
+      {
+        "id": "MULTI_CLAW_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "POUNCE_MOVE",
+        "title": "Multi-Claw"
+      },
+      {
+        "id": "PHASE3_LACERATE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "BIG_POUNCE_MOVE",
+        "title": "Lacerate"
+      },
+      {
+        "id": "BIG_POUNCE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BURNING_GROWL_MOVE",
+        "title": "Big Pounce"
+      },
+      {
+        "id": "BURNING_GROWL_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "PHASE3_LACERATE_MOVE",
+        "title": "Burning Growl"
+      }
+    ],
+    "powers_on_spawn": [
+      "AdaptablePower",
+      "EnragePower"
+    ],
+    "loc_key": "TEST_SUBJECT",
+    "title": "Test Subject #C{Count}"
+  },
+  {
+    "class_name": "TheAdversaryMkOne",
+    "min_hp": 100,
+    "moves": [
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BEAM_MOVE",
+        "title": "Smash"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BARRAGE_MOVE",
+        "title": "Beam"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SMASH_MOVE",
+        "title": "Barrage"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "THE_ADVERSARY_MK_ONE",
+    "title": "The Adversary Mk 1"
+  },
+  {
+    "class_name": "TheAdversaryMkThree",
+    "min_hp": 300,
+    "moves": [
+      {
+        "id": "CRASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FLAME_BEAM_MOVE",
+        "title": "Crash"
+      },
+      {
+        "id": "FLAME_BEAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BARRAGE_MOVE",
+        "title": "Flame Beam"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "CRASH_MOVE",
+        "title": "Barrage"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "THE_ADVERSARY_MK_THREE",
+    "title": "The Adversary Mk 3"
+  },
+  {
+    "class_name": "TheAdversaryMkTwo",
+    "min_hp": 200,
+    "moves": [
+      {
+        "id": "BASH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "FLAME_BEAM_MOVE",
+        "title": "Bash"
+      },
+      {
+        "id": "FLAME_BEAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BARRAGE_MOVE",
+        "title": "Flame Beam"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "BASH_MOVE",
+        "title": "Barrage"
+      }
+    ],
+    "powers_on_spawn": [
+      "ArtifactPower"
+    ],
+    "loc_key": "THE_ADVERSARY_MK_TWO",
+    "title": "The Adversary Mk 2"
+  },
+  {
+    "class_name": "TheForgotten",
+    "min_hp": 111,
+    "moves": [
+      {
+        "id": "MIASMA",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "DefendIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Miasma"
+      }
+    ],
+    "powers_on_spawn": [
+      "PossessSpeedPower"
+    ],
+    "loc_key": "THE_FORGOTTEN",
+    "title": "The Forgotten"
+  },
+  {
+    "class_name": "TheInsatiable",
+    "min_hp": 341,
+    "moves": [
+      {
+        "id": "LIQUIFY_GROUND_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "THRASH_MOVE_1",
+        "title": "Liquify Ground"
+      },
+      {
+        "id": "THRASH_MOVE_1",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "LUNGING_BITE_MOVE"
+      },
+      {
+        "id": "THRASH_MOVE_2",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "THRASH_MOVE_1"
+      },
+      {
+        "id": "LUNGING_BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SALIVATE_MOVE",
+        "title": "Lunging Bite"
+      },
+      {
+        "id": "SALIVATE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "THRASH_MOVE_2",
+        "title": "Salivate"
+      }
+    ],
+    "loc_key": "THE_INSATIABLE",
+    "title": "The Insatiable"
+  },
+  {
+    "class_name": "TheLost",
+    "min_hp": 99,
+    "moves": [
+      {
+        "id": "DEBILITATING_SMOG",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "title": "Debilitating Smog"
+      }
+    ],
+    "powers_on_spawn": [
+      "PossessStrengthPower"
+    ],
+    "loc_key": "THE_LOST",
+    "title": "The Lost"
+  },
+  {
+    "class_name": "TheObscura",
+    "min_hp": 129,
+    "moves": [
+      {
+        "id": "ILLUSION_MOVE",
+        "intents": [
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "title": "Illusion"
+      },
+      {
+        "id": "PIERCING_GAZE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Piercing Gaze"
+      },
+      {
+        "id": "SAIL_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ]
+      },
+      {
+        "id": "HARDENING_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "title": "Hardening Strike"
+      }
+    ],
+    "loc_key": "THE_OBSCURA",
+    "title": "The Obscura"
+  },
+  {
+    "class_name": "ThievingHopper",
+    "min_hp": 84,
+    "moves": [
+      {
+        "id": "THIEVERY_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "CardDebuffIntent"
+          }
+        ],
+        "follow_up": "FLUTTER_MOVE",
+        "title": "Thievery"
+      },
+      {
+        "id": "NAB_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "ESCAPE_MOVE",
+        "title": "Nab"
+      },
+      {
+        "id": "HAT_TRICK_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "NAB_MOVE",
+        "title": "Hat Trick"
+      },
+      {
+        "id": "FLUTTER_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "HAT_TRICK_MOVE",
+        "title": "Flutter"
+      },
+      {
+        "id": "ESCAPE_MOVE",
+        "intents": [
+          {
+            "type": "EscapeIntent"
+          }
+        ],
+        "follow_up": "ESCAPE_MOVE",
+        "title": "Escape"
+      }
+    ],
+    "powers_on_spawn": [
+      "EscapeArtistPower"
+    ],
+    "loc_key": "THIEVING_HOPPER",
+    "title": "Thieving Hopper"
+  },
+  {
+    "class_name": "Toadpole",
+    "min_hp": 22,
+    "max_hp": 26,
+    "moves": [
+      {
+        "id": "SPIKE_SPIT_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "WHIRL_MOVE",
+        "title": "Spike Spit"
+      },
+      {
+        "id": "WHIRL_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SPIKEN_MOVE",
+        "title": "Whirl"
+      },
+      {
+        "id": "SPIKEN_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SPIKE_SPIT_MOVE",
+        "title": "Spiken"
+      }
+    ],
+    "loc_key": "TOADPOLE",
+    "title": "Toadpole"
+  },
+  {
+    "class_name": "TorchHeadAmalgam",
+    "min_hp": 211,
+    "moves": [
+      {
+        "id": "TACKLE_1_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "TACKLE_2_MOVE"
+      },
+      {
+        "id": "TACKLE_2_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BEAM_MOVE"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "TACKLE_3_MOVE"
+      },
+      {
+        "id": "TACKLE_3_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "TACKLE_4_MOVE"
+      },
+      {
+        "id": "TACKLE_4_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BEAM_MOVE"
+      }
+    ],
+    "powers_on_spawn": [
+      "MinionPower"
+    ],
+    "loc_key": "TORCH_HEAD_AMALGAM",
+    "title": "Torch Head Amalgam"
+  },
+  {
+    "class_name": "ToughEgg",
+    "min_hp": 15,
+    "max_hp": 19,
+    "moves": [
+      {
+        "id": "HATCH_MOVE",
+        "intents": [
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "title": "HATCH"
+      }
+    ],
+    "powers_on_spawn": [
+      "HatchPower"
+    ],
+    "loc_key": "TOUGH_EGG",
+    "title": "Tough Egg"
+  },
+  {
+    "class_name": "TrackerRubyRaider",
+    "min_hp": 22,
+    "max_hp": 26,
+    "moves": [
+      {
+        "id": "TRACK_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Track"
+      }
+    ],
+    "loc_key": "TRACKER_RUBY_RAIDER",
+    "title": "Tracker Raider"
+  },
+  {
+    "class_name": "Tunneler",
+    "min_hp": 92,
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BURROW_MOVE",
+        "title": "Bite"
+      },
+      {
+        "id": "BURROW_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "DefendIntent"
+          }
+        ],
+        "follow_up": "BELOW_MOVE_1",
+        "title": "Burrow"
+      },
+      {
+        "id": "BELOW_MOVE_1",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BELOW_MOVE_1"
+      },
+      {
+        "id": "DIZZY_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "follow_up": "BITE_MOVE"
+      }
+    ],
+    "loc_key": "TUNNELER",
+    "title": "Tunneler"
+  },
+  {
+    "class_name": "TurretOperator",
+    "min_hp": 51,
+    "moves": [
+      {
+        "id": "UNLOAD_MOVE_1",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "UNLOAD_MOVE_2"
+      },
+      {
+        "id": "UNLOAD_MOVE_2",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "RELOAD_MOVE"
+      },
+      {
+        "id": "RELOAD_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "UNLOAD_MOVE_1"
+      }
+    ],
+    "loc_key": "TURRET_OPERATOR",
+    "title": "Turret Operator"
+  },
+  {
+    "class_name": "TwigSlimeM",
+    "min_hp": 27,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "CLUMP_SHOT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ]
+      },
+      {
+        "id": "STICKY_SHOT_MOVE",
+        "intents": [
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "title": "Sticky Shot"
+      }
+    ],
+    "loc_key": "TWIG_SLIME_M",
+    "title": "Twig Slime (M)"
+  },
+  {
+    "class_name": "TwigSlimeS",
+    "min_hp": 8,
+    "max_hp": 12,
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "BUTT_MOVE"
+      }
+    ],
+    "loc_key": "TWIG_SLIME_S",
+    "title": "Twig Slime (S)"
+  },
+  {
+    "class_name": "TwoTailedRat",
+    "min_hp": 18,
+    "max_hp": 22,
+    "moves": [
+      {
+        "id": "SCRATCH_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Scratch"
+      },
+      {
+        "id": "DISEASE_BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "title": "Disease Bite"
+      },
+      {
+        "id": "SCREECH_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "title": "Screech"
+      },
+      {
+        "id": "CALL_FOR_BACKUP_MOVE",
+        "intents": [
+          {
+            "type": "SummonIntent"
+          }
+        ],
+        "title": "Call for Backup"
+      }
+    ],
+    "loc_key": "TWO_TAILED_RAT",
+    "title": "Two-Tailed Rat"
+  },
+  {
+    "class_name": "Vantom",
+    "min_hp": 183,
+    "moves": [
+      {
+        "id": "INK_BLOT_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "INKY_LANCE_MOVE",
+        "title": "Ink Blot"
+      },
+      {
+        "id": "INKY_LANCE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "DISMEMBER_MOVE",
+        "title": "Inky Lance"
+      },
+      {
+        "id": "DISMEMBER_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "PREPARE_MOVE",
+        "title": "Dismember"
+      },
+      {
+        "id": "PREPARE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "INK_BLOT_MOVE",
+        "title": "Prepare"
+      }
+    ],
+    "powers_on_spawn": [
+      "SlipperyPower"
+    ],
+    "loc_key": "VANTOM",
+    "title": "Vantom"
+  },
+  {
+    "class_name": "VineShambler",
+    "min_hp": 64,
+    "moves": [
+      {
+        "id": "GRASPING_VINES_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "CardDebuffIntent"
+          }
+        ],
+        "follow_up": "CHOMP_MOVE",
+        "title": "Grasping Vines"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "MultiAttackIntent"
+          }
+        ],
+        "follow_up": "GRASPING_VINES_MOVE",
+        "title": "Swipe"
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "SWIPE_MOVE",
+        "title": "Chomp"
+      }
+    ],
+    "loc_key": "VINE_SHAMBLER",
+    "title": "Vine Shambler"
+  },
+  {
+    "class_name": "WaterfallGiant",
+    "min_hp": 260,
+    "moves": [
+      {
+        "id": "PRESSURIZE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "STOMP_MOVE",
+        "title": "Pressurize"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "RAM_MOVE",
+        "title": "Stomp"
+      },
+      {
+        "id": "RAM_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "SIPHON_MOVE",
+        "title": "Ram"
+      },
+      {
+        "id": "SIPHON_MOVE",
+        "intents": [
+          {
+            "type": "HealIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "PRESSURE_GUN_MOVE",
+        "title": "Siphon"
+      },
+      {
+        "id": "PRESSURE_GUN_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "PRESSURE_UP_MOVE",
+        "title": "Pressure Gun"
+      },
+      {
+        "id": "PRESSURE_UP_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "follow_up": "STOMP_MOVE"
+      },
+      {
+        "id": "EXPLODE_MOVE",
+        "intents": [
+          {
+            "type": "DeathBlowIntent"
+          }
+        ],
+        "follow_up": "EXPLODE_MOVE"
+      }
+    ],
+    "loc_key": "WATERFALL_GIANT",
+    "title": "Waterfall Giant"
+  },
+  {
+    "class_name": "Wriggler",
+    "min_hp": 18,
+    "max_hp": 22,
+    "moves": [
+      {
+        "id": "NASTY_BITE_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "WRIGGLE_MOVE"
+      },
+      {
+        "id": "WRIGGLE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "StatusIntent"
+          }
+        ],
+        "follow_up": "NASTY_BITE_MOVE"
+      },
+      {
+        "id": "SPAWNED_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ]
+      }
+    ],
+    "loc_key": "WRIGGLER",
+    "title": "Wriggler"
+  },
+  {
+    "class_name": "Zapbot",
+    "min_hp": 24,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "ZAP",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          }
+        ],
+        "follow_up": "ZAP",
+        "title": "Zap"
+      }
+    ],
+    "powers_on_spawn": [
+      "HighVoltagePower"
+    ],
+    "loc_key": "ZAPBOT",
+    "title": "Zapbot"
+  }
+]

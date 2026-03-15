@@ -168,6 +168,113 @@ VAR_TYPE_TO_PLACEHOLDER: dict[str, str] = {
 }
 
 
+def _build_var_lookup(vars_list: list[dict], use_upgraded: bool) -> dict[str, int]:
+    """Build a name->value lookup from vars list, handling multiple name forms."""
+    lookup: dict[str, int] = {}
+    for v in vars_list:
+        vtype = v["type"]
+        if use_upgraded and "upgraded_value" in v:
+            raw_val = v.get("upgraded_value")
+        else:
+            raw_val = v["base_value"]
+        val: int = int(raw_val) if raw_val is not None else 0
+        lookup[vtype] = val
+        # Power vars: "Vulnerable" -> also register "VulnerablePower"
+        if not vtype.endswith("Power") and vtype not in VAR_TYPE_TO_PLACEHOLDER:
+            lookup[vtype + "Power"] = val
+        # Standard mapping: "CalculatedDamage" -> also "Damage"
+        if vtype in VAR_TYPE_TO_PLACEHOLDER:
+            lookup[VAR_TYPE_TO_PLACEHOLDER[vtype]] = val
+    return lookup
+
+
+def _resolve_placeholder(match_str: str, var_lookup: dict[str, int], upgraded: bool) -> str:
+    """Resolve a single {placeholder} expression.
+
+    Handles: diff(), plural, IfUpgraded:show, energyIcons, starIcons,
+    inverseDiff, InCombat, cond.
+    """
+    inner = match_str[1:-1]  # strip { }
+
+    # Handle {IfUpgraded:show:upgraded_text|base_text}
+    m = re.match(r"IfUpgraded:show:(.*)", inner, re.DOTALL)
+    if m:
+        parts = m.group(1).split("|", 1)
+        if upgraded:
+            return parts[0]
+        return parts[1] if len(parts) > 1 else ""
+
+    # Handle {InCombat:\n(text)|} — strip the conditional, show the combat text
+    m = re.match(r"InCombat:(.*)", inner, re.DOTALL)
+    if m:
+        parts = m.group(1).rsplit("|", 1)
+        text = parts[0].strip()
+        # Recursively resolve any nested placeholders
+        return text
+
+    # Handle {singleStarIcon} — literal icon references
+    if inner == "singleStarIcon":
+        return "[star]"
+
+    # Split name:format
+    parts = inner.split(":", 1)
+    name = parts[0]
+    fmt = parts[1] if len(parts) > 1 else ""
+
+    val = var_lookup.get(name)
+
+    # Handle {Name:energyIcons()} and {Name:energyIcons(N)}
+    if "energyIcons" in fmt:
+        if val is not None:
+            return str(val)
+        m2 = re.search(r"energyIcons\((\d+)\)", fmt)
+        if m2:
+            return m2.group(1)
+        return "?"
+
+    # Handle {Name:starIcons()}
+    if "starIcons" in fmt:
+        if val is not None:
+            return str(val)
+        return "?"
+
+    # Handle {Name:inverseDiff()}
+    if "inverseDiff" in fmt:
+        if val is not None:
+            return str(val)
+        return "?"
+
+    # Handle {Name:cond:>N?true_text|false_text}
+    m = re.match(r"cond:>(\d+)\?(.*)", fmt, re.DOTALL)
+    if m:
+        threshold = int(m.group(1))
+        cond_parts = m.group(2).split("|", 1)
+        if val is not None and val > threshold:
+            # Recursively resolve nested {Name:diff()} in true branch
+            result = cond_parts[0]
+            result = result.replace(f"{{{name}:diff()}}", str(val))
+            return result
+        return cond_parts[1] if len(cond_parts) > 1 else ""
+
+    # Handle {Name:plural:singular|plural}
+    m = re.match(r"plural:(.*)", fmt, re.DOTALL)
+    if m:
+        plural_parts = m.group(1).split("|", 1)
+        if val is not None:
+            if val == 1:
+                return plural_parts[0]
+            return plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+        # No value — just use plural form
+        return plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+
+    # Handle {Name:diff()} or just {Name}
+    if val is not None:
+        return str(val)
+
+    # Unresolved
+    return match_str
+
+
 def render_description(
     template: str,
     vars_list: list[dict],
@@ -180,30 +287,27 @@ def render_description(
     if not template:
         return ("", "")
 
+    var_lookup = _build_var_lookup(vars_list, use_upgraded)
+
     rendered = template
 
-    # Substitute variables
-    for v in vars_list:
-        vtype = v["type"]
-        val = v.get("upgraded_value") if use_upgraded and "upgraded_value" in v else v["base_value"]
+    # Pre-process: strip {InCombat:...|} blocks entirely (they show calculated
+    # runtime values like "(Hits 3 times)" which we can't compute statically)
+    rendered = re.sub(r"\{InCombat:[^}]*(?:\{[^}]*\}[^}]*)*\|\}", "", rendered)
+    # Also handle simpler InCombat patterns
+    rendered = re.sub(r"\{InCombat:.*?\|\}", "", rendered, flags=re.DOTALL)
 
-        # The template uses patterns like {Damage:diff()}, {Block:diff()}, {VulnerablePower:diff()}
-        # The var type from PowerVar<VulnerablePower> becomes "Vulnerable" in our data,
-        # but the loc template uses "VulnerablePower"
-        # Try both forms
-        placeholder_names = [vtype]
-        # For power vars, the loc template often uses the full power name (e.g., "VulnerablePower")
-        if not vtype.endswith("Power") and vtype not in VAR_TYPE_TO_PLACEHOLDER:
-            placeholder_names.append(vtype + "Power")
-        # Standard mapping
-        if vtype in VAR_TYPE_TO_PLACEHOLDER:
-            mapped = VAR_TYPE_TO_PLACEHOLDER[vtype]
-            if mapped != vtype:
-                placeholder_names.append(mapped)
-
-        for name in placeholder_names:
-            # Match {Name:diff()}, {Name}, {Name:plural:xxx|yyy}, etc.
-            rendered = re.sub(rf"\{{{name}(?::[^}}]*)?\}}", str(val), rendered)
+    # Multi-pass resolution to handle nested placeholders
+    for _ in range(3):
+        # Match outermost { } that don't contain nested { }
+        new_rendered = re.sub(
+            r"\{([^{}]*)\}",
+            lambda m: _resolve_placeholder(m.group(0), var_lookup, use_upgraded),
+            rendered,
+        )
+        if new_rendered == rendered:
+            break
+        rendered = new_rendered
 
     # Convert rich text tags to HTML spans
     html = rendered
@@ -212,15 +316,15 @@ def render_description(
     html = re.sub(r"\[blue\](.*?)\[/blue\]", r'<span class="desc-blue">\1</span>', html)
     html = re.sub(r"\[green\](.*?)\[/green\]", r'<span class="desc-green">\1</span>', html)
     # Strip other formatting tags
-    html = re.sub(r"\[/?(?:sine|wave|shake|b|i)\]", "", html)
+    html = re.sub(r"\[/?(?:sine|wave|shake|b|i|jitter)\]", "", html)
     # Convert newlines to <br>
     html = html.replace("\n", "<br>")
 
     # Plain text: strip all tags
     plain = re.sub(r"\[/?[^\]]*\]", "", rendered)
     # Clean up any remaining unsubstituted placeholders
-    plain = re.sub(r"\{[^}]*\}", "[?]", plain)
-    html = re.sub(r"\{[^}]*\}", "[?]", html)
+    plain = re.sub(r"\{[^}]*\}", "?", plain)
+    html = re.sub(r"\{[^}]*\}", "?", html)
 
     return (plain, html)
 
@@ -240,6 +344,24 @@ def main() -> None:
 
     # Load localization
     loc_data = load_localization(loc_dir, "cards")
+    power_loc = load_localization(loc_dir, "powers")
+
+    # Build power lookup: class_name -> {title, slug}
+    power_lookup: dict[str, dict[str, str]] = {}
+    for key in power_loc:
+        if key.endswith(".title"):
+            base_key = key.removesuffix(".title")
+            title = power_loc[key]
+            # Convert loc key like VULNERABLE_POWER to class name VulnerablePower
+            # We store by multiple possible names for lookup
+            slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+            info = {"class_name": base_key, "title": title, "slug": slug}
+            power_lookup[base_key] = info
+            # Also store by common class name patterns
+            # e.g., VULNERABLE_POWER -> VulnerablePower
+            parts = base_key.split("_")
+            camel = "".join(p.capitalize() for p in parts)
+            power_lookup[camel] = info
 
     # Build card pool mapping
     card_pool_map = build_card_pool_map(decompiled_dir)
@@ -298,6 +420,22 @@ def main() -> None:
         if upgraded_plain != plain or card.get("upgraded_cost") is not None:
             card["upgraded_description_plain"] = upgraded_plain
             card["upgraded_description_html"] = upgraded_html
+
+        # Enrich referenced_powers with display names and slugs
+        if "referenced_powers" in card:
+            enriched_powers: list[dict[str, str]] = []
+            for power_class in card["referenced_powers"]:
+                power_info = power_lookup.get(power_class)
+                if power_info:
+                    enriched_powers.append(power_info)
+                else:
+                    # Fallback: strip "Power" suffix for display
+                    display = power_class.removesuffix("Power")
+                    slug = re.sub(r"[^a-z0-9]+", "-", display.lower()).strip("-")
+                    enriched_powers.append(
+                        {"class_name": power_class, "title": display, "slug": slug}
+                    )
+            card["referenced_powers"] = enriched_powers
 
         # Flag deprecated/mock cards
         if card["character"] == "Deprecated":

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const powers = await getCollection('powers');
+  return powers.map(power => ({
+    params: { slug: power.id },
+    props: { power },
+  }));
+}
+
+const { power } = Astro.props;
+---
+
+<BaseLayout title={power.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}powers/`} style="font-size: 0.85rem;">&larr; All Powers</a>
+      <h1>{power.data.title}</h1>
+      <div class="card-meta">
+        <span class={power.data.power_type === 'Debuff' ? 'desc-red' : 'desc-gold'}>{power.data.power_type}</span>
+        &middot; {power.data.stack_type}
+      </div>
+    </div>
+
+    <h2 style="margin-top: 1.5rem;">Description</h2>
+    <div style="margin: 0.75rem 0; font-size: 1.1rem;" set:html={power.data.description_html || power.data.description_plain} />
+
+    {power.data.smart_description && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Dynamic Description</h2>
+        <p style="margin: 0.5rem 0; color: var(--text-muted);">{power.data.smart_description}</p>
+      </>
+    )}
+  </div>
+</BaseLayout>

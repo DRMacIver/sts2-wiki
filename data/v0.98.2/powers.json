@@ -1,0 +1,2176 @@
+[
+  {
+    "class_name": "AccelerantPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ACCELERANT_POWER",
+    "title": "Accelerant",
+    "description": "[gold]Poison[/gold] is triggered an additional time.",
+    "smart_description": "[gold]Poison[/gold] is triggered [blue]{Amount}[/blue] additional {Amount:plural:time|times}."
+  },
+  {
+    "class_name": "AccuracyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ACCURACY_POWER",
+    "title": "Accuracy",
+    "description": "[gold]Shivs[/gold] deal additional damage.",
+    "smart_description": "[gold]Shivs[/gold] deal [blue]{Amount}[/blue] additional damage."
+  },
+  {
+    "class_name": "AdaptablePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "ADAPTABLE_POWER",
+    "title": "Adaptable",
+    "description": "When this creature would be defeated, it instead revives even stronger.",
+    "smart_description": "When [gold]{OwnerName}[/gold] would be defeated, it instead revives even stronger."
+  },
+  {
+    "class_name": "AfterimagePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "AFTERIMAGE_POWER",
+    "title": "Afterimage",
+    "description": "Whenever you play a card, gain [blue]1[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you play a card, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "AggressionPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "AGGRESSION_POWER",
+    "title": "Aggression",
+    "description": "At the start of your turn, put a random Attack from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] it for the rest of combat.",
+    "smart_description": "At the start of your turn, put [blue]{Amount}[/blue] random {Amount:plural:Attack|Attacks} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] {Amount:plural:it|them} for the rest of combat."
+  },
+  {
+    "class_name": "ArsenalPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ARSENAL_POWER",
+    "title": "Arsenal",
+    "description": "Whenever you play a Colorless card, gain [blue]1[/blue] [gold]Strength[/gold].",
+    "smart_description": "Whenever you play a Colorless card, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "ArtifactPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ARTIFACT_POWER",
+    "title": "Artifact",
+    "description": "[gold]Negates[/gold] debuffs.",
+    "smart_description": "[gold]Negates[/gold] [blue]{Amount}[/blue] {Amount:plural:debuff|debuffs}."
+  },
+  {
+    "class_name": "AsleepPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ASLEEP_POWER",
+    "title": "Asleep",
+    "description": "TODO",
+    "smart_description": "Awakens upon losing HP or {Amount:plural:next turn|after [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "AutomationPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "AUTOMATION_POWER",
+    "title": "Automation",
+    "description": "Every [blue]10[/blue] cards you draw, gain [gold]Energy[/gold].",
+    "smart_description": "Every [blue]{BaseCards}[/blue] cards you draw, gain {Amount:energyIcons()}."
+  },
+  {
+    "class_name": "BackAttackLeftPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "BACK_ATTACK_LEFT_POWER",
+    "title": "Back Attack",
+    "description": "Deals [blue]50%[/blue] more damage when it is attacking you from behind.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "BackAttackRightPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "BACK_ATTACK_RIGHT_POWER",
+    "title": "Back Attack",
+    "description": "Deals [blue]50%[/blue] more damage when it is attacking you from behind.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "BarricadePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "BARRICADE_POWER",
+    "title": "Barricade",
+    "description": "[gold]Block[/gold] is not removed at the start of this creature's turn.",
+    "smart_description": "[gold]Block[/gold] is not removed at the start of {ApplierName.StringValue:cond:[gold]{OwnerName}'s[/gold]|your} turn."
+  },
+  {
+    "class_name": "BattlewornDummyTimeLimitPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BATTLEWORN_DUMMY_TIME_LIMIT_POWER",
+    "title": "Time Limit",
+    "description": "You have [blue]3[/blue] more turns to defeat the Battleworn Dummy.",
+    "smart_description": "You have [blue]{Amount}[/blue] more {Amount:plural:turn|turns} to defeat the Battleworn Dummy."
+  },
+  {
+    "class_name": "BeaconOfHopePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BEACON_OF_HOPE_POWER",
+    "title": "Beacon of Hope",
+    "description": "Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
+    "smart_description": "Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold] {Amount:plural:|[blue]{}[/blue] times}."
+  },
+  {
+    "class_name": "BiasedCognitionPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "BIASED_COGNITION_POWER",
+    "title": "Biased Cognition",
+    "description": "At the start of your turn, lose [blue]1[/blue] [gold]Focus[/gold].",
+    "smart_description": "At the start of your turn, lose [blue]{Amount}[/blue] [gold]Focus[/gold]."
+  },
+  {
+    "class_name": "BlackHolePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BLACK_HOLE_POWER",
+    "title": "Black Hole",
+    "description": "Whenever you spend or gain {singleStarIcon}, deal [blue]3[/blue] damage to ALL enemies.",
+    "smart_description": "Whenever you spend or gain {singleStarIcon}, deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "BladeOfInkPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BLADE_OF_INK_POWER",
+    "title": "Blade of Ink",
+    "description": "Whenever you play an Attack this turn, gain [blue]2[/blue] [gold]Strength[/gold] this turn.",
+    "smart_description": "Whenever you play an Attack this turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold] this turn."
+  },
+  {
+    "class_name": "BlockNextTurnPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BLOCK_NEXT_TURN_POWER",
+    "title": "Block Next Turn",
+    "description": "At the start of your next turn, gain [blue]4[/blue] [gold]Block[/gold].",
+    "smart_description": "At the start of your next turn, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "BlurPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BLUR_POWER",
+    "title": "Blur",
+    "description": "[gold]Block[/gold] is not removed at the start of your next turn.",
+    "smart_description": "[gold]Block[/gold] is not removed at the start of your next {Amount:plural:turn|{} turns}."
+  },
+  {
+    "class_name": "BufferPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BUFFER_POWER",
+    "title": "Buffer",
+    "description": "Prevent the next time you would lose HP.",
+    "smart_description": "Prevent the next {Amount:plural:time|[blue]{}[/blue] times} you would lose HP."
+  },
+  {
+    "class_name": "BurrowedPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "BURROWED_POWER",
+    "title": "Burrowed",
+    "description": "[gold]Block[/gold] is not removed at the start of this creature's turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed.",
+    "smart_description": "[gold]Block[/gold] is not removed at the start of [gold]{OwnerName}[/gold]'s turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed."
+  },
+  {
+    "class_name": "BurstPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "BURST_POWER",
+    "title": "Burst",
+    "description": "This turn, your next Skill is played an extra time.",
+    "smart_description": "Your next {Amount:plural:Skill is|[blue]{}[/blue] Skills are} played an extra time this turn."
+  },
+  {
+    "class_name": "CalamityPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CALAMITY_POWER",
+    "title": "Calamity",
+    "description": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
+    "smart_description": "Whenever you play an Attack, add {Amount:plural:a random Attack|[blue]{}[/blue] random Attacks} into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "CalcifyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CALCIFY_POWER",
+    "title": "Calcify",
+    "description": "[gold]Osty's[/gold] attacks deal additional damage.",
+    "smart_description": "[gold]Osty's[/gold] attacks deal [blue]{Amount}[/blue] additional damage."
+  },
+  {
+    "class_name": "CallOfTheVoidPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CALL_OF_THE_VOID_POWER",
+    "title": "Call of the Void",
+    "description": "At the start of your turn, add [blue]1[/blue] random card into your [gold]Hand[/gold] and apply [gold]Ethereal[/gold] to it.",
+    "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random {Amount:plural:card|cards} into your [gold]Hand[/gold] and apply [gold]Ethereal[/gold] to {Amount:plural:it|them}."
+  },
+  {
+    "class_name": "ChainsOfBindingPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "CHAINS_OF_BINDING_POWER",
+    "title": "Chains of Binding",
+    "description": "The first [blue]3[/blue] cards drawn each turn are Afflicted with [gold]Bound[/gold].",
+    "smart_description": "The first [blue]{Amount}[/blue] cards drawn each turn are Afflicted with [gold]Bound[/gold]."
+  },
+  {
+    "class_name": "ChildOfTheStarsPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CHILD_OF_THE_STARS_POWER",
+    "title": "Child of the Stars",
+    "description": "Gain [blue]1[/blue] [gold]Block[/gold] for each {singleStarIcon} spent.",
+    "smart_description": "Gain [blue]{Amount}[/blue] [gold]Block[/gold] for each {singleStarIcon} spent."
+  },
+  {
+    "class_name": "ClarityPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CLARITY_POWER",
+    "title": "Clarity",
+    "description": "At the start of your next turn, draw [blue]1[/blue] additional card.",
+    "smart_description": "At the start of your next {Amount:plural:turn|[blue]{}[/blue] turns}, draw [blue]1[/blue] additional card."
+  },
+  {
+    "class_name": "ColossusPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "COLOSSUS_POWER",
+    "title": "Colossus",
+    "description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies this turn.",
+    "smart_description": "You receive [blue]{DamageDecrease:percentLess()}%[/blue] less damage from [gold]Vulnerable[/gold] enemies {Amount:plural:this turn|for [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "ConfusedPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "CONFUSED_POWER",
+    "title": "Confused",
+    "description": "The costs of your cards are randomized on draw, from [blue]0[/blue] to [blue]3[/blue].",
+    "smart_description": "The costs of your cards are randomized on draw, from [blue]0[/blue] to [blue]3[/blue]."
+  },
+  {
+    "class_name": "ConquerorPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "CONQUEROR_POWER",
+    "title": "Conqueror",
+    "description": "[gold]Sovereign Blade[/gold] deals double damage to the enemy this turn.",
+    "smart_description": "[gold]Sovereign Blade[/gold] deals double damage to [gold]{OwnerName}[/gold] {Amount:plural:this turn|for the next [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "ConstrictPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "CONSTRICT_POWER",
+    "title": "Constrict",
+    "description": "While the Slithering Strangler is alive, at the end of your turn, take [blue]1[/blue] damage.",
+    "smart_description": "While the Slithering Strangler is alive, at the end of your turn, take [blue]{Amount}[/blue] damage."
+  },
+  {
+    "class_name": "ConsumingShadowPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CONSUMING_SHADOW_POWER",
+    "title": "Consuming Shadow",
+    "description": "At the end of your turn, [gold]Evoke[/gold] your leftmost Orb.",
+    "smart_description": "At the end of your turn, [gold]Evoke[/gold] your {Amount:plural:|[blue]{}[/blue]} leftmost {Amount:plural:Orb|Orbs}."
+  },
+  {
+    "class_name": "CoolantPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "COOLANT_POWER",
+    "title": "Coolant",
+    "description": "At the start of your turn, gain [blue]3[/blue] [gold]Block[/gold] for each unique Orb you have.",
+    "smart_description": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold] for each unique Orb you have."
+  },
+  {
+    "class_name": "CorrosiveWavePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CORROSIVE_WAVE_POWER",
+    "title": "Corrosive Wave",
+    "description": "Whenever you draw a card this turn, apply [blue]2[/blue] [gold]Poison[/gold] to ALL enemies.",
+    "smart_description": "Whenever you draw a card this turn, apply [blue]{Amount}[/blue] [gold]Poison[/gold] to ALL enemies."
+  },
+  {
+    "class_name": "CorruptionPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "CORRUPTION_POWER",
+    "title": "Corruption",
+    "description": "Skills cost [blue]0[/blue].\nWhenever you play a Skill, [gold]Exhaust[/gold] it.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "CountdownPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "COUNTDOWN_POWER",
+    "title": "Countdown",
+    "description": "At the start of your turn, apply [blue]6[/blue] [gold]Doom[/gold] to a random enemy.",
+    "smart_description": "At the start of your turn, apply [blue]{Amount}[/blue] [gold]Doom[/gold] to a random enemy."
+  },
+  {
+    "class_name": "CoveredPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "COVERED_POWER",
+    "title": "Covered",
+    "description": "An ally is covering you. All attacks that would be directed to you are redirected to them instead.",
+    "smart_description": "[gold]{Applier}[/gold] is covering you. All attacks that would be directed to you are redirected to them instead."
+  },
+  {
+    "class_name": "CrabRagePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "CRAB_RAGE_POWER",
+    "title": "Crab Rage",
+    "description": "When an ally dies, this creature gains [blue]5[/blue] [gold]Strength[/gold] and [blue]99[/blue] [gold]Block[/gold].",
+    "smart_description": "When an ally dies, [gold]{OwnerName}[/gold] gains [blue]{StrengthPower}[/blue] [gold]Strength[/gold] and [blue]{Block}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "CreativeAiPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CREATIVE_AI_POWER",
+    "title": "Creative AI",
+    "description": "At the start of your turn, add a random Power into your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, add {Amount:plural:a random Power|[blue]{}[/blue] random Powers} into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "CrimsonMantlePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CRIMSON_MANTLE_POWER",
+    "title": "Crimson Mantle",
+    "description": "At the start of your turn, lose HP and gain [gold]Block[/gold].",
+    "smart_description": "At the start of your turn, lose [blue]{SelfDamage}[/blue] HP and gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "CrueltyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CRUELTY_POWER",
+    "title": "Cruelty",
+    "description": "Vulnerable enemies take additional damage.",
+    "smart_description": "[gold]Vulnerable[/gold] enemies take an additional [blue]{Amount}%[/blue] damage."
+  },
+  {
+    "class_name": "CuriousPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CURIOUS_POWER",
+    "title": "Curious",
+    "description": "Powers cost [blue]1[/blue] {energyPrefix:energyIcons(1)} less.",
+    "smart_description": "Powers cost [blue]{Amount}[/blue] {energyPrefix:energyIcons(1)} less."
+  },
+  {
+    "class_name": "CurlUpPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "CURL_UP_POWER",
+    "title": "Curl Up",
+    "description": "When damaged, rolls up and gains block. (Once per combat)",
+    "smart_description": "Gains [blue]{Amount}[/blue] [gold]Block[/gold] upon first being hit."
+  },
+  {
+    "class_name": "DampenPower",
+    "type": "Debuff",
+    "stack_type": "None",
+    "loc_key": "DAMPEN_POWER",
+    "title": "Dampen",
+    "description": "While Magi Knight is alive, ALL your cards are [gold]Downgraded[/gold].",
+    "smart_description": ""
+  },
+  {
+    "class_name": "DanseMacabrePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DANSE_MACABRE_POWER",
+    "title": "Danse Macabre",
+    "description": "Whenever you play a card that costs [blue]2[/blue] Energy or more, gain [blue]7[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you play a card that costs {Energy:energyIcons()} or more, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "DarkEmbracePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DARK_EMBRACE_POWER",
+    "title": "Dark Embrace",
+    "description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]1[/blue] card.",
+    "smart_description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "DebilitatePower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "DEBILITATE_POWER",
+    "title": "Debilitate",
+    "description": "[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as effective for the next [blue]2[/blue] turns.",
+    "smart_description": "[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as effective {Amount:plural:this turn|for the next [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "DemesnePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DEMESNE_POWER",
+    "title": "Demesne",
+    "description": "At the start of your turn, gain [blue]1[/blue] [gold]Energy[/gold] and draw [blue]1[/blue] additional card.",
+    "smart_description": "At the start of your turn, gain {Amount:energyIcons()} and draw [blue]{Amount}[/blue] additional {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "DemisePower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "DEMISE_POWER",
+    "title": "Demise",
+    "description": "At the end of its turn, this creature X loses HP.",
+    "smart_description": "At the end of [gold]{OwnerName}[/gold]'s turn, it loses [blue]{Amount}[/blue] HP."
+  },
+  {
+    "class_name": "DemonFormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DEMON_FORM_POWER",
+    "title": "Demon Form",
+    "description": "At the start of your turn, gain [blue]2[/blue] [gold]Strength[/gold].",
+    "smart_description": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "DevourLifePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DEVOUR_LIFE_POWER",
+    "title": "Devour Life",
+    "description": "Whenever you play a [gold]Soul[/gold], [gold]Summon[/gold] [blue]1[/blue].",
+    "smart_description": "Whenever you play a [gold]Soul[/gold], [gold]Summon[/gold] [blue]{Amount}[/blue]."
+  },
+  {
+    "class_name": "DexterityPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "loc_key": "DEXTERITY_POWER",
+    "title": "Dexterity",
+    "description": "Dexterity improves [gold]Block[/gold] gained from cards.",
+    "smart_description": "{Amount:cond:<0?Decreases|Increases} [gold]Block[/gold] gained from cards by [blue]{Amount:abs()}[/blue]."
+  },
+  {
+    "class_name": "DiamondDiademPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "DIAMOND_DIADEM_POWER",
+    "title": "Diamond Diadem",
+    "description": "Enemies deal [blue]50%[/blue] less damage this turn.",
+    "smart_description": "Enemies deal [blue]50%[/blue] less damage this turn."
+  },
+  {
+    "class_name": "DieForYouPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "DIE_FOR_YOU_POWER",
+    "title": "Die for You",
+    "description": "[gold]Osty[/gold] absorbs all unblocked attack damage.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "DisintegrationPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "DISINTEGRATION_POWER",
+    "title": "Disintegration",
+    "description": "At the end of your turn, take [blue]5[/blue] damage.",
+    "smart_description": "At the end of your turn, take [blue]{Amount}[/blue] damage."
+  },
+  {
+    "class_name": "DoomPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "DOOM_POWER",
+    "title": "Doom",
+    "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies.",
+    "smart_description": "At the end of the {OnPlayer:player|enemy} turn, if [gold]{OwnerName}[/gold] has [blue]{Amount}[/blue] or less HP, it dies."
+  },
+  {
+    "class_name": "DoorRevivalPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "DOOR_REVIVAL_POWER",
+    "title": "Door Revival",
+    "description": "Internal power for Door revival mechanics.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "DoubleDamagePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DOUBLE_DAMAGE_POWER",
+    "title": "Double Damage",
+    "description": "This turn, Attacks deal double damage.",
+    "smart_description": "{Amount:plural:This turn|For the next [blue]{}[/blue] turns}, Attacks deal double damage."
+  },
+  {
+    "class_name": "DrawCardsNextTurnPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DRAW_CARDS_NEXT_TURN_POWER",
+    "title": "Draw Cards Next Turn",
+    "description": "At the start of your next turn, draw [blue]1[/blue] additional card.",
+    "smart_description": "At the start of your next turn, draw [blue]{Amount}[/blue] additional {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "DrumOfBattlePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DRUM_OF_BATTLE_POWER",
+    "title": "Drum of Battle",
+    "description": "At the start of your turn, [gold]Exhaust[/gold] the top {Amount:plural:card|[blue]{}[/blue] cards} of your [gold]Draw Pile[/gold].",
+    "smart_description": "At the start of your turn, [gold]Exhaust[/gold] the top {Amount:plural:card|[blue]{}[/blue] cards} of your [gold]Draw Pile[/gold]."
+  },
+  {
+    "class_name": "DuplicationPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "DUPLICATION_POWER",
+    "title": "Duplication",
+    "description": "Your next card is played an extra time.",
+    "smart_description": "Your next {Amount:plural:card is|[blue]{}[/blue] cards are} played an extra time."
+  },
+  {
+    "class_name": "EchoFormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ECHO_FORM_POWER",
+    "title": "Echo Form",
+    "description": "The first card you play each turn is played an extra time.",
+    "smart_description": "The first {Amount:plural:card you play each turn is|[blue]{}[/blue] cards you play each turn are} played an extra time."
+  },
+  {
+    "class_name": "EnergyNextTurnPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ENERGY_NEXT_TURN_POWER",
+    "title": "Energy Next Turn",
+    "description": "Gain additional [gold]Energy[/gold] next turn.",
+    "smart_description": "Gain [blue]{Amount}[/blue] additional {energyPrefix:energyIcons(1)} next turn."
+  },
+  {
+    "class_name": "EnragePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ENRAGE_POWER",
+    "title": "Enrage",
+    "description": "Whenever you play a Skill, gains [blue]2[/blue] [gold]Strength[/gold].",
+    "smart_description": "Whenever you play a Skill, gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "EntropyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ENTROPY_POWER",
+    "title": "Entropy",
+    "description": "At the start of your turn, [gold]Transform[/gold] [blue]1[/blue] card in your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, [gold]Transform[/gold] [blue]{Amount}[/blue] {Amount:plural:card|cards} in your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "EnvenomPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ENVENOM_POWER",
+    "title": "Envenom",
+    "description": "Whenever you deal unblocked attack damage, apply [blue]1[/blue] [gold]Poison[/gold].",
+    "smart_description": "Whenever you deal unblocked attack damage, apply [blue]{Amount}[/blue] [gold]Poison[/gold]."
+  },
+  {
+    "class_name": "EscapeArtistPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ESCAPE_ARTIST_POWER",
+    "title": "Escape Artist",
+    "description": "Exits the combat after 4 turns.",
+    "smart_description": "Tries to escape the combat {Amount:plural:this turn|after [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "FanOfKnivesPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "FAN_OF_KNIVES_POWER",
+    "title": "Fan of Knives",
+    "description": "[gold]Shivs[/gold] hit ALL enemies.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "FastenPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FASTEN_POWER",
+    "title": "Fasten",
+    "description": "Gain an additional [blue]4[/blue] [gold]Block[/gold] from Defend cards.",
+    "smart_description": "Gain an additional [blue]{Amount}[/blue] [gold]Block[/gold] from Defend cards."
+  },
+  {
+    "class_name": "FeelNoPainPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FEEL_NO_PAIN_POWER",
+    "title": "Feel No Pain",
+    "description": "Whenever a card is Exhausted, gain [blue]3[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "FeralPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FERAL_POWER",
+    "title": "Feral",
+    "description": "The first time you play a 0{energyPrefix:energyIcons(1)} Attack each turn, return it to your [gold]Hand[/gold].",
+    "smart_description": "The first {Amount:plural:time|[blue]{}[/blue] times} you play a 0{energyPrefix:energyIcons(1)} Attack each turn, return it to your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "FlameBarrierPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FLAME_BARRIER_POWER",
+    "title": "Flame Barrier",
+    "description": "Whenever you are attacked this turn, deal [blue]4[/blue] damage back.",
+    "smart_description": "Whenever you are attacked this turn, deal [blue]{Amount}[/blue] damage back."
+  },
+  {
+    "class_name": "FlankingPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "FLANKING_POWER",
+    "title": "Flanking",
+    "description": "Other allies deal [blue]2x[/blue] more damage to this enemy this turn.",
+    "smart_description": "Other allies deal [blue]{Amount}[/blue] times more damage to this enemy this turn."
+  },
+  {
+    "class_name": "FlutterPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FLUTTER_POWER",
+    "title": "Flutter",
+    "description": "Receives [gold]50%[/gold] less damage from Attacks.",
+    "smart_description": "Receives [blue]{DamageDecrease}%[/blue] less damage from Attacks. Deal attack damage [blue]{Amount}[/blue] {Amount:plural:time|times} to [gold]Stun[/gold] it."
+  },
+  {
+    "class_name": "FocusPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "loc_key": "FOCUS_POWER",
+    "title": "Focus",
+    "description": "Increases the effectiveness of Orbs.",
+    "smart_description": "{Amount:cond:<0?Decreases|Increases} the effectiveness of Orbs by [blue]{Amount:abs()}[/blue]."
+  },
+  {
+    "class_name": "ForbiddenGrimoirePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FORBIDDEN_GRIMOIRE_POWER",
+    "title": "Forbidden Grimoire",
+    "description": "At the end of combat, remove a card from your [gold]Deck[/gold].",
+    "smart_description": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold]."
+  },
+  {
+    "class_name": "ForegoneConclusionPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FOREGONE_CONCLUSION_POWER",
+    "title": "Foregone Conclusion",
+    "description": "Next turn, put [blue]3[/blue] cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
+    "smart_description": "Next turn, put [blue]{Amount}[/blue] cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "FrailPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "FRAIL_POWER",
+    "title": "Frail",
+    "description": "While Frail, gain [blue]25%[/blue] less [gold]Block[/gold] from cards.",
+    "smart_description": "Gain [blue]25%[/blue] less [gold]Block[/gold] from cards for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "FreeAttackPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FREE_ATTACK_POWER",
+    "title": "Free Attack",
+    "description": "Your next Attack costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+    "smart_description": "Your next {Amount:plural:Attack costs|[blue]{}[/blue] Attacks cost} [blue]0[/blue] {energyPrefix:energyIcons(1)}."
+  },
+  {
+    "class_name": "FreePowerPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FREE_POWER_POWER",
+    "title": "Free Power",
+    "description": "The next Power you play costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+    "smart_description": "The next {Amount:plural:Power|[blue]{}[/blue] Powers} you play {Amount:plural:costs|cost} [blue]0[/blue] {energyPrefix:energyIcons(1)}."
+  },
+  {
+    "class_name": "FreeSkillPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FREE_SKILL_POWER",
+    "title": "Free Skill",
+    "description": "The next Skill you play costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+    "smart_description": "The next {Amount:plural:Skill|[blue]{}[/blue] Skills} you play {Amount:plural:costs|cost} [blue]0[/blue] {energyPrefix:energyIcons(1)}."
+  },
+  {
+    "class_name": "FriendshipPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FRIENDSHIP_POWER",
+    "title": "Friendship",
+    "description": "Gain [blue]1[/blue] [gold]Energy[/gold] at the start of each turn.",
+    "smart_description": "Gain {Amount:energyIcons()} at the start of each turn."
+  },
+  {
+    "class_name": "FurnacePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "FURNACE_POWER",
+    "title": "Furnace",
+    "description": "At the start of your turn, [gold]Forge[/gold] [blue]5[/blue].",
+    "smart_description": "At the start of your turn, [gold]Forge[/gold] [blue]{Amount}[/blue]."
+  },
+  {
+    "class_name": "GalvanicPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "GALVANIC_POWER",
+    "title": "Galvanic",
+    "description": "Powers are afflicted with [gold]Galvanized[/gold].",
+    "smart_description": "Powers are afflicted with [gold]{AfflictionTitle}[/gold]."
+  },
+  {
+    "class_name": "GenesisPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "GENESIS_POWER",
+    "title": "Genesis",
+    "description": "At the start of your turn, gain {singleStarIcon}.",
+    "smart_description": "At the start of your turn, gain {Amount:starIcons()}."
+  },
+  {
+    "class_name": "GigantificationPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "GIGANTIFICATION_POWER",
+    "title": "Gigantification",
+    "description": "The next Attack you play deals triple damage.",
+    "smart_description": "The next {Amount:plural:Attack you play deals|[blue]{}[/blue] Attacks you play deal} triple damage."
+  },
+  {
+    "class_name": "GrapplePower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "GRAPPLE_POWER",
+    "title": "Grapple",
+    "description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]5[/blue] damage to the enemy.",
+    "smart_description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]{Amount}[/blue] damage to [gold]{OwnerName}[/gold]."
+  },
+  {
+    "class_name": "GravityPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "GRAVITY_POWER",
+    "title": "Gravity",
+    "description": "Whenever you play a card this turn, deal [blue]2[/blue] damage to ALL enemies.",
+    "smart_description": "Whenever you play a card this turn, deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "GuardedPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "GUARDED_POWER",
+    "title": "Guarded",
+    "description": "Take half damage from enemies.",
+    "smart_description": "Take half damage from enemies. Removed if [gold]{Applier.StringValue}[/gold] dies."
+  },
+  {
+    "class_name": "HailstormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HAILSTORM_POWER",
+    "title": "Hailstorm",
+    "description": "At the end of your turn, if you have [gold]Frost[/gold], deal [blue]6[/blue] damage to ALL enemies.",
+    "smart_description": "At the end of your turn, if you have [gold]Frost[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "HammerTimePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "HAMMER_TIME_POWER",
+    "title": "Hammer Time",
+    "description": "Whenever you [gold]Forge[/gold], all allies [gold]Forge[/gold] as well.",
+    "smart_description": "Whenever you [gold]Forge[/gold], all allies [gold]Forge[/gold] as well."
+  },
+  {
+    "class_name": "HangPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "HANG_POWER",
+    "title": "Hang",
+    "description": "All [gold]Hangs[/gold] deal [blue]2[/blue] times more damage to this enemy.",
+    "smart_description": "All [gold]Hangs[/gold] deal [blue]{Amount}[/blue] times more damage to this enemy."
+  },
+  {
+    "class_name": "HardToKillPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HARD_TO_KILL_POWER",
+    "title": "Hard to Kill",
+    "description": "Reduce all damage taken and HP lost by [gold]Exoskeleton[/gold] to [blue]9[/blue].",
+    "smart_description": "Reduce all damage taken and HP lost by [gold]{OwnerName}[/gold] to [blue]9[/blue]."
+  },
+  {
+    "class_name": "HardenedShellPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HARDENED_SHELL_POWER",
+    "title": "Hardened Shell",
+    "description": "This creature cannot lose more than [blue]20[/blue] HP each turn.",
+    "smart_description": "[gold]{OwnerName}[/gold] cannot lose more than [blue]{Amount}[/blue] HP each turn."
+  },
+  {
+    "class_name": "HatchPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HATCH_POWER",
+    "title": "Hatch",
+    "description": "Hatches after X turns.",
+    "smart_description": "Hatches after {Amount} {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "HauntPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HAUNT_POWER",
+    "title": "Haunt",
+    "description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]3[/blue] HP.",
+    "smart_description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]{Amount}[/blue] HP."
+  },
+  {
+    "class_name": "HeistPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HEIST_POWER",
+    "title": "Heist",
+    "description": "When killed, returns all the stolen [gold]Gold[/gold].",
+    "smart_description": "When killed, returns all the stolen [gold]Gold[/gold]."
+  },
+  {
+    "class_name": "HelloWorldPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HELLO_WORLD_POWER",
+    "title": "Hello World",
+    "description": "At the start of your turn, add [blue]1[/blue] random Common card into your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random Common {Amount:plural:card|cards} into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "HellraiserPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "HELLRAISER_POWER",
+    "title": "Hellraiser",
+    "description": "Whenever you draw a card containing \"Strike\", it is played against a random enemy.",
+    "smart_description": "Whenever you draw a card containing \"Strike\", it is played against a random enemy."
+  },
+  {
+    "class_name": "HexPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "HEX_POWER",
+    "title": "Hex",
+    "description": "While Spectral Knight is alive, ALL your cards are [gold]Ethereal[/gold].",
+    "smart_description": ""
+  },
+  {
+    "class_name": "HighVoltagePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "HIGH_VOLTAGE_POWER",
+    "title": "High Voltage",
+    "description": "At the start of this creature's turn, it gains [blue]2[/blue] [gold]Strength[/gold].",
+    "smart_description": "At the start of [gold]{OwnerName}'s[/gold] turn, it gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "IllusionPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "ILLUSION_POWER",
+    "title": "Illusion",
+    "description": "When this dies, it revives next turn at full HP.",
+    "smart_description": "When this dies, it revives next turn at full HP."
+  },
+  {
+    "class_name": "ImbalancedPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "IMBALANCED_POWER",
+    "title": "Imbalanced",
+    "description": "If this creature's attacks are fully blocked by any player, it becomes [gold]Stunned[/gold].",
+    "smart_description": "If [gold]{OwnerName}'s[/gold] attacks are fully blocked{IsMultiplayer: by any player|}, it becomes [gold]Stunned[/gold]."
+  },
+  {
+    "class_name": "ImprovementPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "IMPROVEMENT_POWER",
+    "title": "Improvement",
+    "description": "At the end of combat, [gold]Upgrade[/gold] a random card.",
+    "smart_description": "At the end of combat, [gold]Upgrade[/gold] [blue]{Amount}[/blue] random {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "InfernoPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "INFERNO_POWER",
+    "title": "Inferno",
+    "description": "At the start of your turn, lose [blue]1[/blue] HP. Whenever you lose HP on your turn, deal [blue]4[/blue] damage to ALL enemies.",
+    "smart_description": "At the start of your turn, lose [blue]{SelfDamage}[/blue] HP. Whenever you lose HP on your turn, deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "InfestedPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "INFESTED_POWER",
+    "title": "Infested",
+    "description": "Upon dying, summons... something.",
+    "smart_description": "Upon dying, summons... something."
+  },
+  {
+    "class_name": "InfiniteBladesPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "INFINITE_BLADES_POWER",
+    "title": "Infinite Blades",
+    "description": "At the start of your turn, add a [gold]Shiv[/gold] into your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, add {Amount:plural:a [gold]Shiv[/gold]|[blue]{}[/blue] [gold]Shivs[/gold]} into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "IntangiblePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "INTANGIBLE_POWER",
+    "title": "Intangible",
+    "description": "Reduce all damage taken and HP loss to [blue]1[/blue] this turn.",
+    "smart_description": "Reduce all damage taken and HP loss to [blue]1[/blue]. Lasts for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "InterceptPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "INTERCEPT_POWER",
+    "title": "Intercept",
+    "description": "You are covering another player. All attacks that would be directed towards them are redirected towards you.",
+    "smart_description": "You are covering [gold]{Covering}[/gold]. All attacks that would be directed towards them are redirected towards you."
+  },
+  {
+    "class_name": "IterationPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ITERATION_POWER",
+    "title": "Iteration",
+    "description": "The first time you draw a [gold]Status[/gold] card each turn, draw more cards.",
+    "smart_description": "The first time you draw a [gold]Status[/gold] card each turn, draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "JuggernautPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "JUGGERNAUT_POWER",
+    "title": "Juggernaut",
+    "description": "Whenever you gain [gold]Block[/gold], deal [blue]5[/blue] damage to a random enemy.",
+    "smart_description": "Whenever you gain [gold]Block[/gold], deal [blue]{Amount}[/blue] damage to a random enemy."
+  },
+  {
+    "class_name": "JugglingPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "JUGGLING_POWER",
+    "title": "Juggling",
+    "description": "Add a copy of the third Attack you play each turn into your [gold]Hand[/gold].",
+    "smart_description": "Add [blue]{Amount}[/blue] {Amount:plural:copy|copies} of the third Attack you play each turn into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "KnockdownPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "KNOCKDOWN_POWER",
+    "title": "Knockdown",
+    "description": "This creature takes [blue]{Amount}[/blue] times the damage from other players this turn.",
+    "smart_description": "Other allies deal [blue]{Amount}[/blue] times more damage to this enemy this turn."
+  },
+  {
+    "class_name": "LeadershipPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "LEADERSHIP_POWER",
+    "title": "Leadership",
+    "description": "All other allies deal [blue]1[/blue] additional damage.",
+    "smart_description": "All other allies deal [blue]{Amount}[/blue] additional damage."
+  },
+  {
+    "class_name": "LethalityPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "LETHALITY_POWER",
+    "title": "Lethality",
+    "description": "The first Attack each turn deals 50% additional damage.",
+    "smart_description": "The first Attack each turn deals [blue]{Amount}%[/blue] additional damage."
+  },
+  {
+    "class_name": "LightningRodPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "LIGHTNING_ROD_POWER",
+    "title": "Lightning Rod",
+    "description": "At the start of the next [blue]2[/blue] turns, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold].",
+    "smart_description": "At the start of the next {Amount:plural:turn|[blue]{}[/blue] turns}, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold]."
+  },
+  {
+    "class_name": "LoopPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "LOOP_POWER",
+    "title": "Loop",
+    "description": "At the start of your turn, trigger the passive ability of your next Orb.",
+    "smart_description": "At the start of your turn, trigger the passive ability of your next Orb [blue]{Amount}[/blue] {Amount:plural:time|times}."
+  },
+  {
+    "class_name": "MachineLearningPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "MACHINE_LEARNING_POWER",
+    "title": "Machine Learning",
+    "description": "At the start of your turn, draw [blue]1[/blue] additional card.",
+    "smart_description": "At the start of your turn, draw [blue]{Amount}[/blue] additional {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "MagicBombPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "MAGIC_BOMB_POWER",
+    "title": "Magic Bomb",
+    "description": "Take [blue]20[/blue] damage at the end of your turn. Is cleared if the Magi Knight dies.",
+    "smart_description": "Take [blue]{Amount}[/blue] damage at the end of your turn. Is cleared if the Magi Knight dies."
+  },
+  {
+    "class_name": "MasterPlannerPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "MASTER_PLANNER_POWER",
+    "title": "Master Planner",
+    "description": "When you play a Skill, it gains [gold]Sly[/gold].",
+    "smart_description": ""
+  },
+  {
+    "class_name": "MayhemPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "MAYHEM_POWER",
+    "title": "Mayhem",
+    "description": "At the start of your turn, play the top card of your [gold]Draw Pile[/gold].",
+    "smart_description": "At the start of your turn, play the {Amount:plural:top card|next [blue]{}[/blue] top cards} of your [gold]Draw Pile[/gold]."
+  },
+  {
+    "class_name": "MindRotPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "MIND_ROT_POWER",
+    "title": "Mind Rot",
+    "description": "Draw [blue]1[/blue] fewer card each turn.",
+    "smart_description": "Draw [blue]{Amount}[/blue] fewer {Amount:plural:card|cards} each turn."
+  },
+  {
+    "class_name": "MinionPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "MINION_POWER",
+    "title": "Minion",
+    "description": "Minions abandon combat without their leader.",
+    "smart_description": "Minions abandon combat without their leader."
+  },
+  {
+    "class_name": "MonarchsGazePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "MONARCHS_GAZE_POWER",
+    "title": "Monarch's Gaze",
+    "description": "Whenever you attack an enemy, it loses [blue]1[/blue] [gold]Strength[/gold] this turn.",
+    "smart_description": "Whenever you attack an enemy, it loses [blue]{Amount}[/blue] [gold]Strength[/gold] this turn."
+  },
+  {
+    "class_name": "MonologuePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "MONOLOGUE_POWER",
+    "title": "Monologue",
+    "description": "Whenever you play a card this turn, gain [blue]1[/blue] [gold]Strength[/gold] this turn.",
+    "smart_description": "Whenever you play a card this turn, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold] this turn.\nCurrently granting [blue]{StrengthApplied}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "NecroMasteryPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "NECRO_MASTERY_POWER",
+    "title": "Necro Mastery",
+    "description": "Whenever [gold]Osty[/gold] loses HP, ALL enemies lose that much HP as well.",
+    "smart_description": "Whenever [gold]Osty[/gold] loses HP, ALL enemies lose {Amount:plural:|[blue]{Amount}[/blue] times }that much HP as well."
+  },
+  {
+    "class_name": "NemesisPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "NEMESIS_POWER",
+    "title": "Nemesis",
+    "description": "At the end of every other turn, gains [gold]Intangible[/gold] [blue]1[/blue].",
+    "smart_description": "At the end of every other turn, gains [gold]Intangible[/gold] [blue]1[/blue]."
+  },
+  {
+    "class_name": "NeurosurgePower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "NEUROSURGE_POWER",
+    "title": "Neurosurge",
+    "description": "At the start of your turn, apply [blue]3[/blue] [gold]Doom[/gold] to yourself.",
+    "smart_description": "At the start of your turn, apply [blue]{Amount}[/blue] [gold]Doom[/gold] to yourself."
+  },
+  {
+    "class_name": "NightmarePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "NIGHTMARE_POWER",
+    "title": "Nightmare",
+    "description": "Add [blue]3[/blue] of a chosen card into your [gold]Hand[/gold] next turn.",
+    "smart_description": "Add {Amount:plural:a|[blue]{}[/blue]} [gold]{Card}[/gold] {Amount:plural:card|cards} into your [gold]Hand[/gold] next turn."
+  },
+  {
+    "class_name": "NoBlockPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "NO_BLOCK_POWER",
+    "title": "No Block",
+    "description": "You cannot gain [gold]Block[/gold] from cards.",
+    "smart_description": "You cannot gain [gold]Block[/gold] from cards for {Amount:plural:[blue]{}[/blue] turn|[blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "NoDrawPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "NO_DRAW_POWER",
+    "title": "No Draw",
+    "description": "You may not draw any more cards this turn.",
+    "smart_description": "You may not draw any more cards this turn."
+  },
+  {
+    "class_name": "NostalgiaPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "NOSTALGIA_POWER",
+    "title": "Nostalgia",
+    "description": "The first Attack or Skill you play each turn is placed on top of your [gold]Draw Pile[/gold].",
+    "smart_description": "The first {Amount:plural:Attack or Skill|{} Attacks or Skills} you play each turn {Amount:plural:is|are} placed on top of your [gold]Draw Pile[/gold]."
+  },
+  {
+    "class_name": "NoxiousFumesPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "NOXIOUS_FUMES_POWER",
+    "title": "Noxious Fumes",
+    "description": "At the start of your turn, apply [blue]2[/blue] [gold]Poison[/gold] to ALL enemies.",
+    "smart_description": "At the start of your turn, apply [blue]{Amount}[/blue] [gold]Poison[/gold] to ALL enemies."
+  },
+  {
+    "class_name": "OblivionPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "OBLIVION_POWER",
+    "title": "Oblivion",
+    "description": "Whenever you play a card, this enemy gains [blue]1[/blue] [gold]Doom[/gold].",
+    "smart_description": "Whenever you play a card, this enemy gains [blue]{Amount}[/blue] [gold]Doom[/gold]."
+  },
+  {
+    "class_name": "OneTwoPunchPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ONE_TWO_PUNCH_POWER",
+    "title": "One-Two Punch",
+    "description": "Your next Attack is played an extra time this turn.",
+    "smart_description": "Your next {Amount:plural:Attack is|[blue]{}[/blue] Attacks are} played an extra time this turn."
+  },
+  {
+    "class_name": "OrbitPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ORBIT_POWER",
+    "title": "Orbit",
+    "description": "Every [blue]4[/blue] Energy you spend, gain an Energy.",
+    "smart_description": "Every {Energy:energyIcons()} you spend, gain {Amount:energyIcons()}."
+  },
+  {
+    "class_name": "OutbreakPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "OUTBREAK_POWER",
+    "title": "Outbreak",
+    "description": "Every [blue]10[/blue] times you apply [gold]Poison[/gold], deal damage to ALL enemies.",
+    "smart_description": "Every [blue]{Repeat}[/blue] times you apply [gold]Poison[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "PagestormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PAGESTORM_POWER",
+    "title": "Pagestorm",
+    "description": "Whenever you draw an [gold]Ethereal[/gold] card, draw [blue]1[/blue] card.",
+    "smart_description": "Whenever you draw an [gold]Ethereal[/gold] card, draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "PainfulStabsPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PAINFUL_STABS_POWER",
+    "title": "Painful Stabs",
+    "description": "Shuffle [blue]1[/blue] [gold]Wound[/gold] into your [gold]Discard Pile[/gold] each time you receive unblocked attack damage.",
+    "smart_description": "Shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Wound|Wounds}[/gold] into your [gold]Discard Pile[/gold] each time you receive unblocked attack damage."
+  },
+  {
+    "class_name": "PaleBlueDotPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PALE_BLUE_DOT_POWER",
+    "title": "Pale Blue Dot",
+    "description": "If you play enough cards in a turn, draw additional cards at the start of your next turn.",
+    "smart_description": "If you play [blue]{CardPlay}[/blue] or more cards in a turn, draw [blue]{Amount}[/blue] additional {Amount:plural:card|cards} at the start of your next turn."
+  },
+  {
+    "class_name": "PanachePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PANACHE_POWER",
+    "title": "Panache",
+    "description": "If you play [blue]5[/blue] cards this turn, deal damage to ALL enemies.",
+    "smart_description": "If you play [blue]{CardsLeft}[/blue] more {CardsLeft:plural:card|cards} this turn, deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "PaperCutsPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PAPER_CUTS_POWER",
+    "title": "Paper Cuts",
+    "description": "Whenever this creature deals unblocked attack damage to you, you lose [blue]1[/blue] [gold]Max HP[/gold].",
+    "smart_description": "Whenever [gold]{OwnerName}[/gold] deals unblocked attack damage to you, you lose [blue]{Amount}[/blue] [gold]Max HP[/gold]."
+  },
+  {
+    "class_name": "ParryPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PARRY_POWER",
+    "title": "Parry",
+    "description": "Whenever you play [gold]Sovereign Blade[/gold], gain [blue]8[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you play [gold]Sovereign Blade[/gold], gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "PersonalHivePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PERSONAL_HIVE_POWER",
+    "title": "Personal Hive",
+    "description": "Whenever this enemy is hit by an Attack, add [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
+    "smart_description": "Whenever this enemy is hit by an Attack, add [blue]{Amount}[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold]."
+  },
+  {
+    "class_name": "PhantomBladesPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PHANTOM_BLADES_POWER",
+    "title": "Phantom Blades",
+    "description": "[gold]Shivs[/gold] gain [gold]Retain[/gold].\nThe first [gold]Shiv[/gold] you play each turn deals [blue]9[/blue] additional damage.",
+    "smart_description": "[gold]Shivs[/gold] gain [gold]Retain[/gold].\nThe first [gold]Shiv[/gold] you play each turn deals [blue]{Amount}[/blue] additional damage."
+  },
+  {
+    "class_name": "PillarOfCreationPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PILLAR_OF_CREATION_POWER",
+    "title": "Pillar of Creation",
+    "description": "Whenever you create a card, gain [blue]5[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you create a card, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "PlatingPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PLATING_POWER",
+    "title": "Plating",
+    "description": "At the end of your turn, gain [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]1[/blue] at the start of your turn.",
+    "smart_description": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]{Decrement}[/blue] at the start of your turn."
+  },
+  {
+    "class_name": "PlowPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "PLOW_POWER",
+    "title": "Plow",
+    "description": "The first time this creature's HP reaches [blue]150[/blue] or below, it becomes [gold]Stunned[/gold].",
+    "smart_description": "The first time [gold]{OwnerName}'s[/gold] HP reaches [blue]{Amount}[/blue] or below, it becomes [gold]Stunned[/gold] and loses all its [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "PoisonPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "POISON_POWER",
+    "title": "Poison",
+    "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by [blue]1[/blue].",
+    "smart_description": "At the start of {OnPlayer:your turn, lose|its turn, loses} [blue]{Amount}[/blue] HP, then reduce [gold]Poison[/gold] by [blue]1[/blue]."
+  },
+  {
+    "class_name": "PossessSpeedPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "POSSESS_SPEED_POWER",
+    "title": "Possess Speed",
+    "description": "When killed, return all stolen [gold]Dexterity[/gold] to the player.",
+    "smart_description": "When killed, return all stolen [gold]Dexterity[/gold] to the player."
+  },
+  {
+    "class_name": "PossessStrengthPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "POSSESS_STRENGTH_POWER",
+    "title": "Possess Strength",
+    "description": "When killed, return all stolen [gold]Strength[/gold] to the player.",
+    "smart_description": "When killed, return all stolen [gold]Strength[/gold] to the player."
+  },
+  {
+    "class_name": "PrepTimePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PREP_TIME_POWER",
+    "title": "Prep Time",
+    "description": "At the start of your turn, gain [blue]4[/blue] [gold]Vigor[/gold].",
+    "smart_description": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Vigor[/gold]."
+  },
+  {
+    "class_name": "PyrePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "PYRE_POWER",
+    "title": "Pyre",
+    "description": "Gain [blue]1[/blue] [gold]Energy[/gold] at the start of each turn.",
+    "smart_description": "Gain {Amount:energyIcons()} at the start of each turn."
+  },
+  {
+    "class_name": "RadiancePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RADIANCE_POWER",
+    "title": "Radiance",
+    "description": "Gain an additional [gold]Energy[/gold] next turn.",
+    "smart_description": "Gain additional {Energy:energyIcons()} {Amount:plural:next turn|for the next [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "RagePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RAGE_POWER",
+    "title": "Rage",
+    "description": "Whenever you play an Attack this turn, gain [blue]3[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you play an Attack this turn, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "RampartPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RAMPART_POWER",
+    "title": "Rampart",
+    "description": "At the start of the player's turn, Turret Operator gains [blue]25[/blue] [gold]Block[/gold].",
+    "smart_description": "At the start of the player's turn, Turret Operator gains [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "RavenousPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RAVENOUS_POWER",
+    "title": "Ravenous",
+    "description": "When an enemy dies, Corpse Slug immediately eats it, becoming [gold]Stunned[/gold] and gaining [blue]1[/blue] [gold]Strength[/gold].",
+    "smart_description": "When an enemy dies, Corpse Slug immediately eats it, becoming [gold]Stunned[/gold] and gaining [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "ReaperFormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "REAPER_FORM_POWER",
+    "title": "Reaper Form",
+    "description": "Whenever Attacks deal damage, they also apply that much [gold]Doom[/gold].",
+    "smart_description": "Whenever Attacks deal damage, they also apply {Amount:plural:|[blue]{}[/blue] times }that much [gold]Doom[/gold]."
+  },
+  {
+    "class_name": "ReattachPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "REATTACH_POWER",
+    "title": "Reattach",
+    "description": "If other segments are still alive, revives in [blue]2[/blue] turns with [blue]25[/blue] HP.",
+    "smart_description": "If other segments are still alive, revives in [blue]2[/blue] turns with [blue]{Amount}[/blue] HP."
+  },
+  {
+    "class_name": "ReboundPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "REBOUND_POWER",
+    "title": "Rebound",
+    "description": "The next card you play this turn is placed on the top of your [gold]Draw Pile[/gold].",
+    "smart_description": "The next {Amount:plural:card|[blue]{}[/blue] cards} you play this turn {Amount:plural:is|are} placed on the top of your [gold]Draw Pile[/gold]."
+  },
+  {
+    "class_name": "ReflectPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "REFLECT_POWER",
+    "title": "Reflect",
+    "description": "Blocked damage is reflected to your attacker.",
+    "smart_description": "Blocked damage is reflected to your attacker for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "RegenPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "REGEN_POWER",
+    "title": "Regen",
+    "description": "[gold]Regen[/gold] heals HP at the end of your turn. Each turn, [gold]Regen[/gold] is reduced by [blue]1[/blue].",
+    "smart_description": "At the end of your turn, heal [blue]{Amount}[/blue] HP, then reduce [gold]Regen[/gold] by [blue]1[/blue]."
+  },
+  {
+    "class_name": "RetainHandPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RETAIN_HAND_POWER",
+    "title": "Retain Hand",
+    "description": "[gold]Retain[/gold] your [gold]Hand[/gold] for the next [blue]2[/blue] turns.",
+    "smart_description": "[gold]Retain[/gold] your [gold]Hand[/gold] {Amount:plural:this turn|for the next [blue]{}[/blue] turns}."
+  },
+  {
+    "class_name": "RingingPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "RINGING_POWER",
+    "title": "Ringing",
+    "description": "You can only play [blue]1[/blue] card this turn.",
+    "smart_description": "You can only play [blue]{Amount}[/blue] {Amount:plural:card|cards} this turn."
+  },
+  {
+    "class_name": "RitualPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RITUAL_POWER",
+    "title": "Ritual",
+    "description": "Gain [gold]Strength[/gold] at the end of your turn.",
+    "smart_description": "At the end of {OnPlayer:your|its} turn, {OnPlayer:gain|gains} [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "RollingBoulderPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ROLLING_BOULDER_POWER",
+    "title": "Rolling Boulder",
+    "description": "At the start of your turn, deal [blue]5[/blue] damage to ALL enemies and increase this damage by [blue]5[/blue].",
+    "smart_description": "At the start of your turn, deal [blue]{Amount}[/blue] damage to ALL enemies and increase this damage by [blue]{Damage}[/blue]."
+  },
+  {
+    "class_name": "RoyaltiesPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "ROYALTIES_POWER",
+    "title": "Royalties",
+    "description": "At the end of combat, gain [blue]25[/blue] [gold]Gold[/gold].",
+    "smart_description": "At the end of combat, gain [blue]{Amount}[/blue] [gold]Gold[/gold]."
+  },
+  {
+    "class_name": "RupturePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "RUPTURE_POWER",
+    "title": "Rupture",
+    "description": "Whenever you lose HP on your turn, gain [blue]1[/blue] [gold]Strength[/gold].",
+    "smart_description": "Whenever you lose HP on your turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "SandpitPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SANDPIT_POWER",
+    "title": "Sandpit",
+    "description": "A power used by The Insatiable.",
+    "smart_description": "{Amount:plural:At the start of the next turn|In [blue]{}[/blue] turns}, you will be eaten and die."
+  },
+  {
+    "class_name": "SeekingEdgePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "SEEKING_EDGE_POWER",
+    "title": "Seeking Edge",
+    "description": "[gold]Sovereign Blade[/gold] now hits ALL enemies.",
+    "smart_description": "[gold]Sovereign Blade[/gold] now hits ALL enemies."
+  },
+  {
+    "class_name": "SelfFormingClayPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SELF_FORMING_CLAY_POWER",
+    "title": "Self-Forming Clay",
+    "description": "Gain [blue]3[/blue] [gold]Block[/gold] next turn.",
+    "smart_description": "Gain [blue]{Amount}[/blue] [gold]Block[/gold] next turn."
+  },
+  {
+    "class_name": "SentryModePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SENTRY_MODE_POWER",
+    "title": "Sentry Mode",
+    "description": "At the start of your turn, add [blue]1[/blue] [gold]Sweeping Gaze[/gold] into your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] [gold]Sweeping Gaze[/gold] into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "SerpentFormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SERPENT_FORM_POWER",
+    "title": "Serpent Form",
+    "description": "Whenever you play a card, deal [blue]4[/blue] damage to a random enemy.",
+    "smart_description": "Whenever you play a card, deal [blue]{Amount}[/blue] damage to a random enemy."
+  },
+  {
+    "class_name": "ShadowStepPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SHADOW_STEP_POWER",
+    "title": "Shadow Step",
+    "description": "Next turn, Attacks deal double damage.",
+    "smart_description": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns after this one}, Attacks deal double damage."
+  },
+  {
+    "class_name": "ShadowmeldPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SHADOWMELD_POWER",
+    "title": "Shadowmeld",
+    "description": "Double your [gold]Block[/gold] gain this turn.",
+    "smart_description": "Double your [gold]Block[/gold] gain this turn{Amount:plural:| [blue]{}[/blue] times}."
+  },
+  {
+    "class_name": "ShriekPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "loc_key": "SHRIEK_POWER",
+    "title": "Shriek",
+    "description": "The first time this creature's HP reaches [blue]50%[/blue] or below, it becomes [gold]Stunned[/gold].",
+    "smart_description": "The first time [gold]{OwnerName}'s[/gold] HP reaches [blue]{Amount}[/blue] or below, it becomes [gold]Stunned[/gold]."
+  },
+  {
+    "class_name": "ShrinkPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "loc_key": "SHRINK_POWER",
+    "title": "Shrink",
+    "description": "This creature's Attacks deal [blue]30%[/blue] less damage for the next 3 turns.",
+    "smart_description": "{ApplierName.StringValue:cond:While {} is alive, your|[gold]{OwnerName}'s[/gold]} Attacks deal [blue]{DamageDecrease}%[/blue] less damage{Amount:cond:==1? next turn|>1? for the next [blue]{}[/blue] turns|}."
+  },
+  {
+    "class_name": "ShroudPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SHROUD_POWER",
+    "title": "Shroud",
+    "description": "Whenever you apply [gold]Doom[/gold], gain [blue]3[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you apply [gold]Doom[/gold], gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "SicEmPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "SIC_EM_POWER",
+    "title": "Sic 'Em",
+    "description": "Whenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] [blue]3[/blue].",
+    "smart_description": "Whenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] [blue]{Amount}[/blue]."
+  },
+  {
+    "class_name": "SignalBoostPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SIGNAL_BOOST_POWER",
+    "title": "Signal Boost",
+    "description": "Your next Power is played an extra time.",
+    "smart_description": "Your next {Amount:plural:Power is|[blue]{}[/blue] Powers are} played an extra time."
+  },
+  {
+    "class_name": "SkittishPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SKITTISH_POWER",
+    "title": "Skittish",
+    "description": "The first time this creature is hit each turn, it gains [blue]1[/blue] [gold]Block[/gold].",
+    "smart_description": "The first time [gold]{OwnerName}[/gold] is hit each turn, it gains [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "SleightOfFleshPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SLEIGHT_OF_FLESH_POWER",
+    "title": "Sleight of Flesh",
+    "description": "Whenever you apply a debuff to an enemy, they take [blue]13[/blue] damage.",
+    "smart_description": "Whenever you apply a debuff to an enemy, they take [blue]{Amount}[/blue] damage."
+  },
+  {
+    "class_name": "SlipperyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SLIPPERY_POWER",
+    "title": "Slippery",
+    "description": "The next time this creature loses HP, it only loses [blue]1[/blue] HP instead.",
+    "smart_description": "The next {Amount:plural:time|[blue]{}[/blue] times} [gold]{OwnerName}[/gold] loses HP, it only loses [blue]1[/blue] HP instead."
+  },
+  {
+    "class_name": "SlothPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "SLOTH_POWER",
+    "title": "Sloth",
+    "description": "You cannot play more than [blue]3[/blue] cards each turn.",
+    "smart_description": "You cannot play more than [blue]{Amount}[/blue] {Amount:plural:card|cards} each turn."
+  },
+  {
+    "class_name": "SlowPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "SLOW_POWER",
+    "title": "Slow",
+    "description": "Whenever you play a card, this enemy receives [blue]10%[/blue] more damage from Attacks this turn.",
+    "smart_description": "Whenever you play a card, {OnPlayer:you receive|this enemy receives} [blue]10%[/blue] more damage from Attacks this turn.{Amount:plural:|| (Receives [blue]{Amount}%[/blue] more damage)}"
+  },
+  {
+    "class_name": "SlumberPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SLUMBER_POWER",
+    "title": "Slumber",
+    "description": "Awakens upon taking turns or losing HP 3 times.",
+    "smart_description": "Awakens upon taking turns or losing HP [blue]{Amount}[/blue] {Amount:plural:time|times}."
+  },
+  {
+    "class_name": "SmoggyPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "SMOGGY_POWER",
+    "title": "Smoggy",
+    "description": "You can only play [blue]1[/blue] Skill per turn.",
+    "smart_description": "You can only play [blue]{Amount}[/blue] Skill per turn."
+  },
+  {
+    "class_name": "SmokestackPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SMOKESTACK_POWER",
+    "title": "Smokestack",
+    "description": "Whenever you create a Status, deal damage to ALL enemies.",
+    "smart_description": "Whenever you create a Status, deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "SneakyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SNEAKY_POWER",
+    "title": "Sneaky",
+    "description": "Whenever another player attacks an enemy, gain [gold]Block[/gold].",
+    "smart_description": "Whenever another player attacks an enemy, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "SoarPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "SOAR_POWER",
+    "title": "Soar",
+    "description": "Receives [gold]50%[/gold] less attack damage until it lands.",
+    "smart_description": "Receives [blue]{DamageDecrease}%[/blue] less attack damage until it lands."
+  },
+  {
+    "class_name": "SpectrumShiftPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SPECTRUM_SHIFT_POWER",
+    "title": "Spectrum Shift",
+    "description": "At the start of your turn, add [blue]1[/blue] random Colorless card into your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random Colorless {Amount:plural:card|cards} into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "SpeedsterPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SPEEDSTER_POWER",
+    "title": "Speedster",
+    "description": "Whenever you draw a card during your turn, deal [blue]1[/blue] damage to ALL enemies.",
+    "smart_description": "Whenever you draw a card during your turn, deal [blue]{Amount}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "SpinnerPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SPINNER_POWER",
+    "title": "Spinner",
+    "description": "At the start of your turn, [gold]Channel[/gold] [blue]1[/blue] [gold]Glass[/gold].",
+    "smart_description": "At the start of your turn, [gold]Channel[/gold] [blue]{Amount}[/blue] [gold]Glass[/gold]."
+  },
+  {
+    "class_name": "SpiritOfAshPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SPIRIT_OF_ASH_POWER",
+    "title": "Spirit of Ash",
+    "description": "Whenever you play an [gold]Ethereal[/gold] card, gain [blue]4[/blue] [gold]Block[/gold].",
+    "smart_description": "Whenever you play an [gold]Ethereal[/gold] card, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  },
+  {
+    "class_name": "StampedePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "STAMPEDE_POWER",
+    "title": "Stampede",
+    "description": "At the end of your turn, [blue]1[/blue] random Attack in your [gold]Hand[/gold] is played against a random enemy.",
+    "smart_description": "At the end of your turn, [blue]{Amount}[/blue] random {Amount:plural:Attack|Attacks} in your [gold]Hand[/gold] {Amount:plural:is played against a random enemy.|are played against a random enemy.}"
+  },
+  {
+    "class_name": "StarNextTurnPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "STAR_NEXT_TURN_POWER",
+    "title": "Star Next Turn",
+    "description": "Gain 1 {singleStarIcon} next turn.",
+    "smart_description": "Gain [blue]{Amount}[/blue] {singleStarIcon} next turn."
+  },
+  {
+    "class_name": "SteamEruptionPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "STEAM_ERUPTION_POWER",
+    "title": "Steam Eruption",
+    "description": "When killed, deals damage at the end of your next turn.",
+    "smart_description": "When killed, deals [blue]{Amount}[/blue] damage at the end of your next turn."
+  },
+  {
+    "class_name": "StockPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "STOCK_POWER",
+    "title": "Stock",
+    "description": "When killed, a new Axebot is summoned in its place.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "StormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "STORM_POWER",
+    "title": "Storm",
+    "description": "Whenever you play a Power, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold].",
+    "smart_description": "Whenever you play a Power, [gold]Channel[/gold] [blue]{Amount}[/blue] [gold]Lightning[/gold]."
+  },
+  {
+    "class_name": "StranglePower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "STRANGLE_POWER",
+    "title": "Strangle",
+    "description": "Whenever you play a card this turn, this enemy loses [blue]2[/blue] HP.",
+    "smart_description": "Whenever you play a card this turn, {OnPlayer:you lose|this enemy loses} [blue]{Amount}[/blue] HP."
+  },
+  {
+    "class_name": "StratagemPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "STRATAGEM_POWER",
+    "title": "Stratagem",
+    "description": "Whenever you shuffle your [gold]Draw Pile[/gold], choose [blue]1[/blue] card from it to put into your [gold]Hand[/gold].",
+    "smart_description": "Whenever you shuffle your [gold]Draw Pile[/gold], choose [blue]{Amount}[/blue] {Amount:plural:card|cards} from it to put into your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "StrengthPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "loc_key": "STRENGTH_POWER",
+    "title": "Strength",
+    "description": "Strength adds additional damage to Attacks.",
+    "smart_description": "{Amount:cond:<0?Decreases|Increases} attack damage by [blue]{Amount:abs()}[/blue]."
+  },
+  {
+    "class_name": "SubroutinePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SUBROUTINE_POWER",
+    "title": "Subroutine",
+    "description": "Whenever you play a Power, gain [blue]1[/blue] {energyPrefix:energyIcons(1)}.",
+    "smart_description": "Whenever you play a Power, gain [blue]{Amount}[/blue] {Amount:energyIcons()}."
+  },
+  {
+    "class_name": "SuckPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SUCK_POWER",
+    "title": "Suck",
+    "description": "Whenever this creature deals unblocked attack damage, it gains [blue]1[/blue] [gold]Strength[/gold].",
+    "smart_description": "Whenever [gold]{OwnerName}[/gold] deals unblocked attack damage, it gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "SummonNextTurnPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SUMMON_NEXT_TURN_POWER",
+    "title": "Summon Next Turn",
+    "description": "At the start of your next turn, [gold]Summon[/gold] [blue]2[/blue].",
+    "smart_description": "At the start of your next turn, [gold]Summon[/gold] [blue]{Amount}[/blue]."
+  },
+  {
+    "class_name": "SurprisePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "SURPRISE_POWER",
+    "title": "Surprise",
+    "description": "Something is off about this creature...",
+    "smart_description": "Something is off about this creature..."
+  },
+  {
+    "class_name": "SurroundedPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "SURROUNDED_POWER",
+    "title": "Surrounded",
+    "description": "Receive [blue]50%[/blue] more damage if attacked from behind. Use targeting cards or potions to change your orientation.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "SwipePower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "SWIPE_POWER",
+    "title": "Swipe",
+    "description": "Upon killing this enemy, the stolen card is returned.",
+    "smart_description": ""
+  },
+  {
+    "class_name": "SwordSagePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "SWORD_SAGE_POWER",
+    "title": "Sword Sage",
+    "description": "Increase the cost of [gold]Sovereign Blade[/gold] by [blue]1[/blue]. [gold]Sovereign Blade[/gold] now hits [blue]1[/blue] additional time.",
+    "smart_description": "Increase the cost of [gold]Sovereign Blade[/gold] by [blue]{Amount}[/blue]. [gold]Sovereign Blade[/gold] now hits [blue]{Amount}[/blue] additional {Amount:plural:time|times}."
+  },
+  {
+    "class_name": "TagTeamPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "TAG_TEAM_POWER",
+    "title": "Tag Team",
+    "description": "The next Attack another player plays on the enemy is played {Amount:plural:an extra time|[blue]{}[/blue] extra times}.",
+    "smart_description": "The next Attack another player plays on the enemy is played an extra time."
+  },
+  {
+    "class_name": "TangledPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "TANGLED_POWER",
+    "title": "Tangled",
+    "description": "Attacks cost [blue]1[/blue] additional [gold]Energy[/gold] this turn.",
+    "smart_description": "Attacks cost an additional {Amount:energyIcons()} {Amount:plural:this turn|for {} turns}."
+  },
+  {
+    "class_name": "TankPower",
+    "type": "Buff",
+    "stack_type": "Single",
+    "loc_key": "TANK_POWER",
+    "title": "Tank",
+    "description": "Take double damage from enemies. Allies take half damage from enemies.",
+    "smart_description": "Take double damage from enemies. Allies take half damage from enemies."
+  },
+  {
+    "class_name": "TemporaryDexterityPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "TemporaryDexterityPower",
+    "title": "TemporaryDexterity",
+    "description": "",
+    "smart_description": ""
+  },
+  {
+    "class_name": "TemporaryFocusPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "TemporaryFocusPower",
+    "title": "TemporaryFocus",
+    "description": "",
+    "smart_description": ""
+  },
+  {
+    "class_name": "TemporaryStrengthPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "TemporaryStrengthPower",
+    "title": "TemporaryStrength",
+    "description": "",
+    "smart_description": ""
+  },
+  {
+    "class_name": "TenderPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "TENDER_POWER",
+    "title": "Tender",
+    "description": "Whenever you play a card, lose [blue]1[/blue] [gold]Strength[/gold] and [blue]1[/blue] [gold]Dexterity[/gold] this turn.",
+    "smart_description": "Whenever you play a card, lose [blue]{Amount}[/blue] [gold]Strength[/gold] and [blue]{Amount}[/blue] [gold]Dexterity[/gold] this turn."
+  },
+  {
+    "class_name": "TerritorialPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "TERRITORIAL_POWER",
+    "title": "Territorial",
+    "description": "At the end of its turn, gains [blue]1[/blue] [gold]Strength[/gold].",
+    "smart_description": "At the end of its turn, gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "TheBombPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "THE_BOMB_POWER",
+    "title": "The Bomb",
+    "description": "At the end of [blue]3[/blue] turns, deal [blue]40[/blue] damage to ALL enemies.",
+    "smart_description": "At the end of {Amount:plural:this turn|[blue]{}[/blue] turns}, deal [blue]{Damage}[/blue] damage to ALL enemies."
+  },
+  {
+    "class_name": "TheGambitPower",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "loc_key": "THE_GAMBIT_POWER",
+    "title": "The Gambit",
+    "description": "If you take unblocked attack damage this combat, die.",
+    "smart_description": "If you take unblocked attack damage this combat, die."
+  },
+  {
+    "class_name": "TheHuntPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "THE_HUNT_POWER",
+    "title": "The Hunt",
+    "description": "Gain [blue]1[/blue] additional card reward at the end of combat.",
+    "smart_description": "Gain [blue]{Amount}[/blue] additional card {Amount:plural:reward|rewards} at the end of combat."
+  },
+  {
+    "class_name": "TheSealedThronePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "THE_SEALED_THRONE_POWER",
+    "title": "The Sealed Throne",
+    "description": "Whenever you play a card, gain {singleStarIcon}.",
+    "smart_description": "Whenever you play a card, gain {Amount:starIcons()}."
+  },
+  {
+    "class_name": "ThieveryPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "THIEVERY_POWER",
+    "title": "Thievery",
+    "description": "Steals [gold]Gold[/gold] when Attacking.",
+    "smart_description": "Steals [blue]{Amount}[/blue] [gold]Gold[/gold] when Attacking."
+  },
+  {
+    "class_name": "ThornsPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "THORNS_POWER",
+    "title": "Thorns",
+    "description": "When hit by an attack, deal damage back.",
+    "smart_description": "When hit by an attack, deal [blue]{Amount}[/blue] damage back."
+  },
+  {
+    "class_name": "ThunderPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "THUNDER_POWER",
+    "title": "Thunder",
+    "description": "Whenever you [gold]Evoke Lightning[/gold], deal [blue]8[/blue] damage to each enemy hit.",
+    "smart_description": "Whenever you [gold]Evoke Lightning[/gold], deal [blue]{Amount}[/blue] damage to each enemy hit."
+  },
+  {
+    "class_name": "ToolsOfTheTradePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "TOOLS_OF_THE_TRADE_POWER",
+    "title": "Tools of the Trade",
+    "description": "At the start of your turn, draw [blue]1[/blue] card and discard [blue]1[/blue] card.",
+    "smart_description": "At the start of your turn, draw [blue]{Amount}[/blue] {Amount:plural:card|cards} and discard [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "ToricToughnessPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "TORIC_TOUGHNESS_POWER",
+    "title": "Toric Toughness",
+    "description": "Gain [blue]5[/blue] [gold]Block[/gold] at the start of the next [blue]2[/blue] turns.",
+    "smart_description": "Gain [blue]{Block:diff()}[/blue] [gold]Block[/gold] at the start of the next [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "TrackingPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "TRACKING_POWER",
+    "title": "Tracking",
+    "description": "[gold]Weak[/gold] enemies take [blue]2[/blue] times more damage from Attacks.",
+    "smart_description": "[gold]Weak[/gold] enemies take [blue]{Amount}[/blue] times more damage from Attacks."
+  },
+  {
+    "class_name": "TrashToTreasurePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "TRASH_TO_TREASURE_POWER",
+    "title": "Trash to Treasure",
+    "description": "Whenever you create a Status, [gold]Channel[/gold] [blue]1[/blue] random Orb.",
+    "smart_description": "Whenever you create a Status, [gold]Channel[/gold] {Amount:plural:[blue]{}[/blue] random Orb|[blue]{}[/blue] random Orbs}."
+  },
+  {
+    "class_name": "TyrannyPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "TYRANNY_POWER",
+    "title": "Tyranny",
+    "description": "At the start of your turn, draw a card and [gold]Exhaust[/gold] a card from your [gold]Hand[/gold].",
+    "smart_description": "At the start of your turn, draw {Amount:plural:[blue]{}[/blue] card|[blue]{}[/blue] cards} and [gold]Exhaust[/gold] {Amount:plural:[blue]{}[/blue] card|[blue]{}[/blue] cards} from your [gold]Hand[/gold]."
+  },
+  {
+    "class_name": "UnmovablePower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "UNMOVABLE_POWER",
+    "title": "Unmovable",
+    "description": "The first time you gain [gold]Block[/gold] from a card each turn, double the amount gained.",
+    "smart_description": "The first {Amount:plural:time|[blue]{}[/blue] times} you gain [gold]Block[/gold] from a card each turn, double the amount gained."
+  },
+  {
+    "class_name": "VeilpiercerPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "VEILPIERCER_POWER",
+    "title": "Veilpiercer",
+    "description": "The next [gold]Ethereal card[/gold] you play costs [blue]0[/blue].",
+    "smart_description": "The next [blue]{Amount}[/blue] [gold]Ethereal[/gold] {Amount:plural:card|cards} you play {Amount:plural:costs|cost} [blue]0[/blue]."
+  },
+  {
+    "class_name": "ViciousPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "VICIOUS_POWER",
+    "title": "Vicious",
+    "description": "Whenever you apply [gold]Vulnerable[/gold], draw [blue]1[/blue] card.",
+    "smart_description": "Whenever you apply [gold]Vulnerable[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "VigorPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "VIGOR_POWER",
+    "title": "Vigor",
+    "description": "Your next Attack deals additional damage.",
+    "smart_description": "{OnPlayer:Your|[gold]{OwnerName}'s[/gold]} next Attack deals [blue]{Amount}[/blue] additional damage."
+  },
+  {
+    "class_name": "VitalSparkPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "VITAL_SPARK_POWER",
+    "title": "Vital Spark",
+    "description": "The first time this enemy takes Attack damage each turn, the attacker gains [blue]1[/blue] [gold]Energy[/gold].",
+    "smart_description": "The first time [gold]{OwnerName}[/gold] takes Attack damage each turn, the attacker gains {Energy:energyIcons()}."
+  },
+  {
+    "class_name": "VoidFormPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "VOID_FORM_POWER",
+    "title": "Void Form",
+    "description": "The first [blue]2[/blue] cards you play each turn are free to play.",
+    "smart_description": "The first {Amount:plural:card|[blue]{}[/blue] cards} you play each turn {Amount:plural:is|are} free to play."
+  },
+  {
+    "class_name": "VulnerablePower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "VULNERABLE_POWER",
+    "title": "Vulnerable",
+    "description": "Vulnerable creatures take [blue]50%[/blue] more damage from Attacks.",
+    "smart_description": "Receive [blue]{DamageIncrease:percentMore()}%[/blue] more damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "WasteAwayPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "WASTE_AWAY_POWER",
+    "title": "Waste Away",
+    "description": "Gain [blue]1[/blue] less [gold]Energy[/gold] per turn.",
+    "smart_description": "Gain [blue]{Amount}[/blue] less {energyPrefix:energyIcons(1)} per turn."
+  },
+  {
+    "class_name": "WeakPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "WEAK_POWER",
+    "title": "Weak",
+    "description": "Weakened creatures deal [blue]25%[/blue] less damage with Attacks.",
+    "smart_description": "Attacks deal [blue]25%[/blue] less damage for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+  },
+  {
+    "class_name": "WellLaidPlansPower",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "loc_key": "WELL_LAID_PLANS_POWER",
+    "title": "Well-Laid Plans",
+    "description": "At the end of your turn, [gold]Retain[/gold] up to [blue]1[/blue] card.",
+    "smart_description": "At the end of your turn, [gold]Retain[/gold] up to [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "WraithFormPower",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "loc_key": "WRAITH_FORM_POWER",
+    "title": "Wraith Form",
+    "description": "At the start of your turn, lose [blue]1[/blue] [gold]Dexterity[/gold].",
+    "smart_description": "At the start of your turn, lose [blue]{Amount}[/blue] [gold]Dexterity[/gold]."
+  }
+]

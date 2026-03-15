@@ -5,12 +5,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Home">
   <h1>Slay the Spire 2 Wiki</h1>
   <p style="margin-top: 1rem; color: var(--text-muted);">
-    An unofficial wiki generated from decompiled game data.
+    An unofficial wiki generated from decompiled game data (v0.98.2).
   </p>
-  <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-    <a href={`${import.meta.env.BASE_URL}cards/`} class="card-entry" style="display: block; min-width: 200px;">
+  <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;">
+    <a href={`${import.meta.env.BASE_URL}cards/`} class="card-entry" style="display: block;">
       <h3>Cards</h3>
-      <p class="card-meta">All cards by character, type, and rarity</p>
+      <p class="card-meta">575 cards by character, type, and rarity</p>
+    </a>
+    <a href={`${import.meta.env.BASE_URL}powers/`} class="card-entry" style="display: block;">
+      <h3>Powers</h3>
+      <p class="card-meta">241 buffs and debuffs</p>
+    </a>
+    <a href={`${import.meta.env.BASE_URL}monsters/`} class="card-entry" style="display: block;">
+      <h3>Monsters</h3>
+      <p class="card-meta">117 monsters with movesets and HP</p>
+    </a>
+    <a href={`${import.meta.env.BASE_URL}encounters/`} class="card-entry" style="display: block;">
+      <h3>Encounters</h3>
+      <p class="card-meta">88 encounters across 4 acts</p>
+    </a>
+    <a href={`${import.meta.env.BASE_URL}ancients/`} class="card-entry" style="display: block;">
+      <h3>Ancients</h3>
+      <p class="card-meta">9 ancients with relic offerings</p>
     </a>
   </div>
 </BaseLayout>

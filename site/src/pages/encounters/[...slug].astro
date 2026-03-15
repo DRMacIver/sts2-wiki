@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const encounters = await getCollection('encounters');
+  return encounters.map(enc => ({
+    params: { slug: enc.id },
+    props: { enc },
+  }));
+}
+
+const { enc } = Astro.props;
+---
+
+<BaseLayout title={enc.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}encounters/`} style="font-size: 0.85rem;">&larr; All Encounters</a>
+      <h1>{enc.data.title}</h1>
+      <div class="card-meta">
+        {enc.data.room_type}
+        {enc.data.is_weak && ' (Weak)'}
+        {enc.data.acts.length > 0 && ` · ${enc.data.acts.join(', ')}`}
+      </div>
+    </div>
+
+    <h2 style="margin-top: 1.5rem;">Monsters</h2>
+    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+      {enc.data.monsters.map(m => (
+        <li><a href={`${import.meta.env.BASE_URL}monsters/${m.slug}/`}>{m.title}</a></li>
+      ))}
+    </ul>
+
+    {enc.data.tags.length > 0 && (
+      <div style="margin-top: 1rem;">
+        <strong>Tags:</strong> {enc.data.tags.join(', ')}
+      </div>
+    )}
+  </div>
+</BaseLayout>

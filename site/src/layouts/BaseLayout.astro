@@ -18,6 +18,10 @@ const { title } = Astro.props;
     <nav style="background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 0.75rem 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
       <a href={import.meta.env.BASE_URL} style="font-weight: 700; font-size: 1.1rem;">STS2 Wiki</a>
       <a href={`${import.meta.env.BASE_URL}cards/`}>Cards</a>
+      <a href={`${import.meta.env.BASE_URL}powers/`}>Powers</a>
+      <a href={`${import.meta.env.BASE_URL}monsters/`}>Monsters</a>
+      <a href={`${import.meta.env.BASE_URL}encounters/`}>Encounters</a>
+      <a href={`${import.meta.env.BASE_URL}ancients/`}>Ancients</a>
     </nav>
     <main style="max-width: 1200px; margin: 0 auto; padding: 1.5rem;">
       <slot />

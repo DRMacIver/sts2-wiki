@@ -36,36 +36,62 @@ def load_localization(loc_dir: str, table: str) -> dict[str, str]:
 def parse_canonical_vars(cs_content: str) -> list[dict]:
     """Extract DynamicVar declarations from a C# file.
 
-    Handles: DamageVar, CalculatedDamageVar, BlockVar, CalculatedBlockVar,
-    PowerVar<T>, EnergyVar, CardsVar, HpLossVar, GenericVar, SummonVar,
-    ForgeVar, RepeatVar.
+    Handles all known Var types from decompiled STS2 code.
     """
     vars_found: list[dict] = []
 
-    for m in re.finditer(r"new DamageVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "Damage", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new CalculatedDamageVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "CalculatedDamage", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new BlockVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "Block", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new CalculatedBlockVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "CalculatedBlock", "base_value": int(m.group(1))})
+    # Simple numeric vars: new XxxVar(Nm) or new XxxVar(N)
+    simple_vars = {
+        "DamageVar": "Damage",
+        "CalculatedDamageVar": "CalculatedDamage",
+        "ExtraDamageVar": "ExtraDamage",
+        "BlockVar": "Block",
+        "CalculatedBlockVar": "CalculatedBlock",
+        "HpLossVar": "HpLoss",
+        "SummonVar": "Summon",
+        "ForgeVar": "Forge",
+        "GoldVar": "Gold",
+        "HealVar": "Heal",
+        "MaxHpVar": "MaxHp",
+        "OstyDamageVar": "OstyDamage",
+        "StarsVar": "Stars",
+    }
+    for var_class, var_type in simple_vars.items():
+        for m in re.finditer(rf"new {var_class}\((-?\d+)m", cs_content):
+            vars_found.append({"type": var_type, "base_value": int(m.group(1))})
+
+    # Vars without 'm' decimal suffix
+    int_vars = {
+        "EnergyVar": "Energy",
+        "CardsVar": "Cards",
+        "RepeatVar": "Repeat",
+        "IntVar": "Int",
+    }
+    for var_class, var_type in int_vars.items():
+        for m in re.finditer(rf"new {var_class}\((-?\d+)\)", cs_content):
+            vars_found.append({"type": var_type, "base_value": int(m.group(1))})
+    # CardsVar can also have 'm' suffix
+    for m in re.finditer(r"new CardsVar\((-?\d+)m\)", cs_content):
+        # Avoid double-counting if already found without 'm'
+        val = int(m.group(1))
+        if not any(v["type"] == "Cards" and v["base_value"] == val for v in vars_found):
+            vars_found.append({"type": "Cards", "base_value": val})
+
+    # PowerVar<T>(Nm)
     for m in re.finditer(r"new PowerVar<(\w+)>\((-?\d+)m", cs_content):
         vars_found.append({"type": m.group(1).replace("Power", ""), "base_value": int(m.group(2))})
-    for m in re.finditer(r"new EnergyVar\((-?\d+)\)", cs_content):
-        vars_found.append({"type": "Energy", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new CardsVar\((-?\d+)m?\)", cs_content):
-        vars_found.append({"type": "Cards", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new HpLossVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "HpLoss", "base_value": int(m.group(1))})
+
+    # Named BlockVar: new BlockVar("Name", Nm, ...)
+    for m in re.finditer(r'new BlockVar\("(\w+)",\s*(-?\d+)m', cs_content):
+        vars_found.append({"type": m.group(1), "base_value": int(m.group(2))})
+
+    # DynamicVar("Name", Nm) — generic named vars
+    for m in re.finditer(r'new DynamicVar\("(\w+)",\s*(-?\d+)m', cs_content):
+        vars_found.append({"type": m.group(1), "base_value": int(m.group(2))})
+
+    # GenericVar("Name", Nm) — legacy pattern
     for m in re.finditer(r'new GenericVar\("(\w+)",\s*(-?\d+)m', cs_content):
         vars_found.append({"type": m.group(1), "base_value": int(m.group(2))})
-    for m in re.finditer(r"new SummonVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "Summon", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new ForgeVar\((-?\d+)m", cs_content):
-        vars_found.append({"type": "Forge", "base_value": int(m.group(1))})
-    for m in re.finditer(r"new RepeatVar\((-?\d+)\)", cs_content):
-        vars_found.append({"type": "Repeat", "base_value": int(m.group(1))})
 
     return vars_found
 

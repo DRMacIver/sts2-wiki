@@ -1,0 +1,1414 @@
+[
+  {
+    "class_name": "AxebotsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Axebot",
+      "Axebot"
+    ],
+    "tags": [],
+    "loc_key": "AXEBOTS_NORMAL",
+    "title": "Bot Buddies",
+    "loss": "{character} was dismembered by some [gold]{encounter}[/gold].",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "BattlewornDummyEventEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "BattleFriendV1",
+      "BattleFriendV2",
+      "BattleFriendV3"
+    ],
+    "tags": [],
+    "loc_key": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+    "title": "Battleworn Dummy",
+    "loss": "{character} was somehow killed by [gold]{encounter}[/gold]???",
+    "acts": []
+  },
+  {
+    "class_name": "BowlbugsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "BowlbugRock"
+    ],
+    "tags": [
+      "Workers"
+    ],
+    "loc_key": "BOWLBUGS_NORMAL",
+    "title": "Bowlbug Swarm",
+    "loss": "{character} got in the way of a busy [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "BowlbugsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "BowlbugRock"
+    ],
+    "tags": [
+      "Workers"
+    ],
+    "loc_key": "BOWLBUGS_WEAK",
+    "title": "Bowlbugs",
+    "loss": "{character} got in the way of some busy [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "BygoneEffigyElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "BygoneEffigy"
+    ],
+    "tags": [],
+    "loc_key": "BYGONE_EFFIGY_ELITE",
+    "title": "Bygone Effigy",
+    "loss": "{character} was sliced in half by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "ByrdonisElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "Byrdonis"
+    ],
+    "tags": [],
+    "loc_key": "BYRDONIS_ELITE",
+    "title": "Byrdonis",
+    "loss": "[gold]{encounter}[/gold] protected its children from {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "CeremonialBeastBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "CeremonialBeast"
+    ],
+    "tags": [],
+    "loc_key": "CEREMONIAL_BEAST_BOSS",
+    "title": "Ceremonial Beast",
+    "loss": "{character} was put to rest by the [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "ChompersNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Chomper",
+      "Chomper"
+    ],
+    "tags": [
+      "Chomper"
+    ],
+    "loc_key": "CHOMPERS_NORMAL",
+    "title": "An Automaton Pair",
+    "loss": "{character} was chomped to death by [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "ConstructMenagerieNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "PunchConstruct",
+      "CubexConstruct",
+      "CubexConstruct"
+    ],
+    "tags": [],
+    "loc_key": "CONSTRUCT_MENAGERIE_NORMAL",
+    "title": "Construct Menagerie",
+    "loss": "The [gold]{encounter}[/gold] crushed {character}.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "CorpseSlugsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "CorpseSlug",
+      "CorpseSlug",
+      "CorpseSlug"
+    ],
+    "tags": [
+      "Slugs"
+    ],
+    "loc_key": "CORPSE_SLUGS_NORMAL",
+    "title": "Many Corpse Slugs",
+    "loss": "[gold]{encounter}[/gold] feasted on {character}.",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "CorpseSlugsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "CorpseSlug",
+      "CorpseSlug"
+    ],
+    "tags": [
+      "Slugs"
+    ],
+    "loc_key": "CORPSE_SLUGS_WEAK",
+    "title": "Corpse Slugs",
+    "loss": "[gold]{encounter}[/gold] feasted on {character}.",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "CubexConstructNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "CubexConstruct"
+    ],
+    "tags": [],
+    "loc_key": "CUBEX_CONSTRUCT_NORMAL",
+    "title": "Cubex Construct",
+    "loss": "{character} was lasered to death by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "CultistsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "CalcifiedCultist",
+      "DampCultist"
+    ],
+    "tags": [],
+    "loc_key": "CULTISTS_NORMAL",
+    "title": "Cultists",
+    "loss": "{character} was slain by some [gold]{encounter}[/gold]. [sine]Caaaaw[/sine]...",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "DecimillipedeElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "DecimillipedeSegmentFront",
+      "DecimillipedeSegmentMiddle",
+      "DecimillipedeSegmentBack"
+    ],
+    "tags": [],
+    "loc_key": "DECIMILLIPEDE_ELITE",
+    "title": "The Decimillipede",
+    "loss": "{character} couldn't survive [gold]{encounter}[/gold]'s domain.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "DenseVegetationEventEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Wriggler"
+    ],
+    "tags": [],
+    "loc_key": "DENSE_VEGETATION_EVENT_ENCOUNTER",
+    "title": "Wrigglers",
+    "loss": "{character} was infested by [gold]{encounter}[/gold].",
+    "acts": []
+  },
+  {
+    "class_name": "DeprecatedEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [],
+    "tags": [],
+    "loc_key": "DEPRECATED_ENCOUNTER",
+    "title": "Deprecated Encounter",
+    "loss": "{character} encountered some monsters that have been removed from the game.",
+    "acts": []
+  },
+  {
+    "class_name": "DevotedSculptorWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "DevotedSculptor"
+    ],
+    "tags": [],
+    "loc_key": "DEVOTED_SCULPTOR_WEAK",
+    "title": "Devoted Sculptor",
+    "loss": "{character} was smashed to pieces by [gold]{encounter}[/gold].",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "DoormakerBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "Door"
+    ],
+    "tags": [],
+    "loc_key": "DOORMAKER_BOSS",
+    "title": "The Doormaker",
+    "loss": "[gold]{encounter}[/gold] didn't take kindly to {character}'s disturbance.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "EntomancerElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "Entomancer"
+    ],
+    "tags": [],
+    "loc_key": "ENTOMANCER_ELITE",
+    "title": "Entomancer",
+    "loss": "{character} was stung to death by an [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "ExoskeletonsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Exoskeleton",
+      "Exoskeleton",
+      "Exoskeleton",
+      "Exoskeleton"
+    ],
+    "tags": [
+      "Exoskeletons"
+    ],
+    "loc_key": "EXOSKELETONS_NORMAL",
+    "title": "Many Exoskeletons",
+    "loss": "{character} was eviscerated by [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "ExoskeletonsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "Exoskeleton",
+      "Exoskeleton",
+      "Exoskeleton"
+    ],
+    "tags": [
+      "Exoskeletons"
+    ],
+    "loc_key": "EXOSKELETONS_WEAK",
+    "title": "Exoskeletons",
+    "loss": "{character} was eviscerated by some [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "FabricatorNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Fabricator"
+    ],
+    "tags": [],
+    "loc_key": "FABRICATOR_NORMAL",
+    "title": "Fabricator",
+    "loss": "{character} was zapped by a [gold]{encounter}[/gold]'s bots.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "FakeMerchantEventEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "FakeMerchantMonster"
+    ],
+    "tags": [],
+    "loc_key": "FAKE_MERCHANT_EVENT_ENCOUNTER",
+    "title": "The Merchant???",
+    "loss": "{character} faced the wrath of [gold]{encounter}[/gold]",
+    "acts": []
+  },
+  {
+    "class_name": "FlyconidNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Flyconid"
+    ],
+    "tags": [
+      "Mushroom",
+      "Slimes"
+    ],
+    "loc_key": "FLYCONID_NORMAL",
+    "title": "Shroom and Slime",
+    "loss": "{character} was absorbed by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "FogmogNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Fogmog"
+    ],
+    "tags": [],
+    "loc_key": "FOGMOG_NORMAL",
+    "title": "Fogmog",
+    "loss": "{character} was distracted by a [gold]{encounter}[/gold]'s illusions.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "FossilStalkerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "FossilStalker"
+    ],
+    "tags": [],
+    "loc_key": "FOSSIL_STALKER_NORMAL",
+    "title": "Fossil Stalker",
+    "loss": "{character} was ambushed by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "FrogKnightNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "FrogKnight"
+    ],
+    "tags": [],
+    "loc_key": "FROG_KNIGHT_NORMAL",
+    "title": "Frog Knight",
+    "loss": "A valiant [gold]{encounter}[/gold] triumphed over {character}.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "FuzzyWurmCrawlerWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "FuzzyWurmCrawler"
+    ],
+    "tags": [
+      "Crawler"
+    ],
+    "loc_key": "FUZZY_WURM_CRAWLER_WEAK",
+    "title": "Fuzzy Wurm Crawler",
+    "loss": "A [gold]{encounter}[/gold] spat on {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "GlobeHeadNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "GlobeHead"
+    ],
+    "tags": [],
+    "loc_key": "GLOBE_HEAD_NORMAL",
+    "title": "A Lone Globe Head",
+    "loss": "[gold]{encounter}[/gold] zapped {character}.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "GremlinMercNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "GremlinMerc"
+    ],
+    "tags": [],
+    "loc_key": "GREMLIN_MERC_NORMAL",
+    "title": "Two Gremlins in a Trenchcoat",
+    "loss": "{character} got mugged by [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "HauntedShipNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "HauntedShip"
+    ],
+    "tags": [],
+    "loc_key": "HAUNTED_SHIP_NORMAL",
+    "title": "Haunted Ship",
+    "loss": "A [gold]{encounter}[/gold] stomped all over {character}.",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "HunterKillerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "HunterKiller"
+    ],
+    "tags": [],
+    "loc_key": "HUNTER_KILLER_NORMAL",
+    "title": "Hunter Killer",
+    "loss": "{character} was disemboweled by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "InfestedPrismsElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "InfestedPrism"
+    ],
+    "tags": [],
+    "loc_key": "INFESTED_PRISMS_ELITE",
+    "title": "Infested Prism",
+    "loss": "{character} was stopped by an [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "InkletsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Inklet",
+      "Inklet",
+      "Inklet"
+    ],
+    "tags": [],
+    "loc_key": "INKLETS_NORMAL",
+    "title": "Inklets",
+    "loss": "Some [gold]{encounter}[/gold] wouldn't let {character} pass.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "KaiserCrabBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "Crusher",
+      "Rocket"
+    ],
+    "tags": [],
+    "loc_key": "KAISER_CRAB_BOSS",
+    "title": "Kaiser Crab",
+    "loss": "The [gold]{encounter}[/gold] struck {character} from all sides.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "KnightsElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "FlailKnight",
+      "SpectralKnight",
+      "MagiKnight"
+    ],
+    "tags": [
+      "Knights"
+    ],
+    "loc_key": "KNIGHTS_ELITE",
+    "title": "Knight Gang",
+    "loss": "{character} was slain by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "KnowledgeDemonBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "KnowledgeDemon"
+    ],
+    "tags": [],
+    "loc_key": "KNOWLEDGE_DEMON_BOSS",
+    "title": "Knowledge Demon",
+    "loss": "The [gold]{encounter}[/gold] cursed {character} with overwhelming knowledge.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "LagavulinMatriarchBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "LagavulinMatriarch"
+    ],
+    "tags": [],
+    "loc_key": "LAGAVULIN_MATRIARCH_BOSS",
+    "title": "Lagavulin Matriarch",
+    "loss": "{character} was cut in half by the [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "LivingFogNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "LivingFog"
+    ],
+    "tags": [],
+    "loc_key": "LIVING_FOG_NORMAL",
+    "title": "Evil Gas",
+    "loss": "{character} couldn't bear the stench of some [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "LouseProgenitorNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "LouseProgenitor"
+    ],
+    "tags": [],
+    "loc_key": "LOUSE_PROGENITOR_NORMAL",
+    "title": "Louse Progenitor",
+    "loss": "{character} was paralyzed by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "MawlerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Mawler"
+    ],
+    "tags": [],
+    "loc_key": "MAWLER_NORMAL",
+    "title": "Mawler",
+    "loss": "{character} became a delicious meal for a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "MechaKnightElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "MechaKnight"
+    ],
+    "tags": [],
+    "loc_key": "MECHA_KNIGHT_ELITE",
+    "title": "Mecha Knight",
+    "loss": "{character} was stabbed and burned by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "MysteriousKnightEventEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "MysteriousKnight"
+    ],
+    "tags": [],
+    "loc_key": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
+    "title": "Mysterious Knight",
+    "loss": "{character} tried to take a [gold]{encounter}[/gold]'s key.",
+    "acts": []
+  },
+  {
+    "class_name": "MytesNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Myte",
+      "Myte"
+    ],
+    "tags": [],
+    "loc_key": "MYTES_NORMAL",
+    "title": "Mass of Mytes",
+    "loss": "{character} was swarmed by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "NibbitsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Nibbit",
+      "Nibbit"
+    ],
+    "tags": [],
+    "loc_key": "NIBBITS_NORMAL",
+    "title": "A Pair of Nibbits",
+    "loss": "[gold]{encounter}[/gold] beat up {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "NibbitsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "Nibbit"
+    ],
+    "tags": [
+      "Nibbit"
+    ],
+    "loc_key": "NIBBITS_WEAK",
+    "title": "A Lone Nibbit",
+    "loss": "[gold]{encounter}[/gold] beat up {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "OvergrowthCrawlers",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "ShrinkerBeetle",
+      "FuzzyWurmCrawler"
+    ],
+    "tags": [
+      "Shrinker",
+      "Crawler"
+    ],
+    "loc_key": "OVERGROWTH_CRAWLERS",
+    "title": "Overgrowth Crawlers",
+    "loss": "Some [gold]{encounter}[/gold] feasted on {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "OvicopterNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Ovicopter"
+    ],
+    "tags": [],
+    "loc_key": "OVICOPTER_NORMAL",
+    "title": "Ovicopter",
+    "loss": "{character} became food for an [gold]{encounter}[/gold]'s children.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "OwlMagistrateNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "OwlMagistrate"
+    ],
+    "tags": [],
+    "loc_key": "OWL_MAGISTRATE_NORMAL",
+    "title": "Owl Magistrate",
+    "loss": "{character} was sentenced to death by an [gold]{encounter}[/gold].",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "PhantasmalGardenersElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "PhantasmalGardener",
+      "PhantasmalGardener",
+      "PhantasmalGardener",
+      "PhantasmalGardener"
+    ],
+    "tags": [],
+    "loc_key": "PHANTASMAL_GARDENERS_ELITE",
+    "title": "Phantasmal Gardeners",
+    "loss": "{character} was put to rest by the [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "PhrogParasiteElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "PhrogParasite"
+    ],
+    "tags": [],
+    "loc_key": "PHROG_PARASITE_ELITE",
+    "title": "Phrog Parasite",
+    "loss": "A [gold]{encounter}[/gold] spread its colony to {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "PunchConstructNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "PunchConstruct"
+    ],
+    "tags": [],
+    "loc_key": "PUNCH_CONSTRUCT_NORMAL",
+    "title": "Punch Construct",
+    "loss": "{character} engaged in fisticuffs with a [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "PunchOffEventEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "PunchConstruct",
+      "PunchConstruct"
+    ],
+    "tags": [],
+    "loc_key": "PUNCH_OFF_EVENT_ENCOUNTER",
+    "title": "Punch Constructs",
+    "loss": "{character} interrupted a bout between two [gold]{encounter}[/gold].",
+    "acts": []
+  },
+  {
+    "class_name": "QueenBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "TorchHeadAmalgam",
+      "Queen"
+    ],
+    "tags": [],
+    "loc_key": "QUEEN_BOSS",
+    "title": "Queen",
+    "loss": "The [gold]{encounter}[/gold] added a piece of {character} to her collection.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "RubyRaidersNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "AxeRubyRaider",
+      "AssassinRubyRaider",
+      "BruteRubyRaider",
+      "CrossbowRubyRaider",
+      "TrackerRubyRaider"
+    ],
+    "tags": [],
+    "loc_key": "RUBY_RAIDERS_NORMAL",
+    "title": "Ruby Raiders",
+    "loss": "{character} got jumped by a group of [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "ScrollsOfBitingNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "ScrollOfBiting",
+      "ScrollOfBiting",
+      "ScrollOfBiting",
+      "ScrollOfBiting"
+    ],
+    "tags": [
+      "Scrolls"
+    ],
+    "loc_key": "SCROLLS_OF_BITING_NORMAL",
+    "title": "Many Scrolls of Biting",
+    "loss": "[gold]{encounter}[/gold] tore {character} to shreds.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "ScrollsOfBitingWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "ScrollOfBiting",
+      "ScrollOfBiting",
+      "ScrollOfBiting"
+    ],
+    "tags": [
+      "Scrolls"
+    ],
+    "loc_key": "SCROLLS_OF_BITING_WEAK",
+    "title": "Scrolls of Biting",
+    "loss": "Some [gold]{encounter}[/gold] tore {character} to shreds.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "SeapunkWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "Seapunk"
+    ],
+    "tags": [
+      "Seapunk"
+    ],
+    "loc_key": "SEAPUNK_WEAK",
+    "title": "Seapunk",
+    "loss": "A [gold]{encounter}[/gold] clobbered {character}.",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "SewerClamNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "SewerClam"
+    ],
+    "tags": [],
+    "loc_key": "SEWER_CLAM_NORMAL",
+    "title": "Sewer Clam",
+    "loss": "{character} was gobbled up by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "ShrinkerBeetleWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "ShrinkerBeetle"
+    ],
+    "tags": [
+      "Shrinker"
+    ],
+    "loc_key": "SHRINKER_BEETLE_WEAK",
+    "title": "Shrinker Beetle",
+    "loss": "A [gold]{encounter}[/gold] snacked on {character}.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "SkulkingColonyElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "SkulkingColony"
+    ],
+    "tags": [],
+    "loc_key": "SKULKING_COLONY_ELITE",
+    "title": "Skulking Colony",
+    "loss": "{character} was absorbed by a [gold]{encounter}[/gold]",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "SlimedBerserkerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "SlimedBerserker"
+    ],
+    "tags": [],
+    "loc_key": "SLIMED_BERSERKER_NORMAL",
+    "title": "Slimed Berserker",
+    "loss": "{character} was absorbed into a [gold]{encounter}[/gold].",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "SlimesNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "LeafSlimeS",
+      "TwigSlimeS",
+      "TwigSlimeS",
+      "LeafSlimeS",
+      "TwigSlimeM",
+      "LeafSlimeM"
+    ],
+    "tags": [
+      "Slimes"
+    ],
+    "loc_key": "SLIMES_NORMAL",
+    "title": "Swarm of Slimes",
+    "loss": "{character} was felled by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "SlimesWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "LeafSlimeS",
+      "TwigSlimeS",
+      "LeafSlimeM",
+      "TwigSlimeM"
+    ],
+    "tags": [
+      "Slimes"
+    ],
+    "loc_key": "SLIMES_WEAK",
+    "title": "Group of Slimes",
+    "loss": "{character} was felled by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "SlitheringStranglerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "SnappingJaxfruit",
+      "SlitheringStrangler"
+    ],
+    "tags": [],
+    "loc_key": "SLITHERING_STRANGLER_NORMAL",
+    "title": "Strangler and Friend",
+    "loss": "{character} was suffocated by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "SludgeSpinnerWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "SludgeSpinner"
+    ],
+    "tags": [],
+    "loc_key": "SLUDGE_SPINNER_WEAK",
+    "title": "Sludge Spinner",
+    "loss": "{character} couldn't defeat a [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "SlumberingBeetleNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "BowlbugRock",
+      "BowlbugSilk",
+      "SlumberingBeetle"
+    ],
+    "tags": [
+      "Workers"
+    ],
+    "loc_key": "SLUMBERING_BEETLE_NORMAL",
+    "title": "Slumber Party",
+    "loss": "{character} interrupted a [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "SnappingJaxfruitNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "SnappingJaxfruit",
+      "Flyconid"
+    ],
+    "tags": [
+      "Mushroom"
+    ],
+    "loc_key": "SNAPPING_JAXFRUIT_NORMAL",
+    "title": "Overgrowth Flora",
+    "loss": "{character} ran afoul of some [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "SoulFyshBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "SoulFysh"
+    ],
+    "tags": [],
+    "loc_key": "SOUL_FYSH_BOSS",
+    "title": "Soul Fysh",
+    "loss": "A [gold]{encounter}[/gold] beckoned {character} to their doom.",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "SoulNexusElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "SoulNexus"
+    ],
+    "tags": [],
+    "loc_key": "SOUL_NEXUS_ELITE",
+    "title": "Soul Nexus",
+    "loss": "{character} died to a [gold]{encounter}[/gold] on a forgotten battlefield.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "SpinyToadNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "SpinyToad"
+    ],
+    "tags": [],
+    "loc_key": "SPINY_TOAD_NORMAL",
+    "title": "Spiny Toad",
+    "loss": "{character} couldn't pierce the [gold]{encounter}[/gold]'s spikes.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "TerrorEelElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "monsters": [
+      "TerrorEel"
+    ],
+    "tags": [],
+    "loc_key": "TERROR_EEL_ELITE",
+    "title": "Terror Eel",
+    "loss": "A [gold]{encounter}[/gold] was too terrifying for {character}.",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "TestSubjectBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "TestSubject"
+    ],
+    "tags": [],
+    "loc_key": "TEST_SUBJECT_BOSS",
+    "title": "Test Subject",
+    "loss": "A [gold]{encounter}[/gold] loyally guarded its masters from {character}.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "TheArchitectEventEncounter",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Architect"
+    ],
+    "tags": [],
+    "loc_key": "THE_ARCHITECT_EVENT_ENCOUNTER",
+    "title": "The Architect",
+    "loss": "You shouldn't be seeing this.",
+    "acts": []
+  },
+  {
+    "class_name": "TheInsatiableBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "TheInsatiable"
+    ],
+    "tags": [],
+    "loc_key": "THE_INSATIABLE_BOSS",
+    "title": "The Insatiable",
+    "loss": "[gold]{encounter}[/gold] devoured {character}. And yet, it still hungers...",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "TheKinBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "KinFollower",
+      "KinFollower",
+      "KinPriest"
+    ],
+    "tags": [],
+    "loc_key": "THE_KIN_BOSS",
+    "title": "The Kin",
+    "loss": "{character} was annihilated by [gold]{encounter}[/gold]'s superior strategy.",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "TheLostAndForgottenNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "TheLost",
+      "TheForgotten"
+    ],
+    "tags": [],
+    "loc_key": "THE_LOST_AND_FORGOTTEN_NORMAL",
+    "title": "Lost and Forgotten",
+    "loss": "The [gold]{encounter}[/gold] stole {character}'s will to live.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "TheObscuraNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "TheObscura"
+    ],
+    "tags": [],
+    "loc_key": "THE_OBSCURA_NORMAL",
+    "title": "The Obscura",
+    "loss": "[gold]{encounter}[/gold] and its illusion smashed {character}.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "ThievingHopperWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "ThievingHopper"
+    ],
+    "tags": [
+      "Thieves"
+    ],
+    "loc_key": "THIEVING_HOPPER_WEAK",
+    "title": "Thieving Hopper",
+    "loss": "A [gold]{encounter}[/gold] mugged {character}.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "ToadpolesNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "CalcifiedCultist",
+      "Toadpole"
+    ],
+    "tags": [],
+    "loc_key": "TOADPOLES_NORMAL",
+    "title": "Underdocks Wildlife",
+    "loss": "{character} was defeated by some [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "ToadpolesWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "Toadpole",
+      "Toadpole"
+    ],
+    "tags": [],
+    "loc_key": "TOADPOLES_WEAK",
+    "title": "Toadpoles",
+    "loss": "{character} couldn't deal with some [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "TunnelerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "Tunneler"
+    ],
+    "tags": [
+      "Burrower",
+      "Workers"
+    ],
+    "loc_key": "TUNNELER_NORMAL",
+    "title": "Tunneling Twosome",
+    "loss": "A [gold]{encounter}[/gold] finished off {character}.",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "TunnelerWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "Tunneler"
+    ],
+    "tags": [
+      "Burrower"
+    ],
+    "loc_key": "TUNNELER_WEAK",
+    "title": "Tunneler",
+    "loss": "{character} got whacked by a [gold]{encounter}[/gold].",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "TurretOperatorWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "monsters": [
+      "LivingShield",
+      "TurretOperator"
+    ],
+    "tags": [],
+    "loc_key": "TURRET_OPERATOR_WEAK",
+    "title": "Turret Operator",
+    "loss": "A [gold]{encounter}[/gold] riddled {character} full of holes.",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "TwoTailedRatsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "TwoTailedRat",
+      "TwoTailedRat",
+      "TwoTailedRat"
+    ],
+    "tags": [],
+    "loc_key": "TWO_TAILED_RATS_NORMAL",
+    "title": "Two-Tailed Rats",
+    "loss": "{character} was swarmed by some [gold]{encounter}[/gold].",
+    "acts": [
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "VantomBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "Vantom"
+    ],
+    "tags": [],
+    "loc_key": "VANTOM_BOSS",
+    "title": "Vantom",
+    "loss": "{character} was turned into an Inklet by the [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "VineShamblerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "monsters": [
+      "VineShambler"
+    ],
+    "tags": [],
+    "loc_key": "VINE_SHAMBLER_NORMAL",
+    "title": "Vine Shambler",
+    "loss": "{character} couldn't escape a [gold]{encounter}[/gold].",
+    "acts": [
+      "Overgrowth"
+    ]
+  },
+  {
+    "class_name": "WaterfallGiantBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "monsters": [
+      "WaterfallGiant"
+    ],
+    "tags": [],
+    "loc_key": "WATERFALL_GIANT_BOSS",
+    "title": "Waterfall Giant",
+    "loss": "The [gold]{encounter}[/gold] cleansed the Underdocks of {character}.",
+    "acts": [
+      "Underdocks"
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "class_name": "Darv",
+    "relic_offerings": [
+      "DustyTome"
+    ],
+    "relic_refs": [
+      "Astrolabe",
+      "BlackStar",
+      "CallingBell",
+      "EmptyCage",
+      "PandorasBox",
+      "RunicPyramid",
+      "SneckoEye",
+      "Ectoplasm",
+      "Sozu",
+      "PhilosophersStone",
+      "VelvetChoker"
+    ],
+    "loc_key": "DARV",
+    "title": "Darv",
+    "epithet": "The Hoarder",
+    "acts": []
+  },
+  {
+    "class_name": "DeprecatedAncientEvent",
+    "relic_offerings": [],
+    "loc_key": "DEPRECATED_ANCIENT_EVENT",
+    "title": "DeprecatedAncientEvent",
+    "epithet": "",
+    "_loc_missing": true,
+    "acts": []
+  },
+  {
+    "class_name": "Neow",
+    "relic_offerings": [],
+    "loc_key": "NEOW",
+    "title": "Neow",
+    "epithet": "Mother of Resurrection (Exiled)",
+    "acts": [
+      "Overgrowth",
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "Nonupeipe",
+    "relic_offerings": [
+      "BlessedAntler",
+      "BrilliantScarf",
+      "DelicateFrond",
+      "DiamondDiadem",
+      "FurCoat",
+      "Glitter",
+      "JewelryBox",
+      "LoomingFruit",
+      "SignetRing",
+      "BeautifulBracelet"
+    ],
+    "loc_key": "NONUPEIPE",
+    "title": "Nonupeipe",
+    "epithet": "Serendipity Incarnate",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "Orobas",
+    "relic_offerings": [
+      "ElectricShrymp",
+      "GlassEye",
+      "SandCastle",
+      "AlchemicalCoffer",
+      "Driftwood",
+      "RadiantPearl",
+      "PrismaticGem"
+    ],
+    "relic_refs": [
+      "SeaGlass",
+      "TouchOfOrobas",
+      "ArchaicTooth"
+    ],
+    "loc_key": "OROBAS",
+    "title": "Orobas",
+    "epithet": "Living Rainbow",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "Pael",
+    "relic_offerings": [
+      "PaelsClaw",
+      "PaelsTooth",
+      "PaelsGrowth",
+      "PaelsLegion",
+      "PaelsFlesh",
+      "PaelsHorn",
+      "PaelsTears",
+      "PaelsWing",
+      "PaelsEye",
+      "PaelsBlood"
+    ],
+    "loc_key": "PAEL",
+    "title": "Pael",
+    "epithet": "Melting Dragon",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "Tanx",
+    "relic_offerings": [
+      "Claws",
+      "Crossbow",
+      "IronClub",
+      "MeatCleaver",
+      "Sai",
+      "SpikedGauntlets",
+      "TanxsWhistle",
+      "ThrowingAxe",
+      "WarHammer",
+      "TriBoomerang"
+    ],
+    "loc_key": "TANX",
+    "title": "Tanx",
+    "epithet": "Khimera King",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "Tezcatara",
+    "relic_offerings": [
+      "NutritiousSoup",
+      "VeryHotCocoa",
+      "YummyCookie",
+      "BiiigHug",
+      "Storybook",
+      "SealOfGold",
+      "ToastyMittens",
+      "GoldenCompass",
+      "PumpkinCandle",
+      "ToyBox"
+    ],
+    "loc_key": "TEZCATARA",
+    "title": "Tezcatara",
+    "epithet": "It Which Feeds the Fire",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "Vakuu",
+    "relic_offerings": [
+      "BloodSoakedRose",
+      "WhisperingEarring",
+      "Fiddle",
+      "PreservedFog",
+      "SereTalon",
+      "DistinguishedCape",
+      "ChoicesParadox",
+      "MusicBox",
+      "LordsParasol",
+      "JeweledMask"
+    ],
+    "loc_key": "VAKUU",
+    "title": "Vakuu",
+    "epithet": "The First Demon",
+    "acts": [
+      "Glory"
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const monsters = await getCollection('monsters');
+  return monsters.map(monster => ({
+    params: { slug: monster.id },
+    props: { monster },
+  }));
+}
+
+const { monster } = Astro.props;
+const hpDisplay = monster.data.min_hp === monster.data.max_hp
+  ? String(monster.data.min_hp)
+  : `${monster.data.min_hp} - ${monster.data.max_hp}`;
+---
+
+<BaseLayout title={monster.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}monsters/`} style="font-size: 0.85rem;">&larr; All Monsters</a>
+      <h1>{monster.data.title}</h1>
+      <div class="card-meta">HP: {hpDisplay}</div>
+    </div>
+
+    {monster.data.powers_on_spawn.length > 0 && (
+      <div style="margin: 1rem 0;">
+        <strong>Powers on spawn:</strong> {monster.data.powers_on_spawn.join(', ')}
+      </div>
+    )}
+
+    {monster.data.moves.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Moveset</h2>
+        <table class="stat-table" style="margin-top: 0.5rem;">
+          <thead>
+            <tr>
+              <th>Move</th>
+              <th>Intent</th>
+              <th>Effects</th>
+            </tr>
+          </thead>
+          <tbody>
+            {monster.data.moves.map(move => (
+              <tr>
+                <td><strong>{move.title || move.id}</strong></td>
+                <td>
+                  {move.intents.map(intent => {
+                    if (intent.type === 'attack' && intent.damage) {
+                      return `Attack ${intent.damage}`;
+                    } else if (intent.type === 'multi_attack' && intent.damage) {
+                      return `Attack ${intent.damage}x${intent.hits || '?'}`;
+                    } else if (intent.type === 'block' && intent.amount) {
+                      return `Block ${intent.amount}`;
+                    } else {
+                      return intent.type.charAt(0).toUpperCase() + intent.type.slice(1);
+                    }
+                  }).join(' + ')}
+                </td>
+                <td style="color: var(--text-muted); font-size: 0.9rem;">
+                  {move.effects.join(', ') || '-'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+
+    {monster.data.encounters.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Appears In</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {monster.data.encounters.map(enc => (
+            <li><a href={`${import.meta.env.BASE_URL}encounters/${enc.slug}/`}>{enc.title}</a></li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+</BaseLayout>

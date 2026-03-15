@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allAncients = await getCollection('ancients');
+const ancients = allAncients.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title="Ancients">
+  <h1>Ancients</h1>
+  <p class="card-meta" style="margin-bottom: 1rem;">{ancients.length} ancients</p>
+
+  <div class="card-grid">
+    {ancients.map(ancient => (
+      <a href={`${import.meta.env.BASE_URL}ancients/${ancient.id}/`} class="card-entry">
+        <h3>{ancient.data.title}</h3>
+        {ancient.data.epithet && (
+          <div class="card-meta" style="font-style: italic;">{ancient.data.epithet}</div>
+        )}
+        <div class="card-meta" style="margin-top: 0.25rem;">
+          {ancient.data.acts.length > 0 ? ancient.data.acts.join(', ') : 'Unknown act'}
+          {ancient.data.relic_offerings.length > 0 && ` · ${ancient.data.relic_offerings.length} offerings`}
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>
