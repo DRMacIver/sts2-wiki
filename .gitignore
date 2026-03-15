@@ -26,8 +26,8 @@ site/src/content/events/
 site/src/content/ancients/
 site/src/content/epochs/
 
-# Extracted game images (do NOT commit — copyrighted material)
-site/public/images/
+# Extracted game images
+# These are committed since they're needed for the site build
 
 # Astro boilerplate
 site/README.md
