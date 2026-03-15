@@ -57,7 +57,7 @@ def parse_canonical_vars(cs_content: str) -> list[dict]:
         "StarsVar": "Stars",
     }
     for var_class, var_type in simple_vars.items():
-        for m in re.finditer(rf"new {var_class}\((-?\d+)m", cs_content):
+        for m in re.finditer(rf"new {var_class}\((-?\d+)m?(?:\b|[,)])", cs_content):
             vars_found.append({"type": var_type, "base_value": int(m.group(1))})
 
     # Vars without 'm' decimal suffix

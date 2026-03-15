@@ -24,6 +24,30 @@ def escape_yaml(value: str) -> str:
     return value
 
 
+def _resolve_var(match_str: str, var_lookup: dict[str, int]) -> str:
+    """Resolve a {placeholder} in a relic description."""
+    inner = match_str[1:-1]
+    parts = inner.split(":", 1)
+    name = parts[0]
+    fmt = parts[1] if len(parts) > 1 else ""
+    val = var_lookup.get(name)
+
+    # Handle {Name:plural:singular|plural}
+    if fmt.startswith("plural:"):
+        plural_parts = fmt.removeprefix("plural:").split("|", 1)
+        if val is not None:
+            if val == 1:
+                return plural_parts[0]
+            return plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+        return plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+
+    # Handle {Name} or {Name:diff()} etc
+    if val is not None:
+        return str(val)
+
+    return "?"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate relic content files")
     parser.add_argument("data_dir", help="Path to versioned data directory")
@@ -49,12 +73,23 @@ def main() -> None:
         from scripts.common import rich_text_to_html, strip_rich_text
 
         raw_desc = relic.get("description", "")
-        # Substitute vars into description
+        # Build var lookup
+        var_lookup: dict[str, int] = {}
         for v in relic.get("vars", []):
-            vtype = v["type"]
-            val = v["base_value"]
-            raw_desc = re.sub(rf"\{{{vtype}(?:Power)?(?::[^}}]*)?\}}", str(val), raw_desc)
-        raw_desc = re.sub(r"\{[^}]*\}", "?", raw_desc)
+            var_lookup[v["type"]] = v["base_value"]
+            if not v["type"].endswith("Power"):
+                var_lookup[v["type"] + "Power"] = v["base_value"]
+
+        # Multi-pass substitution (handles plurals, nested patterns)
+        for _ in range(3):
+            new_desc = re.sub(
+                r"\{([^{}]*)\}",
+                lambda m: _resolve_var(m.group(0), var_lookup),
+                raw_desc,
+            )
+            if new_desc == raw_desc:
+                break
+            raw_desc = new_desc
 
         lines = ["---"]
         lines.append(f"title: {escape_yaml(relic['title'])}")

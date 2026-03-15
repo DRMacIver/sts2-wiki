@@ -44,7 +44,8 @@ const rarities = ['Basic', 'Common', 'Uncommon', 'Rare'];
         <img
           src={`${import.meta.env.BASE_URL}images/card_atlas/${card.data.character.toLowerCase()}/${card.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}.png`}
           alt="" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0;"
-          onerror="this.style.display='none'" loading="lazy" />
+          onerror={`this.onerror=()=>{this.style.display='none'};this.src='${import.meta.env.BASE_URL}images/card_atlas/${card.data.character.toLowerCase()}/beta/${card.data.class_name.replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}.png'`}
+          loading="lazy" />
         <div>
         <h3 style="margin: 0;">
           <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.title}</span>

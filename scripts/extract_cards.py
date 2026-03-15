@@ -226,17 +226,17 @@ def _resolve_placeholder(match_str: str, var_lookup: dict[str, int], upgraded: b
     # Handle {Name:energyIcons()} and {Name:energyIcons(N)}
     if "energyIcons" in fmt:
         if val is not None:
-            return str(val)
+            return f"{val} Energy"
         m2 = re.search(r"energyIcons\((\d+)\)", fmt)
         if m2:
-            return m2.group(1)
-        return "?"
+            return f"{m2.group(1)} Energy"
+        return "Energy"
 
     # Handle {Name:starIcons()}
     if "starIcons" in fmt:
         if val is not None:
-            return str(val)
-        return "?"
+            return f"{val} Stars"
+        return "Stars"
 
     # Handle {Name:inverseDiff()}
     if "inverseDiff" in fmt:

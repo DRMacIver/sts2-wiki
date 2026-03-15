@@ -172,10 +172,10 @@
     "loc_key": "ADAPTIVE_STRIKE",
     "title": "Adaptive Strike",
     "description_template": "Deal {Damage:diff()} damage.\nAdd a 0{energyPrefix:energyIcons(1)} copy of this card into your [gold]Discard Pile[/gold].",
-    "description_plain": "Deal 18 damage.\nAdd a 01 copy of this card into your Discard Pile.",
-    "description_html": "Deal 18 damage.<br>Add a 01 copy of this card into your <span class=\"desc-gold\">Discard Pile</span>.",
-    "upgraded_description_plain": "Deal 23 damage.\nAdd a 01 copy of this card into your Discard Pile.",
-    "upgraded_description_html": "Deal 23 damage.<br>Add a 01 copy of this card into your <span class=\"desc-gold\">Discard Pile</span>."
+    "description_plain": "Deal 18 damage.\nAdd a 01 Energy copy of this card into your Discard Pile.",
+    "description_html": "Deal 18 damage.<br>Add a 01 Energy copy of this card into your <span class=\"desc-gold\">Discard Pile</span>.",
+    "upgraded_description_plain": "Deal 23 damage.\nAdd a 01 Energy copy of this card into your Discard Pile.",
+    "upgraded_description_html": "Deal 23 damage.<br>Add a 01 Energy copy of this card into your <span class=\"desc-gold\">Discard Pile</span>."
   },
   {
     "class_name": "Adrenaline",
@@ -207,10 +207,10 @@
     "loc_key": "ADRENALINE",
     "title": "Adrenaline",
     "description_template": "Gain {Energy:energyIcons()}.\nDraw 2 cards.",
-    "description_plain": "Gain 1.\nDraw 2 cards.",
-    "description_html": "Gain 1.<br>Draw 2 cards.",
-    "upgraded_description_plain": "Gain 2.\nDraw 2 cards.",
-    "upgraded_description_html": "Gain 2.<br>Draw 2 cards."
+    "description_plain": "Gain 1 Energy.\nDraw 2 cards.",
+    "description_html": "Gain 1 Energy.<br>Draw 2 cards.",
+    "upgraded_description_plain": "Gain 2 Energy.\nDraw 2 cards.",
+    "upgraded_description_html": "Gain 2 Energy.<br>Draw 2 cards."
   },
   {
     "class_name": "Afterimage",
@@ -348,10 +348,10 @@
     "loc_key": "ALIGNMENT",
     "title": "Alignment",
     "description_template": "Gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 2.",
-    "description_html": "Gain 2.",
-    "upgraded_description_plain": "Gain 3.",
-    "upgraded_description_html": "Gain 3."
+    "description_plain": "Gain 2 Energy.",
+    "description_html": "Gain 2 Energy.",
+    "upgraded_description_plain": "Gain 3 Energy.",
+    "upgraded_description_html": "Gain 3 Energy."
   },
   {
     "class_name": "AllForOne",
@@ -376,10 +376,10 @@
     "loc_key": "ALL_FOR_ONE",
     "title": "All for One",
     "description_template": "Deal {Damage:diff()} damage.\nPut ALL 0{energyPrefix:energyIcons(1)} cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
-    "description_plain": "Deal 10 damage.\nPut ALL 01 cards from your Discard Pile into your Hand.",
-    "description_html": "Deal 10 damage.<br>Put ALL 01 cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 14 damage.\nPut ALL 01 cards from your Discard Pile into your Hand.",
-    "upgraded_description_html": "Deal 14 damage.<br>Put ALL 01 cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal 10 damage.\nPut ALL 01 Energy cards from your Discard Pile into your Hand.",
+    "description_html": "Deal 10 damage.<br>Put ALL 01 Energy cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 14 damage.\nPut ALL 01 Energy cards from your Discard Pile into your Hand.",
+    "upgraded_description_html": "Deal 14 damage.<br>Put ALL 01 Energy cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Anger",
@@ -737,8 +737,8 @@
     "loc_key": "AUTOMATION",
     "title": "Automation",
     "description_template": "Every 10 cards you draw, gain {Energy:energyIcons()}.",
-    "description_plain": "Every 10 cards you draw, gain 1.",
-    "description_html": "Every 10 cards you draw, gain 1."
+    "description_plain": "Every 10 cards you draw, gain 1 Energy.",
+    "description_html": "Every 10 cards you draw, gain 1 Energy."
   },
   {
     "class_name": "Backflip",
@@ -885,10 +885,10 @@
     "loc_key": "BANSHEES_CRY",
     "title": "Banshee's Cry",
     "description_template": "Deal {Damage:diff()} damage to ALL enemies.\nCosts {Energy:energyIcons()} less for each [gold]Ethereal[/gold] card played this combat.",
-    "description_plain": "Deal 33 damage to ALL enemies.\nCosts 2 less for each Ethereal card played this combat.",
-    "description_html": "Deal 33 damage to ALL enemies.<br>Costs 2 less for each <span class=\"desc-gold\">Ethereal</span> card played this combat.",
-    "upgraded_description_plain": "Deal 39 damage to ALL enemies.\nCosts 2 less for each Ethereal card played this combat.",
-    "upgraded_description_html": "Deal 39 damage to ALL enemies.<br>Costs 2 less for each <span class=\"desc-gold\">Ethereal</span> card played this combat."
+    "description_plain": "Deal 33 damage to ALL enemies.\nCosts 2 Energy less for each Ethereal card played this combat.",
+    "description_html": "Deal 33 damage to ALL enemies.<br>Costs 2 Energy less for each <span class=\"desc-gold\">Ethereal</span> card played this combat.",
+    "upgraded_description_plain": "Deal 39 damage to ALL enemies.\nCosts 2 Energy less for each Ethereal card played this combat.",
+    "upgraded_description_html": "Deal 39 damage to ALL enemies.<br>Costs 2 Energy less for each <span class=\"desc-gold\">Ethereal</span> card played this combat."
   },
   {
     "class_name": "Barrage",
@@ -1229,10 +1229,10 @@
     "loc_key": "BELIEVE_IN_YOU",
     "title": "Believe in You",
     "description_template": "Another player gains {Energy:energyIcons()}.",
-    "description_plain": "Another player gains 3.",
-    "description_html": "Another player gains 3.",
-    "upgraded_description_plain": "Another player gains 4.",
-    "upgraded_description_html": "Another player gains 4."
+    "description_plain": "Another player gains 3 Energy.",
+    "description_html": "Another player gains 3 Energy.",
+    "upgraded_description_plain": "Another player gains 4 Energy.",
+    "upgraded_description_html": "Another player gains 4 Energy."
   },
   {
     "class_name": "BiasedCognition",
@@ -1290,6 +1290,14 @@
     ],
     "vars": [
       {
+        "type": "Forge",
+        "base_value": 5
+      },
+      {
+        "type": "Stars",
+        "base_value": 1
+      },
+      {
         "type": "Energy",
         "base_value": 1
       },
@@ -1308,8 +1316,8 @@
     "loc_key": "BIG_BANG",
     "title": "Big Bang",
     "description_template": "Draw {Cards:diff()} {Cards:plural:card|cards}.\nGain {Energy:energyIcons()}.\nGain {Stars:starIcons()}.\n[gold]Forge[/gold] {Forge:diff()}.",
-    "description_plain": "Draw 1 card.\nGain 1.\nGain ?.\nForge ?.",
-    "description_html": "Draw 1 card.<br>Gain 1.<br>Gain ?.<br><span class=\"desc-gold\">Forge</span> ?."
+    "description_plain": "Draw 1 card.\nGain 1 Energy.\nGain 1 Stars.\nForge 5.",
+    "description_html": "Draw 1 card.<br>Gain 1 Energy.<br>Gain 1 Stars.<br><span class=\"desc-gold\">Forge</span> 5."
   },
   {
     "class_name": "BlackHole",
@@ -1511,10 +1519,10 @@
     "loc_key": "BLOODLETTING",
     "title": "Bloodletting",
     "description_template": "Lose {HpLoss:diff()} HP.\nGain {Energy:energyIcons()}.",
-    "description_plain": "Lose 3 HP.\nGain 2.",
-    "description_html": "Lose 3 HP.<br>Gain 2.",
-    "upgraded_description_plain": "Lose 3 HP.\nGain 3.",
-    "upgraded_description_html": "Lose 3 HP.<br>Gain 3."
+    "description_plain": "Lose 3 HP.\nGain 2 Energy.",
+    "description_html": "Lose 3 HP.<br>Gain 2 Energy.",
+    "upgraded_description_plain": "Lose 3 HP.\nGain 3 Energy.",
+    "upgraded_description_html": "Lose 3 HP.<br>Gain 3 Energy."
   },
   {
     "class_name": "Bludgeon",
@@ -1820,10 +1828,10 @@
     "loc_key": "BORROWED_TIME",
     "title": "Borrowed Time",
     "description_template": "Apply {DoomPower:diff()} [gold]Doom[/gold] to yourself.\nGain {Energy:energyIcons()}.",
-    "description_plain": "Apply 3 Doom to yourself.\nGain 1.",
-    "description_html": "Apply 3 <span class=\"desc-gold\">Doom</span> to yourself.<br>Gain 1.",
-    "upgraded_description_plain": "Apply 3 Doom to yourself.\nGain 2.",
-    "upgraded_description_html": "Apply 3 <span class=\"desc-gold\">Doom</span> to yourself.<br>Gain 2."
+    "description_plain": "Apply 3 Doom to yourself.\nGain 1 Energy.",
+    "description_html": "Apply 3 <span class=\"desc-gold\">Doom</span> to yourself.<br>Gain 1 Energy.",
+    "upgraded_description_plain": "Apply 3 Doom to yourself.\nGain 2 Energy.",
+    "upgraded_description_html": "Apply 3 <span class=\"desc-gold\">Doom</span> to yourself.<br>Gain 2 Energy."
   },
   {
     "class_name": "BouncingFlask",
@@ -2018,10 +2026,10 @@
     "loc_key": "BRIGHTEST_FLAME",
     "title": "Brightest Flame",
     "description_template": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nLose {MaxHp:diff()} Max HP.",
-    "description_plain": "Gain 2.\nDraw 2 cards.\nLose 1 Max HP.",
-    "description_html": "Gain 2.<br>Draw 2 cards.<br>Lose 1 Max HP.",
-    "upgraded_description_plain": "Gain 3.\nDraw 3 cards.\nLose 1 Max HP.",
-    "upgraded_description_html": "Gain 3.<br>Draw 3 cards.<br>Lose 1 Max HP."
+    "description_plain": "Gain 2 Energy.\nDraw 2 cards.\nLose 1 Max HP.",
+    "description_html": "Gain 2 Energy.<br>Draw 2 cards.<br>Lose 1 Max HP.",
+    "upgraded_description_plain": "Gain 3 Energy.\nDraw 3 cards.\nLose 1 Max HP.",
+    "upgraded_description_html": "Gain 3 Energy.<br>Draw 3 cards.<br>Lose 1 Max HP."
   },
   {
     "class_name": "BubbleBubble",
@@ -2213,6 +2221,11 @@
         "type": "Block",
         "base_value": 13,
         "upgraded_value": 16
+      },
+      {
+        "type": "Forge",
+        "base_value": 10,
+        "upgraded_value": 13
       }
     ],
     "upgrades": [
@@ -2229,10 +2242,10 @@
     "loc_key": "BULWARK",
     "title": "Bulwark",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Forge[/gold] {Forge:diff()}.",
-    "description_plain": "Gain 13 Block.\nForge ?.",
-    "description_html": "Gain 13 <span class=\"desc-gold\">Block</span>.<br><span class=\"desc-gold\">Forge</span> ?.",
-    "upgraded_description_plain": "Gain 16 Block.\nForge ?.",
-    "upgraded_description_html": "Gain 16 <span class=\"desc-gold\">Block</span>.<br><span class=\"desc-gold\">Forge</span> ?."
+    "description_plain": "Gain 13 Block.\nForge 10.",
+    "description_html": "Gain 13 <span class=\"desc-gold\">Block</span>.<br><span class=\"desc-gold\">Forge</span> 10.",
+    "upgraded_description_plain": "Gain 16 Block.\nForge 13.",
+    "upgraded_description_html": "Gain 16 <span class=\"desc-gold\">Block</span>.<br><span class=\"desc-gold\">Forge</span> 13."
   },
   {
     "class_name": "BundleOfJoy",
@@ -2805,10 +2818,10 @@
     "loc_key": "CHARGE_BATTERY",
     "title": "Charge Battery",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nNext turn, gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 7 Block.\nNext turn, gain 1.",
-    "description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>Next turn, gain 1.",
-    "upgraded_description_plain": "Gain 10 Block.\nNext turn, gain 1.",
-    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Next turn, gain 1."
+    "description_plain": "Gain 7 Block.\nNext turn, gain 1 Energy.",
+    "description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>Next turn, gain 1 Energy.",
+    "upgraded_description_plain": "Gain 10 Block.\nNext turn, gain 1 Energy.",
+    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Next turn, gain 1 Energy."
   },
   {
     "class_name": "ChildOfTheStars",
@@ -3319,6 +3332,13 @@
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 3,
+        "upgraded_value": 5
+      }
+    ],
     "upgrades": [
       {
         "var": "Forge",
@@ -3336,9 +3356,10 @@
     "loc_key": "CONQUEROR",
     "title": "Conqueror",
     "description_template": "[gold]Forge[/gold] {Forge:diff()}.\n[gold]Sovereign Blade[/gold] deals double damage to the enemy this turn.",
-    "vars": [],
-    "description_plain": "Forge ?.\nSovereign Blade deals double damage to the enemy this turn.",
-    "description_html": "<span class=\"desc-gold\">Forge</span> ?.<br><span class=\"desc-gold\">Sovereign Blade</span> deals double damage to the enemy this turn."
+    "description_plain": "Forge 3.\nSovereign Blade deals double damage to the enemy this turn.",
+    "description_html": "<span class=\"desc-gold\">Forge</span> 3.<br><span class=\"desc-gold\">Sovereign Blade</span> deals double damage to the enemy this turn.",
+    "upgraded_description_plain": "Forge 5.\nSovereign Blade deals double damage to the enemy this turn.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 5.<br><span class=\"desc-gold\">Sovereign Blade</span> deals double damage to the enemy this turn."
   },
   {
     "class_name": "ConsumingShadow",
@@ -3390,6 +3411,11 @@
     ],
     "vars": [
       {
+        "type": "Stars",
+        "base_value": 1,
+        "upgraded_value": 2
+      },
+      {
         "type": "Energy",
         "base_value": 1
       }
@@ -3421,8 +3447,10 @@
     "loc_key": "CONVERGENCE",
     "title": "Convergence",
     "description_template": "Next turn,\ngain {Energy:energyIcons()} and {Stars:starIcons()}.\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
-    "description_plain": "Next turn,\ngain 1 and ?.\nRetain your Hand this turn.",
-    "description_html": "Next turn,<br>gain 1 and ?.<br><span class=\"desc-gold\">Retain</span> your <span class=\"desc-gold\">Hand</span> this turn."
+    "description_plain": "Next turn,\ngain 1 Energy and 1 Stars.\nRetain your Hand this turn.",
+    "description_html": "Next turn,<br>gain 1 Energy and 1 Stars.<br><span class=\"desc-gold\">Retain</span> your <span class=\"desc-gold\">Hand</span> this turn.",
+    "upgraded_description_plain": "Next turn,\ngain 1 Energy and 2 Stars.\nRetain your Hand this turn.",
+    "upgraded_description_html": "Next turn,<br>gain 1 Energy and 2 Stars.<br><span class=\"desc-gold\">Retain</span> your <span class=\"desc-gold\">Hand</span> this turn."
   },
   {
     "class_name": "Coolant",
@@ -3593,8 +3621,8 @@
     "loc_key": "CORRUPTION",
     "title": "Corruption",
     "description_template": "Skills cost 0 {energyPrefix:energyIcons(1)}.\nWhenever you play a Skill, [gold]Exhaust[/gold] it.",
-    "description_plain": "Skills cost 0 1.\nWhenever you play a Skill, Exhaust it.",
-    "description_html": "Skills cost 0 1.<br>Whenever you play a Skill, <span class=\"desc-gold\">Exhaust</span> it."
+    "description_plain": "Skills cost 0 1 Energy.\nWhenever you play a Skill, Exhaust it.",
+    "description_html": "Skills cost 0 1 Energy.<br>Whenever you play a Skill, <span class=\"desc-gold\">Exhaust</span> it."
   },
   {
     "class_name": "CosmicIndifference",
@@ -3978,10 +4006,10 @@
     "loc_key": "DANSE_MACABRE",
     "title": "Danse Macabre",
     "description_template": "Whenever you play a card that costs {Energy:energyIcons()} or more, gain {DanseMacabrePower:diff()} [gold]Block[/gold].",
-    "description_plain": "Whenever you play a card that costs 2 or more, gain 3 Block.",
-    "description_html": "Whenever you play a card that costs 2 or more, gain 3 <span class=\"desc-gold\">Block</span>.",
-    "upgraded_description_plain": "Whenever you play a card that costs 2 or more, gain 4 Block.",
-    "upgraded_description_html": "Whenever you play a card that costs 2 or more, gain 4 <span class=\"desc-gold\">Block</span>."
+    "description_plain": "Whenever you play a card that costs 2 Energy or more, gain 3 Block.",
+    "description_html": "Whenever you play a card that costs 2 Energy or more, gain 3 <span class=\"desc-gold\">Block</span>.",
+    "upgraded_description_plain": "Whenever you play a card that costs 2 Energy or more, gain 4 Block.",
+    "upgraded_description_html": "Whenever you play a card that costs 2 Energy or more, gain 4 <span class=\"desc-gold\">Block</span>."
   },
   {
     "class_name": "DarkEmbrace",
@@ -4351,13 +4379,18 @@
     "keywords": [
       "Unplayable"
     ],
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 10
+      }
+    ],
     "character": "Curse",
     "loc_key": "DEBT",
     "title": "Debt",
     "description_template": "At the end of your turn, if this is in your [gold]Hand[/gold], lose {Gold:diff()} [gold]Gold[/gold].",
-    "vars": [],
-    "description_plain": "At the end of your turn, if this is in your Hand, lose ? Gold.",
-    "description_html": "At the end of your turn, if this is in your <span class=\"desc-gold\">Hand</span>, lose ? <span class=\"desc-gold\">Gold</span>."
+    "description_plain": "At the end of your turn, if this is in your Hand, lose 10 Gold.",
+    "description_html": "At the end of your turn, if this is in your <span class=\"desc-gold\">Hand</span>, lose 10 <span class=\"desc-gold\">Gold</span>."
   },
   {
     "class_name": "Decay",
@@ -4737,10 +4770,10 @@
     "loc_key": "DELAY",
     "title": "Delay",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nNext turn,\ngain {Energy:energyIcons()}.",
-    "description_plain": "Gain 11 Block.\nNext turn,\ngain 1.",
-    "description_html": "Gain 11 <span class=\"desc-gold\">Block</span>.<br>Next turn,<br>gain 1.",
-    "upgraded_description_plain": "Gain 13 Block.\nNext turn,\ngain 2.",
-    "upgraded_description_html": "Gain 13 <span class=\"desc-gold\">Block</span>.<br>Next turn,<br>gain 2."
+    "description_plain": "Gain 11 Block.\nNext turn,\ngain 1 Energy.",
+    "description_html": "Gain 11 <span class=\"desc-gold\">Block</span>.<br>Next turn,<br>gain 1 Energy.",
+    "upgraded_description_plain": "Gain 13 Block.\nNext turn,\ngain 2 Energy.",
+    "upgraded_description_html": "Gain 13 <span class=\"desc-gold\">Block</span>.<br>Next turn,<br>gain 2 Energy."
   },
   {
     "class_name": "Demesne",
@@ -4772,8 +4805,8 @@
     "loc_key": "DEMESNE",
     "title": "Demesne",
     "description_template": "At the start of your turn, gain {Energy:energyIcons()} and draw {Cards:diff()} additional {Cards:plural:card|cards}.",
-    "description_plain": "At the start of your turn, gain 1 and draw 1 additional card.",
-    "description_html": "At the start of your turn, gain 1 and draw 1 additional card."
+    "description_plain": "At the start of your turn, gain 1 Energy and draw 1 additional card.",
+    "description_html": "At the start of your turn, gain 1 Energy and draw 1 additional card."
   },
   {
     "class_name": "DemonForm",
@@ -4955,8 +4988,8 @@
     "title": "Discovery",
     "description_template": "Choose 1 of 3 random cards to add into your [gold]Hand[/gold]. It costs 0 {energyPrefix:energyIcons(1)} this turn.",
     "vars": [],
-    "description_plain": "Choose 1 of 3 random cards to add into your Hand. It costs 0 1 this turn.",
-    "description_html": "Choose 1 of 3 random cards to add into your <span class=\"desc-gold\">Hand</span>. It costs 0 1 this turn."
+    "description_plain": "Choose 1 of 3 random cards to add into your Hand. It costs 0 1 Energy this turn.",
+    "description_html": "Choose 1 of 3 random cards to add into your <span class=\"desc-gold\">Hand</span>. It costs 0 1 Energy this turn."
   },
   {
     "class_name": "Disintegration",
@@ -5539,10 +5572,10 @@
     "loc_key": "ENERGY_SURGE",
     "title": "Energy Surge",
     "description_template": "ALL players gain {Energy:energyIcons()}.",
-    "description_plain": "ALL players gain 2.",
-    "description_html": "ALL players gain 2.",
-    "upgraded_description_plain": "ALL players gain 3.",
-    "upgraded_description_html": "ALL players gain 3."
+    "description_plain": "ALL players gain 2 Energy.",
+    "description_html": "ALL players gain 2 Energy.",
+    "upgraded_description_plain": "ALL players gain 3 Energy.",
+    "upgraded_description_html": "ALL players gain 3 Energy."
   },
   {
     "class_name": "EnfeeblingTouch",
@@ -5896,8 +5929,8 @@
     "loc_key": "EXPECT_A_FIGHT",
     "title": "Expect a Fight",
     "description_template": "Gain {energyPrefix:energyIcons(1)} for each Attack in your [gold]Hand[/gold].{InCombat:\n(Gain {CalculatedEnergy:energyIcons()}.)|}",
-    "description_plain": "Gain 1 for each Attack in your Hand.",
-    "description_html": "Gain 1 for each Attack in your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Gain 1 Energy for each Attack in your Hand.",
+    "description_html": "Gain 1 Energy for each Attack in your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Expertise",
@@ -6300,8 +6333,8 @@
     "loc_key": "FERAL",
     "title": "Feral",
     "description_template": "The first {FeralPower:plural:time|{FeralPower:diff()} times} you play a\n0{energyPrefix:energyIcons(1)} Attack each turn,\nreturn it to your [gold]Hand[/gold].",
-    "description_plain": "The first time you play a\n01 Attack each turn,\nreturn it to your Hand.",
-    "description_html": "The first time you play a<br>01 Attack each turn,<br>return it to your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "The first time you play a\n01 Energy Attack each turn,\nreturn it to your Hand.",
+    "description_html": "The first time you play a<br>01 Energy Attack each turn,<br>return it to your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Fetch",
@@ -6685,10 +6718,10 @@
     "loc_key": "FLATTEN",
     "title": "Flatten",
     "description_template": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nThis card costs 0 {energyPrefix:energyIcons(1)} if [gold]Osty[/gold] has attacked this turn.",
-    "description_plain": "Osty deals 12 damage.\nThis card costs 0 1 if Osty has attacked this turn.",
-    "description_html": "<span class=\"desc-gold\">Osty</span> deals 12 damage.<br>This card costs 0 1 if <span class=\"desc-gold\">Osty</span> has attacked this turn.",
-    "upgraded_description_plain": "Osty deals 16 damage.\nThis card costs 0 1 if Osty has attacked this turn.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals 16 damage.<br>This card costs 0 1 if <span class=\"desc-gold\">Osty</span> has attacked this turn."
+    "description_plain": "Osty deals 12 damage.\nThis card costs 0 1 Energy if Osty has attacked this turn.",
+    "description_html": "<span class=\"desc-gold\">Osty</span> deals 12 damage.<br>This card costs 0 1 Energy if <span class=\"desc-gold\">Osty</span> has attacked this turn.",
+    "upgraded_description_plain": "Osty deals 16 damage.\nThis card costs 0 1 Energy if Osty has attacked this turn.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals 16 damage.<br>This card costs 0 1 Energy if <span class=\"desc-gold\">Osty</span> has attacked this turn."
   },
   {
     "class_name": "Flechettes",
@@ -6981,10 +7014,10 @@
     "loc_key": "FORGOTTEN_RITUAL",
     "title": "Forgotten Ritual",
     "description_template": "If you [gold]Exhausted[/gold] a card this turn, gain {Energy:energyIcons()}.",
-    "description_plain": "If you Exhausted a card this turn, gain 3.",
-    "description_html": "If you <span class=\"desc-gold\">Exhausted</span> a card this turn, gain 3.",
-    "upgraded_description_plain": "If you Exhausted a card this turn, gain 4.",
-    "upgraded_description_html": "If you <span class=\"desc-gold\">Exhausted</span> a card this turn, gain 4."
+    "description_plain": "If you Exhausted a card this turn, gain 3 Energy.",
+    "description_html": "If you <span class=\"desc-gold\">Exhausted</span> a card this turn, gain 3 Energy.",
+    "upgraded_description_plain": "If you Exhausted a card this turn, gain 4 Energy.",
+    "upgraded_description_html": "If you <span class=\"desc-gold\">Exhausted</span> a card this turn, gain 4 Energy."
   },
   {
     "class_name": "FranticEscape",
@@ -7046,10 +7079,10 @@
     "loc_key": "FRIENDSHIP",
     "title": "Friendship",
     "description_template": "Lose {StrengthPower:inverseDiff()} [gold]Strength[/gold].\nGain {Energy:energyIcons()} at the start of each turn.",
-    "description_plain": "Lose 2 Strength.\nGain 1 at the start of each turn.",
-    "description_html": "Lose 2 <span class=\"desc-gold\">Strength</span>.<br>Gain 1 at the start of each turn.",
-    "upgraded_description_plain": "Lose 1 Strength.\nGain 1 at the start of each turn.",
-    "upgraded_description_html": "Lose 1 <span class=\"desc-gold\">Strength</span>.<br>Gain 1 at the start of each turn."
+    "description_plain": "Lose 2 Strength.\nGain 1 Energy at the start of each turn.",
+    "description_html": "Lose 2 <span class=\"desc-gold\">Strength</span>.<br>Gain 1 Energy at the start of each turn.",
+    "upgraded_description_plain": "Lose 1 Strength.\nGain 1 Energy at the start of each turn.",
+    "upgraded_description_html": "Lose 1 <span class=\"desc-gold\">Strength</span>.<br>Gain 1 Energy at the start of each turn."
   },
   {
     "class_name": "Ftl",
@@ -7117,10 +7150,10 @@
     "loc_key": "FUEL",
     "title": "Fuel",
     "description_template": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
-    "description_plain": "Gain 1.\nDraw 1 card.",
-    "description_html": "Gain 1.<br>Draw 1 card.",
-    "upgraded_description_plain": "Gain 1.\nDraw 2 cards.",
-    "upgraded_description_html": "Gain 1.<br>Draw 2 cards."
+    "description_plain": "Gain 1 Energy.\nDraw 1 card.",
+    "description_html": "Gain 1 Energy.<br>Draw 1 card.",
+    "upgraded_description_plain": "Gain 1 Energy.\nDraw 2 cards.",
+    "upgraded_description_html": "Gain 1 Energy.<br>Draw 2 cards."
   },
   {
     "class_name": "Furnace",
@@ -7128,6 +7161,13 @@
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 4,
+        "upgraded_value": 6
+      }
+    ],
     "upgrades": [
       {
         "var": "Forge",
@@ -7145,9 +7185,10 @@
     "loc_key": "FURNACE",
     "title": "Furnace",
     "description_template": "At the start of your turn, [gold]Forge[/gold] {Forge:diff()}.",
-    "vars": [],
-    "description_plain": "At the start of your turn, Forge ?.",
-    "description_html": "At the start of your turn, <span class=\"desc-gold\">Forge</span> ?."
+    "description_plain": "At the start of your turn, Forge 4.",
+    "description_html": "At the start of your turn, <span class=\"desc-gold\">Forge</span> 4.",
+    "upgraded_description_plain": "At the start of your turn, Forge 6.",
+    "upgraded_description_html": "At the start of your turn, <span class=\"desc-gold\">Forge</span> 6."
   },
   {
     "class_name": "Fusion",
@@ -7250,6 +7291,10 @@
         "type": "Block",
         "base_value": 7,
         "upgraded_value": 10
+      },
+      {
+        "type": "Stars",
+        "base_value": 1
       }
     ],
     "upgrades": [
@@ -7262,10 +7307,10 @@
     "loc_key": "GATHER_LIGHT",
     "title": "Gather Light",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Stars:starIcons()}.",
-    "description_plain": "Gain 7 Block.\nGain ?.",
-    "description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>Gain ?.",
-    "upgraded_description_plain": "Gain 10 Block.\nGain ?.",
-    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Gain ?."
+    "description_plain": "Gain 7 Block.\nGain 1 Stars.",
+    "description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>Gain 1 Stars.",
+    "upgraded_description_plain": "Gain 10 Block.\nGain 1 Stars.",
+    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Gain 1 Stars."
   },
   {
     "class_name": "Genesis",
@@ -7297,10 +7342,10 @@
     "loc_key": "GENESIS",
     "title": "Genesis",
     "description_template": "At the start of your turn, gain {StarsPerTurn:starIcons()}.",
-    "description_plain": "At the start of your turn, gain 2.",
-    "description_html": "At the start of your turn, gain 2.",
-    "upgraded_description_plain": "At the start of your turn, gain 3.",
-    "upgraded_description_html": "At the start of your turn, gain 3."
+    "description_plain": "At the start of your turn, gain 2 Stars.",
+    "description_html": "At the start of your turn, gain 2 Stars.",
+    "upgraded_description_plain": "At the start of your turn, gain 3 Stars.",
+    "upgraded_description_html": "At the start of your turn, gain 3 Stars."
   },
   {
     "class_name": "GeneticAlgorithm",
@@ -7524,6 +7569,11 @@
     "target": "Self",
     "vars": [
       {
+        "type": "Stars",
+        "base_value": 1,
+        "upgraded_value": 2
+      },
+      {
         "type": "Cards",
         "base_value": 2
       }
@@ -7538,8 +7588,10 @@
     "loc_key": "GLOW",
     "title": "Glow",
     "description_template": "Gain {Stars:starIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
-    "description_plain": "Gain ?.\nDraw 2 cards.",
-    "description_html": "Gain ?.<br>Draw 2 cards."
+    "description_plain": "Gain 1 Stars.\nDraw 2 cards.",
+    "description_html": "Gain 1 Stars.<br>Draw 2 cards.",
+    "upgraded_description_plain": "Gain 2 Stars.\nDraw 2 cards.",
+    "upgraded_description_html": "Gain 2 Stars.<br>Draw 2 cards."
   },
   {
     "class_name": "GoForTheEyes",
@@ -8236,10 +8288,10 @@
     "loc_key": "HEGEMONY",
     "title": "Hegemony",
     "description_template": "Deal {Damage:diff()} damage.\nNext turn, gain {Energy:energyIcons()}.",
-    "description_plain": "Deal 15 damage.\nNext turn, gain 2.",
-    "description_html": "Deal 15 damage.<br>Next turn, gain 2.",
-    "upgraded_description_plain": "Deal 18 damage.\nNext turn, gain 3.",
-    "upgraded_description_html": "Deal 18 damage.<br>Next turn, gain 3."
+    "description_plain": "Deal 15 damage.\nNext turn, gain 2 Energy.",
+    "description_html": "Deal 15 damage.<br>Next turn, gain 2 Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nNext turn, gain 3 Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>Next turn, gain 3 Energy."
   },
   {
     "class_name": "HeirloomHammer",
@@ -8296,10 +8348,10 @@
     "loc_key": "HELIX_DRILL",
     "title": "Helix Drill",
     "description_template": "Deal {Damage:diff()} damage for each {energyPrefix:energyIcons(1)} previously spent this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
-    "description_plain": "Deal 3 damage for each 1 previously spent this turn.",
-    "description_html": "Deal 3 damage for each 1 previously spent this turn.",
-    "upgraded_description_plain": "Deal 5 damage for each 1 previously spent this turn.",
-    "upgraded_description_html": "Deal 5 damage for each 1 previously spent this turn."
+    "description_plain": "Deal 3 damage for each 1 Energy previously spent this turn.",
+    "description_html": "Deal 3 damage for each 1 Energy previously spent this turn.",
+    "upgraded_description_plain": "Deal 5 damage for each 1 Energy previously spent this turn.",
+    "upgraded_description_html": "Deal 5 damage for each 1 Energy previously spent this turn."
   },
   {
     "class_name": "HelloWorld",
@@ -8392,6 +8444,10 @@
     "target": "Self",
     "vars": [
       {
+        "type": "Stars",
+        "base_value": 1
+      },
+      {
         "type": "StarNextTurn",
         "base_value": 3,
         "upgraded_value": 4
@@ -8414,10 +8470,10 @@
     "loc_key": "HIDDEN_CACHE",
     "title": "Hidden Cache",
     "description_template": "Gain {Stars:starIcons()}.\nNext turn, gain {StarNextTurnPower:starIcons()}.",
-    "description_plain": "Gain ?.\nNext turn, gain 3.",
-    "description_html": "Gain ?.<br>Next turn, gain 3.",
-    "upgraded_description_plain": "Gain ?.\nNext turn, gain 4.",
-    "upgraded_description_html": "Gain ?.<br>Next turn, gain 4."
+    "description_plain": "Gain 1 Stars.\nNext turn, gain 3 Stars.",
+    "description_html": "Gain 1 Stars.<br>Next turn, gain 3 Stars.",
+    "upgraded_description_plain": "Gain 1 Stars.\nNext turn, gain 4 Stars.",
+    "upgraded_description_html": "Gain 1 Stars.<br>Next turn, gain 4 Stars."
   },
   {
     "class_name": "HiddenDaggers",
@@ -9061,10 +9117,10 @@
     "loc_key": "INVOKE",
     "title": "Invoke",
     "description_template": "Next turn, [gold]Summon[/gold] {Summon:diff()} and gain {Energy:energyIcons()}.",
-    "description_plain": "Next turn, Summon 2 and gain 2.",
-    "description_html": "Next turn, <span class=\"desc-gold\">Summon</span> 2 and gain 2.",
-    "upgraded_description_plain": "Next turn, Summon 3 and gain 3.",
-    "upgraded_description_html": "Next turn, <span class=\"desc-gold\">Summon</span> 3 and gain 3."
+    "description_plain": "Next turn, Summon 2 and gain 2 Energy.",
+    "description_html": "Next turn, <span class=\"desc-gold\">Summon</span> 2 and gain 2 Energy.",
+    "upgraded_description_plain": "Next turn, Summon 3 and gain 3 Energy.",
+    "upgraded_description_html": "Next turn, <span class=\"desc-gold\">Summon</span> 3 and gain 3 Energy."
   },
   {
     "class_name": "IronWave",
@@ -9196,10 +9252,10 @@
     "loc_key": "JACKPOT",
     "title": "Jackpot",
     "description_template": "Deal {Damage:diff()} damage.\nAdd {Cards:diff()} random{IfUpgraded:show: [gold]Upgraded[/gold]} 0{energyPrefix:energyIcons(1)} {Cards:plural:card|cards} into your [gold]Hand[/gold].",
-    "description_plain": "Deal 25 damage.\nAdd 3 random 01 cards into your Hand.",
-    "description_html": "Deal 25 damage.<br>Add 3 random 01 cards into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 30 damage.\nAdd 3 random Upgraded 01 cards into your Hand.",
-    "upgraded_description_html": "Deal 30 damage.<br>Add 3 random <span class=\"desc-gold\">Upgraded</span> 01 cards into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal 25 damage.\nAdd 3 random 01 Energy cards into your Hand.",
+    "description_html": "Deal 25 damage.<br>Add 3 random 01 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 30 damage.\nAdd 3 random Upgraded 01 Energy cards into your Hand.",
+    "upgraded_description_html": "Deal 30 damage.<br>Add 3 random <span class=\"desc-gold\">Upgraded</span> 01 Energy cards into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Juggernaut",
@@ -9397,6 +9453,10 @@
         "type": "Damage",
         "base_value": 30,
         "upgraded_value": 38
+      },
+      {
+        "type": "Stars",
+        "base_value": 5
       }
     ],
     "upgrades": [
@@ -9409,10 +9469,10 @@
     "loc_key": "KNOCKOUT_BLOW",
     "title": "Knockout Blow",
     "description_template": "Deal {Damage:diff()} damage.\nIf this kills an enemy, gain {Stars:starIcons()}.",
-    "description_plain": "Deal 30 damage.\nIf this kills an enemy, gain ?.",
-    "description_html": "Deal 30 damage.<br>If this kills an enemy, gain ?.",
-    "upgraded_description_plain": "Deal 38 damage.\nIf this kills an enemy, gain ?.",
-    "upgraded_description_html": "Deal 38 damage.<br>If this kills an enemy, gain ?."
+    "description_plain": "Deal 30 damage.\nIf this kills an enemy, gain 5 Stars.",
+    "description_html": "Deal 30 damage.<br>If this kills an enemy, gain 5 Stars.",
+    "upgraded_description_plain": "Deal 38 damage.\nIf this kills an enemy, gain 5 Stars.",
+    "upgraded_description_html": "Deal 38 damage.<br>If this kills an enemy, gain 5 Stars."
   },
   {
     "class_name": "KnowThyPlace",
@@ -9789,10 +9849,10 @@
     "loc_key": "LUMINESCE",
     "title": "Luminesce",
     "description_template": "Gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 2.",
-    "description_html": "Gain 2.",
-    "upgraded_description_plain": "Gain 3.",
-    "upgraded_description_html": "Gain 3."
+    "description_plain": "Gain 2 Energy.",
+    "description_html": "Gain 2 Energy.",
+    "upgraded_description_plain": "Gain 3 Energy.",
+    "upgraded_description_html": "Gain 3 Energy."
   },
   {
     "class_name": "LunarBlast",
@@ -10138,10 +10198,10 @@
     "loc_key": "MELANCHOLY",
     "title": "Melancholy",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nReduce this card's cost by {Energy:energyIcons()} whenever ANYONE dies.",
-    "description_plain": "Gain 13 Block.\nReduce this card's cost by 1 whenever ANYONE dies.",
-    "description_html": "Gain 13 <span class=\"desc-gold\">Block</span>.<br>Reduce this card's cost by 1 whenever ANYONE dies.",
-    "upgraded_description_plain": "Gain 17 Block.\nReduce this card's cost by 1 whenever ANYONE dies.",
-    "upgraded_description_html": "Gain 17 <span class=\"desc-gold\">Block</span>.<br>Reduce this card's cost by 1 whenever ANYONE dies."
+    "description_plain": "Gain 13 Block.\nReduce this card's cost by 1 Energy whenever ANYONE dies.",
+    "description_html": "Gain 13 <span class=\"desc-gold\">Block</span>.<br>Reduce this card's cost by 1 Energy whenever ANYONE dies.",
+    "upgraded_description_plain": "Gain 17 Block.\nReduce this card's cost by 1 Energy whenever ANYONE dies.",
+    "upgraded_description_html": "Gain 17 <span class=\"desc-gold\">Block</span>.<br>Reduce this card's cost by 1 Energy whenever ANYONE dies."
   },
   {
     "class_name": "MementoMori",
@@ -10602,10 +10662,10 @@
     "loc_key": "MOMENTUM_STRIKE",
     "title": "Momentum Strike",
     "description_template": "Deal {Damage:diff()} damage.\nReduce this card's cost to 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 10 damage.\nReduce this card's cost to 0 1.",
-    "description_html": "Deal 10 damage.<br>Reduce this card's cost to 0 1.",
-    "upgraded_description_plain": "Deal 13 damage.\nReduce this card's cost to 0 1.",
-    "upgraded_description_html": "Deal 13 damage.<br>Reduce this card's cost to 0 1."
+    "description_plain": "Deal 10 damage.\nReduce this card's cost to 0 1 Energy.",
+    "description_html": "Deal 10 damage.<br>Reduce this card's cost to 0 1 Energy.",
+    "upgraded_description_plain": "Deal 13 damage.\nReduce this card's cost to 0 1 Energy.",
+    "upgraded_description_html": "Deal 13 damage.<br>Reduce this card's cost to 0 1 Energy."
   },
   {
     "class_name": "MonarchsGaze",
@@ -10871,10 +10931,10 @@
     "loc_key": "NEUROSURGE",
     "title": "Neurosurge",
     "description_template": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nAt the start of your turn, apply {NeurosurgePower:diff()} [gold]Doom[/gold] to yourself.",
-    "description_plain": "Gain 3.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
-    "description_html": "Gain 3.<br>Draw 2 cards.<br>At the start of your turn, apply 3 <span class=\"desc-gold\">Doom</span> to yourself.",
-    "upgraded_description_plain": "Gain 4.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
-    "upgraded_description_html": "Gain 4.<br>Draw 2 cards.<br>At the start of your turn, apply 3 <span class=\"desc-gold\">Doom</span> to yourself."
+    "description_plain": "Gain 3 Energy.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
+    "description_html": "Gain 3 Energy.<br>Draw 2 cards.<br>At the start of your turn, apply 3 <span class=\"desc-gold\">Doom</span> to yourself.",
+    "upgraded_description_plain": "Gain 4 Energy.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
+    "upgraded_description_html": "Gain 4 Energy.<br>Draw 2 cards.<br>At the start of your turn, apply 3 <span class=\"desc-gold\">Doom</span> to yourself."
   },
   {
     "class_name": "Neutralize",
@@ -11207,10 +11267,10 @@
     "loc_key": "OFFERING",
     "title": "Offering",
     "description_template": "Lose {HpLoss:diff()} HP.\nGain {Energy:energyIcons()}.\nDraw {Cards:diff()} cards.",
-    "description_plain": "Lose 6 HP.\nGain 2.\nDraw 3 cards.",
-    "description_html": "Lose 6 HP.<br>Gain 2.<br>Draw 3 cards.",
-    "upgraded_description_plain": "Lose 6 HP.\nGain 2.\nDraw 5 cards.",
-    "upgraded_description_html": "Lose 6 HP.<br>Gain 2.<br>Draw 5 cards."
+    "description_plain": "Lose 6 HP.\nGain 2 Energy.\nDraw 3 cards.",
+    "description_html": "Lose 6 HP.<br>Gain 2 Energy.<br>Draw 3 cards.",
+    "upgraded_description_plain": "Lose 6 HP.\nGain 2 Energy.\nDraw 5 cards.",
+    "upgraded_description_html": "Lose 6 HP.<br>Gain 2 Energy.<br>Draw 5 cards."
   },
   {
     "class_name": "Omnislice",
@@ -11298,8 +11358,8 @@
     "loc_key": "ORBIT",
     "title": "Orbit",
     "description_template": "Every {energyPrefix:energyIcons(4)} you spend,\ngain {Energy:energyIcons()}.",
-    "description_plain": "Every 4 you spend,\ngain 1.",
-    "description_html": "Every 4 you spend,<br>gain 1."
+    "description_plain": "Every 4 Energy you spend,\ngain 1 Energy.",
+    "description_html": "Every 4 Energy you spend,<br>gain 1 Energy."
   },
   {
     "class_name": "Outbreak",
@@ -11375,10 +11435,10 @@
     "loc_key": "OUTMANEUVER",
     "title": "Outmaneuver",
     "description_template": "Next turn, gain {Energy:energyIcons()}.",
-    "description_plain": "Next turn, gain 2.",
-    "description_html": "Next turn, gain 2.",
-    "upgraded_description_plain": "Next turn, gain 3.",
-    "upgraded_description_html": "Next turn, gain 3."
+    "description_plain": "Next turn, gain 2 Energy.",
+    "description_html": "Next turn, gain 2 Energy.",
+    "upgraded_description_plain": "Next turn, gain 3 Energy.",
+    "upgraded_description_html": "Next turn, gain 3 Energy."
   },
   {
     "class_name": "Overclock",
@@ -11991,10 +12051,10 @@
     "loc_key": "PINPOINT",
     "title": "Pinpoint",
     "description_template": "Deal {Damage:diff()} damage.\nCosts 1 less {energyPrefix:energyIcons(1)} for each Skill played this turn.",
-    "description_plain": "Deal 17 damage.\nCosts 1 less 1 for each Skill played this turn.",
-    "description_html": "Deal 17 damage.<br>Costs 1 less 1 for each Skill played this turn.",
-    "upgraded_description_plain": "Deal 22 damage.\nCosts 1 less 1 for each Skill played this turn.",
-    "upgraded_description_html": "Deal 22 damage.<br>Costs 1 less 1 for each Skill played this turn."
+    "description_plain": "Deal 17 damage.\nCosts 1 less 1 Energy for each Skill played this turn.",
+    "description_html": "Deal 17 damage.<br>Costs 1 less 1 Energy for each Skill played this turn.",
+    "upgraded_description_plain": "Deal 22 damage.\nCosts 1 less 1 Energy for each Skill played this turn.",
+    "upgraded_description_html": "Deal 22 damage.<br>Costs 1 less 1 Energy for each Skill played this turn."
   },
   {
     "class_name": "PoisonedStab",
@@ -12153,10 +12213,10 @@
     "loc_key": "POUNCE",
     "title": "Pounce",
     "description_template": "Deal {Damage:diff()} damage.\nThe next Skill you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 12 damage.\nThe next Skill you play costs 0 1.",
-    "description_html": "Deal 12 damage.<br>The next Skill you play costs 0 1.",
-    "upgraded_description_plain": "Deal 18 damage.\nThe next Skill you play costs 0 1.",
-    "upgraded_description_html": "Deal 18 damage.<br>The next Skill you play costs 0 1."
+    "description_plain": "Deal 12 damage.\nThe next Skill you play costs 0 1 Energy.",
+    "description_html": "Deal 12 damage.<br>The next Skill you play costs 0 1 Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nThe next Skill you play costs 0 1 Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>The next Skill you play costs 0 1 Energy."
   },
   {
     "class_name": "PreciseCut",
@@ -12327,8 +12387,8 @@
     "loc_key": "PRODUCTION",
     "title": "Production",
     "description_template": "Gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 2.",
-    "description_html": "Gain 2."
+    "description_plain": "Gain 2 Energy.",
+    "description_html": "Gain 2 Energy."
   },
   {
     "class_name": "Prolong",
@@ -12635,10 +12695,10 @@
     "loc_key": "PYRE",
     "title": "Pyre",
     "description_template": "Gain {Energy:energyIcons()} at the start of each turn.",
-    "description_plain": "Gain 1 at the start of each turn.",
-    "description_html": "Gain 1 at the start of each turn.",
-    "upgraded_description_plain": "Gain 2 at the start of each turn.",
-    "upgraded_description_html": "Gain 2 at the start of each turn."
+    "description_plain": "Gain 1 Energy at the start of each turn.",
+    "description_html": "Gain 1 Energy at the start of each turn.",
+    "upgraded_description_plain": "Gain 2 Energy at the start of each turn.",
+    "upgraded_description_html": "Gain 2 Energy at the start of each turn."
   },
   {
     "class_name": "Quadcast",
@@ -12686,6 +12746,10 @@
         "type": "Damage",
         "base_value": 3,
         "upgraded_value": 4
+      },
+      {
+        "type": "Stars",
+        "base_value": 1
       }
     ],
     "upgrades": [
@@ -12698,10 +12762,10 @@
     "loc_key": "RADIATE",
     "title": "Radiate",
     "description_template": "Deal {Damage:diff()} damage to ALL enemies for each {Stars:starIcons()} gained this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
-    "description_plain": "Deal 3 damage to ALL enemies for each ? gained this turn.",
-    "description_html": "Deal 3 damage to ALL enemies for each ? gained this turn.",
-    "upgraded_description_plain": "Deal 4 damage to ALL enemies for each ? gained this turn.",
-    "upgraded_description_html": "Deal 4 damage to ALL enemies for each ? gained this turn."
+    "description_plain": "Deal 3 damage to ALL enemies for each 1 Stars gained this turn.",
+    "description_html": "Deal 3 damage to ALL enemies for each 1 Stars gained this turn.",
+    "upgraded_description_plain": "Deal 4 damage to ALL enemies for each 1 Stars gained this turn.",
+    "upgraded_description_html": "Deal 4 damage to ALL enemies for each 1 Stars gained this turn."
   },
   {
     "class_name": "Rage",
@@ -13052,6 +13116,11 @@
     "target": "Self",
     "vars": [
       {
+        "type": "Forge",
+        "base_value": 6,
+        "upgraded_value": 10
+      },
+      {
         "type": "Energy",
         "base_value": 1
       }
@@ -13073,8 +13142,10 @@
     "loc_key": "REFINE_BLADE",
     "title": "Refine Blade",
     "description_template": "[gold]Forge[/gold] {Forge:diff()}.\nNext turn, gain {Energy:energyIcons()}.",
-    "description_plain": "Forge ?.\nNext turn, gain 1.",
-    "description_html": "<span class=\"desc-gold\">Forge</span> ?.<br>Next turn, gain 1."
+    "description_plain": "Forge 6.\nNext turn, gain 1 Energy.",
+    "description_html": "<span class=\"desc-gold\">Forge</span> 6.<br>Next turn, gain 1 Energy.",
+    "upgraded_description_plain": "Forge 10.\nNext turn, gain 1 Energy.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 10.<br>Next turn, gain 1 Energy."
   },
   {
     "class_name": "Reflect",
@@ -13247,10 +13318,10 @@
     "loc_key": "RELAX",
     "title": "Relax",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nNext turn, draw {Cards:diff()} {Cards:plural:card|cards} and gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 15 Block.\nNext turn, draw 2 cards and gain 2.",
-    "description_html": "Gain 15 <span class=\"desc-gold\">Block</span>.<br>Next turn, draw 2 cards and gain 2.",
-    "upgraded_description_plain": "Gain 17 Block.\nNext turn, draw 3 cards and gain 3.",
-    "upgraded_description_html": "Gain 17 <span class=\"desc-gold\">Block</span>.<br>Next turn, draw 3 cards and gain 3."
+    "description_plain": "Gain 15 Block.\nNext turn, draw 2 cards and gain 2 Energy.",
+    "description_html": "Gain 15 <span class=\"desc-gold\">Block</span>.<br>Next turn, draw 2 cards and gain 2 Energy.",
+    "upgraded_description_plain": "Gain 17 Block.\nNext turn, draw 3 cards and gain 3 Energy.",
+    "upgraded_description_html": "Gain 17 <span class=\"desc-gold\">Block</span>.<br>Next turn, draw 3 cards and gain 3 Energy."
   },
   {
     "class_name": "Rend",
@@ -13354,10 +13425,10 @@
     "loc_key": "RESTLESSNESS",
     "title": "Restlessness",
     "description_template": "If your [gold]Hand[/gold] is empty, draw {Cards:diff()} cards and gain {Energy:energyIcons()}.",
-    "description_plain": "If your Hand is empty, draw 2 cards and gain 2.",
-    "description_html": "If your <span class=\"desc-gold\">Hand</span> is empty, draw 2 cards and gain 2.",
-    "upgraded_description_plain": "If your Hand is empty, draw 3 cards and gain 3.",
-    "upgraded_description_html": "If your <span class=\"desc-gold\">Hand</span> is empty, draw 3 cards and gain 3."
+    "description_plain": "If your Hand is empty, draw 2 cards and gain 2 Energy.",
+    "description_html": "If your <span class=\"desc-gold\">Hand</span> is empty, draw 2 cards and gain 2 Energy.",
+    "upgraded_description_plain": "If your Hand is empty, draw 3 cards and gain 3 Energy.",
+    "upgraded_description_html": "If your <span class=\"desc-gold\">Hand</span> is empty, draw 3 cards and gain 3 Energy."
   },
   {
     "class_name": "Ricochet",
@@ -13421,10 +13492,10 @@
     "loc_key": "RIGHT_HAND_HAND",
     "title": "Right Hand Hand",
     "description_template": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs {Energy:energyIcons()} or more, return this to your [gold]Hand[/gold] from the [gold]Discard Pile[/gold].",
-    "description_plain": "Osty deals 4 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
-    "description_html": "<span class=\"desc-gold\">Osty</span> deals 4 damage.<br>Whenever you play a card that costs 2 or more, return this to your <span class=\"desc-gold\">Hand</span> from the <span class=\"desc-gold\">Discard Pile</span>.",
-    "upgraded_description_plain": "Osty deals 6 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals 6 damage.<br>Whenever you play a card that costs 2 or more, return this to your <span class=\"desc-gold\">Hand</span> from the <span class=\"desc-gold\">Discard Pile</span>."
+    "description_plain": "Osty deals 4 damage.\nWhenever you play a card that costs 2 Energy or more, return this to your Hand from the Discard Pile.",
+    "description_html": "<span class=\"desc-gold\">Osty</span> deals 4 damage.<br>Whenever you play a card that costs 2 Energy or more, return this to your <span class=\"desc-gold\">Hand</span> from the <span class=\"desc-gold\">Discard Pile</span>.",
+    "upgraded_description_plain": "Osty deals 6 damage.\nWhenever you play a card that costs 2 Energy or more, return this to your Hand from the Discard Pile.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals 6 damage.<br>Whenever you play a card that costs 2 Energy or more, return this to your <span class=\"desc-gold\">Hand</span> from the <span class=\"desc-gold\">Discard Pile</span>."
   },
   {
     "class_name": "RipAndTear",
@@ -13486,10 +13557,10 @@
     "loc_key": "ROCKET_PUNCH",
     "title": "Rocket Punch",
     "description_template": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhen a Status card is created, reduce this card's cost to 0 {energyPrefix:energyIcons(1)} this turn.",
-    "description_plain": "Deal 13 damage.\nDraw 1 card.\nWhen a Status card is created, reduce this card's cost to 0 1 this turn.",
-    "description_html": "Deal 13 damage.<br>Draw 1 card.<br>When a Status card is created, reduce this card's cost to 0 1 this turn.",
-    "upgraded_description_plain": "Deal 14 damage.\nDraw 2 cards.\nWhen a Status card is created, reduce this card's cost to 0 1 this turn.",
-    "upgraded_description_html": "Deal 14 damage.<br>Draw 2 cards.<br>When a Status card is created, reduce this card's cost to 0 1 this turn."
+    "description_plain": "Deal 13 damage.\nDraw 1 card.\nWhen a Status card is created, reduce this card's cost to 0 1 Energy this turn.",
+    "description_html": "Deal 13 damage.<br>Draw 1 card.<br>When a Status card is created, reduce this card's cost to 0 1 Energy this turn.",
+    "upgraded_description_plain": "Deal 14 damage.\nDraw 2 cards.\nWhen a Status card is created, reduce this card's cost to 0 1 Energy this turn.",
+    "upgraded_description_html": "Deal 14 damage.<br>Draw 2 cards.<br>When a Status card is created, reduce this card's cost to 0 1 Energy this turn."
   },
   {
     "class_name": "RollingBoulder",
@@ -13540,6 +13611,12 @@
       "Exhaust",
       "Retain"
     ],
+    "vars": [
+      {
+        "type": "Stars",
+        "base_value": 9
+      }
+    ],
     "upgrades": [
       {
         "action": "add_keyword",
@@ -13550,9 +13627,8 @@
     "loc_key": "ROYAL_GAMBLE",
     "title": "Royal Gamble",
     "description_template": "Gain {Stars:diff()} {singleStarIcon}.",
-    "vars": [],
-    "description_plain": "Gain ? .",
-    "description_html": "Gain ? [star]."
+    "description_plain": "Gain 9 .",
+    "description_html": "Gain 9 [star]."
   },
   {
     "class_name": "Royalties",
@@ -13560,6 +13636,13 @@
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 30,
+        "upgraded_value": 35
+      }
+    ],
     "upgrades": [
       {
         "var": "Gold",
@@ -13577,9 +13660,10 @@
     "loc_key": "ROYALTIES",
     "title": "Royalties",
     "description_template": "At the end of combat, gain {Gold:diff()} [gold]Gold[/gold].",
-    "vars": [],
-    "description_plain": "At the end of combat, gain ? Gold.",
-    "description_html": "At the end of combat, gain ? <span class=\"desc-gold\">Gold</span>."
+    "description_plain": "At the end of combat, gain 30 Gold.",
+    "description_html": "At the end of combat, gain 30 <span class=\"desc-gold\">Gold</span>.",
+    "upgraded_description_plain": "At the end of combat, gain 35 Gold.",
+    "upgraded_description_html": "At the end of combat, gain 35 <span class=\"desc-gold\">Gold</span>."
   },
   {
     "class_name": "Rupture",
@@ -13709,10 +13793,10 @@
     "loc_key": "SCAVENGE",
     "title": "Scavenge",
     "description_template": "[gold]Exhaust[/gold] a card.\nNext turn, gain {Energy:energyIcons()}.",
-    "description_plain": "Exhaust a card.\nNext turn, gain 2.",
-    "description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 2.",
-    "upgraded_description_plain": "Exhaust a card.\nNext turn, gain 3.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 3."
+    "description_plain": "Exhaust a card.\nNext turn, gain 2 Energy.",
+    "description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 2 Energy.",
+    "upgraded_description_plain": "Exhaust a card.\nNext turn, gain 3 Energy.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 3 Energy."
   },
   {
     "class_name": "Scourge",
@@ -13790,10 +13874,10 @@
     "loc_key": "SCRAPE",
     "title": "Scrape",
     "description_template": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} cards.\nDiscard all cards drawn this way that do not cost 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 1.",
-    "description_html": "Deal 7 damage.<br>Draw 4 cards.<br>Discard all cards drawn this way that do not cost 0 1.",
-    "upgraded_description_plain": "Deal 10 damage.\nDraw 5 cards.\nDiscard all cards drawn this way that do not cost 0 1.",
-    "upgraded_description_html": "Deal 10 damage.<br>Draw 5 cards.<br>Discard all cards drawn this way that do not cost 0 1."
+    "description_plain": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 1 Energy.",
+    "description_html": "Deal 7 damage.<br>Draw 4 cards.<br>Discard all cards drawn this way that do not cost 0 1 Energy.",
+    "upgraded_description_plain": "Deal 10 damage.\nDraw 5 cards.\nDiscard all cards drawn this way that do not cost 0 1 Energy.",
+    "upgraded_description_html": "Deal 10 damage.<br>Draw 5 cards.<br>Discard all cards drawn this way that do not cost 0 1 Energy."
   },
   {
     "class_name": "Scrawl",
@@ -13989,6 +14073,13 @@
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 7,
+        "upgraded_value": 11
+      }
+    ],
     "upgrades": [
       {
         "var": "Forge",
@@ -14006,9 +14097,10 @@
     "loc_key": "SEEKING_EDGE",
     "title": "Seeking Edge",
     "description_template": "[gold]Forge[/gold] {Forge:diff()}.\n[gold]Sovereign Blade[/gold] now deals damage to ALL enemies.",
-    "vars": [],
-    "description_plain": "Forge ?.\nSovereign Blade now deals damage to ALL enemies.",
-    "description_html": "<span class=\"desc-gold\">Forge</span> ?.<br><span class=\"desc-gold\">Sovereign Blade</span> now deals damage to ALL enemies."
+    "description_plain": "Forge 7.\nSovereign Blade now deals damage to ALL enemies.",
+    "description_html": "<span class=\"desc-gold\">Forge</span> 7.<br><span class=\"desc-gold\">Sovereign Blade</span> now deals damage to ALL enemies.",
+    "upgraded_description_plain": "Forge 11.\nSovereign Blade now deals damage to ALL enemies.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 11.<br><span class=\"desc-gold\">Sovereign Blade</span> now deals damage to ALL enemies."
   },
   {
     "class_name": "SentryMode",
@@ -14364,6 +14456,10 @@
         "type": "Damage",
         "base_value": 8,
         "upgraded_value": 11
+      },
+      {
+        "type": "Stars",
+        "base_value": 2
       }
     ],
     "upgrades": [
@@ -14376,10 +14472,10 @@
     "loc_key": "SHINING_STRIKE",
     "title": "Shining Strike",
     "description_template": "Deal {Damage:diff()} damage.\nGain {Stars:starIcons()}.\nPut this card on top of your [gold]Draw Pile[/gold].",
-    "description_plain": "Deal 8 damage.\nGain ?.\nPut this card on top of your Draw Pile.",
-    "description_html": "Deal 8 damage.<br>Gain ?.<br>Put this card on top of your <span class=\"desc-gold\">Draw Pile</span>.",
-    "upgraded_description_plain": "Deal 11 damage.\nGain ?.\nPut this card on top of your Draw Pile.",
-    "upgraded_description_html": "Deal 11 damage.<br>Gain ?.<br>Put this card on top of your <span class=\"desc-gold\">Draw Pile</span>."
+    "description_plain": "Deal 8 damage.\nGain 2 Stars.\nPut this card on top of your Draw Pile.",
+    "description_html": "Deal 8 damage.<br>Gain 2 Stars.<br>Put this card on top of your <span class=\"desc-gold\">Draw Pile</span>.",
+    "upgraded_description_plain": "Deal 11 damage.\nGain 2 Stars.\nPut this card on top of your Draw Pile.",
+    "upgraded_description_html": "Deal 11 damage.<br>Gain 2 Stars.<br>Put this card on top of your <span class=\"desc-gold\">Draw Pile</span>."
   },
   {
     "class_name": "Shiv",
@@ -14921,6 +15017,11 @@
         "type": "Damage",
         "base_value": 8,
         "upgraded_value": 9
+      },
+      {
+        "type": "Stars",
+        "base_value": 1,
+        "upgraded_value": 2
       }
     ],
     "upgrades": [
@@ -14937,10 +15038,10 @@
     "loc_key": "SOLAR_STRIKE",
     "title": "Solar Strike",
     "description_template": "Deal {Damage:diff()} damage.\nGain {Stars:starIcons()}.",
-    "description_plain": "Deal 8 damage.\nGain ?.",
-    "description_html": "Deal 8 damage.<br>Gain ?.",
-    "upgraded_description_plain": "Deal 9 damage.\nGain ?.",
-    "upgraded_description_html": "Deal 9 damage.<br>Gain ?."
+    "description_plain": "Deal 8 damage.\nGain 1 Stars.",
+    "description_html": "Deal 8 damage.<br>Gain 1 Stars.",
+    "upgraded_description_plain": "Deal 9 damage.\nGain 2 Stars.",
+    "upgraded_description_html": "Deal 9 damage.<br>Gain 2 Stars."
   },
   {
     "class_name": "Soot",
@@ -15259,13 +15360,18 @@
     "keywords": [
       "Unplayable"
     ],
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 600
+      }
+    ],
     "character": "Quest",
     "loc_key": "SPOILS_MAP",
     "title": "Spoils Map",
     "description_template": "Marks a site of {Gold:diff()} extra [gold]Gold[/gold] in the next Act.",
-    "vars": [],
-    "description_plain": "Marks a site of ? extra Gold in the next Act.",
-    "description_html": "Marks a site of ? extra <span class=\"desc-gold\">Gold</span> in the next Act."
+    "description_plain": "Marks a site of 600 extra Gold in the next Act.",
+    "description_html": "Marks a site of 600 extra <span class=\"desc-gold\">Gold</span> in the next Act."
   },
   {
     "class_name": "SpoilsOfBattle",
@@ -15273,6 +15379,13 @@
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 10,
+        "upgraded_value": 15
+      }
+    ],
     "upgrades": [
       {
         "var": "Forge",
@@ -15283,9 +15396,10 @@
     "loc_key": "SPOILS_OF_BATTLE",
     "title": "Spoils of Battle",
     "description_template": "[gold]Forge[/gold] {Forge:diff()}.",
-    "vars": [],
-    "description_plain": "Forge ?.",
-    "description_html": "<span class=\"desc-gold\">Forge</span> ?."
+    "description_plain": "Forge 10.",
+    "description_html": "<span class=\"desc-gold\">Forge</span> 10.",
+    "upgraded_description_plain": "Forge 15.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 15."
   },
   {
     "class_name": "SporeMind",
@@ -15534,10 +15648,10 @@
     "loc_key": "STOMP",
     "title": "Stomp",
     "description_template": "Deal {Damage:diff()} damage to ALL enemies.\nCosts 1 less {energyPrefix:energyIcons(1)} for each Attack played this turn.",
-    "description_plain": "Deal 12 damage to ALL enemies.\nCosts 1 less 1 for each Attack played this turn.",
-    "description_html": "Deal 12 damage to ALL enemies.<br>Costs 1 less 1 for each Attack played this turn.",
-    "upgraded_description_plain": "Deal 15 damage to ALL enemies.\nCosts 1 less 1 for each Attack played this turn.",
-    "upgraded_description_html": "Deal 15 damage to ALL enemies.<br>Costs 1 less 1 for each Attack played this turn."
+    "description_plain": "Deal 12 damage to ALL enemies.\nCosts 1 less 1 Energy for each Attack played this turn.",
+    "description_html": "Deal 12 damage to ALL enemies.<br>Costs 1 less 1 Energy for each Attack played this turn.",
+    "upgraded_description_plain": "Deal 15 damage to ALL enemies.\nCosts 1 less 1 Energy for each Attack played this turn.",
+    "upgraded_description_html": "Deal 15 damage to ALL enemies.<br>Costs 1 less 1 Energy for each Attack played this turn."
   },
   {
     "class_name": "StoneArmor",
@@ -15848,8 +15962,8 @@
     "title": "Subroutine",
     "description_template": "Whenever you play a Power, gain {energyPrefix:energyIcons(1)}.",
     "vars": [],
-    "description_plain": "Whenever you play a Power, gain 1.",
-    "description_html": "Whenever you play a Power, gain 1."
+    "description_plain": "Whenever you play a Power, gain 1 Energy.",
+    "description_html": "Whenever you play a Power, gain 1 Energy."
   },
   {
     "class_name": "SuckerPunch",
@@ -15904,6 +16018,13 @@
     "keywords": [
       "Retain"
     ],
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 8,
+        "upgraded_value": 11
+      }
+    ],
     "upgrades": [
       {
         "var": "Forge",
@@ -15914,9 +16035,10 @@
     "loc_key": "SUMMON_FORTH",
     "title": "Summon Forth",
     "description_template": "[gold]Forge[/gold] {Forge:diff()}.\nPut [gold]Sovereign Blade[/gold] into your [gold]Hand[/gold] from anywhere.",
-    "vars": [],
-    "description_plain": "Forge ?.\nPut Sovereign Blade into your Hand from anywhere.",
-    "description_html": "<span class=\"desc-gold\">Forge</span> ?.<br>Put <span class=\"desc-gold\">Sovereign Blade</span> into your <span class=\"desc-gold\">Hand</span> from anywhere."
+    "description_plain": "Forge 8.\nPut Sovereign Blade into your Hand from anywhere.",
+    "description_html": "<span class=\"desc-gold\">Forge</span> 8.<br>Put <span class=\"desc-gold\">Sovereign Blade</span> into your <span class=\"desc-gold\">Hand</span> from anywhere.",
+    "upgraded_description_plain": "Forge 11.\nPut Sovereign Blade into your Hand from anywhere.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 11.<br>Put <span class=\"desc-gold\">Sovereign Blade</span> into your <span class=\"desc-gold\">Hand</span> from anywhere."
   },
   {
     "class_name": "Sunder",
@@ -15945,10 +16067,10 @@
     "loc_key": "SUNDER",
     "title": "Sunder",
     "description_template": "Deal {Damage:diff()} damage.\nIf this kills an enemy, gain {Energy:energyIcons()}.",
-    "description_plain": "Deal 24 damage.\nIf this kills an enemy, gain 3.",
-    "description_html": "Deal 24 damage.<br>If this kills an enemy, gain 3.",
-    "upgraded_description_plain": "Deal 32 damage.\nIf this kills an enemy, gain 3.",
-    "upgraded_description_html": "Deal 32 damage.<br>If this kills an enemy, gain 3."
+    "description_plain": "Deal 24 damage.\nIf this kills an enemy, gain 3 Energy.",
+    "description_html": "Deal 24 damage.<br>If this kills an enemy, gain 3 Energy.",
+    "upgraded_description_plain": "Deal 32 damage.\nIf this kills an enemy, gain 3 Energy.",
+    "upgraded_description_html": "Deal 32 damage.<br>If this kills an enemy, gain 3 Energy."
   },
   {
     "class_name": "Supercritical",
@@ -15976,10 +16098,10 @@
     "loc_key": "SUPERCRITICAL",
     "title": "Supercritical",
     "description_template": "Gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 4.",
-    "description_html": "Gain 4.",
-    "upgraded_description_plain": "Gain 6.",
-    "upgraded_description_html": "Gain 6."
+    "description_plain": "Gain 4 Energy.",
+    "description_html": "Gain 4 Energy.",
+    "upgraded_description_plain": "Gain 6 Energy.",
+    "upgraded_description_html": "Gain 6 Energy."
   },
   {
     "class_name": "Supermassive",
@@ -16271,10 +16393,10 @@
     "loc_key": "SYNTHESIS",
     "title": "Synthesis",
     "description_template": "Deal {Damage:diff()} damage.\nThe next Power you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 12 damage.\nThe next Power you play costs 0 1.",
-    "description_html": "Deal 12 damage.<br>The next Power you play costs 0 1.",
-    "upgraded_description_plain": "Deal 18 damage.\nThe next Power you play costs 0 1.",
-    "upgraded_description_html": "Deal 18 damage.<br>The next Power you play costs 0 1."
+    "description_plain": "Deal 12 damage.\nThe next Power you play costs 0 1 Energy.",
+    "description_html": "Deal 12 damage.<br>The next Power you play costs 0 1 Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nThe next Power you play costs 0 1 Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>The next Power you play costs 0 1 Energy."
   },
   {
     "class_name": "Tactician",
@@ -16302,10 +16424,10 @@
     "loc_key": "TACTICIAN",
     "title": "Tactician",
     "description_template": "Gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 1.",
-    "description_html": "Gain 1.",
-    "upgraded_description_plain": "Gain 2.",
-    "upgraded_description_html": "Gain 2."
+    "description_plain": "Gain 1 Energy.",
+    "description_html": "Gain 1 Energy.",
+    "upgraded_description_plain": "Gain 2 Energy.",
+    "upgraded_description_html": "Gain 2 Energy."
   },
   {
     "class_name": "TagTeam",
@@ -16690,6 +16812,13 @@
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 30,
+        "upgraded_value": 40
+      }
+    ],
     "upgrades": [
       {
         "var": "Forge",
@@ -16700,9 +16829,10 @@
     "loc_key": "THE_SMITH",
     "title": "The Smith",
     "description_template": "[gold]Forge[/gold] {Forge:diff()}.",
-    "vars": [],
-    "description_plain": "Forge ?.",
-    "description_html": "<span class=\"desc-gold\">Forge</span> ?."
+    "description_plain": "Forge 30.",
+    "description_html": "<span class=\"desc-gold\">Forge</span> 30.",
+    "upgraded_description_plain": "Forge 40.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 40."
   },
   {
     "class_name": "ThinkingAhead",
@@ -17034,8 +17164,8 @@
     "loc_key": "TRANSFIGURE",
     "title": "Transfigure",
     "description_template": "Add [gold]Replay[/gold] to a card in your [gold]Hand[/gold].\nIt costs an extra {Energy:energyIcons()}.",
-    "description_plain": "Add Replay to a card in your Hand.\nIt costs an extra 1.",
-    "description_html": "Add <span class=\"desc-gold\">Replay</span> to a card in your <span class=\"desc-gold\">Hand</span>.<br>It costs an extra 1."
+    "description_plain": "Add Replay to a card in your Hand.\nIt costs an extra 1 Energy.",
+    "description_html": "Add <span class=\"desc-gold\">Replay</span> to a card in your <span class=\"desc-gold\">Hand</span>.<br>It costs an extra 1 Energy."
   },
   {
     "class_name": "TrashToTreasure",
@@ -17156,10 +17286,10 @@
     "loc_key": "TURBO",
     "title": "TURBO",
     "description_template": "Gain {Energy:energyIcons()}.\nAdd a [gold]Void[/gold] into your [gold]Discard Pile[/gold].",
-    "description_plain": "Gain 2.\nAdd a Void into your Discard Pile.",
-    "description_html": "Gain 2.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>.",
-    "upgraded_description_plain": "Gain 3.\nAdd a Void into your Discard Pile.",
-    "upgraded_description_html": "Gain 3.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>."
+    "description_plain": "Gain 2 Energy.\nAdd a Void into your Discard Pile.",
+    "description_html": "Gain 2 Energy.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>.",
+    "upgraded_description_plain": "Gain 3 Energy.\nAdd a Void into your Discard Pile.",
+    "upgraded_description_html": "Gain 3 Energy.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>."
   },
   {
     "class_name": "TwinStrike",
@@ -17380,10 +17510,10 @@
     "loc_key": "UNRELENTING",
     "title": "Unrelenting",
     "description_template": "Deal {Damage:diff()} damage.\nThe next Attack you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 12 damage.\nThe next Attack you play costs 0 1.",
-    "description_html": "Deal 12 damage.<br>The next Attack you play costs 0 1.",
-    "upgraded_description_plain": "Deal 18 damage.\nThe next Attack you play costs 0 1.",
-    "upgraded_description_html": "Deal 18 damage.<br>The next Attack you play costs 0 1."
+    "description_plain": "Deal 12 damage.\nThe next Attack you play costs 0 1 Energy.",
+    "description_html": "Deal 12 damage.<br>The next Attack you play costs 0 1 Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nThe next Attack you play costs 0 1 Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>The next Attack you play costs 0 1 Energy."
   },
   {
     "class_name": "Untouchable",
@@ -17552,10 +17682,10 @@
     "loc_key": "VEILPIERCER",
     "title": "Veilpiercer",
     "description_template": "Deal {Damage:diff()} damage.\nThe next [gold]Ethereal[/gold] card you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 10 damage.\nThe next Ethereal card you play costs 0 1.",
-    "description_html": "Deal 10 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1.",
-    "upgraded_description_plain": "Deal 13 damage.\nThe next Ethereal card you play costs 0 1.",
-    "upgraded_description_html": "Deal 13 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1."
+    "description_plain": "Deal 10 damage.\nThe next Ethereal card you play costs 0 1 Energy.",
+    "description_html": "Deal 10 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy.",
+    "upgraded_description_plain": "Deal 13 damage.\nThe next Ethereal card you play costs 0 1 Energy.",
+    "upgraded_description_html": "Deal 13 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy."
   },
   {
     "class_name": "Venerate",
@@ -17563,6 +17693,13 @@
     "type": "Skill",
     "rarity": "Basic",
     "target": "Self",
+    "vars": [
+      {
+        "type": "Stars",
+        "base_value": 2,
+        "upgraded_value": 3
+      }
+    ],
     "upgrades": [
       {
         "var": "Stars",
@@ -17573,9 +17710,10 @@
     "loc_key": "VENERATE",
     "title": "Venerate",
     "description_template": "Gain {Stars:starIcons()}.",
-    "vars": [],
-    "description_plain": "Gain ?.",
-    "description_html": "Gain ?."
+    "description_plain": "Gain 2 Stars.",
+    "description_html": "Gain 2 Stars.",
+    "upgraded_description_plain": "Gain 3 Stars.",
+    "upgraded_description_html": "Gain 3 Stars."
   },
   {
     "class_name": "Vicious",
@@ -17637,8 +17775,8 @@
     "loc_key": "VOID",
     "title": "Void",
     "description_template": "Whenever you draw this card, lose {Energy:energyIcons()}.",
-    "description_plain": "Whenever you draw this card, lose 1.",
-    "description_html": "Whenever you draw this card, lose 1."
+    "description_plain": "Whenever you draw this card, lose 1 Energy.",
+    "description_html": "Whenever you draw this card, lose 1 Energy."
   },
   {
     "class_name": "VoidForm",
@@ -17750,8 +17888,8 @@
     "loc_key": "WASTE_AWAY",
     "title": "Waste Away",
     "description_template": "Gain {WasteAwayPower:diff()} less {energyPrefix:energyIcons(1)} per turn.",
-    "description_plain": "Gain 1 less 1 per turn.",
-    "description_html": "Gain 1 less 1 per turn."
+    "description_plain": "Gain 1 less 1 Energy per turn.",
+    "description_html": "Gain 1 less 1 Energy per turn."
   },
   {
     "class_name": "WellLaidPlans",
@@ -17918,8 +18056,8 @@
     "loc_key": "WISP",
     "title": "Wisp",
     "description_template": "Gain {Energy:energyIcons()}.",
-    "description_plain": "Gain 1.",
-    "description_html": "Gain 1."
+    "description_plain": "Gain 1 Energy.",
+    "description_html": "Gain 1 Energy."
   },
   {
     "class_name": "Wound",
@@ -18016,6 +18154,11 @@
         "type": "Damage",
         "base_value": 7,
         "upgraded_value": 9
+      },
+      {
+        "type": "Forge",
+        "base_value": 5,
+        "upgraded_value": 7
       }
     ],
     "upgrades": [
@@ -18032,10 +18175,10 @@
     "loc_key": "WROUGHT_IN_WAR",
     "title": "Wrought in War",
     "description_template": "Deal {Damage:diff()} damage.\n[gold]Forge[/gold] {Forge:diff()}.",
-    "description_plain": "Deal 7 damage.\nForge ?.",
-    "description_html": "Deal 7 damage.<br><span class=\"desc-gold\">Forge</span> ?.",
-    "upgraded_description_plain": "Deal 9 damage.\nForge ?.",
-    "upgraded_description_html": "Deal 9 damage.<br><span class=\"desc-gold\">Forge</span> ?."
+    "description_plain": "Deal 7 damage.\nForge 5.",
+    "description_html": "Deal 7 damage.<br><span class=\"desc-gold\">Forge</span> 5.",
+    "upgraded_description_plain": "Deal 9 damage.\nForge 7.",
+    "upgraded_description_html": "Deal 9 damage.<br><span class=\"desc-gold\">Forge</span> 7."
   },
   {
     "class_name": "Zap",
