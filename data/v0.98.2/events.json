@@ -29,7 +29,9 @@
   },
   {
     "class_name": "Amalgamator",
-    "conditions": [],
+    "conditions": [
+      "Has 2+ Strikes and 2+ Defends"
+    ],
     "loc_key": "AMALGAMATOR",
     "title": "Amalgamator",
     "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in\u2014the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \u201cface\u201d is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\u201cOne with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\u201d",
@@ -350,7 +352,9 @@
   },
   {
     "class_name": "FieldOfManSizedHoles",
-    "conditions": [],
+    "conditions": [
+      "Has enchantable cards"
+    ],
     "loc_key": "FIELD_OF_MAN_SIZED_HOLES",
     "title": "Field of Man-Sized Holes",
     "description": "The sudden sight of a massive field, [jitter]gouged with large outlines of bodies[/jitter], stops you in your tracks.\n\nOne of these outlines matches your own.\n\n[sine][orange]It's perfect...[/orange][/sine]",
@@ -564,7 +568,9 @@
   },
   {
     "class_name": "RanwidTheElder",
-    "conditions": [],
+    "conditions": [
+      "Act 2+"
+    ],
     "loc_key": "RANWID_THE_ELDER",
     "title": "Ranwid the Elder",
     "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\u201cWe meet once more... it's me, Ranwid!\u201d[/sine]\n\nYou do not know this man.",
@@ -614,7 +620,10 @@
   },
   {
     "class_name": "RelicTrader",
-    "conditions": [],
+    "conditions": [
+      "Act 2+",
+      "Has 5+ tradable relics"
+    ],
     "loc_key": "RELIC_TRADER",
     "title": "Relic Trader",
     "description": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n\u201cWelcome! What're ya trading?\u201d\nThe figure inquires as he flares open his cloak to reveal a slew of [sine][purple]suspicious wares[/purple][/sine].",
@@ -758,7 +767,9 @@
   },
   {
     "class_name": "SpiralingWhirlpool",
-    "conditions": [],
+    "conditions": [
+      "Has enchantable cards"
+    ],
     "loc_key": "SPIRALING_WHIRLPOOL",
     "title": "Spiraling Whirlpool",
     "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
@@ -999,7 +1010,8 @@
   {
     "class_name": "TheLegendsWereTrue",
     "conditions": [
-      "HP >= 10"
+      "HP >= 10",
+      "Act 1 only"
     ],
     "loc_key": "THE_LEGENDS_WERE_TRUE",
     "title": "The Legends Were True",

@@ -144,6 +144,36 @@ def parse_is_allowed(content: str) -> list[str]:
     for m in re.finditer(r"(?:DeckSize|Deck\.Count)\s*(>=?|<=?)\s*(\d+)", body):
         conditions.append(f"Deck size {m.group(1)} {m.group(2)}")
 
+    # CurrentActIndex == 0 with return false means Act 2+ (rejection of Act 1)
+    if re.search(r"CurrentActIndex\s*==\s*0\)?\s*\{?\s*return\s+false", body, re.DOTALL):
+        if "Act 2+" not in conditions:
+            conditions.append("Act 2+")
+    # CurrentActIndex == 0 in acceptance context means Act 1 only
+    elif re.search(r"CurrentActIndex\s*==\s*0", body):
+        conditions.append("Act 1 only")
+
+    # Enchantment requirements (has enchantable cards)
+    if re.search(r"CanEnchant", body):
+        conditions.append("Has enchantable cards")
+
+    # Strike/Defend count requirements
+    sd_m = re.search(
+        r"Count.*?CardTag\.Strike.*?>=?\s*(\d+).*?CardTag\.Defend.*?>=?\s*(\d+)",
+        body,
+        re.DOTALL,
+    )
+    if sd_m:
+        conditions.append(f"Has {sd_m.group(1)}+ Strikes and {sd_m.group(2)}+ Defends")
+
+    # Tradable relic requirements
+    tr_m = re.search(
+        r"(?:IsTradable|Tradable|GetValidRelics).*?Count.*?>=?\s*(\d+)",
+        body,
+        re.DOTALL,
+    )
+    if tr_m:
+        conditions.append(f"Has {tr_m.group(1)}+ tradable relics")
+
     # Multiplayer restrictions
     if re.search(r"Players\.Count\s*>\s*1.*return\s+false", body, re.DOTALL):
         conditions.append("Single player only")
