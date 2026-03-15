@@ -22,6 +22,12 @@ site/src/content/enchantments/
 site/src/content/monsters/
 site/src/content/encounters/
 site/src/content/events/
+site/src/content/ancients/
+
+# Astro boilerplate
+site/README.md
+site/public/favicon.ico
+site/public/favicon.svg
 
 # Decompiled game code (do NOT commit — copyrighted material)
 decompiled/
