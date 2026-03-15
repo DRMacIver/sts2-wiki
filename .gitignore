@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+.venv/
+
+# Node
+node_modules/
+site/dist/
+site/.astro/
+
+# Data artifacts
+data/
+enriched/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# claude-reliability managed
+.claude/bin/
+.claude/*.local.md
+.claude/*.local.json
+.claude/*.local
+.claude-reliability/
