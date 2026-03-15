@@ -103,6 +103,25 @@ def main() -> None:
 
     # Load localization
     loc_data = load_localization(loc_dir, "ancients")
+    relic_loc = load_localization(loc_dir, "relics")
+
+    # Build relic lookup: class_name -> {title, description, slug}
+    relic_lookup: dict[str, dict[str, str]] = {}
+    for key in relic_loc:
+        if key.endswith(".title"):
+            base_key = key.removesuffix(".title")
+            title = relic_loc[key]
+            desc = relic_loc.get(f"{base_key}.description", "")
+            # Strip rich text tags for plain description
+            plain_desc = re.sub(r"\[/?[^\]]*\]", "", desc)
+            plain_desc = re.sub(r"\{[^}]*\}", "?", plain_desc)
+            slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+            info = {"title": title, "description": plain_desc, "slug": slug}
+            relic_lookup[base_key] = info
+            # Also map PascalCase class name
+            parts = base_key.split("_")
+            camel = "".join(p.capitalize() for p in parts)
+            relic_lookup[camel] = info
 
     # Build act assignment map
     act_ancient_map = build_act_ancient_map(decompiled_dir)
@@ -131,6 +150,20 @@ def main() -> None:
         # Act assignments
         acts = act_ancient_map.get(class_name, [])
         ancient["acts"] = acts
+
+        # Enrich relic offerings with display names and descriptions
+        all_relics = list(
+            dict.fromkeys(ancient.get("relic_offerings", []) + ancient.get("relic_refs", []))
+        )
+        enriched_relics: list[dict[str, str]] = []
+        for relic_class in all_relics:
+            relic_info = relic_lookup.get(relic_class)
+            if relic_info:
+                enriched_relics.append(relic_info)
+            else:
+                slug = re.sub(r"[^a-z0-9]+", "-", relic_class.lower()).strip("-")
+                enriched_relics.append({"title": relic_class, "description": "", "slug": slug})
+        ancient["relic_offerings"] = enriched_relics
 
         ancients.append(ancient)
 

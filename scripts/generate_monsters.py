@@ -68,11 +68,14 @@ def main() -> None:
         # Build encounter cross-refs
         enc_refs = encounter_lookup.get(monster["class_name"], [])
 
+        is_companion = monster.get("is_companion", False)
+
         lines = ["---"]
         lines.append(f"title: {escape_yaml(monster['title'])}")
         lines.append(f"class_name: {escape_yaml(monster['class_name'])}")
         lines.append(f"min_hp: {monster.get('min_hp', 0)}")
         lines.append(f"max_hp: {monster.get('max_hp', 0)}")
+        lines.append(f"is_companion: {str(is_companion).lower()}")
         lines.append(f"moves: {json.dumps(monster.get('moves', []))}")
         lines.append(f"powers_on_spawn: {json.dumps(monster.get('powers_on_spawn', []))}")
         lines.append(f"encounters: {json.dumps(enc_refs)}")

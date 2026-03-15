@@ -19,68 +19,86 @@ from PIL import Image
 def decode_ctex(data: bytes) -> Image.Image | None:
     """Decode a Godot .ctex file to a PIL Image.
 
-    The .ctex format has a metadata preamble followed by a GST2 header
-    and compressed image data (WebP, S3TC, or BPTC/BC7).
+    The .ctex format (Godot 4 CompressedTexture2D) has:
+    - Optional metadata preamble before GST2
+    - GST2 header: magic(4) + version(4) + width(4) + height(4) + flags(4) = 20 bytes
+    - For lossless/lossy: additional fields then WebP/PNG data at offset 56
+    - For VRAM compressed (BPTC/S3TC): mipmap table then block data at offset 52
     """
-    # Find the GST2 magic marker
     gst2_idx = data.find(b"GST2")
     if gst2_idx < 0:
         return None
 
     header = data[gst2_idx:]
-    if len(header) < 21:
+    if len(header) < 56:
         return None
 
     width = struct.unpack_from("<I", header, 8)[0]
     height = struct.unpack_from("<I", header, 12)[0]
 
-    image_data = header[21:]
-
-    # Check for WebP (RIFF magic)
-    if image_data[:4] == b"RIFF" and len(image_data) > 12 and image_data[8:12] == b"WEBP":
+    # Check for WebP/PNG at known offset (56 bytes from GST2)
+    container_data = header[56:]
+    if container_data[:4] == b"RIFF" and len(container_data) > 12:
         try:
-            return Image.open(io.BytesIO(image_data)).convert("RGBA")
+            return Image.open(io.BytesIO(container_data)).convert("RGBA")
         except Exception:
-            return None
+            pass
 
-    # Check for PNG
-    if image_data[:8] == b"\x89PNG\r\n\x1a\n":
+    if container_data[:8] == b"\x89PNG\r\n\x1a\n":
         try:
-            return Image.open(io.BytesIO(image_data)).convert("RGBA")
+            return Image.open(io.BytesIO(container_data)).convert("RGBA")
         except Exception:
-            return None
+            pass
 
-    # Block-compressed formats (BC1/BC3/BC7)
+    # Block-compressed formats — data starts at offset 52 for VRAM textures
+    # The image format enum is at offset 48 (22 = BPTC_RGBA, 17 = DXT1, 19 = DXT5)
+    img_format = struct.unpack_from("<I", header, 48)[0] if len(header) > 52 else 0
+    block_data = header[52:]
+
     expected_blocks = ((width + 3) // 4) * ((height + 3) // 4)
-    expected_16byte = expected_blocks * 16  # BC3, BC7
-    expected_8byte = expected_blocks * 8  # BC1
+    expected_16byte = expected_blocks * 16
+    expected_8byte = expected_blocks * 8
 
-    # Try BC7 (BPTC) first — most common in STS2
-    if len(image_data) >= expected_16byte:
+    # Pad if slightly short (last few bytes may be missing)
+    if len(block_data) < expected_16byte and len(block_data) >= expected_16byte - 16:
+        block_data = block_data + b"\x00" * (expected_16byte - len(block_data))
+
+    # BC7 (BPTC_RGBA = format 22)
+    if img_format == 22 and len(block_data) >= expected_16byte:
         try:
-            raw = texture2ddecoder.decode_bc7(image_data[:expected_16byte], width, height)
-            img = Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-            return img
+            raw = texture2ddecoder.decode_bc7(block_data[:expected_16byte], width, height)
+            return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
         except Exception:
             pass
 
-    # Try BC3 (DXT5)
-    if len(image_data) >= expected_16byte:
+    # BC3 (DXT5 = format 19)
+    if img_format in (19, 0) and len(block_data) >= expected_16byte:
         try:
-            raw = texture2ddecoder.decode_bc3(image_data[:expected_16byte], width, height)
-            img = Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-            return img
+            raw = texture2ddecoder.decode_bc3(block_data[:expected_16byte], width, height)
+            return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
         except Exception:
             pass
 
-    # Try BC1 (DXT1)
-    if len(image_data) >= expected_8byte:
+    # BC1 (DXT1 = format 17)
+    if img_format in (17, 0) and len(block_data) >= expected_8byte:
         try:
-            raw = texture2ddecoder.decode_bc1(image_data[:expected_8byte], width, height)
-            img = Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-            return img
+            raw = texture2ddecoder.decode_bc1(block_data[:expected_8byte], width, height)
+            return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
         except Exception:
             pass
+
+    # Fallback: try all decoders regardless of format field
+    for decoder, size in [
+        (texture2ddecoder.decode_bc7, expected_16byte),
+        (texture2ddecoder.decode_bc3, expected_16byte),
+        (texture2ddecoder.decode_bc1, expected_8byte),
+    ]:
+        if len(block_data) >= size:
+            try:
+                raw = decoder(block_data[:size], width, height)
+                return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
+            except Exception:
+                pass
 
     return None
 

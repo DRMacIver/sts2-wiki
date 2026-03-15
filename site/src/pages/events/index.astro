@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allEvents = await getCollection('events');
+const events = allEvents.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title="Events">
+  <h1>Events</h1>
+  <p class="card-meta" style="margin-bottom: 1rem;">{events.length} events</p>
+
+  <div class="card-grid">
+    {events.map(event => (
+      <a href={`${import.meta.env.BASE_URL}events/${event.id}/`} class="card-entry">
+        <h3>{event.data.title}</h3>
+        <div class="card-meta">
+          {event.data.acts.length > 0 ? event.data.acts.join(', ') : ''}
+        </div>
+        {event.data.options.length > 0 && (
+          <div class="card-meta" style="margin-top: 0.25rem;">
+            {event.data.options.length} options
+          </div>
+        )}
+      </a>
+    ))}
+  </div>
+</BaseLayout>

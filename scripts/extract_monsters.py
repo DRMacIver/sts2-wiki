@@ -13,6 +13,16 @@ from scripts.common import (
     write_json,
 )
 
+# Companion monsters that fight on the player's side, not as enemies
+COMPANION_CLASSES = {
+    "Osty",
+    "BattleFriendV1",
+    "BattleFriendV2",
+    "BattleFriendV3",
+    "Byrdpip",
+    "PaelsLegion",
+}
+
 
 def parse_hp(content: str) -> tuple[int | None, int | None]:
     """Extract MinInitialHp and MaxInitialHp from monster source.
@@ -369,6 +379,10 @@ def main() -> None:
         monster = parse_monster_file(class_name, content)
         if not monster:
             continue
+
+        # Flag companions (they fight on the player's side)
+        if class_name in COMPANION_CLASSES:
+            monster["is_companion"] = True
 
         apply_localization(monster, loc_data)
         monsters.append(monster)

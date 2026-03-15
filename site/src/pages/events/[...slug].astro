@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const events = await getCollection('events');
+  return events.map(event => ({
+    params: { slug: event.id },
+    props: { event },
+  }));
+}
+
+const { event } = Astro.props;
+---
+
+<BaseLayout title={event.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}events/`} style="font-size: 0.85rem;">&larr; All Events</a>
+      <h1>{event.data.title}</h1>
+      {event.data.acts.length > 0 && (
+        <div class="card-meta">{event.data.acts.join(', ')}</div>
+      )}
+    </div>
+
+    {event.data.description_html && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Description</h2>
+        <div style="margin: 0.75rem 0;" set:html={event.data.description_html} />
+      </>
+    )}
+
+    {event.data.options.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Options</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {event.data.options.map(opt => (
+            <li style="margin: 0.5rem 0;">{opt}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {event.data.conditions && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Conditions</h2>
+        <p class="card-meta">{event.data.conditions}</p>
+      </>
+    )}
+  </div>
+</BaseLayout>

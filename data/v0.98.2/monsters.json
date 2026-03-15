@@ -149,6 +149,7 @@
     "powers_on_spawn": [
       "BattlewornDummyTimeLimitPower"
     ],
+    "is_companion": true,
     "loc_key": "BATTLE_FRIEND_V1",
     "title": "Battle Friend V1.0"
   },
@@ -167,6 +168,7 @@
     "powers_on_spawn": [
       "BattlewornDummyTimeLimitPower"
     ],
+    "is_companion": true,
     "loc_key": "BATTLE_FRIEND_V2",
     "title": "Battle Friend V2.0"
   },
@@ -185,6 +187,7 @@
     "powers_on_spawn": [
       "BattlewornDummyTimeLimitPower"
     ],
+    "is_companion": true,
     "loc_key": "BATTLE_FRIEND_V3",
     "title": "Battle Friend V3.0"
   },
@@ -425,6 +428,7 @@
         "title": "Nothing"
       }
     ],
+    "is_companion": true,
     "loc_key": "BYRDPIP",
     "title": "Byrdpip"
   },
@@ -2310,6 +2314,7 @@
         "follow_up": "NOTHING_MOVE"
       }
     ],
+    "is_companion": true,
     "loc_key": "OSTY",
     "title": "Osty"
   },
@@ -2427,6 +2432,7 @@
         "title": "Nothing"
       }
     ],
+    "is_companion": true,
     "loc_key": "PAELS_LEGION",
     "title": "Pael's Legion"
   },

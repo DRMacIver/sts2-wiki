@@ -53,6 +53,7 @@ const monsters = defineCollection({
     class_name: z.string(),
     min_hp: z.number(),
     max_hp: z.number(),
+    is_companion: z.boolean().default(false),
     moves: z.array(z.object({
       id: z.string(),
       title: z.string().default(''),
@@ -96,9 +97,26 @@ const ancients = defineCollection({
     title: z.string(),
     class_name: z.string(),
     epithet: z.string().default(''),
-    relic_offerings: z.array(z.string()).default([]),
+    relic_offerings: z.array(z.object({
+      title: z.string(),
+      description: z.string().default(''),
+      slug: z.string(),
+    })).default([]),
     acts: z.array(z.string()).default([]),
   }),
 });
 
-export const collections = { cards, powers, monsters, encounters, ancients };
+const events = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/events' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    description_plain: z.string().default(''),
+    description_html: z.string().default(''),
+    options: z.array(z.string()).default([]),
+    acts: z.array(z.string()).default([]),
+    conditions: z.string().default(''),
+  }),
+});
+
+export const collections = { cards, powers, monsters, encounters, ancients, events };

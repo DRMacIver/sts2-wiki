@@ -3,15 +3,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const allMonsters = await getCollection('monsters');
-const monsters = allMonsters.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const enemies = allMonsters.filter(m => !m.data.is_companion).sort((a, b) => a.data.title.localeCompare(b.data.title));
+const companions = allMonsters.filter(m => m.data.is_companion).sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <BaseLayout title="Monsters">
   <h1>Monsters</h1>
-  <p class="card-meta" style="margin-bottom: 1rem;">{monsters.length} monsters</p>
+  <p class="card-meta" style="margin-bottom: 1rem;">{enemies.length} enemies, {companions.length} companions</p>
 
   <div class="card-grid">
-    {monsters.map(monster => (
+    {enemies.map(monster => (
       <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry">
         <h3>{monster.data.title}</h3>
         <div class="card-meta">
@@ -28,4 +29,22 @@ const monsters = allMonsters.sort((a, b) => a.data.title.localeCompare(b.data.ti
       </a>
     ))}
   </div>
+
+  {companions.length > 0 && (
+    <>
+      <h2 style="margin-top: 2rem;">Companions</h2>
+      <div class="card-grid" style="margin-top: 0.75rem;">
+        {companions.map(monster => (
+          <a href={`${import.meta.env.BASE_URL}monsters/${monster.id}/`} class="card-entry">
+            <h3>{monster.data.title}</h3>
+            <div class="card-meta">
+              HP: {monster.data.min_hp === monster.data.max_hp
+                ? monster.data.min_hp
+                : `${monster.data.min_hp}-${monster.data.max_hp}`}
+            </div>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
 </BaseLayout>
