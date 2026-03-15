@@ -176,7 +176,10 @@ def parse_event_vars(content: str, cards_loc: dict[str, str]) -> dict[str, str]:
         resolved[m.group(1)] = m.group(2)
 
     # Also pick up canonical vars (MaxHpVar, GoldVar, HealVar, etc.)
+    # Skip vars with base_value 0 — these are placeholders for runtime computation
     for v in parse_canonical_vars(content):
+        if v["base_value"] == 0:
+            continue
         vtype = v["type"]
         resolved[vtype] = str(v["base_value"])
         # Also register with "Power" suffix stripped

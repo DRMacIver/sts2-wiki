@@ -223,7 +223,7 @@
       },
       {
         "title": "Rest",
-        "description": "Heal [green]0[/green] HP. Fight some [red]enemies[/red]."
+        "description": "Heal [green]{Heal}[/green] HP. Fight some [red]enemies[/red]."
       },
       {
         "title": "Fight!",
@@ -759,7 +759,7 @@
       },
       {
         "title": "Drink",
-        "description": "Heal [green]0[/green] HP."
+        "description": "Heal [green]{Heal}[/green] HP."
       }
     ],
     "acts": [
@@ -1012,7 +1012,7 @@
     "options": [
       {
         "title": "This",
-        "description": "Lose [red]6[/red] HP. Gain [blue]0[/blue] [gold]Gold[/gold]."
+        "description": "Lose [red]6[/red] HP. Gain [blue]{Gold}[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "That",
