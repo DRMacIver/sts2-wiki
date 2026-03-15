@@ -47,13 +47,16 @@ def main() -> None:
             for m_class in enc.get("monsters", []):
                 if m_class not in encounter_lookup:
                     encounter_lookup[m_class] = []
-                encounter_lookup[m_class].append(
-                    {
-                        "class_name": enc["class_name"],
-                        "title": enc.get("title", enc["class_name"]),
-                        "slug": slugify(enc.get("title", enc["class_name"])),
-                    }
-                )
+                # Deduplicate by encounter class_name
+                enc_ref = {
+                    "class_name": enc["class_name"],
+                    "title": enc.get("title", enc["class_name"]),
+                    "slug": slugify(enc.get("title", enc["class_name"])),
+                }
+                if not any(
+                    e["class_name"] == enc_ref["class_name"] for e in encounter_lookup[m_class]
+                ):
+                    encounter_lookup[m_class].append(enc_ref)
 
     out = Path(output_dir)
     if out.exists():
