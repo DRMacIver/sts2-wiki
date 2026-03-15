@@ -8,12 +8,15 @@ Splits texture atlases into individual sprites using .tpsheet metadata.
 import argparse
 import io
 import json
+import logging
 import os
 import struct
 from pathlib import Path
 
 import texture2ddecoder
 from PIL import Image
+
+logger = logging.getLogger(__name__)
 
 
 def decode_ctex(data: bytes) -> Image.Image | None:
@@ -42,13 +45,15 @@ def decode_ctex(data: bytes) -> Image.Image | None:
         try:
             return Image.open(io.BytesIO(container_data)).convert("RGBA")
         except Exception:
-            pass
+            logger.warning("Failed to decode WebP data (%dx%d)", width, height)
+            return None
 
     if container_data[:8] == b"\x89PNG\r\n\x1a\n":
         try:
             return Image.open(io.BytesIO(container_data)).convert("RGBA")
         except Exception:
-            pass
+            logger.warning("Failed to decode PNG data (%dx%d)", width, height)
+            return None
 
     # Block-compressed formats — data starts at offset 52 for VRAM textures
     # The image format enum is at offset 48 (22 = BPTC_RGBA, 17 = DXT1, 19 = DXT5)
@@ -63,43 +68,41 @@ def decode_ctex(data: bytes) -> Image.Image | None:
     if len(block_data) < expected_16byte and len(block_data) >= expected_16byte - 16:
         block_data = block_data + b"\x00" * (expected_16byte - len(block_data))
 
-    # BC7 (BPTC_RGBA = format 22)
-    if img_format == 22 and len(block_data) >= expected_16byte:
+    # Try format-specific decoder first
+    decoders: list[tuple[str, object, int]] = []
+    if img_format == 22:
+        decoders.append(("BC7", texture2ddecoder.decode_bc7, expected_16byte))
+    elif img_format == 19:
+        decoders.append(("BC3", texture2ddecoder.decode_bc3, expected_16byte))
+    elif img_format == 17:
+        decoders.append(("BC1", texture2ddecoder.decode_bc1, expected_8byte))
+
+    # Fallback: try all decoders if format unknown
+    if not decoders:
+        decoders = [
+            ("BC7", texture2ddecoder.decode_bc7, expected_16byte),
+            ("BC3", texture2ddecoder.decode_bc3, expected_16byte),
+            ("BC1", texture2ddecoder.decode_bc1, expected_8byte),
+        ]
+
+    last_err: Exception | None = None
+    for _name, decoder, size in decoders:
+        if len(block_data) < size:
+            continue
         try:
-            raw = texture2ddecoder.decode_bc7(block_data[:expected_16byte], width, height)
+            raw = decoder(block_data[:size], width, height)  # type: ignore[operator]
             return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-        except Exception:
-            pass
+        except Exception as e:
+            last_err = e
 
-    # BC3 (DXT5 = format 19)
-    if img_format in (19, 0) and len(block_data) >= expected_16byte:
-        try:
-            raw = texture2ddecoder.decode_bc3(block_data[:expected_16byte], width, height)
-            return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-        except Exception:
-            pass
-
-    # BC1 (DXT1 = format 17)
-    if img_format in (17, 0) and len(block_data) >= expected_8byte:
-        try:
-            raw = texture2ddecoder.decode_bc1(block_data[:expected_8byte], width, height)
-            return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-        except Exception:
-            pass
-
-    # Fallback: try all decoders regardless of format field
-    for decoder, size in [
-        (texture2ddecoder.decode_bc7, expected_16byte),
-        (texture2ddecoder.decode_bc3, expected_16byte),
-        (texture2ddecoder.decode_bc1, expected_8byte),
-    ]:
-        if len(block_data) >= size:
-            try:
-                raw = decoder(block_data[:size], width, height)
-                return Image.frombytes("RGBA", (width, height), raw, "raw", "BGRA")
-            except Exception:
-                pass
-
+    if last_err:
+        logger.warning(
+            "Failed to decode block-compressed texture (%dx%d, format=%d): %s",
+            width,
+            height,
+            img_format,
+            last_err,
+        )
     return None
 
 
