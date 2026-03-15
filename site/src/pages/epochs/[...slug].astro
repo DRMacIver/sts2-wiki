@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const epochs = await getCollection('epochs');
+  return epochs.map(epoch => ({
+    params: { slug: epoch.id },
+    props: { epoch },
+  }));
+}
+
+const { epoch } = Astro.props;
+---
+
+<BaseLayout title={epoch.data.title}>
+  <div class="card-detail">
+    <div class="card-header">
+      <a href={`${import.meta.env.BASE_URL}epochs/`} style="font-size: 0.85rem;">&larr; All Epochs</a>
+      <h1>{epoch.data.title}</h1>
+      <div class="card-meta">{epoch.data.story} &middot; {epoch.data.era} &middot; Position {epoch.data.era_position}</div>
+    </div>
+
+    {epoch.data.description && (
+      <p style="margin: 1rem 0;">{epoch.data.description}</p>
+    )}
+
+    {epoch.data.unlocks_cards.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Unlocked Cards</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {epoch.data.unlocks_cards.map(card => (
+            <li>{card}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {epoch.data.unlocks_relics.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Unlocked Relics</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {epoch.data.unlocks_relics.map(relic => (
+            <li>{relic}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {epoch.data.unlocks_events.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Unlocked Events</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {epoch.data.unlocks_events.map(event => (
+            <li>{event}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {epoch.data.unlocks_encounters.length > 0 && (
+      <>
+        <h2 style="margin-top: 1.5rem;">Unlocked Encounters</h2>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          {epoch.data.unlocks_encounters.map(enc => (
+            <li>{enc}</li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+</BaseLayout>

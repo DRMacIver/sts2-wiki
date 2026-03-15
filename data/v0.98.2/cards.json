@@ -84,7 +84,8 @@
     "description_plain": "Poison is triggered 1 additional time.",
     "description_html": "<span class=\"desc-gold\">Poison</span> is triggered 1 additional time.",
     "upgraded_description_plain": "Poison is triggered 2 additional times.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Poison</span> is triggered 2 additional times."
+    "upgraded_description_html": "<span class=\"desc-gold\">Poison</span> is triggered 2 additional times.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "Accuracy",
@@ -276,7 +277,8 @@
     "description_plain": "Summon 6.",
     "description_html": "<span class=\"desc-gold\">Summon</span> 6.",
     "upgraded_description_plain": "Summon 9.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Summon</span> 9."
+    "upgraded_description_html": "<span class=\"desc-gold\">Summon</span> 9.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Aggression",
@@ -323,7 +325,8 @@
     "description_template": "Procure a random potion.",
     "vars": [],
     "description_plain": "Procure a random potion.",
-    "description_html": "Procure a random potion."
+    "description_html": "Procure a random potion.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "Alignment",
@@ -431,7 +434,8 @@
     "description_template": "Put every [gold]Rare[/gold] card from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
     "vars": [],
     "description_plain": "Put every Rare card from your Draw Pile into your Hand.",
-    "description_html": "Put every <span class=\"desc-gold\">Rare</span> card from your <span class=\"desc-gold\">Draw Pile</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_html": "Put every <span class=\"desc-gold\">Rare</span> card from your <span class=\"desc-gold\">Draw Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "unlocked_by": "Tales_From_The_Spire"
   },
   {
     "class_name": "Anticipate",
@@ -586,7 +590,8 @@
     "description_plain": "Whenever you play a Colorless card, gain 1 Strength.",
     "description_html": "Whenever you play a Colorless card, gain 1 <span class=\"desc-gold\">Strength</span>.",
     "upgraded_description_plain": "Whenever you play a Colorless card, gain 2 Strength.",
-    "upgraded_description_html": "Whenever you play a Colorless card, gain 2 <span class=\"desc-gold\">Strength</span>."
+    "upgraded_description_html": "Whenever you play a Colorless card, gain 2 <span class=\"desc-gold\">Strength</span>.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "AscendersBane",
@@ -738,7 +743,8 @@
     "title": "Automation",
     "description_template": "Every 10 cards you draw, gain {Energy:energyIcons()}.",
     "description_plain": "Every 10 cards you draw, gain 1 Energy.",
-    "description_html": "Every 10 cards you draw, gain 1 Energy."
+    "description_html": "Every 10 cards you draw, gain 1 Energy.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "Backflip",
@@ -888,7 +894,8 @@
     "description_plain": "Deal 33 damage to ALL enemies.\nCosts 2 Energy less for each Ethereal card played this combat.",
     "description_html": "Deal 33 damage to ALL enemies.<br>Costs 2 Energy less for each <span class=\"desc-gold\">Ethereal</span> card played this combat.",
     "upgraded_description_plain": "Deal 39 damage to ALL enemies.\nCosts 2 Energy less for each Ethereal card played this combat.",
-    "upgraded_description_html": "Deal 39 damage to ALL enemies.<br>Costs 2 Energy less for each <span class=\"desc-gold\">Ethereal</span> card played this combat."
+    "upgraded_description_html": "Deal 39 damage to ALL enemies.<br>Costs 2 Energy less for each <span class=\"desc-gold\">Ethereal</span> card played this combat.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Barrage",
@@ -916,7 +923,8 @@
     "description_plain": "Deal 5 damage for each Channeled Orb.",
     "description_html": "Deal 5 damage for each <span class=\"desc-gold\">Channeled</span> Orb.",
     "upgraded_description_plain": "Deal 7 damage for each Channeled Orb.",
-    "upgraded_description_html": "Deal 7 damage for each <span class=\"desc-gold\">Channeled</span> Orb."
+    "upgraded_description_html": "Deal 7 damage for each <span class=\"desc-gold\">Channeled</span> Orb.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "Barricade",
@@ -1121,7 +1129,8 @@
     "description_plain": "Play 3 random Attacks from your Discard Pile.",
     "description_html": "Play 3 random Attacks from your <span class=\"desc-gold\">Discard Pile</span>.",
     "upgraded_description_plain": "Play 4 random Attacks from your Discard Pile.",
-    "upgraded_description_html": "Play 4 random Attacks from your <span class=\"desc-gold\">Discard Pile</span>."
+    "upgraded_description_html": "Play 4 random Attacks from your <span class=\"desc-gold\">Discard Pile</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "BeatIntoShape",
@@ -1204,7 +1213,8 @@
     "description_plain": "Deal 4 damage.\nChoose a card in your Hand to Transform into Minion Dive Bomb.",
     "description_html": "Deal 4 damage.<br>Choose a card in your <span class=\"desc-gold\">Hand</span> to <span class=\"desc-gold\">Transform</span> into <span class=\"desc-gold\">Minion Dive Bomb</span>.",
     "upgraded_description_plain": "Deal 5 damage.\nChoose a card in your Hand to Transform into Minion Dive Bomb+.",
-    "upgraded_description_html": "Deal 5 damage.<br>Choose a card in your <span class=\"desc-gold\">Hand</span> to <span class=\"desc-gold\">Transform</span> into <span class=\"desc-gold\">Minion Dive Bomb+</span>."
+    "upgraded_description_html": "Deal 5 damage.<br>Choose a card in your <span class=\"desc-gold\">Hand</span> to <span class=\"desc-gold\">Transform</span> into <span class=\"desc-gold\">Minion Dive Bomb+</span>.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "BelieveInYou",
@@ -1423,7 +1433,8 @@
     "description_plain": "This turn, whenever you play an Attack, gain 2 Strength this turn.",
     "description_html": "This turn, whenever you play an Attack, gain 2 <span class=\"desc-gold\">Strength</span> this turn.",
     "upgraded_description_plain": "This turn, whenever you play an Attack, gain 3 Strength this turn.",
-    "upgraded_description_html": "This turn, whenever you play an Attack, gain 3 <span class=\"desc-gold\">Strength</span> this turn."
+    "upgraded_description_html": "This turn, whenever you play an Attack, gain 3 <span class=\"desc-gold\">Strength</span> this turn.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "BlightStrike",
@@ -1490,7 +1501,8 @@
     "description_plain": "Lose 2 HP.\nGain 16 Block.",
     "description_html": "Lose 2 HP.<br>Gain 16 <span class=\"desc-gold\">Block</span>.",
     "upgraded_description_plain": "Lose 2 HP.\nGain 20 Block.",
-    "upgraded_description_html": "Lose 2 HP.<br>Gain 20 <span class=\"desc-gold\">Block</span>."
+    "upgraded_description_html": "Lose 2 HP.<br>Gain 20 <span class=\"desc-gold\">Block</span>.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "Bloodletting",
@@ -2064,7 +2076,8 @@
     "description_plain": "If the enemy has Poison, apply 9 Poison.",
     "description_html": "If the enemy has <span class=\"desc-gold\">Poison</span>, apply 9 <span class=\"desc-gold\">Poison</span>.",
     "upgraded_description_plain": "If the enemy has Poison, apply 12 Poison.",
-    "upgraded_description_html": "If the enemy has <span class=\"desc-gold\">Poison</span>, apply 12 <span class=\"desc-gold\">Poison</span>."
+    "upgraded_description_html": "If the enemy has <span class=\"desc-gold\">Poison</span>, apply 12 <span class=\"desc-gold\">Poison</span>.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "Buffer",
@@ -2458,7 +2471,8 @@
     "description_template": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
     "vars": [],
     "description_plain": "Whenever you play an Attack, add a random Attack into your Hand.",
-    "description_html": "Whenever you play an Attack, add a random Attack into your <span class=\"desc-gold\">Hand</span>."
+    "description_html": "Whenever you play an Attack, add a random Attack into your <span class=\"desc-gold\">Hand</span>.",
+    "unlocked_by": "Tales_From_The_Spire"
   },
   {
     "class_name": "Calcify",
@@ -2493,7 +2507,8 @@
     "description_plain": "Osty's attacks deal 4 additional damage.",
     "description_html": "<span class=\"desc-gold\">Osty's</span> attacks deal 4 additional damage.",
     "upgraded_description_plain": "Osty's attacks deal 6 additional damage.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Osty's</span> attacks deal 6 additional damage."
+    "upgraded_description_html": "<span class=\"desc-gold\">Osty's</span> attacks deal 6 additional damage.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "CalculatedGamble",
@@ -2701,7 +2716,8 @@
     "description_plain": "Play 2 random cards from your Draw Pile.",
     "description_html": "Play 2 random cards from your <span class=\"desc-gold\">Draw Pile</span>.",
     "upgraded_description_plain": "Play 3 random cards from your Draw Pile.",
-    "upgraded_description_html": "Play 3 random cards from your <span class=\"desc-gold\">Draw Pile</span>."
+    "upgraded_description_html": "Play 3 random cards from your <span class=\"desc-gold\">Draw Pile</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "CelestialMight",
@@ -2914,7 +2930,8 @@
     "description_plain": "Deal 17 damage.\nExhaust the top card of your Draw Pile.",
     "description_html": "Deal 17 damage.<br><span class=\"desc-gold\">Exhaust</span> the top card of your <span class=\"desc-gold\">Draw Pile</span>.",
     "upgraded_description_plain": "Deal 22 damage.\nExhaust the top card of your Draw Pile.",
-    "upgraded_description_html": "Deal 22 damage.<br><span class=\"desc-gold\">Exhaust</span> the top card of your <span class=\"desc-gold\">Draw Pile</span>."
+    "upgraded_description_html": "Deal 22 damage.<br><span class=\"desc-gold\">Exhaust</span> the top card of your <span class=\"desc-gold\">Draw Pile</span>.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "Clash",
@@ -3398,7 +3415,8 @@
     "description_plain": "Channel 2 Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
     "description_html": "<span class=\"desc-gold\">Channel</span> 2 <span class=\"desc-gold\">Dark</span>.<br>At the end of your turn, <span class=\"desc-gold\">Evoke</span> your leftmost Orb.",
     "upgraded_description_plain": "Channel 3 Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Channel</span> 3 <span class=\"desc-gold\">Dark</span>.<br>At the end of your turn, <span class=\"desc-gold\">Evoke</span> your leftmost Orb."
+    "upgraded_description_html": "<span class=\"desc-gold\">Channel</span> 3 <span class=\"desc-gold\">Dark</span>.<br>At the end of your turn, <span class=\"desc-gold\">Evoke</span> your leftmost Orb.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "Convergence",
@@ -3690,7 +3708,8 @@
     "description_plain": "At the start of your turn, apply 6 Doom to a random enemy.",
     "description_html": "At the start of your turn, apply 6 <span class=\"desc-gold\">Doom</span> to a random enemy.",
     "upgraded_description_plain": "At the start of your turn, apply 9 Doom to a random enemy.",
-    "upgraded_description_html": "At the start of your turn, apply 9 <span class=\"desc-gold\">Doom</span> to a random enemy."
+    "upgraded_description_html": "At the start of your turn, apply 9 <span class=\"desc-gold\">Doom</span> to a random enemy.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "CrashLanding",
@@ -3847,7 +3866,8 @@
     "description_plain": "Vulnerable enemies take an additional 25% damage.",
     "description_html": "<span class=\"desc-gold\">Vulnerable</span> enemies take an additional 25% damage.",
     "upgraded_description_plain": "Vulnerable enemies take an additional 50% damage.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Vulnerable</span> enemies take an additional 50% damage."
+    "upgraded_description_html": "<span class=\"desc-gold\">Vulnerable</span> enemies take an additional 50% damage.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "CrushUnder",
@@ -5142,7 +5162,8 @@
     "title": "Dominate",
     "description_template": "Gain {StrengthPerVulnerable:diff()} [gold]Strength[/gold] for each [gold]Vulnerable[/gold] on the enemy.",
     "description_plain": "Gain 1 Strength for each Vulnerable on the enemy.",
-    "description_html": "Gain 1 <span class=\"desc-gold\">Strength</span> for each <span class=\"desc-gold\">Vulnerable</span> on the enemy."
+    "description_html": "Gain 1 <span class=\"desc-gold\">Strength</span> for each <span class=\"desc-gold\">Vulnerable</span> on the enemy.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "DoubleEnergy",
@@ -5328,7 +5349,8 @@
     "description_plain": "Draw 2 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
     "description_html": "Draw 2 cards.<br>At the start of your turn, <span class=\"desc-gold\">Exhaust</span> the top card of your <span class=\"desc-gold\">Draw Pile</span>.",
     "upgraded_description_plain": "Draw 3 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
-    "upgraded_description_html": "Draw 3 cards.<br>At the start of your turn, <span class=\"desc-gold\">Exhaust</span> the top card of your <span class=\"desc-gold\">Draw Pile</span>."
+    "upgraded_description_html": "Draw 3 cards.<br>At the start of your turn, <span class=\"desc-gold\">Exhaust</span> the top card of your <span class=\"desc-gold\">Draw Pile</span>.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "DualWield",
@@ -5703,7 +5725,8 @@
     "title": "Entropy",
     "description_template": "At the start of your turn, [gold]Transform[/gold] {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
     "description_plain": "At the start of your turn, Transform 1 card in your Hand.",
-    "description_html": "At the start of your turn, <span class=\"desc-gold\">Transform</span> 1 card in your <span class=\"desc-gold\">Hand</span>."
+    "description_html": "At the start of your turn, <span class=\"desc-gold\">Transform</span> 1 card in your <span class=\"desc-gold\">Hand</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "Envenom",
@@ -5880,7 +5903,8 @@
     "description_plain": "Gain 7 Plating.",
     "description_html": "Gain 7 <span class=\"desc-gold\">Plating</span>.",
     "upgraded_description_plain": "Gain 9 Plating.",
-    "upgraded_description_html": "Gain 9 <span class=\"desc-gold\">Plating</span>."
+    "upgraded_description_html": "Gain 9 <span class=\"desc-gold\">Plating</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "EvilEye",
@@ -6596,7 +6620,8 @@
     "description_plain": "Exhaust ALL your Status cards.\nDeal 8 damage to a random enemy for each card Exhausted.",
     "description_html": "<span class=\"desc-gold\">Exhaust</span> ALL your <span class=\"desc-gold\">Status</span> cards.<br>Deal 8 damage to a random enemy for each card <span class=\"desc-gold\">Exhausted</span>.",
     "upgraded_description_plain": "Exhaust ALL your Status cards.\nDeal 11 damage to a random enemy for each card Exhausted.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Exhaust</span> ALL your <span class=\"desc-gold\">Status</span> cards.<br>Deal 11 damage to a random enemy for each card <span class=\"desc-gold\">Exhausted</span>."
+    "upgraded_description_html": "<span class=\"desc-gold\">Exhaust</span> ALL your <span class=\"desc-gold\">Status</span> cards.<br>Deal 11 damage to a random enemy for each card <span class=\"desc-gold\">Exhausted</span>.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "FlameBarrier",
@@ -7188,7 +7213,8 @@
     "description_plain": "At the start of your turn, Forge 4.",
     "description_html": "At the start of your turn, <span class=\"desc-gold\">Forge</span> 4.",
     "upgraded_description_plain": "At the start of your turn, Forge 6.",
-    "upgraded_description_html": "At the start of your turn, <span class=\"desc-gold\">Forge</span> 6."
+    "upgraded_description_html": "At the start of your turn, <span class=\"desc-gold\">Forge</span> 6.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "Fusion",
@@ -8061,7 +8087,8 @@
     "description_plain": "Gain 7 Block.\nAdd Sly to a Skill in your Hand this turn.",
     "description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>Add <span class=\"desc-gold\">Sly</span> to a Skill in your <span class=\"desc-gold\">Hand</span> this turn.",
     "upgraded_description_plain": "Gain 10 Block.\nAdd Sly to a Skill in your Hand this turn.",
-    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Add <span class=\"desc-gold\">Sly</span> to a Skill in your <span class=\"desc-gold\">Hand</span> this turn."
+    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Add <span class=\"desc-gold\">Sly</span> to a Skill in your <span class=\"desc-gold\">Hand</span> this turn.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "Hang",
@@ -8247,7 +8274,8 @@
     "description_plain": "Deal 8 damage X times.\nDouble X if it's 4 or more.",
     "description_html": "Deal 8 damage X times.<br>Double X if it's 4 or more.",
     "upgraded_description_plain": "Deal 10 damage X times.\nDouble X if it's 4 or more.",
-    "upgraded_description_html": "Deal 10 damage X times.<br>Double X if it's 4 or more."
+    "upgraded_description_html": "Deal 10 damage X times.<br>Double X if it's 4 or more.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "Hegemony",
@@ -8351,7 +8379,8 @@
     "description_plain": "Deal 3 damage for each 1 Energy previously spent this turn.",
     "description_html": "Deal 3 damage for each 1 Energy previously spent this turn.",
     "upgraded_description_plain": "Deal 5 damage for each 1 Energy previously spent this turn.",
-    "upgraded_description_html": "Deal 5 damage for each 1 Energy previously spent this turn."
+    "upgraded_description_html": "Deal 5 damage for each 1 Energy previously spent this turn.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "HelloWorld",
@@ -8498,7 +8527,8 @@
     "description_plain": "Discard 2 cards.\nAdd 2 Shivs into your Hand.",
     "description_html": "Discard 2 cards.<br>Add 2 <span class=\"desc-gold\">Shivs</span> into your <span class=\"desc-gold\">Hand</span>.",
     "upgraded_description_plain": "Discard 2 cards.\nAdd 2 Shivs+ into your Hand.",
-    "upgraded_description_html": "Discard 2 cards.<br>Add 2 <span class=\"desc-gold\">Shivs+</span> into your <span class=\"desc-gold\">Hand</span>."
+    "upgraded_description_html": "Discard 2 cards.<br>Add 2 <span class=\"desc-gold\">Shivs+</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "HiddenGem",
@@ -8954,7 +8984,8 @@
     "description_plain": "At the start of your turn, lose 1 HP.\nWhenever you lose HP on your turn, deal 6 damage to ALL enemies.",
     "description_html": "At the start of your turn, lose 1 HP.<br>Whenever you lose HP on your turn, deal 6 damage to ALL enemies.",
     "upgraded_description_plain": "At the start of your turn, lose 1 HP.\nWhenever you lose HP on your turn, deal 9 damage to ALL enemies.",
-    "upgraded_description_html": "At the start of your turn, lose 1 HP.<br>Whenever you lose HP on your turn, deal 9 damage to ALL enemies."
+    "upgraded_description_html": "At the start of your turn, lose 1 HP.<br>Whenever you lose HP on your turn, deal 9 damage to ALL enemies.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "InfiniteBlades",
@@ -9255,7 +9286,8 @@
     "description_plain": "Deal 25 damage.\nAdd 3 random 01 Energy cards into your Hand.",
     "description_html": "Deal 25 damage.<br>Add 3 random 01 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
     "upgraded_description_plain": "Deal 30 damage.\nAdd 3 random Upgraded 01 Energy cards into your Hand.",
-    "upgraded_description_html": "Deal 30 damage.<br>Add 3 random <span class=\"desc-gold\">Upgraded</span> 01 Energy cards into your <span class=\"desc-gold\">Hand</span>."
+    "upgraded_description_html": "Deal 30 damage.<br>Add 3 random <span class=\"desc-gold\">Upgraded</span> 01 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "Juggernaut",
@@ -9820,7 +9852,8 @@
     "description_plain": "At the start of your turn, trigger the passive ability of your rightmost Orb.",
     "description_html": "At the start of your turn, trigger the passive ability of your rightmost Orb.",
     "upgraded_description_plain": "At the start of your turn, trigger the passive ability of your rightmost Orb 2 times.",
-    "upgraded_description_html": "At the start of your turn, trigger the passive ability of your rightmost Orb 2 times."
+    "upgraded_description_html": "At the start of your turn, trigger the passive ability of your rightmost Orb 2 times.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "Luminesce",
@@ -9880,7 +9913,8 @@
     "description_plain": "Deal 4 damage for each Skill already played this turn.",
     "description_html": "Deal 4 damage for each Skill already played this turn.",
     "upgraded_description_plain": "Deal 5 damage for each Skill already played this turn.",
-    "upgraded_description_html": "Deal 5 damage for each Skill already played this turn."
+    "upgraded_description_html": "Deal 5 damage for each Skill already played this turn.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "MachineLearning",
@@ -10111,7 +10145,8 @@
     "description_template": "When you play a Skill, it gains [gold]Sly[/gold].",
     "vars": [],
     "description_plain": "When you play a Skill, it gains Sly.",
-    "description_html": "When you play a Skill, it gains <span class=\"desc-gold\">Sly</span>."
+    "description_html": "When you play a Skill, it gains <span class=\"desc-gold\">Sly</span>.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "Maul",
@@ -10637,7 +10672,8 @@
     "description_plain": "Deal 10 damage.\nDouble the enemy's Vulnerable.",
     "description_html": "Deal 10 damage.<br>Double the enemy's <span class=\"desc-gold\">Vulnerable</span>.",
     "upgraded_description_plain": "Deal 14 damage.\nDouble the enemy's Vulnerable.",
-    "upgraded_description_html": "Deal 14 damage.<br>Double the enemy's <span class=\"desc-gold\">Vulnerable</span>."
+    "upgraded_description_html": "Deal 14 damage.<br>Double the enemy's <span class=\"desc-gold\">Vulnerable</span>.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "MomentumStrike",
@@ -11107,7 +11143,8 @@
     "description_template": "The first Attack or Skill you play each turn is placed on top of your [gold]Draw Pile[/gold].",
     "vars": [],
     "description_plain": "The first Attack or Skill you play each turn is placed on top of your Draw Pile.",
-    "description_html": "The first Attack or Skill you play each turn is placed on top of your <span class=\"desc-gold\">Draw Pile</span>."
+    "description_html": "The first Attack or Skill you play each turn is placed on top of your <span class=\"desc-gold\">Draw Pile</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "NoxiousFumes",
@@ -11191,7 +11228,8 @@
     "description_plain": "Deal 10 damage.\nApply 2 Weak.\nChannel 1 Dark.",
     "description_html": "Deal 10 damage.<br>Apply 2 <span class=\"desc-gold\">Weak</span>.<br><span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Dark</span>.",
     "upgraded_description_plain": "Deal 13 damage.\nApply 3 Weak.\nChannel 1 Dark.",
-    "upgraded_description_html": "Deal 13 damage.<br>Apply 3 <span class=\"desc-gold\">Weak</span>.<br><span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Dark</span>."
+    "upgraded_description_html": "Deal 13 damage.<br>Apply 3 <span class=\"desc-gold\">Weak</span>.<br><span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Dark</span>.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "Oblivion",
@@ -11231,7 +11269,8 @@
     "description_plain": "Whenever you play a card this turn, apply 3 Doom to the enemy.",
     "description_html": "Whenever you play a card this turn, apply 3 <span class=\"desc-gold\">Doom</span> to the enemy.",
     "upgraded_description_plain": "Whenever you play a card this turn, apply 4 Doom to the enemy.",
-    "upgraded_description_html": "Whenever you play a card this turn, apply 4 <span class=\"desc-gold\">Doom</span> to the enemy."
+    "upgraded_description_html": "Whenever you play a card this turn, apply 4 <span class=\"desc-gold\">Doom</span> to the enemy.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Offering",
@@ -11498,7 +11537,8 @@
     "description_plain": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 17 damage to ALL enemies.",
     "description_html": "Can only be played if you have 3 or more cards in your <span class=\"desc-gold\">Exhaust Pile</span>.<br>Deal 17 damage to ALL enemies.",
     "upgraded_description_plain": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 23 damage to ALL enemies.",
-    "upgraded_description_html": "Can only be played if you have 3 or more cards in your <span class=\"desc-gold\">Exhaust Pile</span>.<br>Deal 23 damage to ALL enemies."
+    "upgraded_description_html": "Can only be played if you have 3 or more cards in your <span class=\"desc-gold\">Exhaust Pile</span>.<br>Deal 23 damage to ALL enemies.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "Pagestorm",
@@ -11781,7 +11821,8 @@
     "description_plain": "Gain 8 Block.\nGain 2 Vigor.",
     "description_html": "Gain 8 <span class=\"desc-gold\">Block</span>.<br>Gain 2 <span class=\"desc-gold\">Vigor</span>.",
     "upgraded_description_plain": "Gain 10 Block.\nGain 3 Vigor.",
-    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Gain 3 <span class=\"desc-gold\">Vigor</span>."
+    "upgraded_description_html": "Gain 10 <span class=\"desc-gold\">Block</span>.<br>Gain 3 <span class=\"desc-gold\">Vigor</span>.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "Peck",
@@ -11879,7 +11920,8 @@
     "description_plain": "Shivs gain Retain.\nThe first Shiv you play each turn deals 9 additional damage.",
     "description_html": "<span class=\"desc-gold\">Shivs</span> gain <span class=\"desc-gold\">Retain</span>.<br>The first <span class=\"desc-gold\">Shiv</span> you play each turn deals 9 additional damage.",
     "upgraded_description_plain": "Shivs gain Retain.\nThe first Shiv you play each turn deals 12 additional damage.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Shivs</span> gain <span class=\"desc-gold\">Retain</span>.<br>The first <span class=\"desc-gold\">Shiv</span> you play each turn deals 12 additional damage."
+    "upgraded_description_html": "<span class=\"desc-gold\">Shivs</span> gain <span class=\"desc-gold\">Retain</span>.<br>The first <span class=\"desc-gold\">Shiv</span> you play each turn deals 12 additional damage.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "PhotonCut",
@@ -12316,7 +12358,8 @@
     "description_plain": "At the start of your turn, gain 4 Vigor.",
     "description_html": "At the start of your turn, gain 4 <span class=\"desc-gold\">Vigor</span>.",
     "upgraded_description_plain": "At the start of your turn, gain 6 Vigor.",
-    "upgraded_description_html": "At the start of your turn, gain 6 <span class=\"desc-gold\">Vigor</span>."
+    "upgraded_description_html": "At the start of your turn, gain 6 <span class=\"desc-gold\">Vigor</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "Prepared",
@@ -12520,7 +12563,8 @@
     "description_plain": "Gain 1 Strength.\nGain 1 Dexterity.",
     "description_html": "Gain 1 <span class=\"desc-gold\">Strength</span>.<br>Gain 1 <span class=\"desc-gold\">Dexterity</span>.",
     "upgraded_description_plain": "Gain 2 Strength.\nGain 2 Dexterity.",
-    "upgraded_description_html": "Gain 2 <span class=\"desc-gold\">Strength</span>.<br>Gain 2 <span class=\"desc-gold\">Dexterity</span>."
+    "upgraded_description_html": "Gain 2 <span class=\"desc-gold\">Strength</span>.<br>Gain 2 <span class=\"desc-gold\">Dexterity</span>.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "PullAggro",
@@ -13211,7 +13255,8 @@
     "description_plain": "Draw 2 cards.",
     "description_html": "Draw 2 cards.",
     "upgraded_description_plain": "Draw 3 cards.",
-    "upgraded_description_html": "Draw 3 cards."
+    "upgraded_description_html": "Draw 3 cards.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "Refract",
@@ -13353,7 +13398,8 @@
     "description_plain": "Deal ? damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
     "description_html": "Deal ? damage.<br>Deals 5 additional damage for each unique debuff on the enemy.",
     "upgraded_description_plain": "Deal ? damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 8 additional damage for each unique debuff on the enemy."
+    "upgraded_description_html": "Deal ? damage.<br>Deals 8 additional damage for each unique debuff on the enemy.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "Resonance",
@@ -13720,7 +13766,8 @@
     "description_template": "If [gold]Osty[/gold] is alive, he dies and you gain [gold]Block[/gold] equal to double his Max HP.",
     "vars": [],
     "description_plain": "If Osty is alive, he dies and you gain Block equal to double his Max HP.",
-    "description_html": "If <span class=\"desc-gold\">Osty</span> is alive, he dies and you gain <span class=\"desc-gold\">Block</span> equal to double his Max HP."
+    "description_html": "If <span class=\"desc-gold\">Osty</span> is alive, he dies and you gain <span class=\"desc-gold\">Block</span> equal to double his Max HP.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Salvo",
@@ -13796,7 +13843,8 @@
     "description_plain": "Exhaust a card.\nNext turn, gain 2 Energy.",
     "description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 2 Energy.",
     "upgraded_description_plain": "Exhaust a card.\nNext turn, gain 3 Energy.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 3 Energy."
+    "upgraded_description_html": "<span class=\"desc-gold\">Exhaust</span> a card.<br>Next turn, gain 3 Energy.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "Scourge",
@@ -13840,7 +13888,8 @@
     "description_plain": "Apply 13 Doom.\nDraw 1 card.",
     "description_html": "Apply 13 <span class=\"desc-gold\">Doom</span>.<br>Draw 1 card.",
     "upgraded_description_plain": "Apply 16 Doom.\nDraw 2 cards.",
-    "upgraded_description_html": "Apply 16 <span class=\"desc-gold\">Doom</span>.<br>Draw 2 cards."
+    "upgraded_description_html": "Apply 16 <span class=\"desc-gold\">Doom</span>.<br>Draw 2 cards.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Scrape",
@@ -13901,7 +13950,8 @@
     "description_template": "Draw cards until your [gold]Hand[/gold] is full.",
     "vars": [],
     "description_plain": "Draw cards until your Hand is full.",
-    "description_html": "Draw cards until your <span class=\"desc-gold\">Hand</span> is full."
+    "description_html": "Draw cards until your <span class=\"desc-gold\">Hand</span> is full.",
+    "unlocked_by": "Magnum_Opus"
   },
   {
     "class_name": "SculptingStrike",
@@ -13932,7 +13982,8 @@
     "description_plain": "Deal 8 damage.\nAdd Ethereal to a card in your Hand.",
     "description_html": "Deal 8 damage.<br>Add <span class=\"desc-gold\">Ethereal</span> to a card in your <span class=\"desc-gold\">Hand</span>.",
     "upgraded_description_plain": "Deal 11 damage.\nAdd Ethereal to a card in your Hand.",
-    "upgraded_description_html": "Deal 11 damage.<br>Add <span class=\"desc-gold\">Ethereal</span> to a card in your <span class=\"desc-gold\">Hand</span>."
+    "upgraded_description_html": "Deal 11 damage.<br>Add <span class=\"desc-gold\">Ethereal</span> to a card in your <span class=\"desc-gold\">Hand</span>.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Seance",
@@ -14897,7 +14948,8 @@
     "description_plain": "Whenever you create a Status, deal 5 damage to ALL enemies.",
     "description_html": "Whenever you create a Status, deal 5 damage to ALL enemies.",
     "upgraded_description_plain": "Whenever you create a Status, deal 7 damage to ALL enemies.",
-    "upgraded_description_html": "Whenever you create a Status, deal 7 damage to ALL enemies."
+    "upgraded_description_html": "Whenever you create a Status, deal 7 damage to ALL enemies.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "Snakebite",
@@ -14935,7 +14987,8 @@
     "description_plain": "Apply 7 Poison.",
     "description_html": "Apply 7 <span class=\"desc-gold\">Poison</span>.",
     "upgraded_description_plain": "Apply 10 Poison.",
-    "upgraded_description_html": "Apply 10 <span class=\"desc-gold\">Poison</span>."
+    "upgraded_description_html": "Apply 10 <span class=\"desc-gold\">Poison</span>.",
+    "unlocked_by": "Silent"
   },
   {
     "class_name": "Snap",
@@ -15349,7 +15402,8 @@
     "description_plain": "Choose 1 of 3 random Attacks from another character to add into your Hand. It's free to play this turn.",
     "description_html": "Choose 1 of 3 random Attacks from another character to add into your <span class=\"desc-gold\">Hand</span>. It's free to play this turn.",
     "upgraded_description_plain": "Choose 1 of 3 random Upgraded Attacks from another character to add into your Hand. It's free to play this turn.",
-    "upgraded_description_html": "Choose 1 of 3 random <span class=\"desc-gold\">Upgraded</span> Attacks from another character to add into your <span class=\"desc-gold\">Hand</span>. It's free to play this turn."
+    "upgraded_description_html": "Choose 1 of 3 random <span class=\"desc-gold\">Upgraded</span> Attacks from another character to add into your <span class=\"desc-gold\">Hand</span>. It's free to play this turn.",
+    "unlocked_by": "Tales_From_The_Spire"
   },
   {
     "class_name": "SpoilsMap",
@@ -15399,7 +15453,8 @@
     "description_plain": "Forge 10.",
     "description_html": "<span class=\"desc-gold\">Forge</span> 10.",
     "upgraded_description_plain": "Forge 15.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 15."
+    "upgraded_description_html": "<span class=\"desc-gold\">Forge</span> 15.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "SporeMind",
@@ -16129,7 +16184,8 @@
     "description_plain": "Deal ? damage.\nDeals 3 additional damage for each card you created this combat.",
     "description_html": "Deal ? damage.<br>Deals 3 additional damage for each card you created this combat.",
     "upgraded_description_plain": "Deal ? damage.\nDeals 4 additional damage for each card you created this combat.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 4 additional damage for each card you created this combat."
+    "upgraded_description_html": "Deal ? damage.<br>Deals 4 additional damage for each card you created this combat.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "Suppress",
@@ -16326,7 +16382,8 @@
     "title": "Sword Sage",
     "description_template": "Increase the cost of [gold]Sovereign Blade[/gold] by 1. [gold]Sovereign Blade[/gold] now hits an additional time.",
     "description_plain": "Increase the cost of Sovereign Blade by 1. Sovereign Blade now hits an additional time.",
-    "description_html": "Increase the cost of <span class=\"desc-gold\">Sovereign Blade</span> by 1. <span class=\"desc-gold\">Sovereign Blade</span> now hits an additional time."
+    "description_html": "Increase the cost of <span class=\"desc-gold\">Sovereign Blade</span> by 1. <span class=\"desc-gold\">Sovereign Blade</span> now hits an additional time.",
+    "unlocked_by": "Regent"
   },
   {
     "class_name": "Synchronize",
@@ -16559,7 +16616,8 @@
     "description_plain": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.",
     "description_html": "Deal 5 damage.<br>Hits an additional time for each time you lost HP this combat.",
     "upgraded_description_plain": "Deal 7 damage.\nHits an additional time for each time you lost HP this combat.",
-    "upgraded_description_html": "Deal 7 damage.<br>Hits an additional time for each time you lost HP this combat."
+    "upgraded_description_html": "Deal 7 damage.<br>Hits an additional time for each time you lost HP this combat.",
+    "unlocked_by": "Ironclad"
   },
   {
     "class_name": "Tempest",
@@ -17289,7 +17347,8 @@
     "description_plain": "Gain 2 Energy.\nAdd a Void into your Discard Pile.",
     "description_html": "Gain 2 Energy.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>.",
     "upgraded_description_plain": "Gain 3 Energy.\nAdd a Void into your Discard Pile.",
-    "upgraded_description_html": "Gain 3 Energy.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>."
+    "upgraded_description_html": "Gain 3 Energy.<br>Add a <span class=\"desc-gold\">Void</span> into your <span class=\"desc-gold\">Discard Pile</span>.",
+    "unlocked_by": "Defect"
   },
   {
     "class_name": "TwinStrike",
@@ -17685,7 +17744,8 @@
     "description_plain": "Deal 10 damage.\nThe next Ethereal card you play costs 0 1 Energy.",
     "description_html": "Deal 10 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy.",
     "upgraded_description_plain": "Deal 13 damage.\nThe next Ethereal card you play costs 0 1 Energy.",
-    "upgraded_description_html": "Deal 13 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy."
+    "upgraded_description_html": "Deal 13 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy.",
+    "unlocked_by": "Necrobinder"
   },
   {
     "class_name": "Venerate",

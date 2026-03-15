@@ -23,6 +23,7 @@ site/src/content/monsters/
 site/src/content/encounters/
 site/src/content/events/
 site/src/content/ancients/
+site/src/content/epochs/
 
 # Extracted game images (do NOT commit — copyrighted material)
 site/public/images/

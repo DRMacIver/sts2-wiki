@@ -32,7 +32,10 @@ const cardArtBetaPath = `${import.meta.env.BASE_URL}images/card_atlas/${charDir}
           onerror={`this.onerror=()=>{this.style.display='none'};this.src='${cardArtBetaPath}'`} />
         <div>
           <h1 style="margin: 0;">{card.data.title}</h1>
-          <div class="card-meta">{card.data.character} &middot; {card.data.type} &middot; <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.rarity}</span></div>
+          <div class="card-meta">
+            {card.data.character} &middot; {card.data.type} &middot; <span class={`rarity-${card.data.rarity.toLowerCase()}`}>{card.data.rarity}</span>
+            {card.data.unlocked_by && ` · Unlocked by ${card.data.unlocked_by} epoch`}
+          </div>
         </div>
       </div>
     </div>

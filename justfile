@@ -76,10 +76,13 @@ extract-potions:
 extract-relics:
     uv run python -m scripts.extract_relics decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
+extract-epochs:
+    uv run python -m scripts.extract_epochs decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
 extract-events:
     uv run python -m scripts.extract_events decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events
+extract: extract-powers extract-epochs extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events
 
 # --- Site generation ---
 
@@ -107,7 +110,10 @@ generate-relics:
 generate-events:
     uv run python -m scripts.generate_events data/{{version}} site/src/content/events
 
-generate: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events
+generate-epochs:
+    uv run python -m scripts.generate_epochs data/{{version}} site/src/content/epochs
+
+generate: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs
 
 site-install:
     cd site && npm install

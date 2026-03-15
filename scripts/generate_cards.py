@@ -66,6 +66,10 @@ def generate_card_markdown(card: dict) -> str:
     powers = card.get("referenced_powers", [])
     lines.append(f"referenced_powers: {json.dumps(powers)}")
 
+    # Epoch unlock
+    if card.get("unlocked_by"):
+        lines.append(f"unlocked_by: {escape_yaml(card['unlocked_by'])}")
+
     lines.append("---")
     lines.append("")
 

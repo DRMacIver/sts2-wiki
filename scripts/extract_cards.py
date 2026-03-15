@@ -366,6 +366,16 @@ def main() -> None:
             camel = "".join(p.capitalize() for p in parts)
             power_lookup[camel] = info
 
+    # Build epoch unlock map: card_class -> epoch info
+    card_epoch_map: dict[str, str] = {}
+    epochs_dir = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Timeline.Epochs")
+    if os.path.exists(epochs_dir):
+        for epoch_name, epoch_content in read_cs_files(epochs_dir):
+            story_m = re.search(r'StoryId\s*=>\s*"([^"]+)"', epoch_content)
+            story = story_m.group(1) if story_m else epoch_name
+            for cm in re.finditer(r"ModelDb\.Card<(\w+)>\(\)", epoch_content):
+                card_epoch_map[cm.group(1)] = story
+
     # Build card pool mapping
     card_pool_map = build_card_pool_map(decompiled_dir)
 
@@ -439,6 +449,10 @@ def main() -> None:
                         {"class_name": power_class, "title": display, "slug": slug}
                     )
             card["referenced_powers"] = enriched_powers
+
+        # Epoch unlock info
+        if class_name in card_epoch_map:
+            card["unlocked_by"] = card_epoch_map[class_name]
 
         # Flag deprecated/mock cards
         if card["character"] == "Deprecated":

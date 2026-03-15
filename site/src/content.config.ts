@@ -30,6 +30,7 @@ const cards = defineCollection({
     })).default([]),
     x_cost: z.boolean().default(false),
     pool: z.string().default(''),
+    unlocked_by: z.string().optional(),
   }),
 });
 
@@ -154,4 +155,23 @@ const events = defineCollection({
   }),
 });
 
-export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions };
+const epochs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/epochs' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    epoch_id: z.string().default(''),
+    era: z.string().default(''),
+    era_position: z.number().default(0),
+    story: z.string().default(''),
+    description: z.string().default(''),
+    unlocks_cards: z.array(z.string()).default([]),
+    unlocks_relics: z.array(z.string()).default([]),
+    unlocks_events: z.array(z.string()).default([]),
+    unlocks_encounters: z.array(z.string()).default([]),
+    unlocks_potions: z.array(z.string()).default([]),
+    unlocks_ancients: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions, epochs };
