@@ -34,9 +34,9 @@ const { ancient } = Astro.props;
         <h2 style="margin-top: 1.5rem;">Relic Offerings</h2>
         <div class="card-grid" style="margin-top: 0.75rem;">
           {ancient.data.relic_offerings.map(relic => (
-            <div class="card-entry" style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <a href={`${import.meta.env.BASE_URL}relics/${relic.slug}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: flex-start;">
               <img
-                src={`${import.meta.env.BASE_URL}images/relic_atlas/${relic.slug.replace(/-/g, '_')}.png`}
+                src={`${import.meta.env.BASE_URL}images/relic_atlas/${relic.image || relic.slug.replace(/-/g, '_')}.png`}
                 alt={relic.title}
                 style="width: 48px; height: 48px; flex-shrink: 0; image-rendering: pixelated;"
                 onerror="this.style.display='none'" />
@@ -46,7 +46,7 @@ const { ancient } = Astro.props;
                   <p class="card-meta" style="margin-top: 0.25rem;">{relic.description}</p>
                 )}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </>

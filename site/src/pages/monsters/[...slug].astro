@@ -15,24 +15,24 @@ const hpDisplay = monster.data.min_hp === monster.data.max_hp
   ? String(monster.data.min_hp)
   : `${monster.data.min_hp} - ${monster.data.max_hp}`;
 
-// Map intent types to icon filenames and display text
-function intentIcon(type: string): string {
+// Map intent types to icon paths (relative to intent_atlas/)
+function intentIconPath(type: string): string {
   const map: Record<string, string> = {
-    'attack': 'attack',
-    'multi_attack': 'attack',
-    'buff': 'buff',
-    'debuff': 'debuff',
-    'block': 'defend',
-    'defend': 'defend',
-    'stun': 'stun',
-    'sleep': 'sleep',
-    'summon': 'summon',
-    'heal': 'heal',
-    'escape': 'escape',
-    'status': 'status',
+    'attack': 'attack/intent_attack_1',
+    'multi_attack': 'attack/intent_attack_5',
+    'buff': 'intent_buff',
+    'debuff': 'intent_debuff',
+    'block': 'intent_defend',
+    'defend': 'intent_defend',
+    'stun': 'intent_stun',
+    'sleep': 'intent_sleep',
+    'summon': 'intent_summon',
+    'heal': 'intent_heal',
+    'escape': 'intent_escape',
+    'status': 'intent_status_card',
     'death_blow': 'intent_death_blow',
   };
-  return map[type] || 'unknown';
+  return map[type] || 'intent_unknown';
 }
 
 function intentDisplay(intent: { type: string; damage?: number; hits?: number; amount?: number }): string {
@@ -75,7 +75,7 @@ function intentDisplay(intent: { type: string; damage?: number; hits?: number; a
               <div style="display: flex; gap: 0.25rem; flex-shrink: 0; min-width: 40px;">
                 {move.intents.map(intent => (
                   <img
-                    src={`${import.meta.env.BASE_URL}images/intent_atlas/intent_${intentIcon(intent.type)}.png`}
+                    src={`${import.meta.env.BASE_URL}images/intent_atlas/${intentIconPath(intent.type)}.png`}
                     alt={intent.type}
                     style="width: 28px; height: 28px;"
                     onerror="this.style.display='none'" />

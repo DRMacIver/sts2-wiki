@@ -116,7 +116,9 @@ def main() -> None:
             plain_desc = re.sub(r"\[/?[^\]]*\]", "", desc)
             plain_desc = re.sub(r"\{[^}]*\}", "?", plain_desc)
             slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
-            info = {"title": title, "description": plain_desc, "slug": slug}
+            # Image filename uses the loc key (UPPER_SNAKE) lowered
+            image = base_key.lower()
+            info = {"title": title, "description": plain_desc, "slug": slug, "image": image}
             relic_lookup[base_key] = info
             # Also map PascalCase class name
             parts = base_key.split("_")
