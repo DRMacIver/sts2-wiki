@@ -251,7 +251,7 @@ def _parse_move_pattern(method_body: str) -> dict:
     # Build a map of variable name -> move ID
     var_to_id: dict[str, str] = {}
     for m in re.finditer(
-        r'(?:MoveState\s+)?(\w+)\s*=\s*(?:\(MoveState\))?\s*(?:\()?new\s+MoveState\s*\(\s*"([^"]+)"',
+        r'(?:MoveState\s+)?(\w+)\s*=\s*.*?new\s+MoveState\s*\(\s*"([^"]+)"',
         method_body,
     ):
         var_to_id[m.group(1)] = m.group(2)
@@ -318,49 +318,110 @@ def _parse_move_pattern(method_body: str) -> dict:
     # Self-loops (move follows up to itself)
     for m in re.finditer(r"(\w+)\.FollowUpState\s*=\s*\1\b", method_body):
         var_name = m.group(1)
-        for vm in re.finditer(
-            r'MoveState\s+(\w+)\s*=\s*new\s+MoveState\s*\(\s*"([^"]+)"',
-            method_body,
-        ):
-            if vm.group(1) == var_name:
-                pattern.setdefault("repeats", []).append(vm.group(2))
+        loop_move_id = var_to_id.get(var_name)
+        if loop_move_id:
+            pattern.setdefault("repeats", []).append(loop_move_id)
 
     return pattern
 
 
 def _describe_pattern(pattern: dict, move_titles: dict[str, str]) -> str:
-    """Generate a human-readable description of the move pattern."""
-    parts: list[str] = []
+    """Generate a BestiaryMod-style description of the move pattern.
 
-    def name(move_id: str) -> str:
+    Examples:
+      "Always uses Smash."
+      "Cycles in the order: Attack -> Attack -> Siphon Soul."
+      "Starts with Incantation. Then repeats Dark Strike."
+      "50% chance of Chomp and 50% chance of Enfeebling Spores."
+    """
+
+    def n(move_id: str) -> str:
         return move_titles.get(move_id, _move_id_to_name(move_id))
 
-    if "starts_with" in pattern:
-        parts.append(f"Starts with {name(pattern['starts_with'])}.")
+    start = pattern.get("starts_with")
+    follow_ups = pattern.get("follow_ups", [])
+    repeats = pattern.get("repeats", [])
+    branches = pattern.get("random_branches", [])
 
-    if "follow_ups" in pattern:
-        for chain in pattern["follow_ups"]:
-            src, dst = chain.split(" -> ")
-            if src == dst or dst in pattern.get("repeats", []):
-                continue  # Skip self-loops, covered below
-            parts.append(f"After {name(src)}, uses {name(dst)}.")
+    # Build the follow-up chain as a graph
+    chain: dict[str, str] = {}
+    for fu in follow_ups:
+        src, dst = fu.split(" -> ")
+        chain[src] = dst
 
-    if "repeats" in pattern:
-        for move_id in pattern["repeats"]:
-            parts.append(f"Repeats {name(move_id)}.")
+    # Detect cycle: follow the chain and see if it loops back
+    cycle_start = start if start and start in chain else next(iter(chain), None) if chain else None
+    if cycle_start and cycle_start in chain:
+        cycle: list[str] = [cycle_start]
+        current = chain[cycle_start]
+        visited = {cycle_start}
+        while current and current not in visited:
+            cycle.append(current)
+            visited.add(current)
+            current = chain.get(current, "")
+        if current == cycle_start and len(cycle) > 1 and len(cycle) == len(chain):
+            # Full cycle detected — all follow-ups form one loop
+            cycle_names = " -> ".join(n(m) for m in cycle)
+            if start and start != cycle_start:
+                return f"Starts with {n(start)}, then cycles: {cycle_names}."
+            return f"Cycles in the order: {cycle_names}."
 
-    if "random_branches" in pattern:
+    # Single move that repeats
+    if start and start in repeats and not chain and not branches:
+        return f"Always uses {n(start)}."
+
+    # Build description from parts
+    parts: list[str] = []
+
+    if start:
+        if start in repeats and chain:
+            # Starts with a repeating move but eventually transitions
+            parts.append(f"Starts with {n(start)} (repeats).")
+        elif not chain and not branches:
+            parts.append(f"Always uses {n(start)}.")
+        else:
+            parts.append(f"Starts with {n(start)}.")
+
+    # Non-cyclic follow-ups
+    if chain:
+        # Check if it's a simple alternation
+        if len(chain) == 2:
+            items = list(chain.items())
+            a_src, a_dst = items[0]
+            b_src, b_dst = items[1]
+            if a_dst == b_src and b_dst == a_src:
+                parts.append(f"Then alternates between {n(a_src)} and {n(a_dst)}.")
+                chain.clear()
+
+        for src, dst in chain.items():
+            if src == dst or dst in repeats:
+                continue
+            if not any(src in p for p in parts):
+                parts.append(f"After {n(src)}, uses {n(dst)}.")
+
+    # Repeats (not already covered)
+    for move_id in repeats:
+        if move_id == start:
+            continue  # Already handled
+        parts.append(f"Then repeats {n(move_id)}.")
+
+    # Random branches
+    if branches:
+        total_weight = sum(b.get("weight", 1) for b in branches)
         branch_parts = []
-        total_weight = sum(b.get("weight", 1) for b in pattern["random_branches"])
-        for b in pattern["random_branches"]:
+        for b in branches:
             w = b.get("weight", 1)
-            repeat = b.get("repeat", "")
             pct = round(100 * w / total_weight) if total_weight > 0 else 0
-            desc = name(b["move"])
+            desc = n(b["move"])
+            repeat = b.get("repeat", "")
             if repeat == "CannotRepeat":
                 desc += " (can't repeat)"
-            branch_parts.append(f"{desc} ({pct}%)")
-        parts.append("Then randomly: " + ", ".join(branch_parts) + ".")
+            branch_parts.append(f"{pct}% chance of {desc}")
+
+        if not parts:
+            parts.append(", ".join(branch_parts) + ".")
+        else:
+            parts.append("Then " + ", ".join(branch_parts) + ".")
 
     return " ".join(parts)
 

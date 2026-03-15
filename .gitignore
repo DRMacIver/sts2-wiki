@@ -53,3 +53,4 @@ Thumbs.db
 .claude/*.local
 .claude-reliability/
 .spire-codex/
+.bestiary/

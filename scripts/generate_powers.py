@@ -61,7 +61,12 @@ def main() -> None:
     for power in powers:
         slug = slugify(power["title"])
         desc = power.get("description", "")
-        smart_desc = power.get("smart_description", "")
+
+        # Replace known placeholders in descriptions
+        desc = desc.replace("{singleStarIcon}", "Star")
+        desc = re.sub(r"\{Amount\}", "X", desc)
+        desc = re.sub(r"\{Amount:[^}]*\}", "X", desc)
+        desc = re.sub(r"\{[^}]*\}", "", desc)  # Strip remaining
 
         lines = ["---"]
         lines.append(f"title: {escape_yaml(power['title'])}")
@@ -70,7 +75,7 @@ def main() -> None:
         lines.append(f"stack_type: {escape_yaml(power.get('stack_type', 'None'))}")
         lines.append(f"description_plain: {escape_yaml(strip_tags(desc))}")
         lines.append(f"description_html: {escape_yaml(render_description_html(desc))}")
-        lines.append(f"smart_description: {escape_yaml(strip_tags(smart_desc))}")
+        lines.append('smart_description: ""')
         lines.append("---")
         lines.append("")
 

@@ -27,7 +27,7 @@
     "powers_on_spawn": [],
     "loc_key": "ARCHITECT",
     "title": "The Architect",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "AssassinRubyRaider",
@@ -60,7 +60,7 @@
     "powers_on_spawn": [],
     "loc_key": "ASSASSIN_RUBY_RAIDER",
     "title": "Assassin Raider",
-    "move_pattern_desc": "Starts with Killshot. Repeats Killshot."
+    "move_pattern_desc": "Starts with Killshot (repeats)."
   },
   {
     "class_name": "AxeRubyRaider",
@@ -120,7 +120,7 @@
     "powers_on_spawn": [],
     "loc_key": "AXE_RUBY_RAIDER",
     "title": "Axe Raider",
-    "move_pattern_desc": "Starts with Swing 1. After Swing 1, uses Swing 2. After Swing 2, uses Big Swing. After Big Swing, uses Swing 1."
+    "move_pattern_desc": "Cycles in the order: Swing 1 -> Swing 2 -> Big Swing."
   },
   {
     "class_name": "Axebot",
@@ -211,7 +211,7 @@
     ],
     "loc_key": "AXEBOT",
     "title": "Axebot",
-    "move_pattern_desc": "Starts with Boot Up. Then randomly: The One-Two (40%), Sharpen (can't repeat) (20%), Hammer Uppercut (40%)."
+    "move_pattern_desc": "Starts with Boot Up. Then 40% chance of The One-Two, 20% chance of Sharpen (can't repeat), 40% chance of Hammer Uppercut."
   },
   {
     "class_name": "BattleFriendV1",
@@ -240,7 +240,7 @@
     "is_companion": true,
     "loc_key": "BATTLE_FRIEND_V1",
     "title": "Battle Friend V1.0",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "BattleFriendV2",
@@ -269,7 +269,7 @@
     "is_companion": true,
     "loc_key": "BATTLE_FRIEND_V2",
     "title": "Battle Friend V2.0",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "BattleFriendV3",
@@ -298,7 +298,7 @@
     "is_companion": true,
     "loc_key": "BATTLE_FRIEND_V3",
     "title": "Battle Friend V3.0",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "BigDummy",
@@ -328,7 +328,7 @@
     "powers_on_spawn": [],
     "loc_key": "BIG_DUMMY",
     "title": "Big Dummy",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "BowlbugEgg",
@@ -364,7 +364,7 @@
     "powers_on_spawn": [],
     "loc_key": "BOWLBUG_EGG",
     "title": "Bowlbug (Egg)",
-    "move_pattern_desc": "Starts with Bite. Repeats Bite."
+    "move_pattern_desc": "Starts with Bite (repeats)."
   },
   {
     "class_name": "BowlbugNectar",
@@ -422,7 +422,7 @@
     "powers_on_spawn": [],
     "loc_key": "BOWLBUG_NECTAR",
     "title": "Bowlbug (Nectar)",
-    "move_pattern_desc": "Starts with Thrash. After Thrash, uses Buff. Repeats Thrash."
+    "move_pattern_desc": "Starts with Thrash. After Thrash, uses Buff. Then repeats Thrash."
   },
   {
     "class_name": "BowlbugRock",
@@ -497,13 +497,13 @@
     "move_pattern": {
       "follow_ups": [
         "TRASH_MOVE -> TOXIC_SPIT_MOVE",
-        "moveState2 -> TRASH_MOVE"
+        "TOXIC_SPIT_MOVE -> TRASH_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "BOWLBUG_SILK",
     "title": "Bowlbug (Silk)",
-    "move_pattern_desc": "After Trash, uses Toxic Spit. After Movestate2, uses Trash."
+    "move_pattern_desc": "Cycles in the order: Trash -> Toxic Spit."
   },
   {
     "class_name": "BruteRubyRaider",
@@ -540,13 +540,13 @@
       "starts_with": "BEAT_MOVE",
       "follow_ups": [
         "BEAT_MOVE -> ROAR_MOVE",
-        "moveState2 -> BEAT_MOVE"
+        "ROAR_MOVE -> BEAT_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "BRUTE_RUBY_RAIDER",
     "title": "Brute Raider",
-    "move_pattern_desc": "Starts with Beat. After Beat, uses Roar. After Movestate2, uses Beat."
+    "move_pattern_desc": "Cycles in the order: Beat -> Roar."
   },
   {
     "class_name": "BygoneEffigy",
@@ -614,7 +614,7 @@
     ],
     "loc_key": "BYGONE_EFFIGY",
     "title": "Bygone Effigy",
-    "move_pattern_desc": "Starts with Initial Sleep. After Initial Sleep, uses Wake. Repeats Slashes."
+    "move_pattern_desc": "Starts with Initial Sleep. After Initial Sleep, uses Wake. Then repeats Slashes."
   },
   {
     "class_name": "Byrdonis",
@@ -660,7 +660,7 @@
     ],
     "loc_key": "BYRDONIS",
     "title": "Byrdonis",
-    "move_pattern_desc": "Starts with Swoop. After Swoop, uses Peck. After Peck, uses Swoop."
+    "move_pattern_desc": "Cycles in the order: Swoop -> Peck."
   },
   {
     "class_name": "Byrdpip",
@@ -687,7 +687,7 @@
     "is_companion": true,
     "loc_key": "BYRDPIP",
     "title": "Byrdpip",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "CalcifiedCultist",
@@ -723,13 +723,17 @@
     "move_pattern": {
       "starts_with": "INCANTATION_MOVE",
       "follow_ups": [
-        "INCANTATION_MOVE -> DARK_STRIKE_MOVE"
+        "INCANTATION_MOVE -> DARK_STRIKE_MOVE",
+        "DARK_STRIKE_MOVE -> DARK_STRIKE_MOVE"
+      ],
+      "repeats": [
+        "DARK_STRIKE_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "CALCIFIED_CULTIST",
     "title": "Calcified Cultist",
-    "move_pattern_desc": "Starts with Incantation. After Incantation, uses Dark Strike."
+    "move_pattern_desc": "Starts with Incantation. Then repeats Dark Strike."
   },
   {
     "class_name": "CeremonialBeast",
@@ -835,7 +839,7 @@
     "powers_on_spawn": [],
     "loc_key": "CEREMONIAL_BEAST",
     "title": "Ceremonial Beast",
-    "move_pattern_desc": "Starts with Stamp. After Stun, uses Beast Cry. After Beast Cry, uses Stomp. After Stomp, uses Crush. After Crush, uses Beast Cry. Repeats Plow."
+    "move_pattern_desc": "Starts with Stamp. After Stun, uses Beast Cry. After Beast Cry, uses Stomp. After Stomp, uses Crush. After Crush, uses Beast Cry. Then repeats Plow."
   },
   {
     "class_name": "Chomper",
@@ -873,7 +877,7 @@
     "move_pattern": {
       "follow_ups": [
         "CLAMP_MOVE -> SCREECH_MOVE",
-        "moveState2 -> CLAMP_MOVE"
+        "SCREECH_MOVE -> CLAMP_MOVE"
       ]
     },
     "powers_on_spawn": [
@@ -881,7 +885,7 @@
     ],
     "loc_key": "CHOMPER",
     "title": "Chomper",
-    "move_pattern_desc": "After Clamp, uses Screech. After Movestate2, uses Clamp."
+    "move_pattern_desc": "Cycles in the order: Clamp -> Screech."
   },
   {
     "class_name": "CorpseSlug",
@@ -939,7 +943,7 @@
     ],
     "loc_key": "CORPSE_SLUG",
     "title": "Corpse Slug",
-    "move_pattern_desc": "After Whip Slap, uses Glomp. After Glomp, uses Goop. After Goop, uses Whip Slap."
+    "move_pattern_desc": "Cycles in the order: Whip Slap -> Glomp -> Goop."
   },
   {
     "class_name": "CrossbowRubyRaider",
@@ -975,13 +979,13 @@
     "move_pattern": {
       "follow_ups": [
         "FIRE_MOVE -> RELOAD_MOVE",
-        "moveState2 -> FIRE_MOVE"
+        "RELOAD_MOVE -> FIRE_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "CROSSBOW_RUBY_RAIDER",
     "title": "Crossbow Raider",
-    "move_pattern_desc": "After Fire!, uses Reload. After Movestate2, uses Fire!."
+    "move_pattern_desc": "Cycles in the order: Fire! -> Reload."
   },
   {
     "class_name": "Crusher",
@@ -1078,7 +1082,7 @@
     ],
     "loc_key": "CRUSHER",
     "title": "Crusher",
-    "move_pattern_desc": "Starts with Thrash. After Thrash, uses Enlarging Strike. After Enlarging Strike, uses Bug Sting. After Bug Sting, uses Adapt. After Adapt, uses Guarded Strike. After Guarded Strike, uses Thrash."
+    "move_pattern_desc": "Cycles in the order: Thrash -> Enlarging Strike -> Bug Sting -> Adapt -> Guarded Strike."
   },
   {
     "class_name": "CubexConstruct",
@@ -1204,13 +1208,17 @@
     "move_pattern": {
       "starts_with": "INCANTATION_MOVE",
       "follow_ups": [
-        "INCANTATION_MOVE -> DARK_STRIKE_MOVE"
+        "INCANTATION_MOVE -> DARK_STRIKE_MOVE",
+        "DARK_STRIKE_MOVE -> DARK_STRIKE_MOVE"
+      ],
+      "repeats": [
+        "DARK_STRIKE_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "DAMP_CULTIST",
     "title": "Damp Cultist",
-    "move_pattern_desc": "Starts with Incantation. After Incantation, uses Dark Strike."
+    "move_pattern_desc": "Starts with Incantation. Then repeats Dark Strike."
   },
   {
     "class_name": "DecimillipedeSegment",
@@ -1310,7 +1318,7 @@
     ],
     "loc_key": "DECIMILLIPEDE_SEGMENT",
     "title": "Decimillipede",
-    "move_pattern_desc": "After Constrict, uses Bulk. After Bulk, uses Writhe. After Writhe, uses Constrict. After Dead, uses Reattach. Then randomly: Writhe (can't repeat) (33%), Bulk (can't repeat) (33%), Constrict (can't repeat) (33%)."
+    "move_pattern_desc": "After Constrict, uses Bulk. After Bulk, uses Writhe. After Writhe, uses Constrict. After Dead, uses Reattach. Then 33% chance of Writhe (can't repeat), 33% chance of Bulk (can't repeat), 33% chance of Constrict (can't repeat)."
   },
   {
     "class_name": "DevotedSculptor",
@@ -1346,13 +1354,17 @@
     "move_pattern": {
       "starts_with": "FORBIDDEN_INCANTATION_MOVE",
       "follow_ups": [
-        "FORBIDDEN_INCANTATION_MOVE -> SAVAGE_MOVE"
+        "FORBIDDEN_INCANTATION_MOVE -> SAVAGE_MOVE",
+        "SAVAGE_MOVE -> SAVAGE_MOVE"
+      ],
+      "repeats": [
+        "SAVAGE_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "DEVOTED_SCULPTOR",
     "title": "Devoted Sculptor",
-    "move_pattern_desc": "Starts with Forbidden Incantation. After Forbidden Incantation, uses Savage."
+    "move_pattern_desc": "Starts with Forbidden Incantation. Then repeats Savage."
   },
   {
     "class_name": "Door",
@@ -1415,6 +1427,9 @@
         "DEAD_MOVE -> DEAD_MOVE",
         "dramaticOpenMove -> DOOR_SLAM_MOVE",
         "DOOR_SLAM_MOVE -> ENFORCE_MOVE"
+      ],
+      "repeats": [
+        "DEAD_MOVE"
       ]
     },
     "powers_on_spawn": [
@@ -1422,7 +1437,7 @@
     ],
     "loc_key": "DOOR",
     "title": "Door",
-    "move_pattern_desc": "Starts with Dramatic Open. After Dramaticopenmove, uses Door Slam. After Door Slam, uses Enforce."
+    "move_pattern_desc": "Starts with Dramatic Open. After Dramaticopenmove, uses Door Slam. After Door Slam, uses Enforce. Then repeats Dead."
   },
   {
     "class_name": "Doormaker",
@@ -1487,7 +1502,7 @@
     "powers_on_spawn": [],
     "loc_key": "DOORMAKER",
     "title": "Doormaker",
-    "move_pattern_desc": "Starts with What Is It. After What Is It, uses Beam. Repeats Get Back In."
+    "move_pattern_desc": "Starts with What Is It. After What Is It, uses Beam. Then repeats Get Back In."
   },
   {
     "class_name": "Entomancer",
@@ -1535,7 +1550,7 @@
       "starts_with": "BEES_MOVE",
       "follow_ups": [
         "BEES_MOVE -> SPEAR_MOVE",
-        "moveState3 -> PHEROMONE_SPIT_MOVE",
+        "SPEAR_MOVE -> PHEROMONE_SPIT_MOVE",
         "PHEROMONE_SPIT_MOVE -> BEES_MOVE"
       ]
     },
@@ -1544,7 +1559,7 @@
     ],
     "loc_key": "ENTOMANCER",
     "title": "Entomancer",
-    "move_pattern_desc": "Starts with Beeeees!. After Beeeees!, uses Spear!. After Movestate3, uses Pheromone Spit. After Pheromone Spit, uses Beeeees!."
+    "move_pattern_desc": "Cycles in the order: Beeeees! -> Spear! -> Pheromone Spit."
   },
   {
     "class_name": "Exoskeleton",
@@ -1632,7 +1647,7 @@
     ],
     "loc_key": "EYE_WITH_TEETH",
     "title": "Eye With Teeth",
-    "move_pattern_desc": "Starts with Distract. Repeats Distract."
+    "move_pattern_desc": "Starts with Distract (repeats)."
   },
   {
     "class_name": "Fabricator",
@@ -1779,7 +1794,7 @@
     "powers_on_spawn": [],
     "loc_key": "FAKE_MERCHANT_MONSTER",
     "title": "The Merchant???",
-    "move_pattern_desc": "Starts with Swipe. Then randomly: Swipe (can't repeat) (17%), Spew Coins (can't repeat) (17%), Throw Relic (can't repeat) (17%), Swipe (can't repeat) (17%), Spew Coins (can't repeat) (17%), Throw Relic (can't repeat) (17%)."
+    "move_pattern_desc": "Starts with Swipe. Then 17% chance of Swipe (can't repeat), 17% chance of Spew Coins (can't repeat), 17% chance of Throw Relic (can't repeat), 17% chance of Swipe (can't repeat), 17% chance of Spew Coins (can't repeat), 17% chance of Throw Relic (can't repeat)."
   },
   {
     "class_name": "FatGremlin",
@@ -1810,13 +1825,17 @@
     "move_pattern": {
       "starts_with": "SPAWNED_MOVE",
       "follow_ups": [
-        "SPAWNED_MOVE -> FLEE_MOVE"
+        "SPAWNED_MOVE -> FLEE_MOVE",
+        "FLEE_MOVE -> FLEE_MOVE"
+      ],
+      "repeats": [
+        "FLEE_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "FAT_GREMLIN",
     "title": "Fat Gremlin",
-    "move_pattern_desc": "Starts with Spawned. After Spawned, uses Flee."
+    "move_pattern_desc": "Starts with Spawned. Then repeats Flee."
   },
   {
     "class_name": "FlailKnight",
@@ -1887,7 +1906,7 @@
     "powers_on_spawn": [],
     "loc_key": "FLAIL_KNIGHT",
     "title": "Flail Knight",
-    "move_pattern_desc": "Starts with Ram. After Ram, uses Flail. Then randomly: War Chant (can't repeat) (20%), Flail (40%), Ram (40%)."
+    "move_pattern_desc": "Starts with Ram. After Ram, uses Flail. Then 20% chance of War Chant (can't repeat), 40% chance of Flail, 40% chance of Ram."
   },
   {
     "class_name": "Flyconid",
@@ -1952,7 +1971,7 @@
     "powers_on_spawn": [],
     "loc_key": "FLYCONID",
     "title": "Flyconid",
-    "move_pattern_desc": "Then randomly: Smash (can't repeat) (50%), Smash (can't repeat) (50%)."
+    "move_pattern_desc": "50% chance of Smash (can't repeat), 50% chance of Smash (can't repeat)."
   },
   {
     "class_name": "Fogmog",
@@ -2099,7 +2118,7 @@
     ],
     "loc_key": "FOSSIL_STALKER",
     "title": "Fossil Stalker",
-    "move_pattern_desc": "Starts with Latch. After Lash, uses Tackle. Then randomly: Latch (33%), Tackle (33%), Lash (33%)."
+    "move_pattern_desc": "Starts with Latch. After Lash, uses Tackle. Then 33% chance of Latch, 33% chance of Tackle, 33% chance of Lash."
   },
   {
     "class_name": "FrogKnight",
@@ -2223,14 +2242,14 @@
       "starts_with": "FIRST_ACID_GOOP",
       "follow_ups": [
         "FIRST_ACID_GOOP -> INHALE",
-        "moveState3 -> ACID_GOOP",
+        "INHALE -> ACID_GOOP",
         "ACID_GOOP -> FIRST_ACID_GOOP"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "FUZZY_WURM_CRAWLER",
     "title": "Fuzzy Wurm Crawler",
-    "move_pattern_desc": "Starts with First Acid Goop. After First Acid Goop, uses Inhale. After Movestate3, uses Acid Goop. After Acid Goop, uses First Acid Goop."
+    "move_pattern_desc": "Cycles in the order: First Acid Goop -> Inhale -> Acid Goop."
   },
   {
     "class_name": "GasBomb",
@@ -2258,7 +2277,7 @@
     ],
     "loc_key": "GAS_BOMB",
     "title": "Gas Bomb",
-    "move_pattern_desc": "Starts with Explode."
+    "move_pattern_desc": "Always uses Explode."
   },
   {
     "class_name": "GlobeHead",
@@ -2328,7 +2347,7 @@
     ],
     "loc_key": "GLOBE_HEAD",
     "title": "Globe Head",
-    "move_pattern_desc": "Starts with Shocking Slap. After Shocking Slap, uses Thunder Strike. After Thunder Strike, uses Galvanic Burst. After Galvanic Burst, uses Shocking Slap."
+    "move_pattern_desc": "Cycles in the order: Shocking Slap -> Thunder Strike -> Galvanic Burst."
   },
   {
     "class_name": "GremlinMerc",
@@ -2396,7 +2415,7 @@
     ],
     "loc_key": "GREMLIN_MERC",
     "title": "Gremlin Merc",
-    "move_pattern_desc": "Starts with Gimme. After Gimme, uses Double Smash. After Double Smash, uses Hehe. After Hehe, uses Gimme."
+    "move_pattern_desc": "Cycles in the order: Gimme -> Double Smash -> Hehe."
   },
   {
     "class_name": "Guardbot",
@@ -2428,7 +2447,7 @@
     "powers_on_spawn": [],
     "loc_key": "GUARDBOT",
     "title": "Guardbot",
-    "move_pattern_desc": "Starts with Guard. Repeats Guard."
+    "move_pattern_desc": "Starts with Guard (repeats)."
   },
   {
     "class_name": "HauntedShip",
@@ -2568,7 +2587,7 @@
     "powers_on_spawn": [],
     "loc_key": "HUNTER_KILLER",
     "title": "Hunter Killer",
-    "move_pattern_desc": "Starts with Tenderizing Goop. After Puncture, uses Bite. Then randomly: Bite (can't repeat) (33%), Puncture (67%)."
+    "move_pattern_desc": "Starts with Tenderizing Goop. After Puncture, uses Bite. Then 33% chance of Bite (can't repeat), 67% chance of Puncture."
   },
   {
     "class_name": "InfestedPrism",
@@ -2647,7 +2666,7 @@
     ],
     "loc_key": "INFESTED_PRISM",
     "title": "Infested Prism",
-    "move_pattern_desc": "Starts with Jab. After Jab, uses Radiate. After Radiate, uses Whirlwind. After Whirlwind, uses Pulsate. After Pulsate, uses Jab."
+    "move_pattern_desc": "Cycles in the order: Jab -> Radiate -> Whirlwind -> Pulsate."
   },
   {
     "class_name": "Inklet",
@@ -2708,7 +2727,7 @@
     ],
     "loc_key": "INKLET",
     "title": "Inklet",
-    "move_pattern_desc": "After Whirlwind, uses Piercing Gaze. After Whirlwind, uses Jab. After Piercing Gaze, uses Jab."
+    "move_pattern_desc": "After Whirlwind, uses Jab. After Piercing Gaze, uses Jab."
   },
   {
     "class_name": "KinFollower",
@@ -2768,7 +2787,7 @@
     ],
     "loc_key": "KIN_FOLLOWER",
     "title": "Kin Follower",
-    "move_pattern_desc": "After Quick Slash, uses Boomerang. After Boomerang, uses Power Dance. After Power Dance, uses Quick Slash."
+    "move_pattern_desc": "Cycles in the order: Quick Slash -> Boomerang -> Power Dance."
   },
   {
     "class_name": "KinPriest",
@@ -2849,7 +2868,7 @@
     "powers_on_spawn": [],
     "loc_key": "KIN_PRIEST",
     "title": "Kin Priest",
-    "move_pattern_desc": "Starts with Orb Of Frailty. After Orb Of Frailty, uses Orb Of Weakness. After Orb Of Weakness, uses Beam. After Beam, uses Ritual. After Ritual, uses Orb Of Frailty."
+    "move_pattern_desc": "Cycles in the order: Orb Of Frailty -> Orb Of Weakness -> Beam -> Ritual."
   },
   {
     "class_name": "KnowledgeDemon",
@@ -3017,7 +3036,7 @@
     ],
     "loc_key": "LAGAVULIN_MATRIARCH",
     "title": "Lagavulin Matriarch",
-    "move_pattern_desc": "Starts with Sleep. After Slash, uses Disembowel. After Disembowel, uses Slash2. After Slash2, uses Soul Siphon. After Soul Siphon, uses Slash."
+    "move_pattern_desc": "Starts with Sleep, then cycles: Slash -> Disembowel -> Slash2 -> Soul Siphon."
   },
   {
     "class_name": "LeafSlimeM",
@@ -3060,7 +3079,7 @@
     "powers_on_spawn": [],
     "loc_key": "LEAF_SLIME_M",
     "title": "Leaf Slime (M)",
-    "move_pattern_desc": "Starts with Sticky Shot. After Sticky Shot, uses Clump Shot. After Clump Shot, uses Sticky Shot."
+    "move_pattern_desc": "Cycles in the order: Sticky Shot -> Clump Shot."
   },
   {
     "class_name": "LeafSlimeS",
@@ -3109,7 +3128,7 @@
     "powers_on_spawn": [],
     "loc_key": "LEAF_SLIME_S",
     "title": "Leaf Slime (S)",
-    "move_pattern_desc": "After Goop, uses Butt. Then randomly: Butt (can't repeat) (50%), Goop (can't repeat) (50%)."
+    "move_pattern_desc": "After Goop, uses Butt. Then 50% chance of Butt (can't repeat), 50% chance of Goop (can't repeat)."
   },
   {
     "class_name": "LivingFog",
@@ -3226,7 +3245,7 @@
     ],
     "loc_key": "LIVING_SHIELD",
     "title": "Living Shield",
-    "move_pattern_desc": "Starts with Shield Slam. Repeats Smash."
+    "move_pattern_desc": "Starts with Shield Slam. Then repeats Smash."
   },
   {
     "class_name": "LouseProgenitor",
@@ -3280,7 +3299,7 @@
       "starts_with": "WEB_CANNON_MOVE",
       "follow_ups": [
         "WEB_CANNON_MOVE -> CURL_AND_GROW_MOVE",
-        "moveState3 -> POUNCE_MOVE",
+        "CURL_AND_GROW_MOVE -> POUNCE_MOVE",
         "POUNCE_MOVE -> WEB_CANNON_MOVE"
       ]
     },
@@ -3289,7 +3308,7 @@
     ],
     "loc_key": "LOUSE_PROGENITOR",
     "title": "Louse Progenitor",
-    "move_pattern_desc": "Starts with Web Cannon. After Web Cannon, uses Curl and Grow. After Movestate3, uses Pounce. After Pounce, uses Web Cannon."
+    "move_pattern_desc": "Cycles in the order: Web Cannon -> Curl and Grow -> Pounce."
   },
   {
     "class_name": "MagiKnight",
@@ -3536,7 +3555,7 @@
     "powers_on_spawn": [],
     "loc_key": "MULTI_ATTACK_MOVE_MONSTER",
     "title": "MultiAttackMoveMonster",
-    "move_pattern_desc": "Starts with Poke. Repeats Poke."
+    "move_pattern_desc": "Starts with Poke (repeats)."
   },
   {
     "class_name": "Myte",
@@ -3596,7 +3615,7 @@
     "powers_on_spawn": [],
     "loc_key": "MYTE",
     "title": "Myte",
-    "move_pattern_desc": "After Toxic Cornucopia, uses Bite. After Bite, uses Suck. After Suck, uses Toxic Cornucopia."
+    "move_pattern_desc": "Cycles in the order: Toxic Cornucopia -> Bite -> Suck."
   },
   {
     "class_name": "Nibbit",
@@ -3655,7 +3674,7 @@
     "powers_on_spawn": [],
     "loc_key": "NIBBIT",
     "title": "Nibbit",
-    "move_pattern_desc": "After Slice, uses Hiss. After Butt, uses Slice. After Hiss, uses Butt."
+    "move_pattern_desc": "Cycles in the order: Slice -> Hiss -> Butt."
   },
   {
     "class_name": "Noisebot",
@@ -3685,7 +3704,7 @@
     "powers_on_spawn": [],
     "loc_key": "NOISEBOT",
     "title": "Noisebot",
-    "move_pattern_desc": "Starts with Noise. Repeats Noise."
+    "move_pattern_desc": "Starts with Noise (repeats)."
   },
   {
     "class_name": "OneHpMonster",
@@ -3715,7 +3734,7 @@
     "powers_on_spawn": [],
     "loc_key": "ONE_HP_MONSTER",
     "title": "OneHpMonster",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "Osty",
@@ -3742,7 +3761,7 @@
     "is_companion": true,
     "loc_key": "OSTY",
     "title": "Osty",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "Ovicopter",
@@ -3892,7 +3911,7 @@
     "powers_on_spawn": [],
     "loc_key": "OWL_MAGISTRATE",
     "title": "Owl Magistrate",
-    "move_pattern_desc": "Starts with Magistrate Scrutiny. After Magistrate Scrutiny, uses Peck Assault. After Peck Assault, uses Judicial Flight. After Judicial Flight, uses Verdict. After Verdict, uses Magistrate Scrutiny."
+    "move_pattern_desc": "Cycles in the order: Magistrate Scrutiny -> Peck Assault -> Judicial Flight -> Verdict."
   },
   {
     "class_name": "PaelsLegion",
@@ -3919,7 +3938,7 @@
     "is_companion": true,
     "loc_key": "PAELS_LEGION",
     "title": "Pael's Legion",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "Parafright",
@@ -3954,7 +3973,7 @@
     ],
     "loc_key": "PARAFRIGHT",
     "title": "Parafright",
-    "move_pattern_desc": "Starts with Slam. Repeats Slam."
+    "move_pattern_desc": "Starts with Slam (repeats)."
   },
   {
     "class_name": "PhantasmalGardener",
@@ -4026,7 +4045,7 @@
     ],
     "loc_key": "PHANTASMAL_GARDENER",
     "title": "Phantasmal Gardener",
-    "move_pattern_desc": "After Bite, uses Lash. After Lash, uses Flail. After Flail, uses Enlarge. After Enlarge, uses Bite."
+    "move_pattern_desc": "Cycles in the order: Bite -> Lash -> Flail -> Enlarge."
   },
   {
     "class_name": "PhrogParasite",
@@ -4083,7 +4102,7 @@
     ],
     "loc_key": "PHROG_PARASITE",
     "title": "Phrog Parasite",
-    "move_pattern_desc": "Starts with Infect. After Infect, uses Lash. After Lash, uses Infect. Then randomly: Infect (can't repeat) (50%), Lash (can't repeat) (50%)."
+    "move_pattern_desc": "Cycles in the order: Infect -> Lash."
   },
   {
     "class_name": "PunchConstruct",
@@ -4145,7 +4164,7 @@
     ],
     "loc_key": "PUNCH_CONSTRUCT",
     "title": "Punch Construct",
-    "move_pattern_desc": "After READY, uses Strong Punch. After Strong Punch, uses Fast Punch. After Fast Punch, uses READY."
+    "move_pattern_desc": "Cycles in the order: READY -> Strong Punch -> Fast Punch."
   },
   {
     "class_name": "Queen",
@@ -4329,7 +4348,7 @@
     ],
     "loc_key": "ROCKET",
     "title": "Rocket",
-    "move_pattern_desc": "Starts with Targeting Reticle. After Targeting Reticle, uses Precision Beam. After Precision Beam, uses Charge Up. After Charge Up, uses Laser. After Laser, uses Recharge. After Recharge, uses Targeting Reticle."
+    "move_pattern_desc": "Cycles in the order: Targeting Reticle -> Precision Beam -> Charge Up -> Laser -> Recharge."
   },
   {
     "class_name": "ScrollOfBiting",
@@ -4396,7 +4415,7 @@
     ],
     "loc_key": "SCROLL_OF_BITING",
     "title": "Scroll of Biting",
-    "move_pattern_desc": "Starts with Chomp. After Chomp, uses More Teeth. After More Teeth, uses Chew. Then randomly: Chomp (can't repeat) (33%), Chew (67%)."
+    "move_pattern_desc": "Starts with Chomp. After Chomp, uses More Teeth. After More Teeth, uses Chew. Then 33% chance of Chomp (can't repeat), 67% chance of Chew."
   },
   {
     "class_name": "Seapunk",
@@ -4456,7 +4475,7 @@
     "powers_on_spawn": [],
     "loc_key": "SEAPUNK",
     "title": "Seapunk",
-    "move_pattern_desc": "Starts with Sea Kick. After Sea Kick, uses Spinning Kick. After Spinning Kick, uses Bubble Burp. After Bubble Burp, uses Sea Kick."
+    "move_pattern_desc": "Cycles in the order: Sea Kick -> Spinning Kick -> Bubble Burp."
   },
   {
     "class_name": "SewerClam",
@@ -4492,7 +4511,7 @@
     "move_pattern": {
       "follow_ups": [
         "PRESSURIZE_MOVE -> JET_MOVE",
-        "moveState2 -> PRESSURIZE_MOVE"
+        "JET_MOVE -> PRESSURIZE_MOVE"
       ]
     },
     "powers_on_spawn": [
@@ -4500,7 +4519,7 @@
     ],
     "loc_key": "SEWER_CLAM",
     "title": "Sewer Clam",
-    "move_pattern_desc": "After Pressurize, uses Jet. After Movestate2, uses Pressurize."
+    "move_pattern_desc": "Cycles in the order: Pressurize -> Jet."
   },
   {
     "class_name": "ShrinkerBeetle",
@@ -4588,7 +4607,7 @@
     "powers_on_spawn": [],
     "loc_key": "SINGLE_ATTACK_MOVE_MONSTER",
     "title": "SingleAttackMoveMonster",
-    "move_pattern_desc": "Starts with Poke. Repeats Poke."
+    "move_pattern_desc": "Starts with Poke (repeats)."
   },
   {
     "class_name": "SkulkingColony",
@@ -4668,7 +4687,7 @@
     ],
     "loc_key": "SKULKING_COLONY",
     "title": "Skulking Colony",
-    "move_pattern_desc": "Starts with Smash. After Smash, uses Zoom. After Zoom, uses Inertia. After Inertia, uses Super Crab. After Super Crab, uses Smash."
+    "move_pattern_desc": "Cycles in the order: Smash -> Zoom -> Inertia -> Super Crab."
   },
   {
     "class_name": "SlimedBerserker",
@@ -4736,7 +4755,7 @@
       "starts_with": "VOMIT_ICHOR_MOVE",
       "follow_ups": [
         "VOMIT_ICHOR_MOVE -> FURIOUS_PUMMELING_MOVE",
-        "moveState4 -> LEECHING_HUG_MOVE",
+        "FURIOUS_PUMMELING_MOVE -> LEECHING_HUG_MOVE",
         "LEECHING_HUG_MOVE -> SMOTHER_MOVE",
         "SMOTHER_MOVE -> VOMIT_ICHOR_MOVE"
       ]
@@ -4744,7 +4763,7 @@
     "powers_on_spawn": [],
     "loc_key": "SLIMED_BERSERKER",
     "title": "Slimed Berserker",
-    "move_pattern_desc": "Starts with Vomit Ichor. After Vomit Ichor, uses Furious Pummeling. After Movestate4, uses Leeching Hug. After Leeching Hug, uses Smother. After Smother, uses Vomit Ichor."
+    "move_pattern_desc": "Cycles in the order: Vomit Ichor -> Furious Pummeling -> Leeching Hug -> Smother."
   },
   {
     "class_name": "SlitheringStrangler",
@@ -4811,7 +4830,7 @@
     "powers_on_spawn": [],
     "loc_key": "SLITHERING_STRANGLER",
     "title": "Slithering Strangler",
-    "move_pattern_desc": "Starts with Constrict. After Twack, uses Constrict. After Lash, uses Constrict. Then randomly: Twack (50%), Lash (50%)."
+    "move_pattern_desc": "Starts with Constrict. After Twack, uses Constrict. After Lash, uses Constrict. Then 50% chance of Twack, 50% chance of Lash."
   },
   {
     "class_name": "SludgeSpinner",
@@ -4889,7 +4908,7 @@
     "powers_on_spawn": [],
     "loc_key": "SLUDGE_SPINNER",
     "title": "Sludge Spinner",
-    "move_pattern_desc": "Starts with Oil Spray. After Rage, uses Slam. Then randomly: Oil Spray (can't repeat) (33%), Slam (can't repeat) (33%), Rage (can't repeat) (33%)."
+    "move_pattern_desc": "Starts with Oil Spray. After Rage, uses Slam. Then 33% chance of Oil Spray (can't repeat), 33% chance of Slam (can't repeat), 33% chance of Rage (can't repeat)."
   },
   {
     "class_name": "SlumberingBeetle",
@@ -4936,7 +4955,7 @@
     ],
     "loc_key": "SLUMBERING_BEETLE",
     "title": "Slumbering Beetle",
-    "move_pattern_desc": "Starts with Snore. Repeats Roll Out."
+    "move_pattern_desc": "Starts with Snore. Then repeats Roll Out."
   },
   {
     "class_name": "SnappingJaxfruit",
@@ -4973,7 +4992,7 @@
     "powers_on_spawn": [],
     "loc_key": "SNAPPING_JAXFRUIT",
     "title": "Snapping Jaxfruit",
-    "move_pattern_desc": "Starts with Energy Orb. Repeats Energy Orb."
+    "move_pattern_desc": "Starts with Energy Orb (repeats)."
   },
   {
     "class_name": "SneakyGremlin",
@@ -5007,13 +5026,17 @@
     "move_pattern": {
       "starts_with": "SPAWNED_MOVE",
       "follow_ups": [
-        "SPAWNED_MOVE -> TACKLE_MOVE"
+        "SPAWNED_MOVE -> TACKLE_MOVE",
+        "TACKLE_MOVE -> TACKLE_MOVE"
+      ],
+      "repeats": [
+        "TACKLE_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "SNEAKY_GREMLIN",
     "title": "Sneaky Gremlin",
-    "move_pattern_desc": "Starts with Spawned. After Spawned, uses Tackle."
+    "move_pattern_desc": "Starts with Spawned. Then repeats Tackle."
   },
   {
     "class_name": "SoulFysh",
@@ -5102,7 +5125,7 @@
     "powers_on_spawn": [],
     "loc_key": "SOUL_FYSH",
     "title": "Soul Fysh",
-    "move_pattern_desc": "Starts with Beckon. After Beckon, uses De-Gas. After De-Gas, uses Gaze. After Gaze, uses Fade. After Fade, uses Scream. After Scream, uses Beckon."
+    "move_pattern_desc": "Cycles in the order: Beckon -> De-Gas -> Gaze -> Fade -> Scream."
   },
   {
     "class_name": "SoulNexus",
@@ -5230,7 +5253,7 @@
     "powers_on_spawn": [],
     "loc_key": "SPECTRAL_KNIGHT",
     "title": "Spectral Knight",
-    "move_pattern_desc": "Starts with Hex. After Hex, uses Soul Slash. Then randomly: Soul Slash (67%), Soul Flame (can't repeat) (33%)."
+    "move_pattern_desc": "Starts with Hex. After Hex, uses Soul Slash. Then 67% chance of Soul Slash, 33% chance of Soul Flame (can't repeat)."
   },
   {
     "class_name": "SpinyToad",
@@ -5281,7 +5304,7 @@
     "powers_on_spawn": [],
     "loc_key": "SPINY_TOAD",
     "title": "Spiny Toad",
-    "move_pattern_desc": "Starts with Protruding Spikes. After Protruding Spikes, uses Spike Explosion. After Spike Explosion, uses Tongue Lash. After Tongue Lash, uses Protruding Spikes."
+    "move_pattern_desc": "Cycles in the order: Protruding Spikes -> Spike Explosion -> Tongue Lash."
   },
   {
     "class_name": "Stabbot",
@@ -5318,7 +5341,7 @@
     "powers_on_spawn": [],
     "loc_key": "STABBOT",
     "title": "Stabbot",
-    "move_pattern_desc": "Starts with Stab. Repeats Stab."
+    "move_pattern_desc": "Starts with Stab (repeats)."
   },
   {
     "class_name": "TenHpMonster",
@@ -5348,7 +5371,7 @@
     "powers_on_spawn": [],
     "loc_key": "TEN_HP_MONSTER",
     "title": "TenHpMonster",
-    "move_pattern_desc": "Starts with Nothing. Repeats Nothing."
+    "move_pattern_desc": "Starts with Nothing (repeats)."
   },
   {
     "class_name": "TerrorEel",
@@ -5625,7 +5648,7 @@
     ],
     "loc_key": "THE_ADVERSARY_MK_ONE",
     "title": "The Adversary Mk 1",
-    "move_pattern_desc": "Starts with Smash. After Smash, uses Beam. After Beam, uses Barrage. After Barrage, uses Smash."
+    "move_pattern_desc": "Cycles in the order: Smash -> Beam -> Barrage."
   },
   {
     "class_name": "TheAdversaryMkThree",
@@ -5689,7 +5712,7 @@
     ],
     "loc_key": "THE_ADVERSARY_MK_THREE",
     "title": "The Adversary Mk 3",
-    "move_pattern_desc": "Starts with Crash. After Crash, uses Flame Beam. After Flame Beam, uses Barrage. After Barrage, uses Crash."
+    "move_pattern_desc": "Cycles in the order: Crash -> Flame Beam -> Barrage."
   },
   {
     "class_name": "TheAdversaryMkTwo",
@@ -5753,7 +5776,7 @@
     ],
     "loc_key": "THE_ADVERSARY_MK_TWO",
     "title": "The Adversary Mk 2",
-    "move_pattern_desc": "Starts with Bash. After Bash, uses Flame Beam. After Flame Beam, uses Barrage. After Barrage, uses Bash."
+    "move_pattern_desc": "Cycles in the order: Bash -> Flame Beam -> Barrage."
   },
   {
     "class_name": "TheForgotten",
@@ -5797,7 +5820,7 @@
       "starts_with": "MIASMA",
       "follow_ups": [
         "MIASMA -> DREAD",
-        "moveState2 -> MIASMA"
+        "DREAD -> MIASMA"
       ]
     },
     "powers_on_spawn": [
@@ -5805,7 +5828,7 @@
     ],
     "loc_key": "THE_FORGOTTEN",
     "title": "The Forgotten",
-    "move_pattern_desc": "Starts with Miasma. After Miasma, uses Dread. After Movestate2, uses Miasma."
+    "move_pattern_desc": "Cycles in the order: Miasma -> Dread."
   },
   {
     "class_name": "TheInsatiable",
@@ -5928,7 +5951,7 @@
       "starts_with": "DEBILITATING_SMOG",
       "follow_ups": [
         "DEBILITATING_SMOG -> EYE_LASERS",
-        "moveState2 -> DEBILITATING_SMOG"
+        "EYE_LASERS -> DEBILITATING_SMOG"
       ]
     },
     "powers_on_spawn": [
@@ -5936,7 +5959,7 @@
     ],
     "loc_key": "THE_LOST",
     "title": "The Lost",
-    "move_pattern_desc": "Starts with Debilitating Smog. After Debilitating Smog, uses Eye Lasers. After Movestate2, uses Debilitating Smog."
+    "move_pattern_desc": "Cycles in the order: Debilitating Smog -> Eye Lasers."
   },
   {
     "class_name": "TheObscura",
@@ -6017,7 +6040,7 @@
     "powers_on_spawn": [],
     "loc_key": "THE_OBSCURA",
     "title": "The Obscura",
-    "move_pattern_desc": "Starts with Illusion. After Hardening Strike, uses Sail. After Piercing Gaze, uses Illusion. Then randomly: Piercing Gaze (can't repeat) (33%), Sail (can't repeat) (33%), Hardening Strike (can't repeat) (33%)."
+    "move_pattern_desc": "Starts with Illusion. After Hardening Strike, uses Sail. After Piercing Gaze, uses Illusion. Then 33% chance of Piercing Gaze (can't repeat), 33% chance of Sail (can't repeat), 33% chance of Hardening Strike (can't repeat)."
   },
   {
     "class_name": "ThievingHopper",
@@ -6107,7 +6130,7 @@
     ],
     "loc_key": "THIEVING_HOPPER",
     "title": "Thieving Hopper",
-    "move_pattern_desc": "Starts with Thievery. After Thievery, uses Flutter. After Flutter, uses Hat Trick. After Hat Trick, uses Nab. Repeats Escape."
+    "move_pattern_desc": "Starts with Thievery. After Thievery, uses Flutter. After Flutter, uses Hat Trick. After Hat Trick, uses Nab. Then repeats Escape."
   },
   {
     "class_name": "Toadpole",
@@ -6163,7 +6186,7 @@
     "powers_on_spawn": [],
     "loc_key": "TOADPOLE",
     "title": "Toadpole",
-    "move_pattern_desc": "After Whirl, uses Spiken. After Spiken, uses Spike Spit. After Spike Spit, uses Whirl."
+    "move_pattern_desc": "Cycles in the order: Whirl -> Spiken -> Spike Spit."
   },
   {
     "class_name": "TorchHeadAmalgam",
@@ -6276,7 +6299,11 @@
     "move_pattern": {
       "starts_with": "HATCH_MOVE",
       "follow_ups": [
-        "HATCH_MOVE -> NIBBLE_MOVE"
+        "HATCH_MOVE -> NIBBLE_MOVE",
+        "NIBBLE_MOVE -> NIBBLE_MOVE"
+      ],
+      "repeats": [
+        "NIBBLE_MOVE"
       ]
     },
     "powers_on_spawn": [
@@ -6284,7 +6311,7 @@
     ],
     "loc_key": "TOUGH_EGG",
     "title": "Tough Egg",
-    "move_pattern_desc": "Starts with HATCH. After HATCH, uses Nibble."
+    "move_pattern_desc": "Starts with HATCH. Then repeats Nibble."
   },
   {
     "class_name": "TrackerRubyRaider",
@@ -6320,13 +6347,17 @@
     "move_pattern": {
       "starts_with": "TRACK_MOVE",
       "follow_ups": [
-        "TRACK_MOVE -> HOUNDS_MOVE"
+        "TRACK_MOVE -> HOUNDS_MOVE",
+        "HOUNDS_MOVE -> HOUNDS_MOVE"
+      ],
+      "repeats": [
+        "HOUNDS_MOVE"
       ]
     },
     "powers_on_spawn": [],
     "loc_key": "TRACKER_RUBY_RAIDER",
     "title": "Tracker Raider",
-    "move_pattern_desc": "Starts with Track. After Track, uses Unleash the Hounds."
+    "move_pattern_desc": "Starts with Track. Then repeats Unleash the Hounds."
   },
   {
     "class_name": "Tunneler",
@@ -6398,7 +6429,7 @@
     "powers_on_spawn": [],
     "loc_key": "TUNNELER",
     "title": "Tunneler",
-    "move_pattern_desc": "Starts with Bite. After Bite, uses Burrow. After Dizzy, uses Bite. Repeats Below Move 1."
+    "move_pattern_desc": "Starts with Bite. After Bite, uses Burrow. After Dizzy, uses Bite. Then repeats Below Move 1."
   },
   {
     "class_name": "TurretOperator",
@@ -6453,7 +6484,7 @@
     "powers_on_spawn": [],
     "loc_key": "TURRET_OPERATOR",
     "title": "Turret Operator",
-    "move_pattern_desc": "Starts with Unload Move 1. After Unload Move 1, uses Unload Move 2. After Unload Move 2, uses Reload. After Reload, uses Unload Move 1."
+    "move_pattern_desc": "Cycles in the order: Unload Move 1 -> Unload Move 2 -> Reload."
   },
   {
     "class_name": "TwigSlimeM",
@@ -6505,7 +6536,7 @@
     "powers_on_spawn": [],
     "loc_key": "TWIG_SLIME_M",
     "title": "Twig Slime (M)",
-    "move_pattern_desc": "Starts with Sticky Shot. After Sticky Shot, uses Clump Shot. Then randomly: Clump Shot (67%), Sticky Shot (can't repeat) (33%)."
+    "move_pattern_desc": "Starts with Sticky Shot. After Sticky Shot, uses Clump Shot. Then 67% chance of Clump Shot, 33% chance of Sticky Shot (can't repeat)."
   },
   {
     "class_name": "TwigSlimeS",
@@ -6536,7 +6567,7 @@
     "powers_on_spawn": [],
     "loc_key": "TWIG_SLIME_S",
     "title": "Twig Slime (S)",
-    "move_pattern_desc": "Starts with Butt. Repeats Butt."
+    "move_pattern_desc": "Starts with Butt (repeats)."
   },
   {
     "class_name": "TwoTailedRat",
@@ -6680,7 +6711,7 @@
     ],
     "loc_key": "VANTOM",
     "title": "Vantom",
-    "move_pattern_desc": "Starts with Ink Blot. After Ink Blot, uses Inky Lance. After Inky Lance, uses Dismember. After Dismember, uses Prepare. After Prepare, uses Ink Blot."
+    "move_pattern_desc": "Cycles in the order: Ink Blot -> Inky Lance -> Dismember -> Prepare."
   },
   {
     "class_name": "VineShambler",
@@ -6744,7 +6775,7 @@
     "powers_on_spawn": [],
     "loc_key": "VINE_SHAMBLER",
     "title": "Vine Shambler",
-    "move_pattern_desc": "Starts with Swipe. After Swipe, uses Grasping Vines. After Grasping Vines, uses Chomp. After Chomp, uses Swipe."
+    "move_pattern_desc": "Cycles in the order: Swipe -> Grasping Vines -> Chomp."
   },
   {
     "class_name": "WaterfallGiant",
@@ -6891,7 +6922,7 @@
     "powers_on_spawn": [],
     "loc_key": "WATERFALL_GIANT",
     "title": "Waterfall Giant",
-    "move_pattern_desc": "Starts with Pressurize. After Pressurize, uses Stomp. After Stomp, uses Ram. After Ram, uses Siphon. After Siphon, uses Pressure Gun. After Pressure Gun, uses Pressure Up. After Pressure Up, uses Stomp. Repeats Explode."
+    "move_pattern_desc": "Starts with Pressurize. After Pressurize, uses Stomp. After Stomp, uses Ram. After Ram, uses Siphon. After Siphon, uses Pressure Gun. After Pressure Gun, uses Pressure Up. After Pressure Up, uses Stomp. Then repeats Explode."
   },
   {
     "class_name": "Wriggler",
@@ -6945,7 +6976,7 @@
     "powers_on_spawn": [],
     "loc_key": "WRIGGLER",
     "title": "Wriggler",
-    "move_pattern_desc": "After Nasty Bite, uses Wriggle. After Wriggle, uses Nasty Bite."
+    "move_pattern_desc": "Cycles in the order: Nasty Bite -> Wriggle."
   },
   {
     "class_name": "Zapbot",
@@ -6980,6 +7011,6 @@
     ],
     "loc_key": "ZAPBOT",
     "title": "Zapbot",
-    "move_pattern_desc": "Starts with Zap. Repeats Zap."
+    "move_pattern_desc": "Starts with Zap (repeats)."
   }
 ]
