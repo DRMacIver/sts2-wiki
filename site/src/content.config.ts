@@ -103,6 +103,8 @@ const relics = defineCollection({
     description_plain: z.string().default(''),
     description_html: z.string().default(''),
     flavor: z.string().default(''),
+    character: z.string().default(''),
+    sources: z.array(z.string()).default([]),
   }),
 });
 

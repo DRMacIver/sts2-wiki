@@ -41,5 +41,18 @@ const { relic } = Astro.props;
     {relic.data.flavor && (
       <p style="margin-top: 1rem; color: var(--text-muted); font-style: italic;">{relic.data.flavor}</p>
     )}
+
+    <table class="stat-table" style="margin-top: 1.5rem;">
+      <tr><th>Rarity</th><td>{relic.data.rarity}</td></tr>
+      {relic.data.character && (
+        <tr><th>Character</th><td>{relic.data.character} only</td></tr>
+      )}
+      {relic.data.pool && relic.data.pool !== 'Shared' && relic.data.pool !== 'Unknown' && !relic.data.character && (
+        <tr><th>Pool</th><td>{relic.data.pool}</td></tr>
+      )}
+      {relic.data.sources.length > 0 && (
+        <tr><th>Sources</th><td>{relic.data.sources.join(', ')}</td></tr>
+      )}
+    </table>
   </div>
 </BaseLayout>

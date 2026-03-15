@@ -29,7 +29,10 @@
     "loc_key": "ALCHEMICAL_COFFER",
     "title": "Alchemical Coffer",
     "description": "Upon pickup, gain {PotionSlots} potion slots filled with random potions.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "AmethystAubergine",
@@ -77,7 +80,10 @@
     "loc_key": "ARCANE_SCROLL",
     "title": "Arcane Scroll",
     "description": "Upon pickup, obtain a random Rare Card to add to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "ArchaicTooth",
@@ -87,7 +93,10 @@
     "loc_key": "ARCHAIC_TOOTH",
     "title": "Archaic Tooth",
     "description": "Upon pickup, Transform {StarterCard.StringValue:cond:{StarterCard} into {AncientCard}|a starter card with an ancient version}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "ArtOfWar",
@@ -119,7 +128,10 @@
     "loc_key": "ASTROLABE",
     "title": "Astrolabe",
     "description": "Upon pickup, Transform {Cards} {Cards:plural:card|cards}, then Upgrade them.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "BagOfMarbles",
@@ -187,7 +199,10 @@
     "loc_key": "BEAUTIFUL_BRACELET",
     "title": "Beautiful Bracelet",
     "description": "Upon pickup, choose {Cards} {Cards:plural:card|cards} in your Deck. Enchant them with Swift 3.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "Bellows",
@@ -229,7 +244,8 @@
     "loc_key": "BIG_HAT",
     "title": "Big Hat",
     "description": "At the start of each combat, add {Cards} random Ethereal {Cards:plural:card|cards} into your Hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "BigMushroom",
@@ -249,7 +265,10 @@
     "loc_key": "BIG_MUSHROOM",
     "title": "Big Mushroom",
     "description": "Upon pickup, raise your Max HP by {MaxHp}. At the start of each combat, draw {Cards} fewer {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "HungryForMushrooms"
+    ]
   },
   {
     "class_name": "BiiigHug",
@@ -265,7 +284,10 @@
     "loc_key": "BIIIG_HUG",
     "title": "Biiig Hug",
     "description": "Upon pickup, remove {Cards} cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "BingBong",
@@ -275,7 +297,10 @@
     "loc_key": "BING_BONG",
     "title": "Bing Bong",
     "description": "Whenever you add a card to your Deck, add one additional copy.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DollRoom"
+    ]
   },
   {
     "class_name": "BlackBlood",
@@ -301,7 +326,10 @@
     "loc_key": "BLACK_STAR",
     "title": "Black Star",
     "description": "Elites drop an additional Relic when defeated.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "BlessedAntler",
@@ -321,7 +349,10 @@
     "loc_key": "BLESSED_ANTLER",
     "title": "Blessed Antler",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. At the start of each combat, shuffle {Cards} Dazed into your Draw Pile.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "BloodSoakedRose",
@@ -337,7 +368,10 @@
     "loc_key": "BLOOD_SOAKED_ROSE",
     "title": "Blood-Soaked Rose",
     "description": "Upon pickup, add 1 Enthralled to your Deck. Gain {Energy:energyIcons()} at the start of each turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "BloodVial",
@@ -369,7 +403,8 @@
     "loc_key": "BONE_FLUTE",
     "title": "Bone Flute",
     "description": "Whenever Osty attacks, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "BoneTea",
@@ -379,7 +414,10 @@
     "loc_key": "BONE_TEA",
     "title": "Bone Tea",
     "description": "At the start of the next {Combats:plural:combat|{} combats}, Upgrade your starting hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TeaMaster"
+    ]
   },
   {
     "class_name": "BookOfFiveRings",
@@ -415,7 +453,8 @@
     "loc_key": "BOOK_REPAIR_KNIFE",
     "title": "Book Repair Knife",
     "description": "Whenever a non-Minion enemy dies to Doom, heal {Heal} HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "Bookmark",
@@ -425,7 +464,8 @@
     "loc_key": "BOOKMARK",
     "title": "Bookmark",
     "description": "At the end of each turn, lower the cost of a random Retained card by 1 until played.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "BoomingConch",
@@ -441,7 +481,10 @@
     "loc_key": "BOOMING_CONCH",
     "title": "Booming Conch",
     "description": "At the start of Elite combats, draw {Cards} additional {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "BoundPhylactery",
@@ -457,7 +500,8 @@
     "loc_key": "BOUND_PHYLACTERY",
     "title": "Bound Phylactery",
     "description": "At the start of your turn, Summon {Summon}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "BowlerHat",
@@ -493,7 +537,10 @@
     "loc_key": "BRILLIANT_SCARF",
     "title": "Brilliant Scarf",
     "description": "The 5th card you play each turn is free.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "Brimstone",
@@ -503,7 +550,8 @@
     "loc_key": "BRIMSTONE",
     "title": "Brimstone",
     "description": "At the start of your turn, gain {SelfStrength} Strength and ALL enemies gain {EnemyStrength} Strength.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "BronzeScales",
@@ -535,7 +583,8 @@
     "loc_key": "BURNING_BLOOD",
     "title": "Burning Blood",
     "description": "At the end of combat, heal {Heal} HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "BurningSticks",
@@ -571,7 +620,10 @@
     "loc_key": "CALLING_BELL",
     "title": "Calling Bell",
     "description": "Upon pickup, obtain a unique Curse and {Relics} Relics.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "Candelabra",
@@ -667,7 +719,8 @@
     "loc_key": "CHARONS_ASHES",
     "title": "Charon's Ashes",
     "description": "Whenever you Exhaust a card, deal {Damage} damage to ALL enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "ChemicalX",
@@ -699,7 +752,10 @@
     "loc_key": "CHOICES_PARADOX",
     "title": "Choices Paradox",
     "description": "At the start of each combat, add 1 of {Cards} random cards into your Hand. Add Retain to the chosen card.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "ChosenCheese",
@@ -741,7 +797,10 @@
     "loc_key": "CLAWS",
     "title": "Claws",
     "description": "Upon pickup, Transform up to {Cards} {Cards:plural:card|cards} into Maul.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "CloakClasp",
@@ -773,7 +832,8 @@
     "loc_key": "CRACKED_CORE",
     "title": "Cracked Core",
     "description": "At the start of each combat, Channel {Lightning} Lightning.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "Crossbow",
@@ -783,7 +843,10 @@
     "loc_key": "CROSSBOW",
     "title": "Crossbow",
     "description": "At the start of your turn, add a random Attack into your Hand. It costs 0{energyPrefix:energyIcons(1)} this turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "CursedPearl",
@@ -799,7 +862,10 @@
     "loc_key": "CURSED_PEARL",
     "title": "Cursed Pearl",
     "description": "Upon pickup, receive Greed. Gain {Gold} Gold.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "DarkstonePeriapt",
@@ -815,7 +881,10 @@
     "loc_key": "DARKSTONE_PERIAPT",
     "title": "Darkstone Periapt",
     "description": "Whenever you obtain a Curse, raise your Max HP by {MaxHp}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
   },
   {
     "class_name": "DataDisk",
@@ -831,7 +900,8 @@
     "loc_key": "DATA_DISK",
     "title": "Data Disk",
     "description": "Start each combat with {FocusPower} Focus.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "DaughterOfTheWind",
@@ -847,7 +917,10 @@
     "loc_key": "DAUGHTER_OF_THE_WIND",
     "title": "Daughter of the Wind",
     "description": "Whenever you play an Attack, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DollRoom"
+    ]
   },
   {
     "class_name": "DelicateFrond",
@@ -857,7 +930,10 @@
     "loc_key": "DELICATE_FROND",
     "title": "Delicate Frond",
     "description": "At the start of each combat, fill all empty potion slots with random potions.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "DemonTongue",
@@ -867,7 +943,8 @@
     "loc_key": "DEMON_TONGUE",
     "title": "Demon Tongue",
     "description": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "DiamondDiadem",
@@ -883,7 +960,10 @@
     "loc_key": "DIAMOND_DIADEM",
     "title": "Diamond Diadem",
     "description": "Whenever you play {CardThreshold} or fewer cards in a turn, take half damage from enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "DingyRug",
@@ -913,7 +993,10 @@
     "loc_key": "DISTINGUISHED_CAPE",
     "title": "Distinguished Cape",
     "description": "Upon pickup, lose 9 Max HP. Add {Cards} {Cards:plural:Apparition|Apparitions} to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "DivineDestiny",
@@ -945,7 +1028,8 @@
     "loc_key": "DIVINE_RIGHT",
     "title": "Divine Right",
     "description": "At the start of each combat, gain {Stars:starIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "DollysMirror",
@@ -981,7 +1065,10 @@
     "loc_key": "DREAM_CATCHER",
     "title": "Dream Catcher",
     "description": "Whenever you Rest, you may add a card to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
   },
   {
     "class_name": "Driftwood",
@@ -991,7 +1078,10 @@
     "loc_key": "DRIFTWOOD",
     "title": "Driftwood",
     "description": "You may reroll each card reward once.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "DustyTome",
@@ -1001,7 +1091,10 @@
     "loc_key": "DUSTY_TOME",
     "title": "Dusty Tome",
     "description": "Upon pickup, obtain {AncientCard.StringValue:cond:{}|an Ancient Card}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "Ectoplasm",
@@ -1017,7 +1110,10 @@
     "loc_key": "ECTOPLASM",
     "title": "Ectoplasm",
     "description": "You can no longer gain Gold. Gain {Energy:energyIcons()} at the start of each turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "ElectricShrymp",
@@ -1027,7 +1123,10 @@
     "loc_key": "ELECTRIC_SHRYMP",
     "title": "Electric Shrymp",
     "description": "Upon pickup, Enchant a Skill with Imbued.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "EmberTea",
@@ -1043,7 +1142,10 @@
     "loc_key": "EMBER_TEA",
     "title": "Ember Tea",
     "description": "At the start of the next {Combats:plural:combat|{} combats}, gain {StrengthPower} Strength.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TeaMaster"
+    ]
   },
   {
     "class_name": "EmotionChip",
@@ -1053,7 +1155,8 @@
     "loc_key": "EMOTION_CHIP",
     "title": "Emotion Chip",
     "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "EmptyCage",
@@ -1069,7 +1172,10 @@
     "loc_key": "EMPTY_CAGE",
     "title": "Empty Cage",
     "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "EternalFeather",
@@ -1105,7 +1211,10 @@
     "loc_key": "FAKE_ANCHOR",
     "title": "Anchor???",
     "description": "Start each combat with {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeBloodVial",
@@ -1121,7 +1230,10 @@
     "loc_key": "FAKE_BLOOD_VIAL",
     "title": "Blood Vial???",
     "description": "At the start of each combat, heal {Heal} HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeHappyFlower",
@@ -1141,7 +1253,10 @@
     "loc_key": "FAKE_HAPPY_FLOWER",
     "title": "Happy Flower???",
     "description": "Every {Turns} {Turns:plural:turn|turns}, gain {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeLeesWaffle",
@@ -1157,7 +1272,10 @@
     "loc_key": "FAKE_LEES_WAFFLE",
     "title": "Lee's Waffle???",
     "description": "Upon pickup, heal {Heal}% of your HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeMango",
@@ -1173,7 +1291,10 @@
     "loc_key": "FAKE_MANGO",
     "title": "Mango???",
     "description": "Upon pickup, raise your Max HP by {MaxHp}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeMerchantsRug",
@@ -1183,7 +1304,10 @@
     "loc_key": "FAKE_MERCHANTS_RUG",
     "title": "The Merchant's Rug???",
     "description": "Poor imitation. Does nothing.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeOrichalcum",
@@ -1199,7 +1323,10 @@
     "loc_key": "FAKE_ORICHALCUM",
     "title": "Orichalcum???",
     "description": "If you end your turn without Block, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeSneckoEye",
@@ -1209,7 +1336,10 @@
     "loc_key": "FAKE_SNECKO_EYE",
     "title": "Snecko Eye???",
     "description": "Start each combat Confused.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeStrikeDummy",
@@ -1225,7 +1355,10 @@
     "loc_key": "FAKE_STRIKE_DUMMY",
     "title": "Strike Dummy???",
     "description": "Cards containing \u201cStrike\u201d deal {ExtraDamage} additional damage.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FakeVenerableTeaSet",
@@ -1241,7 +1374,10 @@
     "loc_key": "FAKE_VENERABLE_TEA_SET",
     "title": "Venerable Tea Set???",
     "description": "Whenever you enter a Rest Site, start the next combat with an additional {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
   },
   {
     "class_name": "FencingManual",
@@ -1257,7 +1393,8 @@
     "loc_key": "FENCING_MANUAL",
     "title": "Fencing Manual",
     "description": "At the start of each combat, Forge {Forge}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "FestivePopper",
@@ -1289,7 +1426,10 @@
     "loc_key": "FIDDLE",
     "title": "Fiddle",
     "description": "At the start of each turn, draw {Cards} additional {Cards:plural:card|cards}. You may not draw cards during your turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "ForgottenSoul",
@@ -1305,7 +1445,10 @@
     "loc_key": "FORGOTTEN_SOUL",
     "title": "Forgotten Soul",
     "description": "Whenever you Exhaust a card, deal {Damage} damage to a random enemy.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "GraveOfTheForgotten"
+    ]
   },
   {
     "class_name": "FragrantMushroom",
@@ -1325,7 +1468,10 @@
     "loc_key": "FRAGRANT_MUSHROOM",
     "title": "Fragrant Mushroom",
     "description": "Upon pickup, lose {HpLoss} HP and Upgrade {Cards} random {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "HungryForMushrooms"
+    ]
   },
   {
     "class_name": "FresnelLens",
@@ -1341,7 +1487,10 @@
     "loc_key": "FRESNEL_LENS",
     "title": "Fresnel Lens",
     "description": "Whenever you add a card that gains Block to your Deck, Enchant it with Nimble {NimbleAmount}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DrowningBeacon"
+    ]
   },
   {
     "class_name": "FrozenEgg",
@@ -1367,7 +1516,8 @@
     "loc_key": "FUNERARY_MASK",
     "title": "Funerary Mask",
     "description": "At the start of each combat, add {Cards} {Cards:plural:Soul|Souls} into your Draw Pile.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "FurCoat",
@@ -1383,7 +1533,10 @@
     "loc_key": "FUR_COAT",
     "title": "Fur Coat",
     "description": "Upon pickup, mark {Combats} random combats. Enemies in those rooms have 1 HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "GalacticDust",
@@ -1403,7 +1556,8 @@
     "loc_key": "GALACTIC_DUST",
     "title": "Galactic Dust",
     "description": "For every {Stars} {singleStarIcon} spent, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "GamblingChip",
@@ -1459,7 +1613,10 @@
     "loc_key": "GLASS_EYE",
     "title": "Glass Eye",
     "description": "Upon pickup, obtain 2 Common cards, 2 Uncommon cards, and 1 Rare card.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "Glitter",
@@ -1469,7 +1626,10 @@
     "loc_key": "GLITTER",
     "title": "Glitter",
     "description": "Enchant all card rewards with Glam.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "GnarledHammer",
@@ -1499,7 +1659,8 @@
     "loc_key": "GOLD_PLATED_CABLES",
     "title": "Gold-Plated Cables",
     "description": "Your rightmost Orb triggers its passive an additional time.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "GoldenCompass",
@@ -1509,7 +1670,10 @@
     "loc_key": "GOLDEN_COMPASS",
     "title": "Golden Compass",
     "description": "Upon pickup, replace the Act 2 Map with a single special path.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "GoldenPearl",
@@ -1525,7 +1689,10 @@
     "loc_key": "GOLDEN_PEARL",
     "title": "Golden Pearl",
     "description": "Upon pickup, gain {Gold} Gold.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "Gorget",
@@ -1577,7 +1744,10 @@
     "loc_key": "HAND_DRILL",
     "title": "Hand Drill",
     "description": "Whenever you break an enemy's Block, apply {VulnerablePower} Vulnerable.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
   },
   {
     "class_name": "HappyFlower",
@@ -1613,7 +1783,8 @@
     "loc_key": "HELICAL_DART",
     "title": "Helical Dart",
     "description": "Whenever you play a Shiv, gain {DexterityPower} Dexterity this turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "HistoryCourse",
@@ -1623,7 +1794,10 @@
     "loc_key": "HISTORY_COURSE",
     "title": "History Course",
     "description": "At the start of your turn, play a copy of your last played Attack or Skill.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "WarHistorianRepy"
+    ]
   },
   {
     "class_name": "HornCleat",
@@ -1701,7 +1875,10 @@
     "loc_key": "IRON_CLUB",
     "title": "Iron Club",
     "description": "Every {Cards} {Cards:plural:card|cards} you play, draw 1 card.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "IvoryTile",
@@ -1717,7 +1894,8 @@
     "loc_key": "IVORY_TILE",
     "title": "Ivory Tile",
     "description": "Whenever you play a card that costs {EnergyThreshold:energyIcons()} or more, gain {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "JeweledMask",
@@ -1727,7 +1905,10 @@
     "loc_key": "JEWELED_MASK",
     "title": "Jeweled Mask",
     "description": "At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "JewelryBox",
@@ -1737,7 +1918,10 @@
     "loc_key": "JEWELRY_BOX",
     "title": "Jewelry Box",
     "description": "Upon pickup, add 1 Apotheosis to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "JossPaper",
@@ -1849,7 +2033,10 @@
     "loc_key": "LARGE_CAPSULE",
     "title": "Large Capsule",
     "description": "Upon pickup, obtain {Relics} random {Relics:plural:Relic|Relics}. Add an additional Strike and Defend to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "LastingCandy",
@@ -1885,7 +2072,10 @@
     "loc_key": "LAVA_ROCK",
     "title": "Lava Rock",
     "description": "The Act 1 Boss drops {Relics} Relics.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "LeadPaperweight",
@@ -1895,7 +2085,10 @@
     "loc_key": "LEAD_PAPERWEIGHT",
     "title": "Lead Paperweight",
     "description": "Upon pickup, choose 1 of 2 Colorless cards to add to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "LeafyPoultice",
@@ -1911,7 +2104,10 @@
     "loc_key": "LEAFY_POULTICE",
     "title": "Leafy Poultice",
     "description": "Upon pickup, Transform 1 of your Strikes and 1 of your Defends and lose {MaxHp} Max HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "LeesWaffle",
@@ -1979,7 +2175,10 @@
     "loc_key": "LOOMING_FRUIT",
     "title": "Looming Fruit",
     "description": "Upon pickup, raise your Max HP by {MaxHp}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "LordsParasol",
@@ -1989,7 +2188,10 @@
     "loc_key": "LORDS_PARASOL",
     "title": "Lord's Parasol",
     "description": "When you encounter the Merchant, immediately obtain EVERYTHING he sells.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "LostCoffer",
@@ -1999,7 +2201,10 @@
     "loc_key": "LOST_COFFER",
     "title": "Lost Coffer",
     "description": "Upon pickup, gain 1 card reward and procure 1 random potion.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "LostWisp",
@@ -2047,7 +2252,8 @@
     "loc_key": "LUNAR_PASTRY",
     "title": "Lunar Pastry",
     "description": "At the end of your turn, gain {Stars:starIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "Mango",
@@ -2073,7 +2279,10 @@
     "loc_key": "MASSIVE_SCROLL",
     "title": "Massive Scroll",
     "description": "Upon pickup, choose 1 of 3 Multiplayer Colorless Cards to add to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "MawBank",
@@ -2089,7 +2298,10 @@
     "loc_key": "MAW_BANK",
     "title": "Maw Bank",
     "description": "Whenever you climb a floor, gain {Gold} Gold. No longer works when you spend any Gold at the shop.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
   },
   {
     "class_name": "MealTicket",
@@ -2115,7 +2327,10 @@
     "loc_key": "MEAT_CLEAVER",
     "title": "Meat Cleaver",
     "description": "You may Cook at Rest Sites.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "MeatOnTheBone",
@@ -2187,7 +2402,8 @@
     "loc_key": "METRONOME",
     "title": "Metronome",
     "description": "The first time you Channel {OrbCount} Orbs each combat, deal {Damage} damage to ALL enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "MiniRegent",
@@ -2203,7 +2419,8 @@
     "loc_key": "MINI_REGENT",
     "title": "Mini Regent",
     "description": "The first time you spend {singleStarIcon} each turn, gain {StrengthPower} Strength.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "MiniatureCannon",
@@ -2249,7 +2466,10 @@
     "loc_key": "MR_STRUGGLES",
     "title": "Mr. Struggles",
     "description": "At the start of your turn, deal damage equal to the turn number to ALL enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DollRoom"
+    ]
   },
   {
     "class_name": "MummifiedHand",
@@ -2269,7 +2489,10 @@
     "loc_key": "MUSIC_BOX",
     "title": "Music Box",
     "description": "Create an Ethereal copy of the first Attack you play each turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "MysticLighter",
@@ -2295,7 +2518,10 @@
     "loc_key": "NEOWS_TORMENT",
     "title": "Neow's Torment",
     "description": "Upon pickup, add 1 Neow's Fury to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "NewLeaf",
@@ -2311,7 +2537,10 @@
     "loc_key": "NEW_LEAF",
     "title": "New Leaf",
     "description": "Upon pickup, Transform {Cards} {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "NinjaScroll",
@@ -2327,7 +2556,8 @@
     "loc_key": "NINJA_SCROLL",
     "title": "Ninja Scroll",
     "description": "At the start of each combat, add {Shivs} {Shivs:plural:Shiv|Shivs} into your Hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "Nunchaku",
@@ -2363,7 +2593,10 @@
     "loc_key": "NUTRITIOUS_OYSTER",
     "title": "Nutritious Oyster",
     "description": "Upon pickup, raise your Max HP by {MaxHp}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "NutritiousSoup",
@@ -2373,7 +2606,10 @@
     "loc_key": "NUTRITIOUS_SOUP",
     "title": "Nutritious Soup",
     "description": "Upon pickup, Enchant all Strikes in your Deck with Tezcatara's Ember.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "OddlySmoothStone",
@@ -2421,7 +2657,8 @@
     "loc_key": "ORANGE_DOUGH",
     "title": "Orange Dough",
     "description": "At the start of each combat, add {Cards} random Colorless {Cards:plural:card|cards} into your Hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "Orichalcum",
@@ -2489,7 +2726,10 @@
     "loc_key": "PAELS_BLOOD",
     "title": "Pael's Blood",
     "description": "At the start of your turn, draw {Cards} additional {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsClaw",
@@ -2505,7 +2745,10 @@
     "loc_key": "PAELS_CLAW",
     "title": "Pael's Claw",
     "description": "Upon pickup, Enchant all Defends with {EnchantmentName}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsEye",
@@ -2515,7 +2758,10 @@
     "loc_key": "PAELS_EYE",
     "title": "Pael's Eye",
     "description": "The first time each combat you end your turn without playing cards, Exhaust your Hand, and take an extra turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsFlesh",
@@ -2531,7 +2777,10 @@
     "loc_key": "PAELS_FLESH",
     "title": "Pael's Flesh",
     "description": "Gain an additional {Energy:energyIcons()} at the start of your 3rd turn, and every turn after that.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsGrowth",
@@ -2541,7 +2790,10 @@
     "loc_key": "PAELS_GROWTH",
     "title": "Pael's Growth",
     "description": "Upon pickup, Enchant a card with {EnchantmentName}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsHorn",
@@ -2551,7 +2803,10 @@
     "loc_key": "PAELS_HORN",
     "title": "Pael's Horn",
     "description": "Upon pickup, add 2 Relax to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsLegion",
@@ -2567,7 +2822,10 @@
     "loc_key": "PAELS_LEGION",
     "title": "Pael's Legion",
     "description": "Doubles Block gained from a card, then goes to sleep for {Turns} {Turns:plural:turn|turns}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsTears",
@@ -2583,7 +2841,10 @@
     "loc_key": "PAELS_TEARS",
     "title": "Pael's Tears",
     "description": "If you end your turn with unspent {energyPrefix:energyIcons(1)}, gain an additional {Energy:energyIcons()} next turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsTooth",
@@ -2599,7 +2860,10 @@
     "loc_key": "PAELS_TOOTH",
     "title": "Pael's Tooth",
     "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards in the Pot:\n{}|}",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PaelsWing",
@@ -2615,7 +2879,10 @@
     "loc_key": "PAELS_WING",
     "title": "Pael's Wing",
     "description": "You may sacrifice card rewards to Pael. Every {Sacrifices:plural:sacrifice|{} sacrifices}, obtain a Relic.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
   },
   {
     "class_name": "PandorasBox",
@@ -2625,7 +2892,10 @@
     "loc_key": "PANDORAS_BOX",
     "title": "Pandora's Box",
     "description": "Transform ALL Strikes and Defends.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "Pantograph",
@@ -2651,7 +2921,8 @@
     "loc_key": "PAPER_KRANE",
     "title": "Paper Krane",
     "description": "Enemies with Weak deal 40% less damage to you rather than 25%.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "PaperPhrog",
@@ -2661,7 +2932,8 @@
     "loc_key": "PAPER_PHROG",
     "title": "Paper Phrog",
     "description": "Enemies with Vulnerable take 75% more damage rather than 50%.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "ParryingShield",
@@ -2763,7 +3035,10 @@
     "loc_key": "PHILOSOPHERS_STONE",
     "title": "Philosopher's Stone",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. ALL enemies start combat with {StrengthPower} Strength.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "PhylacteryUnbound",
@@ -2845,7 +3120,10 @@
     "loc_key": "POMANDER",
     "title": "Pomander",
     "description": "Upon pickup, Upgrade a card.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "PotionBelt",
@@ -2877,7 +3155,8 @@
     "loc_key": "POWER_CELL",
     "title": "Power Cell",
     "description": "At the start of each combat, add {Cards} zero-cost cards from your Draw Pile into your Hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "PrayerWheel",
@@ -2907,7 +3186,10 @@
     "loc_key": "PRECARIOUS_SHEARS",
     "title": "Precarious Shears",
     "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck and take {Damage} damage.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "PreciseScissors",
@@ -2923,7 +3205,10 @@
     "loc_key": "PRECISE_SCISSORS",
     "title": "Precise Scissors",
     "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "PreservedFog",
@@ -2939,7 +3224,10 @@
     "loc_key": "PRESERVED_FOG",
     "title": "Preserved Fog",
     "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck. Add Folly to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "PrismaticGem",
@@ -2955,7 +3243,10 @@
     "loc_key": "PRISMATIC_GEM",
     "title": "Prismatic Gem",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. Card rewards now contain cards from other colors.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "PumpkinCandle",
@@ -2971,7 +3262,10 @@
     "loc_key": "PUMPKIN_CANDLE",
     "title": "Pumpkin Candle",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. Extinguishes at the start of Act 3.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "PunchDagger",
@@ -3003,7 +3297,10 @@
     "loc_key": "RADIANT_PEARL",
     "title": "Radiant Pearl",
     "description": "At the start of each combat, add {Cards} {Cards:plural:Luminesce|Luminesces} into your Hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "RainbowRing",
@@ -3069,7 +3366,8 @@
     "loc_key": "RED_SKULL",
     "title": "Red Skull",
     "description": "While your HP is at or below {HpThreshold}%, you have {StrengthPower} additional Strength.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "RegalPillow",
@@ -3101,7 +3399,8 @@
     "loc_key": "REGALITE",
     "title": "Regalite",
     "description": "Whenever you create a Colorless card, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "ReptileTrinket",
@@ -3153,7 +3452,8 @@
     "loc_key": "RING_OF_THE_SNAKE",
     "title": "Ring of the Snake",
     "description": "At the start of each combat, draw {Cards} additional {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "RingingTriangle",
@@ -3195,7 +3495,10 @@
     "loc_key": "ROYAL_POISON",
     "title": "Royal Poison",
     "description": "At the start of each combat, lose {Damage} HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "RoundTeaParty"
+    ]
   },
   {
     "class_name": "RoyalStamp",
@@ -3221,7 +3524,8 @@
     "loc_key": "RUINED_HELMET",
     "title": "Ruined Helmet",
     "description": "The first time you gain Strength each combat, double the amount gained.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "RunicCapacitor",
@@ -3237,7 +3541,8 @@
     "loc_key": "RUNIC_CAPACITOR",
     "title": "Runic Capacitor",
     "description": "Start each combat with {Repeat} additional Orb Slots.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "RunicPyramid",
@@ -3247,7 +3552,10 @@
     "loc_key": "RUNIC_PYRAMID",
     "title": "Runic Pyramid",
     "description": "At the end of your turn, you no longer discard your Hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "Sai",
@@ -3263,7 +3571,10 @@
     "loc_key": "SAI",
     "title": "Sai",
     "description": "At the start of your turn, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "SandCastle",
@@ -3279,7 +3590,10 @@
     "loc_key": "SAND_CASTLE",
     "title": "Sand Castle",
     "description": "Upon pickup, Upgrade {Cards} random {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "ScreamingFlagon",
@@ -3305,7 +3619,10 @@
     "loc_key": "SCROLL_BOXES",
     "title": "Scroll Boxes",
     "description": "Upon pickup, lose all Gold and choose 1 of 2 packs of cards to add to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "SeaGlass",
@@ -3321,7 +3638,10 @@
     "loc_key": "SEA_GLASS",
     "title": "Sea Glass",
     "description": "See {Cards} cards from {Character.StringValue:cond:{}|another character}. Choose any number of them to add to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "SealOfGold",
@@ -3341,7 +3661,10 @@
     "loc_key": "SEAL_OF_GOLD",
     "title": "Seal of Gold",
     "description": "At the start of your turn, spend {Gold} Gold to gain {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "SelfFormingClay",
@@ -3357,7 +3680,8 @@
     "loc_key": "SELF_FORMING_CLAY",
     "title": "Self-Forming Clay",
     "description": "Whenever you lose HP in combat, gain {BlockNextTurn} Block next turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
   },
   {
     "class_name": "SereTalon",
@@ -3377,7 +3701,10 @@
     "loc_key": "SERE_TALON",
     "title": "Sere Talon",
     "description": "Upon pickup, add {Curses} random Curses and {Wishes} Wishes to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "Shovel",
@@ -3423,7 +3750,10 @@
     "loc_key": "SIGNET_RING",
     "title": "Signet Ring",
     "description": "Upon pickup, gain {Gold} Gold.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
   },
   {
     "class_name": "SilverCrucible",
@@ -3439,7 +3769,10 @@
     "loc_key": "SILVER_CRUCIBLE",
     "title": "Silver Crucible",
     "description": "The first {Cards} card rewards you see are Upgraded. The first Treasure Chest you open is empty.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "SlingOfCourage",
@@ -3465,7 +3798,10 @@
     "loc_key": "SMALL_CAPSULE",
     "title": "Small Capsule",
     "description": "Upon pickup, obtain a random Relic.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "SneckoEye",
@@ -3481,7 +3817,10 @@
     "loc_key": "SNECKO_EYE",
     "title": "Snecko Eye",
     "description": "At the start of your turn, draw {Cards} additional {Cards:plural:card|cards}. Start each combat Confused.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "SneckoSkull",
@@ -3497,7 +3836,8 @@
     "loc_key": "SNECKO_SKULL",
     "title": "Snecko Skull",
     "description": "Whenever you apply Poison, apply an additional {PoisonPower} Poison.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "Sozu",
@@ -3513,7 +3853,10 @@
     "loc_key": "SOZU",
     "title": "Sozu",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. You can no longer obtain potions.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "SparklingRouge",
@@ -3549,7 +3892,10 @@
     "loc_key": "SPIKED_GAUNTLETS",
     "title": "Spiked Gauntlets",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. Powers cost 1 more {energyPrefix:energyIcons(1)}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "StoneCalendar",
@@ -3601,7 +3947,10 @@
     "loc_key": "STONE_HUMIDIFIER",
     "title": "Stone Humidifier",
     "description": "Whenever you Rest at a Rest Site, raise your Max HP by {MaxHp}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
   },
   {
     "class_name": "Storybook",
@@ -3611,7 +3960,10 @@
     "loc_key": "STORYBOOK",
     "title": "Storybook",
     "description": "Upon pickup, add 1 Brightest Flame to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "Strawberry",
@@ -3691,7 +4043,10 @@
     "loc_key": "SWORD_OF_STONE",
     "title": "Sword of Stone",
     "description": "Transforms into a powerful Relic after defeating {Elites} {Elites:plural:Elite|Elites}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "SunkenStatue"
+    ]
   },
   {
     "class_name": "SymbioticVirus",
@@ -3707,7 +4062,8 @@
     "loc_key": "SYMBIOTIC_VIRUS",
     "title": "Symbiotic Virus",
     "description": "At the start of each combat, Channel {Dark} Dark.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
   },
   {
     "class_name": "TanxsWhistle",
@@ -3717,7 +4073,10 @@
     "loc_key": "TANXS_WHISTLE",
     "title": "Tanx's Whistle",
     "description": "Upon pickup, add 1 Whistle to your Deck.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "TeaOfDiscourtesy",
@@ -3737,7 +4096,10 @@
     "loc_key": "TEA_OF_DISCOURTESY",
     "title": "Tea of Discourtesy",
     "description": "At the start of the next combat, shuffle {DazedCount} Dazed into your Draw Pile.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TeaMaster"
+    ]
   },
   {
     "class_name": "TheAbacus",
@@ -3773,7 +4135,10 @@
     "loc_key": "THE_BOOT",
     "title": "The Boot",
     "description": "Whenever you would deal {DamageThreshold} or less unblocked attack damage, increase it to {DamageMinimum}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
   },
   {
     "class_name": "TheCourier",
@@ -3799,7 +4164,10 @@
     "loc_key": "THROWING_AXE",
     "title": "Throwing Axe",
     "description": "The first card you play each combat is played an extra time.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "Tingsha",
@@ -3815,7 +4183,8 @@
     "loc_key": "TINGSHA",
     "title": "Tingsha",
     "description": "Whenever you discard a card during your turn, deal {Damage} damage to a random enemy for each card discarded.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "TinyMailbox",
@@ -3841,7 +4210,10 @@
     "loc_key": "TOASTY_MITTENS",
     "title": "Toasty Mittens",
     "description": "At the start of your turn, Exhaust the top card of your Draw Pile and gain {StrengthPower} Strength.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "Toolbox",
@@ -3867,7 +4239,10 @@
     "loc_key": "TOUCH_OF_OROBAS",
     "title": "Touch of Orobas",
     "description": "Upon pickup, replace {StarterRelic.StringValue:cond:{StarterRelic} with {UpgradedRelic}|your starter Relic with an Ancient version}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
   },
   {
     "class_name": "ToughBandages",
@@ -3883,7 +4258,8 @@
     "loc_key": "TOUGH_BANDAGES",
     "title": "Tough Bandages",
     "description": "Whenever you discard a card during your turn, gain {Block} Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "ToxicEgg",
@@ -3913,7 +4289,10 @@
     "loc_key": "TOY_BOX",
     "title": "Toy Box",
     "description": "Upon pickup, obtain {Relics} Wax {Relics:plural:Relic|Relics}. Every {Combats} {Combats:plural:combat|combats}, your left-most Wax Relic will melt away.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "TriBoomerang",
@@ -3929,7 +4308,10 @@
     "loc_key": "TRI_BOOMERANG",
     "title": "Tri-Boomerang",
     "description": "Choose {Cards} {Cards:plural:Attack|Attacks} in your Deck. Enchant them with Instinct.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "TungstenRod",
@@ -3981,7 +4363,8 @@
     "loc_key": "TWISTED_FUNNEL",
     "title": "Twisted Funnel",
     "description": "At the start of each combat, apply {PoisonPower} Poison to ALL enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
   },
   {
     "class_name": "UnceasingTop",
@@ -4001,7 +4384,8 @@
     "loc_key": "UNDYING_SIGIL",
     "title": "Undying Sigil",
     "description": "Enemies with at least as much Doom as HP deal 50% less damage.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
   },
   {
     "class_name": "UnsettlingLamp",
@@ -4057,7 +4441,10 @@
     "loc_key": "VELVET_CHOKER",
     "title": "Velvet Choker",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. You cannot play more than {Cards} {Cards:plural:card|cards} per turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
   },
   {
     "class_name": "VenerableTeaSet",
@@ -4089,7 +4476,10 @@
     "loc_key": "VERY_HOT_COCOA",
     "title": "Very Hot Cocoa",
     "description": "Start each combat with an additional {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   },
   {
     "class_name": "VexingPuzzlebox",
@@ -4109,7 +4499,8 @@
     "loc_key": "VITRUVIAN_MINION",
     "title": "Vitruvian Minion",
     "description": "Cards containing \u201cMinion\u201d deal double damage and gain double Block.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
   },
   {
     "class_name": "WarHammer",
@@ -4125,7 +4516,10 @@
     "loc_key": "WAR_HAMMER",
     "title": "War Hammer",
     "description": "Whenever you kill an Elite, Upgrade {Cards} random {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
   },
   {
     "class_name": "WarPaint",
@@ -4173,7 +4567,10 @@
     "loc_key": "WHISPERING_EARRING",
     "title": "Whispering Earring",
     "description": "Gain {Energy:energyIcons()} at the start of each turn. Vakuu plays your first turn for you.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
   },
   {
     "class_name": "WhiteBeastStatue",
@@ -4255,6 +4652,9 @@
     "loc_key": "YUMMY_COOKIE",
     "title": "Yummy Cookie",
     "description": "Upon pickup, Upgrade {Cards} {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
   }
 ]

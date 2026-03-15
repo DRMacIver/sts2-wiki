@@ -100,6 +100,8 @@ def main() -> None:
         lines.append(f"description_plain: {escape_yaml(strip_rich_text(raw_desc))}")
         lines.append(f"description_html: {escape_yaml(rich_text_to_html(raw_desc))}")
         lines.append(f"flavor: {escape_yaml(strip_rich_text(relic.get('flavor', '')))}")
+        lines.append(f"character: {escape_yaml(relic.get('character', ''))}")
+        lines.append(f"sources: {json.dumps(relic.get('sources', []))}")
         lines.append("---")
         lines.append("")
 

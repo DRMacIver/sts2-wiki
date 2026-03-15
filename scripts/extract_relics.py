@@ -86,6 +86,19 @@ def main() -> None:
     loc_data = load_localization(loc_dir, "relics")
     pool_map = build_relic_pool_map(decompiled_dir)
 
+    # Build acquisition map: which ancients/events offer each relic
+    relic_sources: dict[str, list[str]] = {}
+    events_dir = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Models.Events")
+    if os.path.exists(events_dir):
+        for ev_name, ev_content in read_cs_files(events_dir):
+            # Find RelicOption<ClassName>() and ModelDb.Relic<ClassName>()
+            for m in re.finditer(r"(?:RelicOption|ModelDb\.Relic)<(\w+)>", ev_content):
+                relic_class = m.group(1)
+                if relic_class not in relic_sources:
+                    relic_sources[relic_class] = []
+                if ev_name not in relic_sources[relic_class]:
+                    relic_sources[relic_class].append(ev_name)
+
     relics_dir = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Models.Relics")
     relics: list[dict] = []
 
@@ -114,6 +127,15 @@ def main() -> None:
         # Skip deprecated
         if relic["pool"] == "Deprecated":
             continue
+
+        # Acquisition sources
+        sources = relic_sources.get(class_name, [])
+        if sources:
+            relic["sources"] = sources
+
+        # Character lock
+        if relic["pool"] in ("Ironclad", "Silent", "Defect", "Necrobinder", "Regent"):
+            relic["character"] = relic["pool"]
 
         relics.append(relic)
 
