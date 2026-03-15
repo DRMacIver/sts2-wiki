@@ -38,6 +38,49 @@ def strip_tags(desc: str) -> str:
     return strip_rich_text(desc)
 
 
+# Hand-written enrichments for events whose descriptions/options are
+# defined in code rather than localization data.
+_EVENT_ENRICHMENTS: dict[str, dict] = {
+    "FakeMerchant": {
+        "description": (
+            "A suspicious merchant has laid out a rug covered in relics. "
+            "They look familiar, but something is off about them...\n\n"
+            "The merchant sells [gold]fake relics[/gold] — weaker versions "
+            "of real relics — for [gold]50 gold[/gold] each. "
+            "Up to 6 are available from a pool of 9.\n\n"
+            "If you have a [purple]Foul Potion[/purple], you can throw it "
+            "at the merchant to trigger a fight. Defeating The Merchant??? "
+            "(175 HP) rewards [gold]300 gold[/gold], "
+            "[gold]The Merchant's Rug[/gold] relic, and any unsold fake relics."
+        ),
+        "options": [
+            {
+                "title": "Browse Wares",
+                "description": (
+                    "View and buy [gold]fake relics[/gold] for "
+                    "[gold]50 gold[/gold] each. These are weaker versions "
+                    "of existing relics (e.g. Strike Dummy??? deals 1 extra "
+                    "damage instead of 3)."
+                ),
+            },
+            {
+                "title": "Throw [purple]Foul Potion[/purple]",
+                "description": (
+                    "Requires a Foul Potion. Initiates combat with "
+                    "The Merchant??? (175 HP). Rewards: "
+                    "[gold]300 gold[/gold], [gold]The Merchant's Rug???[/gold], "
+                    "and all remaining unsold fake relics."
+                ),
+            },
+            {
+                "title": "Leave",
+                "description": "Walk away.",
+            },
+        ],
+    },
+}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate event content files")
     parser.add_argument("data_dir", help="Path to versioned data directory")
@@ -60,6 +103,19 @@ def main() -> None:
     for event in events:
         slug = slugify(event.get("title", event["class_name"]))
         desc = event.get("description", "")
+
+        # Skip placeholder descriptions
+        if desc.lower() in ("placeholder", "todo", "tbd"):
+            desc = ""
+
+        # Enrich events with code-defined descriptions and options
+        enrichments = _EVENT_ENRICHMENTS.get(event["class_name"])
+        if enrichments:
+            if not desc and enrichments.get("description"):
+                desc = enrichments["description"]
+            if not event.get("options") and enrichments.get("options"):
+                event["options"] = enrichments["options"]
+
         conditions = event.get("conditions", [])
         conditions_str = "; ".join(conditions) if conditions else ""
 

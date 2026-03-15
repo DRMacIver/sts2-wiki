@@ -9,6 +9,7 @@ from scripts.common import (
     class_name_to_loc_key,
     find_loc_key,
     load_localization,
+    parse_canonical_vars,
     read_cs_files,
     write_json,
 )
@@ -173,6 +174,14 @@ def parse_event_vars(content: str, cards_loc: dict[str, str]) -> dict[str, str]:
         content,
     ):
         resolved[m.group(1)] = m.group(2)
+
+    # Also pick up canonical vars (MaxHpVar, GoldVar, HealVar, etc.)
+    for v in parse_canonical_vars(content):
+        vtype = v["type"]
+        resolved[vtype] = str(v["base_value"])
+        # Also register with "Power" suffix stripped
+        if vtype.endswith("Power"):
+            resolved[vtype.removesuffix("Power")] = str(v["base_value"])
 
     return resolved
 

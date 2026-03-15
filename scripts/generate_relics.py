@@ -27,6 +27,35 @@ def escape_yaml(value: str) -> str:
 def _resolve_var(match_str: str, var_lookup: dict[str, int]) -> str:
     """Resolve a {placeholder} in a relic description."""
     inner = match_str[1:-1]
+
+    # Handle {singleStarIcon}
+    if inner == "singleStarIcon":
+        return "[star]"
+
+    # Handle {energyPrefix:energyIcons(N)} — standalone energy icon reference
+    if "energyIcons" in inner:
+        parts = inner.split(":", 1)
+        name = parts[0]
+        fmt = parts[1] if len(parts) > 1 else ""
+        val = var_lookup.get(name)
+        if val is not None:
+            return f"[gold]{val}[/gold] Energy"
+        m = re.search(r"energyIcons\((\d+)\)", fmt)
+        if m:
+            return f"[gold]{m.group(1)}[/gold] Energy"
+        return "Energy"
+
+    # Handle {Name.StringValue:cond:{}|alternative}
+    if ":cond:" in inner:
+        parts = inner.split(":cond:", 1)
+        cond_parts = parts[1].split("|", 1)
+        # Use the non-empty alternative (usually the second part)
+        if len(cond_parts) > 1 and cond_parts[1]:
+            return cond_parts[1]
+        if cond_parts[0] and cond_parts[0] != "{}":
+            return cond_parts[0]
+        return "X"
+
     parts = inner.split(":", 1)
     name = parts[0]
     fmt = parts[1] if len(parts) > 1 else ""
@@ -38,14 +67,22 @@ def _resolve_var(match_str: str, var_lookup: dict[str, int]) -> str:
         if val is not None:
             if val == 1:
                 return plural_parts[0]
-            return plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+            result = plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+            # Replace {} inside plural text with the value
+            return result.replace("{}", str(val))
         return plural_parts[1] if len(plural_parts) > 1 else plural_parts[0]
+
+    # Handle {Name:starIcons()}
+    if "starIcons" in fmt:
+        if val is not None:
+            return f"[gold]{val}[/gold] Stars"
+        return "Stars"
 
     # Handle {Name} or {Name:diff()} etc
     if val is not None:
         return str(val)
 
-    return "?"
+    return "X"
 
 
 def main() -> None:
@@ -101,7 +138,8 @@ def main() -> None:
         lines.append(f"description_html: {escape_yaml(rich_text_to_html(raw_desc))}")
         lines.append(f"flavor: {escape_yaml(strip_rich_text(relic.get('flavor', '')))}")
         lines.append(f"character: {escape_yaml(relic.get('character', ''))}")
-        lines.append(f"sources: {json.dumps(relic.get('sources', []))}")
+        sources = relic.get("sources", [])
+        lines.append(f"sources: {json.dumps(sources)}")
         lines.append("---")
         lines.append("")
 

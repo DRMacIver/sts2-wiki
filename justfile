@@ -82,7 +82,10 @@ extract-epochs:
 extract-events:
     uv run python -m scripts.extract_events decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract: extract-powers extract-epochs extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events
+extract-characters:
+    uv run python -m scripts.extract_characters decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
+extract: extract-powers extract-epochs extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-characters
 
 # --- Site generation ---
 
@@ -113,7 +116,13 @@ generate-events:
 generate-epochs:
     uv run python -m scripts.generate_epochs data/{{version}} site/src/content/epochs
 
-generate: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs
+generate-characters:
+    uv run python -m scripts.generate_characters data/{{version}} site/src/content/characters
+
+generate-ascensions:
+    uv run python -m scripts.generate_ascensions extracted/{{version}}/localization/eng site/src/content/ascensions --decompiled-dir decompiled/{{version}} --data-dir data/{{version}}
+
+generate: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs generate-characters generate-ascensions
 
 site-install:
     cd site && npm install

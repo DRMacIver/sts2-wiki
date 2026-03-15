@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const characters = await getCollection('characters');
+  return characters.map(char => ({
+    params: { slug: char.id },
+    props: { char },
+  }));
+}
+
+const { char } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const iconName = `character_icon_${char.data.class_name.toLowerCase()}`;
+const descLines = char.data.description.split('\n');
+
+// Count cards and relics for this character
+const allCards = await getCollection('cards');
+const allRelics = await getCollection('relics');
+const charCardCount = allCards.filter(c => c.data.character === char.data.class_name).length;
+const charRelics = allRelics.filter(r => r.data.character === char.data.class_name);
+
+// Deduplicate starting deck for display
+const deckCounts: Record<string, { title: string; slug: string; count: number }> = {};
+for (const card of char.data.starting_deck) {
+  if (deckCounts[card.class_name]) {
+    deckCounts[card.class_name].count++;
+  } else {
+    deckCounts[card.class_name] = { title: card.title, slug: card.slug, count: 1 };
+  }
+}
+---
+
+<BaseLayout title={char.data.title}>
+  <div class="card-detail" style="max-width: 900px;">
+    <a href={`${base}characters/`} class="back-link">&larr; All Characters</a>
+
+    <div class="card-header">
+      <div class="item-row" style="align-items: center;">
+        <img src={`${base}images/characters/${iconName}.png`}
+             alt={char.data.title}
+             style="width: 96px; height: 96px; object-fit: contain; flex-shrink: 0;"
+             onerror="this.style.display='none'" />
+        <div>
+          <h1 class={`char-${char.data.class_name.toLowerCase()}`}>
+            {char.data.title}
+          </h1>
+          <div class="desc-text" style="font-size: 1.05rem; margin-top: 0.25rem;">
+            {descLines.map((line, i) => (
+              <>{i > 0 && <br />}{line}</>
+            ))}
+          </div>
+          {char.data.aroma && (
+            <p class="flavor" style="margin-top: 0.5rem;">"{char.data.aroma}"</p>
+          )}
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top: 1.5rem;">
+      <div>
+        <h2 class="section-heading" style="margin-top: 0;">Stats</h2>
+        <table class="stat-table">
+          <tr><th>Starting HP</th><td><span class="desc-red">{char.data.starting_hp}</span></td></tr>
+          <tr><th>Starting Gold</th><td><span class="desc-gold">{char.data.starting_gold}</span></td></tr>
+          {char.data.orb_slots && (
+            <tr><th>Orb Slots</th><td><span class="desc-blue">{char.data.orb_slots}</span></td></tr>
+          )}
+          <tr>
+            <th>Starting Relic</th>
+            <td>
+              <a href={`${base}relics/${char.data.starting_relic.slug}/`}>
+                {char.data.starting_relic.title}
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <h2 class="section-heading" style="margin-top: 0;">Starting Deck</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          {Object.values(deckCounts).map(card => (
+            <a href={`${base}cards/${card.slug}/`} class="tag">
+              {card.count > 1 ? `${card.count}x ` : ''}{card.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-heading" style="margin-top: 2rem;">Cards</h2>
+    <p style="margin-top: 0.5rem;">
+      <a href={`${base}cards/?character=${char.data.class_name}`} class="desc-gold">
+        View all {charCardCount} {char.data.class_name} cards &rarr;
+      </a>
+    </p>
+
+    {charRelics.length > 0 && (
+      <>
+        <h2 class="section-heading" style="margin-top: 2rem;">
+          Exclusive Relics <span style="font-weight: normal; color: var(--text-muted);">({charRelics.length})</span>
+        </h2>
+        <div class="card-grid compact" style="margin-top: 0.5rem;">
+          {charRelics
+            .sort((a, b) => a.data.title.localeCompare(b.data.title))
+            .map(relic => (
+              <a href={`${base}relics/${relic.id}/`} class="card-entry" style="display: flex; gap: 0.5rem; align-items: center; padding: 0.5rem 0.75rem;">
+                <img src={`${base}images/relic_atlas/${relic.data.image}.png`}
+                     alt="" class="item-icon" style="width: 32px; height: 32px;"
+                     onerror="this.style.display='none'" loading="lazy" />
+                <div>
+                  <h3 style="font-size: 0.85rem; margin: 0;">{relic.data.title}</h3>
+                  <div class="card-meta" style="font-size: 0.75rem;">{relic.data.rarity}</div>
+                </div>
+              </a>
+            ))}
+        </div>
+      </>
+    )}
+  </div>
+</BaseLayout>

@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Game Mechanics">
+  <div class="page-header">
+    <h1>Game Mechanics</h1>
+    <p class="subtitle">How things actually work under the hood</p>
+  </div>
+
+  <div style="max-width: 800px; margin: 0 auto;">
+
+    <!-- Card Rewards -->
+    <h2 class="section-heading" id="card-rewards">Card Rewards</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>After combat you're offered <strong>3 cards</strong> to choose from (or skip). The rarity of each card depends on the encounter type:</p>
+    </div>
+    <table class="stat-table" style="margin: 1rem 0;">
+      <thead>
+        <tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Regular fight</strong></td><td>60%</td><td>37%</td><td class="desc-gold">3%</td></tr>
+        <tr><td><strong>Elite fight</strong></td><td>50%</td><td>40%</td><td class="desc-gold">10%</td></tr>
+        <tr><td><strong>Boss fight</strong></td><td>0%</td><td>0%</td><td class="desc-gold">100%</td></tr>
+        <tr><td><strong>Shop</strong></td><td>54%</td><td>37%</td><td class="desc-gold">9%</td></tr>
+      </tbody>
+    </table>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p><strong>Rare pity timer:</strong> There's a hidden counter that starts at &minus;5%. Every time a common card is rolled, it increases by +1%. When a rare card appears, it resets to &minus;5%. This means the longer you go without seeing a rare card, the more likely one becomes (caps at +40%).</p>
+      <p style="margin-top: 0.5rem;"><strong>Upgraded cards:</strong> Card rewards have a chance to be offered pre-upgraded. The chance starts at 0% and increases by 25% per act (so ~25% in Act 2, ~50% in Act 3). Rare cards are never offered upgraded. Shop cards are never upgraded.</p>
+    </div>
+
+    <!-- Potion Drops -->
+    <h2 class="section-heading" id="potions" style="margin-top: 2rem;">Potion Drops</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>The base chance of getting a potion after combat is <strong>40%</strong>. The game uses a self-correcting system:</p>
+      <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <li>If a potion <em>drops</em>: the chance decreases by 10%</li>
+        <li>If a potion <em>doesn't drop</em>: the chance increases by 10%</li>
+      </ul>
+      <p>This pushes the effective rate toward 50% over time. Elite fights get a flat +12.5% bonus on top of the current chance.</p>
+    </div>
+
+    <!-- Relic Drops -->
+    <h2 class="section-heading" id="relics" style="margin-top: 2rem;">Relic Drops</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p><strong>Elites always drop a relic</strong> — this is the only way to get relics from combat. Regular monsters and bosses do not drop relics.</p>
+      <p style="margin-top: 0.5rem;">When a relic drops, the rarity is:</p>
+    </div>
+    <table class="stat-table" style="margin: 0.5rem 0;">
+      <tr><td>Common</td><td>50%</td></tr>
+      <tr><td>Uncommon</td><td>33%</td></tr>
+      <tr><td class="desc-gold">Rare</td><td class="desc-gold">17%</td></tr>
+    </table>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p><strong>Treasure rooms</strong> contain a chest with gold (42–53g), not relics.</p>
+    </div>
+
+    <!-- Gold -->
+    <h2 class="section-heading" id="gold" style="margin-top: 2rem;">Gold Rewards</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>Gold from combat defaults to <strong>10–20 gold</strong> for all encounter types (regular, elite, and boss) unless a specific encounter overrides it. Individual encounters can define custom amounts. With the <a href={`${base}ascensions/level-03/`}>Poverty</a> ascension, all gold drops are multiplied by 0.75.</p>
+      <p style="margin-top: 0.5rem;"><strong>Treasure chests</strong> give <strong>42–53 gold</strong> (also affected by Poverty).</p>
+    </div>
+
+    <!-- Shop Prices -->
+    <h2 class="section-heading" id="shop" style="margin-top: 2rem;">Shop Prices</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>All prices have a small random variance (&plusmn;5% for cards/potions, &plusmn;15% for relics).</p>
+    </div>
+    <table class="stat-table" style="margin: 0.5rem 0;">
+      <thead><tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Cards</strong></td><td>50g</td><td>75g</td><td>150g</td></tr>
+        <tr><td><strong>Potions</strong></td><td>50g</td><td>75g</td><td>100g</td></tr>
+        <tr><td><strong>Relics</strong></td><td>200g</td><td>250g</td><td>300g</td></tr>
+      </tbody>
+    </table>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>Colorless cards cost 15% more. Shop-rarity relics cost 225g. Sale items are <strong>50% off</strong>.</p>
+      <p style="margin-top: 0.5rem;"><strong>Card removal</strong> starts at <strong>75 gold</strong> and increases by 25g each time you use it (75 → 100 → 125 → ...).</p>
+    </div>
+
+    <!-- Rest Sites -->
+    <h2 class="section-heading" id="rest" style="margin-top: 2rem;">Rest Sites</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>Rest sites offer two options (three in co-op):</p>
+      <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <li><strong>Rest:</strong> Heal 30% of your max HP</li>
+        <li><strong>Smith:</strong> Upgrade one card</li>
+        <li><strong>Mend</strong> (co-op only): Heal another player for 30% of <em>their</em> max HP</li>
+      </ul>
+      <p>Some relics and cards add additional rest site options (e.g., the <a href={`${base}cards/byrdonis-egg/`}>Byrdonis Egg</a> quest card adds a "Hatch" option).</p>
+    </div>
+
+    <!-- Map Structure -->
+    <h2 class="section-heading" id="map" style="margin-top: 2rem;">Map Structure</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>Each act generates a map with approximately:</p>
+      <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <li><strong>5 Elite rooms</strong> (8 with <a href={`${base}ascensions/level-01/`}>Swarming Elites</a>)</li>
+        <li><strong>3 Shop rooms</strong></li>
+        <li><strong>5–7 Rest Sites</strong> (reduced by 1 with <a href={`${base}ascensions/level-06/`}>Gloom</a>)</li>
+        <li>Remaining rooms are a mix of regular fights, events, and treasure</li>
+        <li><strong>1 Boss</strong> at the end (2 at <a href={`${base}ascensions/level-10/`}>Ascension 10</a>)</li>
+      </ul>
+    </div>
+
+    <!-- Block & Damage -->
+    <h2 class="section-heading" id="combat" style="margin-top: 2rem;">Combat Mechanics</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p><strong>Block</strong> expires at the start of your next turn — it does not carry over. Maximum block is capped at <strong>999</strong>.</p>
+      <p style="margin-top: 0.5rem;"><strong>Strength</strong> adds flat damage to every attack (1 Strength = +1 damage per hit). Multi-hit attacks benefit from Strength on every hit.</p>
+      <p style="margin-top: 0.5rem;">All characters start with <strong>3 Energy</strong> per turn.</p>
+    </div>
+
+    <!-- Orbs -->
+    <h2 class="section-heading" id="orbs" style="margin-top: 2rem;">Orbs (Defect)</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>The Defect starts with <strong>3 orb slots</strong>. Each orb has a passive effect (triggers each turn) and an evoke effect (triggers when pushed out or manually evoked):</p>
+    </div>
+    <table class="stat-table" style="margin: 0.5rem 0;">
+      <thead><tr><th>Orb</th><th>Passive</th><th>Evoke</th></tr></thead>
+      <tbody>
+        <tr><td class="desc-blue">Lightning</td><td>3 damage to random enemy</td><td>8 damage</td></tr>
+        <tr><td class="desc-blue">Frost</td><td>2 Block</td><td>5 Block</td></tr>
+        <tr><td class="desc-purple">Dark</td><td>+6 to next evoke damage</td><td>6 damage to weakest enemy</td></tr>
+        <tr><td class="desc-gold">Plasma</td><td>1 Energy (start of turn)</td><td>2 Energy</td></tr>
+        <tr><td>Glass</td><td>4 damage (decreases each turn)</td><td>8 damage</td></tr>
+      </tbody>
+    </table>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>Note: Plasma triggers at the <em>start</em> of your turn, while other orbs trigger at the <em>end</em>.</p>
+    </div>
+
+
+  </div>
+</BaseLayout>

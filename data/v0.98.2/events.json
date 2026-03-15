@@ -8,15 +8,15 @@
     "options": [
       {
         "title": "Immerse",
-        "description": "Gain [green]{MaxHp}[/green] Max HP. Take [red]{Damage}[/red] damage."
+        "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
       },
       {
         "title": "Abstain",
-        "description": "Heal [green]{Heal}[/green] HP."
+        "description": "Heal [green]10[/green] HP."
       },
       {
         "title": "Linger",
-        "description": "Gain [green]{MaxHp}[/green] Max HP. Take [red]{Damage}[/red] damage."
+        "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
       },
       {
         "title": "Exit Baths",
@@ -138,7 +138,7 @@
     "options": [
       {
         "title": "Eat the Egg",
-        "description": "Gain [blue]{MaxHp}[/blue] Max HP."
+        "description": "Gain [blue]7[/blue] Max HP."
       },
       {
         "title": "Take the Egg",
@@ -201,11 +201,11 @@
     "options": [
       {
         "title": "Uncover Future",
-        "description": "Pay [red]{UncoverFutureCost}[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]{UncoverFutureProphesizeCount}[/blue] times."
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
       },
       {
         "title": "Payment Plan",
-        "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]{PaymentPlanCount}[/blue] times."
+        "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
       }
     ],
     "acts": []
@@ -219,11 +219,11 @@
     "options": [
       {
         "title": "Trudge On",
-        "description": "Remove a card from your [gold]Deck[/gold]. Lose [red]{HpLoss}[/red] HP."
+        "description": "Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP."
       },
       {
         "title": "Rest",
-        "description": "Heal [green]{Heal}[/green] HP. Fight some [red]enemies[/red]."
+        "description": "Heal [green]0[/green] HP. Fight some [red]enemies[/red]."
       },
       {
         "title": "Fight!",
@@ -274,7 +274,7 @@
     "options": [
       {
         "title": "Light Door",
-        "description": "[gold]Upgrade[/gold] [blue]{Cards}[/blue] random cards."
+        "description": "[gold]Upgrade[/gold] [blue]2[/blue] random cards."
       },
       {
         "title": "Dark Door",
@@ -298,7 +298,7 @@
       },
       {
         "title": "Climb",
-        "description": "Obtain [gold]{Relic}[/gold]. Lose [red]{HpLoss}[/red] Max HP."
+        "description": "Obtain [gold]{Relic}[/gold]. Lose [red]13[/red] Max HP."
       }
     ],
     "acts": [
@@ -351,7 +351,7 @@
     "options": [
       {
         "title": "Resist",
-        "description": "Remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
+        "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
       },
       {
         "title": "Enter Your Hole",
@@ -435,11 +435,11 @@
     "options": [
       {
         "title": "Solo Quest",
-        "description": "Gain [blue]{SoloGold}[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+        "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
       },
       {
         "title": "Join Forces",
-        "description": "Gain [blue]{JoinForcesGold}[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
       }
     ],
     "acts": [
@@ -459,7 +459,7 @@
       },
       {
         "title": "Search the Nearby Area",
-        "description": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
       }
     ],
     "acts": [
@@ -479,11 +479,11 @@
       },
       {
         "title": "Offer Tribute",
-        "description": "Pay [red]{Gold}[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
+        "description": "Pay [red]149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{Gold}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]149[/blue] [gold]Gold[/gold]."
       }
     ],
     "acts": [
@@ -499,11 +499,11 @@
     "options": [
       {
         "title": "Group",
-        "description": "Lose [red]{Gold}[/red] [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards."
+        "description": "Lose [red]100[/red] [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards."
       },
       {
         "title": "Loner",
-        "description": "Gain [green]{MaxHp}[/green] Max HP."
+        "description": "Gain [green]5[/green] Max HP."
       }
     ],
     "acts": [
@@ -519,7 +519,7 @@
     "options": [
       {
         "title": "Grab Potions",
-        "description": "Procure [blue]{FoulPotions}[/blue] [gold]Foul {FoulPotions:plural:Potion|Potions}[/gold]."
+        "description": "Procure [blue]3[/blue] [gold]Foul {FoulPotions:plural:Potion|Potions}[/gold]."
       },
       {
         "title": "Ransack",
@@ -570,7 +570,7 @@
         "description": "You don't have any Potions that can be given."
       },
       {
-        "title": "Give {Gold} Gold",
+        "title": "Give 100 Gold",
         "description": "Obtain a random [gold]Relic[/gold]."
       },
       {
@@ -639,7 +639,7 @@
       },
       {
         "title": "Search",
-        "description": "Lose [red]{Damage}[/red] HP. Obtain the [gold]Chosen Cheese[/gold]."
+        "description": "Lose [red]14[/red] HP. Obtain the [gold]Chosen Cheese[/gold]."
       }
     ],
     "acts": []
@@ -657,7 +657,7 @@
       },
       {
         "title": "Pick a Fight",
-        "description": "Lose [red]{Damage}[/red] HP. Obtain a random [gold]Relic[/gold]."
+        "description": "Lose [red]11[/red] HP. Obtain a random [gold]Relic[/gold]."
       },
       {
         "title": "Continue",
@@ -677,7 +677,7 @@
     "options": [
       {
         "title": "Consume",
-        "description": "Heal [green]{Heal}[/green] HP. [gold]Upgrade[/gold] a card in your [gold]Deck[/gold]."
+        "description": "Heal [green]9[/green] HP. [gold]Upgrade[/gold] a card in your [gold]Deck[/gold]."
       },
       {
         "title": "Plant and Nourish",
@@ -759,7 +759,7 @@
       },
       {
         "title": "Drink",
-        "description": "Heal [green]{Heal}[/green] HP."
+        "description": "Heal [green]0[/green] HP."
       }
     ],
     "acts": [
@@ -795,7 +795,7 @@
     "options": [
       {
         "title": "Drink and Lift",
-        "description": "Lose [red]{DrinkRandomPotion}[/red]. Gain [blue]{DrinkMaxHpGain}[/blue] Max HP."
+        "description": "Lose [red]{DrinkRandomPotion}[/red]. Gain [blue]10[/blue] Max HP."
       },
       {
         "title": "Locked",
@@ -807,7 +807,7 @@
       },
       {
         "title": "Push",
-        "description": "Lose [red]{PushHpLoss}[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]{PushVigorousAmount}[/blue]."
+        "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue]."
       }
     ],
     "acts": []
@@ -825,7 +825,7 @@
       },
       {
         "title": "Dive into the Water",
-        "description": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold]. Lose [red]{HpLoss}[/red] HP."
+        "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
       }
     ],
     "acts": [
@@ -842,11 +842,11 @@
     "options": [
       {
         "title": "First Chest",
-        "description": "Gain [blue]{SmallChestGold}[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Second Chest",
-        "description": "Gain [blue]{LargeChestGold}[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
+        "description": "Gain [blue]333[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
       }
     ],
     "acts": [
@@ -884,15 +884,15 @@
     "options": [
       {
         "title": "Decipher",
-        "description": "Lose [red]{DecipherMaxHpLoss}[/red] Max HP. [gold]Upgrade[/gold] a random card."
+        "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card."
       },
       {
         "title": "Smash",
-        "description": "Heal [green]{SmashHPGain}[/green] HP."
+        "description": "Heal [green]20[/green] HP."
       },
       {
         "title": "Continue Deciphering",
-        "description": "Lose [red]{DecipherMaxHpLoss}[/red] Max HP. [gold]Upgrade[/gold] a random card."
+        "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card."
       },
       {
         "title": "Give Up",
@@ -914,19 +914,19 @@
     "options": [
       {
         "title": "Bone Tea",
-        "description": "Pay [red]{BoneTeaCost}[/red] [gold]Gold[/gold]. {BoneTeaDescription}"
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. {BoneTeaDescription}"
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{BoneTeaCost}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]50[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Ember Tea",
-        "description": "Pay [red]{EmberTeaCost}[/red] [gold]Gold[/gold]. {EmberTeaDescription}"
+        "description": "Pay [red]150[/red] [gold]Gold[/gold]. {EmberTeaDescription}"
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{EmberTeaCost}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]150[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Tea of Discourtesy",
@@ -968,7 +968,7 @@
     "options": [
       {
         "title": "Return the Key",
-        "description": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]100[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Keep the Key",
@@ -998,7 +998,7 @@
       },
       {
         "title": "Slowly Find an Exit",
-        "description": "Lose [red]{Damage}[/red] HP. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+        "description": "Lose [red]8[/red] HP. Procure [blue]1[/blue] random [gold]Potion[/gold]."
       }
     ],
     "acts": []
@@ -1012,7 +1012,7 @@
     "options": [
       {
         "title": "This",
-        "description": "Lose [red]{HpLoss}[/red] HP. Gain [blue]{Gold}[/blue] [gold]Gold[/gold]."
+        "description": "Lose [red]6[/red] HP. Gain [blue]0[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "That",
@@ -1060,11 +1060,11 @@
     "options": [
       {
         "title": "Dive In",
-        "description": "Lose [red]{HpLoss}[/red] HP. Obtain a random forgotten [gold]Relic[/gold] from the past."
+        "description": "Lose [red]8[/red] HP. Obtain a random forgotten [gold]Relic[/gold] from the past."
       },
       {
         "title": "Grab Random Junk",
-        "description": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold]. Obtain a random forgotten card from the past."
+        "description": "Gain [blue]100[/blue] [gold]Gold[/gold]. Obtain a random forgotten card from the past."
       }
     ],
     "acts": [
@@ -1076,7 +1076,7 @@
     "conditions": [],
     "loc_key": "TRIAL",
     "title": "The Trial",
-    "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n\u201cEntrant [blue]{EntrantNumber}[/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].\u201d",
+    "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n\u201cEntrant [blue]-1[/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].\u201d",
     "options": [
       {
         "title": "Accept",
@@ -1116,7 +1116,7 @@
       },
       {
         "title": "Kill the Trees",
-        "description": "Lose [red]{MaxHpLoss}[/red] Max HP. Obtain a random [gold]Relic[/gold]."
+        "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
       }
     ],
     "acts": [
@@ -1156,15 +1156,15 @@
       },
       {
         "title": "Tentacle Quill",
-        "description": "Pay [red]{Gold}[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] a card with [purple]Steady[/purple]."
+        "description": "Pay [red]65[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] a card with [purple]Steady[/purple]."
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{Gold}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]65[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Prickly Sponge",
-        "description": "Pay [red]{PricklySpongeGold}[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Steady[/purple]."
+        "description": "Pay [red]{PricklySpongeGold}[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] {Cards:plural:card|cards} with [purple]Steady[/purple]."
       },
       {
         "title": "Locked",
@@ -1186,27 +1186,27 @@
     "options": [
       {
         "title": "Wongo's Bargain Bin",
-        "description": "Pay [red]{BargainBinCost}[/red] [gold]Gold[/gold]. Obtain [blue]1[/blue] random [gold]Common Relic[/gold]."
+        "description": "Pay [red]100[/red] [gold]Gold[/gold]. Obtain [blue]1[/blue] random [gold]Common Relic[/gold]."
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{BargainBinCost}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]100[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Wongo's Featured Item",
-        "description": "Pay [red]{FeaturedItemCost}[/red] [gold]Gold[/gold]. Obtain [gold]{RandomRelic}[/gold]."
+        "description": "Pay [red]200[/red] [gold]Gold[/gold]. Obtain [gold]{RandomRelic}[/gold]."
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{FeaturedItemCost}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]200[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Wongo's Mystery Box",
-        "description": "Pay [red]{MysteryBoxCost}[/red] [gold]Gold[/gold]. Obtain [blue]{MysteryBoxRelicCount}[/blue] random [gold]Relics[/gold] after [blue]{MysteryBoxCombatCount}[/blue] combats."
+        "description": "Pay [red]300[/red] [gold]Gold[/gold]. Obtain [blue]3[/blue] random [gold]Relics[/gold] after [blue]5[/blue] combats."
       },
       {
         "title": "Locked",
-        "description": "Requires [blue]{MysteryBoxCost}[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]300[/blue] [gold]Gold[/gold]."
       },
       {
         "title": "Leave",
@@ -1228,7 +1228,7 @@
       },
       {
         "title": "Bathe",
-        "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]{BatheCurses}[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
+        "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
       }
     ],
     "acts": [
@@ -1244,11 +1244,11 @@
     "options": [
       {
         "title": "Exchange Gold",
-        "description": "Lose [red]{Gold}[/red] [gold]Gold[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]."
+        "description": "Lose [red]50[/red] [gold]Gold[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]."
       },
       {
         "title": "Hug the Tree",
-        "description": "Lose [red]{HpLoss}[/red] HP. Choose a card to [gold]Transform[/gold]."
+        "description": "Lose [red]9[/red] HP. Choose a card to [gold]Transform[/gold]."
       }
     ],
     "acts": [
@@ -1292,15 +1292,15 @@
     "options": [
       {
         "title": "Breathing Techniques",
-        "description": "Pay [red]{BreathingTechniquesCost}[/red] [gold]Gold[/gold]. Add [blue]2[/blue] [gold]Enlightenment[/gold] to your [gold]Deck[/gold]."
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. Add [blue]2[/blue] [gold]Enlightenment[/gold] to your [gold]Deck[/gold]."
       },
       {
         "title": "Emotional Awareness",
-        "description": "Pay [red]{EmotionalAwarenessCost}[/red] [gold]Gold[/gold]. Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
+        "description": "Pay [red]125[/red] [gold]Gold[/gold]. Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
       },
       {
         "title": "Arachnid Acupuncture",
-        "description": "Pay [red]{ArachnidAcupunctureCost}[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold]."
+        "description": "Pay [red]250[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold]."
       },
       {
         "title": "Locked",

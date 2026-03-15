@@ -639,10 +639,10 @@
     "loc_key": "ASHEN_STRIKE",
     "title": "Ashen Strike",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Exhaust Pile[/gold].",
-    "description_plain": "Deal ? damage.\nDeals 3 additional damage for each card in your Exhaust Pile.",
-    "description_html": "Deal ? damage.<br>Deals 3 additional damage for each card in your <span class=\"desc-gold\">Exhaust Pile</span>.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 4 additional damage for each card in your Exhaust Pile.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 4 additional damage for each card in your <span class=\"desc-gold\">Exhaust Pile</span>."
+    "description_plain": "Deal X damage.\nDeals 3 additional damage for each card in your Exhaust Pile.",
+    "description_html": "Deal X damage.<br>Deals 3 additional damage for each card in your <span class=\"desc-gold\">Exhaust Pile</span>.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 4 additional damage for each card in your Exhaust Pile.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 4 additional damage for each card in your <span class=\"desc-gold\">Exhaust Pile</span>."
   },
   {
     "class_name": "Assassinate",
@@ -1165,10 +1165,10 @@
     "loc_key": "BEAT_INTO_SHAPE",
     "title": "Beat into Shape",
     "description_template": "Deal {Damage:diff()} damage.\n[gold]Forge[/gold] {CalculatedForge:diff()}.\n[gold]Forges[/gold] an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn.",
-    "description_plain": "Deal 5 damage.\nForge ?.\nForges an additional ? for every other time you've hit the enemy this turn.",
-    "description_html": "Deal 5 damage.<br><span class=\"desc-gold\">Forge</span> ?.<br><span class=\"desc-gold\">Forges</span> an additional ? for every other time you've hit the enemy this turn.",
-    "upgraded_description_plain": "Deal 7 damage.\nForge ?.\nForges an additional ? for every other time you've hit the enemy this turn.",
-    "upgraded_description_html": "Deal 7 damage.<br><span class=\"desc-gold\">Forge</span> ?.<br><span class=\"desc-gold\">Forges</span> an additional ? for every other time you've hit the enemy this turn."
+    "description_plain": "Deal 5 damage.\nForge X.\nForges an additional X for every other time you've hit the enemy this turn.",
+    "description_html": "Deal 5 damage.<br><span class=\"desc-gold\">Forge</span> X.<br><span class=\"desc-gold\">Forges</span> an additional X for every other time you've hit the enemy this turn.",
+    "upgraded_description_plain": "Deal 7 damage.\nForge X.\nForges an additional X for every other time you've hit the enemy this turn.",
+    "upgraded_description_html": "Deal 7 damage.<br><span class=\"desc-gold\">Forge</span> X.<br><span class=\"desc-gold\">Forges</span> an additional X for every other time you've hit the enemy this turn."
   },
   {
     "class_name": "Beckon",
@@ -2220,10 +2220,10 @@
     "loc_key": "BULLY",
     "title": "Bully",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Vulnerable[/gold] on the enemy.",
-    "description_plain": "Deal ? damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
-    "description_html": "Deal ? damage.<br>Deals 2 additional damage for each <span class=\"desc-gold\">Vulnerable</span> on the enemy.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 3 additional damage for each <span class=\"desc-gold\">Vulnerable</span> on the enemy."
+    "description_plain": "Deal X damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
+    "description_html": "Deal X damage.<br>Deals 2 additional damage for each <span class=\"desc-gold\">Vulnerable</span> on the enemy.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 3 additional damage for each <span class=\"desc-gold\">Vulnerable</span> on the enemy."
   },
   {
     "class_name": "Bulwark",
@@ -3342,10 +3342,10 @@
     "loc_key": "CONFLAGRATION",
     "title": "Conflagration",
     "description_template": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
-    "description_plain": "Deal ? damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
-    "description_html": "Deal ? damage to ALL enemies.<br>Deals 2 additional damage for each other Attack you've played this turn.",
-    "upgraded_description_plain": "Deal ? damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
-    "upgraded_description_html": "Deal ? damage to ALL enemies.<br>Deals 3 additional damage for each other Attack you've played this turn."
+    "description_plain": "Deal X damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
+    "description_html": "Deal X damage to ALL enemies.<br>Deals 2 additional damage for each other Attack you've played this turn.",
+    "upgraded_description_plain": "Deal X damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
+    "upgraded_description_html": "Deal X damage to ALL enemies.<br>Deals 3 additional damage for each other Attack you've played this turn."
   },
   {
     "class_name": "Conqueror",
@@ -3793,10 +3793,10 @@
     "loc_key": "CRESCENT_SPEAR",
     "title": "Crescent Spear",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a {singleStarIcon} cost.",
-    "description_plain": "Deal ? damage.\nDeals 2 additional damage for ALL your cards that have a  cost.",
-    "description_html": "Deal ? damage.<br>Deals 2 additional damage for ALL your cards that have a [star] cost.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 3 additional damage for ALL your cards that have a  cost.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 3 additional damage for ALL your cards that have a [star] cost."
+    "description_plain": "Deal X damage.\nDeals 2 additional damage for ALL your cards that have a  cost.",
+    "description_html": "Deal X damage.<br>Deals 2 additional damage for ALL your cards that have a [star] cost.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for ALL your cards that have a  cost.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 3 additional damage for ALL your cards that have a [star] cost."
   },
   {
     "class_name": "CrimsonMantle",
@@ -4236,10 +4236,10 @@
     "loc_key": "DEATH_MARCH",
     "title": "Death March",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn.",
-    "description_plain": "Deal ? damage.\nDeals 3 additional damage for each card drawn during your turn.",
-    "description_html": "Deal ? damage.<br>Deals 3 additional damage for each card drawn during your turn.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 4 additional damage for each card drawn during your turn.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 4 additional damage for each card drawn during your turn."
+    "description_plain": "Deal X damage.\nDeals 3 additional damage for each card drawn during your turn.",
+    "description_html": "Deal X damage.<br>Deals 3 additional damage for each card drawn during your turn.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 4 additional damage for each card drawn during your turn.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 4 additional damage for each card drawn during your turn."
   },
   {
     "class_name": "Deathbringer",
@@ -6140,8 +6140,8 @@
     "title": "Fan of Knives",
     "description_template": "[gold]Shivs[/gold] now hit ALL enemies.\nAdd {Shivs:diff()} [gold]Shivs[/gold] into your [gold]Hand[/gold].",
     "vars": [],
-    "description_plain": "Shivs now hit ALL enemies.\nAdd ? Shivs into your Hand.",
-    "description_html": "<span class=\"desc-gold\">Shivs</span> now hit ALL enemies.<br>Add ? <span class=\"desc-gold\">Shivs</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Shivs now hit ALL enemies.\nAdd X Shivs into your Hand.",
+    "description_html": "<span class=\"desc-gold\">Shivs</span> now hit ALL enemies.<br>Add X <span class=\"desc-gold\">Shivs</span> into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Fasten",
@@ -7149,10 +7149,10 @@
     "loc_key": "FTL",
     "title": "FTL",
     "description_template": "Deal {Damage:diff()} damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card.",
-    "description_plain": "Deal 5 damage.\nIf you have played fewer than ? cards this turn, draw 1 card.",
-    "description_html": "Deal 5 damage.<br>If you have played fewer than ? cards this turn, draw 1 card.",
-    "upgraded_description_plain": "Deal 6 damage.\nIf you have played fewer than ? cards this turn, draw 1 card.",
-    "upgraded_description_html": "Deal 6 damage.<br>If you have played fewer than ? cards this turn, draw 1 card."
+    "description_plain": "Deal 5 damage.\nIf you have played fewer than X cards this turn, draw 1 card.",
+    "description_html": "Deal 5 damage.<br>If you have played fewer than X cards this turn, draw 1 card.",
+    "upgraded_description_plain": "Deal 6 damage.\nIf you have played fewer than X cards this turn, draw 1 card.",
+    "upgraded_description_html": "Deal 6 damage.<br>If you have played fewer than X cards this turn, draw 1 card."
   },
   {
     "class_name": "Fuel",
@@ -7311,10 +7311,10 @@
     "loc_key": "GANG_UP",
     "title": "Gang Up",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn.",
-    "description_plain": "Deal ? damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
-    "description_html": "Deal ? damage.<br>Deals 5 additional damage for each time another player has attacked the enemy this turn.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 7 additional damage for each time another player has attacked the enemy this turn."
+    "description_plain": "Deal X damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
+    "description_html": "Deal X damage.<br>Deals 5 additional damage for each time another player has attacked the enemy this turn.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 7 additional damage for each time another player has attacked the enemy this turn."
   },
   {
     "class_name": "GatherLight",
@@ -7403,8 +7403,8 @@
     "title": "Genetic Algorithm",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by {Increase:diff()}.",
     "vars": [],
-    "description_plain": "Gain ? Block.\nPermanently increase this card's Block by ?.",
-    "description_html": "Gain ? <span class=\"desc-gold\">Block</span>.<br>Permanently increase this card's <span class=\"desc-gold\">Block</span> by ?."
+    "description_plain": "Gain X Block.\nPermanently increase this card's Block by X.",
+    "description_html": "Gain X <span class=\"desc-gold\">Block</span>.<br>Permanently increase this card's <span class=\"desc-gold\">Block</span> by X."
   },
   {
     "class_name": "GiantRock",
@@ -8561,8 +8561,8 @@
     "title": "Hidden Gem",
     "description_template": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] {Replay:diff()}.",
     "vars": [],
-    "description_plain": "A random card in your Draw Pile gains Replay ?.",
-    "description_html": "A random card in your <span class=\"desc-gold\">Draw Pile</span> gains <span class=\"desc-gold\">Replay</span> ?."
+    "description_plain": "A random card in your Draw Pile gains Replay X.",
+    "description_html": "A random card in your <span class=\"desc-gold\">Draw Pile</span> gains <span class=\"desc-gold\">Replay</span> X."
   },
   {
     "class_name": "HighFive",
@@ -9617,10 +9617,10 @@
     "loc_key": "LEADING_STRIKE",
     "title": "Leading Strike",
     "description_template": "Deal {Damage:diff()} damage.\nAdd {Shivs:diff()} [gold]Shiv[/gold] into your [gold]Hand[/gold].",
-    "description_plain": "Deal 7 damage.\nAdd ? Shiv into your Hand.",
-    "description_html": "Deal 7 damage.<br>Add ? <span class=\"desc-gold\">Shiv</span> into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 10 damage.\nAdd ? Shiv into your Hand.",
-    "upgraded_description_html": "Deal 10 damage.<br>Add ? <span class=\"desc-gold\">Shiv</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal 7 damage.\nAdd X Shiv into your Hand.",
+    "description_html": "Deal 7 damage.<br>Add X <span class=\"desc-gold\">Shiv</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 10 damage.\nAdd X Shiv into your Hand.",
+    "upgraded_description_html": "Deal 10 damage.<br>Add X <span class=\"desc-gold\">Shiv</span> into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Leap",
@@ -9825,10 +9825,10 @@
     "loc_key": "LIGHTNING_ROD",
     "title": "Lightning Rod",
     "description_template": "Gain {Block:diff()} [gold]Block[/gold].\nAt the start of the next {LightningRodPower:plural:turn|{:diff()} turns}, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
-    "description_plain": "Gain 4 Block.\nAt the start of the next ? turns}, Channel 1 Lightning.",
-    "description_html": "Gain 4 <span class=\"desc-gold\">Block</span>.<br>At the start of the next ? turns}, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>.",
-    "upgraded_description_plain": "Gain 7 Block.\nAt the start of the next ? turns}, Channel 1 Lightning.",
-    "upgraded_description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>At the start of the next ? turns}, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>."
+    "description_plain": "Gain 4 Block.\nAt the start of the next X turns}, Channel 1 Lightning.",
+    "description_html": "Gain 4 <span class=\"desc-gold\">Block</span>.<br>At the start of the next X turns}, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>.",
+    "upgraded_description_plain": "Gain 7 Block.\nAt the start of the next X turns}, Channel 1 Lightning.",
+    "upgraded_description_html": "Gain 7 <span class=\"desc-gold\">Block</span>.<br>At the start of the next X turns}, <span class=\"desc-gold\">Channel</span> 1 <span class=\"desc-gold\">Lightning</span>."
   },
   {
     "class_name": "Loop",
@@ -10276,10 +10276,10 @@
     "loc_key": "MEMENTO_MORI",
     "title": "Memento Mori",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn.",
-    "description_plain": "Deal ? damage.\nDeals 4 additional damage for each card discarded this turn.",
-    "description_html": "Deal ? damage.<br>Deals 4 additional damage for each card discarded this turn.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 5 additional damage for each card discarded this turn.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 5 additional damage for each card discarded this turn."
+    "description_plain": "Deal X damage.\nDeals 4 additional damage for each card discarded this turn.",
+    "description_html": "Deal X damage.<br>Deals 4 additional damage for each card discarded this turn.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 5 additional damage for each card discarded this turn.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 5 additional damage for each card discarded this turn."
   },
   {
     "class_name": "Metamorphosis",
@@ -10819,8 +10819,8 @@
     "loc_key": "MURDER",
     "title": "Murder",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
-    "description_plain": "Deal ? damage.\nDeals 1 additional damage for each card drawn this combat.",
-    "description_html": "Deal ? damage.<br>Deals 1 additional damage for each card drawn this combat."
+    "description_plain": "Deal X damage.\nDeals 1 additional damage for each card drawn this combat.",
+    "description_html": "Deal X damage.<br>Deals 1 additional damage for each card drawn this combat."
   },
   {
     "class_name": "NecroMastery",
@@ -10931,10 +10931,10 @@
     "loc_key": "NEOWS_FURY",
     "title": "Neow's Fury",
     "description_template": "Deal {Damage:diff()} damage.\nPut {Cards:plural:a random card|{:diff()} random cards} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
-    "description_plain": "Deal 10 damage.\nPut ? random cards} from your Discard Pile into your Hand.",
-    "description_html": "Deal 10 damage.<br>Put ? random cards} from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 14 damage.\nPut ? random cards} from your Discard Pile into your Hand.",
-    "upgraded_description_html": "Deal 14 damage.<br>Put ? random cards} from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal 10 damage.\nPut X random cards} from your Discard Pile into your Hand.",
+    "description_html": "Deal 10 damage.<br>Put X random cards} from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 14 damage.\nPut X random cards} from your Discard Pile into your Hand.",
+    "upgraded_description_html": "Deal 14 damage.<br>Put X random cards} from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Neurosurge",
@@ -11117,8 +11117,8 @@
     "loc_key": "NO_ESCAPE",
     "title": "No Escape",
     "description_template": "Apply {CalculationBase:diff()} [gold]Doom[/gold], plus an additional {CalculationExtra:diff()} [gold]Doom[/gold] for every {DoomThreshold:diff()} [gold]Doom[/gold] already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
-    "description_plain": "Apply ? Doom, plus an additional ? Doom for every 10 Doom already on this enemy.? Doom)|}",
-    "description_html": "Apply ? <span class=\"desc-gold\">Doom</span>, plus an additional ? <span class=\"desc-gold\">Doom</span> for every 10 <span class=\"desc-gold\">Doom</span> already on this enemy.? <span class=\"desc-gold\">Doom</span>)|}"
+    "description_plain": "Apply X Doom, plus an additional X Doom for every 10 Doom already on this enemy.X Doom)|}",
+    "description_html": "Apply X <span class=\"desc-gold\">Doom</span>, plus an additional X <span class=\"desc-gold\">Doom</span> for every 10 <span class=\"desc-gold\">Doom</span> already on this enemy.X <span class=\"desc-gold\">Doom</span>)|}"
   },
   {
     "class_name": "Normality",
@@ -11893,10 +11893,10 @@
     "loc_key": "PERFECTED_STRIKE",
     "title": "Perfected Strike",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing \u201cStrike\u201d.",
-    "description_plain": "Deal ? damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
-    "description_html": "Deal ? damage.<br>Deals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 3 additional damage for ALL your cards containing \u201cStrike\u201d.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 3 additional damage for ALL your cards containing \u201cStrike\u201d."
+    "description_plain": "Deal X damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
+    "description_html": "Deal X damage.<br>Deals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for ALL your cards containing \u201cStrike\u201d.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 3 additional damage for ALL your cards containing \u201cStrike\u201d."
   },
   {
     "class_name": "PhantomBlades",
@@ -12296,8 +12296,8 @@
     "loc_key": "PRECISE_CUT",
     "title": "Precise Cut",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your [gold]Hand[/gold].",
-    "description_plain": "Deal ? damage.\nDeals 2 less damage for each other card in your Hand.",
-    "description_html": "Deal ? damage.<br>Deals 2 less damage for each other card in your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal X damage.\nDeals 2 less damage for each other card in your Hand.",
+    "description_html": "Deal X damage.<br>Deals 2 less damage for each other card in your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Predator",
@@ -12527,8 +12527,8 @@
     "loc_key": "PROTECTOR",
     "title": "Protector",
     "description_template": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
-    "description_plain": "Osty deals ? damage.\nDeals additional damage equal to Osty's Max HP.",
-    "description_html": "<span class=\"desc-gold\">Osty</span> deals ? damage.<br>Deals additional damage equal to <span class=\"desc-gold\">Osty's</span> <span class=\"desc-gold\">Max HP</span>."
+    "description_plain": "Osty deals X damage.\nDeals additional damage equal to Osty's Max HP.",
+    "description_html": "<span class=\"desc-gold\">Osty</span> deals X damage.<br>Deals additional damage equal to <span class=\"desc-gold\">Osty's</span> <span class=\"desc-gold\">Max HP</span>."
   },
   {
     "class_name": "Prowess",
@@ -13411,10 +13411,10 @@
     "loc_key": "REND",
     "title": "Rend",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
-    "description_plain": "Deal ? damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
-    "description_html": "Deal ? damage.<br>Deals 5 additional damage for each unique debuff on the enemy.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 8 additional damage for each unique debuff on the enemy.",
+    "description_plain": "Deal X damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+    "description_html": "Deal X damage.<br>Deals 5 additional damage for each unique debuff on the enemy.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 8 additional damage for each unique debuff on the enemy.",
     "unlocked_by": "Magnum_Opus"
   },
   {
@@ -14302,8 +14302,8 @@
     "loc_key": "SEVEN_STARS",
     "title": "Seven Stars",
     "description_template": "Deal {Damage:diff()} damage to ALL enemies {Repeat:plural:{} time|{} times}.",
-    "description_plain": "Deal 7 damage to ALL enemies ? time|? times}.",
-    "description_html": "Deal 7 damage to ALL enemies ? time|? times}."
+    "description_plain": "Deal 7 damage to ALL enemies X time|X times}.",
+    "description_html": "Deal 7 damage to ALL enemies X time|X times}."
   },
   {
     "class_name": "Severance",
@@ -15186,10 +15186,10 @@
     "loc_key": "SOUL_STORM",
     "title": "Soul Storm",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
-    "description_plain": "Deal ? damage.\nDeals 2 additional damage for each Soul in your Exhaust Pile.",
-    "description_html": "Deal ? damage.<br>Deals 2 additional damage for each <span class=\"desc-gold\">Soul</span> in your <span class=\"desc-gold\">Exhaust Pile</span>.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 3 additional damage for each Soul in your Exhaust Pile.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 3 additional damage for each <span class=\"desc-gold\">Soul</span> in your <span class=\"desc-gold\">Exhaust Pile</span>."
+    "description_plain": "Deal X damage.\nDeals 2 additional damage for each Soul in your Exhaust Pile.",
+    "description_html": "Deal X damage.<br>Deals 2 additional damage for each <span class=\"desc-gold\">Soul</span> in your <span class=\"desc-gold\">Exhaust Pile</span>.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for each Soul in your Exhaust Pile.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 3 additional damage for each <span class=\"desc-gold\">Soul</span> in your <span class=\"desc-gold\">Exhaust Pile</span>."
   },
   {
     "class_name": "SovereignBlade",
@@ -15214,8 +15214,8 @@
     "loc_key": "SOVEREIGN_BLADE",
     "title": "Sovereign Blade",
     "description_template": "Deal {Damage:diff()} damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
-    "description_plain": "Deal 10 damage? times}.",
-    "description_html": "Deal 10 damage? times}."
+    "description_plain": "Deal 10 damageX times}.",
+    "description_html": "Deal 10 damageX times}."
   },
   {
     "class_name": "Sow",
@@ -15603,10 +15603,10 @@
     "loc_key": "SQUEEZE",
     "title": "Squeeze",
     "description_template": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other [gold]Osty[/gold] Attacks.",
-    "description_plain": "Osty deals ? damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
-    "description_html": "<span class=\"desc-gold\">Osty</span> deals ? damage.<br>Deals 5 additional damage for ALL your other <span class=\"desc-gold\">Osty</span> Attacks.",
-    "upgraded_description_plain": "Osty deals ? damage.\nDeals 6 additional damage for ALL your other Osty Attacks.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals ? damage.<br>Deals 6 additional damage for ALL your other <span class=\"desc-gold\">Osty</span> Attacks."
+    "description_plain": "Osty deals X damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
+    "description_html": "<span class=\"desc-gold\">Osty</span> deals X damage.<br>Deals 5 additional damage for ALL your other <span class=\"desc-gold\">Osty</span> Attacks.",
+    "upgraded_description_plain": "Osty deals X damage.\nDeals 6 additional damage for ALL your other Osty Attacks.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals X damage.<br>Deals 6 additional damage for ALL your other <span class=\"desc-gold\">Osty</span> Attacks."
   },
   {
     "class_name": "Stack",
@@ -15625,8 +15625,8 @@
     "title": "Stack",
     "description_template": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].)|}",
     "vars": [],
-    "description_plain": "Gain Block equal to the number of cards in your Discard Pile?|}.",
-    "description_html": "Gain <span class=\"desc-gold\">Block</span> equal to the number of cards in your <span class=\"desc-gold\">Discard Pile</span>?|}."
+    "description_plain": "Gain Block equal to the number of cards in your Discard PileX|}.",
+    "description_html": "Gain <span class=\"desc-gold\">Block</span> equal to the number of cards in your <span class=\"desc-gold\">Discard Pile</span>X|}."
   },
   {
     "class_name": "Stampede",
@@ -16201,10 +16201,10 @@
     "loc_key": "SUPERMASSIVE",
     "title": "Supermassive",
     "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat.",
-    "description_plain": "Deal ? damage.\nDeals 3 additional damage for each card you created this combat.",
-    "description_html": "Deal ? damage.<br>Deals 3 additional damage for each card you created this combat.",
-    "upgraded_description_plain": "Deal ? damage.\nDeals 4 additional damage for each card you created this combat.",
-    "upgraded_description_html": "Deal ? damage.<br>Deals 4 additional damage for each card you created this combat.",
+    "description_plain": "Deal X damage.\nDeals 3 additional damage for each card you created this combat.",
+    "description_html": "Deal X damage.<br>Deals 3 additional damage for each card you created this combat.",
+    "upgraded_description_plain": "Deal X damage.\nDeals 4 additional damage for each card you created this combat.",
+    "upgraded_description_html": "Deal X damage.<br>Deals 4 additional damage for each card you created this combat.",
     "unlocked_by": "Regent"
   },
   {
@@ -16437,8 +16437,8 @@
     "title": "Synchronize",
     "description_template": "Gain {CalculationExtra:diff()} [gold]Focus[/gold] this turn for each unique Orb you have.{InCombat:\n(Gain {CalculatedFocus:diff()} [gold]Focus[/gold])|}",
     "vars": [],
-    "description_plain": "Gain ? Focus this turn for each unique Orb you have.",
-    "description_html": "Gain ? <span class=\"desc-gold\">Focus</span> this turn for each unique Orb you have."
+    "description_plain": "Gain X Focus this turn for each unique Orb you have.",
+    "description_html": "Gain X <span class=\"desc-gold\">Focus</span> this turn for each unique Orb you have."
   },
   {
     "class_name": "Synthesis",
@@ -16851,8 +16851,8 @@
     "title": "The Scythe",
     "description_template": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}.",
     "vars": [],
-    "description_plain": "Deal ? damage.\nPermanently increase this card's damage by ?.",
-    "description_html": "Deal ? damage.<br>Permanently increase this card's damage by ?."
+    "description_plain": "Deal X damage.\nPermanently increase this card's damage by X.",
+    "description_html": "Deal X damage.<br>Permanently increase this card's damage by X."
   },
   {
     "class_name": "TheSealedThrone",
@@ -17108,8 +17108,8 @@
     "loc_key": "TIMES_UP",
     "title": "Time's Up",
     "description_template": "Deal damage equal to the enemy's [gold]Doom[/gold].{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
-    "description_plain": "Deal damage equal to the enemy's Doom.? damage)|}",
-    "description_html": "Deal damage equal to the enemy's <span class=\"desc-gold\">Doom</span>.? damage)|}"
+    "description_plain": "Deal damage equal to the enemy's Doom.X damage)|}",
+    "description_html": "Deal damage equal to the enemy's <span class=\"desc-gold\">Doom</span>.X damage)|}"
   },
   {
     "class_name": "ToolsOfTheTrade",
@@ -17537,8 +17537,8 @@
     "loc_key": "UNLEASH",
     "title": "Unleash",
     "description_template": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
-    "description_plain": "Osty deals ? damage.\nDeals additional damage equal to Osty's current HP.",
-    "description_html": "<span class=\"desc-gold\">Osty</span> deals ? damage.<br>Deals additional damage equal to <span class=\"desc-gold\">Osty's</span> current HP."
+    "description_plain": "Osty deals X damage.\nDeals additional damage equal to Osty's current HP.",
+    "description_html": "<span class=\"desc-gold\">Osty</span> deals X damage.<br>Deals additional damage equal to <span class=\"desc-gold\">Osty's</span> current HP."
   },
   {
     "class_name": "Unmovable",

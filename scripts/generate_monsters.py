@@ -64,8 +64,19 @@ def main() -> None:
             p.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
+    # Filter out test/debug monsters
+    test_classes = {"BigDummy", "OneHpMonster", "TenHpMonster"}
+
     count = 0
     for monster in monsters:
+        if monster["class_name"] in test_classes:
+            continue
+
+        # Clean up template artifacts in titles
+        title = monster["title"]
+        title = re.sub(r"#[A-Z]\{[^}]*\}", "", title).strip()
+        monster["title"] = title
+
         slug = slugify(monster["title"])
 
         # Build encounter cross-refs

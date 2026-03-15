@@ -59,6 +59,14 @@ export const GET: APIRoute = async () => {
     entries.push({ title: e.data.title, url: `${base}epochs/${e.id}/`, type: 'Epoch' });
   }
 
+  const characters = await getCollection('characters');
+  for (const c of characters) {
+    entries.push({ title: c.data.title, url: `${base}characters/${c.id}/`, type: 'Character' });
+  }
+
+  entries.push({ title: 'Ascensions', url: `${base}ascensions`, type: 'Page' });
+  entries.push({ title: 'Game Mechanics', url: `${base}mechanics`, type: 'Page' });
+
   entries.sort((a, b) => a.title.localeCompare(b.title));
 
   return new Response(JSON.stringify(entries), {

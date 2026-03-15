@@ -16,7 +16,10 @@ const events = (await getCollection('events')).filter(e => !isDeprecated(e));
 const ancients = await getCollection('ancients');
 const epochs = await getCollection('epochs');
 
+const charCollection = await getCollection('characters');
+
 const sections = [
+  { href: 'characters/', label: 'Characters', count: charCollection.length, desc: 'Playable characters with stats and starting decks' },
   { href: 'cards/', label: 'Cards', count: cards.length, desc: 'All playable cards by character, type, and rarity' },
   { href: 'relics/', label: 'Relics', count: relics.length, desc: 'Passive items with icons and descriptions' },
   { href: 'potions/', label: 'Potions', count: potions.length, desc: 'Consumable items with effects' },
@@ -26,6 +29,8 @@ const sections = [
   { href: 'events/', label: 'Events', count: events.length, desc: 'Random events with choices' },
   { href: 'ancients/', label: 'Ancients', count: ancients.length, desc: 'Ancient lords with relic offerings' },
   { href: 'epochs/', label: 'Epochs', count: epochs.length, desc: 'Unlock progression milestones' },
+  { href: 'ascensions/', label: 'Ascensions', count: 10, desc: 'Difficulty modifiers that stack as you climb' },
+  { href: 'mechanics', label: 'Mechanics', count: null, desc: 'How rewards, shops, combat, and other systems work' },
 ];
 
 const characters = ['Ironclad', 'Silent', 'Defect', 'Necrobinder', 'Regent'];
@@ -48,7 +53,7 @@ const charCounts = characters.map(ch => ({
     {sections.map(s => (
       <a href={`${import.meta.env.BASE_URL}${s.href}`} class="home-card">
         <h3>{s.label}</h3>
-        <div class="count">{s.count}</div>
+        {s.count != null && <div class="count">{s.count}</div>}
         <p class="card-meta" style="margin-top: 0.5rem;">{s.desc}</p>
       </a>
     ))}
@@ -57,9 +62,13 @@ const charCounts = characters.map(ch => ({
   <h2 style="margin-top: 3rem; text-align: center;">Characters</h2>
   <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
     {charCounts.map(ch => (
-      <a href={`${import.meta.env.BASE_URL}cards/?character=${ch.name}`}
+      <a href={`${import.meta.env.BASE_URL}characters/${ch.name.toLowerCase()}/`}
          class="card-entry"
-         style="text-align: center; min-width: 130px;">
+         style="text-align: center; min-width: 130px; padding: 1rem;">
+        <img src={`${import.meta.env.BASE_URL}images/characters/character_icon_${ch.name.toLowerCase()}.png`}
+             alt={ch.name}
+             style="width: 48px; height: 48px; object-fit: contain; margin-bottom: 0.5rem;"
+             onerror="this.style.display='none'" />
         <h3 class={`char-${ch.name.toLowerCase()}`}>{ch.name}</h3>
         <div class="card-meta">{ch.cards} cards</div>
       </a>

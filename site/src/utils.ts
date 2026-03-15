@@ -55,6 +55,10 @@ export function cleanDescription(text: string): string {
   // Clean up stray opening BBCode tags that weren't matched
   s = s.replace(/\[\w+[^\]]*\]/g, '');
 
+  // Collapse nested spans where outer span is redundant
+  // e.g., <span class="desc-red"><span class="desc-gold">X</span></span> → <span class="desc-gold">X</span>
+  s = s.replace(/<span class="desc-\w+">\s*(<span class="desc-\w+">[^<]*<\/span>)\s*<\/span>/g, '$1');
+
   // Clean up double spaces
   s = s.replace(/  +/g, ' ');
 

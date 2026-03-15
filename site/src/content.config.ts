@@ -184,4 +184,45 @@ const epochs = defineCollection({
   }),
 });
 
-export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions, epochs };
+const characters = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/characters' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    description: z.string().default(''),
+    aroma: z.string().default(''),
+    starting_hp: z.number(),
+    starting_gold: z.number(),
+    orb_slots: z.number().optional(),
+    starting_relic: z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    }),
+    starting_deck: z.array(z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    })).default([]),
+  }),
+});
+
+const ascensions = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/ascensions' }),
+  schema: z.object({
+    title: z.string(),
+    level: z.number(),
+    description: z.string().default(''),
+    detail: z.string().default(''),
+    monster_changes: z.array(z.object({
+      monster: z.string(),
+      class_name: z.string(),
+      property: z.string().optional(),
+      base: z.number(),
+      ascension: z.number(),
+      diff: z.number(),
+    })).default([]),
+  }),
+});
+
+export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions, epochs, characters, ascensions };

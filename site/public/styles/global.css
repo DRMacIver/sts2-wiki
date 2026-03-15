@@ -168,27 +168,6 @@ a:hover {
   color: var(--gold) !important;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  flex-wrap: wrap;
-  overflow-x: auto;
-}
-
-.nav-links a {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: var(--space-sm) 0.65rem;
-  border-radius: var(--radius);
-  transition: color 0.15s, background 0.15s;
-  white-space: nowrap;
-}
-.nav-links a:hover {
-  color: var(--text-bright);
-  background: rgba(201, 168, 76, 0.08);
-}
 
 .nav-divider {
   width: 1px;
@@ -808,15 +787,6 @@ a:hover {
     padding: var(--space-sm) 0;
   }
 
-  .nav-links {
-    width: 100%;
-    gap: 0;
-  }
-
-  .nav-links a {
-    padding: var(--space-xs) var(--space-sm);
-    font-size: 0.8rem;
-  }
 
   .search-box {
     width: 100%;

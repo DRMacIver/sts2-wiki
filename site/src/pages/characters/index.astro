@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const characters = (await getCollection('characters'))
+  .sort((a, b) => b.data.starting_hp - a.data.starting_hp);
+
+const base = import.meta.env.BASE_URL;
+const charOrder = ['Ironclad', 'Silent', 'Defect', 'Necrobinder', 'Regent'];
+const sorted = charOrder
+  .map(name => characters.find(c => c.data.class_name === name))
+  .filter(Boolean) as typeof characters;
+---
+
+<BaseLayout title="Characters">
+  <div class="page-header">
+    <h1>Characters</h1>
+    <p class="subtitle">{characters.length} playable characters</p>
+  </div>
+
+  <div class="card-grid" style="max-width: 800px; margin: 0 auto;">
+    {sorted.map(char => {
+      const iconName = `character_icon_${char.data.class_name.toLowerCase()}`;
+      const descLines = char.data.description.split('\n');
+      return (
+        <a href={`${base}characters/${char.id}/`}
+           class="card-entry"
+           style="display: flex; gap: 1rem; align-items: center; padding: 1rem;">
+          <img
+            src={`${base}images/characters/${iconName}.png`}
+            alt={char.data.title}
+            style="width: 64px; height: 64px; object-fit: contain; flex-shrink: 0;"
+            onerror="this.style.display='none'" />
+          <div>
+            <h3 class={`char-${char.data.class_name.toLowerCase()}`} style="margin: 0;">
+              {char.data.title}
+            </h3>
+            <div class="card-meta" style="margin-top: 0.25rem;">
+              {char.data.starting_hp} HP
+            </div>
+            <div class="desc-text" style="font-size: 0.85rem; margin-top: 0.35rem;">
+              {descLines[0]}
+            </div>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</BaseLayout>

@@ -12,6 +12,19 @@ export async function getStaticPaths() {
 }
 
 const { relic } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// Build source link lookup from events and ancients
+const allEvents = await getCollection('events');
+const allAncients = await getCollection('ancients');
+
+const sourceLinks: Record<string, { url: string; label: string }> = {};
+for (const ev of allEvents) {
+  sourceLinks[ev.data.class_name] = { url: `${base}events/${ev.id}/`, label: ev.data.title };
+}
+for (const anc of allAncients) {
+  sourceLinks[anc.data.class_name] = { url: `${base}ancients/${anc.id}/`, label: anc.data.title };
+}
 ---
 
 <BaseLayout title={relic.data.title}>
@@ -53,7 +66,20 @@ const { relic } = Astro.props;
         <tr><th>Pool</th><td>{relic.data.pool}</td></tr>
       )}
       {relic.data.sources.length > 0 && (
-        <tr><th>Sources</th><td>{relic.data.sources.join(', ')}</td></tr>
+        <tr><th>Sources</th><td>
+          {relic.data.sources.map((source, i) => {
+            const link = sourceLinks[source];
+            return (
+              <>
+                {i > 0 && ', '}
+                {link
+                  ? <a href={link.url}>{link.label}</a>
+                  : source
+                }
+              </>
+            );
+          })}
+        </td></tr>
       )}
     </table>
   </div>

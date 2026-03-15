@@ -36,6 +36,17 @@ def main() -> None:
     with open(os.path.join(data_dir, "encounters.json")) as f:
         encounters = json.load(f)
 
+    # Filter out test/debug encounters
+    test_monster_classes = {"BigDummy", "OneHpMonster", "TenHpMonster"}
+
+    # Map variant monster class names to their base class
+    # (e.g., DecimillipedeSegmentFront -> DecimillipedeSegment)
+    monster_class_aliases: dict[str, str] = {
+        "DecimillipedeSegmentFront": "DecimillipedeSegment",
+        "DecimillipedeSegmentMiddle": "DecimillipedeSegment",
+        "DecimillipedeSegmentBack": "DecimillipedeSegment",
+    }
+
     # Load monster data for cross-referencing
     monster_titles: dict[str, str] = {}
     monsters_path = os.path.join(data_dir, "monsters.json")
@@ -43,7 +54,9 @@ def main() -> None:
         with open(monsters_path) as f:
             monsters = json.load(f)
         for m in monsters:
-            monster_titles[m["class_name"]] = m["title"]
+            # Clean up template artifacts in titles
+            title = re.sub(r"#[A-Z]\{[^}]*\}", "", m["title"]).strip()
+            monster_titles[m["class_name"]] = title
 
     out = Path(output_dir)
     if out.exists():
@@ -55,15 +68,30 @@ def main() -> None:
     for enc in encounters:
         slug = slugify(enc.get("title", enc["class_name"]))
 
+        # Skip encounters that only contain test monsters
+        enc_monsters = enc.get("monsters", [])
+        if all(m in test_monster_classes for m in enc_monsters):
+            continue
+
         # Enrich monster list
         monster_refs = []
-        for m_class in enc.get("monsters", []):
-            m_title = monster_titles.get(m_class, m_class)
+        seen_slugs: set[str] = set()
+        for m_class in enc_monsters:
+            if m_class in test_monster_classes:
+                continue
+            # Resolve aliases (e.g., segment variants)
+            resolved_class = monster_class_aliases.get(m_class, m_class)
+            m_title = monster_titles.get(resolved_class, monster_titles.get(m_class, m_class))
+            m_slug = slugify(m_title)
+            # Deduplicate (multiple segment variants map to same monster)
+            if m_slug in seen_slugs:
+                continue
+            seen_slugs.add(m_slug)
             monster_refs.append(
                 {
-                    "class_name": m_class,
+                    "class_name": resolved_class,
                     "title": m_title,
-                    "slug": slugify(m_title),
+                    "slug": m_slug,
                 }
             )
 

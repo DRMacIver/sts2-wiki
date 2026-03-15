@@ -61,12 +61,33 @@ def main() -> None:
     for power in powers:
         slug = slugify(power["title"])
         desc = power.get("description", "")
+        smart_desc = power.get("smart_description", "")
+
+        # Use smart_description as fallback when description is missing or placeholder
+        if not desc or desc == "TODO":
+            desc = smart_desc
 
         # Replace known placeholders in descriptions
         desc = desc.replace("{singleStarIcon}", "Star")
-        desc = re.sub(r"\{Amount\}", "X", desc)
-        desc = re.sub(r"\{Amount:[^}]*\}", "X", desc)
-        desc = re.sub(r"\{[^}]*\}", "", desc)  # Strip remaining
+
+        # Multi-pass resolution to handle nested braces
+        for _ in range(3):
+            # Resolve innermost {} (empty braces used as value ref in plurals)
+            new_desc = desc.replace("{}", "X")
+            # Handle {Name:plural:singular|plural} — use plural form with X
+            new_desc = re.sub(
+                r"\{(\w+):plural:([^|]*)\|([^}]*)\}",
+                lambda m: m.group(3).replace("X", "X") if "X" in m.group(3) else m.group(3),
+                new_desc,
+            )
+            # Then resolve {Amount} etc.
+            new_desc = re.sub(r"\{Amount\}", "X", new_desc)
+            new_desc = re.sub(r"\{Amount:[^}]*\}", "X", new_desc)
+            # Strip any other remaining simple placeholders
+            new_desc = re.sub(r"\{[^}]*\}", "", new_desc)
+            if new_desc == desc:
+                break
+            desc = new_desc
 
         lines = ["---"]
         lines.append(f"title: {escape_yaml(power['title'])}")

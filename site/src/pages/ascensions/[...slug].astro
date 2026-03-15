@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const ascensions = await getCollection('ascensions');
+  return ascensions.map(asc => ({
+    params: { slug: asc.id },
+    props: { asc },
+  }));
+}
+
+const { asc } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const allAscensions = (await getCollection('ascensions')).sort((a, b) => a.data.level - b.data.level);
+
+// Build slugify helper for monster links
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+// Previous ascension levels that are also active
+const priorLevels = allAscensions.filter(a => a.data.level > 0 && a.data.level < asc.data.level);
+
+const detailLines = asc.data.detail.split('\n').filter(l => l.trim());
+const monsterChanges = asc.data.monster_changes || [];
+
+// Group monster changes by monster name for cleaner display
+const byMonster: Record<string, typeof monsterChanges> = {};
+for (const change of monsterChanges) {
+  if (!byMonster[change.monster]) byMonster[change.monster] = [];
+  byMonster[change.monster].push(change);
+}
+const monsterNames = Object.keys(byMonster).sort();
+---
+
+<BaseLayout title={`Ascension ${asc.data.level}: ${asc.data.title}`}>
+  <div class="card-detail" style="max-width: 800px;">
+    <a href={`${base}ascensions/`} class="back-link">&larr; All Ascensions</a>
+
+    <div class="card-header">
+      <h1>
+        <span class={asc.data.level === 0 ? 'desc-green' : asc.data.level >= 8 ? 'desc-red' : 'desc-gold'}
+              style="font-size: 0.7em; margin-right: 0.5rem;">
+          {asc.data.level}
+        </span>
+        {asc.data.title}
+      </h1>
+      <div class="card-meta" style="font-size: 1rem; margin-top: 0.25rem;">
+        {asc.data.description}
+      </div>
+    </div>
+
+    <h2 class="section-heading">Details</h2>
+    <div class="desc-text" style="font-size: 1rem; line-height: 1.7;">
+      {detailLines.map((line, i) => {
+        const isBullet = line.startsWith('- ');
+        if (isBullet) {
+          return <div style="padding-left: 1rem; margin-top: 0.25rem;">{line}</div>;
+        }
+        return <p style={i > 0 ? 'margin-top: 0.75rem;' : ''}>{line}</p>;
+      })}
+    </div>
+
+    {priorLevels.length > 0 && (
+      <>
+        <h2 class="section-heading" style="margin-top: 2rem;">Also Active</h2>
+        <p class="card-meta" style="margin-bottom: 0.5rem;">
+          All previous ascension modifiers are active at this level:
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+          {priorLevels.map(prior => (
+            <a href={`${base}ascensions/${prior.id}/`}
+               class="card-entry"
+               style="display: flex; align-items: baseline; gap: 0.75rem; padding: 0.5rem 0.75rem;">
+              <span class={prior.data.level >= 8 ? 'desc-red' : 'desc-gold'}
+                    style="font-weight: 700; min-width: 1.5rem; text-align: right;">
+                {prior.data.level}
+              </span>
+              <span style="font-weight: 500;">{prior.data.title}</span>
+              <span class="card-meta" style="margin-left: auto;">{prior.data.description}</span>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+
+    {monsterNames.length > 0 && (
+      <>
+        <h2 class="section-heading" style="margin-top: 2rem;">
+          {asc.data.level === 8 ? 'HP Changes by Monster' : 'Damage Changes by Monster'}
+          <span style="font-weight: normal; color: var(--text-muted);"> ({monsterNames.length})</span>
+        </h2>
+        <table class="moves-table" style="margin-top: 0.5rem; width: 100%;">
+          <thead>
+            <tr>
+              <th style="text-align: left;">Monster</th>
+              {asc.data.level === 9 && <th style="text-align: left;">Attack</th>}
+              <th style="text-align: right;">Base</th>
+              <th style="text-align: right;">Ascension</th>
+              <th style="text-align: right;">Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            {monsterNames.map(name => {
+              const changes = byMonster[name];
+              const slug = slugify(name);
+              return changes.map((c, i) => (
+                <tr>
+                  {i === 0
+                    ? <td rowspan={changes.length}>
+                        <a href={`${base}monsters/${slug}/`}>{name}</a>
+                      </td>
+                    : null
+                  }
+                  {asc.data.level === 9 && (
+                    <td style="font-size: 0.85rem; color: var(--text-muted);">
+                      {c.property?.replace(/([A-Z])/g, ' $1').trim() || ''}
+                    </td>
+                  )}
+                  <td style="text-align: right;">{c.base}</td>
+                  <td style="text-align: right;">{c.ascension}</td>
+                  <td style="text-align: right;">
+                    <span class="desc-red">+{c.diff}</span>
+                  </td>
+                </tr>
+              ));
+            })}
+          </tbody>
+        </table>
+      </>
+    )}
+  </div>
+</BaseLayout>

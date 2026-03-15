@@ -332,9 +332,10 @@ def render_description(
 
     # Plain text: strip all tags
     plain = re.sub(r"\[/?[^\]]*\]", "", rendered)
-    # Clean up any remaining unsubstituted placeholders
-    plain = re.sub(r"\{[^}]*\}", "?", plain)
-    html = re.sub(r"\{[^}]*\}", "?", html)
+    # Clean up any remaining unsubstituted placeholders — use "X" for
+    # values that are calculated at runtime rather than "?" which looks broken
+    plain = re.sub(r"\{[^}]*\}", "X", plain)
+    html = re.sub(r"\{[^}]*\}", "X", html)
 
     return (plain, html)
 
