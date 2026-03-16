@@ -81,6 +81,15 @@ const upgradedHtml = cleanDescription(card.data.upgraded_description_html || '')
       </>
     )}
 
+    {card.data.notes && (
+      <>
+        <h2 class="section-heading">Notes</h2>
+        <div class="desc-text" style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+          {card.data.notes}
+        </div>
+      </>
+    )}
+
     {card.data.referenced_powers.length > 0 && (
       <>
         <h2 class="section-heading">Related Effects</h2>

@@ -33,6 +33,7 @@ const cards = defineCollection({
     x_star_cost: z.boolean().optional(),
     pool: z.string().default(''),
     unlocked_by: z.string().optional(),
+    notes: z.string().optional(),
   }),
 });
 

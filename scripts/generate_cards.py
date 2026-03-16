@@ -76,6 +76,10 @@ def generate_card_markdown(card: dict) -> str:
     if card.get("unlocked_by"):
         lines.append(f"unlocked_by: {escape_yaml(card['unlocked_by'])}")
 
+    # Mechanic notes from code analysis
+    if card.get("notes"):
+        lines.append(f"notes: {escape_yaml(card['notes'])}")
+
     lines.append("---")
     lines.append("")
 
@@ -103,12 +107,20 @@ def main() -> None:
             p.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
+    # Load mechanic notes
+    from scripts.card_notes import CARD_NOTES
+
     # Generate markdown files
     count = 0
     for card in cards:
         # Skip deprecated and mock cards
         if card.get("deprecated") or card.get("mock"):
             continue
+
+        # Inject notes from code analysis
+        note = CARD_NOTES.get(card["class_name"])
+        if note:
+            card["notes"] = note
 
         slug = slugify(card["title"])
         md = generate_card_markdown(card)
