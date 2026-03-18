@@ -1,0 +1,7016 @@
+[
+  {
+    "class_name": "Architect",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "hidden"
+          }
+        ],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING",
+      "follow_ups": [
+        "NOTHING -> NOTHING"
+      ],
+      "repeats": [
+        "NOTHING"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "ARCHITECT",
+    "title": "The Architect",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "AssassinRubyRaider",
+    "min_hp": 19,
+    "max_hp": 24,
+    "moves": [
+      {
+        "id": "KILLSHOT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          }
+        ],
+        "effects": [
+          "Deal 12 damage"
+        ],
+        "title": "Killshot"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "KILLSHOT_MOVE",
+      "follow_ups": [
+        "KILLSHOT_MOVE -> KILLSHOT_MOVE"
+      ],
+      "repeats": [
+        "KILLSHOT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "ASSASSIN_RUBY_RAIDER",
+    "title": "Assassin Raider",
+    "move_pattern_desc": "Starts with Killshot (repeats)."
+  },
+  {
+    "class_name": "AxeRubyRaider",
+    "min_hp": 21,
+    "max_hp": 23,
+    "moves": [
+      {
+        "id": "SWING_1",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 5
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [],
+        "title": "Swing 1"
+      },
+      {
+        "id": "SWING_2",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 5
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [],
+        "title": "Swing 2"
+      },
+      {
+        "id": "BIG_SWING",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 13 damage"
+        ],
+        "title": "Big Swing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SWING_1",
+      "follow_ups": [
+        "SWING_1 -> SWING_2",
+        "SWING_2 -> BIG_SWING",
+        "BIG_SWING -> SWING_1"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "AXE_RUBY_RAIDER",
+    "title": "Axe Raider",
+    "move_pattern_desc": "Cycles in the order: Swing 1 -> Swing 2 -> Big Swing."
+  },
+  {
+    "class_name": "Axebot",
+    "min_hp": 42,
+    "max_hp": 46,
+    "moves": [
+      {
+        "id": "BOOT_UP_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 1 Strength",
+          "Gain 10 Block"
+        ],
+        "title": "Boot Up"
+      },
+      {
+        "id": "ONE_TWO_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 5
+          }
+        ],
+        "effects": [
+          "Deal 6 damage",
+          "2 hits"
+        ],
+        "title": "The One-Two"
+      },
+      {
+        "id": "SHARPEN_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 4 Strength"
+        ],
+        "title": "Sharpen"
+      },
+      {
+        "id": "HAMMER_UPPERCUT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 10 damage",
+          "Apply 1 Weak",
+          "Apply 1 Frail"
+        ],
+        "title": "Hammer Uppercut"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BOOT_UP_MOVE",
+      "random_branches": [
+        {
+          "move": "ONE_TWO_MOVE",
+          "weight": 2
+        },
+        {
+          "move": "SHARPEN_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "HAMMER_UPPERCUT_MOVE",
+          "weight": 2
+        }
+      ]
+    },
+    "powers_on_spawn": [
+      "Stock"
+    ],
+    "loc_key": "AXEBOT",
+    "title": "Axebot",
+    "move_pattern_desc": "Starts with Boot Up. Then 40% chance of The One-Two, 20% chance of Sharpen (can't repeat), 40% chance of Hammer Uppercut."
+  },
+  {
+    "class_name": "BattleFriendV1",
+    "min_hp": 75,
+    "max_hp": 75,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING_MOVE",
+      "follow_ups": [
+        "NOTHING_MOVE -> NOTHING_MOVE"
+      ],
+      "repeats": [
+        "NOTHING_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "BattlewornDummyTimeLimit"
+    ],
+    "is_companion": true,
+    "loc_key": "BATTLE_FRIEND_V1",
+    "title": "Battle Friend V1.0",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "BattleFriendV2",
+    "min_hp": 150,
+    "max_hp": 150,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING_MOVE",
+      "follow_ups": [
+        "NOTHING_MOVE -> NOTHING_MOVE"
+      ],
+      "repeats": [
+        "NOTHING_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "BattlewornDummyTimeLimit"
+    ],
+    "is_companion": true,
+    "loc_key": "BATTLE_FRIEND_V2",
+    "title": "Battle Friend V2.0",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "BattleFriendV3",
+    "min_hp": 300,
+    "max_hp": 300,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING_MOVE",
+      "follow_ups": [
+        "NOTHING_MOVE -> NOTHING_MOVE"
+      ],
+      "repeats": [
+        "NOTHING_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "BattlewornDummyTimeLimit"
+    ],
+    "is_companion": true,
+    "loc_key": "BATTLE_FRIEND_V3",
+    "title": "Battle Friend V3.0",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "BigDummy",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "hidden"
+          }
+        ],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING",
+      "follow_ups": [
+        "NOTHING -> NOTHING"
+      ],
+      "repeats": [
+        "NOTHING"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "BIG_DUMMY",
+    "title": "Big Dummy",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "BowlbugEgg",
+    "min_hp": 23,
+    "max_hp": 24,
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Bite"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BITE_MOVE",
+      "follow_ups": [
+        "BITE_MOVE -> BITE_MOVE"
+      ],
+      "repeats": [
+        "BITE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "BOWLBUG_EGG",
+    "title": "Bowlbug (Egg)",
+    "move_pattern_desc": "Starts with Bite (repeats)."
+  },
+  {
+    "class_name": "BowlbugNectar",
+    "min_hp": 36,
+    "max_hp": 39,
+    "moves": [
+      {
+        "id": "THRASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 3 damage"
+        ],
+        "title": "Thrash"
+      },
+      {
+        "id": "BUFF_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 16 Strength"
+        ],
+        "title": "Buff"
+      },
+      {
+        "id": "THRASH2_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 3
+          }
+        ],
+        "effects": [],
+        "title": "Thrash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "THRASH_MOVE",
+      "follow_ups": [
+        "THRASH_MOVE -> BUFF_MOVE",
+        "BUFF_MOVE -> THRASH2_MOVE",
+        "THRASH2_MOVE -> THRASH2_MOVE"
+      ],
+      "repeats": [
+        "THRASH2_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "BOWLBUG_NECTAR",
+    "title": "Bowlbug (Nectar)",
+    "move_pattern_desc": "Starts with Thrash. After Thrash, uses Buff. Then repeats Thrash."
+  },
+  {
+    "class_name": "BowlbugRock",
+    "min_hp": 46,
+    "max_hp": 49,
+    "moves": [
+      {
+        "id": "HEADBUTT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Headbutt"
+      },
+      {
+        "id": "DIZZY_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Dizzy"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "HEADBUTT_MOVE",
+      "follow_ups": [
+        "DIZZY_MOVE -> HEADBUTT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Imbalanced"
+    ],
+    "loc_key": "BOWLBUG_ROCK",
+    "title": "Bowlbug (Rock)",
+    "move_pattern_desc": "Starts with Headbutt. After Dizzy, uses Headbutt."
+  },
+  {
+    "class_name": "BowlbugSilk",
+    "min_hp": 41,
+    "max_hp": 44,
+    "moves": [
+      {
+        "id": "TRASH_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 4
+          }
+        ],
+        "effects": [],
+        "title": "Trash"
+      },
+      {
+        "id": "TOXIC_SPIT_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Toxic Spit"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "TRASH_MOVE -> TOXIC_SPIT_MOVE",
+        "TOXIC_SPIT_MOVE -> TRASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "BOWLBUG_SILK",
+    "title": "Bowlbug (Silk)",
+    "move_pattern_desc": "Cycles in the order: Trash -> Toxic Spit."
+  },
+  {
+    "class_name": "BruteRubyRaider",
+    "min_hp": 31,
+    "max_hp": 34,
+    "moves": [
+      {
+        "id": "BEAT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Beat"
+      },
+      {
+        "id": "ROAR_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "Roar"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BEAT_MOVE",
+      "follow_ups": [
+        "BEAT_MOVE -> ROAR_MOVE",
+        "ROAR_MOVE -> BEAT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "BRUTE_RUBY_RAIDER",
+    "title": "Brute Raider",
+    "move_pattern_desc": "Cycles in the order: Beat -> Roar."
+  },
+  {
+    "class_name": "BygoneEffigy",
+    "min_hp": 132,
+    "max_hp": 132,
+    "moves": [
+      {
+        "id": "INITIAL_SLEEP_MOVE",
+        "intents": [
+          {
+            "type": "sleep"
+          }
+        ],
+        "effects": [],
+        "title": "Initial Sleep"
+      },
+      {
+        "id": "WAKE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 10 Strength"
+        ],
+        "title": "Wake"
+      },
+      {
+        "id": "SLEEP_MOVE",
+        "intents": [
+          {
+            "type": "sleep"
+          }
+        ],
+        "effects": [],
+        "title": "Sleep"
+      },
+      {
+        "id": "SLASHES_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [],
+        "title": "Slashes"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "INITIAL_SLEEP_MOVE",
+      "follow_ups": [
+        "INITIAL_SLEEP_MOVE -> WAKE_MOVE",
+        "WAKE_MOVE -> SLASHES_MOVE",
+        "SLEEP_MOVE -> SLASHES_MOVE",
+        "SLASHES_MOVE -> SLASHES_MOVE"
+      ],
+      "repeats": [
+        "SLASHES_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Slow"
+    ],
+    "loc_key": "BYGONE_EFFIGY",
+    "title": "Bygone Effigy",
+    "move_pattern_desc": "Starts with Initial Sleep. After Initial Sleep, uses Wake. Then repeats Slashes."
+  },
+  {
+    "class_name": "Byrdonis",
+    "min_hp": 99,
+    "max_hp": 99,
+    "moves": [
+      {
+        "id": "PECK_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 4 damage"
+        ],
+        "title": "Peck"
+      },
+      {
+        "id": "SWOOP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 18 damage"
+        ],
+        "title": "Swoop"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SWOOP_MOVE",
+      "follow_ups": [
+        "SWOOP_MOVE -> PECK_MOVE",
+        "PECK_MOVE -> SWOOP_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Territorial"
+    ],
+    "loc_key": "BYRDONIS",
+    "title": "Byrdonis",
+    "move_pattern_desc": "Cycles in the order: Swoop -> Peck."
+  },
+  {
+    "class_name": "Byrdpip",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING_MOVE",
+      "follow_ups": [
+        "NOTHING_MOVE -> NOTHING_MOVE"
+      ],
+      "repeats": [
+        "NOTHING_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "is_companion": true,
+    "loc_key": "BYRDPIP",
+    "title": "Byrdpip",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "CalcifiedCultist",
+    "min_hp": 39,
+    "max_hp": 42,
+    "moves": [
+      {
+        "id": "INCANTATION_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Ritual"
+        ],
+        "title": "Incantation"
+      },
+      {
+        "id": "DARK_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 9
+          }
+        ],
+        "effects": [
+          "Deal 11 damage"
+        ],
+        "title": "Dark Strike"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "INCANTATION_MOVE",
+      "follow_ups": [
+        "INCANTATION_MOVE -> DARK_STRIKE_MOVE",
+        "DARK_STRIKE_MOVE -> DARK_STRIKE_MOVE"
+      ],
+      "repeats": [
+        "DARK_STRIKE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "CALCIFIED_CULTIST",
+    "title": "Calcified Cultist",
+    "move_pattern_desc": "Starts with Incantation. Then repeats Dark Strike."
+  },
+  {
+    "class_name": "CeremonialBeast",
+    "min_hp": 262,
+    "max_hp": 262,
+    "moves": [
+      {
+        "id": "STAMP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 160 Plow"
+        ],
+        "title": "Stamp"
+      },
+      {
+        "id": "PLOW_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 20 damage",
+          "Apply 2 Strength"
+        ],
+        "title": "Plow"
+      },
+      {
+        "id": "STUN_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Stun"
+      },
+      {
+        "id": "BEAST_CRY_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 1 Ringing"
+        ],
+        "title": "Beast Cry"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Stomp"
+      },
+      {
+        "id": "CRUSH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 17
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 19 damage",
+          "Apply 4 Strength"
+        ],
+        "title": "Crush"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "STAMP_MOVE",
+      "follow_ups": [
+        "STAMP_MOVE -> PLOW_MOVE",
+        "PLOW_MOVE -> PLOW_MOVE",
+        "STUN_MOVE -> BEAST_CRY_MOVE",
+        "BEAST_CRY_MOVE -> STOMP_MOVE",
+        "STOMP_MOVE -> CRUSH_MOVE",
+        "CRUSH_MOVE -> BEAST_CRY_MOVE"
+      ],
+      "repeats": [
+        "PLOW_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "CEREMONIAL_BEAST",
+    "title": "Ceremonial Beast",
+    "move_pattern_desc": "Starts with Stamp. After Stun, uses Beast Cry. After Beast Cry, uses Stomp. After Stomp, uses Crush. After Crush, uses Beast Cry. Then repeats Plow."
+  },
+  {
+    "class_name": "Chomper",
+    "min_hp": 63,
+    "max_hp": 67,
+    "moves": [
+      {
+        "id": "CLAMP_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 8
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "2 hits"
+        ],
+        "title": "Clamp"
+      },
+      {
+        "id": "SCREECH_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Dazed to discard"
+        ],
+        "title": "Screech"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "CLAMP_MOVE -> SCREECH_MOVE",
+        "SCREECH_MOVE -> CLAMP_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "CHOMPER",
+    "title": "Chomper",
+    "move_pattern_desc": "Cycles in the order: Clamp -> Screech."
+  },
+  {
+    "class_name": "CorpseSlug",
+    "min_hp": 27,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "WHIP_SLAP_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 3 damage"
+        ],
+        "title": "Whip Slap"
+      },
+      {
+        "id": "GLOMP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          }
+        ],
+        "effects": [
+          "Deal 9 damage"
+        ],
+        "title": "Glomp"
+      },
+      {
+        "id": "GOOP_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Frail"
+        ],
+        "title": "Goop"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "WHIP_SLAP_MOVE -> GLOMP_MOVE",
+        "GLOMP_MOVE -> GOOP_MOVE",
+        "GOOP_MOVE -> WHIP_SLAP_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Ravenous"
+    ],
+    "loc_key": "CORPSE_SLUG",
+    "title": "Corpse Slug",
+    "move_pattern_desc": "Cycles in the order: Whip Slap -> Glomp -> Goop."
+  },
+  {
+    "class_name": "CrossbowRubyRaider",
+    "min_hp": 19,
+    "max_hp": 22,
+    "moves": [
+      {
+        "id": "FIRE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Fire!"
+      },
+      {
+        "id": "RELOAD_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Gain 3 Block"
+        ],
+        "title": "Reload"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "FIRE_MOVE -> RELOAD_MOVE",
+        "RELOAD_MOVE -> FIRE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "CROSSBOW_RUBY_RAIDER",
+    "title": "Crossbow Raider",
+    "move_pattern_desc": "Cycles in the order: Fire! -> Reload."
+  },
+  {
+    "class_name": "Crusher",
+    "min_hp": 209,
+    "max_hp": 209,
+    "moves": [
+      {
+        "id": "THRASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 14 damage"
+        ],
+        "title": "Thrash"
+      },
+      {
+        "id": "ENLARGING_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 4 damage"
+        ],
+        "title": "Enlarging Strike"
+      },
+      {
+        "id": "BUG_STING_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 6
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "Apply 2 Weak",
+          "Apply 2 Frail"
+        ],
+        "title": "Bug Sting"
+      },
+      {
+        "id": "ADAPT_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Adapt"
+      },
+      {
+        "id": "GUARDED_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Deal 14 damage",
+          "Gain 18 Block"
+        ],
+        "title": "Guarded Strike"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "THRASH_MOVE",
+      "follow_ups": [
+        "THRASH_MOVE -> ENLARGING_STRIKE_MOVE",
+        "ENLARGING_STRIKE_MOVE -> BUG_STING_MOVE",
+        "BUG_STING_MOVE -> ADAPT_MOVE",
+        "ADAPT_MOVE -> GUARDED_STRIKE_MOVE",
+        "GUARDED_STRIKE_MOVE -> THRASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "BackAttackLeft",
+      "CrabRage"
+    ],
+    "loc_key": "CRUSHER",
+    "title": "Crusher",
+    "move_pattern_desc": "Cycles in the order: Thrash -> Enlarging Strike -> Bug Sting -> Adapt -> Guarded Strike."
+  },
+  {
+    "class_name": "CubexConstruct",
+    "min_hp": 70,
+    "max_hp": 70,
+    "moves": [
+      {
+        "id": "CHARGE_UP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Charge Up"
+      },
+      {
+        "id": "REPEATER_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Repeater"
+      },
+      {
+        "id": "REPEATER_MOVE_2",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Repeater Move 2"
+      },
+      {
+        "id": "EXPEL_BLAST",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 5
+          }
+        ],
+        "effects": [
+          "Deal 6 damage",
+          "2 hits"
+        ],
+        "title": "Expel Blast"
+      },
+      {
+        "id": "SUBMERGE_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Gain 15 Block"
+        ],
+        "title": "Submerge"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CHARGE_UP_MOVE",
+      "follow_ups": [
+        "CHARGE_UP_MOVE -> REPEATER_MOVE",
+        "REPEATER_MOVE -> REPEATER_MOVE_2",
+        "REPEATER_MOVE_2 -> EXPEL_BLAST",
+        "EXPEL_BLAST -> REPEATER_MOVE",
+        "SUBMERGE_MOVE -> CHARGE_UP_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "CUBEX_CONSTRUCT",
+    "title": "Cubex Construct",
+    "move_pattern_desc": "Starts with Charge Up. After Charge Up, uses Repeater. After Repeater, uses Repeater Move 2. After Repeater Move 2, uses Expel Blast. After Expel Blast, uses Repeater. After Submerge, uses Charge Up."
+  },
+  {
+    "class_name": "DampCultist",
+    "min_hp": 52,
+    "max_hp": 54,
+    "moves": [
+      {
+        "id": "INCANTATION_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 6 Ritual"
+        ],
+        "title": "Incantation"
+      },
+      {
+        "id": "DARK_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 1
+          }
+        ],
+        "effects": [
+          "Deal 3 damage"
+        ],
+        "title": "Dark Strike"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "INCANTATION_MOVE",
+      "follow_ups": [
+        "INCANTATION_MOVE -> DARK_STRIKE_MOVE",
+        "DARK_STRIKE_MOVE -> DARK_STRIKE_MOVE"
+      ],
+      "repeats": [
+        "DARK_STRIKE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "DAMP_CULTIST",
+    "title": "Damp Cultist",
+    "move_pattern_desc": "Starts with Incantation. Then repeats Dark Strike."
+  },
+  {
+    "class_name": "DecimillipedeSegment",
+    "min_hp": 48,
+    "max_hp": 56,
+    "moves": [
+      {
+        "id": "WRITHE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 5
+          }
+        ],
+        "effects": [
+          "Deal 6 damage",
+          "2 hits"
+        ],
+        "title": "Writhe"
+      },
+      {
+        "id": "BULK_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "Apply 2 Strength"
+        ],
+        "title": "Bulk"
+      },
+      {
+        "id": "CONSTRICT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Weak"
+        ],
+        "title": "Constrict"
+      },
+      {
+        "id": "DEAD_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Dead"
+      },
+      {
+        "id": "REATTACH_MOVE",
+        "intents": [
+          {
+            "type": "heal"
+          }
+        ],
+        "effects": [],
+        "title": "Reattach"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "CONSTRICT_MOVE -> BULK_MOVE",
+        "BULK_MOVE -> WRITHE_MOVE",
+        "WRITHE_MOVE -> CONSTRICT_MOVE",
+        "DEAD_MOVE -> REATTACH_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "WRITHE_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "BULK_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "CONSTRICT_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [
+      "Reattach"
+    ],
+    "loc_key": "DECIMILLIPEDE_SEGMENT",
+    "title": "Decimillipede",
+    "move_pattern_desc": "After Constrict, uses Bulk. After Bulk, uses Writhe. After Writhe, uses Constrict. After Dead, uses Reattach. Then 33% chance of Writhe (can't repeat), 33% chance of Bulk (can't repeat), 33% chance of Constrict (can't repeat)."
+  },
+  {
+    "class_name": "DevotedSculptor",
+    "min_hp": 172,
+    "max_hp": 172,
+    "moves": [
+      {
+        "id": "FORBIDDEN_INCANTATION_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply Ritual"
+        ],
+        "title": "Forbidden Incantation"
+      },
+      {
+        "id": "SAVAGE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Savage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "FORBIDDEN_INCANTATION_MOVE",
+      "follow_ups": [
+        "FORBIDDEN_INCANTATION_MOVE -> SAVAGE_MOVE",
+        "SAVAGE_MOVE -> SAVAGE_MOVE"
+      ],
+      "repeats": [
+        "SAVAGE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "DEVOTED_SCULPTOR",
+    "title": "Devoted Sculptor",
+    "move_pattern_desc": "Starts with Forbidden Incantation. Then repeats Savage."
+  },
+  {
+    "class_name": "Door",
+    "min_hp": 165,
+    "max_hp": 165,
+    "moves": [
+      {
+        "id": "DRAMATIC_OPEN_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 25
+          }
+        ],
+        "effects": [
+          "Deal 28 damage"
+        ],
+        "title": "Dramatic Open"
+      },
+      {
+        "id": "ENFORCE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 20
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 20 damage",
+          "Apply 4 Strength"
+        ],
+        "title": "Enforce"
+      },
+      {
+        "id": "DOOR_SLAM_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Door Slam"
+      },
+      {
+        "id": "DEAD_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Dead"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "DRAMATIC_OPEN_MOVE",
+      "follow_ups": [
+        "DEAD_MOVE -> DEAD_MOVE",
+        "dramaticOpenMove -> DOOR_SLAM_MOVE",
+        "DOOR_SLAM_MOVE -> ENFORCE_MOVE"
+      ],
+      "repeats": [
+        "DEAD_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "DoorRevival"
+    ],
+    "loc_key": "DOOR",
+    "title": "Door",
+    "move_pattern_desc": "Starts with Dramatic Open. After Dramaticopenmove, uses Door Slam. After Door Slam, uses Enforce. Then repeats Dead."
+  },
+  {
+    "class_name": "Doormaker",
+    "min_hp": 512,
+    "max_hp": 512,
+    "moves": [
+      {
+        "id": "WHAT_IS_IT_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "What Is It"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 31
+          }
+        ],
+        "effects": [
+          "Deal 34 damage"
+        ],
+        "title": "Beam"
+      },
+      {
+        "id": "GET_BACK_IN_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 40
+          },
+          {
+            "type": "buff"
+          },
+          {
+            "type": "escape"
+          }
+        ],
+        "effects": [
+          "Deal 45 damage",
+          "Apply 5 Strength"
+        ],
+        "title": "Get Back In"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "WHAT_IS_IT_MOVE",
+      "follow_ups": [
+        "WHAT_IS_IT_MOVE -> BEAM_MOVE",
+        "BEAM_MOVE -> GET_BACK_IN_MOVE",
+        "GET_BACK_IN_MOVE -> GET_BACK_IN_MOVE"
+      ],
+      "repeats": [
+        "GET_BACK_IN_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "DOORMAKER",
+    "title": "Doormaker",
+    "move_pattern_desc": "Starts with What Is It. After What Is It, uses Beam. Then repeats Get Back In."
+  },
+  {
+    "class_name": "Entomancer",
+    "min_hp": 155,
+    "max_hp": 155,
+    "moves": [
+      {
+        "id": "PHEROMONE_SPIT_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Pheromone Spit"
+      },
+      {
+        "id": "BEES_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 3 damage"
+        ],
+        "title": "Beeeees!"
+      },
+      {
+        "id": "SPEAR_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          }
+        ],
+        "effects": [
+          "Deal 20 damage"
+        ],
+        "title": "Spear!"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BEES_MOVE",
+      "follow_ups": [
+        "BEES_MOVE -> SPEAR_MOVE",
+        "SPEAR_MOVE -> PHEROMONE_SPIT_MOVE",
+        "PHEROMONE_SPIT_MOVE -> BEES_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "PersonalHive"
+    ],
+    "loc_key": "ENTOMANCER",
+    "title": "Entomancer",
+    "move_pattern_desc": "Cycles in the order: Beeeees! -> Spear! -> Pheromone Spit."
+  },
+  {
+    "class_name": "Exoskeleton",
+    "min_hp": 25,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "SKITTER_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 1
+          }
+        ],
+        "effects": [
+          "Deal 1 damage"
+        ],
+        "title": "Skitter"
+      },
+      {
+        "id": "MANDIBLE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          }
+        ],
+        "effects": [],
+        "title": "Mandible"
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Enrage"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "MANDIBLE_MOVE -> ENRAGE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "HardToKill"
+    ],
+    "loc_key": "EXOSKELETON",
+    "title": "Exoskeleton",
+    "move_pattern_desc": "After Mandible, uses Enrage."
+  },
+  {
+    "class_name": "EyeWithTeeth",
+    "min_hp": 6,
+    "max_hp": 6,
+    "moves": [
+      {
+        "id": "DISTRACT_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Dazed to discard"
+        ],
+        "title": "Distract"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "DISTRACT_MOVE",
+      "follow_ups": [
+        "DISTRACT_MOVE -> DISTRACT_MOVE"
+      ],
+      "repeats": [
+        "DISTRACT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Illusion"
+    ],
+    "loc_key": "EYE_WITH_TEETH",
+    "title": "Eye With Teeth",
+    "move_pattern_desc": "Starts with Distract (repeats)."
+  },
+  {
+    "class_name": "Fabricator",
+    "min_hp": 155,
+    "max_hp": 155,
+    "moves": [
+      {
+        "id": "FABRICATE_MOVE",
+        "intents": [
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [],
+        "title": "Fabricate"
+      },
+      {
+        "id": "FABRICATING_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          },
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [
+          "Deal 21 damage"
+        ],
+        "title": "Fabricating Strike"
+      },
+      {
+        "id": "DISINTEGRATE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          }
+        ],
+        "effects": [
+          "Deal 13 damage"
+        ],
+        "title": "Disintegrate"
+      }
+    ],
+    "move_pattern": {},
+    "powers_on_spawn": [],
+    "loc_key": "FABRICATOR",
+    "title": "Fabricator"
+  },
+  {
+    "class_name": "FakeMerchantMonster",
+    "min_hp": 175,
+    "max_hp": 175,
+    "moves": [
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Swipe"
+      },
+      {
+        "id": "SPEW_COINS_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 2,
+            "hits": 8
+          }
+        ],
+        "effects": [
+          "Deal damage",
+          "8 hits"
+        ],
+        "title": "Spew Coins"
+      },
+      {
+        "id": "THROW_RELIC_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 9
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 15 damage",
+          "Apply 1 Frail"
+        ],
+        "title": "Throw Relic"
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Enrage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SWIPE_MOVE",
+      "random_branches": [
+        {
+          "move": "SWIPE_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "SPEW_COINS_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "THROW_RELIC_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "SWIPE_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "SPEW_COINS_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "THROW_RELIC_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "FAKE_MERCHANT_MONSTER",
+    "title": "The Merchant???",
+    "move_pattern_desc": "Starts with Swipe. Then 17% chance of Swipe (can't repeat), 17% chance of Spew Coins (can't repeat), 17% chance of Throw Relic (can't repeat), 17% chance of Swipe (can't repeat), 17% chance of Spew Coins (can't repeat), 17% chance of Throw Relic (can't repeat)."
+  },
+  {
+    "class_name": "FatGremlin",
+    "min_hp": 14,
+    "max_hp": 18,
+    "moves": [
+      {
+        "id": "SPAWNED_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Spawned"
+      },
+      {
+        "id": "FLEE_MOVE",
+        "intents": [
+          {
+            "type": "escape"
+          }
+        ],
+        "effects": [],
+        "title": "Flee"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SPAWNED_MOVE",
+      "follow_ups": [
+        "SPAWNED_MOVE -> FLEE_MOVE",
+        "FLEE_MOVE -> FLEE_MOVE"
+      ],
+      "repeats": [
+        "FLEE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "FAT_GREMLIN",
+    "title": "Fat Gremlin",
+    "move_pattern_desc": "Starts with Spawned. Then repeats Flee."
+  },
+  {
+    "class_name": "FlailKnight",
+    "min_hp": 108,
+    "max_hp": 108,
+    "moves": [
+      {
+        "id": "WAR_CHANT",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "War Chant"
+      },
+      {
+        "id": "FLAIL_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 9
+          }
+        ],
+        "effects": [
+          "Deal 10 damage",
+          "2 hits"
+        ],
+        "title": "Flail"
+      },
+      {
+        "id": "RAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Ram"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "RAM_MOVE",
+      "follow_ups": [
+        "RAM_MOVE -> FLAIL_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "WAR_CHANT",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "FLAIL_MOVE",
+          "weight": 2
+        },
+        {
+          "move": "RAM_MOVE",
+          "weight": 2
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "FLAIL_KNIGHT",
+    "title": "Flail Knight",
+    "move_pattern_desc": "Starts with Ram. After Ram, uses Flail. Then 20% chance of War Chant (can't repeat), 40% chance of Flail, 40% chance of Ram."
+  },
+  {
+    "class_name": "Flyconid",
+    "min_hp": 51,
+    "max_hp": 53,
+    "moves": [
+      {
+        "id": "VULNERABLE_SPORES_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Vulnerable"
+        ],
+        "title": "Vulnerable Spores"
+      },
+      {
+        "id": "FRAIL_SPORES_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 2 Frail"
+        ],
+        "title": "Frail Spores"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          }
+        ],
+        "effects": [
+          "Deal 12 damage"
+        ],
+        "title": "Smash"
+      }
+    ],
+    "move_pattern": {
+      "random_branches": [
+        {
+          "move": "SMASH_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "SMASH_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "FLYCONID",
+    "title": "Flyconid",
+    "move_pattern_desc": "50% chance of Smash (can't repeat), 50% chance of Smash (can't repeat)."
+  },
+  {
+    "class_name": "Fogmog",
+    "min_hp": 78,
+    "max_hp": 78,
+    "moves": [
+      {
+        "id": "ILLUSION_MOVE",
+        "intents": [
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [],
+        "title": "Illusion"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Strength"
+        ],
+        "title": "Swipe"
+      },
+      {
+        "id": "SWIPE_RANDOM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Swipe Random"
+      },
+      {
+        "id": "HEADBUTT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Headbutt"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "ILLUSION_MOVE",
+      "follow_ups": [
+        "ILLUSION_MOVE -> SWIPE_MOVE",
+        "SWIPE_RANDOM_MOVE -> HEADBUTT_MOVE",
+        "HEADBUTT_MOVE -> SWIPE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "FOGMOG",
+    "title": "Fogmog",
+    "move_pattern_desc": "Starts with Illusion. After Illusion, uses Swipe. After Swipe Random, uses Headbutt. After Headbutt, uses Swipe."
+  },
+  {
+    "class_name": "FossilStalker",
+    "min_hp": 54,
+    "max_hp": 56,
+    "moves": [
+      {
+        "id": "TACKLE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 9
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 11 damage",
+          "Apply 1 Frail"
+        ],
+        "title": "Tackle"
+      },
+      {
+        "id": "LATCH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 14 damage"
+        ],
+        "title": "Latch"
+      },
+      {
+        "id": "LASH_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 3
+          }
+        ],
+        "effects": [],
+        "title": "Lash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "LATCH_MOVE",
+      "follow_ups": [
+        "LASH_MOVE -> TACKLE_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "LATCH_MOVE",
+          "weight": 2
+        },
+        {
+          "move": "TACKLE_MOVE",
+          "weight": 2
+        },
+        {
+          "move": "LASH_MOVE",
+          "weight": 2
+        }
+      ]
+    },
+    "powers_on_spawn": [
+      "Suck"
+    ],
+    "loc_key": "FOSSIL_STALKER",
+    "title": "Fossil Stalker",
+    "move_pattern_desc": "Starts with Latch. After Lash, uses Tackle. Then 33% chance of Latch, 33% chance of Tackle, 33% chance of Lash."
+  },
+  {
+    "class_name": "FrogKnight",
+    "min_hp": 199,
+    "max_hp": 199,
+    "moves": [
+      {
+        "id": "FOR_THE_QUEEN",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 5 Strength"
+        ],
+        "title": "For the Queen"
+      },
+      {
+        "id": "STRIKE_DOWN_EVIL",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 21
+          }
+        ],
+        "effects": [
+          "Deal 23 damage"
+        ],
+        "title": "Strike Down Evil"
+      },
+      {
+        "id": "TONGUE_LASH",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 14 damage",
+          "Apply 2 Frail"
+        ],
+        "title": "Tongue Lash"
+      },
+      {
+        "id": "BEETLE_CHARGE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 35
+          }
+        ],
+        "effects": [
+          "Deal 40 damage"
+        ],
+        "title": "Beetle Charge"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "TONGUE_LASH",
+      "follow_ups": [
+        "STRIKE_DOWN_EVIL -> FOR_THE_QUEEN",
+        "TONGUE_LASH -> STRIKE_DOWN_EVIL",
+        "BEETLE_CHARGE -> TONGUE_LASH"
+      ]
+    },
+    "powers_on_spawn": [
+      "Plating"
+    ],
+    "loc_key": "FROG_KNIGHT",
+    "title": "Frog Knight",
+    "move_pattern_desc": "Starts with Tongue Lash. After Strike Down Evil, uses For the Queen. After Tongue Lash, uses Strike Down Evil. After Beetle Charge, uses Tongue Lash."
+  },
+  {
+    "class_name": "FuzzyWurmCrawler",
+    "min_hp": 58,
+    "max_hp": 59,
+    "moves": [
+      {
+        "id": "FIRST_ACID_GOOP",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 4
+          }
+        ],
+        "effects": [],
+        "title": "First Acid Goop"
+      },
+      {
+        "id": "ACID_GOOP",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 6 damage"
+        ],
+        "title": "Acid Goop"
+      },
+      {
+        "id": "INHALE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 7 Strength"
+        ],
+        "title": "Inhale"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "FIRST_ACID_GOOP",
+      "follow_ups": [
+        "FIRST_ACID_GOOP -> INHALE",
+        "INHALE -> ACID_GOOP",
+        "ACID_GOOP -> FIRST_ACID_GOOP"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "FUZZY_WURM_CRAWLER",
+    "title": "Fuzzy Wurm Crawler",
+    "move_pattern_desc": "Cycles in the order: First Acid Goop -> Inhale -> Acid Goop."
+  },
+  {
+    "class_name": "GasBomb",
+    "min_hp": 12,
+    "max_hp": 12,
+    "moves": [
+      {
+        "id": "EXPLODE_MOVE",
+        "intents": [
+          {
+            "type": "death_blow"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage"
+        ],
+        "title": "Explode"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "EXPLODE_MOVE"
+    },
+    "powers_on_spawn": [
+      "Minion"
+    ],
+    "loc_key": "GAS_BOMB",
+    "title": "Gas Bomb",
+    "move_pattern_desc": "Always uses Explode."
+  },
+  {
+    "class_name": "GlobeHead",
+    "min_hp": 158,
+    "max_hp": 158,
+    "moves": [
+      {
+        "id": "THUNDER_STRIKE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "3 hits"
+        ],
+        "title": "Thunder Strike"
+      },
+      {
+        "id": "SHOCKING_SLAP",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 14 damage",
+          "Apply 2 Frail"
+        ],
+        "title": "Shocking Slap"
+      },
+      {
+        "id": "GALVANIC_BURST",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 17 damage",
+          "Apply 2 Strength"
+        ],
+        "title": "Galvanic Burst"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SHOCKING_SLAP",
+      "follow_ups": [
+        "SHOCKING_SLAP -> THUNDER_STRIKE",
+        "THUNDER_STRIKE -> GALVANIC_BURST",
+        "GALVANIC_BURST -> SHOCKING_SLAP"
+      ]
+    },
+    "powers_on_spawn": [
+      "Galvanic"
+    ],
+    "loc_key": "GLOBE_HEAD",
+    "title": "Globe Head",
+    "move_pattern_desc": "Cycles in the order: Shocking Slap -> Thunder Strike -> Galvanic Burst."
+  },
+  {
+    "class_name": "GremlinMerc",
+    "min_hp": 51,
+    "max_hp": 53,
+    "moves": [
+      {
+        "id": "GIMME_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Gimme"
+      },
+      {
+        "id": "DOUBLE_SMASH_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 6
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "Apply 2 Weak"
+        ],
+        "title": "Double Smash"
+      },
+      {
+        "id": "HEHE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 2 Strength"
+        ],
+        "title": "Hehe"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "GIMME_MOVE",
+      "follow_ups": [
+        "GIMME_MOVE -> DOUBLE_SMASH_MOVE",
+        "DOUBLE_SMASH_MOVE -> HEHE_MOVE",
+        "HEHE_MOVE -> GIMME_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Surprise"
+    ],
+    "loc_key": "GREMLIN_MERC",
+    "title": "Gremlin Merc",
+    "move_pattern_desc": "Cycles in the order: Gimme -> Double Smash -> Hehe."
+  },
+  {
+    "class_name": "Guardbot",
+    "min_hp": 22,
+    "max_hp": 26,
+    "moves": [
+      {
+        "id": "GUARD_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Gain 15 Block"
+        ],
+        "title": "Guard"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "GUARD_MOVE",
+      "follow_ups": [
+        "GUARD_MOVE -> GUARD_MOVE"
+      ],
+      "repeats": [
+        "GUARD_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "GUARDBOT",
+    "title": "Guardbot",
+    "move_pattern_desc": "Starts with Guard (repeats)."
+  },
+  {
+    "class_name": "HauntedShip",
+    "min_hp": 67,
+    "max_hp": 67,
+    "moves": [
+      {
+        "id": "RAMMING_SPEED_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 10
+          },
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Deal 11 damage",
+          "Add Wound to discard"
+        ],
+        "title": "Ramming Speed"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          }
+        ],
+        "effects": [
+          "Deal 14 damage"
+        ],
+        "title": "Swipe"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 5 damage"
+        ],
+        "title": "Stomp"
+      },
+      {
+        "id": "HAUNT_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Weak",
+          "Apply 2 Frail",
+          "Apply 2 Vulnerable"
+        ],
+        "title": "Haunt"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "RAMMING_SPEED_MOVE",
+      "follow_ups": [
+        "HAUNT_MOVE -> STOMP_MOVE",
+        "SWIPE_MOVE -> RAMMING_SPEED_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "HAUNTED_SHIP",
+    "title": "Haunted Ship",
+    "move_pattern_desc": "Starts with Ramming Speed. After Haunt, uses Stomp. After Swipe, uses Ramming Speed."
+  },
+  {
+    "class_name": "HunterKiller",
+    "min_hp": 126,
+    "max_hp": 126,
+    "moves": [
+      {
+        "id": "TENDERIZING_GOOP_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Tenderizing Goop"
+      },
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 17
+          }
+        ],
+        "effects": [
+          "Deal 19 damage"
+        ],
+        "title": "Bite"
+      },
+      {
+        "id": "PUNCTURE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 8 damage",
+          "3 hits"
+        ],
+        "title": "Puncture"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "TENDERIZING_GOOP_MOVE",
+      "follow_ups": [
+        "PUNCTURE_MOVE -> BITE_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "BITE_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "PUNCTURE_MOVE",
+          "weight": 2
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "HUNTER_KILLER",
+    "title": "Hunter Killer",
+    "move_pattern_desc": "Starts with Tenderizing Goop. After Puncture, uses Bite. Then 33% chance of Bite (can't repeat), 67% chance of Puncture."
+  },
+  {
+    "class_name": "InfestedPrism",
+    "min_hp": 215,
+    "max_hp": 215,
+    "moves": [
+      {
+        "id": "JAB_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 22
+          }
+        ],
+        "effects": [
+          "Deal 24 damage"
+        ],
+        "title": "Jab"
+      },
+      {
+        "id": "RADIATE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Deal 18 damage"
+        ],
+        "title": "Radiate"
+      },
+      {
+        "id": "WHIRLWIND_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 9
+          }
+        ],
+        "effects": [
+          "Deal 10 damage"
+        ],
+        "title": "Whirlwind"
+      },
+      {
+        "id": "PULSATE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Apply 5 Strength"
+        ],
+        "title": "Pulsate"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "JAB_MOVE",
+      "follow_ups": [
+        "JAB_MOVE -> RADIATE_MOVE",
+        "RADIATE_MOVE -> WHIRLWIND_MOVE",
+        "WHIRLWIND_MOVE -> PULSATE_MOVE",
+        "PULSATE_MOVE -> JAB_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "VitalSpark"
+    ],
+    "loc_key": "INFESTED_PRISM",
+    "title": "Infested Prism",
+    "move_pattern_desc": "Cycles in the order: Jab -> Radiate -> Whirlwind -> Pulsate."
+  },
+  {
+    "class_name": "Inklet",
+    "min_hp": 12,
+    "max_hp": 18,
+    "moves": [
+      {
+        "id": "JAB_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 4 damage"
+        ],
+        "title": "Jab"
+      },
+      {
+        "id": "WHIRLWIND_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 2
+          }
+        ],
+        "effects": [
+          "Deal 3 damage",
+          "3 hits"
+        ],
+        "title": "Whirlwind"
+      },
+      {
+        "id": "PIERCING_GAZE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 10
+          }
+        ],
+        "effects": [
+          "Deal 11 damage"
+        ],
+        "title": "Piercing Gaze"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "WHIRLWIND_MOVE -> PIERCING_GAZE_MOVE",
+        "WHIRLWIND_MOVE -> JAB_MOVE",
+        "PIERCING_GAZE_MOVE -> JAB_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Slippery"
+    ],
+    "loc_key": "INKLET",
+    "title": "Inklet",
+    "move_pattern_desc": "After Whirlwind, uses Jab. After Piercing Gaze, uses Jab."
+  },
+  {
+    "class_name": "KinFollower",
+    "min_hp": 62,
+    "max_hp": 63,
+    "moves": [
+      {
+        "id": "QUICK_SLASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 5
+          }
+        ],
+        "effects": [
+          "Deal 5 damage"
+        ],
+        "title": "Quick Slash"
+      },
+      {
+        "id": "BOOMERANG_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 2
+          }
+        ],
+        "effects": [
+          "Deal 2 damage",
+          "2 hits"
+        ],
+        "title": "Boomerang"
+      },
+      {
+        "id": "POWER_DANCE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "Power Dance"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "QUICK_SLASH_MOVE -> BOOMERANG_MOVE",
+        "BOOMERANG_MOVE -> POWER_DANCE_MOVE",
+        "POWER_DANCE_MOVE -> QUICK_SLASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Minion"
+    ],
+    "loc_key": "KIN_FOLLOWER",
+    "title": "Kin Follower",
+    "move_pattern_desc": "Cycles in the order: Quick Slash -> Boomerang -> Power Dance."
+  },
+  {
+    "class_name": "KinPriest",
+    "min_hp": 199,
+    "max_hp": 199,
+    "moves": [
+      {
+        "id": "ORB_OF_FRAILTY_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Frail"
+        ],
+        "title": "Orb Of Frailty"
+      },
+      {
+        "id": "ORB_OF_WEAKNESS_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Weak"
+        ],
+        "title": "Orb Of Weakness"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 3 damage",
+          "3 hits"
+        ],
+        "title": "Beam"
+      },
+      {
+        "id": "RITUAL_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "Ritual"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "ORB_OF_FRAILTY_MOVE",
+      "follow_ups": [
+        "ORB_OF_FRAILTY_MOVE -> ORB_OF_WEAKNESS_MOVE",
+        "ORB_OF_WEAKNESS_MOVE -> BEAM_MOVE",
+        "BEAM_MOVE -> RITUAL_MOVE",
+        "RITUAL_MOVE -> ORB_OF_FRAILTY_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "KIN_PRIEST",
+    "title": "Kin Priest",
+    "move_pattern_desc": "Cycles in the order: Orb Of Frailty -> Orb Of Weakness -> Beam -> Ritual."
+  },
+  {
+    "class_name": "KnowledgeDemon",
+    "min_hp": 399,
+    "max_hp": 399,
+    "moves": [
+      {
+        "id": "CURSE_OF_KNOWLEDGE_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Curse of Knowledge"
+      },
+      {
+        "id": "SLAP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 17
+          }
+        ],
+        "effects": [
+          "Deal 18 damage"
+        ],
+        "title": "Slap"
+      },
+      {
+        "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 8
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "3 hits"
+        ],
+        "title": "Knowledge Overwhelming"
+      },
+      {
+        "id": "PONDER_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          },
+          {
+            "type": "heal"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 13 damage",
+          "Apply 3 Strength",
+          "Heal 30"
+        ],
+        "title": "Ponder"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CURSE_OF_KNOWLEDGE_MOVE",
+      "follow_ups": [
+        "CURSE_OF_KNOWLEDGE_MOVE -> SLAP_MOVE",
+        "SLAP_MOVE -> KNOWLEDGE_OVERWHELMING_MOVE",
+        "KNOWLEDGE_OVERWHELMING_MOVE -> PONDER_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "KNOWLEDGE_DEMON",
+    "title": "Knowledge Demon",
+    "move_pattern_desc": "Starts with Curse of Knowledge. After Curse of Knowledge, uses Slap. After Slap, uses Knowledge Overwhelming. After Knowledge Overwhelming, uses Ponder."
+  },
+  {
+    "class_name": "LagavulinMatriarch",
+    "min_hp": 233,
+    "max_hp": 233,
+    "moves": [
+      {
+        "id": "SLEEP_MOVE",
+        "intents": [
+          {
+            "type": "sleep"
+          }
+        ],
+        "effects": [],
+        "title": "Sleep"
+      },
+      {
+        "id": "SLASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 19
+          }
+        ],
+        "effects": [
+          "Deal 21 damage"
+        ],
+        "title": "Slash"
+      },
+      {
+        "id": "SLASH2_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Deal 14 damage"
+        ],
+        "title": "Slash2"
+      },
+      {
+        "id": "DISEMBOWEL_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 9
+          }
+        ],
+        "effects": [
+          "Deal 10 damage"
+        ],
+        "title": "Disembowel"
+      },
+      {
+        "id": "SOUL_SIPHON_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Soul Siphon"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SLEEP_MOVE",
+      "follow_ups": [
+        "SLASH_MOVE -> DISEMBOWEL_MOVE",
+        "DISEMBOWEL_MOVE -> SLASH2_MOVE",
+        "SLASH2_MOVE -> SOUL_SIPHON_MOVE",
+        "SOUL_SIPHON_MOVE -> SLASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Plating",
+      "Asleep"
+    ],
+    "loc_key": "LAGAVULIN_MATRIARCH",
+    "title": "Lagavulin Matriarch",
+    "move_pattern_desc": "Starts with Sleep, then cycles: Slash -> Disembowel -> Slash2 -> Soul Siphon."
+  },
+  {
+    "class_name": "LeafSlimeM",
+    "min_hp": 33,
+    "max_hp": 36,
+    "moves": [
+      {
+        "id": "CLUMP_SHOT",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          }
+        ],
+        "effects": [
+          "Deal 9 damage"
+        ],
+        "title": "Clump Shot"
+      },
+      {
+        "id": "STICKY_SHOT",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Slimed to discard"
+        ],
+        "title": "Sticky Shot"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "STICKY_SHOT",
+      "follow_ups": [
+        "STICKY_SHOT -> CLUMP_SHOT",
+        "CLUMP_SHOT -> STICKY_SHOT"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "LEAF_SLIME_M",
+    "title": "Leaf Slime (M)",
+    "move_pattern_desc": "Cycles in the order: Sticky Shot -> Clump Shot."
+  },
+  {
+    "class_name": "LeafSlimeS",
+    "min_hp": 12,
+    "max_hp": 16,
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 3
+          }
+        ],
+        "effects": [],
+        "title": "Butt"
+      },
+      {
+        "id": "GOOP_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Slimed to discard"
+        ],
+        "title": "Goop"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "GOOP_MOVE -> BUTT_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "BUTT_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "GOOP_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "LEAF_SLIME_S",
+    "title": "Leaf Slime (S)",
+    "move_pattern_desc": "After Goop, uses Butt. Then 50% chance of Butt (can't repeat), 50% chance of Goop (can't repeat)."
+  },
+  {
+    "class_name": "LivingFog",
+    "min_hp": 82,
+    "max_hp": 82,
+    "moves": [
+      {
+        "id": "ADVANCED_GAS_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Smoggy"
+        ],
+        "title": "Advanced Gas"
+      },
+      {
+        "id": "BLOAT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 5
+          },
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [
+          "Deal 6 damage"
+        ],
+        "title": "Bloat"
+      },
+      {
+        "id": "SUPER_GAS_BLAST_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          }
+        ],
+        "effects": [
+          "Deal 9 damage"
+        ],
+        "title": "Super Gas Blast"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "ADVANCED_GAS_MOVE",
+      "follow_ups": [
+        "ADVANCED_GAS_MOVE -> BLOAT_MOVE",
+        "BLOAT_MOVE -> SUPER_GAS_BLAST_MOVE",
+        "SUPER_GAS_BLAST_MOVE -> BLOAT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "LIVING_FOG",
+    "title": "Living Fog",
+    "move_pattern_desc": "Starts with Advanced Gas. After Advanced Gas, uses Bloat. After Bloat, uses Super Gas Blast. After Super Gas Blast, uses Bloat."
+  },
+  {
+    "class_name": "LivingShield",
+    "min_hp": 65,
+    "max_hp": 65,
+    "moves": [
+      {
+        "id": "SHIELD_SLAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 6 damage"
+        ],
+        "title": "Shield Slam"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 18 damage",
+          "Apply 3 Strength"
+        ],
+        "title": "Smash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SHIELD_SLAM_MOVE",
+      "follow_ups": [
+        "SMASH_MOVE -> SMASH_MOVE"
+      ],
+      "repeats": [
+        "SMASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Rampart"
+    ],
+    "loc_key": "LIVING_SHIELD",
+    "title": "Living Shield",
+    "move_pattern_desc": "Starts with Shield Slam. Then repeats Smash."
+  },
+  {
+    "class_name": "LouseProgenitor",
+    "min_hp": 138,
+    "max_hp": 141,
+    "moves": [
+      {
+        "id": "WEB_CANNON_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 9
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Web Cannon"
+      },
+      {
+        "id": "POUNCE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Pounce"
+      },
+      {
+        "id": "CURL_AND_GROW_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 5 Strength"
+        ],
+        "title": "Curl and Grow"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "WEB_CANNON_MOVE",
+      "follow_ups": [
+        "WEB_CANNON_MOVE -> CURL_AND_GROW_MOVE",
+        "CURL_AND_GROW_MOVE -> POUNCE_MOVE",
+        "POUNCE_MOVE -> WEB_CANNON_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "CurlUp"
+    ],
+    "loc_key": "LOUSE_PROGENITOR",
+    "title": "Louse Progenitor",
+    "move_pattern_desc": "Cycles in the order: Web Cannon -> Curl and Grow -> Pounce."
+  },
+  {
+    "class_name": "MagiKnight",
+    "min_hp": 89,
+    "max_hp": 89,
+    "moves": [
+      {
+        "id": "FIRST_POWER_SHIELD_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [],
+        "title": "First Power Shield"
+      },
+      {
+        "id": "DAMPEN_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Dampen"
+      },
+      {
+        "id": "PREP_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [],
+        "title": "Prep"
+      },
+      {
+        "id": "MAGIC_BOMB",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 35
+          }
+        ],
+        "effects": [
+          "Deal 40 damage"
+        ],
+        "title": "Magic Bomb"
+      },
+      {
+        "id": "RAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 10
+          }
+        ],
+        "effects": [],
+        "title": "Ram"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "FIRST_POWER_SHIELD_MOVE",
+      "follow_ups": [
+        "FIRST_POWER_SHIELD_MOVE -> DAMPEN_MOVE",
+        "DAMPEN_MOVE -> RAM_MOVE",
+        "RAM_MOVE -> PREP_MOVE",
+        "PREP_MOVE -> MAGIC_BOMB",
+        "MAGIC_BOMB -> RAM_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "MAGI_KNIGHT",
+    "title": "Magi Knight",
+    "move_pattern_desc": "Starts with First Power Shield. After First Power Shield, uses Dampen. After Dampen, uses Ram. After Ram, uses Prep. After Prep, uses Magic Bomb. After Magic Bomb, uses Ram."
+  },
+  {
+    "class_name": "Mawler",
+    "min_hp": 76,
+    "max_hp": 76,
+    "moves": [
+      {
+        "id": "RIP_AND_TEAR_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Rip and Tear"
+      },
+      {
+        "id": "ROAR_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Vulnerable"
+        ],
+        "title": "Roar"
+      },
+      {
+        "id": "CLAW_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 5 damage",
+          "2 hits"
+        ],
+        "title": "Claw"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CLAW_MOVE",
+      "follow_ups": [
+        "CLAW_MOVE -> ROAR_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "MAWLER",
+    "title": "Mawler",
+    "move_pattern_desc": "Starts with Claw. After Claw, uses Roar."
+  },
+  {
+    "class_name": "MechaKnight",
+    "min_hp": 320,
+    "max_hp": 320,
+    "moves": [
+      {
+        "id": "CHARGE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 25
+          }
+        ],
+        "effects": [
+          "Deal 30 damage"
+        ],
+        "title": "Charge"
+      },
+      {
+        "id": "FLAMETHROWER_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Burn to discard"
+        ],
+        "title": "Flamethrower"
+      },
+      {
+        "id": "WINDUP_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 5 Strength",
+          "Gain 15 Block"
+        ],
+        "title": "Windup"
+      },
+      {
+        "id": "HEAVY_CLEAVE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 35
+          }
+        ],
+        "effects": [
+          "Deal 40 damage"
+        ],
+        "title": "Heavy Cleave"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CHARGE_MOVE",
+      "follow_ups": [
+        "CHARGE_MOVE -> FLAMETHROWER_MOVE",
+        "FLAMETHROWER_MOVE -> WINDUP_MOVE",
+        "WINDUP_MOVE -> HEAVY_CLEAVE_MOVE",
+        "HEAVY_CLEAVE_MOVE -> FLAMETHROWER_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "MECHA_KNIGHT",
+    "title": "Mecha Knight",
+    "move_pattern_desc": "Starts with Charge. After Charge, uses Flamethrower. After Flamethrower, uses Windup. After Windup, uses Heavy Cleave. After Heavy Cleave, uses Flamethrower."
+  },
+  {
+    "class_name": "MultiAttackMoveMonster",
+    "min_hp": 999,
+    "max_hp": 999,
+    "moves": [
+      {
+        "id": "POKE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 1,
+            "hits": 5
+          }
+        ],
+        "effects": [
+          "Deal damage",
+          "5 hits"
+        ],
+        "title": "Poke"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "POKE",
+      "follow_ups": [
+        "POKE -> POKE"
+      ],
+      "repeats": [
+        "POKE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "MULTI_ATTACK_MOVE_MONSTER",
+    "title": "MultiAttackMoveMonster",
+    "move_pattern_desc": "Starts with Poke (repeats)."
+  },
+  {
+    "class_name": "Myte",
+    "min_hp": 64,
+    "max_hp": 69,
+    "moves": [
+      {
+        "id": "TOXIC_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Toxic to discard"
+        ],
+        "title": "Toxic Cornucopia"
+      },
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Bite"
+      },
+      {
+        "id": "SUCK_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 4
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 6 damage",
+          "Apply 3 Strength"
+        ],
+        "title": "Suck"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "TOXIC_MOVE -> BITE_MOVE",
+        "BITE_MOVE -> SUCK_MOVE",
+        "SUCK_MOVE -> TOXIC_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "MYTE",
+    "title": "Myte",
+    "move_pattern_desc": "Cycles in the order: Toxic Cornucopia -> Bite -> Suck."
+  },
+  {
+    "class_name": "Nibbit",
+    "min_hp": 44,
+    "max_hp": 48,
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 13 damage"
+        ],
+        "title": "Butt"
+      },
+      {
+        "id": "SLICE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Deal 6 damage"
+        ],
+        "title": "Slice"
+      },
+      {
+        "id": "HISS_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Hiss"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "SLICE_MOVE -> HISS_MOVE",
+        "BUTT_MOVE -> SLICE_MOVE",
+        "HISS_MOVE -> BUTT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "NIBBIT",
+    "title": "Nibbit",
+    "move_pattern_desc": "Cycles in the order: Slice -> Hiss -> Butt."
+  },
+  {
+    "class_name": "Noisebot",
+    "min_hp": 24,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "NOISE_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [],
+        "title": "Noise"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOISE_MOVE",
+      "follow_ups": [
+        "NOISE_MOVE -> NOISE_MOVE"
+      ],
+      "repeats": [
+        "NOISE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "NOISEBOT",
+    "title": "Noisebot",
+    "move_pattern_desc": "Starts with Noise (repeats)."
+  },
+  {
+    "class_name": "OneHpMonster",
+    "min_hp": 1,
+    "max_hp": 1,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "hidden"
+          }
+        ],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING",
+      "follow_ups": [
+        "NOTHING -> NOTHING"
+      ],
+      "repeats": [
+        "NOTHING"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "ONE_HP_MONSTER",
+    "title": "OneHpMonster",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "Osty",
+    "min_hp": 1,
+    "max_hp": 1,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING_MOVE",
+      "follow_ups": [
+        "NOTHING_MOVE -> NOTHING_MOVE"
+      ],
+      "repeats": [
+        "NOTHING_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "is_companion": true,
+    "loc_key": "OSTY",
+    "title": "Osty",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "Ovicopter",
+    "min_hp": 126,
+    "max_hp": 132,
+    "moves": [
+      {
+        "id": "LAY_EGGS_MOVE",
+        "intents": [
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [
+          "Apply Minion"
+        ],
+        "title": "Lay Eggs"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Smash"
+      },
+      {
+        "id": "TENDERIZER_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 8 damage",
+          "Apply 2 Vulnerable"
+        ],
+        "title": "Tenderizer"
+      },
+      {
+        "id": "NUTRITIONAL_PASTE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 4 Strength"
+        ],
+        "title": "Nutritional Paste"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "LAY_EGGS_MOVE",
+      "follow_ups": [
+        "LAY_EGGS_MOVE -> SMASH_MOVE",
+        "NUTRITIONAL_PASTE_MOVE -> SMASH_MOVE",
+        "SMASH_MOVE -> TENDERIZER_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "OVICOPTER",
+    "title": "Ovicopter",
+    "move_pattern_desc": "Starts with Lay Eggs. After Lay Eggs, uses Smash. After Nutritional Paste, uses Smash. After Smash, uses Tenderizer."
+  },
+  {
+    "class_name": "OwlMagistrate",
+    "min_hp": 243,
+    "max_hp": 243,
+    "moves": [
+      {
+        "id": "MAGISTRATE_SCRUTINY",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Magistrate Scrutiny"
+      },
+      {
+        "id": "PECK_ASSAULT",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 6,
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 4 damage",
+          "6 hits"
+        ],
+        "title": "Peck Assault"
+      },
+      {
+        "id": "JUDICIAL_FLIGHT",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 1 Soar"
+        ],
+        "title": "Judicial Flight"
+      },
+      {
+        "id": "VERDICT",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 33
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 36 damage",
+          "Apply 4 Vulnerable"
+        ],
+        "title": "Verdict"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "MAGISTRATE_SCRUTINY",
+      "follow_ups": [
+        "MAGISTRATE_SCRUTINY -> PECK_ASSAULT",
+        "PECK_ASSAULT -> JUDICIAL_FLIGHT",
+        "JUDICIAL_FLIGHT -> VERDICT",
+        "VERDICT -> MAGISTRATE_SCRUTINY"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "OWL_MAGISTRATE",
+    "title": "Owl Magistrate",
+    "move_pattern_desc": "Cycles in the order: Magistrate Scrutiny -> Peck Assault -> Judicial Flight -> Verdict."
+  },
+  {
+    "class_name": "PaelsLegion",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "moves": [
+      {
+        "id": "NOTHING_MOVE",
+        "intents": [],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING_MOVE",
+      "follow_ups": [
+        "NOTHING_MOVE -> NOTHING_MOVE"
+      ],
+      "repeats": [
+        "NOTHING_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "is_companion": true,
+    "loc_key": "PAELS_LEGION",
+    "title": "Pael's Legion",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "Parafright",
+    "min_hp": 21,
+    "max_hp": 21,
+    "moves": [
+      {
+        "id": "SLAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Slam"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SLAM_MOVE",
+      "follow_ups": [
+        "SLAM_MOVE -> SLAM_MOVE"
+      ],
+      "repeats": [
+        "SLAM_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Illusion"
+    ],
+    "loc_key": "PARAFRIGHT",
+    "title": "Parafright",
+    "move_pattern_desc": "Starts with Slam (repeats)."
+  },
+  {
+    "class_name": "PhantasmalGardener",
+    "min_hp": 29,
+    "max_hp": 33,
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 5
+          }
+        ],
+        "effects": [
+          "Deal 5 damage"
+        ],
+        "title": "Bite"
+      },
+      {
+        "id": "LASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 7 damage"
+        ],
+        "title": "Lash"
+      },
+      {
+        "id": "FLAIL_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 1
+          }
+        ],
+        "effects": [
+          "Deal 1 damage"
+        ],
+        "title": "Flail"
+      },
+      {
+        "id": "ENLARGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "Enlarge"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "BITE_MOVE -> LASH_MOVE",
+        "LASH_MOVE -> FLAIL_MOVE",
+        "FLAIL_MOVE -> ENLARGE_MOVE",
+        "ENLARGE_MOVE -> BITE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Skittish"
+    ],
+    "loc_key": "PHANTASMAL_GARDENER",
+    "title": "Phantasmal Gardener",
+    "move_pattern_desc": "Cycles in the order: Bite -> Lash -> Flail -> Enlarge."
+  },
+  {
+    "class_name": "PhrogParasite",
+    "min_hp": 66,
+    "max_hp": 68,
+    "moves": [
+      {
+        "id": "INFECT_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Infection to discard"
+        ],
+        "title": "Infect"
+      },
+      {
+        "id": "LASH_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 4,
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 5 damage",
+          "4 hits"
+        ],
+        "title": "Lash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "INFECT_MOVE",
+      "follow_ups": [
+        "INFECT_MOVE -> LASH_MOVE",
+        "LASH_MOVE -> INFECT_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "INFECT_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "LASH_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [
+      "Infested"
+    ],
+    "loc_key": "PHROG_PARASITE",
+    "title": "Phrog Parasite",
+    "move_pattern_desc": "Cycles in the order: Infect -> Lash."
+  },
+  {
+    "class_name": "PunchConstruct",
+    "min_hp": 60,
+    "max_hp": 60,
+    "moves": [
+      {
+        "id": "READY_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Gain 10 Block"
+        ],
+        "title": "READY"
+      },
+      {
+        "id": "STRONG_PUNCH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Strong Punch"
+      },
+      {
+        "id": "FAST_PUNCH_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 5
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 6 damage",
+          "Apply 1 Weak"
+        ],
+        "title": "Fast Punch"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "READY_MOVE -> STRONG_PUNCH_MOVE",
+        "STRONG_PUNCH_MOVE -> FAST_PUNCH_MOVE",
+        "FAST_PUNCH_MOVE -> READY_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "PUNCH_CONSTRUCT",
+    "title": "Punch Construct",
+    "move_pattern_desc": "Cycles in the order: READY -> Strong Punch -> Fast Punch."
+  },
+  {
+    "class_name": "Queen",
+    "min_hp": 419,
+    "max_hp": 419,
+    "moves": [
+      {
+        "id": "PUPPET_STRINGS_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 3 ChainsOfBinding"
+        ],
+        "title": "Puppet Strings"
+      },
+      {
+        "id": "YOUR_MINE_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Your Mine"
+      },
+      {
+        "id": "BURN_BRIGHT_FOR_ME_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Apply Strength",
+          "Gain 20 Block"
+        ],
+        "title": "Burn Bright for Me"
+      },
+      {
+        "id": "OFF_WITH_YOUR_HEAD_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 5,
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 4 damage",
+          "5 hits"
+        ],
+        "title": "Off with Your Head"
+      },
+      {
+        "id": "EXECUTION_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 18 damage"
+        ],
+        "title": "Execution"
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Enrage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "PUPPET_STRINGS_MOVE",
+      "follow_ups": [
+        "PUPPET_STRINGS_MOVE -> YOUR_MINE_MOVE",
+        "OFF_WITH_YOUR_HEAD_MOVE -> EXECUTION_MOVE",
+        "EXECUTION_MOVE -> ENRAGE_MOVE",
+        "ENRAGE_MOVE -> OFF_WITH_YOUR_HEAD_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "QUEEN",
+    "title": "Queen",
+    "move_pattern_desc": "Starts with Puppet Strings. After Puppet Strings, uses Your Mine. After Off with Your Head, uses Execution. After Execution, uses Enrage. After Enrage, uses Off with Your Head."
+  },
+  {
+    "class_name": "Rocket",
+    "min_hp": 199,
+    "max_hp": 199,
+    "moves": [
+      {
+        "id": "TARGETING_RETICLE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 4 damage"
+        ],
+        "title": "Targeting Reticle"
+      },
+      {
+        "id": "PRECISION_BEAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          }
+        ],
+        "effects": [
+          "Deal 20 damage"
+        ],
+        "title": "Precision Beam"
+      },
+      {
+        "id": "CHARGE_UP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Charge Up"
+      },
+      {
+        "id": "LASER_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 31
+          }
+        ],
+        "effects": [
+          "Deal 35 damage"
+        ],
+        "title": "Laser"
+      },
+      {
+        "id": "RECHARGE_MOVE",
+        "intents": [
+          {
+            "type": "sleep"
+          }
+        ],
+        "effects": [],
+        "title": "Recharge"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "TARGETING_RETICLE_MOVE",
+      "follow_ups": [
+        "TARGETING_RETICLE_MOVE -> PRECISION_BEAM_MOVE",
+        "PRECISION_BEAM_MOVE -> CHARGE_UP_MOVE",
+        "CHARGE_UP_MOVE -> LASER_MOVE",
+        "LASER_MOVE -> RECHARGE_MOVE",
+        "RECHARGE_MOVE -> TARGETING_RETICLE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Surrounded",
+      "BackAttackRight",
+      "CrabRage"
+    ],
+    "loc_key": "ROCKET",
+    "title": "Rocket",
+    "move_pattern_desc": "Cycles in the order: Targeting Reticle -> Precision Beam -> Charge Up -> Laser -> Recharge."
+  },
+  {
+    "class_name": "ScrollOfBiting",
+    "min_hp": 32,
+    "max_hp": 39,
+    "moves": [
+      {
+        "id": "CHOMP",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Chomp"
+      },
+      {
+        "id": "CHEW",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 5
+          }
+        ],
+        "effects": [],
+        "title": "Chew"
+      },
+      {
+        "id": "MORE_TEETH",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "More Teeth"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CHOMP",
+      "follow_ups": [
+        "CHOMP -> MORE_TEETH",
+        "MORE_TEETH -> CHEW"
+      ],
+      "random_branches": [
+        {
+          "move": "CHOMP",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "CHEW",
+          "weight": 2
+        }
+      ]
+    },
+    "powers_on_spawn": [
+      "PaperCuts"
+    ],
+    "loc_key": "SCROLL_OF_BITING",
+    "title": "Scroll of Biting",
+    "move_pattern_desc": "Starts with Chomp. After Chomp, uses More Teeth. After More Teeth, uses Chew. Then 33% chance of Chomp (can't repeat), 67% chance of Chew."
+  },
+  {
+    "class_name": "Seapunk",
+    "min_hp": 47,
+    "max_hp": 49,
+    "moves": [
+      {
+        "id": "SEA_KICK_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          }
+        ],
+        "effects": [
+          "Deal 12 damage"
+        ],
+        "title": "Sea Kick"
+      },
+      {
+        "id": "SPINNING_KICK_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 2
+          }
+        ],
+        "effects": [
+          "Deal 2 damage"
+        ],
+        "title": "Spinning Kick"
+      },
+      {
+        "id": "BUBBLE_BURP_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Bubble Burp"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SEA_KICK_MOVE",
+      "follow_ups": [
+        "SEA_KICK_MOVE -> SPINNING_KICK_MOVE",
+        "SPINNING_KICK_MOVE -> BUBBLE_BURP_MOVE",
+        "BUBBLE_BURP_MOVE -> SEA_KICK_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SEAPUNK",
+    "title": "Seapunk",
+    "move_pattern_desc": "Cycles in the order: Sea Kick -> Spinning Kick -> Bubble Burp."
+  },
+  {
+    "class_name": "SewerClam",
+    "min_hp": 58,
+    "max_hp": 58,
+    "moves": [
+      {
+        "id": "PRESSURIZE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 4 Strength"
+        ],
+        "title": "Pressurize"
+      },
+      {
+        "id": "JET_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 10
+          }
+        ],
+        "effects": [
+          "Deal 11 damage"
+        ],
+        "title": "Jet"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "PRESSURIZE_MOVE -> JET_MOVE",
+        "JET_MOVE -> PRESSURIZE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Plating"
+    ],
+    "loc_key": "SEWER_CLAM",
+    "title": "Sewer Clam",
+    "move_pattern_desc": "Cycles in the order: Pressurize -> Jet."
+  },
+  {
+    "class_name": "ShrinkerBeetle",
+    "min_hp": 40,
+    "max_hp": 42,
+    "moves": [
+      {
+        "id": "SHRINKER_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [],
+        "title": "Shrinker"
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Chomp"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          }
+        ],
+        "effects": [
+          "Deal 14 damage"
+        ],
+        "title": "Stomp"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SHRINKER_MOVE",
+      "follow_ups": [
+        "SHRINKER_MOVE -> CHOMP_MOVE",
+        "CHOMP_MOVE -> STOMP_MOVE",
+        "STOMP_MOVE -> CHOMP_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SHRINKER_BEETLE",
+    "title": "Shrinker Beetle",
+    "move_pattern_desc": "Starts with Shrinker. After Shrinker, uses Chomp. After Chomp, uses Stomp. After Stomp, uses Chomp."
+  },
+  {
+    "class_name": "SingleAttackMoveMonster",
+    "min_hp": 999,
+    "max_hp": 999,
+    "moves": [
+      {
+        "id": "POKE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 1
+          }
+        ],
+        "effects": [
+          "Deal damage"
+        ],
+        "title": "Poke"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "POKE",
+      "follow_ups": [
+        "POKE -> POKE"
+      ],
+      "repeats": [
+        "POKE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SINGLE_ATTACK_MOVE_MONSTER",
+    "title": "SingleAttackMoveMonster",
+    "move_pattern_desc": "Starts with Poke (repeats)."
+  },
+  {
+    "class_name": "SkulkingColony",
+    "min_hp": 84,
+    "max_hp": 84,
+    "moves": [
+      {
+        "id": "INERTIA_MOVE",
+        "intents": [
+          {
+            "type": "block"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "Inertia"
+      },
+      {
+        "id": "ZOOM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Zoom"
+      },
+      {
+        "id": "SUPER_CRAB_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 7 damage"
+        ],
+        "title": "Super Crab"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 9
+          },
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Deal 11 damage",
+          "Add Dazed to discard"
+        ],
+        "title": "Smash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SMASH_MOVE",
+      "follow_ups": [
+        "SMASH_MOVE -> ZOOM_MOVE",
+        "ZOOM_MOVE -> INERTIA_MOVE",
+        "INERTIA_MOVE -> SUPER_CRAB_MOVE",
+        "SUPER_CRAB_MOVE -> SMASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "HardenedShell"
+    ],
+    "loc_key": "SKULKING_COLONY",
+    "title": "Skulking Colony",
+    "move_pattern_desc": "Cycles in the order: Smash -> Zoom -> Inertia -> Super Crab."
+  },
+  {
+    "class_name": "SlimedBerserker",
+    "min_hp": 276,
+    "max_hp": 276,
+    "moves": [
+      {
+        "id": "VOMIT_ICHOR_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Slimed to discard"
+        ],
+        "title": "Vomit Ichor"
+      },
+      {
+        "id": "LEECHING_HUG_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Weak",
+          "Apply 3 Strength"
+        ],
+        "title": "Leeching Hug"
+      },
+      {
+        "id": "SMOTHER_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 30
+          }
+        ],
+        "effects": [
+          "Deal 33 damage"
+        ],
+        "title": "Smother"
+      },
+      {
+        "id": "FURIOUS_PUMMELING_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 4,
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 5 damage",
+          "4 hits"
+        ],
+        "title": "Furious Pummeling"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "VOMIT_ICHOR_MOVE",
+      "follow_ups": [
+        "VOMIT_ICHOR_MOVE -> FURIOUS_PUMMELING_MOVE",
+        "FURIOUS_PUMMELING_MOVE -> LEECHING_HUG_MOVE",
+        "LEECHING_HUG_MOVE -> SMOTHER_MOVE",
+        "SMOTHER_MOVE -> VOMIT_ICHOR_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SLIMED_BERSERKER",
+    "title": "Slimed Berserker",
+    "move_pattern_desc": "Cycles in the order: Vomit Ichor -> Furious Pummeling -> Leeching Hug -> Smother."
+  },
+  {
+    "class_name": "SlitheringStrangler",
+    "min_hp": 54,
+    "max_hp": 56,
+    "moves": [
+      {
+        "id": "CONSTRICT",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Constrict"
+        ],
+        "title": "Constrict"
+      },
+      {
+        "id": "TWACK",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [],
+        "title": "Twack"
+      },
+      {
+        "id": "LASH",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 13 damage"
+        ],
+        "title": "Lash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CONSTRICT",
+      "follow_ups": [
+        "TWACK -> CONSTRICT",
+        "LASH -> CONSTRICT"
+      ],
+      "random_branches": [
+        {
+          "move": "TWACK",
+          "repeat": "CanRepeatForever"
+        },
+        {
+          "move": "LASH",
+          "repeat": "CanRepeatForever"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SLITHERING_STRANGLER",
+    "title": "Slithering Strangler",
+    "move_pattern_desc": "Starts with Constrict. After Twack, uses Constrict. After Lash, uses Constrict. Then 50% chance of Twack, 50% chance of Lash."
+  },
+  {
+    "class_name": "SludgeSpinner",
+    "min_hp": 41,
+    "max_hp": 42,
+    "moves": [
+      {
+        "id": "OIL_SPRAY_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Weak"
+        ],
+        "title": "Oil Spray"
+      },
+      {
+        "id": "SLAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          }
+        ],
+        "effects": [
+          "Deal 12 damage"
+        ],
+        "title": "Slam"
+      },
+      {
+        "id": "RAGE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "Apply 3 Strength"
+        ],
+        "title": "Rage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "OIL_SPRAY_MOVE",
+      "follow_ups": [
+        "RAGE_MOVE -> SLAM_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "OIL_SPRAY_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "SLAM_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "RAGE_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SLUDGE_SPINNER",
+    "title": "Sludge Spinner",
+    "move_pattern_desc": "Starts with Oil Spray. After Rage, uses Slam. Then 33% chance of Oil Spray (can't repeat), 33% chance of Slam (can't repeat), 33% chance of Rage (can't repeat)."
+  },
+  {
+    "class_name": "SlumberingBeetle",
+    "min_hp": 89,
+    "max_hp": 89,
+    "moves": [
+      {
+        "id": "SNORE_MOVE",
+        "intents": [
+          {
+            "type": "sleep"
+          }
+        ],
+        "effects": [],
+        "title": "Snore"
+      },
+      {
+        "id": "ROLL_OUT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Roll Out"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SNORE_MOVE",
+      "follow_ups": [
+        "ROLL_OUT_MOVE -> ROLL_OUT_MOVE"
+      ],
+      "repeats": [
+        "ROLL_OUT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Plating",
+      "Slumber"
+    ],
+    "loc_key": "SLUMBERING_BEETLE",
+    "title": "Slumbering Beetle",
+    "move_pattern_desc": "Starts with Snore. Then repeats Roll Out."
+  },
+  {
+    "class_name": "SnappingJaxfruit",
+    "min_hp": 34,
+    "max_hp": 36,
+    "moves": [
+      {
+        "id": "ENERGY_ORB_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 3
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 4 damage",
+          "Apply 2 Strength"
+        ],
+        "title": "Energy Orb"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "ENERGY_ORB_MOVE",
+      "follow_ups": [
+        "ENERGY_ORB_MOVE -> ENERGY_ORB_MOVE"
+      ],
+      "repeats": [
+        "ENERGY_ORB_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SNAPPING_JAXFRUIT",
+    "title": "Snapping Jaxfruit",
+    "move_pattern_desc": "Starts with Energy Orb (repeats)."
+  },
+  {
+    "class_name": "SneakyGremlin",
+    "min_hp": 11,
+    "max_hp": 15,
+    "moves": [
+      {
+        "id": "SPAWNED_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Spawned"
+      },
+      {
+        "id": "TACKLE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 9
+          }
+        ],
+        "effects": [
+          "Deal 10 damage"
+        ],
+        "title": "Tackle"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SPAWNED_MOVE",
+      "follow_ups": [
+        "SPAWNED_MOVE -> TACKLE_MOVE",
+        "TACKLE_MOVE -> TACKLE_MOVE"
+      ],
+      "repeats": [
+        "TACKLE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SNEAKY_GREMLIN",
+    "title": "Sneaky Gremlin",
+    "move_pattern_desc": "Starts with Spawned. Then repeats Tackle."
+  },
+  {
+    "class_name": "SoulFysh",
+    "min_hp": 221,
+    "max_hp": 221,
+    "moves": [
+      {
+        "id": "BECKON_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [],
+        "title": "Beckon"
+      },
+      {
+        "id": "DE_GAS_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "De-Gas"
+      },
+      {
+        "id": "GAZE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          },
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Gaze"
+      },
+      {
+        "id": "FADE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Intangible"
+        ],
+        "title": "Fade"
+      },
+      {
+        "id": "SCREAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 12 damage",
+          "Apply 3 Vulnerable"
+        ],
+        "title": "Scream"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BECKON_MOVE",
+      "follow_ups": [
+        "BECKON_MOVE -> DE_GAS_MOVE",
+        "DE_GAS_MOVE -> GAZE_MOVE",
+        "GAZE_MOVE -> FADE_MOVE",
+        "FADE_MOVE -> SCREAM_MOVE",
+        "SCREAM_MOVE -> BECKON_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SOUL_FYSH",
+    "title": "Soul Fysh",
+    "move_pattern_desc": "Cycles in the order: Beckon -> De-Gas -> Gaze -> Fade -> Scream."
+  },
+  {
+    "class_name": "SoulNexus",
+    "min_hp": 254,
+    "max_hp": 254,
+    "moves": [
+      {
+        "id": "SOUL_BURN_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 29
+          }
+        ],
+        "effects": [
+          "Deal 31 damage"
+        ],
+        "title": "Soul Burn"
+      },
+      {
+        "id": "MAELSTROM_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 7 damage"
+        ],
+        "title": "Maelstrom"
+      },
+      {
+        "id": "DRAIN_LIFE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 19 damage",
+          "Apply 2 Vulnerable",
+          "Apply 2 Weak"
+        ],
+        "title": "Drain Life"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SOUL_BURN_MOVE",
+      "follow_ups": [
+        "DRAIN_LIFE_MOVE -> MAELSTROM_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SOUL_NEXUS",
+    "title": "Soul Nexus",
+    "move_pattern_desc": "Starts with Soul Burn. After Drain Life, uses Maelstrom."
+  },
+  {
+    "class_name": "SpectralKnight",
+    "min_hp": 97,
+    "max_hp": 97,
+    "moves": [
+      {
+        "id": "HEX",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Hex"
+        ],
+        "title": "Hex"
+      },
+      {
+        "id": "SOUL_SLASH",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Soul Slash"
+      },
+      {
+        "id": "SOUL_FLAME",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 4 damage",
+          "3 hits"
+        ],
+        "title": "Soul Flame"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "HEX",
+      "follow_ups": [
+        "HEX -> SOUL_SLASH"
+      ],
+      "random_branches": [
+        {
+          "move": "SOUL_SLASH",
+          "weight": 2
+        },
+        {
+          "move": "SOUL_FLAME",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SPECTRAL_KNIGHT",
+    "title": "Spectral Knight",
+    "move_pattern_desc": "Starts with Hex. After Hex, uses Soul Slash. Then 67% chance of Soul Slash, 33% chance of Soul Flame (can't repeat)."
+  },
+  {
+    "class_name": "SpinyToad",
+    "min_hp": 121,
+    "max_hp": 124,
+    "moves": [
+      {
+        "id": "PROTRUDING_SPIKES_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Protruding Spikes"
+      },
+      {
+        "id": "SPIKE_EXPLOSION_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 23
+          }
+        ],
+        "effects": [],
+        "title": "Spike Explosion"
+      },
+      {
+        "id": "TONGUE_LASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 17
+          }
+        ],
+        "effects": [],
+        "title": "Tongue Lash"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "PROTRUDING_SPIKES_MOVE",
+      "follow_ups": [
+        "PROTRUDING_SPIKES_MOVE -> SPIKE_EXPLOSION_MOVE",
+        "SPIKE_EXPLOSION_MOVE -> TONGUE_LASH_MOVE",
+        "TONGUE_LASH_MOVE -> PROTRUDING_SPIKES_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "SPINY_TOAD",
+    "title": "Spiny Toad",
+    "move_pattern_desc": "Cycles in the order: Protruding Spikes -> Spike Explosion -> Tongue Lash."
+  },
+  {
+    "class_name": "Stabbot",
+    "min_hp": 24,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "STAB_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 12 damage",
+          "Apply 1 Frail"
+        ],
+        "title": "Stab"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "STAB_MOVE",
+      "follow_ups": [
+        "STAB_MOVE -> STAB_MOVE"
+      ],
+      "repeats": [
+        "STAB_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "STABBOT",
+    "title": "Stabbot",
+    "move_pattern_desc": "Starts with Stab (repeats)."
+  },
+  {
+    "class_name": "TenHpMonster",
+    "min_hp": 10,
+    "max_hp": 10,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "intents": [
+          {
+            "type": "hidden"
+          }
+        ],
+        "effects": [],
+        "title": "Nothing"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "NOTHING",
+      "follow_ups": [
+        "NOTHING -> NOTHING"
+      ],
+      "repeats": [
+        "NOTHING"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TEN_HP_MONSTER",
+    "title": "TenHpMonster",
+    "move_pattern_desc": "Starts with Nothing (repeats)."
+  },
+  {
+    "class_name": "TerrorEel",
+    "min_hp": 150,
+    "max_hp": 150,
+    "moves": [
+      {
+        "id": "CRASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 17
+          }
+        ],
+        "effects": [
+          "Deal 19 damage"
+        ],
+        "title": "Crash"
+      },
+      {
+        "id": "ThrashMove",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 3
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Thrashmove"
+      },
+      {
+        "id": "STUN_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Stun"
+      },
+      {
+        "id": "TERROR_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 99 Vulnerable"
+        ],
+        "title": "Terror"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CRASH_MOVE",
+      "follow_ups": [
+        "CRASH_MOVE -> ThrashMove",
+        "ThrashMove -> CRASH_MOVE",
+        "STUN_MOVE -> TERROR_MOVE",
+        "TERROR_MOVE -> CRASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Shriek"
+    ],
+    "loc_key": "TERROR_EEL",
+    "title": "Terror Eel",
+    "move_pattern_desc": "Starts with Crash. After Crash, uses Thrashmove. After Thrashmove, uses Crash. After Stun, uses Terror. After Terror, uses Crash."
+  },
+  {
+    "class_name": "TestSubject",
+    "min_hp": 0,
+    "max_hp": 0,
+    "moves": [
+      {
+        "id": "RESPAWN_MOVE",
+        "intents": [
+          {
+            "type": "heal"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 1 PainfulStabs",
+          "Apply 1 Nemesis"
+        ],
+        "title": "Respawn"
+      },
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 20
+          }
+        ],
+        "effects": [
+          "Deal 22 damage"
+        ],
+        "title": "Bite"
+      },
+      {
+        "id": "SKULL_BASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 16 damage",
+          "Apply 1 Vulnerable"
+        ],
+        "title": "Skull Bash"
+      },
+      {
+        "id": "POUNCE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 45
+          }
+        ],
+        "effects": [
+          "Deal 45 damage"
+        ],
+        "title": "Pounce"
+      },
+      {
+        "id": "MULTI_CLAW_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 10
+          }
+        ],
+        "effects": [
+          "Deal 11 damage"
+        ],
+        "title": "Multi Claw"
+      },
+      {
+        "id": "PHASE3_LACERATE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 10
+          }
+        ],
+        "effects": [
+          "Deal 11 damage",
+          "3 hits"
+        ],
+        "title": "Phase3 Lacerate"
+      },
+      {
+        "id": "BIG_POUNCE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 45
+          }
+        ],
+        "effects": [
+          "Deal 45 damage"
+        ],
+        "title": "Big Pounce"
+      },
+      {
+        "id": "BURNING_GROWL_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength",
+          "Add Burn to discard"
+        ],
+        "title": "Burning Growl"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BITE_MOVE",
+      "follow_ups": [
+        "BITE_MOVE -> SKULL_BASH_MOVE",
+        "SKULL_BASH_MOVE -> BITE_MOVE",
+        "POUNCE_MOVE -> MULTI_CLAW_MOVE",
+        "MULTI_CLAW_MOVE -> POUNCE_MOVE",
+        "PHASE3_LACERATE_MOVE -> BIG_POUNCE_MOVE",
+        "BIG_POUNCE_MOVE -> BURNING_GROWL_MOVE",
+        "BURNING_GROWL_MOVE -> PHASE3_LACERATE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Adaptable",
+      "Enrage"
+    ],
+    "loc_key": "TEST_SUBJECT",
+    "title": "Test Subject #C{Count}",
+    "move_pattern_desc": "Starts with Bite. After Bite, uses Skull Bash. After Skull Bash, uses Bite. After Pounce, uses Multi Claw. After Multi Claw, uses Pounce. After Phase3 Lacerate, uses Big Pounce. After Big Pounce, uses Burning Growl. After Burning Growl, uses Phase3 Lacerate."
+  },
+  {
+    "class_name": "TheAdversaryMkOne",
+    "min_hp": 100,
+    "max_hp": 100,
+    "moves": [
+      {
+        "id": "SMASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 12
+          }
+        ],
+        "effects": [
+          "Deal 12 damage"
+        ],
+        "title": "Smash"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Beam"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 8
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 8 damage",
+          "Apply 2 Strength"
+        ],
+        "title": "Barrage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SMASH_MOVE",
+      "follow_ups": [
+        "SMASH_MOVE -> BEAM_MOVE",
+        "BEAM_MOVE -> BARRAGE_MOVE",
+        "BARRAGE_MOVE -> SMASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "THE_ADVERSARY_MK_ONE",
+    "title": "The Adversary Mk 1",
+    "move_pattern_desc": "Cycles in the order: Smash -> Beam -> Barrage."
+  },
+  {
+    "class_name": "TheAdversaryMkThree",
+    "min_hp": 300,
+    "max_hp": 300,
+    "moves": [
+      {
+        "id": "CRASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Crash"
+      },
+      {
+        "id": "FLAME_BEAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          }
+        ],
+        "effects": [
+          "Deal 18 damage"
+        ],
+        "title": "Flame Beam"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 10
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 10 damage",
+          "Apply 4 Strength"
+        ],
+        "title": "Barrage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "CRASH_MOVE",
+      "follow_ups": [
+        "CRASH_MOVE -> FLAME_BEAM_MOVE",
+        "FLAME_BEAM_MOVE -> BARRAGE_MOVE",
+        "BARRAGE_MOVE -> CRASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "THE_ADVERSARY_MK_THREE",
+    "title": "The Adversary Mk 3",
+    "move_pattern_desc": "Cycles in the order: Crash -> Flame Beam -> Barrage."
+  },
+  {
+    "class_name": "TheAdversaryMkTwo",
+    "min_hp": 200,
+    "max_hp": 200,
+    "moves": [
+      {
+        "id": "BASH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          }
+        ],
+        "effects": [
+          "Deal 13 damage"
+        ],
+        "title": "Bash"
+      },
+      {
+        "id": "FLAME_BEAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Flame Beam"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 9
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 3 Strength"
+        ],
+        "title": "Barrage"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BASH_MOVE",
+      "follow_ups": [
+        "BASH_MOVE -> FLAME_BEAM_MOVE",
+        "FLAME_BEAM_MOVE -> BARRAGE_MOVE",
+        "BARRAGE_MOVE -> BASH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Artifact"
+    ],
+    "loc_key": "THE_ADVERSARY_MK_TWO",
+    "title": "The Adversary Mk 2",
+    "move_pattern_desc": "Cycles in the order: Bash -> Flame Beam -> Barrage."
+  },
+  {
+    "class_name": "TheForgotten",
+    "min_hp": 111,
+    "max_hp": 111,
+    "moves": [
+      {
+        "id": "MIASMA",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "block"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Dexterity",
+          "Gain 8 Block"
+        ],
+        "title": "Miasma"
+      },
+      {
+        "id": "DREAD",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          }
+        ],
+        "effects": [
+          "Deal 17 damage"
+        ],
+        "title": "Dread"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "MIASMA",
+      "follow_ups": [
+        "MIASMA -> DREAD",
+        "DREAD -> MIASMA"
+      ]
+    },
+    "powers_on_spawn": [
+      "PossessSpeed"
+    ],
+    "loc_key": "THE_FORGOTTEN",
+    "title": "The Forgotten",
+    "move_pattern_desc": "Cycles in the order: Miasma -> Dread."
+  },
+  {
+    "class_name": "TheInsatiable",
+    "min_hp": 341,
+    "max_hp": 341,
+    "moves": [
+      {
+        "id": "LIQUIFY_GROUND_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [],
+        "title": "Liquify Ground"
+      },
+      {
+        "id": "THRASH_MOVE_1",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 8
+          }
+        ],
+        "effects": [],
+        "title": "Thrash Move 1"
+      },
+      {
+        "id": "THRASH_MOVE_2",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 8
+          }
+        ],
+        "effects": [],
+        "title": "Thrash Move 2"
+      },
+      {
+        "id": "LUNGING_BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 28
+          }
+        ],
+        "effects": [],
+        "title": "Lunging Bite"
+      },
+      {
+        "id": "SALIVATE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 Strength"
+        ],
+        "title": "Salivate"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "LIQUIFY_GROUND_MOVE",
+      "follow_ups": [
+        "LIQUIFY_GROUND_MOVE -> THRASH_MOVE_1",
+        "THRASH_MOVE_1 -> LUNGING_BITE_MOVE",
+        "LUNGING_BITE_MOVE -> SALIVATE_MOVE",
+        "SALIVATE_MOVE -> THRASH_MOVE_2",
+        "THRASH_MOVE_2 -> THRASH_MOVE_1"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "THE_INSATIABLE",
+    "title": "The Insatiable",
+    "move_pattern_desc": "Starts with Liquify Ground. After Liquify Ground, uses Thrash Move 1. After Thrash Move 1, uses Lunging Bite. After Lunging Bite, uses Salivate. After Salivate, uses Thrash Move 2. After Thrash Move 2, uses Thrash Move 1."
+  },
+  {
+    "class_name": "TheLost",
+    "min_hp": 99,
+    "max_hp": 99,
+    "moves": [
+      {
+        "id": "DEBILITATING_SMOG",
+        "intents": [
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Debilitating Smog"
+      },
+      {
+        "id": "EYE_LASERS",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 5 damage",
+          "2 hits"
+        ],
+        "title": "Eye Lasers"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "DEBILITATING_SMOG",
+      "follow_ups": [
+        "DEBILITATING_SMOG -> EYE_LASERS",
+        "EYE_LASERS -> DEBILITATING_SMOG"
+      ]
+    },
+    "powers_on_spawn": [
+      "PossessStrength"
+    ],
+    "loc_key": "THE_LOST",
+    "title": "The Lost",
+    "move_pattern_desc": "Cycles in the order: Debilitating Smog -> Eye Lasers."
+  },
+  {
+    "class_name": "TheObscura",
+    "min_hp": 129,
+    "max_hp": 129,
+    "moves": [
+      {
+        "id": "ILLUSION_MOVE",
+        "intents": [
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [],
+        "title": "Illusion"
+      },
+      {
+        "id": "PIERCING_GAZE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 10
+          }
+        ],
+        "effects": [
+          "Deal 11 damage"
+        ],
+        "title": "Piercing Gaze"
+      },
+      {
+        "id": "SAIL_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [],
+        "title": "Sail"
+      },
+      {
+        "id": "HARDENING_STRIKE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Deal 7 damage"
+        ],
+        "title": "Hardening Strike"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "ILLUSION_MOVE",
+      "follow_ups": [
+        "HARDENING_STRIKE_MOVE -> SAIL_MOVE",
+        "PIERCING_GAZE_MOVE -> ILLUSION_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "PIERCING_GAZE_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "SAIL_MOVE",
+          "repeat": "CannotRepeat"
+        },
+        {
+          "move": "HARDENING_STRIKE_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "THE_OBSCURA",
+    "title": "The Obscura",
+    "move_pattern_desc": "Starts with Illusion. After Hardening Strike, uses Sail. After Piercing Gaze, uses Illusion. Then 33% chance of Piercing Gaze (can't repeat), 33% chance of Sail (can't repeat), 33% chance of Hardening Strike (can't repeat)."
+  },
+  {
+    "class_name": "ThievingHopper",
+    "min_hp": 84,
+    "max_hp": 84,
+    "moves": [
+      {
+        "id": "THIEVERY_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 17
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 19 damage"
+        ],
+        "title": "Thievery"
+      },
+      {
+        "id": "NAB_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 16 damage"
+        ],
+        "title": "Nab"
+      },
+      {
+        "id": "HAT_TRICK_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 21
+          }
+        ],
+        "effects": [
+          "Deal 23 damage"
+        ],
+        "title": "Hat Trick"
+      },
+      {
+        "id": "FLUTTER_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 5 Flutter"
+        ],
+        "title": "Flutter"
+      },
+      {
+        "id": "ESCAPE_MOVE",
+        "intents": [
+          {
+            "type": "escape"
+          }
+        ],
+        "effects": [],
+        "title": "Escape"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "THIEVERY_MOVE",
+      "follow_ups": [
+        "THIEVERY_MOVE -> FLUTTER_MOVE",
+        "FLUTTER_MOVE -> HAT_TRICK_MOVE",
+        "HAT_TRICK_MOVE -> NAB_MOVE",
+        "NAB_MOVE -> ESCAPE_MOVE",
+        "ESCAPE_MOVE -> ESCAPE_MOVE"
+      ],
+      "repeats": [
+        "ESCAPE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "EscapeArtist"
+    ],
+    "loc_key": "THIEVING_HOPPER",
+    "title": "Thieving Hopper",
+    "move_pattern_desc": "Starts with Thievery. After Thievery, uses Flutter. After Flutter, uses Hat Trick. After Hat Trick, uses Nab. Then repeats Escape."
+  },
+  {
+    "class_name": "Toadpole",
+    "min_hp": 22,
+    "max_hp": 26,
+    "moves": [
+      {
+        "id": "SPIKE_SPIT_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 3
+          }
+        ],
+        "effects": [
+          "Deal 4 damage"
+        ],
+        "title": "Spike Spit"
+      },
+      {
+        "id": "WHIRL_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Whirl"
+      },
+      {
+        "id": "SPIKEN_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Thorns"
+        ],
+        "title": "Spiken"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "WHIRL_MOVE -> SPIKEN_MOVE",
+        "SPIKEN_MOVE -> SPIKE_SPIT_MOVE",
+        "SPIKE_SPIT_MOVE -> WHIRL_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TOADPOLE",
+    "title": "Toadpole",
+    "move_pattern_desc": "Cycles in the order: Whirl -> Spiken -> Spike Spit."
+  },
+  {
+    "class_name": "TorchHeadAmalgam",
+    "min_hp": 211,
+    "max_hp": 211,
+    "moves": [
+      {
+        "id": "TACKLE_1_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          }
+        ],
+        "effects": [],
+        "title": "Tackle 1"
+      },
+      {
+        "id": "TACKLE_2_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 18
+          }
+        ],
+        "effects": [],
+        "title": "Tackle 2"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 3,
+            "damage": 8
+          }
+        ],
+        "effects": [],
+        "title": "Beam"
+      },
+      {
+        "id": "TACKLE_3_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [],
+        "title": "Tackle 3"
+      },
+      {
+        "id": "TACKLE_4_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [],
+        "title": "Tackle 4"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "TACKLE_1_MOVE",
+      "follow_ups": [
+        "TACKLE_1_MOVE -> TACKLE_2_MOVE",
+        "TACKLE_2_MOVE -> BEAM_MOVE",
+        "BEAM_MOVE -> TACKLE_3_MOVE",
+        "TACKLE_3_MOVE -> TACKLE_4_MOVE",
+        "TACKLE_4_MOVE -> BEAM_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Minion"
+    ],
+    "loc_key": "TORCH_HEAD_AMALGAM",
+    "title": "Torch Head Amalgam",
+    "move_pattern_desc": "Starts with Tackle 1. After Tackle 1, uses Tackle 2. After Tackle 2, uses Beam. After Beam, uses Tackle 3. After Tackle 3, uses Tackle 4. After Tackle 4, uses Beam."
+  },
+  {
+    "class_name": "ToughEgg",
+    "min_hp": 15,
+    "max_hp": 19,
+    "moves": [
+      {
+        "id": "HATCH_MOVE",
+        "intents": [
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [],
+        "title": "HATCH"
+      },
+      {
+        "id": "NIBBLE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 4
+          }
+        ],
+        "effects": [
+          "Deal 5 damage"
+        ],
+        "title": "Nibble"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "HATCH_MOVE",
+      "follow_ups": [
+        "HATCH_MOVE -> NIBBLE_MOVE",
+        "NIBBLE_MOVE -> NIBBLE_MOVE"
+      ],
+      "repeats": [
+        "NIBBLE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Hatch"
+    ],
+    "loc_key": "TOUGH_EGG",
+    "title": "Tough Egg",
+    "move_pattern_desc": "Starts with HATCH. Then repeats Nibble."
+  },
+  {
+    "class_name": "TrackerRubyRaider",
+    "min_hp": 22,
+    "max_hp": 26,
+    "moves": [
+      {
+        "id": "TRACK_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Frail"
+        ],
+        "title": "Track"
+      },
+      {
+        "id": "HOUNDS_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "damage": 1
+          }
+        ],
+        "effects": [
+          "Deal 1 damage"
+        ],
+        "title": "Unleash the Hounds"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "TRACK_MOVE",
+      "follow_ups": [
+        "TRACK_MOVE -> HOUNDS_MOVE",
+        "HOUNDS_MOVE -> HOUNDS_MOVE"
+      ],
+      "repeats": [
+        "HOUNDS_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TRACKER_RUBY_RAIDER",
+    "title": "Tracker Raider",
+    "move_pattern_desc": "Starts with Track. Then repeats Unleash the Hounds."
+  },
+  {
+    "class_name": "Tunneler",
+    "min_hp": 92,
+    "max_hp": 92,
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Bite"
+      },
+      {
+        "id": "BURROW_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "block"
+          }
+        ],
+        "effects": [
+          "Apply 1 Burrowed"
+        ],
+        "title": "Burrow"
+      },
+      {
+        "id": "BELOW_MOVE_1",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 23
+          }
+        ],
+        "effects": [],
+        "title": "Below Move 1"
+      },
+      {
+        "id": "DIZZY_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Dizzy"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BITE_MOVE",
+      "follow_ups": [
+        "BITE_MOVE -> BURROW_MOVE",
+        "BURROW_MOVE -> BELOW_MOVE_1",
+        "BELOW_MOVE_1 -> BELOW_MOVE_1",
+        "DIZZY_MOVE -> BITE_MOVE"
+      ],
+      "repeats": [
+        "BELOW_MOVE_1"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TUNNELER",
+    "title": "Tunneler",
+    "move_pattern_desc": "Starts with Bite. After Bite, uses Burrow. After Dizzy, uses Bite. Then repeats Below Move 1."
+  },
+  {
+    "class_name": "TurretOperator",
+    "min_hp": 51,
+    "max_hp": 51,
+    "moves": [
+      {
+        "id": "UNLOAD_MOVE_1",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 5,
+            "damage": 3
+          }
+        ],
+        "effects": [],
+        "title": "Unload Move 1"
+      },
+      {
+        "id": "UNLOAD_MOVE_2",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 5,
+            "damage": 3
+          }
+        ],
+        "effects": [],
+        "title": "Unload Move 2"
+      },
+      {
+        "id": "RELOAD_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 1 Strength"
+        ],
+        "title": "Reload"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "UNLOAD_MOVE_1",
+      "follow_ups": [
+        "UNLOAD_MOVE_1 -> UNLOAD_MOVE_2",
+        "UNLOAD_MOVE_2 -> RELOAD_MOVE",
+        "RELOAD_MOVE -> UNLOAD_MOVE_1"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TURRET_OPERATOR",
+    "title": "Turret Operator",
+    "move_pattern_desc": "Cycles in the order: Unload Move 1 -> Unload Move 2 -> Reload."
+  },
+  {
+    "class_name": "TwigSlimeM",
+    "min_hp": 27,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "CLUMP_SHOT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 11
+          }
+        ],
+        "effects": [
+          "Deal 12 damage"
+        ],
+        "title": "Clump Shot"
+      },
+      {
+        "id": "STICKY_SHOT_MOVE",
+        "intents": [
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Add Slimed to discard"
+        ],
+        "title": "Sticky Shot"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "STICKY_SHOT_MOVE",
+      "follow_ups": [
+        "STICKY_SHOT_MOVE -> CLUMP_SHOT_MOVE"
+      ],
+      "random_branches": [
+        {
+          "move": "CLUMP_SHOT_MOVE",
+          "weight": 2
+        },
+        {
+          "move": "STICKY_SHOT_MOVE",
+          "repeat": "CannotRepeat"
+        }
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TWIG_SLIME_M",
+    "title": "Twig Slime (M)",
+    "move_pattern_desc": "Starts with Sticky Shot. After Sticky Shot, uses Clump Shot. Then 67% chance of Clump Shot, 33% chance of Sticky Shot (can't repeat)."
+  },
+  {
+    "class_name": "TwigSlimeS",
+    "min_hp": 8,
+    "max_hp": 12,
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 4
+          }
+        ],
+        "effects": [],
+        "title": "Butt"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "BUTT_MOVE",
+      "follow_ups": [
+        "BUTT_MOVE -> BUTT_MOVE"
+      ],
+      "repeats": [
+        "BUTT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TWIG_SLIME_S",
+    "title": "Twig Slime (S)",
+    "move_pattern_desc": "Starts with Butt (repeats)."
+  },
+  {
+    "class_name": "TwoTailedRat",
+    "min_hp": 18,
+    "max_hp": 22,
+    "moves": [
+      {
+        "id": "SCRATCH_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          }
+        ],
+        "effects": [
+          "Deal 9 damage"
+        ],
+        "title": "Scratch"
+      },
+      {
+        "id": "DISEASE_BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 7 damage"
+        ],
+        "title": "Disease Bite"
+      },
+      {
+        "id": "SCREECH_MOVE",
+        "intents": [
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Apply 1 Frail"
+        ],
+        "title": "Screech"
+      },
+      {
+        "id": "CALL_FOR_BACKUP_MOVE",
+        "intents": [
+          {
+            "type": "summon"
+          }
+        ],
+        "effects": [],
+        "title": "Call for Backup"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "CALL_FOR_BACKUP_MOVE -> SCREECH_MOVE",
+        "DISEASE_BITE_MOVE -> SCRATCH_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "TWO_TAILED_RAT",
+    "title": "Two-Tailed Rat",
+    "move_pattern_desc": "After Call for Backup, uses Screech. After Disease Bite, uses Scratch."
+  },
+  {
+    "class_name": "Vantom",
+    "min_hp": 183,
+    "max_hp": 183,
+    "moves": [
+      {
+        "id": "INK_BLOT_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 7
+          }
+        ],
+        "effects": [
+          "Deal 8 damage"
+        ],
+        "title": "Ink Blot"
+      },
+      {
+        "id": "INKY_LANCE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "2 hits"
+        ],
+        "title": "Inky Lance"
+      },
+      {
+        "id": "DISMEMBER_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 27
+          },
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Deal 30 damage",
+          "Add Wound to discard"
+        ],
+        "title": "Dismember"
+      },
+      {
+        "id": "PREPARE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength"
+        ],
+        "title": "Prepare"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "INK_BLOT_MOVE",
+      "follow_ups": [
+        "INK_BLOT_MOVE -> INKY_LANCE_MOVE",
+        "INKY_LANCE_MOVE -> DISMEMBER_MOVE",
+        "DISMEMBER_MOVE -> PREPARE_MOVE",
+        "PREPARE_MOVE -> INK_BLOT_MOVE"
+      ]
+    },
+    "powers_on_spawn": [
+      "Slippery"
+    ],
+    "loc_key": "VANTOM",
+    "title": "Vantom",
+    "move_pattern_desc": "Cycles in the order: Ink Blot -> Inky Lance -> Dismember -> Prepare."
+  },
+  {
+    "class_name": "VineShambler",
+    "min_hp": 64,
+    "max_hp": 64,
+    "moves": [
+      {
+        "id": "GRASPING_VINES_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 8
+          },
+          {
+            "type": "debuff"
+          }
+        ],
+        "effects": [
+          "Deal 9 damage",
+          "Apply 1 Tangled"
+        ],
+        "title": "Grasping Vines"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "intents": [
+          {
+            "type": "multi_attack",
+            "hits": 2,
+            "damage": 6
+          }
+        ],
+        "effects": [
+          "Deal 7 damage",
+          "2 hits"
+        ],
+        "title": "Swipe"
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 16
+          }
+        ],
+        "effects": [
+          "Deal 18 damage"
+        ],
+        "title": "Chomp"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "SWIPE_MOVE",
+      "follow_ups": [
+        "SWIPE_MOVE -> GRASPING_VINES_MOVE",
+        "GRASPING_VINES_MOVE -> CHOMP_MOVE",
+        "CHOMP_MOVE -> SWIPE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "VINE_SHAMBLER",
+    "title": "Vine Shambler",
+    "move_pattern_desc": "Cycles in the order: Swipe -> Grasping Vines -> Chomp."
+  },
+  {
+    "class_name": "WaterfallGiant",
+    "min_hp": 260,
+    "max_hp": 260,
+    "moves": [
+      {
+        "id": "PRESSURIZE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 20 SteamEruption"
+        ],
+        "title": "Pressurize"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 15
+          },
+          {
+            "type": "debuff"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 16 damage",
+          "Apply 1 Weak",
+          "Apply 3 SteamEruption"
+        ],
+        "title": "Stomp"
+      },
+      {
+        "id": "RAM_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 10
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 11 damage",
+          "Apply 3 SteamEruption"
+        ],
+        "title": "Ram"
+      },
+      {
+        "id": "SIPHON_MOVE",
+        "intents": [
+          {
+            "type": "heal"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Apply 3 SteamEruption"
+        ],
+        "title": "Siphon"
+      },
+      {
+        "id": "PRESSURE_GUN_MOVE",
+        "intents": [
+          {
+            "type": "SingleAttackIntent"
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal damage",
+          "Apply 3 SteamEruption"
+        ],
+        "title": "Pressure Gun"
+      },
+      {
+        "id": "PRESSURE_UP_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 13
+          },
+          {
+            "type": "buff"
+          }
+        ],
+        "effects": [
+          "Deal 14 damage",
+          "Apply 3 SteamEruption"
+        ],
+        "title": "Pressure Up"
+      },
+      {
+        "id": "ABOUT_TO_BLOW_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "About To Blow"
+      },
+      {
+        "id": "EXPLODE_MOVE",
+        "intents": [
+          {
+            "type": "death_blow"
+          }
+        ],
+        "effects": [
+          "Deal damage"
+        ],
+        "title": "Explode"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "PRESSURIZE_MOVE",
+      "follow_ups": [
+        "PRESSURIZE_MOVE -> STOMP_MOVE",
+        "STOMP_MOVE -> RAM_MOVE",
+        "RAM_MOVE -> SIPHON_MOVE",
+        "SIPHON_MOVE -> PRESSURE_GUN_MOVE",
+        "PRESSURE_GUN_MOVE -> PRESSURE_UP_MOVE",
+        "PRESSURE_UP_MOVE -> STOMP_MOVE",
+        "ABOUT_TO_BLOW_MOVE -> EXPLODE_MOVE",
+        "EXPLODE_MOVE -> EXPLODE_MOVE"
+      ],
+      "repeats": [
+        "EXPLODE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "WATERFALL_GIANT",
+    "title": "Waterfall Giant",
+    "move_pattern_desc": "Starts with Pressurize. After Pressurize, uses Stomp. After Stomp, uses Ram. After Ram, uses Siphon. After Siphon, uses Pressure Gun. After Pressure Gun, uses Pressure Up. After Pressure Up, uses Stomp. Then repeats Explode."
+  },
+  {
+    "class_name": "Wriggler",
+    "min_hp": 18,
+    "max_hp": 22,
+    "moves": [
+      {
+        "id": "NASTY_BITE_MOVE",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 6
+          }
+        ],
+        "effects": [],
+        "title": "Nasty Bite"
+      },
+      {
+        "id": "WRIGGLE_MOVE",
+        "intents": [
+          {
+            "type": "buff"
+          },
+          {
+            "type": "status"
+          }
+        ],
+        "effects": [
+          "Apply 2 Strength",
+          "Add Infection to discard"
+        ],
+        "title": "Wriggle"
+      },
+      {
+        "id": "SPAWNED_MOVE",
+        "intents": [
+          {
+            "type": "stun"
+          }
+        ],
+        "effects": [],
+        "title": "Spawned"
+      }
+    ],
+    "move_pattern": {
+      "follow_ups": [
+        "NASTY_BITE_MOVE -> WRIGGLE_MOVE",
+        "WRIGGLE_MOVE -> NASTY_BITE_MOVE"
+      ]
+    },
+    "powers_on_spawn": [],
+    "loc_key": "WRIGGLER",
+    "title": "Wriggler",
+    "move_pattern_desc": "Cycles in the order: Nasty Bite -> Wriggle."
+  },
+  {
+    "class_name": "Zapbot",
+    "min_hp": 24,
+    "max_hp": 29,
+    "moves": [
+      {
+        "id": "ZAP",
+        "intents": [
+          {
+            "type": "attack",
+            "damage": 14
+          }
+        ],
+        "effects": [
+          "Deal 15 damage"
+        ],
+        "title": "Zap"
+      }
+    ],
+    "move_pattern": {
+      "starts_with": "ZAP",
+      "follow_ups": [
+        "ZAP -> ZAP"
+      ],
+      "repeats": [
+        "ZAP"
+      ]
+    },
+    "powers_on_spawn": [
+      "HighVoltage"
+    ],
+    "loc_key": "ZAPBOT",
+    "title": "Zapbot",
+    "move_pattern_desc": "Starts with Zap (repeats)."
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "class_name": "Defect",
+    "starting_hp": 75,
+    "starting_gold": 99,
+    "orb_slots": 3,
+    "starting_relic": "CrackedCore",
+    "starting_deck": [
+      "StrikeDefect",
+      "StrikeDefect",
+      "StrikeDefect",
+      "StrikeDefect",
+      "DefendDefect",
+      "DefendDefect",
+      "DefendDefect",
+      "DefendDefect",
+      "Zap",
+      "Dualcast"
+    ],
+    "loc_key": "DEFECT",
+    "title": "The Defect",
+    "description": "An automaton eternally modifying itself to survive.\nDeploys Orb technology when it must fight.",
+    "aroma": "1100 0011 1100 0011..."
+  },
+  {
+    "class_name": "Ironclad",
+    "starting_hp": 80,
+    "starting_gold": 99,
+    "starting_relic": "BurningBlood",
+    "starting_deck": [
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "DefendIronclad",
+      "DefendIronclad",
+      "DefendIronclad",
+      "DefendIronclad",
+      "Bash"
+    ],
+    "loc_key": "IRONCLAD",
+    "title": "The Ironclad",
+    "description": "The last soldier of the Ironclads.\nCrushes foes with sword and flame against his will.",
+    "aroma": "Pain is nothing. My enemies must die."
+  },
+  {
+    "class_name": "Necrobinder",
+    "starting_hp": 66,
+    "starting_gold": 99,
+    "starting_relic": "BoundPhylactery",
+    "starting_deck": [
+      "StrikeNecrobinder",
+      "StrikeNecrobinder",
+      "StrikeNecrobinder",
+      "StrikeNecrobinder",
+      "DefendNecrobinder",
+      "DefendNecrobinder",
+      "DefendNecrobinder",
+      "DefendNecrobinder",
+      "Bodyguard",
+      "Unleash"
+    ],
+    "loc_key": "NECROBINDER",
+    "title": "The Necrobinder",
+    "description": "A Spireborn lich who seeks revenge.\nCalls upon her trusty left hand, Osty, in combat.",
+    "aroma": "They will be avenged... I will not falter..."
+  },
+  {
+    "class_name": "Regent",
+    "starting_hp": 75,
+    "starting_gold": 99,
+    "starting_relic": "DivineRight",
+    "starting_deck": [
+      "StrikeRegent",
+      "StrikeRegent",
+      "StrikeRegent",
+      "StrikeRegent",
+      "DefendRegent",
+      "DefendRegent",
+      "DefendRegent",
+      "DefendRegent",
+      "FallingStar",
+      "Venerate"
+    ],
+    "loc_key": "REGENT",
+    "title": "The Regent",
+    "description": "Heir to the Throne of Stars.\nWields cosmic powers but his minions do the work.",
+    "aroma": "I am the next King of Stars..."
+  },
+  {
+    "class_name": "Silent",
+    "starting_hp": 70,
+    "starting_gold": 99,
+    "starting_relic": "RingOfTheSnake",
+    "starting_deck": [
+      "StrikeSilent",
+      "StrikeSilent",
+      "StrikeSilent",
+      "StrikeSilent",
+      "StrikeSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "Neutralize",
+      "Survivor"
+    ],
+    "loc_key": "SILENT",
+    "title": "The Silent",
+    "description": "A huntress from outside the Spire.\nReady to stab and poison anything in her way.",
+    "aroma": "...hunt... prove... belong..."
+  }
+]

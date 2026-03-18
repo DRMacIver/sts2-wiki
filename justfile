@@ -1,13 +1,13 @@
 # STS2 Wiki build pipeline
 
 # Path to STS2 game installation
-sts2_app := env("STS2_APP", "~/Library/Application Support/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.app")
+sts2_app := env("STS2_APP", env("HOME") / "Library/Application Support/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.app")
 sts2_dll := sts2_app / "Contents/Resources/data_sts2_macos_arm64/sts2.dll"
 sts2_pck := sts2_app / "Contents/Resources/Slay the Spire 2.pck"
 sts2_release := sts2_app / "Contents/Resources/release_info.json"
 
 # Game version (auto-detected or override)
-version := env("STS2_VERSION", "v0.98.2")
+version := env("STS2_VERSION", "v0.99.1")
 
 # Default: full build
 default: check build
@@ -34,6 +34,7 @@ detect-version:
 
 decompile:
     #!/usr/bin/env bash
+    export DOTNET_ROOT="${DOTNET_ROOT:-$(dirname $(dirname $(readlink -f $(which dotnet) 2>/dev/null || echo /opt/homebrew/Cellar/dotnet/10.0.103/libexec/dotnet)))}"
     if [ -d "decompiled/{{version}}" ]; then
         echo "Already decompiled: {{version}}"
     else

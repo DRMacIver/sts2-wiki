@@ -1,0 +1,4660 @@
+[
+  {
+    "class_name": "Akabeko",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Vigor",
+        "base_value": 8
+      }
+    ],
+    "image": "akabeko",
+    "pool": "Shared",
+    "loc_key": "AKABEKO",
+    "title": "Akabeko",
+    "description": "At the start of each combat, gain {VigorPower} Vigor.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "AlchemicalCoffer",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "PotionSlots",
+        "base_value": 4
+      }
+    ],
+    "image": "alchemical_coffer",
+    "pool": "Event",
+    "loc_key": "ALCHEMICAL_COFFER",
+    "title": "Alchemical Coffer",
+    "description": "Upon pickup, gain {PotionSlots} potion slots filled with random potions.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "AmethystAubergine",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 10
+      }
+    ],
+    "image": "amethyst_aubergine",
+    "pool": "Shared",
+    "loc_key": "AMETHYST_AUBERGINE",
+    "title": "Amethyst Aubergine",
+    "description": "Enemies drop {Gold} additional Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Anchor",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 10
+      }
+    ],
+    "image": "anchor",
+    "pool": "Shared",
+    "loc_key": "ANCHOR",
+    "title": "Anchor",
+    "description": "Start each combat with {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "ArcaneScroll",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "arcane_scroll",
+    "pool": "Event",
+    "loc_key": "ARCANE_SCROLL",
+    "title": "Arcane Scroll",
+    "description": "Upon pickup, obtain a random Rare Card to add to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "ArchaicTooth",
+    "rarity": "Ancient",
+    "image": "archaic_tooth",
+    "pool": "Event",
+    "loc_key": "ARCHAIC_TOOTH",
+    "title": "Archaic Tooth",
+    "description": "Upon pickup, Transform {StarterCard.StringValue:cond:{StarterCard} into {AncientCard}|a starter card with an ancient version}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "ArtOfWar",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "art_of_war",
+    "pool": "Shared",
+    "loc_key": "ART_OF_WAR",
+    "title": "Art of War",
+    "description": "If you do not play any Attacks during your turn, gain an additional {Energy:energyIcons()} next turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Astrolabe",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "astrolabe",
+    "pool": "Event",
+    "loc_key": "ASTROLABE",
+    "title": "Astrolabe",
+    "description": "Upon pickup, Transform {Cards} {Cards:plural:card|cards}, then Upgrade them.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "BagOfMarbles",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Vulnerable",
+        "base_value": 1
+      }
+    ],
+    "image": "bag_of_marbles",
+    "pool": "Shared",
+    "loc_key": "BAG_OF_MARBLES",
+    "title": "Bag of Marbles",
+    "description": "At the start of each combat, apply {VulnerablePower} Vulnerable to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BagOfPreparation",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "bag_of_preparation",
+    "pool": "Shared",
+    "loc_key": "BAG_OF_PREPARATION",
+    "title": "Bag of Preparation",
+    "description": "At the start of each combat, draw {Cards} additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BeatingRemnant",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "MaxHpLoss",
+        "base_value": 20
+      }
+    ],
+    "image": "beating_remnant",
+    "pool": "Shared",
+    "loc_key": "BEATING_REMNANT",
+    "title": "Beating Remnant",
+    "description": "You cannot lose more than 20 HP in a single turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BeautifulBracelet",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      },
+      {
+        "type": "Swift",
+        "base_value": 3
+      }
+    ],
+    "image": "beautiful_bracelet",
+    "pool": "Event",
+    "loc_key": "BEAUTIFUL_BRACELET",
+    "title": "Beautiful Bracelet",
+    "description": "Upon pickup, choose {Cards} {Cards:plural:card|cards} in your Deck. Enchant them with Swift 3.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "Bellows",
+    "rarity": "Uncommon",
+    "image": "bellows",
+    "pool": "Shared",
+    "loc_key": "BELLOWS",
+    "title": "Bellows",
+    "description": "The first Hand you draw each combat is Upgraded.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BeltBuckle",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Dexterity",
+        "base_value": 2
+      }
+    ],
+    "image": "belt_buckle",
+    "pool": "Shared",
+    "loc_key": "BELT_BUCKLE",
+    "title": "Belt Buckle",
+    "description": "While you have no potions, you have {DexterityPower} additional Dexterity.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BigHat",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "big_hat",
+    "pool": "Necrobinder",
+    "loc_key": "BIG_HAT",
+    "title": "Big Hat",
+    "description": "At the start of each combat, add {Cards} random Ethereal {Cards:plural:card|cards} into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "BigMushroom",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 20
+      },
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "big_mushroom",
+    "pool": "Event",
+    "loc_key": "BIG_MUSHROOM",
+    "title": "Big Mushroom",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}. At the start of each combat, draw {Cards} fewer {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "HungryForMushrooms"
+    ]
+  },
+  {
+    "class_name": "BiiigHug",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 4
+      }
+    ],
+    "image": "biiig_hug",
+    "pool": "Event",
+    "loc_key": "BIIIG_HUG",
+    "title": "Biiig Hug",
+    "description": "Upon pickup, remove {Cards} cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "BingBong",
+    "rarity": "Event",
+    "image": "bing_bong",
+    "pool": "Event",
+    "loc_key": "BING_BONG",
+    "title": "Bing Bong",
+    "description": "Whenever you add a card to your Deck, add one additional copy.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DollRoom"
+    ]
+  },
+  {
+    "class_name": "BlackBlood",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 12
+      }
+    ],
+    "image": "black_blood",
+    "pool": "Event",
+    "loc_key": "BLACK_BLOOD",
+    "title": "Black Blood",
+    "description": "At the end of combat, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BlackStar",
+    "rarity": "Ancient",
+    "image": "black_star",
+    "pool": "Event",
+    "loc_key": "BLACK_STAR",
+    "title": "Black Star",
+    "description": "Elites drop an additional Relic when defeated.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "BlessedAntler",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "blessed_antler",
+    "pool": "Event",
+    "loc_key": "BLESSED_ANTLER",
+    "title": "Blessed Antler",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. At the start of each combat, shuffle {Cards} Dazed into your Draw Pile.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "BloodSoakedRose",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "blood_soaked_rose",
+    "pool": "Event",
+    "loc_key": "BLOOD_SOAKED_ROSE",
+    "title": "Blood-Soaked Rose",
+    "description": "Upon pickup, add 1 Enthralled to your Deck. Gain {Energy:energyIcons()} at the start of each turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "BloodVial",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 2
+      }
+    ],
+    "image": "blood_vial",
+    "pool": "Shared",
+    "loc_key": "BLOOD_VIAL",
+    "title": "Blood Vial",
+    "description": "At the start of each combat, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BoneFlute",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 2
+      }
+    ],
+    "image": "bone_flute",
+    "pool": "Necrobinder",
+    "loc_key": "BONE_FLUTE",
+    "title": "Bone Flute",
+    "description": "Whenever Osty attacks, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "BoneTea",
+    "rarity": "Event",
+    "image": "bone_tea",
+    "pool": "Event",
+    "loc_key": "BONE_TEA",
+    "title": "Bone Tea",
+    "description": "At the start of the next {Combats:plural:combat|{} combats}, Upgrade your starting hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TeaMaster"
+    ]
+  },
+  {
+    "class_name": "BookOfFiveRings",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 15
+      },
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "book_of_five_rings",
+    "pool": "Shared",
+    "loc_key": "BOOK_OF_FIVE_RINGS",
+    "title": "Book of Five Rings",
+    "description": "Every {Cards} {Cards:plural:card|cards} you add to your Deck, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BookRepairKnife",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 3
+      }
+    ],
+    "image": "book_repair_knife",
+    "pool": "Necrobinder",
+    "loc_key": "BOOK_REPAIR_KNIFE",
+    "title": "Book Repair Knife",
+    "description": "Whenever a non-Minion enemy dies to Doom, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "Bookmark",
+    "rarity": "Rare",
+    "image": "bookmark",
+    "pool": "Necrobinder",
+    "loc_key": "BOOKMARK",
+    "title": "Bookmark",
+    "description": "At the end of each turn, lower the cost of a random Retained card by 1 until played.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "BoomingConch",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "booming_conch",
+    "pool": "Event",
+    "loc_key": "BOOMING_CONCH",
+    "title": "Booming Conch",
+    "description": "At the start of Elite combats, draw {Cards} additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "BoundPhylactery",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Summon",
+        "base_value": 1
+      }
+    ],
+    "image": "bound_phylactery",
+    "pool": "Necrobinder",
+    "loc_key": "BOUND_PHYLACTERY",
+    "title": "Bound Phylactery",
+    "description": "At the start of your turn, Summon {Summon}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "BowlerHat",
+    "rarity": "Uncommon",
+    "image": "bowler_hat",
+    "pool": "Shared",
+    "loc_key": "BOWLER_HAT",
+    "title": "Bowler Hat",
+    "description": "Gain 20% additional Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Bread",
+    "rarity": "Shop",
+    "image": "bread",
+    "pool": "Shared",
+    "loc_key": "BREAD",
+    "title": "Bread",
+    "description": "At the start of your first turn, lose {LoseEnergy:energyIcons()}. At the start of all other turns, gain {GainEnergy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BrilliantScarf",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "brilliant_scarf",
+    "pool": "Event",
+    "loc_key": "BRILLIANT_SCARF",
+    "title": "Brilliant Scarf",
+    "description": "The 5th card you play each turn is free.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "Brimstone",
+    "rarity": "Shop",
+    "image": "brimstone",
+    "pool": "Ironclad",
+    "loc_key": "BRIMSTONE",
+    "title": "Brimstone",
+    "description": "At the start of your turn, gain {SelfStrength} Strength and ALL enemies gain {EnemyStrength} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "BronzeScales",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Thorns",
+        "base_value": 3
+      }
+    ],
+    "image": "bronze_scales",
+    "pool": "Shared",
+    "loc_key": "BRONZE_SCALES",
+    "title": "Bronze Scales",
+    "description": "Start each combat with {ThornsPower} Thorns.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "BurningBlood",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 6
+      }
+    ],
+    "image": "burning_blood",
+    "pool": "Ironclad",
+    "loc_key": "BURNING_BLOOD",
+    "title": "Burning Blood",
+    "description": "At the end of combat, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "BurningSticks",
+    "rarity": "Shop",
+    "image": "burning_sticks",
+    "pool": "Shared",
+    "loc_key": "BURNING_STICKS",
+    "title": "Burning Sticks",
+    "description": "The first time each combat you Exhaust a Skill, add a copy of it into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Byrdpip",
+    "rarity": "Event",
+    "image": "byrdpip",
+    "pool": "Event",
+    "loc_key": "BYRDPIP",
+    "title": "Byrdpip",
+    "description": "Upon pickup, gain the card Byrd Swoop. A Byrdpip will accompany you in battles.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "CallingBell",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Relics",
+        "base_value": 3
+      }
+    ],
+    "image": "calling_bell",
+    "pool": "Event",
+    "loc_key": "CALLING_BELL",
+    "title": "Calling Bell",
+    "description": "Upon pickup, obtain a unique Curse and {Relics} Relics.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "Candelabra",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 2
+      }
+    ],
+    "image": "candelabra",
+    "pool": "Shared",
+    "loc_key": "CANDELABRA",
+    "title": "Candelabra",
+    "description": "At the start of your 2nd turn, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "CaptainsWheel",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 18
+      }
+    ],
+    "image": "captains_wheel",
+    "pool": "Shared",
+    "loc_key": "CAPTAINS_WHEEL",
+    "title": "Captain's Wheel",
+    "description": "At the start of your 3rd turn, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Cauldron",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Potions",
+        "base_value": 5
+      }
+    ],
+    "image": "cauldron",
+    "pool": "Shared",
+    "loc_key": "CAULDRON",
+    "title": "Cauldron",
+    "description": "Upon pickup, brews {Potions} random {Potions:plural:potion|potions}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "CentennialPuzzle",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "centennial_puzzle",
+    "pool": "Shared",
+    "loc_key": "CENTENNIAL_PUZZLE",
+    "title": "Centennial Puzzle",
+    "description": "The first time you lose HP each combat, draw {Cards} {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Chandelier",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 3
+      }
+    ],
+    "image": "chandelier",
+    "pool": "Shared",
+    "loc_key": "CHANDELIER",
+    "title": "Chandelier",
+    "description": "At the start of your 3rd turn, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "CharonsAshes",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 3
+      }
+    ],
+    "image": "charons_ashes",
+    "pool": "Ironclad",
+    "loc_key": "CHARONS_ASHES",
+    "title": "Charon's Ashes",
+    "description": "Whenever you Exhaust a card, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "ChemicalX",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Increase",
+        "base_value": 2
+      }
+    ],
+    "image": "chemical_x",
+    "pool": "Shared",
+    "loc_key": "CHEMICAL_X",
+    "title": "Chemical X",
+    "description": "The effects of your cost X cards are increased by {Increase}.",
+    "flavor": "WARNING: Do not combine with sugar, spice, and everything nice."
+  },
+  {
+    "class_name": "ChoicesParadox",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "choices_paradox",
+    "pool": "Event",
+    "loc_key": "CHOICES_PARADOX",
+    "title": "Choices Paradox",
+    "description": "At the start of each combat, add 1 of {Cards} random cards into your Hand. Add Retain to the chosen card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "ChosenCheese",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 1
+      }
+    ],
+    "image": "chosen_cheese",
+    "pool": "Event",
+    "loc_key": "CHOSEN_CHEESE",
+    "title": "The Chosen Cheese",
+    "description": "At the end of combat, gain {MaxHp} Max HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Circlet",
+    "rarity": "None",
+    "image": "circlet",
+    "pool": "Fallback",
+    "loc_key": "CIRCLET",
+    "title": "Circlet",
+    "description": "It's a circlet.",
+    "flavor": "A curious relic which appears when there's a problem within the [gold]Spire[/gold] or there are no more relics to discover."
+  },
+  {
+    "class_name": "Claws",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 6
+      }
+    ],
+    "image": "claws",
+    "pool": "Event",
+    "loc_key": "CLAWS",
+    "title": "Claws",
+    "description": "Upon pickup, Transform up to {Cards} {Cards:plural:card|cards} into Maul.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "CloakClasp",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 1
+      }
+    ],
+    "image": "cloak_clasp",
+    "pool": "Shared",
+    "loc_key": "CLOAK_CLASP",
+    "title": "Cloak Clasp",
+    "description": "At the end of your turn, gain {Block} Block for each card in your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "CrackedCore",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Lightning",
+        "base_value": 1
+      }
+    ],
+    "image": "cracked_core",
+    "pool": "Defect",
+    "loc_key": "CRACKED_CORE",
+    "title": "Cracked Core",
+    "description": "At the start of each combat, Channel {Lightning} Lightning.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "Crossbow",
+    "rarity": "Ancient",
+    "image": "crossbow",
+    "pool": "Event",
+    "loc_key": "CROSSBOW",
+    "title": "Crossbow",
+    "description": "At the start of your turn, add a random Attack into your Hand. It costs 0{energyPrefix:energyIcons(1)} this turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "CursedPearl",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 333
+      }
+    ],
+    "image": "cursed_pearl",
+    "pool": "Event",
+    "loc_key": "CURSED_PEARL",
+    "title": "Cursed Pearl",
+    "description": "Upon pickup, receive Greed. Gain {Gold} Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "DarkstonePeriapt",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 6
+      }
+    ],
+    "image": "darkstone_periapt",
+    "pool": "Event",
+    "loc_key": "DARKSTONE_PERIAPT",
+    "title": "Darkstone Periapt",
+    "description": "Whenever you obtain a Curse, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
+  },
+  {
+    "class_name": "DataDisk",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Focus",
+        "base_value": 1
+      }
+    ],
+    "image": "data_disk",
+    "pool": "Defect",
+    "loc_key": "DATA_DISK",
+    "title": "Data Disk",
+    "description": "Start each combat with {FocusPower} Focus.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "DaughterOfTheWind",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 1
+      }
+    ],
+    "image": "daughter_of_the_wind",
+    "pool": "Event",
+    "loc_key": "DAUGHTER_OF_THE_WIND",
+    "title": "Daughter of the Wind",
+    "description": "Whenever you play an Attack, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DollRoom"
+    ]
+  },
+  {
+    "class_name": "DelicateFrond",
+    "rarity": "Ancient",
+    "image": "delicate_frond",
+    "pool": "Event",
+    "loc_key": "DELICATE_FROND",
+    "title": "Delicate Frond",
+    "description": "At the start of each combat, fill all empty potion slots with random potions.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "DemonTongue",
+    "rarity": "Rare",
+    "image": "demon_tongue",
+    "pool": "Ironclad",
+    "loc_key": "DEMON_TONGUE",
+    "title": "Demon Tongue",
+    "description": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "DiamondDiadem",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "CardThreshold",
+        "base_value": 2
+      }
+    ],
+    "image": "diamond_diadem",
+    "pool": "Event",
+    "loc_key": "DIAMOND_DIADEM",
+    "title": "Diamond Diadem",
+    "description": "Whenever you play {CardThreshold} or fewer cards in a turn, take half damage from enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "DingyRug",
+    "rarity": "Shop",
+    "image": "dingy_rug",
+    "pool": "Shared",
+    "loc_key": "DINGY_RUG",
+    "title": "Dingy Rug",
+    "description": "Card rewards can now contain Colorless cards.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "DistinguishedCape",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "HpLoss",
+        "base_value": 9
+      },
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "distinguished_cape",
+    "pool": "Event",
+    "loc_key": "DISTINGUISHED_CAPE",
+    "title": "Distinguished Cape",
+    "description": "Upon pickup, lose 9 Max HP. Add {Cards} {Cards:plural:Apparition|Apparitions} to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "DivineDestiny",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Stars",
+        "base_value": 6
+      }
+    ],
+    "image": "divine_destiny",
+    "pool": "Event",
+    "loc_key": "DIVINE_DESTINY",
+    "title": "Divine Destiny",
+    "description": "At the start of each combat, gain {Stars:starIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "DivineRight",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Stars",
+        "base_value": 3
+      }
+    ],
+    "image": "divine_right",
+    "pool": "Regent",
+    "loc_key": "DIVINE_RIGHT",
+    "title": "Divine Right",
+    "description": "At the start of each combat, gain {Stars:starIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "DollysMirror",
+    "rarity": "Shop",
+    "image": "dollys_mirror",
+    "pool": "Shared",
+    "loc_key": "DOLLYS_MIRROR",
+    "title": "Dolly's Mirror",
+    "description": "Upon pickup, obtain an additional copy of a card in your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "DragonFruit",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 1
+      }
+    ],
+    "image": "dragon_fruit",
+    "pool": "Shared",
+    "loc_key": "DRAGON_FRUIT",
+    "title": "Dragon Fruit",
+    "description": "Whenever you gain Gold, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "DreamCatcher",
+    "rarity": "Event",
+    "image": "dream_catcher",
+    "pool": "Event",
+    "loc_key": "DREAM_CATCHER",
+    "title": "Dream Catcher",
+    "description": "Whenever you Rest, you may add a card to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
+  },
+  {
+    "class_name": "Driftwood",
+    "rarity": "Ancient",
+    "image": "driftwood",
+    "pool": "Event",
+    "loc_key": "DRIFTWOOD",
+    "title": "Driftwood",
+    "description": "You may reroll each card reward once.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "DustyTome",
+    "rarity": "Ancient",
+    "image": "dusty_tome",
+    "pool": "Event",
+    "loc_key": "DUSTY_TOME",
+    "title": "Dusty Tome",
+    "description": "Upon pickup, obtain {AncientCard.StringValue:cond:{}|an Ancient Card}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "Ectoplasm",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "ectoplasm",
+    "pool": "Event",
+    "loc_key": "ECTOPLASM",
+    "title": "Ectoplasm",
+    "description": "You can no longer gain Gold. Gain {Energy:energyIcons()} at the start of each turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "ElectricShrymp",
+    "rarity": "Ancient",
+    "image": "electric_shrymp",
+    "pool": "Event",
+    "loc_key": "ELECTRIC_SHRYMP",
+    "title": "Electric Shrymp",
+    "description": "Upon pickup, Enchant a Skill with Imbued.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "EmberTea",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 2
+      }
+    ],
+    "image": "ember_tea",
+    "pool": "Event",
+    "loc_key": "EMBER_TEA",
+    "title": "Ember Tea",
+    "description": "At the start of the next {Combats:plural:combat|{} combats}, gain {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TeaMaster"
+    ]
+  },
+  {
+    "class_name": "EmotionChip",
+    "rarity": "Rare",
+    "image": "emotion_chip",
+    "pool": "Defect",
+    "loc_key": "EMOTION_CHIP",
+    "title": "Emotion Chip",
+    "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "EmptyCage",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "empty_cage",
+    "pool": "Event",
+    "loc_key": "EMPTY_CAGE",
+    "title": "Empty Cage",
+    "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "EternalFeather",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 3
+      },
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "eternal_feather",
+    "pool": "Shared",
+    "loc_key": "ETERNAL_FEATHER",
+    "title": "Eternal Feather",
+    "description": "For every {Cards:plural:card|{} cards} in your Deck, heal {Heal} HP whenever you enter a Rest Site.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "FakeAnchor",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 4
+      }
+    ],
+    "image": "fake_anchor",
+    "pool": "Event",
+    "loc_key": "FAKE_ANCHOR",
+    "title": "Anchor???",
+    "description": "Start each combat with {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeBloodVial",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 1
+      }
+    ],
+    "image": "fake_blood_vial",
+    "pool": "Event",
+    "loc_key": "FAKE_BLOOD_VIAL",
+    "title": "Blood Vial???",
+    "description": "At the start of each combat, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeHappyFlower",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Turns",
+        "base_value": 5
+      }
+    ],
+    "image": "fake_happy_flower",
+    "pool": "Event",
+    "loc_key": "FAKE_HAPPY_FLOWER",
+    "title": "Happy Flower???",
+    "description": "Every {Turns} {Turns:plural:turn|turns}, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeLeesWaffle",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 10
+      }
+    ],
+    "image": "fake_lees_waffle",
+    "pool": "Event",
+    "loc_key": "FAKE_LEES_WAFFLE",
+    "title": "Lee's Waffle???",
+    "description": "Upon pickup, heal {Heal}% of your HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeMango",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 3
+      }
+    ],
+    "image": "fake_mango",
+    "pool": "Event",
+    "loc_key": "FAKE_MANGO",
+    "title": "Mango???",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeMerchantsRug",
+    "rarity": "Event",
+    "image": "fake_merchants_rug",
+    "pool": "Event",
+    "loc_key": "FAKE_MERCHANTS_RUG",
+    "title": "The Merchant's Rug???",
+    "description": "Poor imitation. Does nothing.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeOrichalcum",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 3
+      }
+    ],
+    "image": "fake_orichalcum",
+    "pool": "Event",
+    "loc_key": "FAKE_ORICHALCUM",
+    "title": "Orichalcum???",
+    "description": "If you end your turn without Block, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeSneckoEye",
+    "rarity": "Event",
+    "image": "fake_snecko_eye",
+    "pool": "Event",
+    "loc_key": "FAKE_SNECKO_EYE",
+    "title": "Snecko Eye???",
+    "description": "Start each combat Confused.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeStrikeDummy",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "ExtraDamage",
+        "base_value": 1
+      }
+    ],
+    "image": "fake_strike_dummy",
+    "pool": "Event",
+    "loc_key": "FAKE_STRIKE_DUMMY",
+    "title": "Strike Dummy???",
+    "description": "Cards containing \u201cStrike\u201d deal {ExtraDamage} additional damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FakeVenerableTeaSet",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "fake_venerable_tea_set",
+    "pool": "Event",
+    "loc_key": "FAKE_VENERABLE_TEA_SET",
+    "title": "Venerable Tea Set???",
+    "description": "Whenever you enter a Rest Site, start the next combat with an additional {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "FakeMerchant"
+    ]
+  },
+  {
+    "class_name": "FencingManual",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Forge",
+        "base_value": 10
+      }
+    ],
+    "image": "fencing_manual",
+    "pool": "Regent",
+    "loc_key": "FENCING_MANUAL",
+    "title": "Fencing Manual",
+    "description": "At the start of each combat, Forge {Forge}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "FestivePopper",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 9
+      }
+    ],
+    "image": "festive_popper",
+    "pool": "Shared",
+    "loc_key": "FESTIVE_POPPER",
+    "title": "Festive Popper",
+    "description": "At the start of each combat, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Fiddle",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "fiddle",
+    "pool": "Event",
+    "loc_key": "FIDDLE",
+    "title": "Fiddle",
+    "description": "At the start of each turn, draw {Cards} additional {Cards:plural:card|cards}. You may not draw cards during your turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "ForgottenSoul",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 1
+      }
+    ],
+    "image": "forgotten_soul",
+    "pool": "Event",
+    "loc_key": "FORGOTTEN_SOUL",
+    "title": "Forgotten Soul",
+    "description": "Whenever you Exhaust a card, deal {Damage} damage to a random enemy.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "GraveOfTheForgotten"
+    ]
+  },
+  {
+    "class_name": "FragrantMushroom",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "HpLoss",
+        "base_value": 15
+      },
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "fragrant_mushroom",
+    "pool": "Event",
+    "loc_key": "FRAGRANT_MUSHROOM",
+    "title": "Fragrant Mushroom",
+    "description": "Upon pickup, lose {HpLoss} HP and Upgrade {Cards} random {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "HungryForMushrooms"
+    ]
+  },
+  {
+    "class_name": "FresnelLens",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "NimbleAmount",
+        "base_value": 2
+      }
+    ],
+    "image": "fresnel_lens",
+    "pool": "Shared",
+    "loc_key": "FRESNEL_LENS",
+    "title": "Fresnel Lens",
+    "description": "Whenever you add a card that gains Block to your Deck, Enchant it with Nimble {NimbleAmount}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DrowningBeacon"
+    ]
+  },
+  {
+    "class_name": "FrozenEgg",
+    "rarity": "Rare",
+    "image": "frozen_egg",
+    "pool": "Shared",
+    "loc_key": "FROZEN_EGG",
+    "title": "Frozen Egg",
+    "description": "Whenever you add a Power into your Deck, Upgrade it.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "FuneraryMask",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "funerary_mask",
+    "pool": "Necrobinder",
+    "loc_key": "FUNERARY_MASK",
+    "title": "Funerary Mask",
+    "description": "At the start of each combat, add {Cards} {Cards:plural:Soul|Souls} into your Draw Pile.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "FurCoat",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Combats",
+        "base_value": 7
+      }
+    ],
+    "image": "fur_coat",
+    "pool": "Event",
+    "loc_key": "FUR_COAT",
+    "title": "Fur Coat",
+    "description": "Upon pickup, mark {Combats} random combats. Enemies in those rooms have 1 HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "GalacticDust",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 10
+      },
+      {
+        "type": "Stars",
+        "base_value": 10
+      }
+    ],
+    "image": "galactic_dust",
+    "pool": "Regent",
+    "loc_key": "GALACTIC_DUST",
+    "title": "Galactic Dust",
+    "description": "For every {Stars} {singleStarIcon} spent, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "GamblingChip",
+    "rarity": "Rare",
+    "image": "gambling_chip",
+    "pool": "Shared",
+    "loc_key": "GAMBLING_CHIP",
+    "title": "Gambling Chip",
+    "description": "At the start of each combat, discard any number of cards then draw that many.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "GamePiece",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "game_piece",
+    "pool": "Shared",
+    "loc_key": "GAME_PIECE",
+    "title": "Game Piece",
+    "description": "Whenever you play a Power, draw {Cards} {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "GhostSeed",
+    "rarity": "Shop",
+    "image": "ghost_seed",
+    "pool": "Shared",
+    "loc_key": "GHOST_SEED",
+    "title": "Ghost Seed",
+    "description": "Strikes and Defends gain Ethereal.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Girya",
+    "rarity": "Rare",
+    "image": "girya",
+    "pool": "Shared",
+    "loc_key": "GIRYA",
+    "title": "Girya",
+    "description": "You can now gain Strength at Rest Sites. (3 times max)",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "GlassEye",
+    "rarity": "Ancient",
+    "image": "glass_eye",
+    "pool": "Event",
+    "loc_key": "GLASS_EYE",
+    "title": "Glass Eye",
+    "description": "Upon pickup, obtain 2 Common cards, 2 Uncommon cards, and 1 Rare card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "Glitter",
+    "rarity": "Ancient",
+    "image": "glitter",
+    "pool": "Event",
+    "loc_key": "GLITTER",
+    "title": "Glitter",
+    "description": "Enchant all card rewards with Glam.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "GnarledHammer",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      },
+      {
+        "type": "SharpAmount",
+        "base_value": 3
+      }
+    ],
+    "image": "gnarled_hammer",
+    "pool": "Shared",
+    "loc_key": "GNARLED_HAMMER",
+    "title": "Gnarled Hammer",
+    "description": "Upon pickup, Enchant up to {Cards} {Cards:plural:Attack|Attacks} with Sharp {SharpAmount:diff()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "GoldPlatedCables",
+    "rarity": "Uncommon",
+    "image": "gold_plated_cables",
+    "pool": "Defect",
+    "loc_key": "GOLD_PLATED_CABLES",
+    "title": "Gold-Plated Cables",
+    "description": "Your rightmost Orb triggers its passive an additional time.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "GoldenCompass",
+    "rarity": "Ancient",
+    "image": "golden_compass",
+    "pool": "Event",
+    "loc_key": "GOLDEN_COMPASS",
+    "title": "Golden Compass",
+    "description": "Upon pickup, replace the Act 2 Map with a single special path.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "GoldenPearl",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 150
+      }
+    ],
+    "image": "golden_pearl",
+    "pool": "Event",
+    "loc_key": "GOLDEN_PEARL",
+    "title": "Golden Pearl",
+    "description": "Upon pickup, gain {Gold} Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "Gorget",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Plating",
+        "base_value": 4
+      }
+    ],
+    "image": "gorget",
+    "pool": "Shared",
+    "loc_key": "GORGET",
+    "title": "Gorget",
+    "description": "At the start of each combat, gain {PlatingPower} Plating.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "GremlinHorn",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "gremlin_horn",
+    "pool": "Shared",
+    "loc_key": "GREMLIN_HORN",
+    "title": "Gremlin Horn",
+    "description": "Whenever an enemy dies, gain {Energy:energyIcons()} and draw {Cards} {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "HandDrill",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Vulnerable",
+        "base_value": 2
+      }
+    ],
+    "image": "hand_drill",
+    "pool": "Event",
+    "loc_key": "HAND_DRILL",
+    "title": "Hand Drill",
+    "description": "Whenever you break an enemy's Block, apply {VulnerablePower} Vulnerable.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
+  },
+  {
+    "class_name": "HappyFlower",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Turns",
+        "base_value": 3
+      }
+    ],
+    "image": "happy_flower",
+    "pool": "Shared",
+    "loc_key": "HAPPY_FLOWER",
+    "title": "Happy Flower",
+    "description": "Every {Turns} {Turns:plural:turn|turns}, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "HelicalDart",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Dexterity",
+        "base_value": 1
+      }
+    ],
+    "image": "helical_dart",
+    "pool": "Silent",
+    "loc_key": "HELICAL_DART",
+    "title": "Helical Dart",
+    "description": "Whenever you play a Shiv, gain {DexterityPower} Dexterity this turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "HistoryCourse",
+    "rarity": "Event",
+    "image": "history_course",
+    "pool": "Event",
+    "loc_key": "HISTORY_COURSE",
+    "title": "History Course",
+    "description": "At the start of your turn, play a copy of your last played Attack or Skill.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "WarHistorianRepy"
+    ]
+  },
+  {
+    "class_name": "HornCleat",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 14
+      }
+    ],
+    "image": "horn_cleat",
+    "pool": "Shared",
+    "loc_key": "HORN_CLEAT",
+    "title": "Horn Cleat",
+    "description": "At the start of your 2nd turn, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "IceCream",
+    "rarity": "Rare",
+    "image": "ice_cream",
+    "pool": "Shared",
+    "loc_key": "ICE_CREAM",
+    "title": "Ice Cream",
+    "description": "Energy is now conserved between turns.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "InfusedCore",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Lightning",
+        "base_value": 3
+      }
+    ],
+    "image": "infused_core",
+    "pool": "Event",
+    "loc_key": "INFUSED_CORE",
+    "title": "Infused Core",
+    "description": "At the start of each combat, Channel {Lightning} Lightning.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "IntimidatingHelmet",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 4
+      },
+      {
+        "type": "Energy",
+        "base_value": 2
+      }
+    ],
+    "image": "intimidating_helmet",
+    "pool": "Shared",
+    "loc_key": "INTIMIDATING_HELMET",
+    "title": "Intimidating Helmet",
+    "description": "Whenever you play a card that costs {Energy:energyIcons()} or more, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "IronClub",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 4
+      }
+    ],
+    "image": "iron_club",
+    "pool": "Event",
+    "loc_key": "IRON_CLUB",
+    "title": "Iron Club",
+    "description": "Every {Cards} {Cards:plural:card|cards} you play, draw 1 card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "IvoryTile",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "ivory_tile",
+    "pool": "Necrobinder",
+    "loc_key": "IVORY_TILE",
+    "title": "Ivory Tile",
+    "description": "Whenever you play a card that costs {EnergyThreshold:energyIcons()} or more, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "JeweledMask",
+    "rarity": "Ancient",
+    "image": "jeweled_mask",
+    "pool": "Event",
+    "loc_key": "JEWELED_MASK",
+    "title": "Jeweled Mask",
+    "description": "At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "JewelryBox",
+    "rarity": "Ancient",
+    "image": "jewelry_box",
+    "pool": "Event",
+    "loc_key": "JEWELRY_BOX",
+    "title": "Jewelry Box",
+    "description": "Upon pickup, add 1 Apotheosis to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "JossPaper",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      },
+      {
+        "type": "ExhaustAmount",
+        "base_value": 5
+      }
+    ],
+    "image": "joss_paper",
+    "pool": "Shared",
+    "loc_key": "JOSS_PAPER",
+    "title": "Joss Paper",
+    "description": "Every {ExhaustAmount} times you Exhaust a card, draw {Cards} {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "JuzuBracelet",
+    "rarity": "Common",
+    "image": "juzu_bracelet",
+    "pool": "Shared",
+    "loc_key": "JUZU_BRACELET",
+    "title": "Juzu Bracelet",
+    "description": "Regular enemy combats are no longer encountered in ? rooms.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Kifuda",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "kifuda",
+    "pool": "Shared",
+    "loc_key": "KIFUDA",
+    "title": "Kifuda",
+    "description": "Upon pickup, Enchant up to {Cards} {Cards:plural:card|cards} with Adroit.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Kunai",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      },
+      {
+        "type": "Dexterity",
+        "base_value": 1
+      }
+    ],
+    "image": "kunai",
+    "pool": "Shared",
+    "loc_key": "KUNAI",
+    "title": "Kunai",
+    "description": "Every time you play {Cards} Attacks in a single turn, gain {DexterityPower} Dexterity.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Kusarigama",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 6
+      },
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "kusarigama",
+    "pool": "Shared",
+    "loc_key": "KUSARIGAMA",
+    "title": "Kusarigama",
+    "description": "Every time you play {Cards} {Cards:plural:Attack|Attacks} in a single turn, deal {Damage} damage to a random enemy.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Lantern",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "lantern",
+    "pool": "Shared",
+    "loc_key": "LANTERN",
+    "title": "Lantern",
+    "description": "Start each combat with an additional {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LargeCapsule",
+    "rarity": "Ancient",
+    "image": "large_capsule",
+    "pool": "Event",
+    "loc_key": "LARGE_CAPSULE",
+    "title": "Large Capsule",
+    "description": "Upon pickup, obtain {Relics} random {Relics:plural:Relic|Relics}. Add an additional Strike and Defend to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "LastingCandy",
+    "rarity": "Rare",
+    "image": "lasting_candy",
+    "pool": "Event",
+    "loc_key": "LASTING_CANDY",
+    "title": "Lasting Candy",
+    "description": "Every other combat, your card rewards gain an additional Power.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LavaLamp",
+    "rarity": "Shop",
+    "image": "lava_lamp",
+    "pool": "Shared",
+    "loc_key": "LAVA_LAMP",
+    "title": "Lava Lamp",
+    "description": "At the end of combat, Upgrade all card rewards if you took no damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LavaRock",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Relics",
+        "base_value": 2
+      }
+    ],
+    "image": "lava_rock",
+    "pool": "Event",
+    "loc_key": "LAVA_ROCK",
+    "title": "Lava Rock",
+    "description": "The Act 1 Boss drops {Relics} Relics.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "LeadPaperweight",
+    "rarity": "Ancient",
+    "image": "lead_paperweight",
+    "pool": "Event",
+    "loc_key": "LEAD_PAPERWEIGHT",
+    "title": "Lead Paperweight",
+    "description": "Upon pickup, choose 1 of 2 Colorless cards to add to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "LeafyPoultice",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 10
+      }
+    ],
+    "image": "leafy_poultice",
+    "pool": "Event",
+    "loc_key": "LEAFY_POULTICE",
+    "title": "Leafy Poultice",
+    "description": "Upon pickup, Transform 1 of your Strikes and 1 of your Defends and lose {MaxHp} Max HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "LeesWaffle",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 7
+      }
+    ],
+    "image": "lees_waffle",
+    "pool": "Shared",
+    "loc_key": "LEES_WAFFLE",
+    "title": "Lee's Waffle",
+    "description": "Upon pickup, raise your Max HP by {MaxHp} and heal all of your HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LetterOpener",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 5
+      },
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "letter_opener",
+    "pool": "Shared",
+    "loc_key": "LETTER_OPENER",
+    "title": "Letter Opener",
+    "description": "Every time you play {Cards} {Cards:plural:Skill|Skills} in a single turn, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LizardTail",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 50
+      }
+    ],
+    "image": "lizard_tail",
+    "pool": "Shared",
+    "loc_key": "LIZARD_TAIL",
+    "title": "Lizard Tail",
+    "description": "When you would die, heal to {Heal}% of your Max HP instead (works once).",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LoomingFruit",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 31
+      }
+    ],
+    "image": "looming_fruit",
+    "pool": "Shared",
+    "loc_key": "LOOMING_FRUIT",
+    "title": "Looming Fruit",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "LordsParasol",
+    "rarity": "Ancient",
+    "image": "lords_parasol",
+    "pool": "Event",
+    "loc_key": "LORDS_PARASOL",
+    "title": "Lord's Parasol",
+    "description": "When you encounter the Merchant, immediately obtain EVERYTHING he sells.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "LostCoffer",
+    "rarity": "Ancient",
+    "image": "lost_coffer",
+    "pool": "Event",
+    "loc_key": "LOST_COFFER",
+    "title": "Lost Coffer",
+    "description": "Upon pickup, gain 1 card reward and procure 1 random potion.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "LostWisp",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 8
+      }
+    ],
+    "image": "lost_wisp",
+    "pool": "Event",
+    "loc_key": "LOST_WISP",
+    "title": "Lost Wisp",
+    "description": "Whenever you play a Power, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LuckyFysh",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 15
+      }
+    ],
+    "image": "lucky_fysh",
+    "pool": "Shared",
+    "loc_key": "LUCKY_FYSH",
+    "title": "Lucky Fysh",
+    "description": "Whenever you add a card to your Deck, gain {Gold} Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "LunarPastry",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Stars",
+        "base_value": 1
+      }
+    ],
+    "image": "lunar_pastry",
+    "pool": "Regent",
+    "loc_key": "LUNAR_PASTRY",
+    "title": "Lunar Pastry",
+    "description": "At the end of your turn, gain {Stars:starIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "Mango",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 14
+      }
+    ],
+    "image": "mango",
+    "pool": "Shared",
+    "loc_key": "MANGO",
+    "title": "Mango",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MassiveScroll",
+    "rarity": "Ancient",
+    "image": "massive_scroll",
+    "pool": "Event",
+    "loc_key": "MASSIVE_SCROLL",
+    "title": "Massive Scroll",
+    "description": "Upon pickup, choose 1 of 3 Multiplayer Cards to add to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "MawBank",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 12
+      }
+    ],
+    "image": "maw_bank",
+    "pool": "Event",
+    "loc_key": "MAW_BANK",
+    "title": "Maw Bank",
+    "description": "Whenever you climb a floor, gain {Gold} Gold. No longer works when you spend any Gold at the shop.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
+  },
+  {
+    "class_name": "MealTicket",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 15
+      }
+    ],
+    "image": "meal_ticket",
+    "pool": "Shared",
+    "loc_key": "MEAL_TICKET",
+    "title": "Meal Ticket",
+    "description": "Whenever you enter a shop room, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MeatCleaver",
+    "rarity": "Ancient",
+    "image": "meat_cleaver",
+    "pool": "Event",
+    "loc_key": "MEAT_CLEAVER",
+    "title": "Meat Cleaver",
+    "description": "You may Cook at Rest Sites.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "MeatOnTheBone",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 12
+      },
+      {
+        "type": "HpThreshold",
+        "base_value": 50
+      }
+    ],
+    "image": "meat_on_the_bone",
+    "pool": "Shared",
+    "loc_key": "MEAT_ON_THE_BONE",
+    "title": "Meat on the Bone",
+    "description": "If your HP is at or below {HpThreshold}% at the end of combat, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MembershipCard",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Discount",
+        "base_value": 50
+      }
+    ],
+    "image": "membership_card",
+    "pool": "Shared",
+    "loc_key": "MEMBERSHIP_CARD",
+    "title": "Membership Card",
+    "description": "{Discount}% discount on all products!",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MercuryHourglass",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 3
+      }
+    ],
+    "image": "mercury_hourglass",
+    "pool": "Shared",
+    "loc_key": "MERCURY_HOURGLASS",
+    "title": "Mercury Hourglass",
+    "description": "At the start of your turn, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Metronome",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 30
+      },
+      {
+        "type": "OrbCount",
+        "base_value": 7
+      }
+    ],
+    "image": "metronome",
+    "pool": "Defect",
+    "loc_key": "METRONOME",
+    "title": "Metronome",
+    "description": "The first time you Channel {OrbCount} Orbs each combat, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "MiniRegent",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 1
+      }
+    ],
+    "image": "mini_regent",
+    "pool": "Regent",
+    "loc_key": "MINI_REGENT",
+    "title": "Mini Regent",
+    "description": "The first time you spend {singleStarIcon} each turn, gain {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "MiniatureCannon",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "ExtraDamage",
+        "base_value": 3
+      }
+    ],
+    "image": "miniature_cannon",
+    "pool": "Shared",
+    "loc_key": "MINIATURE_CANNON",
+    "title": "Miniature Cannon",
+    "description": "Upgraded Attacks deal {ExtraDamage} additional damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MiniatureTent",
+    "rarity": "Shop",
+    "image": "miniature_tent",
+    "pool": "Shared",
+    "loc_key": "MINIATURE_TENT",
+    "title": "Miniature Tent",
+    "description": "You may choose any number of options at Rest Sites.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MoltenEgg",
+    "rarity": "Rare",
+    "image": "molten_egg",
+    "pool": "Shared",
+    "loc_key": "MOLTEN_EGG",
+    "title": "Molten Egg",
+    "description": "Whenever you add an Attack card to your Deck, Upgrade it.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MrStruggles",
+    "rarity": "Event",
+    "image": "mr_struggles",
+    "pool": "Event",
+    "loc_key": "MR_STRUGGLES",
+    "title": "Mr. Struggles",
+    "description": "At the start of your turn, deal damage equal to the turn number to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "DollRoom"
+    ]
+  },
+  {
+    "class_name": "MummifiedHand",
+    "rarity": "Rare",
+    "image": "mummified_hand",
+    "pool": "Shared",
+    "loc_key": "MUMMIFIED_HAND",
+    "title": "Mummified Hand",
+    "description": "Whenever you play a Power, a random card in your Hand is free to play that turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "MusicBox",
+    "rarity": "Ancient",
+    "image": "music_box",
+    "pool": "Event",
+    "loc_key": "MUSIC_BOX",
+    "title": "Music Box",
+    "description": "Create an Ethereal copy of the first Attack you play each turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "MysticLighter",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 9
+      }
+    ],
+    "image": "mystic_lighter",
+    "pool": "Shared",
+    "loc_key": "MYSTIC_LIGHTER",
+    "title": "Mystic Lighter",
+    "description": "Enchanted Attacks deal {Damage} additional damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "NeowsTorment",
+    "rarity": "Ancient",
+    "image": "neows_torment",
+    "pool": "Event",
+    "loc_key": "NEOWS_TORMENT",
+    "title": "Neow's Torment",
+    "description": "Upon pickup, add 1 Neow's Fury to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "NewLeaf",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "new_leaf",
+    "pool": "Event",
+    "loc_key": "NEW_LEAF",
+    "title": "New Leaf",
+    "description": "Upon pickup, Transform {Cards} {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "NinjaScroll",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Shivs",
+        "base_value": 3
+      }
+    ],
+    "image": "ninja_scroll",
+    "pool": "Silent",
+    "loc_key": "NINJA_SCROLL",
+    "title": "Ninja Scroll",
+    "description": "At the start of each combat, add {Shivs} {Shivs:plural:Shiv|Shivs} into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "Nunchaku",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Cards",
+        "base_value": 10
+      }
+    ],
+    "image": "nunchaku",
+    "pool": "Shared",
+    "loc_key": "NUNCHAKU",
+    "title": "Nunchaku",
+    "description": "Every time you play {Cards} Attacks, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "NutritiousOyster",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 11
+      }
+    ],
+    "image": "nutritious_oyster",
+    "pool": "Event",
+    "loc_key": "NUTRITIOUS_OYSTER",
+    "title": "Nutritious Oyster",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "NutritiousSoup",
+    "rarity": "Ancient",
+    "image": "nutritious_soup",
+    "pool": "Event",
+    "loc_key": "NUTRITIOUS_SOUP",
+    "title": "Nutritious Soup",
+    "description": "Upon pickup, Enchant all Strikes in your Deck with Tezcatara's Ember.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "OddlySmoothStone",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Dexterity",
+        "base_value": 1
+      }
+    ],
+    "image": "oddly_smooth_stone",
+    "pool": "Shared",
+    "loc_key": "ODDLY_SMOOTH_STONE",
+    "title": "Oddly Smooth Stone",
+    "description": "Start each combat with {DexterityPower} Dexterity.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "OldCoin",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 300
+      }
+    ],
+    "image": "old_coin",
+    "pool": "Shared",
+    "loc_key": "OLD_COIN",
+    "title": "Old Coin",
+    "description": "Upon pickup, gain {Gold} Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "OrangeDough",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "orange_dough",
+    "pool": "Regent",
+    "loc_key": "ORANGE_DOUGH",
+    "title": "Orange Dough",
+    "description": "At the start of each combat, add {Cards} random Colorless {Cards:plural:card|cards} into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "Orichalcum",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 6
+      }
+    ],
+    "image": "orichalcum",
+    "pool": "Shared",
+    "loc_key": "ORICHALCUM",
+    "title": "Orichalcum",
+    "description": "If you end your turn without Block, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "OrnamentalFan",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 4
+      },
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "ornamental_fan",
+    "pool": "Shared",
+    "loc_key": "ORNAMENTAL_FAN",
+    "title": "Ornamental Fan",
+    "description": "Every time you play {Cards} Attacks in a single turn, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Orrery",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "orrery",
+    "pool": "Shared",
+    "loc_key": "ORRERY",
+    "title": "Orrery",
+    "description": "Upon pickup, gain {Cards} card {Cards:plural:reward|rewards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PaelsBlood",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "paels_blood",
+    "pool": "Event",
+    "loc_key": "PAELS_BLOOD",
+    "title": "Pael's Blood",
+    "description": "At the start of your turn, draw {Cards} additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsClaw",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "paels_claw",
+    "pool": "Event",
+    "loc_key": "PAELS_CLAW",
+    "title": "Pael's Claw",
+    "description": "Upon pickup, Enchant all Defends with {EnchantmentName}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsEye",
+    "rarity": "Ancient",
+    "image": "paels_eye",
+    "pool": "Event",
+    "loc_key": "PAELS_EYE",
+    "title": "Pael's Eye",
+    "description": "The first time each combat you end your turn without playing cards, Exhaust your Hand, and take an extra turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsFlesh",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "paels_flesh",
+    "pool": "Event",
+    "loc_key": "PAELS_FLESH",
+    "title": "Pael's Flesh",
+    "description": "Gain an additional {Energy:energyIcons()} at the start of your 3rd turn, and every turn after that.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsGrowth",
+    "rarity": "Ancient",
+    "image": "paels_growth",
+    "pool": "Event",
+    "loc_key": "PAELS_GROWTH",
+    "title": "Pael's Growth",
+    "description": "Upon pickup, Enchant a card with {EnchantmentName}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsHorn",
+    "rarity": "Ancient",
+    "image": "paels_horn",
+    "pool": "Event",
+    "loc_key": "PAELS_HORN",
+    "title": "Pael's Horn",
+    "description": "Upon pickup, add 2 Relax to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsLegion",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Turns",
+        "base_value": 2
+      }
+    ],
+    "image": "paels_legion",
+    "pool": "Event",
+    "loc_key": "PAELS_LEGION",
+    "title": "Pael's Legion",
+    "description": "Doubles Block gained from a card, then goes to sleep for {Turns} {Turns:plural:turn|turns}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsTears",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 2
+      }
+    ],
+    "image": "paels_tears",
+    "pool": "Event",
+    "loc_key": "PAELS_TEARS",
+    "title": "Pael's Tears",
+    "description": "If you end your turn with unspent {energyPrefix:energyIcons(1)}, gain an additional {Energy:energyIcons()} next turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsTooth",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "paels_tooth",
+    "pool": "Event",
+    "loc_key": "PAELS_TOOTH",
+    "title": "Pael's Tooth",
+    "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards in the Pot:\n{}|}",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PaelsWing",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Sacrifices",
+        "base_value": 2
+      }
+    ],
+    "image": "paels_wing",
+    "pool": "Event",
+    "loc_key": "PAELS_WING",
+    "title": "Pael's Wing",
+    "description": "You may sacrifice card rewards to Pael. Every {Sacrifices:plural:sacrifice|{} sacrifices}, obtain a Relic.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Pael"
+    ]
+  },
+  {
+    "class_name": "PandorasBox",
+    "rarity": "Ancient",
+    "image": "pandoras_box",
+    "pool": "Event",
+    "loc_key": "PANDORAS_BOX",
+    "title": "Pandora's Box",
+    "description": "Transform ALL Strikes and Defends.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "Pantograph",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 25
+      }
+    ],
+    "image": "pantograph",
+    "pool": "Shared",
+    "loc_key": "PANTOGRAPH",
+    "title": "Pantograph",
+    "description": "At the start of each Boss combat, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PaperKrane",
+    "rarity": "Rare",
+    "image": "paper_krane",
+    "pool": "Silent",
+    "loc_key": "PAPER_KRANE",
+    "title": "Paper Krane",
+    "description": "Enemies with Weak deal 40% less damage to you rather than 25%.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "PaperPhrog",
+    "rarity": "Uncommon",
+    "image": "paper_phrog",
+    "pool": "Ironclad",
+    "loc_key": "PAPER_PHROG",
+    "title": "Paper Phrog",
+    "description": "Enemies with Vulnerable take 75% more damage rather than 50%.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "ParryingShield",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 6
+      },
+      {
+        "type": "Block",
+        "base_value": 10
+      }
+    ],
+    "image": "parrying_shield",
+    "pool": "Shared",
+    "loc_key": "PARRYING_SHIELD",
+    "title": "Parrying Shield",
+    "description": "If you end a turn with at least {Block} Block, deal {Damage} damage to a random enemy.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Pear",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 10
+      }
+    ],
+    "image": "pear",
+    "pool": "Shared",
+    "loc_key": "PEAR",
+    "title": "Pear",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PenNib",
+    "rarity": "Uncommon",
+    "image": "pen_nib",
+    "pool": "Shared",
+    "loc_key": "PEN_NIB",
+    "title": "Pen Nib",
+    "description": "Every 10th Attack you play deals double damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Pendulum",
+    "rarity": "Common",
+    "image": "pendulum",
+    "pool": "Shared",
+    "loc_key": "PENDULUM",
+    "title": "Pendulum",
+    "description": "Whenever you shuffle your Draw Pile, draw a card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Permafrost",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 6
+      }
+    ],
+    "image": "permafrost",
+    "pool": "Shared",
+    "loc_key": "PERMAFROST",
+    "title": "Permafrost",
+    "description": "The first time you play a Power each combat, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PetrifiedToad",
+    "rarity": "Uncommon",
+    "image": "petrified_toad",
+    "pool": "Shared",
+    "loc_key": "PETRIFIED_TOAD",
+    "title": "Petrified Toad",
+    "description": "At the start of each combat, procure a Potion-Shaped Rock.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PhilosophersStone",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Strength",
+        "base_value": 1
+      }
+    ],
+    "image": "philosophers_stone",
+    "pool": "Event",
+    "loc_key": "PHILOSOPHERS_STONE",
+    "title": "Philosopher's Stone",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. ALL enemies start combat with {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "PhylacteryUnbound",
+    "rarity": "Starter",
+    "image": "phylactery_unbound",
+    "pool": "Event",
+    "loc_key": "PHYLACTERY_UNBOUND",
+    "title": "Phylactery Unbound",
+    "description": "At the start of each combat, Summon {StartOfCombat}. At the start of your turn, Summon {StartOfTurn}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Planisphere",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 4
+      }
+    ],
+    "image": "planisphere",
+    "pool": "Shared",
+    "loc_key": "PLANISPHERE",
+    "title": "Planisphere",
+    "description": "Whenever you enter a ? room, heal {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Pocketwatch",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      },
+      {
+        "type": "CardThreshold",
+        "base_value": 3
+      }
+    ],
+    "image": "pocketwatch",
+    "pool": "Shared",
+    "loc_key": "POCKETWATCH",
+    "title": "Pocketwatch",
+    "description": "Whenever you play {CardThreshold} or fewer {CardThreshold:plural:card|cards} during your turn, draw {Cards} additional {Cards:plural:card|cards} at the start of your next turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PollinousCore",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      },
+      {
+        "type": "Turns",
+        "base_value": 4
+      }
+    ],
+    "image": "pollinous_core",
+    "pool": "Event",
+    "loc_key": "POLLINOUS_CORE",
+    "title": "Pollinous Core",
+    "description": "Every {Turns} {Turns:plural:turn|turns}, draw {Cards} additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Pomander",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "pomander",
+    "pool": "Event",
+    "loc_key": "POMANDER",
+    "title": "Pomander",
+    "description": "Upon pickup, Upgrade a card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "PotionBelt",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "PotionSlots",
+        "base_value": 2
+      }
+    ],
+    "image": "potion_belt",
+    "pool": "Shared",
+    "loc_key": "POTION_BELT",
+    "title": "Potion Belt",
+    "description": "Upon pickup, gain {PotionSlots} potion {PotionSlots:plural:slot|slots}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PowerCell",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "power_cell",
+    "pool": "Defect",
+    "loc_key": "POWER_CELL",
+    "title": "Power Cell",
+    "description": "At the start of each combat, add {Cards} zero-cost cards from your Draw Pile into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "PrayerWheel",
+    "rarity": "Rare",
+    "image": "prayer_wheel",
+    "pool": "Shared",
+    "loc_key": "PRAYER_WHEEL",
+    "title": "Prayer Wheel",
+    "description": "Normal enemies drop an additional card reward.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "PrecariousShears",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 13
+      },
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "precarious_shears",
+    "pool": "Event",
+    "loc_key": "PRECARIOUS_SHEARS",
+    "title": "Precarious Shears",
+    "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck and take {Damage} damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "PreciseScissors",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "precise_scissors",
+    "pool": "Event",
+    "loc_key": "PRECISE_SCISSORS",
+    "title": "Precise Scissors",
+    "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "PreservedFog",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 5
+      }
+    ],
+    "image": "preserved_fog",
+    "pool": "Event",
+    "loc_key": "PRESERVED_FOG",
+    "title": "Preserved Fog",
+    "description": "Upon pickup, remove {Cards} {Cards:plural:card|cards} from your Deck. Add Folly to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "PrismaticGem",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "prismatic_gem",
+    "pool": "Event",
+    "loc_key": "PRISMATIC_GEM",
+    "title": "Prismatic Gem",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. Card rewards now contain cards from other colors.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "PumpkinCandle",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "pumpkin_candle",
+    "pool": "Event",
+    "loc_key": "PUMPKIN_CANDLE",
+    "title": "Pumpkin Candle",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. Extinguishes at the start of Act 3.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "PunchDagger",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Momentum",
+        "base_value": 5
+      }
+    ],
+    "image": "punch_dagger",
+    "pool": "Shared",
+    "loc_key": "PUNCH_DAGGER",
+    "title": "Punch Dagger",
+    "description": "Upon pickup, Enchant an Attack with Momentum {Momentum}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RadiantPearl",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "radiant_pearl",
+    "pool": "Event",
+    "loc_key": "RADIANT_PEARL",
+    "title": "Radiant Pearl",
+    "description": "At the start of each combat, add {Cards} {Cards:plural:Luminesce|Luminesces} into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "RainbowRing",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 1
+      },
+      {
+        "type": "Dexterity",
+        "base_value": 1
+      }
+    ],
+    "image": "rainbow_ring",
+    "pool": "Shared",
+    "loc_key": "RAINBOW_RING",
+    "title": "Rainbow Ring",
+    "description": "The first time you play an Attack, Skill, and Power each turn, gain {StrengthPower} Strength and {DexterityPower} Dexterity.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RazorTooth",
+    "rarity": "Rare",
+    "image": "razor_tooth",
+    "pool": "Event",
+    "loc_key": "RAZOR_TOOTH",
+    "title": "Razor Tooth",
+    "description": "Every time you play an Attack or Skill, Upgrade it for the remainder of combat.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RedMask",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Weak",
+        "base_value": 1
+      }
+    ],
+    "image": "red_mask",
+    "pool": "Shared",
+    "loc_key": "RED_MASK",
+    "title": "Red Mask",
+    "description": "At the start of each combat, apply {WeakPower} Weak to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RedSkull",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 3
+      },
+      {
+        "type": "HpThreshold",
+        "base_value": 50
+      }
+    ],
+    "image": "red_skull",
+    "pool": "Ironclad",
+    "loc_key": "RED_SKULL",
+    "title": "Red Skull",
+    "description": "While your HP is at or below {HpThreshold}%, you have {StrengthPower} additional Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "RegalPillow",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 15
+      }
+    ],
+    "image": "regal_pillow",
+    "pool": "Shared",
+    "loc_key": "REGAL_PILLOW",
+    "title": "Regal Pillow",
+    "description": "Whenever you Rest, heal an additional {Heal} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Regalite",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 2
+      }
+    ],
+    "image": "regalite",
+    "pool": "Regent",
+    "loc_key": "REGALITE",
+    "title": "Regalite",
+    "description": "Whenever you create a Colorless card, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "ReptileTrinket",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 3
+      }
+    ],
+    "image": "reptile_trinket",
+    "pool": "Shared",
+    "loc_key": "REPTILE_TRINKET",
+    "title": "Reptile Trinket",
+    "description": "Whenever you use a potion, gain {StrengthPower} Strength this turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RingOfTheDrake",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      },
+      {
+        "type": "Turns",
+        "base_value": 3
+      }
+    ],
+    "image": "ring_of_the_drake",
+    "pool": "Event",
+    "loc_key": "RING_OF_THE_DRAKE",
+    "title": "Ring of the Drake",
+    "description": "At the start of your first {Turns:plural:turn|{} turns}, draw {Cards} additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RingOfTheSnake",
+    "rarity": "Starter",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "ring_of_the_snake",
+    "pool": "Silent",
+    "loc_key": "RING_OF_THE_SNAKE",
+    "title": "Ring of the Snake",
+    "description": "At the start of each combat, draw {Cards} additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "RingingTriangle",
+    "rarity": "Shop",
+    "image": "ringing_triangle",
+    "pool": "Shared",
+    "loc_key": "RINGING_TRIANGLE",
+    "title": "Ringing Triangle",
+    "description": "Retain your Hand on the first turn of combat.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RippleBasin",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 4
+      }
+    ],
+    "image": "ripple_basin",
+    "pool": "Shared",
+    "loc_key": "RIPPLE_BASIN",
+    "title": "Ripple Basin",
+    "description": "If you did not play any Attacks during your turn, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RoyalPoison",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 4
+      }
+    ],
+    "image": "royal_poison",
+    "pool": "Event",
+    "loc_key": "ROYAL_POISON",
+    "title": "Royal Poison",
+    "description": "At the start of each combat, lose {Damage} HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "RoundTeaParty"
+    ]
+  },
+  {
+    "class_name": "RoyalStamp",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 1
+      }
+    ],
+    "image": "royal_stamp",
+    "pool": "Shared",
+    "loc_key": "ROYAL_STAMP",
+    "title": "Royal Stamp",
+    "description": "Upon pickup, choose an Attack or Skill in your Deck to Enchant with {Enchantment}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "RuinedHelmet",
+    "rarity": "Rare",
+    "image": "ruined_helmet",
+    "pool": "Ironclad",
+    "loc_key": "RUINED_HELMET",
+    "title": "Ruined Helmet",
+    "description": "The first time you gain Strength each combat, double the amount gained.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "RunicCapacitor",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Repeat",
+        "base_value": 3
+      }
+    ],
+    "image": "runic_capacitor",
+    "pool": "Defect",
+    "loc_key": "RUNIC_CAPACITOR",
+    "title": "Runic Capacitor",
+    "description": "Start each combat with {Repeat} additional Orb Slots.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "RunicPyramid",
+    "rarity": "Ancient",
+    "image": "runic_pyramid",
+    "pool": "Event",
+    "loc_key": "RUNIC_PYRAMID",
+    "title": "Runic Pyramid",
+    "description": "At the end of your turn, you no longer discard your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "Sai",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 7
+      }
+    ],
+    "image": "sai",
+    "pool": "Event",
+    "loc_key": "SAI",
+    "title": "Sai",
+    "description": "At the start of your turn, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "SandCastle",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 6
+      }
+    ],
+    "image": "sand_castle",
+    "pool": "Event",
+    "loc_key": "SAND_CASTLE",
+    "title": "Sand Castle",
+    "description": "Upon pickup, Upgrade {Cards} random {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "ScreamingFlagon",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 20
+      }
+    ],
+    "image": "screaming_flagon",
+    "pool": "Shared",
+    "loc_key": "SCREAMING_FLAGON",
+    "title": "Screaming Flagon",
+    "description": "If you end your turn with no cards in your Hand, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "ScrollBoxes",
+    "rarity": "Ancient",
+    "image": "scroll_boxes",
+    "pool": "Event",
+    "loc_key": "SCROLL_BOXES",
+    "title": "Scroll Boxes",
+    "description": "Upon pickup, lose all Gold and choose 1 of 2 packs of cards to add to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "SeaGlass",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 15
+      }
+    ],
+    "image": "sea_glass",
+    "pool": "Event",
+    "loc_key": "SEA_GLASS",
+    "title": "Sea Glass",
+    "description": "See {Cards} cards from {Character.StringValue:cond:{}|another character}. Choose any number of them to add to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "SealOfGold",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 5
+      },
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "seal_of_gold",
+    "pool": "Event",
+    "loc_key": "SEAL_OF_GOLD",
+    "title": "Seal of Gold",
+    "description": "At the start of your turn, spend {Gold} Gold to gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "SelfFormingClay",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "BlockNextTurn",
+        "base_value": 3
+      }
+    ],
+    "image": "self_forming_clay",
+    "pool": "Ironclad",
+    "loc_key": "SELF_FORMING_CLAY",
+    "title": "Self-Forming Clay",
+    "description": "Whenever you lose HP in combat, gain {BlockNextTurn} Block next turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Ironclad"
+  },
+  {
+    "class_name": "SereTalon",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Curses",
+        "base_value": 2
+      },
+      {
+        "type": "Wishes",
+        "base_value": 3
+      }
+    ],
+    "image": "sere_talon",
+    "pool": "Event",
+    "loc_key": "SERE_TALON",
+    "title": "Sere Talon",
+    "description": "Upon pickup, add {Curses} random Curses and {Wishes} Wishes to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "Shovel",
+    "rarity": "Rare",
+    "image": "shovel",
+    "pool": "Shared",
+    "loc_key": "SHOVEL",
+    "title": "Shovel",
+    "description": "You can now dig at Rest Sites to obtain a random Relic.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Shuriken",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      },
+      {
+        "type": "Strength",
+        "base_value": 1
+      }
+    ],
+    "image": "shuriken",
+    "pool": "Shared",
+    "loc_key": "SHURIKEN",
+    "title": "Shuriken",
+    "description": "Every time you play {Cards} Attacks in a single turn, gain {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "SignetRing",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Gold",
+        "base_value": 999
+      }
+    ],
+    "image": "signet_ring",
+    "pool": "Event",
+    "loc_key": "SIGNET_RING",
+    "title": "Signet Ring",
+    "description": "Upon pickup, gain {Gold} Gold.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Nonupeipe"
+    ]
+  },
+  {
+    "class_name": "SilverCrucible",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "silver_crucible",
+    "pool": "Event",
+    "loc_key": "SILVER_CRUCIBLE",
+    "title": "Silver Crucible",
+    "description": "The first {Cards} card rewards you see are Upgraded. The first Treasure Chest you open is empty.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "SlingOfCourage",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 2
+      }
+    ],
+    "image": "sling_of_courage",
+    "pool": "Shared",
+    "loc_key": "SLING_OF_COURAGE",
+    "title": "Sling of Courage",
+    "description": "Start each Elite combat with {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "SmallCapsule",
+    "rarity": "Ancient",
+    "image": "small_capsule",
+    "pool": "Event",
+    "loc_key": "SMALL_CAPSULE",
+    "title": "Small Capsule",
+    "description": "Upon pickup, obtain a random Relic.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "SneckoEye",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "snecko_eye",
+    "pool": "Event",
+    "loc_key": "SNECKO_EYE",
+    "title": "Snecko Eye",
+    "description": "At the start of your turn, draw {Cards} additional {Cards:plural:card|cards}. Start each combat Confused.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "SneckoSkull",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Poison",
+        "base_value": 1
+      }
+    ],
+    "image": "snecko_skull",
+    "pool": "Silent",
+    "loc_key": "SNECKO_SKULL",
+    "title": "Snecko Skull",
+    "description": "Whenever you apply Poison, apply an additional {PoisonPower} Poison.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "Sozu",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "sozu",
+    "pool": "Event",
+    "loc_key": "SOZU",
+    "title": "Sozu",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. You can no longer obtain potions.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "SparklingRouge",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 1
+      },
+      {
+        "type": "Dexterity",
+        "base_value": 1
+      }
+    ],
+    "image": "sparkling_rouge",
+    "pool": "Event",
+    "loc_key": "SPARKLING_ROUGE",
+    "title": "Sparkling Rouge",
+    "description": "At the start of your 3rd turn, gain {StrengthPower} Strength and {DexterityPower} Dexterity.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "SpikedGauntlets",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "spiked_gauntlets",
+    "pool": "Event",
+    "loc_key": "SPIKED_GAUNTLETS",
+    "title": "Spiked Gauntlets",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. Powers cost 1 more {energyPrefix:energyIcons(1)}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "StoneCalendar",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 52
+      },
+      {
+        "type": "DamageTurn",
+        "base_value": 7
+      }
+    ],
+    "image": "stone_calendar",
+    "pool": "Shared",
+    "loc_key": "STONE_CALENDAR",
+    "title": "Stone Calendar",
+    "description": "At the end of turn {DamageTurn}, deal {Damage} damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "StoneCracker",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "stone_cracker",
+    "pool": "Shared",
+    "loc_key": "STONE_CRACKER",
+    "title": "Stone Cracker",
+    "description": "At the start of Boss combats, Upgrade {Cards} random {Cards:plural:card|cards} in your Draw Pile for the rest of combat.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "StoneHumidifier",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 5
+      }
+    ],
+    "image": "stone_humidifier",
+    "pool": "Event",
+    "loc_key": "STONE_HUMIDIFIER",
+    "title": "Stone Humidifier",
+    "description": "Whenever you Rest at a Rest Site, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Neow"
+    ]
+  },
+  {
+    "class_name": "Storybook",
+    "rarity": "Ancient",
+    "image": "storybook",
+    "pool": "Event",
+    "loc_key": "STORYBOOK",
+    "title": "Storybook",
+    "description": "Upon pickup, add 1 Brightest Flame to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "Strawberry",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "MaxHp",
+        "base_value": 7
+      }
+    ],
+    "image": "strawberry",
+    "pool": "Shared",
+    "loc_key": "STRAWBERRY",
+    "title": "Strawberry",
+    "description": "Upon pickup, raise your Max HP by {MaxHp}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "StrikeDummy",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "ExtraDamage",
+        "base_value": 3
+      }
+    ],
+    "image": "strike_dummy",
+    "pool": "Shared",
+    "loc_key": "STRIKE_DUMMY",
+    "title": "Strike Dummy",
+    "description": "Cards containing \u201cStrike\u201d deal {ExtraDamage} additional damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "SturdyClamp",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 10
+      }
+    ],
+    "image": "sturdy_clamp",
+    "pool": "Shared",
+    "loc_key": "STURDY_CLAMP",
+    "title": "Sturdy Clamp",
+    "description": "Up to {Block} Block persists across turns.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "SwordOfJade",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 3
+      }
+    ],
+    "image": "sword_of_jade",
+    "pool": "Event",
+    "loc_key": "SWORD_OF_JADE",
+    "title": "Sword of Jade",
+    "description": "Start each combat with {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "SwordOfStone",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Elites",
+        "base_value": 5
+      }
+    ],
+    "image": "sword_of_stone",
+    "pool": "Event",
+    "loc_key": "SWORD_OF_STONE",
+    "title": "Sword of Stone",
+    "description": "Transforms into a powerful Relic after defeating {Elites} {Elites:plural:Elite|Elites}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "SunkenStatue"
+    ]
+  },
+  {
+    "class_name": "SymbioticVirus",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Dark",
+        "base_value": 1
+      }
+    ],
+    "image": "symbiotic_virus",
+    "pool": "Defect",
+    "loc_key": "SYMBIOTIC_VIRUS",
+    "title": "Symbiotic Virus",
+    "description": "At the start of each combat, Channel {Dark} Dark.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Defect"
+  },
+  {
+    "class_name": "TanxsWhistle",
+    "rarity": "Ancient",
+    "image": "tanxs_whistle",
+    "pool": "Event",
+    "loc_key": "TANXS_WHISTLE",
+    "title": "Tanx's Whistle",
+    "description": "Upon pickup, add 1 Whistle to your Deck.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "TeaOfDiscourtesy",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Heal",
+        "base_value": 1
+      },
+      {
+        "type": "DazedCount",
+        "base_value": 2
+      }
+    ],
+    "image": "tea_of_discourtesy",
+    "pool": "Event",
+    "loc_key": "TEA_OF_DISCOURTESY",
+    "title": "Tea of Discourtesy",
+    "description": "At the start of the next combat, shuffle {DazedCount} Dazed into your Draw Pile.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TeaMaster"
+    ]
+  },
+  {
+    "class_name": "TheAbacus",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 6
+      }
+    ],
+    "image": "the_abacus",
+    "pool": "Shared",
+    "loc_key": "THE_ABACUS",
+    "title": "The Abacus",
+    "description": "Whenever you shuffle your Draw Pile, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "TheBoot",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "DamageMinimum",
+        "base_value": 5
+      },
+      {
+        "type": "DamageThreshold",
+        "base_value": 4
+      }
+    ],
+    "image": "the_boot",
+    "pool": "Event",
+    "loc_key": "THE_BOOT",
+    "title": "The Boot",
+    "description": "Whenever you would deal {DamageThreshold} or less unblocked attack damage, increase it to {DamageMinimum}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "TrashHeap"
+    ]
+  },
+  {
+    "class_name": "TheCourier",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Discount",
+        "base_value": 20
+      }
+    ],
+    "image": "the_courier",
+    "pool": "Shared",
+    "loc_key": "THE_COURIER",
+    "title": "The Courier",
+    "description": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by {Discount}%.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "ThrowingAxe",
+    "rarity": "Ancient",
+    "image": "throwing_axe",
+    "pool": "Event",
+    "loc_key": "THROWING_AXE",
+    "title": "Throwing Axe",
+    "description": "The first card you play each combat is played an extra time.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "Tingsha",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 3
+      }
+    ],
+    "image": "tingsha",
+    "pool": "Silent",
+    "loc_key": "TINGSHA",
+    "title": "Tingsha",
+    "description": "Whenever you discard a card during your turn, deal {Damage} damage to a random enemy for each card discarded.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "TinyMailbox",
+    "rarity": "Common",
+    "image": "tiny_mailbox",
+    "pool": "Shared",
+    "loc_key": "TINY_MAILBOX",
+    "title": "Tiny Mailbox",
+    "description": "Whenever you Rest, procure a random potion.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "ToastyMittens",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 1
+      }
+    ],
+    "image": "toasty_mittens",
+    "pool": "Event",
+    "loc_key": "TOASTY_MITTENS",
+    "title": "Toasty Mittens",
+    "description": "At the start of your turn, Exhaust the top card of your Draw Pile and gain {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "Toolbox",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "toolbox",
+    "pool": "Shared",
+    "loc_key": "TOOLBOX",
+    "title": "Toolbox",
+    "description": "At the start of each combat, choose 1 of {Cards} random Colorless cards and add the chosen card into your Hand.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "TouchOfOrobas",
+    "rarity": "Ancient",
+    "image": "touch_of_orobas",
+    "pool": "Event",
+    "loc_key": "TOUCH_OF_OROBAS",
+    "title": "Touch of Orobas",
+    "description": "Upon pickup, replace {StarterRelic.StringValue:cond:{StarterRelic} with {UpgradedRelic}|your starter Relic with an Ancient version}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Orobas"
+    ]
+  },
+  {
+    "class_name": "ToughBandages",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 3
+      }
+    ],
+    "image": "tough_bandages",
+    "pool": "Silent",
+    "loc_key": "TOUGH_BANDAGES",
+    "title": "Tough Bandages",
+    "description": "Whenever you discard a card during your turn, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "ToxicEgg",
+    "rarity": "Rare",
+    "image": "toxic_egg",
+    "pool": "Shared",
+    "loc_key": "TOXIC_EGG",
+    "title": "Toxic Egg",
+    "description": "Whenever you add a Skill into your Deck, Upgrade it.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "ToyBox",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Relics",
+        "base_value": 4
+      },
+      {
+        "type": "Combats",
+        "base_value": 3
+      }
+    ],
+    "image": "toy_box",
+    "pool": "Event",
+    "loc_key": "TOY_BOX",
+    "title": "Toy Box",
+    "description": "Upon pickup, obtain {Relics} Wax {Relics:plural:Relic|Relics}. Every {Combats} {Combats:plural:combat|combats}, your left-most Wax Relic will melt away.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "TriBoomerang",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 3
+      }
+    ],
+    "image": "tri_boomerang",
+    "pool": "Event",
+    "loc_key": "TRI_BOOMERANG",
+    "title": "Tri-Boomerang",
+    "description": "Choose {Cards} {Cards:plural:Attack|Attacks} in your Deck. Enchant them with Instinct.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "TungstenRod",
+    "rarity": "Rare",
+    "vars": [
+      {
+        "type": "HpLossReduction",
+        "base_value": 1
+      }
+    ],
+    "image": "tungsten_rod",
+    "pool": "Shared",
+    "loc_key": "TUNGSTEN_ROD",
+    "title": "Tungsten Rod",
+    "description": "Whenever you would lose HP, lose {HpLossReduction} less.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "TuningFork",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Block",
+        "base_value": 7
+      },
+      {
+        "type": "Cards",
+        "base_value": 10
+      }
+    ],
+    "image": "tuning_fork",
+    "pool": "Shared",
+    "loc_key": "TUNING_FORK",
+    "title": "Tuning Fork",
+    "description": "Every time you play {Cards} Skills, gain {Block} Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "TwistedFunnel",
+    "rarity": "Uncommon",
+    "vars": [
+      {
+        "type": "Poison",
+        "base_value": 4
+      }
+    ],
+    "image": "twisted_funnel",
+    "pool": "Silent",
+    "loc_key": "TWISTED_FUNNEL",
+    "title": "Twisted Funnel",
+    "description": "At the start of each combat, apply {PoisonPower} Poison to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Silent"
+  },
+  {
+    "class_name": "UnceasingTop",
+    "rarity": "Rare",
+    "image": "unceasing_top",
+    "pool": "Shared",
+    "loc_key": "UNCEASING_TOP",
+    "title": "Unceasing Top",
+    "description": "Whenever you have no cards in Hand during your turn, draw a card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "UndyingSigil",
+    "rarity": "Shop",
+    "image": "undying_sigil",
+    "pool": "Necrobinder",
+    "loc_key": "UNDYING_SIGIL",
+    "title": "Undying Sigil",
+    "description": "Enemies with at least as much Doom as HP deal 50% less damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Necrobinder"
+  },
+  {
+    "class_name": "UnsettlingLamp",
+    "rarity": "Rare",
+    "image": "unsettling_lamp",
+    "pool": "Shared",
+    "loc_key": "UNSETTLING_LAMP",
+    "title": "Unsettling Lamp",
+    "description": "Each combat, the first time you play a card that Debuffs an enemy, double its effect.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Vajra",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Strength",
+        "base_value": 1
+      }
+    ],
+    "image": "vajra",
+    "pool": "Shared",
+    "loc_key": "VAJRA",
+    "title": "Vajra",
+    "description": "Start each combat with {StrengthPower} Strength.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Vambrace",
+    "rarity": "Uncommon",
+    "image": "vambrace",
+    "pool": "Shared",
+    "loc_key": "VAMBRACE",
+    "title": "Vambrace",
+    "description": "The first time you gain Block from a card each combat, double the amount gained.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "VelvetChoker",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      },
+      {
+        "type": "Cards",
+        "base_value": 6
+      }
+    ],
+    "image": "velvet_choker",
+    "pool": "Event",
+    "loc_key": "VELVET_CHOKER",
+    "title": "Velvet Choker",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. You cannot play more than {Cards} {Cards:plural:card|cards} per turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Darv"
+    ]
+  },
+  {
+    "class_name": "VenerableTeaSet",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 2
+      }
+    ],
+    "image": "venerable_tea_set",
+    "pool": "Shared",
+    "loc_key": "VENERABLE_TEA_SET",
+    "title": "Venerable Tea Set",
+    "description": "Whenever you enter a Rest Site, start the next combat with an additional {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "VeryHotCocoa",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 4
+      }
+    ],
+    "image": "very_hot_cocoa",
+    "pool": "Shared",
+    "loc_key": "VERY_HOT_COCOA",
+    "title": "Very Hot Cocoa",
+    "description": "Start each combat with an additional {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  },
+  {
+    "class_name": "VexingPuzzlebox",
+    "rarity": "Rare",
+    "image": "vexing_puzzlebox",
+    "pool": "Shared",
+    "loc_key": "VEXING_PUZZLEBOX",
+    "title": "Vexing Puzzlebox",
+    "description": "At the start of each combat, add a random card into your Hand. It costs 0{energyPrefix:energyIcons(1)}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "VitruvianMinion",
+    "rarity": "Shop",
+    "image": "vitruvian_minion",
+    "pool": "Regent",
+    "loc_key": "VITRUVIAN_MINION",
+    "title": "Vitruvian Minion",
+    "description": "Cards containing \u201cMinion\u201d deal double damage and gain double Block.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "character": "Regent"
+  },
+  {
+    "class_name": "WarHammer",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 4
+      }
+    ],
+    "image": "war_hammer",
+    "pool": "Event",
+    "loc_key": "WAR_HAMMER",
+    "title": "War Hammer",
+    "description": "Whenever you kill an Elite, Upgrade {Cards} random {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tanx"
+    ]
+  },
+  {
+    "class_name": "WarPaint",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "war_paint",
+    "pool": "Shared",
+    "loc_key": "WAR_PAINT",
+    "title": "War Paint",
+    "description": "Upon pickup, Upgrade {Cards} random {Cards:plural:Skill|Skills}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "Whetstone",
+    "rarity": "Common",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 2
+      }
+    ],
+    "image": "whetstone",
+    "pool": "Shared",
+    "loc_key": "WHETSTONE",
+    "title": "Whetstone",
+    "description": "Upon pickup, Upgrade {Cards} random {Cards:plural:Attack|Attacks}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "WhisperingEarring",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Energy",
+        "base_value": 1
+      }
+    ],
+    "image": "whispering_earring",
+    "pool": "Event",
+    "loc_key": "WHISPERING_EARRING",
+    "title": "Whispering Earring",
+    "description": "Gain {Energy:energyIcons()} at the start of each turn. Vakuu plays your first turn for you.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Vakuu"
+    ]
+  },
+  {
+    "class_name": "WhiteBeastStatue",
+    "rarity": "Rare",
+    "image": "white_beast_statue",
+    "pool": "Shared",
+    "loc_key": "WHITE_BEAST_STATUE",
+    "title": "White Beast Statue",
+    "description": "Potions always appear in combat rewards.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "WhiteStar",
+    "rarity": "Rare",
+    "image": "white_star",
+    "pool": "Shared",
+    "loc_key": "WHITE_STAR",
+    "title": "White Star",
+    "description": "Elites drop an additional Rare card reward.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "WingCharm",
+    "rarity": "Shop",
+    "vars": [
+      {
+        "type": "SwiftAmount",
+        "base_value": 1
+      }
+    ],
+    "image": "wing_charm",
+    "pool": "Shared",
+    "loc_key": "WING_CHARM",
+    "title": "Wing Charm",
+    "description": "A random card in each card reward is Enchanted with Swift {SwiftAmount}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "WongoCustomerAppreciationBadge",
+    "rarity": "Event",
+    "image": "wongo_customer_appreciation_badge",
+    "pool": "Event",
+    "loc_key": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+    "title": "Wongo Customer Appreciation Badge",
+    "description": "Does nothing.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "WongosMysteryTicket",
+    "rarity": "Event",
+    "vars": [
+      {
+        "type": "Repeat",
+        "base_value": 3
+      },
+      {
+        "type": "RemainingCombats",
+        "base_value": 5
+      }
+    ],
+    "image": "wongos_mystery_ticket",
+    "pool": "Event",
+    "loc_key": "WONGOS_MYSTERY_TICKET",
+    "title": "Wongo's Mystery Ticket",
+    "description": "Receive {Repeat} random {Repeat:plural:Relic|Relics} after {RemainingCombats} {RemainingCombats:plural:combat|combats}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  },
+  {
+    "class_name": "YummyCookie",
+    "rarity": "Ancient",
+    "vars": [
+      {
+        "type": "Cards",
+        "base_value": 4
+      }
+    ],
+    "image": "yummy_cookie",
+    "pool": "Event",
+    "loc_key": "YUMMY_COOKIE",
+    "title": "Yummy Cookie",
+    "description": "Upon pickup, Upgrade {Cards} {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "sources": [
+      "Tezcatara"
+    ]
+  }
+]
