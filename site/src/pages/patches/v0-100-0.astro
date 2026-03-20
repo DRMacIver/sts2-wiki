@@ -2,8 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL;
-const link = (type: string, slug: string, label: string) =>
-  `<a href="${base}${type}/${slug}/">${label}</a>`;
 ---
 
 <BaseLayout title="Patch v0.100.0">
@@ -63,8 +61,8 @@ const link = (type: string, slug: string, label: string) =>
         <tr>
           <td><a href={`${base}cards/charge/`}>CHARGE!!</a></td>
           <td class="char-regent">Regent</td>
-          <td>Transform a card into Minion Strike.</td>
-          <td>Transform a card into <strong>Minion Dive Bomb</strong>. <em>(Swapped with Begone.)</em></td>
+          <td>Choose 2 cards in Draw Pile to Transform into Minion Strikes.</td>
+          <td>Choose 2 cards in Draw Pile to Transform into <strong>Minion Dive Bombs</strong>.</td>
         </tr>
         <tr>
           <td><a href={`${base}cards/spite/`}>Spite</a></td>
@@ -86,15 +84,15 @@ const link = (type: string, slug: string, label: string) =>
         </tr>
         <tr>
           <td><a href={`${base}cards/glow/`}>Glow</a></td>
-          <td class="char-defect">Defect</td>
+          <td class="char-regent">Regent</td>
           <td>Draw 2 cards.</td>
           <td>Draw 1 card. Next turn, draw 1 additional card.</td>
         </tr>
         <tr>
           <td><a href={`${base}cards/dominate/`}>Dominate</a></td>
           <td class="char-ironclad">Ironclad</td>
-          <td>Gain 3 Strength. Exhaust. <em>(Upgrade: remove Exhaust)</em></td>
-          <td>Apply <strong>1/2 Vulnerable</strong>. Gain 3 Strength. Exhaust. <em>(Upgrade: +1 Vulnerable)</em></td>
+          <td>Gain 1 Strength per Vulnerable on the enemy. Exhaust. <em>(Upgrade: remove Exhaust)</em></td>
+          <td>Apply <strong>1/2 Vulnerable</strong>. Gain 1 Strength per Vulnerable on the enemy. Exhaust. <em>(Upgrade: +1 Vulnerable)</em></td>
         </tr>
       </tbody>
     </table>
@@ -111,12 +109,12 @@ const link = (type: string, slug: string, label: string) =>
         </tr>
         <tr>
           <td><a href={`${base}cards/folly/`}>Folly</a></td>
-          <td class="char-necrobinder">Necrobinder</td>
+          <td>Curse</td>
           <td>Added <strong>Ethereal</strong></td>
         </tr>
         <tr>
           <td><a href={`${base}cards/void-form/`}>Void Form</a></td>
-          <td class="char-defect">Defect</td>
+          <td class="char-regent">Regent</td>
           <td>Added <strong>Ethereal</strong>. Upgrade now removes Ethereal instead of +1 stacks.</td>
         </tr>
         <tr>
@@ -126,7 +124,7 @@ const link = (type: string, slug: string, label: string) =>
         </tr>
         <tr>
           <td><a href={`${base}cards/huddle-up/`}>Huddle Up</a></td>
-          <td class="char-defect">Defect</td>
+          <td>Colorless</td>
           <td>Added <strong>Exhaust</strong>. "ALL allies" &rarr; "ALL players".</td>
         </tr>
         <tr>
@@ -136,18 +134,18 @@ const link = (type: string, slug: string, label: string) =>
         </tr>
         <tr>
           <td><a href={`${base}cards/defy/`}>Defy</a></td>
-          <td class="char-ironclad">Ironclad</td>
+          <td class="char-necrobinder">Necrobinder</td>
           <td>Upgrade changed: was +1 Block / +1 Weak (7 block, 2 Weak). Now +3 Block only (9 block, 1 Weak).</td>
         </tr>
         <tr>
           <td><a href={`${base}cards/production/`}>Production</a></td>
-          <td class="char-defect">Defect</td>
+          <td>Colorless</td>
           <td>Upgrade changed: was remove Exhaust, now +1 Energy (2 &rarr; 3).</td>
         </tr>
         <tr>
-          <td><a href={`${base}cards/neows-fury/`}>Neow's Fury</a></td>
-          <td>Colorless</td>
-          <td>Upgrade now also draws 3 cards instead of 2.</td>
+          <td><a href={`${base}cards/neow-s-fury/`}>Neow's Fury</a></td>
+          <td>Event</td>
+          <td>Upgrade now also retrieves 3 cards from Discard Pile instead of 2.</td>
         </tr>
         <tr>
           <td><a href={`${base}cards/hidden-gem/`}>Hidden Gem</a></td>
@@ -156,7 +154,7 @@ const link = (type: string, slug: string, label: string) =>
         </tr>
         <tr>
           <td><a href={`${base}cards/rip-and-tear/`}>Rip and Tear</a></td>
-          <td class="char-ironclad">Ironclad</td>
+          <td>Event</td>
           <td>Rarity changed: Uncommon &rarr; Event.</td>
         </tr>
       </tbody>
@@ -169,15 +167,15 @@ const link = (type: string, slug: string, label: string) =>
       <tbody>
         <tr><td><a href={`${base}cards/grand-finale/`}>Grand Finale</a></td><td class="char-silent">Silent</td><td>50 / 60</td><td class="desc-green">60 / 75</td></tr>
         <tr><td><a href={`${base}cards/kingly-kick/`}>Kingly Kick</a></td><td class="char-regent">Regent</td><td>24 / 30</td><td class="desc-green">27 / 35</td></tr>
-        <tr><td><a href={`${base}cards/heirloom-hammer/`}>Heirloom Hammer</a></td><td class="char-ironclad">Ironclad</td><td>17 / 22</td><td class="desc-green">20 / 25</td></tr>
-        <tr><td><a href={`${base}cards/debilitate/`}>Debilitate</a></td><td class="char-silent">Silent</td><td>7 / 9</td><td class="desc-green">10 / 12</td></tr>
-        <tr><td><a href={`${base}cards/seeker-strike/`}>Seeker Strike</a></td><td class="char-necrobinder">Necrobinder</td><td>6 / 9</td><td class="desc-green">9 / 12</td></tr>
-        <tr><td><a href={`${base}cards/collision-course/`}>Collision Course</a></td><td class="char-defect">Defect</td><td>9 / 12</td><td class="desc-green">11 / 15</td></tr>
+        <tr><td><a href={`${base}cards/heirloom-hammer/`}>Heirloom Hammer</a></td><td class="char-regent">Regent</td><td>17 / 22</td><td class="desc-green">20 / 25</td></tr>
+        <tr><td><a href={`${base}cards/debilitate/`}>Debilitate</a></td><td class="char-necrobinder">Necrobinder</td><td>7 / 9</td><td class="desc-green">10 / 12</td></tr>
+        <tr><td><a href={`${base}cards/seeker-strike/`}>Seeker Strike</a></td><td>Colorless</td><td>6 / 9</td><td class="desc-green">9 / 12</td></tr>
+        <tr><td><a href={`${base}cards/collision-course/`}>Collision Course</a></td><td class="char-regent">Regent</td><td>9 / 12</td><td class="desc-green">11 / 15</td></tr>
         <tr><td><a href={`${base}cards/hemokinesis/`}>Hemokinesis</a></td><td class="char-ironclad">Ironclad</td><td>14 / 19</td><td class="desc-green">15 / 20</td></tr>
         <tr><td><a href={`${base}cards/sculpting-strike/`}>Sculpting Strike</a></td><td class="char-necrobinder">Necrobinder</td><td>8 / 11</td><td class="desc-green">9 / 12</td></tr>
         <tr><td><a href={`${base}cards/cinder/`}>Cinder</a></td><td class="char-ironclad">Ironclad</td><td>17 / 22</td><td class="desc-green">18 / 24</td></tr>
         <tr><td><a href={`${base}cards/skewer/`}>Skewer</a></td><td class="char-silent">Silent</td><td>7 / 10</td><td class="desc-green">8 / 11</td></tr>
-        <tr><td><a href={`${base}cards/solar-strike/`}>Solar Strike</a></td><td class="char-defect">Defect</td><td>8 / 9</td><td class="desc-green">9 / 10</td></tr>
+        <tr><td><a href={`${base}cards/solar-strike/`}>Solar Strike</a></td><td class="char-regent">Regent</td><td>8 / 9</td><td class="desc-green">9 / 10</td></tr>
         <tr><td><a href={`${base}cards/kingly-punch/`}>Kingly Punch</a></td><td class="char-regent">Regent</td><td>Base 8, +3/+5 per</td><td class="desc-green">Base 8/10, +4/+6 per</td></tr>
       </tbody>
     </table>
@@ -189,7 +187,7 @@ const link = (type: string, slug: string, label: string) =>
       <tbody>
         <tr><td><a href={`${base}cards/pinpoint/`}>Pinpoint</a></td><td class="char-silent">Silent</td><td>17 / 22</td><td class="desc-red">15 / 19</td></tr>
         <tr><td><a href={`${base}cards/flick-flack/`}>Flick-Flack</a></td><td class="char-silent">Silent</td><td>7 / 9</td><td class="desc-red">6 / 8</td></tr>
-        <tr><td><a href={`${base}cards/minion-strike/`}>Minion Strike</a></td><td class="char-regent">Regent</td><td>7 / 10</td><td class="desc-red">6 / 9</td></tr>
+        <tr><td><a href={`${base}cards/minion-strike/`}>Minion Strike</a></td><td>Token</td><td>7 / 10</td><td class="desc-red">6 / 9</td></tr>
       </tbody>
     </table>
 
@@ -198,9 +196,9 @@ const link = (type: string, slug: string, label: string) =>
     <table class="stat-table">
       <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
       <tbody>
-        <tr><td><a href={`${base}cards/parry/`}>Parry</a></td><td class="char-silent">Silent</td><td>6 / 9</td><td class="desc-green">8 / 11</td></tr>
-        <tr><td><a href={`${base}cards/eternal-armor/`}>Eternal Armor</a></td><td class="char-necrobinder">Necrobinder</td><td>7 / 9 Plating</td><td class="desc-green">9 / 12 Plating</td></tr>
-        <tr><td><a href={`${base}cards/gather-light/`}>Gather Light</a></td><td class="char-necrobinder">Necrobinder</td><td>7 / 10</td><td class="desc-green">8 / 11</td></tr>
+        <tr><td><a href={`${base}cards/parry/`}>Parry</a></td><td class="char-regent">Regent</td><td>6 / 9</td><td class="desc-green">8 / 11</td></tr>
+        <tr><td><a href={`${base}cards/eternal-armor/`}>Eternal Armor</a></td><td>Colorless</td><td>7 / 9 Plating</td><td class="desc-green">9 / 12 Plating</td></tr>
+        <tr><td><a href={`${base}cards/gather-light/`}>Gather Light</a></td><td class="char-regent">Regent</td><td>7 / 10</td><td class="desc-green">8 / 11</td></tr>
         <tr><td><a href={`${base}cards/i-am-invincible/`}>I Am Invincible</a></td><td class="char-regent">Regent</td><td>9 / 12</td><td class="desc-green">10 / 13</td></tr>
         <tr><td><a href={`${base}cards/patter/`}>Patter</a></td><td class="char-regent">Regent</td><td>8 / 10</td><td class="desc-green">9 / 11</td></tr>
         <tr><td><a href={`${base}cards/danse-macabre/`}>Danse Macabre</a></td><td class="char-necrobinder">Necrobinder</td><td>3 / 4 per trigger</td><td class="desc-green">4 / 6 per trigger</td></tr>
@@ -214,13 +212,13 @@ const link = (type: string, slug: string, label: string) =>
       <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
       <tbody>
         <tr><td><a href={`${base}cards/anticipate/`}>Anticipate</a></td><td class="char-silent">Silent</td><td>Dexterity 3/5 &rarr; <span class="desc-red">2/3</span></td></tr>
-        <tr><td><a href={`${base}cards/believe-in-you/`}>Believe in You</a></td><td class="char-regent">Regent</td><td>Energy 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
+        <tr><td><a href={`${base}cards/believe-in-you/`}>Believe in You</a></td><td>Colorless</td><td>Energy 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
         <tr><td><a href={`${base}cards/capture-spirit/`}>Capture Spirit</a></td><td class="char-necrobinder">Necrobinder</td><td>HP loss + Souls 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
         <tr><td><a href={`${base}cards/corrosive-wave/`}>Corrosive Wave</a></td><td class="char-silent">Silent</td><td>Poison per draw 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
         <tr><td><a href={`${base}cards/fight-me/`}>Fight Me!</a></td><td class="char-ironclad">Ironclad</td><td>Strength 2/3 &rarr; <span class="desc-green">3/4</span></td></tr>
         <tr><td><a href={`${base}cards/tremble/`}>Tremble</a></td><td class="char-ironclad">Ironclad</td><td>Vulnerable 2/3 &rarr; <span class="desc-green">3/4</span></td></tr>
-        <tr><td><a href={`${base}cards/spoils-of-battle/`}>Spoils of Battle</a></td><td class="char-ironclad">Ironclad</td><td>Forge 10/15 &rarr; <span class="desc-green">12/17</span></td></tr>
-        <tr><td><a href={`${base}cards/wrought-in-war/`}>Wrought in War</a></td><td class="char-ironclad">Ironclad</td><td>Forge 5/7 &rarr; <span class="desc-green">7/9</span></td></tr>
+        <tr><td><a href={`${base}cards/spoils-of-battle/`}>Spoils of Battle</a></td><td class="char-regent">Regent</td><td>Forge 10/15 &rarr; <span class="desc-green">12/17</span></td></tr>
+        <tr><td><a href={`${base}cards/wrought-in-war/`}>Wrought in War</a></td><td class="char-regent">Regent</td><td>Forge 5/7 &rarr; <span class="desc-green">7/9</span></td></tr>
       </tbody>
     </table>
 
@@ -231,10 +229,10 @@ const link = (type: string, slug: string, label: string) =>
       <tbody>
         <tr><td><a href={`${base}cards/break/`}>Break</a></td><td class="char-ironclad">Ironclad</td><td>2 Energy</td><td class="desc-green">1 Energy</td></tr>
         <tr><td><a href={`${base}cards/bundle-of-joy/`}>Bundle of Joy</a></td><td class="char-regent">Regent</td><td>2 Energy</td><td class="desc-green">1 Energy</td></tr>
-        <tr><td><a href={`${base}cards/minion-dive-bomb/`}>Minion Dive Bomb</a></td><td class="char-regent">Regent</td><td>1 Energy</td><td class="desc-green">0 Energy</td></tr>
+        <tr><td><a href={`${base}cards/minion-dive-bomb/`}>Minion Dive Bomb</a></td><td>Token</td><td>1 Energy</td><td class="desc-green">0 Energy</td></tr>
         <tr><td><a href={`${base}cards/seance/`}>Seance</a></td><td class="char-necrobinder">Necrobinder</td><td>0 Energy</td><td class="desc-red">1 Energy</td></tr>
-        <tr><td><a href={`${base}cards/alignment/`}>Alignment</a></td><td class="char-defect">Defect</td><td>2 Stars</td><td class="desc-red">3 Stars</td></tr>
-        <tr><td><a href={`${base}cards/banshees-cry/`}>Banshee's Cry</a></td><td class="char-necrobinder">Necrobinder</td><td>6 Energy</td><td class="desc-red">9 Energy</td></tr>
+        <tr><td><a href={`${base}cards/alignment/`}>Alignment</a></td><td class="char-regent">Regent</td><td>2 Stars</td><td class="desc-red">3 Stars</td></tr>
+        <tr><td><a href={`${base}cards/banshee-s-cry/`}>Banshee's Cry</a></td><td class="char-necrobinder">Necrobinder</td><td>6 Energy</td><td class="desc-red">9 Energy</td></tr>
       </tbody>
     </table>
 
@@ -253,7 +251,7 @@ const link = (type: string, slug: string, label: string) =>
           <td>Upon pickup, choose 1 of 3 Rare cards to add to your Deck, and add 1 Injury to your Deck.</td>
         </tr>
         <tr>
-          <td><a href={`${base}relics/neows-talisman/`}>Neow's Talisman</a></td>
+          <td><a href={`${base}relics/neow-s-talisman/`}>Neow's Talisman</a></td>
           <td class="desc-gold">Ancient (Neow)</td>
           <td>Upon pickup, Upgrade 1 of your Strikes and 1 of your Defends.</td>
         </tr>
@@ -387,15 +385,15 @@ const link = (type: string, slug: string, label: string) =>
       <thead><tr><th>Encounter</th><th>Change</th></tr></thead>
       <tbody>
         <tr>
-          <td><a href={`${base}encounters/doormaker-boss/`}>Doormaker</a> (Boss)</td>
+          <td><a href={`${base}encounters/the-doormaker/`}>Doormaker</a> (Boss)</td>
           <td>Now fights Doormaker directly instead of the separate Door monster</td>
         </tr>
         <tr>
           <td>Underdocks Wildlife</td>
-          <td>Toadpole encounter removed, replaced with <a href={`${base}encounters/seapunk-normal/`}>Seapunk encounter</a> (Calcified Cultist + Seapunk)</td>
+          <td>Toadpole encounter removed, replaced with <a href={`${base}encounters/seapunk/`}>Seapunk encounter</a> (Calcified Cultist + Seapunk)</td>
         </tr>
         <tr>
-          <td><a href={`${base}encounters/tunneler-normal/`}>Tunneling Twosome</a></td>
+          <td><a href={`${base}encounters/tunneling-twosome/`}>Tunneling Twosome</a></td>
           <td>Now includes a Chomper alongside the Tunneler (was Tunneler alone)</td>
         </tr>
       </tbody>
@@ -425,29 +423,29 @@ const link = (type: string, slug: string, label: string) =>
           <td>Gold threshold: 105 &rarr; 120. Price per item: 35 &rarr; <strong>40 Gold</strong></td>
         </tr>
         <tr>
-          <td><a href={`${base}events/round-tea-party/`}>Round Tea Party</a></td>
+          <td><a href={`${base}events/the-round-tea-party/`}>Round Tea Party</a></td>
           <td>Added condition: HP &ge; 12</td>
         </tr>
       </tbody>
     </table>
 
     <!-- ═══════════════════════════════ -->
-    <!-- POWERS                          -->
+    <!-- EFFECTS                         -->
     <!-- ═══════════════════════════════ -->
-    <h2 class="section-heading" id="powers" style="margin-top: 2.5rem;">Power Changes</h2>
+    <h2 class="section-heading" id="effects" style="margin-top: 2.5rem;">Effect Changes</h2>
     <table class="stat-table">
-      <thead><tr><th>Power</th><th>Change</th></tr></thead>
+      <thead><tr><th>Effect</th><th>Change</th></tr></thead>
       <tbody>
         <tr>
-          <td>NoEnergyGainPower</td>
+          <td><a href={`${base}powers/no-energy-gain/`}>No Energy Gain</a></td>
           <td><span class="desc-green">New</span> &mdash; Prevents additional energy gain (supports Expect a Fight change)</td>
         </tr>
         <tr>
-          <td>HungerOfTheVoidPower</td>
-          <td><span class="desc-green">New</span></td>
+          <td><a href={`${base}powers/hunger-of-the-void/`}>Hunger of the Void</a></td>
+          <td><span class="desc-green">New</span> &mdash; Doormaker eats every 10th card drawn, gaining 1 Strength</td>
         </tr>
         <tr>
-          <td>DoorRevivalPower</td>
+          <td>Door Revival</td>
           <td><span class="desc-red">Removed</span> &mdash; Was used by the old Door monster</td>
         </tr>
         <tr>
