@@ -14,7 +14,7 @@ default: check build
 
 # --- Sanity checks ---
 
-check: check-format check-types
+check: check-format check-types check-links
 
 check-format:
     uv run ruff check scripts/
@@ -22,6 +22,9 @@ check-format:
 
 check-types:
     uv run mypy scripts/
+
+check-links:
+    uv run python -m scripts.check_links site/dist
 
 format:
     uv run ruff format scripts/
@@ -86,7 +89,7 @@ extract-events:
 extract-characters:
     uv run python -m scripts.extract_characters decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract: extract-powers extract-epochs extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-characters
+extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-characters extract-epochs
 
 # --- Site generation ---
 

@@ -3887,8 +3887,8 @@
       },
       {
         "class_name": "CrushUnderPower",
-        "title": "CrushUnder",
-        "slug": "crushunder"
+        "title": "Crush Under",
+        "slug": "crush-under"
       }
     ],
     "character": "Regent",
@@ -4067,8 +4067,8 @@
       },
       {
         "class_name": "DarkShacklesPower",
-        "title": "DarkShackles",
-        "slug": "darkshackles"
+        "title": "Dark Shackles",
+        "slug": "dark-shackles"
       }
     ],
     "character": "Colorless",
@@ -5423,8 +5423,8 @@
       },
       {
         "class_name": "DyingStarPower",
-        "title": "DyingStar",
-        "slug": "dyingstar"
+        "title": "Dying Star",
+        "slug": "dying-star"
       }
     ],
     "character": "Regent",
@@ -5619,8 +5619,8 @@
       },
       {
         "class_name": "EnfeeblingTouchPower",
-        "title": "EnfeeblingTouch",
-        "slug": "enfeeblingtouch"
+        "title": "Enfeebling Touch",
+        "slug": "enfeebling-touch"
       }
     ],
     "character": "Necrobinder",
@@ -6281,8 +6281,8 @@
       },
       {
         "class_name": "FeedingFrenzyPower",
-        "title": "FeedingFrenzy",
-        "slug": "feedingfrenzy"
+        "title": "Feeding Frenzy",
+        "slug": "feeding-frenzy"
       }
     ],
     "character": "Event",
@@ -6841,8 +6841,8 @@
       },
       {
         "class_name": "FocusedStrikePower",
-        "title": "FocusedStrike",
-        "slug": "focusedstrike"
+        "title": "Focused Strike",
+        "slug": "focused-strike"
       }
     ],
     "character": "Defect",
@@ -12018,8 +12018,8 @@
       },
       {
         "class_name": "PiercingWailPower",
-        "title": "PiercingWail",
-        "slug": "piercingwail"
+        "title": "Piercing Wail",
+        "slug": "piercing-wail"
       }
     ],
     "character": "Silent",
@@ -14290,8 +14290,8 @@
       },
       {
         "class_name": "SetupStrikePower",
-        "title": "SetupStrike",
-        "slug": "setupstrike"
+        "title": "Setup Strike",
+        "slug": "setup-strike"
       }
     ],
     "character": "Ironclad",

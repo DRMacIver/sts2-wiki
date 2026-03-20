@@ -22,17 +22,10 @@ jobs:
 
       - uses: astral-sh/setup-uv@v5
 
+      - uses: extractions/setup-just@v2
+
       - name: Generate content from data
-        run: |
-          uv run python -m scripts.generate_cards data/v0.98.2 site/src/content/cards
-          uv run python -m scripts.generate_powers data/v0.98.2 site/src/content/powers
-          uv run python -m scripts.generate_monsters data/v0.98.2 site/src/content/monsters
-          uv run python -m scripts.generate_encounters data/v0.98.2 site/src/content/encounters
-          uv run python -m scripts.generate_potions data/v0.98.2 site/src/content/potions
-          uv run python -m scripts.generate_relics data/v0.98.2 site/src/content/relics
-          uv run python -m scripts.generate_ancients data/v0.98.2 site/src/content/ancients
-          uv run python -m scripts.generate_events data/v0.98.2 site/src/content/events
-          uv run python -m scripts.generate_epochs data/v0.98.2 site/src/content/epochs
+        run: just generate
 
       - uses: actions/setup-node@v4
         with:
@@ -45,6 +38,9 @@ jobs:
 
       - run: npm run build
         working-directory: site
+
+      - name: Check internal links
+        run: uv run python -m scripts.check_links site/dist
 
       - uses: actions/upload-pages-artifact@v3
         with:

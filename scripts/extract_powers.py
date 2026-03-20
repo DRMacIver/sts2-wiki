@@ -15,8 +15,10 @@ from scripts.common import (
 
 def parse_power_file(class_name: str, content: str) -> dict | None:
     """Parse a decompiled power .cs file."""
-    # Must extend PowerModel
-    if ": PowerModel" not in content:
+    # Must be a concrete class in the Powers namespace
+    if f"abstract class {class_name}" in content:
+        return None
+    if f"class {class_name}" not in content:
         return None
 
     power: dict = {"class_name": class_name}

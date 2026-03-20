@@ -466,8 +466,9 @@ def main() -> None:
                 if power_info:
                     enriched_powers.append(power_info)
                 else:
-                    # Fallback: strip "Power" suffix for display
+                    # Fallback: strip "Power" suffix and split CamelCase
                     display = power_class.removesuffix("Power")
+                    display = re.sub(r"([a-z])([A-Z])", r"\1 \2", display)
                     slug = re.sub(r"[^a-z0-9]+", "-", display.lower()).strip("-")
                     enriched_powers.append(
                         {"class_name": power_class, "title": display, "slug": slug}

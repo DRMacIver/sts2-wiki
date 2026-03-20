@@ -21,8 +21,8 @@
     "unlocks_cards": [
       {
         "class_name": "MoltenFist",
-        "title": "MoltenFist",
-        "slug": "moltenfist"
+        "title": "Molten Fist",
+        "slug": "molten-fist"
       },
       {
         "class_name": "Cruelty",
@@ -95,13 +95,13 @@
       },
       {
         "class_name": "MasterPlanner",
-        "title": "MasterPlanner",
-        "slug": "masterplanner"
+        "title": "Master Planner",
+        "slug": "master-planner"
       },
       {
         "class_name": "HandTrick",
-        "title": "HandTrick",
-        "slug": "handtrick"
+        "title": "Hand Trick",
+        "slug": "hand-trick"
       }
     ],
     "story": "The Silent",
@@ -117,18 +117,18 @@
     "unlocks_relics": [
       {
         "class_name": "GoldPlatedCables",
-        "title": "GoldPlatedCables",
-        "slug": "goldplatedcables"
+        "title": "Gold-Plated Cables",
+        "slug": "gold-plated-cables"
       },
       {
         "class_name": "EmotionChip",
-        "title": "EmotionChip",
-        "slug": "emotionchip"
+        "title": "Emotion Chip",
+        "slug": "emotion-chip"
       },
       {
         "class_name": "PowerCell",
-        "title": "PowerCell",
-        "slug": "powercell"
+        "title": "Power Cell",
+        "slug": "power-cell"
       }
     ],
     "story": "The Defect",
@@ -149,13 +149,13 @@
       },
       {
         "class_name": "PactsEnd",
-        "title": "PactsEnd",
-        "slug": "pactsend"
+        "title": "Pact's End",
+        "slug": "pact-s-end"
       },
       {
         "class_name": "DrumOfBattle",
-        "title": "DrumOfBattle",
-        "slug": "drumofbattle"
+        "title": "Drum of Battle",
+        "slug": "drum-of-battle"
       }
     ],
     "story": "The Ironclad",
@@ -198,8 +198,8 @@
     "unlocks_cards": [
       {
         "class_name": "EternalArmor",
-        "title": "EternalArmor",
-        "slug": "eternalarmor"
+        "title": "Eternal Armor",
+        "slug": "eternal-armor"
       },
       {
         "class_name": "Jackpot",
@@ -208,8 +208,8 @@
       },
       {
         "class_name": "PrepTime",
-        "title": "PrepTime",
-        "slug": "preptime"
+        "title": "Prep Time",
+        "slug": "prep-time"
       }
     ],
     "story": "Magnum Opus",
@@ -230,8 +230,8 @@
       },
       {
         "class_name": "BeatDown",
-        "title": "BeatDown",
-        "slug": "beatdown"
+        "title": "Beat Down",
+        "slug": "beat-down"
       },
       {
         "class_name": "Prowess",
@@ -300,18 +300,18 @@
     "unlocks_relics": [
       {
         "class_name": "RedSkull",
-        "title": "RedSkull",
-        "slug": "redskull"
+        "title": "Red Skull",
+        "slug": "red-skull"
       },
       {
         "class_name": "PaperPhrog",
-        "title": "PaperPhrog",
-        "slug": "paperphrog"
+        "title": "Paper Phrog",
+        "slug": "paper-phrog"
       },
       {
         "class_name": "RuinedHelmet",
-        "title": "RuinedHelmet",
-        "slug": "ruinedhelmet"
+        "title": "Ruined Helmet",
+        "slug": "ruined-helmet"
       }
     ],
     "story": "The Ironclad",
@@ -337,13 +337,13 @@
     "unlocks_relics": [
       {
         "class_name": "IvoryTile",
-        "title": "IvoryTile",
-        "slug": "ivorytile"
+        "title": "Ivory Tile",
+        "slug": "ivory-tile"
       },
       {
         "class_name": "BigHat",
-        "title": "BigHat",
-        "slug": "bighat"
+        "title": "Big Hat",
+        "slug": "big-hat"
       },
       {
         "class_name": "Bookmark",
@@ -394,13 +394,13 @@
     "unlocks_cards": [
       {
         "class_name": "SpoilsOfBattle",
-        "title": "SpoilsOfBattle",
-        "slug": "spoilsofbattle"
+        "title": "Spoils of Battle",
+        "slug": "spoils-of-battle"
       },
       {
         "class_name": "SwordSage",
-        "title": "SwordSage",
-        "slug": "swordsage"
+        "title": "Sword Sage",
+        "slug": "sword-sage"
       },
       {
         "class_name": "Furnace",
@@ -421,18 +421,18 @@
     "unlocks_relics": [
       {
         "class_name": "FencingManual",
-        "title": "FencingManual",
-        "slug": "fencingmanual"
+        "title": "Fencing Manual",
+        "slug": "fencing-manual"
       },
       {
         "class_name": "GalacticDust",
-        "title": "GalacticDust",
-        "slug": "galacticdust"
+        "title": "Galactic Dust",
+        "slug": "galactic-dust"
       },
       {
         "class_name": "LunarPastry",
-        "title": "LunarPastry",
-        "slug": "lunarpastry"
+        "title": "Lunar Pastry",
+        "slug": "lunar-pastry"
       }
     ],
     "story": "The Regent",
@@ -463,18 +463,18 @@
     "unlocks_relics": [
       {
         "class_name": "UnsettlingLamp",
-        "title": "UnsettlingLamp",
-        "slug": "unsettlinglamp"
+        "title": "Unsettling Lamp",
+        "slug": "unsettling-lamp"
       },
       {
         "class_name": "IntimidatingHelmet",
-        "title": "IntimidatingHelmet",
-        "slug": "intimidatinghelmet"
+        "title": "Intimidating Helmet",
+        "slug": "intimidating-helmet"
       },
       {
         "class_name": "ReptileTrinket",
-        "title": "ReptileTrinket",
-        "slug": "reptiletrinket"
+        "title": "Reptile Trinket",
+        "slug": "reptile-trinket"
       }
     ],
     "story": "Magnum Opus",
@@ -490,18 +490,18 @@
     "unlocks_relics": [
       {
         "class_name": "MiniatureCannon",
-        "title": "MiniatureCannon",
-        "slug": "miniaturecannon"
+        "title": "Miniature Cannon",
+        "slug": "miniature-cannon"
       },
       {
         "class_name": "TungstenRod",
-        "title": "TungstenRod",
-        "slug": "tungstenrod"
+        "title": "Tungsten Rod",
+        "slug": "tungsten-rod"
       },
       {
         "class_name": "WhiteStar",
-        "title": "WhiteStar",
-        "slug": "whitestar"
+        "title": "White Star",
+        "slug": "white-star"
       }
     ],
     "story": "Magnum Opus",
@@ -517,13 +517,13 @@
     "unlocks_relics": [
       {
         "class_name": "ToughBandages",
-        "title": "ToughBandages",
-        "slug": "toughbandages"
+        "title": "Tough Bandages",
+        "slug": "tough-bandages"
       },
       {
         "class_name": "PaperKrane",
-        "title": "PaperKrane",
-        "slug": "paperkrane"
+        "title": "Paper Krane",
+        "slug": "paper-krane"
       },
       {
         "class_name": "Tingsha",
@@ -582,8 +582,8 @@
       },
       {
         "class_name": "ConsumingShadow",
-        "title": "ConsumingShadow",
-        "slug": "consumingshadow"
+        "title": "Consuming Shadow",
+        "slug": "consuming-shadow"
       }
     ],
     "story": "The Defect",
@@ -599,7 +599,7 @@
     "unlocks_cards": [
       {
         "class_name": "Turbo",
-        "title": "Turbo",
+        "title": "TURBO",
         "slug": "turbo"
       },
       {
@@ -609,8 +609,8 @@
       },
       {
         "class_name": "HelixDrill",
-        "title": "HelixDrill",
-        "slug": "helixdrill"
+        "title": "Helix Drill",
+        "slug": "helix-drill"
       }
     ],
     "story": "The Defect",
@@ -654,18 +654,18 @@
     "unlocks_relics": [
       {
         "class_name": "SelfFormingClay",
-        "title": "SelfFormingClay",
-        "slug": "selfformingclay"
+        "title": "Self-Forming Clay",
+        "slug": "self-forming-clay"
       },
       {
         "class_name": "CharonsAshes",
-        "title": "CharonsAshes",
-        "slug": "charonsashes"
+        "title": "Charon's Ashes",
+        "slug": "charon-s-ashes"
       },
       {
         "class_name": "DemonTongue",
-        "title": "DemonTongue",
-        "slug": "demontongue"
+        "title": "Demon Tongue",
+        "slug": "demon-tongue"
       }
     ],
     "story": "The Ironclad",
@@ -708,8 +708,8 @@
     "unlocks_cards": [
       {
         "class_name": "SculptingStrike",
-        "title": "SculptingStrike",
-        "slug": "sculptingstrike"
+        "title": "Sculpting Strike",
+        "slug": "sculpting-strike"
       },
       {
         "class_name": "Veilpiercer",
@@ -718,8 +718,8 @@
       },
       {
         "class_name": "BansheesCry",
-        "title": "BansheesCry",
-        "slug": "bansheescry"
+        "title": "Banshee's Cry",
+        "slug": "banshee-s-cry"
       }
     ],
     "story": "The Necrobinder",
@@ -760,13 +760,13 @@
       },
       {
         "class_name": "HeavenlyDrill",
-        "title": "HeavenlyDrill",
-        "slug": "heavenlydrill"
+        "title": "Heavenly Drill",
+        "slug": "heavenly-drill"
       },
       {
         "class_name": "LunarBlast",
-        "title": "LunarBlast",
-        "slug": "lunarblast"
+        "title": "Lunar Blast",
+        "slug": "lunar-blast"
       }
     ],
     "story": "The Regent",
@@ -782,13 +782,13 @@
     "unlocks_relics": [
       {
         "class_name": "BookOfFiveRings",
-        "title": "BookOfFiveRings",
-        "slug": "bookoffiverings"
+        "title": "Book of Five Rings",
+        "slug": "book-of-five-rings"
       },
       {
         "class_name": "IceCream",
-        "title": "IceCream",
-        "slug": "icecream"
+        "title": "Ice Cream",
+        "slug": "ice-cream"
       },
       {
         "class_name": "Kusarigama",
@@ -809,18 +809,18 @@
     "unlocks_relics": [
       {
         "class_name": "TinyMailbox",
-        "title": "TinyMailbox",
-        "slug": "tinymailbox"
+        "title": "Tiny Mailbox",
+        "slug": "tiny-mailbox"
       },
       {
         "class_name": "JossPaper",
-        "title": "JossPaper",
-        "slug": "josspaper"
+        "title": "Joss Paper",
+        "slug": "joss-paper"
       },
       {
         "class_name": "BeatingRemnant",
-        "title": "BeatingRemnant",
-        "slug": "beatingremnant"
+        "title": "Beating Remnant",
+        "slug": "beating-remnant"
       }
     ],
     "story": "The Reopening",
@@ -841,8 +841,8 @@
       },
       {
         "class_name": "BubbleBubble",
-        "title": "BubbleBubble",
-        "slug": "bubblebubble"
+        "title": "Bubble Bubble",
+        "slug": "bubble-bubble"
       },
       {
         "class_name": "Accelerant",
@@ -863,18 +863,18 @@
     "unlocks_relics": [
       {
         "class_name": "TwistedFunnel",
-        "title": "TwistedFunnel",
-        "slug": "twistedfunnel"
+        "title": "Twisted Funnel",
+        "slug": "twisted-funnel"
       },
       {
         "class_name": "SneckoSkull",
-        "title": "SneckoSkull",
-        "slug": "sneckoskull"
+        "title": "Snecko Skull",
+        "slug": "snecko-skull"
       },
       {
         "class_name": "HelicalDart",
-        "title": "HelicalDart",
-        "slug": "helicaldart"
+        "title": "Helical Dart",
+        "slug": "helical-dart"
       }
     ],
     "story": "The Silent",
@@ -927,13 +927,13 @@
     "unlocks_cards": [
       {
         "class_name": "BloodWall",
-        "title": "BloodWall",
-        "slug": "bloodwall"
+        "title": "Blood Wall",
+        "slug": "blood-wall"
       },
       {
         "class_name": "TearAsunder",
-        "title": "TearAsunder",
-        "slug": "tearasunder"
+        "title": "Tear Asunder",
+        "slug": "tear-asunder"
       },
       {
         "class_name": "Inferno",
@@ -1006,7 +1006,7 @@
     "unlocks_cards": [
       {
         "class_name": "Begone",
-        "title": "Begone",
+        "title": "BEGONE!",
         "slug": "begone"
       },
       {
@@ -1038,13 +1038,13 @@
       },
       {
         "class_name": "MiniRegent",
-        "title": "MiniRegent",
-        "slug": "miniregent"
+        "title": "Mini Regent",
+        "slug": "mini-regent"
       },
       {
         "class_name": "OrangeDough",
-        "title": "OrangeDough",
-        "slug": "orangedough"
+        "title": "Orange Dough",
+        "slug": "orange-dough"
       }
     ],
     "story": "The Regent",
@@ -1060,13 +1060,13 @@
     "unlocks_relics": [
       {
         "class_name": "DataDisk",
-        "title": "DataDisk",
-        "slug": "datadisk"
+        "title": "Data Disk",
+        "slug": "data-disk"
       },
       {
         "class_name": "SymbioticVirus",
-        "title": "SymbioticVirus",
-        "slug": "symbioticvirus"
+        "title": "Symbiotic Virus",
+        "slug": "symbiotic-virus"
       },
       {
         "class_name": "Metronome",
@@ -1092,8 +1092,8 @@
       },
       {
         "class_name": "FlakCannon",
-        "title": "FlakCannon",
-        "slug": "flakcannon"
+        "title": "Flak Cannon",
+        "slug": "flak-cannon"
       },
       {
         "class_name": "Smokestack",
@@ -1114,18 +1114,18 @@
     "unlocks_relics": [
       {
         "class_name": "BoneFlute",
-        "title": "BoneFlute",
-        "slug": "boneflute"
+        "title": "Bone Flute",
+        "slug": "bone-flute"
       },
       {
         "class_name": "FuneraryMask",
-        "title": "FuneraryMask",
-        "slug": "funerarymask"
+        "title": "Funerary Mask",
+        "slug": "funerary-mask"
       },
       {
         "class_name": "BookRepairKnife",
-        "title": "BookRepairKnife",
-        "slug": "bookrepairknife"
+        "title": "Book Repair Knife",
+        "slug": "book-repair-knife"
       }
     ],
     "story": "The Necrobinder",
@@ -1151,18 +1151,18 @@
     "unlocks_cards": [
       {
         "class_name": "HiddenDaggers",
-        "title": "HiddenDaggers",
-        "slug": "hiddendaggers"
+        "title": "Hidden Daggers",
+        "slug": "hidden-daggers"
       },
       {
         "class_name": "BladeOfInk",
-        "title": "BladeOfInk",
-        "slug": "bladeofink"
+        "title": "Blade of Ink",
+        "slug": "blade-of-ink"
       },
       {
         "class_name": "PhantomBlades",
-        "title": "PhantomBlades",
-        "slug": "phantomblades"
+        "title": "Phantom Blades",
+        "slug": "phantom-blades"
       }
     ],
     "story": "The Silent",
@@ -1178,18 +1178,18 @@
     "unlocks_relics": [
       {
         "class_name": "VexingPuzzlebox",
-        "title": "VexingPuzzlebox",
-        "slug": "vexingpuzzlebox"
+        "title": "Vexing Puzzlebox",
+        "slug": "vexing-puzzlebox"
       },
       {
         "class_name": "RippleBasin",
-        "title": "RippleBasin",
-        "slug": "ripplebasin"
+        "title": "Ripple Basin",
+        "slug": "ripple-basin"
       },
       {
         "class_name": "FestivePopper",
-        "title": "FestivePopper",
-        "slug": "festivepopper"
+        "title": "Festive Popper",
+        "slug": "festive-popper"
       }
     ],
     "story": "The Reopening",

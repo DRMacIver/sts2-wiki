@@ -45,6 +45,13 @@
     "smart_description": "At the start of your turn, put [blue]{Amount}[/blue] random {Amount:plural:Attack|Attacks} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] {Amount:plural:it|them} for the rest of combat."
   },
   {
+    "class_name": "AnticipatePower",
+    "loc_key": "AnticipatePower",
+    "title": "Anticipate",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "ArsenalPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -306,6 +313,13 @@
     "smart_description": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold] for each unique Orb you have."
   },
   {
+    "class_name": "CoordinatePower",
+    "loc_key": "CoordinatePower",
+    "title": "Coordinate",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "CorrosiveWavePower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -378,6 +392,13 @@
     "smart_description": "[gold]Vulnerable[/gold] enemies take an additional [blue]{Amount}%[/blue] damage."
   },
   {
+    "class_name": "CrushUnderPower",
+    "loc_key": "CrushUnderPower",
+    "title": "CrushUnder",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "CuriousPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -421,6 +442,13 @@
     "title": "Dark Embrace",
     "description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]1[/blue] card.",
     "smart_description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  },
+  {
+    "class_name": "DarkShacklesPower",
+    "loc_key": "DarkShacklesPower",
+    "title": "DarkShackles",
+    "description": "",
+    "smart_description": ""
   },
   {
     "class_name": "DebilitatePower",
@@ -550,6 +578,13 @@
     "smart_description": "Your next {Amount:plural:card is|[blue]{}[/blue] cards are} played an extra time."
   },
   {
+    "class_name": "DyingStarPower",
+    "loc_key": "DyingStarPower",
+    "title": "DyingStar",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "EchoFormPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -566,6 +601,13 @@
     "title": "Energy Next Turn",
     "description": "Gain additional [gold]Energy[/gold] next turn.",
     "smart_description": "Gain [blue]{Amount}[/blue] additional {energyPrefix:energyIcons(1)} next turn."
+  },
+  {
+    "class_name": "EnfeeblingTouchPower",
+    "loc_key": "EnfeeblingTouchPower",
+    "title": "EnfeeblingTouch",
+    "description": "",
+    "smart_description": ""
   },
   {
     "class_name": "EnragePower",
@@ -622,6 +664,13 @@
     "smart_description": "Gain an additional [blue]{Amount}[/blue] [gold]Block[/gold] from Defend cards."
   },
   {
+    "class_name": "FeedingFrenzyPower",
+    "loc_key": "FeedingFrenzyPower",
+    "title": "FeedingFrenzy",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "FeelNoPainPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -658,6 +707,13 @@
     "smart_description": "Other allies deal [blue]{Amount}[/blue] times more damage to this enemy this turn."
   },
   {
+    "class_name": "FlexPotionPower",
+    "loc_key": "FlexPotionPower",
+    "title": "FlexPotion",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "FlutterPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -675,6 +731,13 @@
     "title": "Focus",
     "description": "Increases the effectiveness of Orbs.",
     "smart_description": "{Amount:cond:<0?Decreases|Increases} the effectiveness of Orbs by [blue]{Amount:abs()}[/blue]."
+  },
+  {
+    "class_name": "FocusedStrikePower",
+    "loc_key": "FocusedStrikePower",
+    "title": "FocusedStrike",
+    "description": "",
+    "smart_description": ""
   },
   {
     "class_name": "ForbiddenGrimoirePower",
@@ -875,6 +938,13 @@
     "smart_description": "When killed, returns all the stolen [gold]Gold[/gold]."
   },
   {
+    "class_name": "HelicalDartPower",
+    "loc_key": "HelicalDartPower",
+    "title": "HelicalDart",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "HelloWorldPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -909,6 +979,13 @@
     "title": "High Voltage",
     "description": "At the start of this creature's turn, it gains [blue]2[/blue] [gold]Strength[/gold].",
     "smart_description": "At the start of [gold]{OwnerName}'s[/gold] turn, it gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  },
+  {
+    "class_name": "HotfixPower",
+    "loc_key": "HotfixPower",
+    "title": "Hotfix",
+    "description": "",
+    "smart_description": ""
   },
   {
     "class_name": "HungerOfTheVoidPower",
@@ -1082,6 +1159,13 @@
     "smart_description": "Take [blue]{Amount}[/blue] damage at the end of your turn. Is cleared if the Magi Knight dies."
   },
   {
+    "class_name": "ManglePower",
+    "loc_key": "ManglePower",
+    "title": "Mangle",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "MasterPlannerPower",
     "type": "Buff",
     "stack_type": "Single",
@@ -1125,6 +1209,13 @@
     "title": "Monarch's Gaze",
     "description": "Whenever you attack an enemy, it loses [blue]1[/blue] [gold]Strength[/gold] this turn.",
     "smart_description": "Whenever you attack an enemy, it loses [blue]{Amount}[/blue] [gold]Strength[/gold] this turn."
+  },
+  {
+    "class_name": "MonarchsGazeStrengthDownPower",
+    "loc_key": "MonarchsGazeStrengthDownPower",
+    "title": "MonarchsGazeStrengthDown",
+    "description": "",
+    "smart_description": ""
   },
   {
     "class_name": "MonologuePower",
@@ -1325,6 +1416,13 @@
     "smart_description": "[gold]Shivs[/gold] gain [gold]Retain[/gold].\nThe first [gold]Shiv[/gold] you play each turn deals [blue]{Amount}[/blue] additional damage."
   },
   {
+    "class_name": "PiercingWailPower",
+    "loc_key": "PiercingWailPower",
+    "title": "PiercingWail",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "PillarOfCreationPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1478,6 +1576,13 @@
     "smart_description": "At the end of your turn, heal [blue]{Amount}[/blue] HP, then reduce [gold]Regen[/gold] by [blue]1[/blue]."
   },
   {
+    "class_name": "ReptileTrinketPower",
+    "loc_key": "ReptileTrinketPower",
+    "title": "ReptileTrinket",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "RetainHandPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1575,6 +1680,20 @@
     "title": "Serpent Form",
     "description": "Whenever you play a card, deal [blue]4[/blue] damage to a random enemy.",
     "smart_description": "Whenever you play a card, deal [blue]{Amount}[/blue] damage to a random enemy."
+  },
+  {
+    "class_name": "SetupStrikePower",
+    "loc_key": "SetupStrikePower",
+    "title": "SetupStrike",
+    "description": "",
+    "smart_description": ""
+  },
+  {
+    "class_name": "ShacklingPotionPower",
+    "loc_key": "ShacklingPotionPower",
+    "title": "ShacklingPotion",
+    "description": "",
+    "smart_description": ""
   },
   {
     "class_name": "ShadowStepPower",
@@ -1741,6 +1860,13 @@
     "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random Colorless {Amount:plural:card|cards} into your [gold]Hand[/gold]."
   },
   {
+    "class_name": "SpeedPotionPower",
+    "loc_key": "SpeedPotionPower",
+    "title": "SpeedPotion",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "SpeedsterPower",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1904,6 +2030,13 @@
     "smart_description": "Increase the cost of [gold]Sovereign Blade[/gold] by [blue]{Amount}[/blue]. [gold]Sovereign Blade[/gold] now hits [blue]{Amount}[/blue] additional {Amount:plural:time|times}."
   },
   {
+    "class_name": "SynchronizePower",
+    "loc_key": "SynchronizePower",
+    "title": "Synchronize",
+    "description": "",
+    "smart_description": ""
+  },
+  {
     "class_name": "TagTeamPower",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1929,33 +2062,6 @@
     "title": "Tank",
     "description": "Take double damage from enemies. Allies take half damage from enemies.",
     "smart_description": "Take double damage from enemies. Allies take half damage from enemies."
-  },
-  {
-    "class_name": "TemporaryDexterityPower",
-    "type": "Debuff",
-    "stack_type": "Counter",
-    "loc_key": "TemporaryDexterityPower",
-    "title": "TemporaryDexterity",
-    "description": "",
-    "smart_description": ""
-  },
-  {
-    "class_name": "TemporaryFocusPower",
-    "type": "Debuff",
-    "stack_type": "Counter",
-    "loc_key": "TemporaryFocusPower",
-    "title": "TemporaryFocus",
-    "description": "",
-    "smart_description": ""
-  },
-  {
-    "class_name": "TemporaryStrengthPower",
-    "type": "Debuff",
-    "stack_type": "Counter",
-    "loc_key": "TemporaryStrengthPower",
-    "title": "TemporaryStrength",
-    "description": "",
-    "smart_description": ""
   },
   {
     "class_name": "TenderPower",
