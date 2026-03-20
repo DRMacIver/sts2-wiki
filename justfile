@@ -126,7 +126,11 @@ generate-characters:
 generate-ascensions:
     uv run python -m scripts.generate_ascensions extracted/{{version}}/localization/eng site/src/content/ascensions --decompiled-dir decompiled/{{version}} --data-dir data/{{version}}
 
-generate: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs generate-characters generate-ascensions
+# Generate from committed data only (safe for CI — no decompiled/extracted dirs needed)
+generate-from-data: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs generate-characters
+
+# Full generate including ascensions (requires extracted/ and decompiled/ dirs)
+generate: generate-from-data generate-ascensions
 
 site-install:
     cd site && npm install

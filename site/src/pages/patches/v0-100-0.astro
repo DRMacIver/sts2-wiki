@@ -85,8 +85,8 @@ const base = import.meta.env.BASE_URL;
         <tr>
           <td><a href={`${base}cards/glow/`}>Glow</a></td>
           <td class="char-regent">Regent</td>
-          <td>Draw 2 cards.</td>
-          <td>Draw 1 card. Next turn, draw 1 additional card.</td>
+          <td>Gain 1 Star. Draw 2 cards.</td>
+          <td>Gain 1 Star. Draw 1 card. Next turn, draw 1 additional card.</td>
         </tr>
         <tr>
           <td><a href={`${base}cards/dominate/`}>Dominate</a></td>
@@ -227,10 +227,10 @@ const base = import.meta.env.BASE_URL;
     <table class="stat-table">
       <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
       <tbody>
-        <tr><td><a href={`${base}cards/break/`}>Break</a></td><td class="char-ironclad">Ironclad</td><td>2 Energy</td><td class="desc-green">1 Energy</td></tr>
+        <tr><td><a href={`${base}cards/break/`}>Break</a></td><td class="char-ironclad">Ironclad</td><td>2 Energy, upgrade: 25 dmg</td><td class="desc-green">1 Energy, upgrade: 30 dmg</td></tr>
         <tr><td><a href={`${base}cards/bundle-of-joy/`}>Bundle of Joy</a></td><td class="char-regent">Regent</td><td>2 Energy</td><td class="desc-green">1 Energy</td></tr>
         <tr><td><a href={`${base}cards/minion-dive-bomb/`}>Minion Dive Bomb</a></td><td>Token</td><td>1 Energy</td><td class="desc-green">0 Energy</td></tr>
-        <tr><td><a href={`${base}cards/seance/`}>Seance</a></td><td class="char-necrobinder">Necrobinder</td><td>0 Energy</td><td class="desc-red">1 Energy</td></tr>
+        <tr><td><a href={`${base}cards/seance/`}>Seance</a></td><td class="char-necrobinder">Necrobinder</td><td>0 Energy, upgrade: Soul+</td><td class="desc-red">1 Energy, upgrade removed</td></tr>
         <tr><td><a href={`${base}cards/alignment/`}>Alignment</a></td><td class="char-regent">Regent</td><td>2 Stars</td><td class="desc-red">3 Stars</td></tr>
         <tr><td><a href={`${base}cards/banshee-s-cry/`}>Banshee's Cry</a></td><td class="char-necrobinder">Necrobinder</td><td>6 Energy</td><td class="desc-red">9 Energy</td></tr>
       </tbody>
@@ -269,13 +269,13 @@ const base = import.meta.env.BASE_URL;
         </tr>
         <tr>
           <td><a href={`${base}relics/precarious-shears/`}>Precarious Shears</a></td>
-          <td>13 damage when upgrading</td>
-          <td><span class="desc-green">16</span> HP loss when upgrading</td>
+          <td>Upon pickup, remove 2 cards and take <strong>13</strong> damage</td>
+          <td>Upon pickup, remove 2 cards and lose <span class="desc-red">16</span> HP</td>
         </tr>
         <tr>
           <td><a href={`${base}relics/preserved-fog/`}>Preserved Fog</a></td>
-          <td>Remove 5 cards from draw pile at start of combat</td>
-          <td>Remove <span class="desc-green">3</span> cards from draw pile at start of combat</td>
+          <td>Upon pickup, remove <strong>5</strong> cards from your Deck. Add Folly.</td>
+          <td>Upon pickup, remove <span class="desc-green">3</span> cards from your Deck. Add Folly.</td>
         </tr>
         <tr>
           <td><a href={`${base}relics/book-of-five-rings/`}>Book of Five Rings</a></td>
@@ -284,18 +284,18 @@ const base = import.meta.env.BASE_URL;
         </tr>
         <tr>
           <td><a href={`${base}relics/amethyst-aubergine/`}>Amethyst Aubergine</a></td>
-          <td>Gain 10 Gold</td>
-          <td>Gain <span class="desc-green">15</span> Gold</td>
+          <td>Enemies drop <strong>10</strong> additional Gold</td>
+          <td>Enemies drop <span class="desc-green">15</span> additional Gold</td>
         </tr>
         <tr>
           <td><a href={`${base}relics/leafy-poultice/`}>Leafy Poultice</a></td>
-          <td>Gain 10 Max HP</td>
-          <td>Gain <span class="desc-green">12</span> Max HP</td>
+          <td>Upon pickup, Transform a Strike and Defend, lose <strong>10</strong> Max HP</td>
+          <td>Upon pickup, Transform a Strike and Defend, lose <span class="desc-red">12</span> Max HP</td>
         </tr>
         <tr>
           <td><a href={`${base}relics/permafrost/`}>Permafrost</a></td>
-          <td>6 Block at start of turn</td>
-          <td><span class="desc-green">7</span> Block at start of turn</td>
+          <td>First Power played each combat gives <strong>6</strong> Block</td>
+          <td>First Power played each combat gives <span class="desc-green">7</span> Block</td>
         </tr>
         <tr>
           <td><a href={`${base}relics/planisphere/`}>Planisphere</a></td>
