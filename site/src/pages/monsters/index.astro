@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { monsterImageName } from '../../utils';
 
-const testMonsters = new Set(['BigDummy', 'MultiAttackMoveMonster', 'OneHpMonster', 'SingleAttackMoveMonster', 'TenHpMonster', 'TestSubject']);
+const testMonsters = new Set(['BigDummy', 'MultiAttackMoveMonster', 'OneHpMonster', 'SingleAttackMoveMonster', 'TenHpMonster', 'TestSubject', 'TheAdversaryMkOne', 'TheAdversaryMkTwo', 'TheAdversaryMkThree']);
 const allMonsters = (await getCollection('monsters'))
   .filter(m => !testMonsters.has(m.data.class_name));
 const enemies = allMonsters.filter(m => !m.data.is_companion).sort((a, b) => a.data.title.localeCompare(b.data.title));

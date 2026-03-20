@@ -15,6 +15,11 @@ const ancients = allAncients.sort((a, b) => a.data.title.localeCompare(b.data.ti
   <div class="card-grid">
     {ancients.map(ancient => (
       <a href={`${import.meta.env.BASE_URL}ancients/${ancient.id}/`} class="card-entry" style="text-align: center;">
+        <img
+          src={`${import.meta.env.BASE_URL}images/ancients/${ancient.id}.png`}
+          alt={ancient.data.title}
+          style="width: 64px; height: 64px; object-fit: contain; border-radius: 50%; margin-bottom: 0.5rem;"
+          onerror="this.style.display='none'" />
         <h3 class="desc-gold">{ancient.data.title}</h3>
         {ancient.data.epithet && (
           <div class="card-meta" style="font-style: italic;">{ancient.data.epithet}</div>

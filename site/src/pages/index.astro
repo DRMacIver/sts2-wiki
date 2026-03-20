@@ -9,7 +9,7 @@ const cards = await getCollection('cards');
 const relics = await getCollection('relics');
 const potions = (await getCollection('potions')).filter(p => !isDeprecated(p));
 const powers = await getCollection('powers');
-const testMonsters = new Set(['BigDummy', 'MultiAttackMoveMonster', 'OneHpMonster', 'SingleAttackMoveMonster', 'TenHpMonster', 'TestSubject']);
+const testMonsters = new Set(['BigDummy', 'MultiAttackMoveMonster', 'OneHpMonster', 'SingleAttackMoveMonster', 'TenHpMonster', 'TestSubject', 'TheAdversaryMkOne', 'TheAdversaryMkTwo', 'TheAdversaryMkThree']);
 const monsters = (await getCollection('monsters')).filter(m => !testMonsters.has(m.data.class_name));
 const encounters = (await getCollection('encounters')).filter(e => !isDeprecated(e));
 const events = (await getCollection('events')).filter(e => !isDeprecated(e));
