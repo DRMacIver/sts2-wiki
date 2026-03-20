@@ -1,0 +1,135 @@
+[
+  {
+    "class_name": "Glory",
+    "encounters": [
+      "AxebotsNormal",
+      "ConstructMenagerieNormal",
+      "DevotedSculptorWeak",
+      "DoormakerBoss",
+      "FabricatorNormal",
+      "FrogKnightNormal",
+      "GlobeHeadNormal",
+      "KnightsElite",
+      "MechaKnightElite",
+      "OwlMagistrateNormal",
+      "QueenBoss",
+      "ScrollsOfBitingNormal",
+      "ScrollsOfBitingWeak",
+      "SlimedBerserkerNormal",
+      "SoulNexusElite",
+      "TestSubjectBoss",
+      "TheLostAndForgottenNormal",
+      "TurretOperatorWeak"
+    ],
+    "bosses": [
+      "QueenBoss",
+      "TestSubjectBoss",
+      "DoormakerBoss"
+    ],
+    "base_number_of_rooms": 13,
+    "loc_key": "GLORY",
+    "title": "Glory"
+  },
+  {
+    "class_name": "Hive",
+    "encounters": [
+      "BowlbugsNormal",
+      "BowlbugsWeak",
+      "ChompersNormal",
+      "DecimillipedeElite",
+      "EntomancerElite",
+      "ExoskeletonsNormal",
+      "ExoskeletonsWeak",
+      "HunterKillerNormal",
+      "KaiserCrabBoss",
+      "InfestedPrismsElite",
+      "KnowledgeDemonBoss",
+      "LouseProgenitorNormal",
+      "MytesNormal",
+      "OvicopterNormal",
+      "SlumberingBeetleNormal",
+      "SpinyToadNormal",
+      "TheInsatiableBoss",
+      "TheObscuraNormal",
+      "ThievingHopperWeak",
+      "TunnelerNormal",
+      "TunnelerWeak"
+    ],
+    "bosses": [
+      "TheInsatiableBoss",
+      "KnowledgeDemonBoss",
+      "KaiserCrabBoss"
+    ],
+    "base_number_of_rooms": 14,
+    "loc_key": "HIVE",
+    "title": "Hive"
+  },
+  {
+    "class_name": "Overgrowth",
+    "encounters": [
+      "BygoneEffigyElite",
+      "ByrdonisElite",
+      "CeremonialBeastBoss",
+      "CubexConstructNormal",
+      "FlyconidNormal",
+      "FogmogNormal",
+      "FuzzyWurmCrawlerWeak",
+      "InkletsNormal",
+      "MawlerNormal",
+      "NibbitsNormal",
+      "NibbitsWeak",
+      "OvergrowthCrawlers",
+      "PhrogParasiteElite",
+      "RubyRaidersNormal",
+      "ShrinkerBeetleWeak",
+      "SlimesNormal",
+      "SlimesWeak",
+      "SlitheringStranglerNormal",
+      "SnappingJaxfruitNormal",
+      "TheKinBoss",
+      "VantomBoss",
+      "VineShamblerNormal"
+    ],
+    "bosses": [
+      "VantomBoss",
+      "CeremonialBeastBoss",
+      "TheKinBoss"
+    ],
+    "base_number_of_rooms": 15,
+    "loc_key": "OVERGROWTH",
+    "title": "Overgrowth"
+  },
+  {
+    "class_name": "Underdocks",
+    "encounters": [
+      "CorpseSlugsNormal",
+      "CorpseSlugsWeak",
+      "CultistsNormal",
+      "FossilStalkerNormal",
+      "GremlinMercNormal",
+      "HauntedShipNormal",
+      "LagavulinMatriarchBoss",
+      "LivingFogNormal",
+      "PhantasmalGardenersElite",
+      "PunchConstructNormal",
+      "SeapunkNormal",
+      "SeapunkWeak",
+      "SewerClamNormal",
+      "SkulkingColonyElite",
+      "SludgeSpinnerWeak",
+      "SoulFyshBoss",
+      "TerrorEelElite",
+      "ToadpolesWeak",
+      "TwoTailedRatsNormal",
+      "WaterfallGiantBoss"
+    ],
+    "bosses": [
+      "WaterfallGiantBoss",
+      "SoulFyshBoss",
+      "LagavulinMatriarchBoss"
+    ],
+    "base_number_of_rooms": 15,
+    "loc_key": "UNDERDOCKS",
+    "title": "Underdocks"
+  }
+]

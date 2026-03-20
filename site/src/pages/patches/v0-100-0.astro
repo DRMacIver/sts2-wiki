@@ -1,0 +1,474 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const link = (type: string, slug: string, label: string) =>
+  `<a href="${base}${type}/${slug}/">${label}</a>`;
+---
+
+<BaseLayout title="Patch v0.100.0">
+  <div class="page-header">
+    <h1>v0.100.0 Balance Patch</h1>
+    <p class="subtitle">Changes from v0.99.1 &rarr; v0.100.0 &mdash; derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <p class="desc-text">
+      This patch brings a major rework to the Doormaker boss fight, a new Silent starter card, over 50 card balance changes,
+      HP reductions to multiple Act 3 monsters, two new Neow relic offerings, and several event adjustments.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- CARDS                           -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="cards" style="margin-top: 2rem;">Card Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/prepare/`}>Prepare</a></td>
+          <td class="char-silent">Silent</td>
+          <td>1-cost Skill. "Discard 2 cards. Next turn, gain 2 Energy." Upgrade: 3 Energy. <em>Replaces Prepared.</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Was</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Prepared</td>
+          <td class="char-silent">Silent</td>
+          <td>0-cost Skill. "Draw 1 card. Discard 1 card." Upgrade: Draw 2 / Discard 2.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Card Reworks -->
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Major Reworks</h3>
+
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/begone/`}>BEGONE!</a></td>
+          <td class="char-regent">Regent</td>
+          <td><strong>Attack</strong>. 4/5 damage. Transform a card into Minion Dive Bomb.</td>
+          <td><strong>Skill</strong>. No damage. Transform a card into <strong>Minion Strike</strong>.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/charge/`}>CHARGE!!</a></td>
+          <td class="char-regent">Regent</td>
+          <td>Transform a card into Minion Strike.</td>
+          <td>Transform a card into <strong>Minion Dive Bomb</strong>. <em>(Swapped with Begone.)</em></td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/spite/`}>Spite</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>6/9 damage. If lost HP this turn, draw 1 card.</td>
+          <td>5 damage. If lost HP this turn, hits <strong>2/3 times</strong>.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/stoke/`}>Stoke</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>Exhaust Hand. Draw a card for each Exhausted.</td>
+          <td>Exhaust Hand. Add 1 <strong>random card</strong> per Exhausted. Upgrade: random <strong>Upgraded</strong> cards.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/borrowed-time/`}>Borrowed Time</a></td>
+          <td class="char-necrobinder">Necrobinder</td>
+          <td>Apply 3 Doom. Gain 1/2 Energy. <em>(Upgrade: +1 Energy)</em></td>
+          <td>Apply <strong>6</strong> Doom. Gain 1 Energy. <em>(Upgrade: Doom reduced to 3)</em></td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/glow/`}>Glow</a></td>
+          <td class="char-defect">Defect</td>
+          <td>Draw 2 cards.</td>
+          <td>Draw 1 card. Next turn, draw 1 additional card.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/dominate/`}>Dominate</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>Gain 3 Strength. Exhaust. <em>(Upgrade: remove Exhaust)</em></td>
+          <td>Apply <strong>1/2 Vulnerable</strong>. Gain 3 Strength. Exhaust. <em>(Upgrade: +1 Vulnerable)</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Keyword & Upgrade Changes -->
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Keyword & Upgrade Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/dirge/`}>Dirge</a></td>
+          <td class="char-necrobinder">Necrobinder</td>
+          <td>Added <strong>Exhaust</strong></td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/folly/`}>Folly</a></td>
+          <td class="char-necrobinder">Necrobinder</td>
+          <td>Added <strong>Ethereal</strong></td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/void-form/`}>Void Form</a></td>
+          <td class="char-defect">Defect</td>
+          <td>Added <strong>Ethereal</strong>. Upgrade now removes Ethereal instead of +1 stacks.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/hotfix/`}>Hotfix</a></td>
+          <td class="char-defect">Defect</td>
+          <td>Added <strong>Exhaust</strong>. Upgrade now removes Exhaust instead of +1 Focus.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/huddle-up/`}>Huddle Up</a></td>
+          <td class="char-defect">Defect</td>
+          <td>Added <strong>Exhaust</strong>. "ALL allies" &rarr; "ALL players".</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/expect-a-fight/`}>Expect a Fight</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>Now also prevents gaining additional Energy that turn.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/defy/`}>Defy</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>Upgrade changed: was +1 Block / +1 Weak (7 block, 2 Weak). Now +3 Block only (9 block, 1 Weak).</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/production/`}>Production</a></td>
+          <td class="char-defect">Defect</td>
+          <td>Upgrade changed: was remove Exhaust, now +1 Energy (2 &rarr; 3).</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/neows-fury/`}>Neow's Fury</a></td>
+          <td>Colorless</td>
+          <td>Upgrade now also draws 3 cards instead of 2.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/hidden-gem/`}>Hidden Gem</a></td>
+          <td>Colorless</td>
+          <td>Now specifies "a random card without Replay" to prevent stacking.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/rip-and-tear/`}>Rip and Tear</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>Rarity changed: Uncommon &rarr; Event.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Damage Buffs -->
+    <h3 style="margin-top: 1.5rem; color: var(--green);">Damage Buffs</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/grand-finale/`}>Grand Finale</a></td><td class="char-silent">Silent</td><td>50 / 60</td><td class="desc-green">60 / 75</td></tr>
+        <tr><td><a href={`${base}cards/kingly-kick/`}>Kingly Kick</a></td><td class="char-regent">Regent</td><td>24 / 30</td><td class="desc-green">27 / 35</td></tr>
+        <tr><td><a href={`${base}cards/heirloom-hammer/`}>Heirloom Hammer</a></td><td class="char-ironclad">Ironclad</td><td>17 / 22</td><td class="desc-green">20 / 25</td></tr>
+        <tr><td><a href={`${base}cards/debilitate/`}>Debilitate</a></td><td class="char-silent">Silent</td><td>7 / 9</td><td class="desc-green">10 / 12</td></tr>
+        <tr><td><a href={`${base}cards/seeker-strike/`}>Seeker Strike</a></td><td class="char-necrobinder">Necrobinder</td><td>6 / 9</td><td class="desc-green">9 / 12</td></tr>
+        <tr><td><a href={`${base}cards/collision-course/`}>Collision Course</a></td><td class="char-defect">Defect</td><td>9 / 12</td><td class="desc-green">11 / 15</td></tr>
+        <tr><td><a href={`${base}cards/hemokinesis/`}>Hemokinesis</a></td><td class="char-ironclad">Ironclad</td><td>14 / 19</td><td class="desc-green">15 / 20</td></tr>
+        <tr><td><a href={`${base}cards/sculpting-strike/`}>Sculpting Strike</a></td><td class="char-necrobinder">Necrobinder</td><td>8 / 11</td><td class="desc-green">9 / 12</td></tr>
+        <tr><td><a href={`${base}cards/cinder/`}>Cinder</a></td><td class="char-ironclad">Ironclad</td><td>17 / 22</td><td class="desc-green">18 / 24</td></tr>
+        <tr><td><a href={`${base}cards/skewer/`}>Skewer</a></td><td class="char-silent">Silent</td><td>7 / 10</td><td class="desc-green">8 / 11</td></tr>
+        <tr><td><a href={`${base}cards/solar-strike/`}>Solar Strike</a></td><td class="char-defect">Defect</td><td>8 / 9</td><td class="desc-green">9 / 10</td></tr>
+        <tr><td><a href={`${base}cards/kingly-punch/`}>Kingly Punch</a></td><td class="char-regent">Regent</td><td>Base 8, +3/+5 per</td><td class="desc-green">Base 8/10, +4/+6 per</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Damage Nerfs -->
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Damage Nerfs</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/pinpoint/`}>Pinpoint</a></td><td class="char-silent">Silent</td><td>17 / 22</td><td class="desc-red">15 / 19</td></tr>
+        <tr><td><a href={`${base}cards/flick-flack/`}>Flick-Flack</a></td><td class="char-silent">Silent</td><td>7 / 9</td><td class="desc-red">6 / 8</td></tr>
+        <tr><td><a href={`${base}cards/minion-strike/`}>Minion Strike</a></td><td class="char-regent">Regent</td><td>7 / 10</td><td class="desc-red">6 / 9</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Block Changes -->
+    <h3 style="margin-top: 1.5rem; color: var(--blue);">Block Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/parry/`}>Parry</a></td><td class="char-silent">Silent</td><td>6 / 9</td><td class="desc-green">8 / 11</td></tr>
+        <tr><td><a href={`${base}cards/eternal-armor/`}>Eternal Armor</a></td><td class="char-necrobinder">Necrobinder</td><td>7 / 9 Plating</td><td class="desc-green">9 / 12 Plating</td></tr>
+        <tr><td><a href={`${base}cards/gather-light/`}>Gather Light</a></td><td class="char-necrobinder">Necrobinder</td><td>7 / 10</td><td class="desc-green">8 / 11</td></tr>
+        <tr><td><a href={`${base}cards/i-am-invincible/`}>I Am Invincible</a></td><td class="char-regent">Regent</td><td>9 / 12</td><td class="desc-green">10 / 13</td></tr>
+        <tr><td><a href={`${base}cards/patter/`}>Patter</a></td><td class="char-regent">Regent</td><td>8 / 10</td><td class="desc-green">9 / 11</td></tr>
+        <tr><td><a href={`${base}cards/danse-macabre/`}>Danse Macabre</a></td><td class="char-necrobinder">Necrobinder</td><td>3 / 4 per trigger</td><td class="desc-green">4 / 6 per trigger</td></tr>
+        <tr><td><a href={`${base}cards/untouchable/`}>Untouchable</a></td><td class="char-silent">Silent</td><td>9 / 12</td><td class="desc-red">7 / 9</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Other Number Changes -->
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Other Value Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/anticipate/`}>Anticipate</a></td><td class="char-silent">Silent</td><td>Dexterity 3/5 &rarr; <span class="desc-red">2/3</span></td></tr>
+        <tr><td><a href={`${base}cards/believe-in-you/`}>Believe in You</a></td><td class="char-regent">Regent</td><td>Energy 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
+        <tr><td><a href={`${base}cards/capture-spirit/`}>Capture Spirit</a></td><td class="char-necrobinder">Necrobinder</td><td>HP loss + Souls 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
+        <tr><td><a href={`${base}cards/corrosive-wave/`}>Corrosive Wave</a></td><td class="char-silent">Silent</td><td>Poison per draw 3/4 &rarr; <span class="desc-red">2/3</span></td></tr>
+        <tr><td><a href={`${base}cards/fight-me/`}>Fight Me!</a></td><td class="char-ironclad">Ironclad</td><td>Strength 2/3 &rarr; <span class="desc-green">3/4</span></td></tr>
+        <tr><td><a href={`${base}cards/tremble/`}>Tremble</a></td><td class="char-ironclad">Ironclad</td><td>Vulnerable 2/3 &rarr; <span class="desc-green">3/4</span></td></tr>
+        <tr><td><a href={`${base}cards/spoils-of-battle/`}>Spoils of Battle</a></td><td class="char-ironclad">Ironclad</td><td>Forge 10/15 &rarr; <span class="desc-green">12/17</span></td></tr>
+        <tr><td><a href={`${base}cards/wrought-in-war/`}>Wrought in War</a></td><td class="char-ironclad">Ironclad</td><td>Forge 5/7 &rarr; <span class="desc-green">7/9</span></td></tr>
+      </tbody>
+    </table>
+
+    <!-- Cost Changes -->
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Cost Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/break/`}>Break</a></td><td class="char-ironclad">Ironclad</td><td>2 Energy</td><td class="desc-green">1 Energy</td></tr>
+        <tr><td><a href={`${base}cards/bundle-of-joy/`}>Bundle of Joy</a></td><td class="char-regent">Regent</td><td>2 Energy</td><td class="desc-green">1 Energy</td></tr>
+        <tr><td><a href={`${base}cards/minion-dive-bomb/`}>Minion Dive Bomb</a></td><td class="char-regent">Regent</td><td>1 Energy</td><td class="desc-green">0 Energy</td></tr>
+        <tr><td><a href={`${base}cards/seance/`}>Seance</a></td><td class="char-necrobinder">Necrobinder</td><td>0 Energy</td><td class="desc-red">1 Energy</td></tr>
+        <tr><td><a href={`${base}cards/alignment/`}>Alignment</a></td><td class="char-defect">Defect</td><td>2 Stars</td><td class="desc-red">3 Stars</td></tr>
+        <tr><td><a href={`${base}cards/banshees-cry/`}>Banshee's Cry</a></td><td class="char-necrobinder">Necrobinder</td><td>6 Energy</td><td class="desc-red">9 Energy</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- RELICS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="relics" style="margin-top: 2.5rem;">Relic Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Relics</h3>
+    <table class="stat-table">
+      <thead><tr><th>Relic</th><th>Rarity</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}relics/hefty-tablet/`}>Hefty Tablet</a></td>
+          <td class="desc-gold">Ancient (Neow)</td>
+          <td>Upon pickup, choose 1 of 3 Rare cards to add to your Deck, and add 1 Injury to your Deck.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/neows-talisman/`}>Neow's Talisman</a></td>
+          <td class="desc-gold">Ancient (Neow)</td>
+          <td>Upon pickup, Upgrade 1 of your Strikes and 1 of your Defends.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Changed Relics</h3>
+    <table class="stat-table">
+      <thead><tr><th>Relic</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}relics/stone-cracker/`}>Stone Cracker</a></td>
+          <td>At the start of <strong>Boss combats</strong>, Upgrade <strong>3</strong> random cards</td>
+          <td>At the start of <strong>each combat</strong>, Upgrade <span class="desc-green">2</span> random cards</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/precarious-shears/`}>Precarious Shears</a></td>
+          <td>13 damage when upgrading</td>
+          <td><span class="desc-green">16</span> HP loss when upgrading</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/preserved-fog/`}>Preserved Fog</a></td>
+          <td>Remove 5 cards from draw pile at start of combat</td>
+          <td>Remove <span class="desc-green">3</span> cards from draw pile at start of combat</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/book-of-five-rings/`}>Book of Five Rings</a></td>
+          <td>Heal 15 HP</td>
+          <td>Heal <span class="desc-green">20</span> HP</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/amethyst-aubergine/`}>Amethyst Aubergine</a></td>
+          <td>Gain 10 Gold</td>
+          <td>Gain <span class="desc-green">15</span> Gold</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/leafy-poultice/`}>Leafy Poultice</a></td>
+          <td>Gain 10 Max HP</td>
+          <td>Gain <span class="desc-green">12</span> Max HP</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/permafrost/`}>Permafrost</a></td>
+          <td>6 Block at start of turn</td>
+          <td><span class="desc-green">7</span> Block at start of turn</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/planisphere/`}>Planisphere</a></td>
+          <td>Heal 4 HP</td>
+          <td>Heal <span class="desc-green">5</span> HP</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- MONSTERS                        -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="monsters" style="margin-top: 2.5rem;">Monster Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Doormaker Boss Rework</h3>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>The Doormaker boss fight has been completely reworked. Previously, the fight involved a separate
+        <strong>Door</strong> monster (165 HP) with its own moveset and a revival power. The Door has been removed entirely.</p>
+      <p style="margin-top: 0.5rem;">
+        The <a href={`${base}monsters/doormaker/`}>Doormaker</a> itself (512 HP) had its moveset completely overhauled:
+      </p>
+    </div>
+    <table class="stat-table" style="margin: 0.5rem 0;">
+      <thead><tr><th>Move</th><th>Before (v0.99.1)</th><th>After (v0.100.0)</th></tr></thead>
+      <tbody>
+        <tr><td>Slot 1</td><td>What Is It (stun)</td><td>Dramatic Open (summon)</td></tr>
+        <tr><td>Slot 2</td><td>Beam (31 damage)</td><td>Beam (10 damage &times;3)</td></tr>
+        <tr><td>Slot 3</td><td>Get Back In (40 dmg + 5 Str)</td><td>Chomp (40 damage)</td></tr>
+        <tr><td>Slot 4</td><td>&mdash;</td><td>Pulverize (20 dmg + 3 Str)</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Skulking Colony Rework</h3>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>The <a href={`${base}monsters/skulking-colony/`}>Skulking Colony</a> had its HP reduced from 84 to <span class="desc-green">79</span> and had significant move changes:</p>
+      <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <li><strong>Super Crab</strong> move removed, replaced with <strong>Piercing Stabs</strong> (7 damage multi-hit)</li>
+        <li><strong>Inertia</strong> changed from block + 3 Strength to 4 Strength + adds Dazed to discard pile</li>
+        <li><strong>Zoom</strong> now has 2 intents instead of 1</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">Monster HP Reductions</h3>
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}monsters/guardbot/`}>Guardbot</a></td><td>22–26</td><td class="desc-green">17–21</td></tr>
+        <tr><td><a href={`${base}monsters/noisebot/`}>Noisebot</a></td><td>24–29</td><td class="desc-green">19–24</td></tr>
+        <tr><td><a href={`${base}monsters/stabbot/`}>Stabbot</a></td><td>24–29</td><td class="desc-green">19–24</td></tr>
+        <tr><td><a href={`${base}monsters/zapbot/`}>Zapbot</a></td><td>24–29</td><td class="desc-green">19–24</td></tr>
+        <tr><td><a href={`${base}monsters/gas-bomb/`}>Gas Bomb</a></td><td>12</td><td class="desc-green">8</td></tr>
+        <tr><td><a href={`${base}monsters/decimillipede/`}>Decimillipede</a></td><td>48–56</td><td class="desc-green">46–52</td></tr>
+        <tr><td><a href={`${base}monsters/phantasmal-gardener/`}>Phantasmal Gardener</a></td><td>29–33</td><td class="desc-green">27–32</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Monster HP Increases</h3>
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}monsters/crusher/`}>Crusher</a> (Kaiser Crab)</td><td>209</td><td class="desc-red">219</td></tr>
+        <tr><td><a href={`${base}monsters/rocket/`}>Rocket</a> (Kaiser Crab)</td><td>199</td><td class="desc-red">209</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Other Monster Move Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}monsters/bygone-effigy/`}>Bygone Effigy</a></td><td>Slashes: 15 &rarr; <span class="desc-green">13</span> damage</td></tr>
+        <tr><td><a href={`${base}monsters/terror-eel/`}>Terror Eel</a></td><td>Crash: 17 &rarr; <span class="desc-green">16</span> damage</td></tr>
+        <tr><td><a href={`${base}monsters/byrdonis/`}>Byrdonis</a></td><td>Swoop: 16 &rarr; <span class="desc-red">17</span> damage</td></tr>
+        <tr><td><a href={`${base}monsters/seapunk/`}>Seapunk</a></td><td>Sea Kick: 12 &rarr; <span class="desc-red">13</span> damage</td></tr>
+        <tr><td><a href={`${base}monsters/nibbit/`}>Nibbit</a></td><td>Hiss: 2 &rarr; <span class="desc-red">3</span> Strength. Slice: 6 &rarr; <span class="desc-red">7</span> damage.</td></tr>
+        <tr><td><a href={`${base}monsters/crusher/`}>Crusher</a></td><td>Adapt: 2 &rarr; <span class="desc-red">3</span> Strength</td></tr>
+        <tr><td><a href={`${base}monsters/rocket/`}>Rocket</a></td><td>Charge Up: 2 &rarr; <span class="desc-red">3</span> Strength</td></tr>
+        <tr><td><a href={`${base}monsters/the-forgotten/`}>The Forgotten</a></td><td>Miasma: 2 &rarr; <span class="desc-red">3</span> Dexterity loss</td></tr>
+        <tr><td><a href={`${base}monsters/the-lost/`}>The Lost</a></td><td>Debilitating Smog: 2 &rarr; <span class="desc-red">3</span> Strength</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ENCOUNTERS                      -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="encounters" style="margin-top: 2.5rem;">Encounter Changes</h2>
+    <table class="stat-table">
+      <thead><tr><th>Encounter</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}encounters/doormaker-boss/`}>Doormaker</a> (Boss)</td>
+          <td>Now fights Doormaker directly instead of the separate Door monster</td>
+        </tr>
+        <tr>
+          <td>Underdocks Wildlife</td>
+          <td>Toadpole encounter removed, replaced with <a href={`${base}encounters/seapunk-normal/`}>Seapunk encounter</a> (Calcified Cultist + Seapunk)</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}encounters/tunneler-normal/`}>Tunneling Twosome</a></td>
+          <td>Now includes a Chomper alongside the Tunneler (was Tunneler alone)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- EVENTS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="events" style="margin-top: 2.5rem;">Event Changes</h2>
+    <table class="stat-table">
+      <thead><tr><th>Event</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}events/spirit-grafter/`}>Spirit Grafter</a></td>
+          <td>"Rejection" option changed from Remove a card to <strong>Upgrade a card</strong></td>
+        </tr>
+        <tr>
+          <td><a href={`${base}events/dense-vegetation/`}>Dense Vegetation</a></td>
+          <td>Option 1 changed from "Remove a card, Lose 11 HP" to "<strong>Gain Gold, Lose 8 HP</strong>"</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}events/morphic-grove/`}>Morphic Grove</a></td>
+          <td>Added Gold &ge; 100 condition. Cost changed from "Lose 100 Gold" to "<strong>Lose ALL Gold</strong>"</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}events/endless-conveyor/`}>Endless Conveyor</a></td>
+          <td>Gold threshold: 105 &rarr; 120. Price per item: 35 &rarr; <strong>40 Gold</strong></td>
+        </tr>
+        <tr>
+          <td><a href={`${base}events/round-tea-party/`}>Round Tea Party</a></td>
+          <td>Added condition: HP &ge; 12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- POWERS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="powers" style="margin-top: 2.5rem;">Power Changes</h2>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>NoEnergyGainPower</td>
+          <td><span class="desc-green">New</span> &mdash; Prevents additional energy gain (supports Expect a Fight change)</td>
+        </tr>
+        <tr>
+          <td>HungerOfTheVoidPower</td>
+          <td><span class="desc-green">New</span></td>
+        </tr>
+        <tr>
+          <td>DoorRevivalPower</td>
+          <td><span class="desc-red">Removed</span> &mdash; Was used by the old Door monster</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/beacon-of-hope/`}>Beacon of Hope</a></td>
+          <td>Stack type changed: Counter &rarr; Single</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- WORDING                         -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="wording" style="margin-top: 2.5rem;">Wording Standardizations</h2>
+    <div class="desc-text" style="line-height: 1.7;">
+      <p>Several descriptions were reworded for consistency without changing gameplay:</p>
+      <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <li><strong>Fairy in a Bottle</strong> and <strong>Lizard Tail</strong>: "When you would die" &rarr; "When your HP would be reduced to 0"</li>
+        <li><strong>Bombardment</strong> and <strong>Howl from Beyond</strong>: Clarified exhaust pile play trigger wording</li>
+        <li><strong>Rocket Punch</strong>: "When a Status card is created" &rarr; "When you create a Status card"; cost reduction now "until played" instead of "this turn"</li>
+      </ul>
+    </div>
+
+  </div>
+</BaseLayout>

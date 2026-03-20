@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+
+const patches = [
+  { version: 'v0.100.0', date: '2026-03-20', slug: 'v0-100-0', summary: 'Doormaker rework, Silent starter card change, 50+ card balance changes, bot HP nerfs, new Neow relics' },
+];
+---
+
+<BaseLayout title="Patch Notes">
+  <div class="page-header">
+    <h1>Patch Notes</h1>
+    <p class="subtitle">Balance changes between game versions, derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 800px; margin: 0 auto;">
+    {patches.map(p => (
+      <a href={`${base}patches/${p.slug}/`} class="card-entry" style="display: block; margin-bottom: 1rem; padding: 1.25rem;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <h3 style="margin: 0;">{p.version}</h3>
+          <span class="card-meta">{p.date}</span>
+        </div>
+        <p class="card-meta" style="margin-top: 0.5rem;">{p.summary}</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

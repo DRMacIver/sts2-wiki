@@ -1,0 +1,549 @@
+[
+  {
+    "class_name": "Darv",
+    "relic_offerings": [
+      {
+        "title": "Dusty Tome",
+        "description": "Upon pickup, obtain ?|an Ancient Card}.",
+        "slug": "dusty-tome",
+        "image": "dusty_tome"
+      },
+      {
+        "title": "Astrolabe",
+        "description": "Upon pickup, Transform ? ?, then Upgrade them.",
+        "slug": "astrolabe",
+        "image": "astrolabe"
+      },
+      {
+        "title": "Black Star",
+        "description": "Elites drop an additional Relic when defeated.",
+        "slug": "black-star",
+        "image": "black_star"
+      },
+      {
+        "title": "Calling Bell",
+        "description": "Upon pickup, obtain a unique Curse and ? Relics.",
+        "slug": "calling-bell",
+        "image": "calling_bell"
+      },
+      {
+        "title": "Empty Cage",
+        "description": "Upon pickup, remove ? ? from your Deck.",
+        "slug": "empty-cage",
+        "image": "empty_cage"
+      },
+      {
+        "title": "Pandora's Box",
+        "description": "Transform ALL Strikes and Defends.",
+        "slug": "pandora-s-box",
+        "image": "pandoras_box"
+      },
+      {
+        "title": "Runic Pyramid",
+        "description": "At the end of your turn, you no longer discard your Hand.",
+        "slug": "runic-pyramid",
+        "image": "runic_pyramid"
+      },
+      {
+        "title": "Snecko Eye",
+        "description": "At the start of your turn, draw ? additional ?. Start each combat Confused.",
+        "slug": "snecko-eye",
+        "image": "snecko_eye"
+      },
+      {
+        "title": "Ectoplasm",
+        "description": "You can no longer gain Gold. Gain ? at the start of each turn.",
+        "slug": "ectoplasm",
+        "image": "ectoplasm"
+      },
+      {
+        "title": "Sozu",
+        "description": "Gain ? at the start of each turn. You can no longer obtain potions.",
+        "slug": "sozu",
+        "image": "sozu"
+      },
+      {
+        "title": "Philosopher's Stone",
+        "description": "Gain ? at the start of each turn. ALL enemies start combat with ? Strength.",
+        "slug": "philosopher-s-stone",
+        "image": "philosophers_stone"
+      },
+      {
+        "title": "Velvet Choker",
+        "description": "Gain ? at the start of each turn. You cannot play more than ? ? per turn.",
+        "slug": "velvet-choker",
+        "image": "velvet_choker"
+      }
+    ],
+    "relic_refs": [
+      "Astrolabe",
+      "BlackStar",
+      "CallingBell",
+      "EmptyCage",
+      "PandorasBox",
+      "RunicPyramid",
+      "SneckoEye",
+      "Ectoplasm",
+      "Sozu",
+      "PhilosophersStone",
+      "VelvetChoker"
+    ],
+    "loc_key": "DARV",
+    "title": "Darv",
+    "epithet": "The Hoarder",
+    "acts": [
+      "All Acts"
+    ]
+  },
+  {
+    "class_name": "DeprecatedAncientEvent",
+    "relic_offerings": [],
+    "loc_key": "DEPRECATED_ANCIENT_EVENT",
+    "title": "DeprecatedAncientEvent",
+    "epithet": "",
+    "_loc_missing": true,
+    "acts": []
+  },
+  {
+    "class_name": "Neow",
+    "relic_offerings": [],
+    "loc_key": "NEOW",
+    "title": "Neow",
+    "epithet": "Mother of Resurrection (Exiled)",
+    "acts": [
+      "Overgrowth",
+      "Underdocks"
+    ]
+  },
+  {
+    "class_name": "Nonupeipe",
+    "relic_offerings": [
+      {
+        "title": "Blessed Antler",
+        "description": "Gain ? at the start of each turn. At the start of each combat, shuffle ? Dazed into your Draw Pile.",
+        "slug": "blessed-antler",
+        "image": "blessed_antler"
+      },
+      {
+        "title": "Brilliant Scarf",
+        "description": "The 5th card you play each turn is free.",
+        "slug": "brilliant-scarf",
+        "image": "brilliant_scarf"
+      },
+      {
+        "title": "Delicate Frond",
+        "description": "At the start of each combat, fill all empty potion slots with random potions.",
+        "slug": "delicate-frond",
+        "image": "delicate_frond"
+      },
+      {
+        "title": "Diamond Diadem",
+        "description": "Whenever you play ? or fewer cards in a turn, take half damage from enemies.",
+        "slug": "diamond-diadem",
+        "image": "diamond_diadem"
+      },
+      {
+        "title": "Fur Coat",
+        "description": "Upon pickup, mark ? random combats. Enemies in those rooms have 1 HP.",
+        "slug": "fur-coat",
+        "image": "fur_coat"
+      },
+      {
+        "title": "Glitter",
+        "description": "Enchant all card rewards with Glam.",
+        "slug": "glitter",
+        "image": "glitter"
+      },
+      {
+        "title": "Jewelry Box",
+        "description": "Upon pickup, add 1 Apotheosis to your Deck.",
+        "slug": "jewelry-box",
+        "image": "jewelry_box"
+      },
+      {
+        "title": "Looming Fruit",
+        "description": "Upon pickup, raise your Max HP by ?.",
+        "slug": "looming-fruit",
+        "image": "looming_fruit"
+      },
+      {
+        "title": "Signet Ring",
+        "description": "Upon pickup, gain ? Gold.",
+        "slug": "signet-ring",
+        "image": "signet_ring"
+      },
+      {
+        "title": "Beautiful Bracelet",
+        "description": "Upon pickup, choose ? ? in your Deck. Enchant them with Swift 3.",
+        "slug": "beautiful-bracelet",
+        "image": "beautiful_bracelet"
+      }
+    ],
+    "loc_key": "NONUPEIPE",
+    "title": "Nonupeipe",
+    "epithet": "Serendipity Incarnate",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "Orobas",
+    "relic_offerings": [
+      {
+        "title": "Electric Shrymp",
+        "description": "Upon pickup, Enchant a Skill with Imbued.",
+        "slug": "electric-shrymp",
+        "image": "electric_shrymp"
+      },
+      {
+        "title": "Glass Eye",
+        "description": "Upon pickup, obtain 2 Common cards, 2 Uncommon cards, and 1 Rare card.",
+        "slug": "glass-eye",
+        "image": "glass_eye"
+      },
+      {
+        "title": "Sand Castle",
+        "description": "Upon pickup, Upgrade ? random ?.",
+        "slug": "sand-castle",
+        "image": "sand_castle"
+      },
+      {
+        "title": "Alchemical Coffer",
+        "description": "Upon pickup, gain ? potion slots filled with random potions.",
+        "slug": "alchemical-coffer",
+        "image": "alchemical_coffer"
+      },
+      {
+        "title": "Driftwood",
+        "description": "You may reroll each card reward once.",
+        "slug": "driftwood",
+        "image": "driftwood"
+      },
+      {
+        "title": "Radiant Pearl",
+        "description": "At the start of each combat, add ? ? into your Hand.",
+        "slug": "radiant-pearl",
+        "image": "radiant_pearl"
+      },
+      {
+        "title": "Prismatic Gem",
+        "description": "Gain ? at the start of each turn. Card rewards now contain cards from other colors.",
+        "slug": "prismatic-gem",
+        "image": "prismatic_gem"
+      },
+      {
+        "title": "Sea Glass",
+        "description": "See ? cards from ?|another character}. Choose any number of them to add to your Deck.",
+        "slug": "sea-glass",
+        "image": "sea_glass"
+      },
+      {
+        "title": "Touch of Orobas",
+        "description": "Upon pickup, replace ? with ?|your starter Relic with an Ancient version}.",
+        "slug": "touch-of-orobas",
+        "image": "touch_of_orobas"
+      },
+      {
+        "title": "Archaic Tooth",
+        "description": "Upon pickup, Transform ? into ?|a starter card with an ancient version}.",
+        "slug": "archaic-tooth",
+        "image": "archaic_tooth"
+      }
+    ],
+    "relic_refs": [
+      "SeaGlass",
+      "TouchOfOrobas",
+      "ArchaicTooth"
+    ],
+    "loc_key": "OROBAS",
+    "title": "Orobas",
+    "epithet": "Living Rainbow",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "Pael",
+    "relic_offerings": [
+      {
+        "title": "Pael's Claw",
+        "description": "Upon pickup, Enchant all Defends with ?.",
+        "slug": "pael-s-claw",
+        "image": "paels_claw"
+      },
+      {
+        "title": "Pael's Tooth",
+        "description": "Upon pickup, remove ? ? from your Deck. After each combat, randomly add 1 back Upgraded.?|}",
+        "slug": "pael-s-tooth",
+        "image": "paels_tooth"
+      },
+      {
+        "title": "Pael's Growth",
+        "description": "Upon pickup, Enchant a card with ?.",
+        "slug": "pael-s-growth",
+        "image": "paels_growth"
+      },
+      {
+        "title": "Pael's Legion",
+        "description": "Doubles Block gained from a card, then goes to sleep for ? ?.",
+        "slug": "pael-s-legion",
+        "image": "paels_legion"
+      },
+      {
+        "title": "Pael's Flesh",
+        "description": "Gain an additional ? at the start of your 3rd turn, and every turn after that.",
+        "slug": "pael-s-flesh",
+        "image": "paels_flesh"
+      },
+      {
+        "title": "Pael's Horn",
+        "description": "Upon pickup, add 2 Relax to your Deck.",
+        "slug": "pael-s-horn",
+        "image": "paels_horn"
+      },
+      {
+        "title": "Pael's Tears",
+        "description": "If you end your turn with unspent ?, gain an additional ? next turn.",
+        "slug": "pael-s-tears",
+        "image": "paels_tears"
+      },
+      {
+        "title": "Pael's Wing",
+        "description": "You may sacrifice card rewards to Pael. Every ? sacrifices}, obtain a Relic.",
+        "slug": "pael-s-wing",
+        "image": "paels_wing"
+      },
+      {
+        "title": "Pael's Eye",
+        "description": "The first time each combat you end your turn without playing cards, Exhaust your Hand, and take an extra turn.",
+        "slug": "pael-s-eye",
+        "image": "paels_eye"
+      },
+      {
+        "title": "Pael's Blood",
+        "description": "At the start of your turn, draw ? additional ?.",
+        "slug": "pael-s-blood",
+        "image": "paels_blood"
+      }
+    ],
+    "loc_key": "PAEL",
+    "title": "Pael",
+    "epithet": "Melting Dragon",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "Tanx",
+    "relic_offerings": [
+      {
+        "title": "Claws",
+        "description": "Upon pickup, Transform up to ? ? into Maul.",
+        "slug": "claws",
+        "image": "claws"
+      },
+      {
+        "title": "Crossbow",
+        "description": "At the start of your turn, add a random Attack into your Hand. It costs 0? this turn.",
+        "slug": "crossbow",
+        "image": "crossbow"
+      },
+      {
+        "title": "Iron Club",
+        "description": "Every ? ? you play, draw 1 card.",
+        "slug": "iron-club",
+        "image": "iron_club"
+      },
+      {
+        "title": "Meat Cleaver",
+        "description": "You may Cook at Rest Sites.",
+        "slug": "meat-cleaver",
+        "image": "meat_cleaver"
+      },
+      {
+        "title": "Sai",
+        "description": "At the start of your turn, gain ? Block.",
+        "slug": "sai",
+        "image": "sai"
+      },
+      {
+        "title": "Spiked Gauntlets",
+        "description": "Gain ? at the start of each turn. Powers cost 1 more ?.",
+        "slug": "spiked-gauntlets",
+        "image": "spiked_gauntlets"
+      },
+      {
+        "title": "Tanx's Whistle",
+        "description": "Upon pickup, add 1 Whistle to your Deck.",
+        "slug": "tanx-s-whistle",
+        "image": "tanxs_whistle"
+      },
+      {
+        "title": "Throwing Axe",
+        "description": "The first card you play each combat is played an extra time.",
+        "slug": "throwing-axe",
+        "image": "throwing_axe"
+      },
+      {
+        "title": "War Hammer",
+        "description": "Whenever you kill an Elite, Upgrade ? random ?.",
+        "slug": "war-hammer",
+        "image": "war_hammer"
+      },
+      {
+        "title": "Tri-Boomerang",
+        "description": "Choose ? ? in your Deck. Enchant them with Instinct.",
+        "slug": "tri-boomerang",
+        "image": "tri_boomerang"
+      }
+    ],
+    "loc_key": "TANX",
+    "title": "Tanx",
+    "epithet": "Khimera King",
+    "acts": [
+      "Glory"
+    ]
+  },
+  {
+    "class_name": "Tezcatara",
+    "relic_offerings": [
+      {
+        "title": "Nutritious Soup",
+        "description": "Upon pickup, Enchant all Strikes in your Deck with Tezcatara's Ember.",
+        "slug": "nutritious-soup",
+        "image": "nutritious_soup"
+      },
+      {
+        "title": "Very Hot Cocoa",
+        "description": "Start each combat with an additional ?.",
+        "slug": "very-hot-cocoa",
+        "image": "very_hot_cocoa"
+      },
+      {
+        "title": "Yummy Cookie",
+        "description": "Upon pickup, Upgrade ? ?.",
+        "slug": "yummy-cookie",
+        "image": "yummy_cookie"
+      },
+      {
+        "title": "Biiig Hug",
+        "description": "Upon pickup, remove ? cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile.",
+        "slug": "biiig-hug",
+        "image": "biiig_hug"
+      },
+      {
+        "title": "Storybook",
+        "description": "Upon pickup, add 1 Brightest Flame to your Deck.",
+        "slug": "storybook",
+        "image": "storybook"
+      },
+      {
+        "title": "Seal of Gold",
+        "description": "At the start of your turn, spend ? Gold to gain ?.",
+        "slug": "seal-of-gold",
+        "image": "seal_of_gold"
+      },
+      {
+        "title": "Toasty Mittens",
+        "description": "At the start of your turn, Exhaust the top card of your Draw Pile and gain ? Strength.",
+        "slug": "toasty-mittens",
+        "image": "toasty_mittens"
+      },
+      {
+        "title": "Golden Compass",
+        "description": "Upon pickup, replace the Act 2 Map with a single special path.",
+        "slug": "golden-compass",
+        "image": "golden_compass"
+      },
+      {
+        "title": "Pumpkin Candle",
+        "description": "Gain ? at the start of each turn. Extinguishes at the start of Act 3.",
+        "slug": "pumpkin-candle",
+        "image": "pumpkin_candle"
+      },
+      {
+        "title": "Toy Box",
+        "description": "Upon pickup, obtain ? Wax ?. Every ? ?, your left-most Wax Relic will melt away.",
+        "slug": "toy-box",
+        "image": "toy_box"
+      }
+    ],
+    "loc_key": "TEZCATARA",
+    "title": "Tezcatara",
+    "epithet": "It Which Feeds the Fire",
+    "acts": [
+      "Hive"
+    ]
+  },
+  {
+    "class_name": "Vakuu",
+    "relic_offerings": [
+      {
+        "title": "Blood-Soaked Rose",
+        "description": "Upon pickup, add 1 Enthralled to your Deck. Gain ? at the start of each turn.",
+        "slug": "blood-soaked-rose",
+        "image": "blood_soaked_rose"
+      },
+      {
+        "title": "Whispering Earring",
+        "description": "Gain ? at the start of each turn. Vakuu plays your first turn for you.",
+        "slug": "whispering-earring",
+        "image": "whispering_earring"
+      },
+      {
+        "title": "Fiddle",
+        "description": "At the start of each turn, draw ? additional ?. You may not draw cards during your turn.",
+        "slug": "fiddle",
+        "image": "fiddle"
+      },
+      {
+        "title": "Preserved Fog",
+        "description": "Upon pickup, remove ? ? from your Deck. Add Folly to your Deck.",
+        "slug": "preserved-fog",
+        "image": "preserved_fog"
+      },
+      {
+        "title": "Sere Talon",
+        "description": "Upon pickup, add ? random Curses and ? Wishes to your Deck.",
+        "slug": "sere-talon",
+        "image": "sere_talon"
+      },
+      {
+        "title": "Distinguished Cape",
+        "description": "Upon pickup, lose 9 Max HP. Add ? ? to your Deck.",
+        "slug": "distinguished-cape",
+        "image": "distinguished_cape"
+      },
+      {
+        "title": "Choices Paradox",
+        "description": "At the start of each combat, add 1 of ? random cards into your Hand. Add Retain to the chosen card.",
+        "slug": "choices-paradox",
+        "image": "choices_paradox"
+      },
+      {
+        "title": "Music Box",
+        "description": "Create an Ethereal copy of the first Attack you play each turn.",
+        "slug": "music-box",
+        "image": "music_box"
+      },
+      {
+        "title": "Lord's Parasol",
+        "description": "When you encounter the Merchant, immediately obtain EVERYTHING he sells.",
+        "slug": "lord-s-parasol",
+        "image": "lords_parasol"
+      },
+      {
+        "title": "Jeweled Mask",
+        "description": "At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play.",
+        "slug": "jeweled-mask",
+        "image": "jeweled_mask"
+      }
+    ],
+    "loc_key": "VAKUU",
+    "title": "Vakuu",
+    "epithet": "The First Demon",
+    "acts": [
+      "Glory"
+    ]
+  }
+]

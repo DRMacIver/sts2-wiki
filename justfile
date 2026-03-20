@@ -7,7 +7,7 @@ sts2_pck := sts2_app / "Contents/Resources/Slay the Spire 2.pck"
 sts2_release := sts2_app / "Contents/Resources/release_info.json"
 
 # Game version (auto-detected or override)
-version := env("STS2_VERSION", "v0.99.1")
+version := env("STS2_VERSION", "v0.100.0")
 
 # Default: full build
 default: check build
