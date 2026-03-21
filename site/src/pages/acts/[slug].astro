@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { monsterImageName } from '../../utils';
+
+const base = import.meta.env.BASE_URL;
+
+const ACT_INFO: Record<string, { title: string; rooms: number }> = {
+  glory: { title: 'Glory', rooms: 13 },
+  hive: { title: 'Hive', rooms: 14 },
+  overgrowth: { title: 'Overgrowth', rooms: 15 },
+  underdocks: { title: 'Underdocks', rooms: 15 },
+};
+
+export function getStaticPaths() {
+  const acts: Record<string, { title: string; rooms: number }> = {
+    glory: { title: 'Glory', rooms: 13 },
+    hive: { title: 'Hive', rooms: 14 },
+    overgrowth: { title: 'Overgrowth', rooms: 15 },
+    underdocks: { title: 'Underdocks', rooms: 15 },
+  };
+  return Object.keys(acts).map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const act = ACT_INFO[slug!];
+const actName = act.title;
+
+const allEncounters = await getCollection('encounters');
+const allEvents = await getCollection('events');
+const allAncients = await getCollection('ancients');
+
+const isDeprecated = (item: { data: { class_name: string } }) =>
+  item.data.class_name.includes('Deprecated');
+
+const encounters = allEncounters
+  .filter(e => e.data.acts.includes(actName) && !isDeprecated(e));
+const events = allEvents
+  .filter(e => e.data.acts.includes(actName) && !isDeprecated(e))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+const ancients = allAncients
+  .filter(a => a.data.acts.includes(actName) || a.data.acts.includes('All Acts'))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const bosses = encounters
+  .filter(e => e.data.room_type === 'Boss')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+const elites = encounters
+  .filter(e => e.data.room_type === 'Elite')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+const normals = encounters
+  .filter(e => e.data.room_type === 'Monster' && !e.data.is_weak)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+const weak = encounters
+  .filter(e => e.data.room_type === 'Monster' && e.data.is_weak)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title={actName}>
+  <div class="card-detail">
+    <a href={`${base}acts/`} class="back-link">&larr; All Acts</a>
+
+    <div class="card-header">
+      <h1 class="desc-gold">{actName}</h1>
+      <div class="card-meta" style="font-size: 0.9rem;">
+        {act.rooms} rooms · {bosses.length} bosses · {elites.length} elites · {normals.length + weak.length} encounters · {events.length} events
+      </div>
+    </div>
+
+    {bosses.length > 0 && (
+      <>
+        <h2 class="section-heading">Bosses</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {bosses.map(enc => (
+            <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <img
+                src={`${base}images/boss_icons/${enc.data.class_name.replace(/Boss$/, '').replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}_boss_icon.png`}
+                alt={enc.data.title}
+                class="item-icon"
+                style="width: 40px; height: 40px;"
+                onerror="this.style.display='none'" />
+              <div>
+                <h3 style="font-size: 0.95rem;">{enc.data.title}</h3>
+                <div class="card-meta">{enc.data.monsters.map(m => m.title).join(', ')}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+
+    {elites.length > 0 && (
+      <>
+        <h2 class="section-heading">Elites</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {elites.map(enc => {
+            const firstMonster = enc.data.monsters[0];
+            const imgName = firstMonster ? monsterImageName(firstMonster.class_name) : '';
+            return (
+              <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+                {firstMonster && (
+                  <img
+                    src={`${base}images/monsters/${imgName}.png`}
+                    alt={enc.data.title}
+                    style="width: 48px; height: 48px; object-fit: contain;"
+                    onerror="this.style.display='none'" />
+                )}
+                <div>
+                  <h3 style="font-size: 0.95rem;">{enc.data.title}</h3>
+                  <div class="card-meta">{enc.data.monsters.map(m => m.title).join(', ')}</div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </>
+    )}
+
+    {normals.length > 0 && (
+      <>
+        <h2 class="section-heading">Encounters</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {normals.map(enc => {
+            const firstMonster = enc.data.monsters[0];
+            const imgName = firstMonster ? monsterImageName(firstMonster.class_name) : '';
+            return (
+              <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+                {firstMonster && (
+                  <img
+                    src={`${base}images/monsters/${imgName}.png`}
+                    alt={enc.data.title}
+                    style="width: 48px; height: 48px; object-fit: contain;"
+                    onerror="this.style.display='none'" />
+                )}
+                <div>
+                  <h3 style="font-size: 0.95rem;">{enc.data.title}</h3>
+                  <div class="card-meta">{enc.data.monsters.map(m => m.title).join(', ')}</div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </>
+    )}
+
+    {weak.length > 0 && (
+      <>
+        <h2 class="section-heading">Early Encounters</h2>
+        <p class="card-meta" style="margin-bottom: 0.5rem;">Weaker encounters that appear in the first few floors.</p>
+        <div class="card-grid compact" style="margin-top: 0.5rem;">
+          {weak.map(enc => {
+            const firstMonster = enc.data.monsters[0];
+            const imgName = firstMonster ? monsterImageName(firstMonster.class_name) : '';
+            return (
+              <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+                {firstMonster && (
+                  <img
+                    src={`${base}images/monsters/${imgName}.png`}
+                    alt={enc.data.title}
+                    style="width: 48px; height: 48px; object-fit: contain;"
+                    onerror="this.style.display='none'" />
+                )}
+                <div>
+                  <h3 style="font-size: 0.95rem;">{enc.data.title}</h3>
+                  <div class="card-meta">{enc.data.monsters.map(m => m.title).join(', ')}</div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </>
+    )}
+
+    {events.length > 0 && (
+      <>
+        <h2 class="section-heading">Events</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {events.map(ev => (
+            <a href={`${base}events/${ev.id}/`} class="card-entry">
+              <h3 style="font-size: 0.95rem;">{ev.data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+
+    {ancients.length > 0 && (
+      <>
+        <h2 class="section-heading">Ancients</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {ancients.map(anc => (
+            <a href={`${base}ancients/${anc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <img
+                src={`${base}images/ancients/${anc.id}.png`}
+                alt={anc.data.title}
+                style="width: 48px; height: 48px; object-fit: contain; border-radius: 50%;"
+                onerror="this.style.display='none'" />
+              <div>
+                <h3 style="font-size: 0.95rem;" class="desc-gold">{anc.data.title}</h3>
+                {anc.data.epithet && (
+                  <div class="card-meta" style="font-style: italic;">{anc.data.epithet}</div>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+</BaseLayout>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+
+const allEncounters = await getCollection('encounters');
+const allEvents = await getCollection('events');
+const allAncients = await getCollection('ancients');
+
+const acts = [
+  { slug: 'glory', title: 'Glory', rooms: 13 },
+  { slug: 'hive', title: 'Hive', rooms: 14 },
+  { slug: 'overgrowth', title: 'Overgrowth', rooms: 15 },
+  { slug: 'underdocks', title: 'Underdocks', rooms: 15 },
+];
+
+const actData = acts.map(act => {
+  const actName = act.title;
+  const encounters = allEncounters.filter(e => e.data.acts.includes(actName));
+  const events = allEvents.filter(e => e.data.acts.includes(actName));
+  const ancients = allAncients.filter(a =>
+    a.data.acts.includes(actName) || a.data.acts.includes('All Acts')
+  );
+  const bosses = encounters.filter(e => e.data.room_type === 'Boss');
+  const elites = encounters.filter(e => e.data.room_type === 'Elite');
+  const normals = encounters.filter(e => e.data.room_type === 'Monster' && !e.data.is_weak);
+  const weak = encounters.filter(e => e.data.room_type === 'Monster' && e.data.is_weak);
+
+  return {
+    ...act,
+    bosses: bosses.length,
+    elites: elites.length,
+    normals: normals.length + weak.length,
+    events: events.length,
+    ancients: ancients.length,
+  };
+});
+---
+
+<BaseLayout title="Acts">
+  <div class="page-header">
+    <h1>Acts</h1>
+    <p class="subtitle">4 acts, each with unique encounters, events, and bosses</p>
+  </div>
+
+  <div class="card-grid">
+    {actData.map(act => (
+      <a href={`${base}acts/${act.slug}/`} class="card-entry" style="text-align: center;">
+        <h3 class="desc-gold">{act.title}</h3>
+        <div class="card-meta" style="margin-top: 0.5rem;">
+          {act.rooms} rooms · {act.bosses} bosses · {act.elites} elites
+        </div>
+        <div class="card-meta">
+          {act.normals} encounters · {act.events} events · {act.ancients} ancients
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>
