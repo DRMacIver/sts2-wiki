@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+const enchantments = (await getCollection('enchantments'))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title="Enchantments">
+  <div class="page-header">
+    <h1>Enchantments</h1>
+    <p class="subtitle">{enchantments.length} enchantments that modify cards</p>
+  </div>
+
+  <div class="card-grid">
+    {enchantments.map(ench => (
+      <a href={`${base}enchantments/${ench.id}/`} class="card-entry">
+        <h3 class="desc-gold">{ench.data.title}</h3>
+        <div class="card-meta" style="margin-top: 0.25rem;">{ench.data.card_type}</div>
+        {ench.data.description_plain && (
+          <p class="card-meta" style="margin-top: 0.5rem; font-size: 0.85rem;">
+            {ench.data.description_plain.slice(0, 80)}{ench.data.description_plain.length > 80 ? '...' : ''}
+          </p>
+        )}
+      </a>
+    ))}
+  </div>
+</BaseLayout>

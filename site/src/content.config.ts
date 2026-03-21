@@ -239,4 +239,18 @@ const ascensions = defineCollection({
   }),
 });
 
-export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions, epochs, characters, ascensions };
+const enchantments = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/enchantments' }),
+  schema: z.object({
+    title: z.string(),
+    class_name: z.string(),
+    card_type: z.string().default('Any'),
+    description_plain: z.string().default(''),
+    description_html: z.string().default(''),
+    extra_card_text: z.string().optional(),
+    restrictions: z.array(z.string()).default([]),
+    stackable: z.boolean().default(false),
+  }),
+});
+
+export const collections = { cards, powers, monsters, encounters, relics, ancients, events, potions, epochs, characters, ascensions, enchantments };

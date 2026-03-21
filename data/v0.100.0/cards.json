@@ -173,10 +173,10 @@
     "loc_key": "ADAPTIVE_STRIKE",
     "title": "Adaptive Strike",
     "description_template": "Deal {Damage:diff()} damage.\nAdd a 0{energyPrefix:energyIcons(1)} copy of this card into your [gold]Discard Pile[/gold].",
-    "description_plain": "Deal 18 damage.\nAdd a 01 Energy copy of this card into your Discard Pile.",
-    "description_html": "Deal 18 damage.<br>Add a 01 Energy copy of this card into your <span class=\"desc-gold\">Discard Pile</span>.",
-    "upgraded_description_plain": "Deal 23 damage.\nAdd a 01 Energy copy of this card into your Discard Pile.",
-    "upgraded_description_html": "Deal 23 damage.<br>Add a 01 Energy copy of this card into your <span class=\"desc-gold\">Discard Pile</span>."
+    "description_plain": "Deal 18 damage.\nAdd a 0 Energy copy of this card into your Discard Pile.",
+    "description_html": "Deal 18 damage.<br>Add a 0 Energy copy of this card into your <span class=\"desc-gold\">Discard Pile</span>.",
+    "upgraded_description_plain": "Deal 23 damage.\nAdd a 0 Energy copy of this card into your Discard Pile.",
+    "upgraded_description_html": "Deal 23 damage.<br>Add a 0 Energy copy of this card into your <span class=\"desc-gold\">Discard Pile</span>."
   },
   {
     "class_name": "Adrenaline",
@@ -380,10 +380,10 @@
     "loc_key": "ALL_FOR_ONE",
     "title": "All for One",
     "description_template": "Deal {Damage:diff()} damage.\nPut ALL 0{energyPrefix:energyIcons(1)} cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
-    "description_plain": "Deal 10 damage.\nPut ALL 01 Energy cards from your Discard Pile into your Hand.",
-    "description_html": "Deal 10 damage.<br>Put ALL 01 Energy cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 14 damage.\nPut ALL 01 Energy cards from your Discard Pile into your Hand.",
-    "upgraded_description_html": "Deal 14 damage.<br>Put ALL 01 Energy cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "Deal 10 damage.\nPut ALL 0 Energy cards from your Discard Pile into your Hand.",
+    "description_html": "Deal 10 damage.<br>Put ALL 0 Energy cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 14 damage.\nPut ALL 0 Energy cards from your Discard Pile into your Hand.",
+    "upgraded_description_html": "Deal 14 damage.<br>Put ALL 0 Energy cards from your <span class=\"desc-gold\">Discard Pile</span> into your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Anger",
@@ -3620,8 +3620,8 @@
     "loc_key": "CORRUPTION",
     "title": "Corruption",
     "description_template": "Skills cost 0 {energyPrefix:energyIcons(1)}.\nWhenever you play a Skill, [gold]Exhaust[/gold] it.",
-    "description_plain": "Skills cost 0 1 Energy.\nWhenever you play a Skill, Exhaust it.",
-    "description_html": "Skills cost 0 1 Energy.<br>Whenever you play a Skill, <span class=\"desc-gold\">Exhaust</span> it."
+    "description_plain": "Skills cost 0  Energy.\nWhenever you play a Skill, Exhaust it.",
+    "description_html": "Skills cost 0  Energy.<br>Whenever you play a Skill, <span class=\"desc-gold\">Exhaust</span> it."
   },
   {
     "class_name": "CosmicIndifference",
@@ -5950,8 +5950,8 @@
     "loc_key": "EXPECT_A_FIGHT",
     "title": "Expect a Fight",
     "description_template": "Gain {energyPrefix:energyIcons(1)} for each Attack in your [gold]Hand[/gold].\nYou cannot gain\nadditional {energyPrefix:energyIcons(1)} this turn.{InCombat:\n(Gain {CalculatedEnergy:energyIcons()})|}",
-    "description_plain": "Gain 1 Energy for each Attack in your Hand.\nYou cannot gain\nadditional 1 Energy this turn.",
-    "description_html": "Gain 1 Energy for each Attack in your <span class=\"desc-gold\">Hand</span>.<br>You cannot gain<br>additional 1 Energy this turn."
+    "description_plain": "Gain  Energy for each Attack in your Hand.\nYou cannot gain\nadditional  Energy this turn.",
+    "description_html": "Gain  Energy for each Attack in your <span class=\"desc-gold\">Hand</span>.<br>You cannot gain<br>additional  Energy this turn."
   },
   {
     "class_name": "Expertise",
@@ -6355,8 +6355,8 @@
     "loc_key": "FERAL",
     "title": "Feral",
     "description_template": "The first {FeralPower:plural:time|{FeralPower:diff()} times} you play a\n0{energyPrefix:energyIcons(1)} Attack each turn,\nreturn it to your [gold]Hand[/gold].",
-    "description_plain": "The first time you play a\n01 Energy Attack each turn,\nreturn it to your Hand.",
-    "description_html": "The first time you play a<br>01 Energy Attack each turn,<br>return it to your <span class=\"desc-gold\">Hand</span>."
+    "description_plain": "The first time you play a\n0 Energy Attack each turn,\nreturn it to your Hand.",
+    "description_html": "The first time you play a<br>0 Energy Attack each turn,<br>return it to your <span class=\"desc-gold\">Hand</span>."
   },
   {
     "class_name": "Fetch",
@@ -6741,10 +6741,10 @@
     "loc_key": "FLATTEN",
     "title": "Flatten",
     "description_template": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nThis card costs 0 {energyPrefix:energyIcons(1)} if [gold]Osty[/gold] has attacked this turn.",
-    "description_plain": "Osty deals 12 damage.\nThis card costs 0 1 Energy if Osty has attacked this turn.",
-    "description_html": "<span class=\"desc-gold\">Osty</span> deals 12 damage.<br>This card costs 0 1 Energy if <span class=\"desc-gold\">Osty</span> has attacked this turn.",
-    "upgraded_description_plain": "Osty deals 16 damage.\nThis card costs 0 1 Energy if Osty has attacked this turn.",
-    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals 16 damage.<br>This card costs 0 1 Energy if <span class=\"desc-gold\">Osty</span> has attacked this turn."
+    "description_plain": "Osty deals 12 damage.\nThis card costs 0  Energy if Osty has attacked this turn.",
+    "description_html": "<span class=\"desc-gold\">Osty</span> deals 12 damage.<br>This card costs 0  Energy if <span class=\"desc-gold\">Osty</span> has attacked this turn.",
+    "upgraded_description_plain": "Osty deals 16 damage.\nThis card costs 0  Energy if Osty has attacked this turn.",
+    "upgraded_description_html": "<span class=\"desc-gold\">Osty</span> deals 16 damage.<br>This card costs 0  Energy if <span class=\"desc-gold\">Osty</span> has attacked this turn."
   },
   {
     "class_name": "Flechettes",
@@ -8384,10 +8384,10 @@
     "loc_key": "HELIX_DRILL",
     "title": "Helix Drill",
     "description_template": "Deal {Damage:diff()} damage for each {energyPrefix:energyIcons(1)} previously spent this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
-    "description_plain": "Deal 3 damage for each 1 Energy previously spent this turn.",
-    "description_html": "Deal 3 damage for each 1 Energy previously spent this turn.",
-    "upgraded_description_plain": "Deal 5 damage for each 1 Energy previously spent this turn.",
-    "upgraded_description_html": "Deal 5 damage for each 1 Energy previously spent this turn.",
+    "description_plain": "Deal 3 damage for each  Energy previously spent this turn.",
+    "description_html": "Deal 3 damage for each  Energy previously spent this turn.",
+    "upgraded_description_plain": "Deal 5 damage for each  Energy previously spent this turn.",
+    "upgraded_description_html": "Deal 5 damage for each  Energy previously spent this turn.",
     "unlocked_by": "Defect"
   },
   {
@@ -9294,10 +9294,10 @@
     "loc_key": "JACKPOT",
     "title": "Jackpot",
     "description_template": "Deal {Damage:diff()} damage.\nAdd {Cards:diff()} random{IfUpgraded:show: [gold]Upgraded[/gold]} 0{energyPrefix:energyIcons(1)} {Cards:plural:card|cards} into your [gold]Hand[/gold].",
-    "description_plain": "Deal 25 damage.\nAdd 3 random 01 Energy cards into your Hand.",
-    "description_html": "Deal 25 damage.<br>Add 3 random 01 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
-    "upgraded_description_plain": "Deal 30 damage.\nAdd 3 random Upgraded 01 Energy cards into your Hand.",
-    "upgraded_description_html": "Deal 30 damage.<br>Add 3 random <span class=\"desc-gold\">Upgraded</span> 01 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
+    "description_plain": "Deal 25 damage.\nAdd 3 random 0 Energy cards into your Hand.",
+    "description_html": "Deal 25 damage.<br>Add 3 random 0 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
+    "upgraded_description_plain": "Deal 30 damage.\nAdd 3 random Upgraded 0 Energy cards into your Hand.",
+    "upgraded_description_html": "Deal 30 damage.<br>Add 3 random <span class=\"desc-gold\">Upgraded</span> 0 Energy cards into your <span class=\"desc-gold\">Hand</span>.",
     "unlocked_by": "Magnum_Opus"
   },
   {
@@ -10715,10 +10715,10 @@
     "loc_key": "MOMENTUM_STRIKE",
     "title": "Momentum Strike",
     "description_template": "Deal {Damage:diff()} damage.\nReduce this card's cost to 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 10 damage.\nReduce this card's cost to 0 1 Energy.",
-    "description_html": "Deal 10 damage.<br>Reduce this card's cost to 0 1 Energy.",
-    "upgraded_description_plain": "Deal 13 damage.\nReduce this card's cost to 0 1 Energy.",
-    "upgraded_description_html": "Deal 13 damage.<br>Reduce this card's cost to 0 1 Energy."
+    "description_plain": "Deal 10 damage.\nReduce this card's cost to 0  Energy.",
+    "description_html": "Deal 10 damage.<br>Reduce this card's cost to 0  Energy.",
+    "upgraded_description_plain": "Deal 13 damage.\nReduce this card's cost to 0  Energy.",
+    "upgraded_description_html": "Deal 13 damage.<br>Reduce this card's cost to 0  Energy."
   },
   {
     "class_name": "MonarchsGaze",
@@ -11420,8 +11420,8 @@
     "loc_key": "ORBIT",
     "title": "Orbit",
     "description_template": "Every {energyPrefix:energyIcons(4)} you spend,\ngain {Energy:energyIcons()}.",
-    "description_plain": "Every 4 Energy you spend,\ngain 1 Energy.",
-    "description_html": "Every 4 Energy you spend,<br>gain 1 Energy."
+    "description_plain": "Every  Energy you spend,\ngain 1 Energy.",
+    "description_html": "Every  Energy you spend,<br>gain 1 Energy."
   },
   {
     "class_name": "Outbreak",
@@ -12117,10 +12117,10 @@
     "loc_key": "PINPOINT",
     "title": "Pinpoint",
     "description_template": "Deal {Damage:diff()} damage.\nCosts 1 less {energyPrefix:energyIcons(1)} for each Skill played this turn.",
-    "description_plain": "Deal 15 damage.\nCosts 1 less 1 Energy for each Skill played this turn.",
-    "description_html": "Deal 15 damage.<br>Costs 1 less 1 Energy for each Skill played this turn.",
-    "upgraded_description_plain": "Deal 19 damage.\nCosts 1 less 1 Energy for each Skill played this turn.",
-    "upgraded_description_html": "Deal 19 damage.<br>Costs 1 less 1 Energy for each Skill played this turn."
+    "description_plain": "Deal 15 damage.\nCosts 1 less  Energy for each Skill played this turn.",
+    "description_html": "Deal 15 damage.<br>Costs 1 less  Energy for each Skill played this turn.",
+    "upgraded_description_plain": "Deal 19 damage.\nCosts 1 less  Energy for each Skill played this turn.",
+    "upgraded_description_html": "Deal 19 damage.<br>Costs 1 less  Energy for each Skill played this turn."
   },
   {
     "class_name": "PoisonedStab",
@@ -12279,10 +12279,10 @@
     "loc_key": "POUNCE",
     "title": "Pounce",
     "description_template": "Deal {Damage:diff()} damage.\nThe next Skill you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 12 damage.\nThe next Skill you play costs 0 1 Energy.",
-    "description_html": "Deal 12 damage.<br>The next Skill you play costs 0 1 Energy.",
-    "upgraded_description_plain": "Deal 18 damage.\nThe next Skill you play costs 0 1 Energy.",
-    "upgraded_description_html": "Deal 18 damage.<br>The next Skill you play costs 0 1 Energy."
+    "description_plain": "Deal 12 damage.\nThe next Skill you play costs 0  Energy.",
+    "description_html": "Deal 12 damage.<br>The next Skill you play costs 0  Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nThe next Skill you play costs 0  Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>The next Skill you play costs 0  Energy."
   },
   {
     "class_name": "PreciseCut",
@@ -13644,10 +13644,10 @@
     "loc_key": "ROCKET_PUNCH",
     "title": "Rocket Punch",
     "description_template": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhen you create a Status card, reduce this card's cost to 0 {energyPrefix:energyIcons(1)} until played.",
-    "description_plain": "Deal 13 damage.\nDraw 1 card.\nWhen you create a Status card, reduce this card's cost to 0 1 Energy until played.",
-    "description_html": "Deal 13 damage.<br>Draw 1 card.<br>When you create a Status card, reduce this card's cost to 0 1 Energy until played.",
-    "upgraded_description_plain": "Deal 14 damage.\nDraw 2 cards.\nWhen you create a Status card, reduce this card's cost to 0 1 Energy until played.",
-    "upgraded_description_html": "Deal 14 damage.<br>Draw 2 cards.<br>When you create a Status card, reduce this card's cost to 0 1 Energy until played."
+    "description_plain": "Deal 13 damage.\nDraw 1 card.\nWhen you create a Status card, reduce this card's cost to 0  Energy until played.",
+    "description_html": "Deal 13 damage.<br>Draw 1 card.<br>When you create a Status card, reduce this card's cost to 0  Energy until played.",
+    "upgraded_description_plain": "Deal 14 damage.\nDraw 2 cards.\nWhen you create a Status card, reduce this card's cost to 0  Energy until played.",
+    "upgraded_description_html": "Deal 14 damage.<br>Draw 2 cards.<br>When you create a Status card, reduce this card's cost to 0  Energy until played."
   },
   {
     "class_name": "RollingBoulder",
@@ -13965,10 +13965,10 @@
     "loc_key": "SCRAPE",
     "title": "Scrape",
     "description_template": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} cards.\nDiscard all cards drawn this way that do not cost 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 1 Energy.",
-    "description_html": "Deal 7 damage.<br>Draw 4 cards.<br>Discard all cards drawn this way that do not cost 0 1 Energy.",
-    "upgraded_description_plain": "Deal 10 damage.\nDraw 5 cards.\nDiscard all cards drawn this way that do not cost 0 1 Energy.",
-    "upgraded_description_html": "Deal 10 damage.<br>Draw 5 cards.<br>Discard all cards drawn this way that do not cost 0 1 Energy."
+    "description_plain": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0  Energy.",
+    "description_html": "Deal 7 damage.<br>Draw 4 cards.<br>Discard all cards drawn this way that do not cost 0  Energy.",
+    "upgraded_description_plain": "Deal 10 damage.\nDraw 5 cards.\nDiscard all cards drawn this way that do not cost 0  Energy.",
+    "upgraded_description_html": "Deal 10 damage.<br>Draw 5 cards.<br>Discard all cards drawn this way that do not cost 0  Energy."
   },
   {
     "class_name": "Scrawl",
@@ -15744,10 +15744,10 @@
     "loc_key": "STOMP",
     "title": "Stomp",
     "description_template": "Deal {Damage:diff()} damage to ALL enemies.\nCosts 1 less {energyPrefix:energyIcons(1)} for each Attack played this turn.",
-    "description_plain": "Deal 12 damage to ALL enemies.\nCosts 1 less 1 Energy for each Attack played this turn.",
-    "description_html": "Deal 12 damage to ALL enemies.<br>Costs 1 less 1 Energy for each Attack played this turn.",
-    "upgraded_description_plain": "Deal 15 damage to ALL enemies.\nCosts 1 less 1 Energy for each Attack played this turn.",
-    "upgraded_description_html": "Deal 15 damage to ALL enemies.<br>Costs 1 less 1 Energy for each Attack played this turn."
+    "description_plain": "Deal 12 damage to ALL enemies.\nCosts 1 less  Energy for each Attack played this turn.",
+    "description_html": "Deal 12 damage to ALL enemies.<br>Costs 1 less  Energy for each Attack played this turn.",
+    "upgraded_description_plain": "Deal 15 damage to ALL enemies.\nCosts 1 less  Energy for each Attack played this turn.",
+    "upgraded_description_html": "Deal 15 damage to ALL enemies.<br>Costs 1 less  Energy for each Attack played this turn."
   },
   {
     "class_name": "StoneArmor",
@@ -16058,8 +16058,8 @@
     "title": "Subroutine",
     "description_template": "Whenever you play a Power, gain {energyPrefix:energyIcons(1)}.",
     "vars": [],
-    "description_plain": "Whenever you play a Power, gain 1 Energy.",
-    "description_html": "Whenever you play a Power, gain 1 Energy."
+    "description_plain": "Whenever you play a Power, gain  Energy.",
+    "description_html": "Whenever you play a Power, gain  Energy."
   },
   {
     "class_name": "SuckerPunch",
@@ -16491,10 +16491,10 @@
     "loc_key": "SYNTHESIS",
     "title": "Synthesis",
     "description_template": "Deal {Damage:diff()} damage.\nThe next Power you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 12 damage.\nThe next Power you play costs 0 1 Energy.",
-    "description_html": "Deal 12 damage.<br>The next Power you play costs 0 1 Energy.",
-    "upgraded_description_plain": "Deal 18 damage.\nThe next Power you play costs 0 1 Energy.",
-    "upgraded_description_html": "Deal 18 damage.<br>The next Power you play costs 0 1 Energy."
+    "description_plain": "Deal 12 damage.\nThe next Power you play costs 0  Energy.",
+    "description_html": "Deal 12 damage.<br>The next Power you play costs 0  Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nThe next Power you play costs 0  Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>The next Power you play costs 0  Energy."
   },
   {
     "class_name": "Tactician",
@@ -17612,10 +17612,10 @@
     "loc_key": "UNRELENTING",
     "title": "Unrelenting",
     "description_template": "Deal {Damage:diff()} damage.\nThe next Attack you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 12 damage.\nThe next Attack you play costs 0 1 Energy.",
-    "description_html": "Deal 12 damage.<br>The next Attack you play costs 0 1 Energy.",
-    "upgraded_description_plain": "Deal 18 damage.\nThe next Attack you play costs 0 1 Energy.",
-    "upgraded_description_html": "Deal 18 damage.<br>The next Attack you play costs 0 1 Energy."
+    "description_plain": "Deal 12 damage.\nThe next Attack you play costs 0  Energy.",
+    "description_html": "Deal 12 damage.<br>The next Attack you play costs 0  Energy.",
+    "upgraded_description_plain": "Deal 18 damage.\nThe next Attack you play costs 0  Energy.",
+    "upgraded_description_html": "Deal 18 damage.<br>The next Attack you play costs 0  Energy."
   },
   {
     "class_name": "Untouchable",
@@ -17784,10 +17784,10 @@
     "loc_key": "VEILPIERCER",
     "title": "Veilpiercer",
     "description_template": "Deal {Damage:diff()} damage.\nThe next [gold]Ethereal[/gold] card you play costs 0 {energyPrefix:energyIcons(1)}.",
-    "description_plain": "Deal 10 damage.\nThe next Ethereal card you play costs 0 1 Energy.",
-    "description_html": "Deal 10 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy.",
-    "upgraded_description_plain": "Deal 13 damage.\nThe next Ethereal card you play costs 0 1 Energy.",
-    "upgraded_description_html": "Deal 13 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0 1 Energy.",
+    "description_plain": "Deal 10 damage.\nThe next Ethereal card you play costs 0  Energy.",
+    "description_html": "Deal 10 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0  Energy.",
+    "upgraded_description_plain": "Deal 13 damage.\nThe next Ethereal card you play costs 0  Energy.",
+    "upgraded_description_html": "Deal 13 damage.<br>The next <span class=\"desc-gold\">Ethereal</span> card you play costs 0  Energy.",
     "unlocked_by": "Necrobinder"
   },
   {
@@ -17991,8 +17991,8 @@
     "loc_key": "WASTE_AWAY",
     "title": "Waste Away",
     "description_template": "Gain {WasteAwayPower:diff()} less {energyPrefix:energyIcons(1)} per turn.",
-    "description_plain": "Gain 1 less 1 Energy per turn.",
-    "description_html": "Gain 1 less 1 Energy per turn."
+    "description_plain": "Gain 1 less  Energy per turn.",
+    "description_html": "Gain 1 less  Energy per turn."
   },
   {
     "class_name": "WellLaidPlans",

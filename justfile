@@ -93,7 +93,10 @@ extract-events:
 extract-characters:
     uv run python -m scripts.extract_characters decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-characters extract-epochs
+extract-enchantments:
+    uv run python -m scripts.extract_enchantments decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
+
+extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-enchantments extract-characters extract-epochs
 
 # --- Site generation ---
 
@@ -131,7 +134,10 @@ generate-ascensions:
     uv run python -m scripts.generate_ascensions extracted/{{version}}/localization/eng site/src/content/ascensions --decompiled-dir decompiled/{{version}} --data-dir data/{{version}}
 
 # Generate from committed data only (safe for CI — no decompiled/extracted dirs needed)
-generate-from-data: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs generate-characters
+generate-enchantments:
+    uv run python -m scripts.generate_enchantments data/{{version}} site/src/content/enchantments
+
+generate-from-data: generate-cards generate-powers generate-monsters generate-encounters generate-potions generate-relics generate-ancients generate-events generate-epochs generate-characters generate-enchantments
 
 # Full generate including ascensions (requires extracted/ and decompiled/ dirs)
 generate: generate-from-data generate-ascensions

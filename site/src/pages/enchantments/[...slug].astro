@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { cleanDescription } from '../../utils';
+
+const base = import.meta.env.BASE_URL;
+
+export async function getStaticPaths() {
+  const enchantments = await getCollection('enchantments');
+  return enchantments.map(ench => ({
+    params: { slug: ench.id },
+    props: { ench },
+  }));
+}
+
+const { ench } = Astro.props;
+
+// Find events that reference this enchantment
+const allEvents = await getCollection('events');
+const relatedEvents = allEvents.filter(e => {
+  const desc = (e.data.description_html || '') + e.data.options.map(o => o.description).join('');
+  return desc.toLowerCase().includes(ench.data.title.toLowerCase());
+});
+---
+
+<BaseLayout title={ench.data.title}>
+  <div class="card-detail">
+    <a href={`${base}enchantments/`} class="back-link">&larr; All Enchantments</a>
+
+    <div class="card-header">
+      <h1 class="desc-gold">{ench.data.title}</h1>
+      <div class="card-meta" style="font-size: 0.9rem;">
+        Applies to: {ench.data.card_type} cards
+        {ench.data.stackable && <> · Stackable</>}
+      </div>
+    </div>
+
+    {ench.data.description_html && (
+      <>
+        <h2 class="section-heading">Effect</h2>
+        <div class="desc-text" style="font-size: 1.05rem;" set:html={cleanDescription(ench.data.description_html)} />
+      </>
+    )}
+
+    {ench.data.extra_card_text && (
+      <>
+        <h2 class="section-heading">Card Text Added</h2>
+        <div class="desc-text" style="font-size: 0.95rem; font-style: italic;">{ench.data.extra_card_text}</div>
+      </>
+    )}
+
+    <table class="stat-table" style="margin-top: 1.5rem;">
+      <tr><th>Card Type</th><td>{ench.data.card_type}</td></tr>
+      <tr><th>Stackable</th><td>{ench.data.stackable ? 'Yes' : 'No'}</td></tr>
+      {ench.data.restrictions.length > 0 && (
+        <tr><th>Restrictions</th><td>{ench.data.restrictions.join('; ')}</td></tr>
+      )}
+    </table>
+
+    {relatedEvents.length > 0 && (
+      <>
+        <h2 class="section-heading">Sources</h2>
+        <ul class="linked-list">
+          {relatedEvents.map(e => (
+            <li><a href={`${base}events/${e.id}/`}>{e.data.title}</a></li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+</BaseLayout>

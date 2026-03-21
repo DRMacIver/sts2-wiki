@@ -234,6 +234,9 @@ def _resolve_placeholder(match_str: str, var_lookup: dict[str, int], upgraded: b
     if "energyIcons" in fmt:
         if val is not None:
             return f"{val} Energy"
+        # energyPrefix is a display-only var (the number is in surrounding text)
+        if name == "energyPrefix":
+            return " Energy"
         m2 = re.search(r"energyIcons\((\d+)\)", fmt)
         if m2:
             return f"{m2.group(1)} Energy"

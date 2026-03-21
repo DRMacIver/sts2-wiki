@@ -1,0 +1,163 @@
+[
+  {
+    "class_name": "Adroit",
+    "card_type": "Any",
+    "show_amount": true,
+    "has_extra_card_text": true,
+    "title": "Adroit",
+    "description": "Gain [blue]{Block:diff()}[/blue] [gold]Block[/gold].",
+    "extra_card_text": "Gain {Block:diff()} [gold]Block[/gold]."
+  },
+  {
+    "class_name": "Clone",
+    "card_type": "Any",
+    "title": "Clone",
+    "description": "This card can be duplicated at [gold]Rest Sites[/gold]."
+  },
+  {
+    "class_name": "Corrupted",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Corrupted",
+    "description": "Deal [blue]50%[/blue] more damage, but lose [blue]2[/blue] HP.",
+    "extra_card_text": "Lose 2 HP."
+  },
+  {
+    "class_name": "Glam",
+    "card_type": "Any",
+    "title": "Glam",
+    "description": "This card has [gold]Replay[/gold] once per combat."
+  },
+  {
+    "class_name": "Goopy",
+    "card_type": "Any",
+    "restrictions": [
+      "Defend-tagged cards only"
+    ],
+    "has_extra_card_text": true,
+    "title": "Goopy",
+    "description": "This card gains [gold]Exhaust[/gold]. When played, permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+    "extra_card_text": "Permanently increase this card's [gold]Block[/gold] by [blue]1[/blue]."
+  },
+  {
+    "class_name": "Imbued",
+    "card_type": "Any",
+    "title": "Imbued",
+    "description": "This card is played automatically at the start of each combat.",
+    "extra_card_text": "Imbued."
+  },
+  {
+    "class_name": "Instinct",
+    "card_type": "Any",
+    "title": "Instinct",
+    "description": "This card's attack damage is doubled."
+  },
+  {
+    "class_name": "Momentum",
+    "card_type": "Any",
+    "show_amount": true,
+    "has_extra_card_text": true,
+    "title": "Momentum",
+    "description": "Increase this card's attack damage by [blue]{Amount}[/blue] this combat when played.",
+    "extra_card_text": "Increase this card's damage by {Amount} this combat."
+  },
+  {
+    "class_name": "Nimble",
+    "card_type": "Any",
+    "show_amount": true,
+    "title": "Nimble",
+    "description": "Increases [gold]Block[/gold] gained from this card by [blue]{Amount}[/blue]."
+  },
+  {
+    "class_name": "PerfectFit",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Perfect Fit",
+    "description": "Whenever this would be shuffled into your [gold]Draw Pile[/gold], place it on the top instead.",
+    "extra_card_text": "Perfect Fit."
+  },
+  {
+    "class_name": "RoyallyApproved",
+    "card_type": "Any",
+    "title": "Royally Approved",
+    "description": "This card has [gold]Innate[/gold] and [gold]Retain[/gold]."
+  },
+  {
+    "class_name": "Sharp",
+    "card_type": "Any",
+    "show_amount": true,
+    "title": "Sharp",
+    "description": "Increases damage on this card by [blue]{Amount}[/blue]."
+  },
+  {
+    "class_name": "Slither",
+    "card_type": "Any",
+    "restrictions": [
+      "Excludes X-cost cards",
+      "Excludes Unplayable cards"
+    ],
+    "title": "Slither",
+    "description": "When you draw this card, randomize its cost from [blue]0[/blue] to [blue]3[/blue]."
+  },
+  {
+    "class_name": "SlumberingEssence",
+    "card_type": "Any",
+    "title": "Slumbering Essence",
+    "description": "If this card is in your hand at the end of turn, reduce its cost by [blue]1[/blue] until it is played."
+  },
+  {
+    "class_name": "SoulsPower",
+    "card_type": "Any",
+    "restrictions": [
+      "Cards with Exhaust only"
+    ],
+    "title": "Soul's Power",
+    "description": "This card loses [gold]Exhaust[/gold]."
+  },
+  {
+    "class_name": "Sown",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Sown",
+    "description": "The first time you play this card each combat, gain {Amount:energyIcons()}.",
+    "extra_card_text": "Gain {Amount:energyIcons()}."
+  },
+  {
+    "class_name": "Spiral",
+    "card_type": "Any",
+    "restrictions": [
+      "Defend-tagged cards only",
+      "Strike or Defend-tagged Basic cards only"
+    ],
+    "title": "Spiral",
+    "description": "This card gains [gold]Replay[/gold] [blue]1[/blue]."
+  },
+  {
+    "class_name": "Steady",
+    "card_type": "Any",
+    "title": "Steady",
+    "description": "This card gains [gold]Retain[/gold]."
+  },
+  {
+    "class_name": "Swift",
+    "card_type": "Any",
+    "show_amount": true,
+    "has_extra_card_text": true,
+    "title": "Swift",
+    "description": "The first time you play this card, draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
+    "extra_card_text": "Draw {Amount} {Amount:plural:card|cards} the first time this is played."
+  },
+  {
+    "class_name": "TezcatarasEmber",
+    "card_type": "Any",
+    "title": "Tezcatara's Ember",
+    "description": "Costs [blue]0[/blue] and gains [gold]Eternal[/gold]."
+  },
+  {
+    "class_name": "Vigorous",
+    "card_type": "Any",
+    "show_amount": true,
+    "title": "Vigorous",
+    "description": "The first time this card is played, it deals [blue]{Amount}[/blue] additional damage."
+  }
+]

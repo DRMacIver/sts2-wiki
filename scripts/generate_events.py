@@ -501,6 +501,41 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
 }
 
 
+def _humanize_condition(cond: str) -> str:
+    """Convert machine-readable conditions to human-friendly text."""
+    import re as re_mod
+
+    # "Gold >= 100" -> "At least 100 Gold"
+    m = re_mod.match(r"Gold\s*>=\s*(\d+)", cond)
+    if m:
+        return f"At least {m.group(1)} Gold"
+    # "HP >= 12" -> "At least 12 HP"
+    m = re_mod.match(r"HP\s*>=\s*(\d+)", cond)
+    if m:
+        return f"At least {m.group(1)} HP"
+    # "HP > 5" -> "More than 5 HP"
+    m = re_mod.match(r"HP\s*>\s*(\d+)", cond)
+    if m:
+        return f"More than {m.group(1)} HP"
+    # "Floor >= 6" -> "Floor 6 or later"
+    m = re_mod.match(r"Floor\s*>=\s*(\d+)", cond)
+    if m:
+        return f"Floor {m.group(1)} or later"
+    # "Floor > 6" -> "After floor 6"
+    m = re_mod.match(r"Floor\s*>\s*(\d+)", cond)
+    if m:
+        return f"After floor {m.group(1)}"
+    # "Max HP >= N" -> "At least N Max HP"
+    m = re_mod.match(r"Max HP\s*>=\s*(\d+)", cond)
+    if m:
+        return f"At least {m.group(1)} Max HP"
+    # "Deck size >= N" -> "At least N cards in deck"
+    m = re_mod.match(r"Deck size\s*>=\s*(\d+)", cond)
+    if m:
+        return f"At least {m.group(1)} cards in deck"
+    return cond
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate event content files")
     parser.add_argument("data_dir", help="Path to versioned data directory")
@@ -582,6 +617,7 @@ def main() -> None:
         event["options"] = merged_options
 
         conditions = event.get("conditions", [])
+        conditions = [_humanize_condition(c) for c in conditions]
         conditions_str = "; ".join(conditions) if conditions else ""
 
         lines = ["---"]
