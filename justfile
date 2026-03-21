@@ -14,7 +14,7 @@ default: check build
 
 # --- Sanity checks ---
 
-check: check-format check-types check-links
+check: check-format check-types check-links check-images
 
 check-format:
     uv run ruff check scripts/
@@ -25,6 +25,9 @@ check-types:
 
 check-links:
     uv run python -m scripts.check_links site/dist
+
+check-images:
+    uv run python -m scripts.check_images data/{{version}} site/public/images
 
 format:
     uv run ruff format scripts/
@@ -52,6 +55,7 @@ extract-pck:
     else
         echo "Extracting PCK for {{version}}..."
         uv run python -m scripts.extract_pck "{{sts2_pck}}" "extracted/{{version}}" --prefix localization/eng
+        uv run python -m scripts.extract_pck "{{sts2_pck}}" "extracted/{{version}}" --prefix images/atlases
     fi
 
 # --- Extraction pipeline ---
@@ -145,4 +149,4 @@ preview:
     cd site && npm run dev
 
 # Full update from game files
-update: decompile extract-pck extract generate build-site
+update: decompile extract-pck extract extract-images generate build-site
