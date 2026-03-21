@@ -21,12 +21,21 @@ CARD_NOTES: dict[str, str] = {
         "Base damage is 6. The formula is "
         "6 + 3 per card in Exhaust Pile (upgraded: 6 + 4 per card)."
     ),
+    "Alchemize": (
+        "Potion pool: your character's potions + shared potions, "
+        "weighted by rarity (65% Common, 25% Uncommon, 10% Rare). "
+        "Only potions that can be generated in combat are eligible."
+    ),
     # --- B ---
     "BansheesCry": (
         "Cost reduction is cumulative across the entire combat, not per-turn. "
         "Starts at 6 energy. Each Ethereal card played this combat reduces cost by 1."
     ),
     "BeatDown": "Attacks auto-played from discard target a random enemy.",
+    "BundleOfJoy": (
+        "Card pool: Colorless cards only (excludes Basic/Ancient/Event rarity). "
+        "Uniform random selection."
+    ),
     "BlightStrike": (
         "Doom applied equals actual damage dealt (after Block, Strength, Vulnerable), "
         "not the card's face damage."
@@ -49,6 +58,7 @@ CARD_NOTES: dict[str, str] = {
         "Prioritizes playing non-Unplayable cards from draw pile. "
         "Only plays Unplayable cards as a fallback."
     ),
+    "Chaos": ("Orb pool: Lightning, Frost, Dark, Plasma, Glass. Uniform random selection."),
     "Claw": "Each play permanently buffs ALL Claw copies across all piles.",
     "Conflagration": (
         "Base damage is 8 (upgraded: 9). Formula: 8 + 2 per other Attack "
@@ -66,7 +76,14 @@ CARD_NOTES: dict[str, str] = {
     ),
     "DeathsDoor": ("Block is tripled (1 base + 2 additional) only if YOU applied Doom this turn."),
     "Discovery": (
-        "The 0-cost persists if you Retain the card (lasts until played, not just this turn)."
+        "Card pool: your character's cards (excludes Basic/Ancient/Event rarity). "
+        "You choose 1 of 3. The 0-cost persists if you Retain the card "
+        "(lasts until played, not just this turn)."
+    ),
+    "Distraction": (
+        "Card pool: your character's Skill cards "
+        "(excludes Basic/Ancient/Event rarity). "
+        "Added directly to your Hand, free to play this turn."
     ),
     "DodgeAndRoll": (
         "Next-turn block uses the actual block gained (including Dexterity), "
@@ -116,6 +133,11 @@ CARD_NOTES: dict[str, str] = {
         "Auto-plays from the Exhaust Pile before your hand is drawn each turn. "
         "It unexhausts itself to play."
     ),
+    "InfernalBlade": (
+        "Card pool: your character's Attack cards "
+        "(excludes Basic/Ancient/Event rarity). "
+        "Added directly to your Hand, free to play this turn."
+    ),
     # --- I ---
     "Inferno": ("Self-damage starts at 1 HP/turn and increments by 1 each time Inferno is played."),
     # --- K ---
@@ -134,8 +156,25 @@ CARD_NOTES: dict[str, str] = {
         "50% bonus (upgraded: 75%) is a true multiplicative modifier (1.5x/1.75x). "
         "Only applies to the first Attack each turn."
     ),
+    "Jackpot": (
+        "Card pool: your character's 0-cost cards "
+        "(excludes Basic/Ancient/Event rarity and X-cost). "
+        "May generate duplicates."
+    ),
+    "JackOfAllTrades": (
+        "Card pool: Colorless cards (excludes itself and Basic/Ancient/Event rarity)."
+    ),
+    "Largesse": (
+        "Card pool: Colorless cards (excludes Basic/Ancient/Event rarity). "
+        "Added to the target ally's Hand."
+    ),
     # --- M ---
     "MakeItSo": ("Returns to hand from any pile (draw, discard, exhaust) every 3 Skills played."),
+    "ManifestAuthority": ("Card pool: Colorless cards (excludes Basic/Ancient/Event rarity)."),
+    "Metamorphosis": (
+        "Card pool: your character's Attack cards "
+        "(excludes Basic/Ancient/Event rarity). May generate duplicates."
+    ),
     "Mangle": (
         "Strength loss is temporary. The enemy regains the lost Strength at end of their turn."
     ),
@@ -176,6 +215,9 @@ CARD_NOTES: dict[str, str] = {
         "Energy threshold is always 4 regardless of stacks. "
         "Stacking increases energy gained per trigger. Can trigger multiple times per turn."
     ),
+    "Quasar": (
+        "Card pool: Colorless cards (excludes Basic/Ancient/Event rarity). You choose 1 of 3."
+    ),
     # --- P ---
     "ParticleWall": (
         "Returns to hand after being played instead of discarding. Infinitely replayable."
@@ -215,7 +257,17 @@ CARD_NOTES: dict[str, str] = {
     ),
     "Shiv": "If Fan of Knives is active, Shivs hit ALL enemies instead of one.",
     "SoulStorm": "Base damage is 9. Formula: 9 + 2 per Soul in Exhaust Pile.",
+    "Splash": (
+        "Card pool: Attack cards from other characters' pools "
+        "(all unlocked characters except yours). "
+        "You choose 1 of 3."
+    ),
     "Spite": "Only triggers on unblocked damage during the player's combat turn.",
+    "Stoke": (
+        "Card pool: your character's cards "
+        "(excludes Basic/Ancient/Event rarity). May generate duplicates. "
+        "Upgraded version generates upgraded cards."
+    ),
     "Squeeze": ("Base damage is 25. Counts Osty Attack cards across all piles, not just in hand."),
     "Stratagem": "Single-player only. Cannot be used in co-op.",
     "SummonForth": "Retrieves ALL Sovereign Blade copies from any pile, not just one.",
@@ -235,6 +287,10 @@ CARD_NOTES: dict[str, str] = {
         "Subsequent plays only add 1 stack each."
     ),
     "Transfigure": ("Permanently adds Replay to the chosen card AND increases its cost by 1."),
+    "TrueGrit": (
+        "Unupgraded: exhausts a random card from your hand. "
+        "Upgraded: you choose which card to exhaust."
+    ),
     # --- U ---
     "Undeath": "Creates a clone inheriting all modifications, not a fresh copy.",
     "Unleash": "Base damage is 6 plus Osty's current HP.",
@@ -246,4 +302,9 @@ CARD_NOTES: dict[str, str] = {
     # --- V ---
     "VoidForm": "Immediately ends your turn. Cannot be undone.",
     "Voltaic": "Counts Lightning channeled across the entire combat, not just this turn.",
+    "WhiteNoise": (
+        "Card pool: your character's Power cards "
+        "(excludes Basic/Ancient/Event rarity). "
+        "Added directly to your Hand, free to play this turn."
+    ),
 }
