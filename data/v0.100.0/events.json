@@ -32,6 +32,18 @@
     "conditions": [
       "Has 2+ Strikes and 2+ Defends"
     ],
+    "card_refs": [
+      {
+        "class_name": "UltimateStrike",
+        "title": "Ultimate Strike",
+        "slug": "ultimate-strike"
+      },
+      {
+        "class_name": "UltimateDefend",
+        "title": "Ultimate Defend",
+        "slug": "ultimate-defend"
+      }
+    ],
     "loc_key": "AMALGAMATOR",
     "title": "Amalgamator",
     "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in\u2014the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \u201cface\u201d is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\u201cOne with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\u201d",
@@ -116,6 +128,18 @@
   {
     "class_name": "Bugslayer",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "Exterminate",
+        "title": "Exterminate",
+        "slug": "exterminate"
+      },
+      {
+        "class_name": "Squash",
+        "title": "Squash",
+        "slug": "squash"
+      }
+    ],
     "loc_key": "BUGSLAYER",
     "title": "Bugslayer",
     "description": "As you're fending off a [jitter][red]swarm of aggressive insects[/red][/jitter] you suddenly notice a [gold]Mighty Rugged Warrior-Man[/gold] fighting beside you this whole time!\n\nThe insects, sensing defeat, scatter. You turn to your fellow fighter.\n\u201cWould you like any tips on exterminating these pests?\u201d\n\nHow polite. You nod and accept his offer.",
@@ -136,6 +160,13 @@
   {
     "class_name": "ByrdonisNest",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "ByrdonisEgg",
+        "title": "Byrdonis Egg",
+        "slug": "byrdonis-egg"
+      }
+    ],
     "loc_key": "BYRDONIS_NEST",
     "title": "Byrdonis Nest",
     "description": "You spot an enormous [jitter][red]Shambling Beast[/red][/jitter] chase off an injured [green][sine]Green Byrd[/sine][/green].\n\nIn the alcove the byrd fled from, a [gold]single unguarded egg[/gold] lies abandoned.\n\n[sine]Your stomach gurgles...[/sine]",
@@ -200,6 +231,13 @@
       "Gold >= 100",
       "Act 2+"
     ],
+    "card_refs": [
+      {
+        "class_name": "Debt",
+        "title": "Debt",
+        "slug": "debt"
+      }
+    ],
     "loc_key": "CRYSTAL_SPHERE",
     "title": "Crystal Sphere",
     "description": "[sine][blue]\u201cI predicted you'd enter...!\u201d[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]\u201cYour destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!\u201d[/blue][/sine]\n\u201cOkay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well,\u201d she says while bringing out pen and parchment.",
@@ -251,6 +289,23 @@
   {
     "class_name": "DollRoom",
     "conditions": [],
+    "relic_refs": [
+      {
+        "class_name": "DaughterOfTheWind",
+        "title": "Daughter of the Wind",
+        "slug": "daughter-of-the-wind"
+      },
+      {
+        "class_name": "MrStruggles",
+        "title": "Mr. Struggles",
+        "slug": "mr-struggles"
+      },
+      {
+        "class_name": "BingBong",
+        "title": "Bing Bong",
+        "slug": "bing-bong"
+      }
+    ],
     "loc_key": "DOLL_ROOM",
     "title": "Doll Room",
     "description": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from [green]joy[/green] to [purple]sorrow[/purple], their attire spanning centuries and realms beyond your own.\n\nA [sine][blue]chorus of whispers[/blue][/sine] grows louder and louder until [jitter][red]the dolls are shouting[/red][/jitter] over each other and calling for you...\n\nYou must choose one and leave immediately.",
@@ -293,6 +348,13 @@
   {
     "class_name": "DrowningBeacon",
     "conditions": [],
+    "relic_refs": [
+      {
+        "class_name": "FresnelLens",
+        "title": "Fresnel Lens",
+        "slug": "fresnel-lens"
+      }
+    ],
     "loc_key": "DROWNING_BEACON",
     "title": "Drowning Beacon",
     "description": "Crossing a dreamscape of rocks and still waters, you emerge to face a [sine]sinking lighthouse[/sine] emitting [purple]anti-light[/purple].\n\nYou can bottle up the [aqua][sine]eerily-glowing water[/sine][/aqua] that has pooled here or climb up the dilapidated structure to retrieve the [gold]lens[/gold].",
@@ -344,6 +406,58 @@
       "Single player only",
       "OR has FoulPotion"
     ],
+    "relic_refs": [
+      {
+        "class_name": "FakeAnchor",
+        "title": "Anchor???",
+        "slug": "anchor"
+      },
+      {
+        "class_name": "FakeBloodVial",
+        "title": "Blood Vial???",
+        "slug": "blood-vial"
+      },
+      {
+        "class_name": "FakeHappyFlower",
+        "title": "Happy Flower???",
+        "slug": "happy-flower"
+      },
+      {
+        "class_name": "FakeLeesWaffle",
+        "title": "Lee's Waffle???",
+        "slug": "lee-s-waffle"
+      },
+      {
+        "class_name": "FakeMango",
+        "title": "Mango???",
+        "slug": "mango"
+      },
+      {
+        "class_name": "FakeOrichalcum",
+        "title": "Orichalcum???",
+        "slug": "orichalcum"
+      },
+      {
+        "class_name": "FakeSneckoEye",
+        "title": "Snecko Eye???",
+        "slug": "snecko-eye"
+      },
+      {
+        "class_name": "FakeStrikeDummy",
+        "title": "Strike Dummy???",
+        "slug": "strike-dummy"
+      },
+      {
+        "class_name": "FakeVenerableTeaSet",
+        "title": "Venerable Tea Set???",
+        "slug": "venerable-tea-set"
+      },
+      {
+        "class_name": "FakeMerchantsRug",
+        "title": "The Merchant's Rug???",
+        "slug": "the-merchant-s-rug"
+      }
+    ],
     "loc_key": "FAKE_MERCHANT",
     "title": "The Merchant???",
     "description": "Placeholder",
@@ -354,6 +468,13 @@
     "class_name": "FieldOfManSizedHoles",
     "conditions": [
       "Has enchantable cards"
+    ],
+    "card_refs": [
+      {
+        "class_name": "Normality",
+        "title": "Normality",
+        "slug": "normality"
+      }
     ],
     "loc_key": "FIELD_OF_MAN_SIZED_HOLES",
     "title": "Field of Man-Sized Holes",
@@ -375,6 +496,20 @@
   {
     "class_name": "GraveOfTheForgotten",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "Decay",
+        "title": "Decay",
+        "slug": "decay"
+      }
+    ],
+    "relic_refs": [
+      {
+        "class_name": "ForgottenSoul",
+        "title": "Forgotten Soul",
+        "slug": "forgotten-soul"
+      }
+    ],
     "loc_key": "GRAVE_OF_THE_FORGOTTEN",
     "title": "Grave of the Forgotten",
     "description": "There is a single grave with a [jitter][aqua]roiling blue flame[/aqua][/jitter]...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it [sine]begging[/sine] to journey with you.\n\nBut perhaps it's better for it to face the [red]truth[/red]?",
@@ -459,6 +594,13 @@
   {
     "class_name": "LostWisp",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "Decay",
+        "title": "Decay",
+        "slug": "decay"
+      }
+    ],
     "loc_key": "LOST_WISP",
     "title": "The Lost Wisp",
     "description": "In the distance is an odd sight. Mounds and mounds of [sine][red]deceased insects[/red][/sine], surrounding what looks to be a [orange]small glowing mote[/orange].\nIt seems to be an effective attractant for all manner of bugs but you see it lash out some flames!\n\nYou move closer to investigate.",
@@ -670,6 +812,13 @@
     "conditions": [
       "HP >= 12"
     ],
+    "relic_refs": [
+      {
+        "class_name": "RoyalPoison",
+        "title": "Royal Poison",
+        "slug": "royal-poison"
+      }
+    ],
     "loc_key": "ROUND_TEA_PARTY",
     "title": "The Round Tea Party",
     "description": "You find an [orange]invitation[/orange] for a [blue]\u201cSir Galalot\u201d[/blue] to a tea party and decide to show up in his stead.\n\nUpon entering an unassuming rotunda, you find yourself in the midst of [gold]commanders[/gold], [aqua]generals[/aqua], [red]warlords[/red], and [blue]mercenaries[/blue] having... tea?\nThe gigantic knight donning a [gold]golden crown[/gold] speaks.\n\n[jitter]\u201cThou art late for [b]Tea[/b]?!\u201d[/jitter]",
@@ -840,6 +989,13 @@
   {
     "class_name": "SunkenStatue",
     "conditions": [],
+    "relic_refs": [
+      {
+        "class_name": "SwordOfStone",
+        "title": "Sword of Stone",
+        "slug": "sword-of-stone"
+      }
+    ],
     "loc_key": "SUNKEN_STATUE",
     "title": "The Sunken Statue",
     "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
@@ -935,6 +1091,23 @@
     "conditions": [
       "Gold >= 150",
       "Act 3 excluded"
+    ],
+    "relic_refs": [
+      {
+        "class_name": "BoneTea",
+        "title": "Bone Tea",
+        "slug": "bone-tea"
+      },
+      {
+        "class_name": "EmberTea",
+        "title": "Ember Tea",
+        "slug": "ember-tea"
+      },
+      {
+        "class_name": "TeaOfDiscourtesy",
+        "title": "Tea of Discourtesy",
+        "slug": "tea-of-discourtesy"
+      }
     ],
     "loc_key": "TEA_MASTER",
     "title": "Tea Master",
@@ -1035,6 +1208,13 @@
   {
     "class_name": "ThisOrThat",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "Clumsy",
+        "title": "Clumsy",
+        "slug": "clumsy"
+      }
+    ],
     "loc_key": "THIS_OR_THAT",
     "title": "This or That?",
     "description": "Arms suddenly jut out from a nearby hole, clutching a [gold]suspicious bag of riches[/gold] and a clearly [purple]cursed relic[/purple].\n\n[jitter][blue]\u201cThis... or That?\u201d[/blue][/jitter]\na scratched-up voice whispers from below.",
@@ -1082,6 +1262,85 @@
     "class_name": "TrashHeap",
     "conditions": [
       "HP > 5"
+    ],
+    "card_refs": [
+      {
+        "class_name": "Caltrops",
+        "title": "Caltrops",
+        "slug": "caltrops"
+      },
+      {
+        "class_name": "Clash",
+        "title": "Clash",
+        "slug": "clash"
+      },
+      {
+        "class_name": "Distraction",
+        "title": "Distraction",
+        "slug": "distraction"
+      },
+      {
+        "class_name": "DualWield",
+        "title": "Dual Wield",
+        "slug": "dual-wield"
+      },
+      {
+        "class_name": "Entrench",
+        "title": "Entrench",
+        "slug": "entrench"
+      },
+      {
+        "class_name": "HelloWorld",
+        "title": "Hello World",
+        "slug": "hello-world"
+      },
+      {
+        "class_name": "Outmaneuver",
+        "title": "Outmaneuver",
+        "slug": "outmaneuver"
+      },
+      {
+        "class_name": "Rebound",
+        "title": "Rebound",
+        "slug": "rebound"
+      },
+      {
+        "class_name": "RipAndTear",
+        "title": "Rip and Tear",
+        "slug": "rip-and-tear"
+      },
+      {
+        "class_name": "Stack",
+        "title": "Stack",
+        "slug": "stack"
+      }
+    ],
+    "relic_refs": [
+      {
+        "class_name": "DarkstonePeriapt",
+        "title": "Darkstone Periapt",
+        "slug": "darkstone-periapt"
+      },
+      {
+        "class_name": "DreamCatcher",
+        "title": "Dream Catcher",
+        "slug": "dream-catcher"
+      },
+      {
+        "class_name": "HandDrill",
+        "title": "Hand Drill",
+        "slug": "hand-drill"
+      },
+      {
+        "class_name": "MawBank",
+        "title": "Maw Bank",
+        "slug": "maw-bank"
+      },
+      {
+        "class_name": "TheBoot",
+        "title": "The Boot",
+        "slug": "the-boot"
+      }
     ],
     "loc_key": "TRASH_HEAP",
     "title": "Trash Heap",
@@ -1135,6 +1394,13 @@
   {
     "class_name": "UnrestSite",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "PoorSleep",
+        "title": "Poor Sleep",
+        "slug": "poor-sleep"
+      }
+    ],
     "loc_key": "UNREST_SITE",
     "title": "Unrest Site",
     "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
@@ -1155,6 +1421,13 @@
   {
     "class_name": "WarHistorianRepy",
     "conditions": [],
+    "relic_refs": [
+      {
+        "class_name": "HistoryCourse",
+        "title": "History Course",
+        "slug": "history-course"
+      }
+    ],
     "loc_key": "WAR_HISTORIAN_REPY",
     "title": "War Historian, Repy",
     "description": "An academic is trapped in a [purple]hanging cage[/purple] next to a [gold]treasure chest[/gold].\n\nThe academic is muttering about [sine][orange]\u201cOne-Time-Use Keys\u201d[/orange][/sine] while furiously writing something.\n\nLooks like you can unlock the [purple]cage[/purple] or the [gold]chest[/gold].",
@@ -1247,6 +1520,13 @@
   {
     "class_name": "Wellspring",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "Guilty",
+        "title": "Guilty",
+        "slug": "guilty"
+      }
+    ],
     "loc_key": "WELLSPRING",
     "title": "Wellspring",
     "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
@@ -1287,6 +1567,18 @@
   {
     "class_name": "WoodCarvings",
     "conditions": [],
+    "card_refs": [
+      {
+        "class_name": "Peck",
+        "title": "Peck",
+        "slug": "peck"
+      },
+      {
+        "class_name": "ToricToughness",
+        "title": "Toric Toughness",
+        "slug": "toric-toughness"
+      }
+    ],
     "loc_key": "WOOD_CARVINGS",
     "title": "Wood Carvings",
     "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",

@@ -155,6 +155,16 @@ const events = defineCollection({
     })).default([]),
     acts: z.array(z.string()).default([]),
     conditions: z.string().default(''),
+    card_refs: z.array(z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    })).default([]),
+    relic_refs: z.array(z.object({
+      class_name: z.string(),
+      title: z.string(),
+      slug: z.string(),
+    })).default([]),
   }),
 });
 

@@ -271,6 +271,22 @@ def parse_event_file(class_name: str, content: str) -> dict | None:
     # Extract conditions
     event["conditions"] = parse_is_allowed(content)
 
+    # Extract referenced cards (ModelDb.Card<X>())
+    card_refs: list[str] = []
+    for m in re.finditer(r"ModelDb\.Card<(\w+)>\(\)", content):
+        if m.group(1) not in card_refs:
+            card_refs.append(m.group(1))
+    if card_refs:
+        event["card_refs"] = card_refs
+
+    # Extract referenced relics (ModelDb.Relic<X>())
+    relic_refs: list[str] = []
+    for m in re.finditer(r"ModelDb\.Relic<(\w+)>\(\)", content):
+        if m.group(1) not in relic_refs:
+            relic_refs.append(m.group(1))
+    if relic_refs:
+        event["relic_refs"] = relic_refs
+
     return event
 
 
@@ -308,6 +324,27 @@ def main() -> None:
     # Load localization
     loc_data = load_localization(loc_dir, "events")
     cards_loc = load_localization(loc_dir, "cards")
+    # Build title lookups from existing data files
+    import json as json_mod
+
+    card_titles: dict[str, str] = {}
+    cards_path = os.path.join(output_dir, "cards.json")
+    if os.path.exists(cards_path):
+        with open(cards_path) as f:
+            for c in json_mod.load(f):
+                card_titles[c["class_name"]] = c["title"]
+
+    relic_titles: dict[str, str] = {}
+    relics_path = os.path.join(output_dir, "relics.json")
+    if os.path.exists(relics_path):
+        with open(relics_path) as f:
+            for r in json_mod.load(f):
+                relic_titles[r["class_name"]] = r["title"]
+
+    def slugify(name: str) -> str:
+        s = name.lower()
+        s = re.sub(r"[^a-z0-9]+", "-", s)
+        return s.strip("-")
 
     # Build act assignment map
     act_event_map = build_act_event_map(decompiled_dir)
@@ -391,6 +428,28 @@ def main() -> None:
 
         # Act assignments
         event["acts"] = act_event_map.get(class_name, [])
+
+        # Enrich card refs with titles and slugs
+        if "card_refs" in event:
+            event["card_refs"] = [
+                {
+                    "class_name": c,
+                    "title": card_titles.get(c, c),
+                    "slug": slugify(card_titles.get(c, c)),
+                }
+                for c in event["card_refs"]
+            ]
+
+        # Enrich relic refs with titles and slugs
+        if "relic_refs" in event:
+            event["relic_refs"] = [
+                {
+                    "class_name": r,
+                    "title": relic_titles.get(r, r),
+                    "slug": slugify(relic_titles.get(r, r)),
+                }
+                for r in event["relic_refs"]
+            ]
 
         events.append(event)
 

@@ -378,6 +378,8 @@ def main() -> None:
         lines.append(f"options: {json.dumps(event.get('options', []))}")
         lines.append(f"acts: {json.dumps(event.get('acts', []))}")
         lines.append(f"conditions: {escape_yaml(conditions_str)}")
+        lines.append(f"card_refs: {json.dumps(event.get('card_refs', []))}")
+        lines.append(f"relic_refs: {json.dumps(event.get('relic_refs', []))}")
         lines.append("---")
         lines.append("")
 

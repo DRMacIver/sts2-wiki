@@ -56,5 +56,36 @@ const { event } = Astro.props;
         <p class="card-meta" style="font-size: 0.9rem;">{event.data.conditions}</p>
       </>
     )}
+
+    {event.data.card_refs.length > 0 && (
+      <>
+        <h2 class="section-heading">Related Cards</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {event.data.card_refs.map(card => (
+            <a href={`${import.meta.env.BASE_URL}cards/${card.slug}/`} class="card-entry">
+              <h3 style="font-size: 0.95rem;">{card.title}</h3>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+
+    {event.data.relic_refs.length > 0 && (
+      <>
+        <h2 class="section-heading">Related Relics</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {event.data.relic_refs.map(relic => (
+            <a href={`${import.meta.env.BASE_URL}relics/${relic.slug}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <img
+                src={`${import.meta.env.BASE_URL}images/relic_atlas/${relic.slug.replace(/-/g, '_')}.png`}
+                alt={relic.title}
+                class="item-icon"
+                onerror="this.style.display='none'" />
+              <h3 style="font-size: 0.95rem;">{relic.title}</h3>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
   </div>
 </BaseLayout>
