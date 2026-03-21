@@ -268,6 +268,21 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             "Grab the Sword": {"description": "Obtain a random [gold]Relic[/gold]."},
         },
     },
+    "TrashHeap": {
+        "option_overrides": {
+            "Dive In": {
+                "description": "Lose [red]8[/red] HP. Obtain a random relic from the pool below. "
+                "These are [gold]STS1 relics[/gold] exclusive to this event — "
+                "one is chosen at random regardless of your character.",
+            },
+            "Grab Random Junk": {
+                "description": "Gain [blue]100[/blue] [gold]Gold[/gold]. "
+                "Add a random card from the pool below to your deck. "
+                "These are [gold]STS1 cards[/gold] exclusive to this event — "
+                "one is chosen at random regardless of your character.",
+            },
+        },
+    },
     "ThisOrThat": {
         "option_overrides": {
             "This": {
