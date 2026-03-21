@@ -12,6 +12,29 @@ export async function getStaticPaths() {
 }
 
 const { event } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// Build enchantment name -> slug lookup for auto-linking
+const allEnchantments = await getCollection('enchantments');
+const enchantmentLinks: Record<string, string> = {};
+for (const ench of allEnchantments) {
+  enchantmentLinks[ench.data.title] = `${base}enchantments/${ench.id}/`;
+}
+
+function linkEnchantments(html: string): string {
+  let result = html;
+  for (const [name, url] of Object.entries(enchantmentLinks)) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Match enchantment names, possibly wrapped in a <span> tag, not already in an <a>
+    // Pattern 1: <span class="...">Name</span> -> <a href="..."><span>Name</span></a>
+    const spanRegex = new RegExp(`(<span[^>]*>)(${escaped})(</span>)(?![^<]*</a>)`, 'g');
+    result = result.replace(spanRegex, `<a href="${url}">$1$2$3</a>`);
+    // Pattern 2: bare Name not inside any tag
+    const bareRegex = new RegExp(`(?<![">\\w])${escaped}(?![^<]*</a>)(?!\\w)`, 'g');
+    result = result.replace(bareRegex, `<a href="${url}">${name}</a>`);
+  }
+  return result;
+}
 ---
 
 <BaseLayout title={event.data.title}>
@@ -28,7 +51,7 @@ const { event } = Astro.props;
     {event.data.description_html && (
       <>
         <h2 class="section-heading">Description</h2>
-        <div class="desc-text" set:html={cleanDescription(processBBCode(event.data.description_html))} />
+        <div class="desc-text" set:html={linkEnchantments(cleanDescription(processBBCode(event.data.description_html)))} />
       </>
     )}
 
@@ -43,7 +66,7 @@ const { event } = Astro.props;
             return (
               <div class="event-option">
                 <h3 set:html={cleanDescription(processBBCode(title))} />
-                {desc && <div class="desc-text" style="font-size: 0.9rem;" set:html={cleanDescription(processBBCode(desc))} />}
+                {desc && <div class="desc-text" style="font-size: 0.9rem;" set:html={linkEnchantments(cleanDescription(processBBCode(desc)))} />}
                 {requires && <div class="card-meta" style="font-size: 0.85rem; margin-top: 0.25rem; color: var(--text-muted);" set:html={cleanDescription(processBBCode(requires))} />}
               </div>
             );
@@ -62,7 +85,7 @@ const { event } = Astro.props;
     {event.data.notes && (
       <>
         <h2 class="section-heading">Mechanics</h2>
-        <div class="desc-text" style="font-size: 0.9rem; line-height: 1.7;" set:html={cleanDescription(processBBCode(event.data.notes))} />
+        <div class="desc-text" style="font-size: 0.9rem; line-height: 1.7;" set:html={linkEnchantments(cleanDescription(processBBCode(event.data.notes)))} />
       </>
     )}
 
