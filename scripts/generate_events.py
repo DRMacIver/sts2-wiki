@@ -224,11 +224,13 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
                 "title": "Bone Tea",
                 "description": "Pay [red]50[/red] [gold]Gold[/gold]. "
                 "Obtain the [gold]Bone Tea[/gold] relic.",
+                "requires": "Requires [blue]50[/blue] [gold]Gold[/gold].",
             },
             {
                 "title": "Ember Tea",
                 "description": "Pay [red]150[/red] [gold]Gold[/gold]. "
                 "Obtain the [gold]Ember Tea[/gold] relic.",
+                "requires": "Requires [blue]150[/blue] [gold]Gold[/gold].",
             },
             {
                 "title": "Tea of Discourtesy",
@@ -381,6 +383,43 @@ def main() -> None:
                             opt["title"] = override["title"]
                         if "description" in override:
                             opt["description"] = override["description"]
+
+        # Merge "Locked"/"Broke" options into their corresponding unlocked options
+        raw_options = event.get("options", [])
+        merged_options: list[dict[str, str]] = []
+        i = 0
+        while i < len(raw_options):
+            opt = raw_options[i]
+            title = opt.get("title", "")
+            if title in ("Locked", "Broke"):
+                lock_desc = opt.get("description", "")
+                # Locked before its unlocked counterpart: attach to next option
+                if i + 1 < len(raw_options) and raw_options[i + 1].get("title", "") not in (
+                    "Locked",
+                    "Broke",
+                ):
+                    next_opt = dict(raw_options[i + 1])
+                    next_opt["requires"] = lock_desc
+                    merged_options.append(next_opt)
+                    i += 2
+                    continue
+                # Orphaned locked option (e.g. ZenWeaver shared lock, EndlessConveyor "Broke")
+                # Skip it — the requirement info is already in the option descriptions
+                i += 1
+                continue
+            # Check if the next option is a Locked variant of this one
+            if i + 1 < len(raw_options) and raw_options[i + 1].get("title", "") in (
+                "Locked",
+                "Broke",
+            ):
+                opt = dict(opt)
+                opt["requires"] = raw_options[i + 1].get("description", "")
+                merged_options.append(opt)
+                i += 2
+                continue
+            merged_options.append(opt)
+            i += 1
+        event["options"] = merged_options
 
         conditions = event.get("conditions", [])
         conditions_str = "; ".join(conditions) if conditions else ""

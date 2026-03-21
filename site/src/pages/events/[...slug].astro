@@ -39,10 +39,12 @@ const { event } = Astro.props;
           {event.data.options.map(opt => {
             const title = typeof opt === 'string' ? opt : opt.title;
             const desc = typeof opt === 'string' ? '' : opt.description;
+            const requires = typeof opt === 'string' ? '' : opt.requires || '';
             return (
               <div class="event-option">
                 <h3 set:html={cleanDescription(processBBCode(title))} />
                 {desc && <div class="desc-text" style="font-size: 0.9rem;" set:html={cleanDescription(processBBCode(desc))} />}
+                {requires && <div class="card-meta" style="font-size: 0.85rem; margin-top: 0.25rem; color: var(--text-muted);" set:html={cleanDescription(processBBCode(requires))} />}
               </div>
             );
           })}

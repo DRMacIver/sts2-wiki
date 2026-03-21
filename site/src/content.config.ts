@@ -152,6 +152,7 @@ const events = defineCollection({
     options: z.array(z.object({
       title: z.string(),
       description: z.string().default(''),
+      requires: z.string().optional(),
     })).default([]),
     acts: z.array(z.string()).default([]),
     conditions: z.string().default(''),
