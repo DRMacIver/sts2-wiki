@@ -18,6 +18,11 @@ const base = import.meta.env.BASE_URL;
 const allEvents = await getCollection('events');
 const allAncients = await getCollection('ancients');
 
+// For Dusty Tome: load ancient-rarity cards
+const allCards = relic.data.class_name === 'DustyTome'
+  ? (await getCollection('cards')).filter(c => c.data.rarity === 'Ancient').sort((a, b) => a.data.title.localeCompare(b.data.title))
+  : [];
+
 const sourceLinks: Record<string, { url: string; label: string }> = {};
 for (const ev of allEvents) {
   sourceLinks[ev.data.class_name] = { url: `${base}events/${ev.id}/`, label: ev.data.title };
@@ -82,5 +87,21 @@ for (const anc of allAncients) {
         </td></tr>
       )}
     </table>
+
+    {allCards.length > 0 && (
+      <>
+        <h2 class="section-heading" style="margin-top: 1.5rem;">Ancient Cards</h2>
+        <div class="card-grid compact" style="margin-top: 0.75rem;">
+          {allCards.map(card => (
+            <a href={`${base}cards/${card.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <div>
+                <h3 style="font-size: 0.95rem;" class={card.data.character === 'Event' ? '' : `char-${card.data.character.toLowerCase()}`}>{card.data.title}</h3>
+                <div class="card-meta">{card.data.character === 'Event' ? 'Any' : card.data.character} · {card.data.type} · {card.data.energy_cost} Energy</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
   </div>
 </BaseLayout>
