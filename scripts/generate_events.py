@@ -79,6 +79,13 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
                 "description": "Fight a [blue]300[/blue] HP dummy. Reward: obtain a relic."
             },
         },
+        "notes": (
+            "Setting 1 potion: drawn from your character's potion pool + shared pool, "
+            "weighted by rarity (65% Common, 25% Uncommon, 10% Rare).\n\n"
+            "Setting 2 upgrades: 2 random upgradable cards from your deck (not player-chosen).\n\n"
+            "Setting 3 relic: pulled from the standard relic pool "
+            "(the next relic you'd get from an elite)."
+        ),
     },
     "ColossalFlower": {
         "options": [
@@ -95,12 +102,18 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         "option_overrides": {
             "Rest": {"description": "Heal [green]30%[/green] of max HP. Then fight some enemies."},
         },
+        "notes": "Gold from option 1 is randomized: [blue]61–100[/blue] gold.",
     },
     "DrowningBeacon": {
         "option_overrides": {
             "Bottle": {"description": "Procure a random [aqua]Potion[/aqua]."},
             "Climb": {"description": "Obtain a random [gold]Relic[/gold]."},
         },
+        "notes": (
+            "The potion is drawn from your character's pool + shared pool "
+            "(65% Common, 25% Uncommon, 10% Rare).\n\n"
+            "The relic is the next from the standard relic pool."
+        ),
     },
     "FieldOfManSizedHoles": {
         "option_overrides": {
@@ -191,16 +204,24 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
                 "description": "Lose [red]3[/red] HP (increases by 1 each time you Hold On)."
             },
         },
+        "notes": (
+            "The first card removed is random from your non-Basic removable cards. "
+            "Subsequent removals pick from cards of a "
+            "[gold]different type[/gold] than the previous one "
+            "(falls back to any removable card if none qualify).\n\n"
+            "Hold On HP cost escalates: 3, 4, 5, 6... (increases by 1 each time)."
+        ),
     },
     "SpiralingWhirlpool": {
         "option_overrides": {
             "Drink": {"description": "Heal [green]33%[/green] of max HP."},
         },
+        "notes": "Heal amount is exactly 33% of your Max HP (rounded).",
     },
     "SpiritGrafter": {
         "option_overrides": {
             "Let It In": {"description": "Heal [green]25[/green] HP."},
-            "Rejection": {"description": "Lose [red]9[/red] HP. Remove a card from your Deck."},
+            "Rejection": {"description": "Lose [red]9[/red] HP. Upgrade a card."},
         },
     },
     "StoneOfAllTime": {
@@ -254,11 +275,23 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             },
             {"title": "Leave", "description": "Walk away."},
         ],
+        "notes": (
+            "The card rarity exactly matches the potion rarity: Rare/Event potion → Rare cards, "
+            "Uncommon → Uncommon, Common/Token → Common.\n\n"
+            "The card type (Attack/Skill/Power) is chosen randomly for each potion "
+            "(Common/Token potions exclude Power type). "
+            "All 3 offered cards share the same type and rarity, drawn from your character's pool. "
+            "All generated cards are pre-upgraded."
+        ),
     },
     "LostWisp": {
         "option_overrides": {
             "Capture the Wisp": {"description": "Obtain a random [gold]Relic[/gold]."},
         },
+        "notes": (
+            "Gold from Search is randomized: [blue]45–75[/blue] gold.\n\n"
+            "The relic from Capture is pulled from the standard relic pool."
+        ),
     },
     "RoundTeaParty": {
         "option_overrides": {
@@ -269,6 +302,7 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         "option_overrides": {
             "Grab the Sword": {"description": "Obtain a random [gold]Relic[/gold]."},
         },
+        "notes": "Gold is randomized: [blue]101–121[/blue] gold.",
     },
     "TrashHeap": {
         "option_overrides": {
@@ -284,6 +318,124 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
                 "one is chosen at random regardless of your character.",
             },
         },
+        "notes": (
+            "Both pools are fixed — every card and relic has equal chance. "
+            "The card is added directly to your deck (no choice screen). "
+            "The HP loss from Dive In is unblockable and ignores powers."
+        ),
+    },
+    "EndlessConveyor": {
+        "notes": (
+            "[gold]Dish selection[/gold] uses weighted randomization. "
+            "Every 5th grab is always Seapunk Salad (adds Feeding Frenzy card). "
+            "Otherwise, dishes are drawn by weight from those currently available:\n\n"
+            "Caviar (upgrade a card): weight 6\n"
+            "Clam Roll (heal): weight 6, only if not at full HP\n"
+            "Spicy Snappy (random upgrade): weight 3\n"
+            "Jelly Liver (+5 Max HP): weight 3\n"
+            "Fried Eel (random colorless card): weight 3\n"
+            "Suspicious Condiment (random potion): weight 3, only if you have open potion slots\n"
+            "Golden Fysh (free, +75 gold): weight 1, only after first grab\n\n"
+            "The previous dish cannot repeat. Spicy Snappy and Observe the Chef both "
+            "upgrade a random card from your deck (not player-chosen). "
+            "Suspicious Condiment draws from character + shared potion pool "
+            "(65% Common, 25% Uncommon, 10% Rare). "
+            "Fried Eel adds a random colorless card directly to your deck (no choice)."
+        ),
+    },
+    "CrystalSphere": {
+        "notes": (
+            "The gold cost is randomized: [blue]51–99[/blue] gold. "
+            "This is determined when the event spawns and varies between runs."
+        ),
+    },
+    "BrainLeech": {
+        "notes": (
+            "[gold]Rip[/gold]: standard 3-card reward screen from the Colorless card pool.\n\n"
+            "[gold]Share Knowledge[/gold]: generates 5 cards from your character's pool, "
+            "then you pick 1 (you must choose one — cannot cancel)."
+        ),
+    },
+    "InfestedAutomaton": {
+        "notes": (
+            "[gold]Study[/gold]: adds a random Power card from your "
+            "character's pool directly to your deck (no choice).\n\n"
+            "[gold]Touch Core[/gold]: adds a random 0-cost card from "
+            "your character's pool directly to your deck (no choice)."
+        ),
+    },
+    "RoomFullOfCheese": {
+        "notes": (
+            "[gold]Gorge[/gold]: generates 8 Common-rarity cards from your character's pool, "
+            "then you pick 2."
+        ),
+    },
+    "Reflections": {
+        "notes": (
+            "[gold]Touch a Mirror[/gold]: randomly downgrades up to 2 upgraded cards, "
+            "then randomly upgrades up to 4 upgradable cards. Both selections are random, "
+            "not player-chosen.\n\n"
+            "[gold]Shatter[/gold]: duplicates your entire deck "
+            "(doubles every card), then adds a Curse."
+        ),
+    },
+    "TabletOfTruth": {
+        "notes": (
+            "Each Decipher costs increasing Max HP: [red]3[/red], [red]6[/red], "
+            "[red]12[/red], [red]24[/red], then [red]all but 1[/red] Max HP.\n\n"
+            "Deciphers 1–4 each upgrade a random card from your deck. "
+            "The 5th and final decipher upgrades [gold]ALL[/gold] upgradable cards in your deck."
+        ),
+    },
+    "TinkerTime": {
+        "notes": (
+            "You build a custom Mad Science card in two steps:\n\n"
+            "Step 1: Choose a card type — shown 2 of 3 (Attack/Skill/Power) at random.\n\n"
+            "Step 2: Choose a rider effect — each type has 3 possible riders "
+            "(e.g. Attack: Sapping/Violence/Choking), shown 2 of 3 at random.\n\n"
+            "The resulting card combines the chosen type and rider effect."
+        ),
+    },
+    "Trial": {
+        "option_overrides": {
+            "Guilty": {
+                "description": "Effects vary by trial type. "
+                "May include: relics + a curse, healing, or gold."
+            },
+            "Innocent": {
+                "description": "Effects vary by trial type. "
+                "May include: card upgrades + a curse, gold + a curse, "
+                "or card transforms + a curse."
+            },
+        },
+        "notes": (
+            "The trial scenario (Merchant/Noble/Nondescript) is chosen "
+            "randomly. Each scenario has different outcomes:\n\n"
+            "Merchant: Guilty gives 2 relics + Clumsy curse. "
+            "Innocent gives gold + Normality curse.\n\n"
+            "Noble: Guilty gives healing. "
+            "Innocent gives card transforms + Clumsy curse.\n\n"
+            "Nondescript: Guilty gives 2 card rewards from your pool. "
+            "Innocent gives card upgrades + Normality curse."
+        ),
+    },
+    "DollRoom": {
+        "notes": (
+            "3 dolls are available, each containing a different relic "
+            "(Daughter of the Wind, Mr. Struggles, and either Bing Bong or Fable).\n\n"
+            "[gold]Random[/gold] (free): get 1 random doll.\n"
+            "[gold]Take Some Time[/gold] (5 HP): see 2 of 3, choose 1.\n"
+            "[gold]Examine[/gold] (15 HP): see all 3, choose 1."
+        ),
+    },
+    "PunchOff": {
+        "notes": "Gold from Nab is randomized: [blue]91–98[/blue] gold.",
+    },
+    "SunkenTreasury": {
+        "notes": (
+            "Small chest gold: [blue]52–67[/blue]. "
+            "Large chest gold: [blue]303–363[/blue] (adds Greed curse)."
+        ),
     },
     "ThisOrThat": {
         "option_overrides": {
@@ -291,6 +443,10 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
                 "description": "Lose [red]6[/red] HP. Gain [blue]41–69[/blue] [gold]Gold[/gold]."
             },
         },
+        "notes": (
+            "Gold from 'This' is randomized: [blue]41–68[/blue] gold.\n\n"
+            "'That' gives a relic from the standard relic pool + Clumsy curse."
+        ),
     },
     "WaterloggedScriptorium": {
         "option_overrides": {
@@ -305,6 +461,15 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         "option_overrides": {
             "Wongo's Featured Item": {"description": "Obtain a random [gold]Relic[/gold]."},
         },
+        "notes": (
+            "[gold]Bargain Bin[/gold]: pulls from the Common relic pool specifically.\n"
+            "[gold]Featured Item[/gold]: pulls from the Rare relic pool specifically.\n"
+            "[gold]Mystery Box[/gold]: gives the Wongo's Mystery Ticket "
+            "relic (deferred rewards over 5 combats).\n\n"
+            "[gold]Leave[/gold] randomly downgrades 1 upgraded card from your deck.\n\n"
+            "Wongo Points accumulate across runs — every 2000 points earns a "
+            "Wongo Customer Appreciation Badge."
+        ),
     },
     "WoodCarvings": {
         "option_overrides": {
@@ -324,19 +489,14 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
                 "Receive 3 card reward screens (Common, Uncommon, Rare).",
             },
         ],
-    },
-    "Trial": {
-        "option_overrides": {
-            "Guilty": {
-                "description": "Effects vary by trial type. "
-                "May include: relics + a curse, healing, or gold."
-            },
-            "Innocent": {
-                "description": "Effects vary by trial type. "
-                "May include: card upgrades + a curse, gold + a curse, "
-                "or card transforms + a curse."
-            },
-        },
+        "notes": (
+            "Only shows unlocked characters other than your own. "
+            "Up to 3 are offered from the fixed order: "
+            "Necrobinder, Ironclad, Regent, Silent, Defect "
+            "(if more than 3 qualify, extras are randomly removed).\n\n"
+            "Each chosen pool gives 3 separate reward screens with guaranteed rarities "
+            "(one Common, one Uncommon, one Rare) — you pick 1 card from each."
+        ),
     },
 }
 
@@ -432,6 +592,11 @@ def main() -> None:
         lines.append(f"options: {json.dumps(event.get('options', []))}")
         lines.append(f"acts: {json.dumps(event.get('acts', []))}")
         lines.append(f"conditions: {escape_yaml(conditions_str)}")
+        notes = ""
+        if enrichments and enrichments.get("notes"):
+            notes = enrichments["notes"]
+        if notes:
+            lines.append(f"notes: {escape_yaml(render_description_html(notes))}")
         lines.append(f"card_refs: {json.dumps(event.get('card_refs', []))}")
         lines.append(f"relic_refs: {json.dumps(event.get('relic_refs', []))}")
         lines.append("---")

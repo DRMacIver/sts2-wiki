@@ -131,6 +131,15 @@ const monsterImgPath = `${base}images/monsters/${monsterImageName(monster.data.c
       </div>
     )}
 
+    {monster.data.notes && (
+      <>
+        <h2 class="section-heading">Mechanics</h2>
+        <div class="desc-text" style="font-size: 0.9rem; line-height: 1.7; white-space: pre-line;">
+          {monster.data.notes}
+        </div>
+      </>
+    )}
+
     {monster.data.encounters.length > 0 && (
       <>
         <h2 class="section-heading">Appears In</h2>

@@ -94,6 +94,12 @@ def main() -> None:
         lines.append(f"move_pattern: {escape_yaml(monster.get('move_pattern_desc', ''))}")
         lines.append(f"powers_on_spawn: {json.dumps(monster.get('powers_on_spawn', []))}")
         lines.append(f"encounters: {json.dumps(enc_refs)}")
+
+        from scripts.monster_notes import MONSTER_NOTES
+
+        note = MONSTER_NOTES.get(monster["class_name"], "")
+        if note:
+            lines.append(f"notes: {escape_yaml(note)}")
         lines.append("---")
         lines.append("")
 

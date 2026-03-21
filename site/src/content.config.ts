@@ -76,6 +76,7 @@ const monsters = defineCollection({
       title: z.string(),
       slug: z.string(),
     })).default([]),
+    notes: z.string().optional(),
   }),
 });
 
@@ -156,6 +157,7 @@ const events = defineCollection({
     })).default([]),
     acts: z.array(z.string()).default([]),
     conditions: z.string().default(''),
+    notes: z.string().optional(),
     card_refs: z.array(z.object({
       class_name: z.string(),
       title: z.string(),

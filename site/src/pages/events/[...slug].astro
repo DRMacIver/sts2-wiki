@@ -59,6 +59,13 @@ const { event } = Astro.props;
       </>
     )}
 
+    {event.data.notes && (
+      <>
+        <h2 class="section-heading">Mechanics</h2>
+        <div class="desc-text" style="font-size: 0.9rem; line-height: 1.7;" set:html={cleanDescription(processBBCode(event.data.notes))} />
+      </>
+    )}
+
     {event.data.card_refs.length > 0 && (
       <>
         <h2 class="section-heading">Related Cards</h2>
