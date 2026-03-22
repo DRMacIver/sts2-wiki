@@ -24,9 +24,6 @@ jobs:
 
       - uses: extractions/setup-just@v2
 
-      - name: Generate content from data
-        run: just generate-from-data
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -36,15 +33,12 @@ jobs:
       - run: npm ci
         working-directory: site
 
-      - run: npm run build
-        working-directory: site
-
-      - name: Check internal links
-        run: uv run python -m scripts.check_links site/dist
+      - name: Build all versions
+        run: just build-all-versions
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist
+          path: site/dist-final
 
   deploy:
     needs: build

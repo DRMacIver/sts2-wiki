@@ -5,6 +5,9 @@ interface Props {
 
 const { title } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const version = import.meta.env.PUBLIC_STS2_VERSION || 'v0.100.0';
+const allVersions = (import.meta.env.PUBLIC_STS2_ALL_VERSIONS || 'v0.100.0').split(',');
+const latest = import.meta.env.PUBLIC_STS2_LATEST || 'v0.100.0';
 
 ---
 
@@ -27,17 +30,54 @@ const base = import.meta.env.BASE_URL;
           <input type="text" id="site-search" placeholder="Search..." autocomplete="off" />
           <div class="search-results" id="search-results"></div>
         </div>
+        {allVersions.length > 1 && (
+          <select id="version-select" class="version-select" data-current={version} data-latest={latest}>
+            {allVersions.map(v => (
+              <option value={v} selected={v === version}>{v}{v === latest ? ' (latest)' : ''}</option>
+            ))}
+          </select>
+        )}
       </div>
     </nav>
     <main class="site-main">
       <slot />
     </main>
     <footer class="site-footer">
-      Unofficial wiki generated from decompiled game data (v0.100.0).
+      Unofficial wiki generated from decompiled game data ({version}).
       Not affiliated with Mega Crit Games.
     </footer>
 
-    <script define:vars={{ base }}>
+    <script define:vars={{ base, version, latest }}>
+      // Version selector
+      const versionSelect = document.getElementById('version-select');
+      if (versionSelect) {
+        versionSelect.addEventListener('change', () => {
+          const selected = versionSelect.value;
+          const current = versionSelect.dataset.current;
+          const latestVer = versionSelect.dataset.latest;
+          let path = window.location.pathname;
+
+          // Strip the current version prefix from the path
+          const siteBase = '/sts2-wiki/';
+          let pagePath = path.startsWith(siteBase) ? path.slice(siteBase.length) : path;
+
+          // If current version is not latest, strip the version prefix
+          if (current !== latestVer && pagePath.startsWith(current + '/')) {
+            pagePath = pagePath.slice(current.length + 1);
+          }
+
+          // Build new URL
+          let newPath;
+          if (selected === latestVer) {
+            newPath = siteBase + pagePath;
+          } else {
+            newPath = siteBase + selected + '/' + pagePath;
+          }
+
+          window.location.href = newPath;
+        });
+      }
+
       // Simple client-side search index (built from nav page titles)
       const searchInput = document.getElementById('site-search');
       const searchResults = document.getElementById('search-results');

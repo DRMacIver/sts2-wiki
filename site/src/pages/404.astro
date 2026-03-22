@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found">
+  <div style="text-align: center; padding: 4rem 1rem;">
+    <h1>Page Not Found</h1>
+    <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">
+      This page doesn't exist in {import.meta.env.PUBLIC_STS2_VERSION || 'this version'}.
+      It may have been added in a later version or removed in an earlier one.
+    </p>
+    <p style="margin-top: 2rem;">
+      <a href={import.meta.env.BASE_URL}>Back to home</a>
+    </p>
+  </div>
+</BaseLayout>

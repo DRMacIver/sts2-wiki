@@ -250,6 +250,23 @@ a:hover {
   margin-left: var(--space-sm);
 }
 
+/* ─── Version selector ─── */
+.version-select {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+}
+.version-select:focus {
+  border-color: var(--accent-dim);
+}
+
 /* ─── Main content ─── */
 .site-main {
   max-width: var(--content-width);

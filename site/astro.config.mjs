@@ -5,5 +5,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   output: 'static',
   site: 'https://drmaciver.github.io',
-  base: '/sts2-wiki/',
+  base: process.env.ASTRO_BASE || '/sts2-wiki/',
 });

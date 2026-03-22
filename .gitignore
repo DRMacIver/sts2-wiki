@@ -11,6 +11,7 @@ dist/
 # Node
 node_modules/
 site/dist/
+site/dist-final/
 site/.astro/
 site/.claude/
 

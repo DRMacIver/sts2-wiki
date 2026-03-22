@@ -154,5 +154,57 @@ build: extract generate build-site
 preview:
     cd site && npm run dev
 
+# Build all versions into a merged dist-final directory
+build-all-versions:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    VERSIONS="v0.98.2 v0.99.1 v0.100.0"
+    LATEST="v0.100.0"
+    ALL_VERSIONS="v0.100.0,v0.99.1,v0.98.2"
+    DIST_FINAL="site/dist-final"
+
+    rm -rf "$DIST_FINAL"
+    mkdir -p "$DIST_FINAL"
+
+    for ver in $VERSIONS; do
+        echo "=== Building $ver ==="
+
+        # Generate content for this version
+        STS2_VERSION="$ver" just generate-from-data
+
+        # Set base URL and version env vars
+        export PUBLIC_STS2_VERSION="$ver"
+        export PUBLIC_STS2_ALL_VERSIONS="$ALL_VERSIONS"
+        export PUBLIC_STS2_LATEST="$LATEST"
+
+        if [ "$ver" = "$LATEST" ]; then
+            export ASTRO_BASE="/sts2-wiki/"
+        else
+            export ASTRO_BASE="/sts2-wiki/$ver/"
+        fi
+
+        # Build the Astro site
+        cd site && npm run build && cd ..
+
+        # Check internal links (only for latest — older versions have expected broken links
+        # to content added in later versions)
+        if [ "$ver" = "$LATEST" ]; then
+            uv run python -m scripts.check_links site/dist
+        fi
+
+        # Copy output to final directory
+        if [ "$ver" = "$LATEST" ]; then
+            cp -r site/dist/* "$DIST_FINAL/"
+        else
+            mkdir -p "$DIST_FINAL/$ver"
+            cp -r site/dist/* "$DIST_FINAL/$ver/"
+        fi
+
+        echo "=== Done $ver ==="
+    done
+
+    echo "All versions built into $DIST_FINAL"
+
 # Full update from game files
 update: decompile extract-pck extract extract-images generate build-site

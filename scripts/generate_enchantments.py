@@ -45,10 +45,21 @@ def main() -> None:
     data_dir = os.path.expanduser(args.data_dir)
     output_dir = os.path.expanduser(args.output_dir)
 
-    with open(os.path.join(data_dir, "enchantments.json")) as f:
+    enchantments_path = os.path.join(data_dir, "enchantments.json")
+    out = Path(output_dir)
+
+    if not os.path.exists(enchantments_path):
+        # Older versions don't have enchantment data — clear output and exit
+        if out.exists():
+            for p in out.glob("*.md"):
+                p.unlink()
+        out.mkdir(parents=True, exist_ok=True)
+        print(f"No enchantments.json in {data_dir}, cleared {output_dir}")
+        return
+
+    with open(enchantments_path) as f:
         enchantments = json.load(f)
 
-    out = Path(output_dir)
     if out.exists():
         for p in out.glob("*.md"):
             p.unlink()
