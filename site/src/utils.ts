@@ -395,3 +395,29 @@ export function parsePattern(text: string): string[] {
   const sentences = clean.split(/\.\s+/).filter(s => s.trim()).map(s => s.replace(/\.$/, '').trim());
   return sentences;
 }
+
+/**
+ * Get the URL for an encounter. Single-monster encounters link directly
+ * to the monster page (if it exists); multi-monster encounters (including
+ * packs of the same monster) link to the encounter page.
+ */
+export function encounterHref(
+  enc: { id: string; data: { monsters: Array<{ slug: string }>; total_monsters: number } },
+  base: string,
+  monsterIds?: Set<string>,
+): string {
+  if (enc.data.total_monsters === 1 && enc.data.monsters.length === 1) {
+    const slug = enc.data.monsters[0].slug;
+    if (!monsterIds || monsterIds.has(slug)) {
+      return `${base}monsters/${slug}/`;
+    }
+  }
+  return `${base}encounters/${enc.id}/`;
+}
+
+/**
+ * Whether an encounter is a true single-monster encounter (not a pack).
+ */
+export function isSoloEncounter(enc: { data: { total_monsters: number } }): boolean {
+  return enc.data.total_monsters === 1;
+}

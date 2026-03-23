@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { encounterHref } from '../../utils';
+
+const base = import.meta.env.BASE_URL;
 
 const allEncounters = (await getCollection('encounters'))
   .filter(e => !e.data.class_name.includes('Deprecated'));
 const encounters = allEncounters.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const monsterIds = new Set((await getCollection('monsters')).map(m => m.id));
 
 const roomTypes = ['Monster', 'Elite', 'Boss'];
 ---
@@ -24,7 +28,7 @@ const roomTypes = ['Monster', 'Elite', 'Boss'];
 
   <div class="card-grid" id="enc-grid">
     {encounters.map(enc => (
-      <a href={`${import.meta.env.BASE_URL}encounters/${enc.id}/`}
+      <a href={encounterHref(enc, base, monsterIds)}
          class="card-entry"
          data-roomtype={enc.data.room_type}>
         <h3>

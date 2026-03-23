@@ -92,6 +92,7 @@ const encounters = defineCollection({
       title: z.string(),
       slug: z.string(),
     })).default([]),
+    total_monsters: z.number().default(1),
     tags: z.array(z.string()).default([]),
     acts: z.array(z.string()).default([]),
   }),

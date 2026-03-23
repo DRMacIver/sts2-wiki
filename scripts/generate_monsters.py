@@ -64,8 +64,8 @@ def main() -> None:
             p.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
-    # Filter out test/debug monsters
-    test_classes = {"BigDummy", "OneHpMonster", "TenHpMonster"}
+    # Filter out test/debug monsters and unfightable entities
+    test_classes = {"BigDummy", "OneHpMonster", "TenHpMonster", "Architect"}
 
     count = 0
     for monster in monsters:

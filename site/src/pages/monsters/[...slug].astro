@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { getMoveIntents, getMoveEffectLines, parsePattern, intentIconFile, monsterImageName } from '../../utils';
+import { getMoveIntents, getMoveEffectLines, parsePattern, intentIconFile, monsterImageName, isSoloEncounter } from '../../utils';
 
 export async function getStaticPaths() {
   const monsters = await getCollection('monsters');
@@ -30,6 +30,23 @@ const patternSteps = parsePattern(monster.data.move_pattern);
 
 // Monster portrait image (rendered from Spine)
 const monsterImgPath = `${base}images/monsters/${monsterImageName(monster.data.class_name)}.png`;
+
+// Look up encounter data for "Appears In" section
+const allEncounters = await getCollection('encounters');
+const encBySlug = new Map(allEncounters.map(e => [e.id, e]));
+
+// Partition this monster's encounters into solo and group
+const monsterEncRefs = monster.data.encounters;
+const soloEncounters = monsterEncRefs.filter(ref => {
+  const enc = encBySlug.get(ref.slug);
+  return enc ? isSoloEncounter(enc) : false;
+});
+const groupEncounters = monsterEncRefs.filter(ref => {
+  const enc = encBySlug.get(ref.slug);
+  return enc ? !isSoloEncounter(enc) : true;
+});
+const hasSolo = soloEncounters.length > 0;
+const hasGroup = groupEncounters.length > 0;
 ---
 
 <BaseLayout title={monster.data.title}>
@@ -140,12 +157,15 @@ const monsterImgPath = `${base}images/monsters/${monsterImageName(monster.data.c
       </>
     )}
 
-    {monster.data.encounters.length > 0 && (
+    {hasGroup && (
       <>
         <h2 class="section-heading">Appears In</h2>
         <ul class="linked-list">
-          {monster.data.encounters.map(enc => (
-            <li><a href={`${base}encounters/${enc.slug}/`}>{enc.title}</a></li>
+          {hasSolo && (
+            <li style="color: var(--text-muted);">Solo</li>
+          )}
+          {groupEncounters.map(ref => (
+            <li><a href={`${base}encounters/${ref.slug}/`}>{ref.title}</a></li>
           ))}
         </ul>
       </>

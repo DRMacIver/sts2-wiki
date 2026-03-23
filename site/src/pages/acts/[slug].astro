@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { monsterImageName } from '../../utils';
+import { monsterImageName, encounterHref } from '../../utils';
 
 const base = import.meta.env.BASE_URL;
 
@@ -29,6 +29,7 @@ const actName = act.title;
 const allEncounters = await getCollection('encounters');
 const allEvents = await getCollection('events');
 const allAncients = await getCollection('ancients');
+const monsterIds = new Set((await getCollection('monsters')).map(m => m.id));
 
 const isDeprecated = (item: { data: { class_name: string } }) =>
   item.data.class_name.includes('Deprecated');
@@ -72,7 +73,7 @@ const weak = encounters
         <h2 class="section-heading">Bosses</h2>
         <div class="card-grid compact" style="margin-top: 0.75rem;">
           {bosses.map(enc => (
-            <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+            <a href={encounterHref(enc, base, monsterIds)} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
               <img
                 src={`${base}images/boss_icons/${enc.data.class_name.replace(/Boss$/, '').replace(/([A-Z])/g, (m: string, p1: string, offset: number) => (offset > 0 ? '_' : '') + p1).toLowerCase()}_boss_icon.png`}
                 alt={enc.data.title}
@@ -97,7 +98,7 @@ const weak = encounters
             const firstMonster = enc.data.monsters[0];
             const imgName = firstMonster ? monsterImageName(firstMonster.class_name) : '';
             return (
-              <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <a href={encounterHref(enc, base, monsterIds)} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
                 {firstMonster && (
                   <img
                     src={`${base}images/monsters/${imgName}.png`}
@@ -124,7 +125,7 @@ const weak = encounters
             const firstMonster = enc.data.monsters[0];
             const imgName = firstMonster ? monsterImageName(firstMonster.class_name) : '';
             return (
-              <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <a href={encounterHref(enc, base, monsterIds)} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
                 {firstMonster && (
                   <img
                     src={`${base}images/monsters/${imgName}.png`}
@@ -152,7 +153,7 @@ const weak = encounters
             const firstMonster = enc.data.monsters[0];
             const imgName = firstMonster ? monsterImageName(firstMonster.class_name) : '';
             return (
-              <a href={`${base}encounters/${enc.id}/`} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
+              <a href={encounterHref(enc, base, monsterIds)} class="card-entry" style="display: flex; gap: 0.75rem; align-items: center;">
                 {firstMonster && (
                   <img
                     src={`${base}images/monsters/${imgName}.png`}

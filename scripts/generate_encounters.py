@@ -95,12 +95,16 @@ def main() -> None:
                 }
             )
 
+        # Total monster count before dedup (e.g., 2 Axebots = 2, not 1)
+        total_monsters = len([m for m in enc_monsters if m not in test_monster_classes])
+
         lines = ["---"]
         lines.append(f"title: {escape_yaml(enc.get('title', enc['class_name']))}")
         lines.append(f"class_name: {escape_yaml(enc['class_name'])}")
         lines.append(f"room_type: {escape_yaml(enc.get('room_type', 'Monster'))}")
         lines.append(f"is_weak: {str(enc.get('is_weak', False)).lower()}")
         lines.append(f"monsters: {json.dumps(monster_refs)}")
+        lines.append(f"total_monsters: {total_monsters}")
         lines.append(f"tags: {json.dumps(enc.get('tags', []))}")
         lines.append(f"acts: {json.dumps(enc.get('acts', []))}")
         lines.append("---")
