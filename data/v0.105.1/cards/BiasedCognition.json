@@ -1,0 +1,35 @@
+{
+  "class_name": "BiasedCognition",
+  "title": "Biased Cognition",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 4,
+      "upgraded_value": 5
+    },
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain +4 [gold]Focus[/gold].\nAt the start of your turn, lose 1 [gold]Focus[/gold].",
+  "upgraded_description": "Gain +5 [gold]Focus[/gold].\nAt the start of your turn, lose 1 [gold]Focus[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "FocusPower",
+      "title": "Focus",
+      "slug": "focus"
+    },
+    {
+      "class_name": "BiasedCognitionPower",
+      "title": "Biased Cognition",
+      "slug": "biased-cognition"
+    }
+  ]
+}

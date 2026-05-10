@@ -1,0 +1,9 @@
+{
+  "class_name": "BeetleJuice",
+  "title": "Beetle Juice",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyEnemy",
+  "description": "Enemy's attacks deal [blue]30%[/blue] less damage for the next [blue]4[/blue] turns.",
+  "notes": "Applies the Shrink effect, reducing all damage dealt by the target enemy for 4 turns."
+}

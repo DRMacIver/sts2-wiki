@@ -1,0 +1,9 @@
+{
+  "class_name": "DevotedSculptorWeak",
+  "title": "Devoted Sculptor",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["DevotedSculptor"],
+  "total_monsters": 1,
+  "tags": []
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "MagicBombPower",
+  "title": "Magic Bomb",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Take [blue]20[/blue] damage at the end of your turn. Is cleared if the Magi Knight dies.",
+  "smart_description": "Take [blue]{Amount}[/blue] damage at the end of your turn. Is cleared if the Magi Knight dies.",
+  "notes": "A debuff applied by Magi Knight. Amount represents the stack count (number of times applied). Deals damage at the end of your turn if the Magi Knight is still alive. Automatically removed if the Magi Knight dies."
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "VoidForm",
+  "title": "Void Form",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 2
+    }
+  ],
+  "description": "End your turn.\nThe first 2 cards you play each turn are free to play.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "VoidFormPower",
+      "title": "Void Form",
+      "slug": "void-form"
+    }
+  ],
+  "notes": "Upgrade: Removes Ethereal keyword, making the power permanent instead of expiring at end of turn."
+}

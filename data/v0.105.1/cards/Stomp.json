@@ -1,0 +1,20 @@
+{
+  "class_name": "Stomp",
+  "title": "Stomp",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 12 damage to ALL enemies.\nCosts 1 less Energy for each Attack played this turn.",
+  "referenced_powers": [],
+  "notes": "Cost is reduced by 1 for each Attack card played by the owner during the turn, including attacks played before Stomp is drawn."
+}

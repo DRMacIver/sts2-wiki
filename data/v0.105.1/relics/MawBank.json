@@ -1,0 +1,8 @@
+{
+  "class_name": "MawBank",
+  "title": "Maw Bank",
+  "rarity": "Event",
+  "description": "Whenever you climb a floor, gain [blue]12[/blue] [gold]Gold[/gold]. No longer works when you spend any [gold]Gold[/gold] at the shop.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "The relic grants 12 Gold when first entering the shop floor during a run. Once any Gold is spent at the shop, the relic becomes disabled and no longer grants the bonus for subsequent floors."
+}

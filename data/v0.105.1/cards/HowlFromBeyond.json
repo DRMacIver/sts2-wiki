@@ -1,0 +1,20 @@
+{
+  "class_name": "HowlFromBeyond",
+  "title": "Howl from Beyond",
+  "character": "Necrobinder",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 16,
+      "upgraded_value": 21
+    }
+  ],
+  "description": "Deal 16 damage to ALL enemies.\nAt the start of your turn, if this is in your [gold]Exhaust Pile[/gold], play it.",
+  "upgraded_description": "Deal 21 damage to ALL enemies.\nAt the start of your turn, if this is in your [gold]Exhaust Pile[/gold], play it.",
+  "notes": "This card automatically plays from the Exhaust Pile at the start of your turn."
+}

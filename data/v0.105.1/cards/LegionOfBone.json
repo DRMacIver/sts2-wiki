@@ -1,0 +1,21 @@
+{
+  "class_name": "LegionOfBone",
+  "title": "Legion of Bone",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllAllies",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "ALL players [gold]Summon[/gold] 6.",
+  "upgraded_description": "ALL players [gold]Summon[/gold] 8.",
+  "x_cost": false,
+  "notes": "Multiplayer-only card that affects all players in combat."
+}

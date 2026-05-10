@@ -1,0 +1,26 @@
+{
+  "class_name": "Glimmer",
+  "title": "Glimmer",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Draw 3 cards.\nPut 1 card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Draw 4 cards.\nPut 1 card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Player selects which card(s) to put on top of the Draw Pile via CardSelectCmd.FromHand selection screen."
+}

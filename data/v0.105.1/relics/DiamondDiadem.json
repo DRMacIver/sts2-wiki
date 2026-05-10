@@ -1,0 +1,8 @@
+{
+  "class_name": "DiamondDiadem",
+  "title": "Diamond Diadem",
+  "rarity": "Ancient",
+  "description": "Whenever you play [blue]2[/blue] or fewer cards in a turn, take half damage from enemies.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks the number of cards played each turn. When you play 2 or fewer cards in a turn, applies DiamondDiademPower at the end of that turn. A counter displays the number of cards played this turn and resets at the start of each turn."
+}

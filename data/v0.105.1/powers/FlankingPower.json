@@ -1,0 +1,9 @@
+{
+  "class_name": "FlankingPower",
+  "title": "Flanking",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Other allies deal [blue]2x[/blue] the attack damage to this enemy this turn.",
+  "smart_description": "Other allies deal [blue]2x[/blue] the attack damage to this enemy this turn.",
+  "notes": "Removes at end of the target's turn. Only affects powered attacks. Does not apply to the ally that applied this power."
+}

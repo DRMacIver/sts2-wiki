@@ -1,0 +1,9 @@
+{
+  "class_name": "SlowPower",
+  "title": "Slow",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, this enemy receives [blue]10%[/blue] more damage from Attacks this turn.",
+  "smart_description": "Whenever you play a card, this enemy receives [blue]10%[/blue] more damage from Attacks this turn. (Receives [blue]10% per card played[/blue] more damage cumulative)",
+  "notes": "Slow counter resets at the start of each enemy turn. Each card played by the player increases the counter by 1, with each stack providing 10% additional damage to Attacks. DisplayAmount is shown as SlowAmount × 10 (the percentage)."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "FruitJuice",
+  "title": "Fruit Juice",
+  "rarity": "Rare",
+  "usage": "Unknown",
+  "target": "Self",
+  "description": "Gain [blue]5[/blue] Max HP."
+}

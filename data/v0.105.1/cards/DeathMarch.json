@@ -1,0 +1,25 @@
+{
+  "class_name": "DeathMarch",
+  "title": "Death March",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 8 damage.\nDeals 3 additional damage for each card drawn during your turn.",
+  "upgraded_description": "Deal 9 damage.\nDeals 4 additional damage for each card drawn during your turn.",
+  "notes": "Damage scales with cards drawn during the turn. Does not count cards drawn from hand."
+}

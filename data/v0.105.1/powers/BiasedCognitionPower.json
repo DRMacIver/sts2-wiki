@@ -1,0 +1,9 @@
+{
+  "class_name": "BiasedCognitionPower",
+  "title": "Biased Cognition",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, lose [blue]1[/blue] [gold]Focus[/gold].",
+  "smart_description": "At the start of your turn, lose [blue]{Amount}[/blue] [gold]Focus[/gold].",
+  "notes": "This debuff causes the owner to lose Focus at the start of their turn. Uses Counter stacking, suggesting the effect amount varies with stack count."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "DieForYouPower",
+  "title": "Die for You",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "[gold]Osty[/gold] absorbs all unblocked attack damage.",
+  "notes": "Osty redirects unblocked attack damage intended for the player character. The power persists even after Osty's death, but ceases to redirect damage once Osty dies. Osty cannot be removed from combat while this power is active."
+}

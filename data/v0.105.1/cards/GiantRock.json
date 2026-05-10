@@ -1,0 +1,19 @@
+{
+  "class_name": "GiantRock",
+  "title": "Giant Rock",
+  "character": "Token",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 16,
+      "upgraded_value": 20
+    }
+  ],
+  "description": "Deal 16 damage.",
+  "upgraded_description": "Deal 20 damage."
+}

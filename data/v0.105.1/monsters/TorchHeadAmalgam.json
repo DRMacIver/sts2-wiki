@@ -1,0 +1,68 @@
+{
+  "class_name": "TorchHeadAmalgam",
+  "title": "Torch Head Amalgam",
+  "min_hp": 211,
+  "max_hp": 211,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TACKLE_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        }
+      ],
+      "effects": ["Deal 19 damage"]
+    },
+    {
+      "id": "TACKLE_2_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        }
+      ],
+      "effects": ["Deal 19 damage"]
+    },
+    {
+      "id": "BEAM_MOVE",
+      "title": "Beam",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 8 damage", "3 hits"]
+    },
+    {
+      "id": "TACKLE_3_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    },
+    {
+      "id": "TACKLE_4_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    }
+  ],
+  "move_pattern": "Starts with two strong Tackles, then cycles: Beam → Weak Tackle → Weak Tackle → Beam (repeats)",
+  "powers_on_spawn": ["Minion"],
+  "notes": null
+}

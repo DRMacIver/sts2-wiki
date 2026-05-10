@@ -1,0 +1,9 @@
+{
+  "class_name": "BattlewornDummyTimeLimitPower",
+  "title": "Time Limit",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "You have [blue]3[/blue] more turns to defeat the Battleworn Dummy.",
+  "smart_description": "You have [blue]{Amount}[/blue] more {Amount:plural:turn|turns} to defeat the Battleworn Dummy.",
+  "notes": "Starts at 3 and decreases by 1 at the end of each player turn. When the counter reaches 0, the player is forced to escape the combat, marking that they ran out of time."
+}

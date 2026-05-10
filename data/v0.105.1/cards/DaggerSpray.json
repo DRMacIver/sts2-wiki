@@ -1,0 +1,20 @@
+{
+  "class_name": "DaggerSpray",
+  "title": "Dagger Spray",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Deal 4 damage to ALL enemies twice.",
+  "upgraded_description": "Deal 6 damage to ALL enemies twice.",
+  "x_cost": false
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "ImprovementPower",
+  "title": "Improvement",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of combat, [gold]Upgrade[/gold] a random card.",
+  "smart_description": "At the end of combat, [gold]Upgrade[/gold] [blue]{Amount}[/blue] random {Amount:plural:card|cards}.",
+  "notes": "Counter stacks to upgrade multiple cards per combat. The smart description dynamically shows how many cards will be upgraded based on the current counter value."
+}

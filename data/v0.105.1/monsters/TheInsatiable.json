@@ -1,0 +1,69 @@
+{
+  "class_name": "TheInsatiable",
+  "title": "The Insatiable",
+  "min_hp": 341,
+  "max_hp": 341,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LIQUIFY_GROUND_MOVE",
+      "title": "Liquify Ground",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "status",
+          "amount": 6
+        }
+      ],
+      "effects": [
+        "Apply 4 Sandpit Power",
+        "Add 3 Frantic Escape to hand, 3 to discard"
+      ]
+    },
+    {
+      "id": "THRASH_MOVE",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "LUNGING_BITE_MOVE",
+      "title": "Lunging Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 31
+        }
+      ],
+      "effects": [
+        "Deal 31 damage"
+      ]
+    },
+    {
+      "id": "SALIVATE_MOVE",
+      "title": "Salivate",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Liquify Ground. Then cycles: Thrash → Lunging Bite → Salivate → Thrash (repeats indefinitely)",
+  "powers_on_spawn": [],
+  "notes": "Liquify Ground applies Sandpit Power which damages the player at the end of each turn, and fills the player's deck with Frantic Escape status cards. After using Liquify Ground, the monster continues attacking normally but with different hurt animations (showing it is liquified)."
+}

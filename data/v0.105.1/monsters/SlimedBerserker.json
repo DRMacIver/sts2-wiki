@@ -1,0 +1,59 @@
+{
+  "class_name": "SlimedBerserker",
+  "title": "Slimed Berserker",
+  "min_hp": 281,
+  "max_hp": 281,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "VOMIT_ICHOR_MOVE",
+      "title": "Vomit Ichor",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 10
+        }
+      ],
+      "effects": ["Add 10 Slimed to discard"]
+    },
+    {
+      "id": "FURIOUS_PUMMELING_MOVE",
+      "title": "Furious Pummeling",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 4
+        }
+      ],
+      "effects": ["Deal 5 damage", "4 hits"]
+    },
+    {
+      "id": "LEECHING_HUG_MOVE",
+      "title": "Leeching Hug",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Weak", "Apply 3 Strength"]
+    },
+    {
+      "id": "SMOTHER_MOVE",
+      "title": "Smother",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 33
+        }
+      ],
+      "effects": ["Deal 33 damage"]
+    }
+  ],
+  "move_pattern": "Cycles: Vomit Ichor → Furious Pummeling → Leeching Hug → Smother",
+  "powers_on_spawn": [],
+  "notes": "Smother is a hidden move that doesn't appear in the bestiary but is part of the move cycle."
+}

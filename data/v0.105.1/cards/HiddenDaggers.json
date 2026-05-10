@@ -1,0 +1,29 @@
+{
+  "class_name": "HiddenDaggers",
+  "title": "Hidden Daggers",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2
+    },
+    {
+      "type": "Shivs",
+      "base_value": 2
+    }
+  ],
+  "description": "Discard 2 cards.\nAdd 2 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
+  "upgraded_description": "Discard 2 cards.\nAdd 2 [gold]Shivs+[/gold] into your [gold]Hand[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "Shiv",
+      "title": "Shiv",
+      "slug": "shiv"
+    }
+  ]
+}

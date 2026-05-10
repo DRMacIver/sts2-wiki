@@ -1,0 +1,8 @@
+{
+  "class_name": "SlothPower",
+  "title": "Sloth",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "You cannot play more than [blue]3[/blue] cards each turn.",
+  "smart_description": "You cannot play more than [blue]3[/blue] cards each turn."
+}

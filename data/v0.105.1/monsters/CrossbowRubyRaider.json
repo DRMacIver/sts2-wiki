@@ -1,0 +1,38 @@
+{
+  "class_name": "CrossbowRubyRaider",
+  "title": "Crossbow Raider",
+  "min_hp": 19,
+  "max_hp": 22,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FIRE_MOVE",
+      "title": "Fire!",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage"
+      ]
+    },
+    {
+      "id": "RELOAD_MOVE",
+      "title": "Reload",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 3
+        }
+      ],
+      "effects": [
+        "Gain 3 Block"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Reload. Then alternates between Reload and Fire.",
+  "powers_on_spawn": [],
+  "notes": "The monster cycles between firing and reloading. When firing, it deals damage and becomes unable to fire (crossbow unloaded). When reloading, it gains block and readies itself to fire again."
+}

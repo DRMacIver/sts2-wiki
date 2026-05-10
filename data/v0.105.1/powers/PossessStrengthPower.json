@@ -1,0 +1,8 @@
+{
+  "class_name": "PossessStrengthPower",
+  "title": "Possess Strength",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When killed, return all stolen [gold]Strength[/gold] to the player.",
+  "smart_description": "When killed, return all stolen [gold]Strength[/gold] to the player."
+}

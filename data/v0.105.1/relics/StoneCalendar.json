@@ -1,0 +1,8 @@
+{
+  "class_name": "StoneCalendar",
+  "title": "Stone Calendar",
+  "rarity": "Rare",
+  "description": "At the end of turn [blue]7[/blue], deal [blue]52[/blue] damage to ALL enemies.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers at the end of turn 7 regardless of combat duration. Displays a counter showing the current turn number, which becomes the trigger turn when activated."
+}

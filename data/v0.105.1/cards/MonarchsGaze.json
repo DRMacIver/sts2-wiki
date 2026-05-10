@@ -1,0 +1,25 @@
+{
+  "class_name": "MonarchsGaze",
+  "title": "Monarch's Gaze",
+  "character": "Regent",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "StrengthLoss",
+      "base_value": 1
+    }
+  ],
+  "description": "Whenever you attack an enemy, it loses 1 [gold]Strength[/gold] this turn.",
+  "upgraded_cost": 2,
+  "referenced_powers": [
+    {
+      "class_name": "MonarchsGazePower",
+      "title": "Monarch's Gaze",
+      "slug": "monarchs-gaze-power"
+    }
+  ]
+}

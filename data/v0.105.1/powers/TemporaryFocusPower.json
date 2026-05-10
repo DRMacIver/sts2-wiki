@@ -1,0 +1,9 @@
+{
+  "class_name": "TemporaryFocusPower",
+  "title": "Derived from Origin (Card/Potion/Relic)",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Focus[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Focus[/gold] until the end of this turn.",
+  "notes": "Abstract power class that grants temporary Focus. The title is derived from the card, potion, or relic that applies this power. Automatically removed at the end of the turn and reverses the Focus change. There is a debuff variant (TemporaryFocusDownPower) for negative focus values."
+}

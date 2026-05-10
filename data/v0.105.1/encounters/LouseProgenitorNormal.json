@@ -1,0 +1,9 @@
+{
+  "class_name": "LouseProgenitorNormal",
+  "title": "Louse Progenitor",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["LouseProgenitor"],
+  "total_monsters": 1,
+  "tags": []
+}

@@ -1,0 +1,41 @@
+{
+  "class_name": "Relax",
+  "title": "Relax",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 15,
+      "upgraded_value": 17
+    },
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    },
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Gain 15 [gold]Block[/gold].\nNext turn, draw 2 cards and gain 2 Energy.",
+  "upgraded_description": "Gain 17 [gold]Block[/gold].\nNext turn, draw 3 cards and gain 3 Energy.",
+  "referenced_powers": [
+    {
+      "class_name": "DrawCardsNextTurnPower",
+      "title": "Draw Cards Next Turn",
+      "slug": "draw-cards-next-turn"
+    },
+    {
+      "class_name": "EnergyNextTurnPower",
+      "title": "Energy Next Turn",
+      "slug": "energy-next-turn"
+    }
+  ]
+}

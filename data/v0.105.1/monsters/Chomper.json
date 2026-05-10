@@ -1,0 +1,42 @@
+{
+  "class_name": "Chomper",
+  "title": "Chomper",
+  "min_hp": 63,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CLAMP_MOVE",
+      "title": "Clamp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "SCREECH_MOVE",
+      "title": "Screech",
+      "intents": [
+        {
+          "type": "debuff",
+          "amount": 3
+        }
+      ],
+      "effects": [
+        "Add 3 Dazed"
+      ]
+    }
+  ],
+  "move_pattern": "Alternates between Clamp and Screech.",
+  "powers_on_spawn": [
+    "Artifact Power (2)"
+  ],
+  "notes": "The starting move depends on configuration (Clamp or Screech)."
+}

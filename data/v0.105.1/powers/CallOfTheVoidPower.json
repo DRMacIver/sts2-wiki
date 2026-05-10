@@ -1,0 +1,8 @@
+{
+  "class_name": "CallOfTheVoidPower",
+  "title": "Call of the Void",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add [blue]1[/blue] random card into your [gold]Hand[/gold] and apply [gold]Ethereal[/gold] to it.",
+  "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random {Amount:plural:card|cards} into your [gold]Hand[/gold] and apply [gold]Ethereal[/gold] to {Amount:plural:it|them}."
+}

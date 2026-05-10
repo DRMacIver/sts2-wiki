@@ -1,0 +1,12 @@
+{
+  "class_name": "LagavulinMatriarchBoss",
+  "title": "Lagavulin Matriarch",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": [
+    "LagavulinMatriarch"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": null
+}

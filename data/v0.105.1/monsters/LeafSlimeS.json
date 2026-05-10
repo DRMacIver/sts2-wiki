@@ -1,0 +1,37 @@
+{
+  "class_name": "LeafSlimeS",
+  "title": "Leaf Slime (S)",
+  "min_hp": 12,
+  "max_hp": 16,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TACKLE_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": [
+        "Deal 4 damage"
+      ]
+    },
+    {
+      "id": "GOOP_MOVE",
+      "title": "Goop",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 1 Slimed to discard"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with a random move, then alternates between Tackle and Goop (cannot repeat the same move consecutively)",
+  "powers_on_spawn": [],
+  "notes": ""
+}

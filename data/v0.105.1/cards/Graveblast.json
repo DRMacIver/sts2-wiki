@@ -1,0 +1,19 @@
+{
+  "class_name": "Graveblast",
+  "title": "Graveblast",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Deal 4 damage.\nPut a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "x_cost": false
+}

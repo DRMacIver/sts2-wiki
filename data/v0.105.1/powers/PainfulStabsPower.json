@@ -1,0 +1,8 @@
+{
+  "class_name": "PainfulStabsPower",
+  "title": "Painful Stabs",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Shuffle [blue]1[/blue] [gold]Wound[/gold] into your [gold]Discard Pile[/gold] each time you receive unblocked attack damage.",
+  "smart_description": "Shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Wound|Wounds}[/gold] into your [gold]Discard Pile[/gold] each time you receive unblocked attack damage."
+}

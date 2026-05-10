@@ -1,0 +1,21 @@
+{
+  "class_name": "Spinner",
+  "title": "Spinner",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "At the start of your turn, [gold]Channel[/gold] 1 [gold]Glass[/gold].",
+  "upgraded_description": "[gold]Channel[/gold] 1 [gold]Glass[/gold].\nAt the start of your turn, [gold]Channel[/gold] 1 [gold]Glass[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "SpinnerPower",
+      "title": "Spinner",
+      "slug": "spinner"
+    }
+  ]
+}

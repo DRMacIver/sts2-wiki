@@ -1,0 +1,8 @@
+{
+  "class_name": "PanachePower",
+  "title": "Panache",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "If you play [blue]5[/blue] cards this turn, deal damage to ALL enemies.",
+  "smart_description": "If you play [blue]{CardsLeft}[/blue] more {CardsLeft:plural:card|cards} this turn, deal [blue]{Amount}[/blue] damage to ALL enemies."
+}

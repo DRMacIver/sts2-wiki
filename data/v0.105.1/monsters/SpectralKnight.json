@@ -1,0 +1,52 @@
+{
+  "class_name": "SpectralKnight",
+  "title": "Spectral Knight",
+  "min_hp": 97,
+  "max_hp": 97,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HEX",
+      "title": "Hex",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Hex"
+      ]
+    },
+    {
+      "id": "SOUL_SLASH",
+      "title": "Soul Slash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "SOUL_FLAME",
+      "title": "Soul Flame",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 4 damage per hit",
+        "3 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Hex. Then Soul Slash. Afterwards, randomly chooses between Soul Slash (more likely) and Soul Flame (cannot repeat itself).",
+  "powers_on_spawn": [],
+  "notes": "The RandomBranchState weights Soul Slash at 2:1 against Soul Flame. Soul Flame cannot repeat consecutively."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "SpectrumShiftPower",
+  "title": "Spectrum Shift",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add [blue]1[/blue] random Colorless card into your [gold]Hand[/gold].",
+  "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random Colorless {Amount:plural:card|cards} into your [gold]Hand[/gold]."
+}

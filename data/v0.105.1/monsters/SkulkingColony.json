@@ -1,0 +1,76 @@
+{
+  "class_name": "SkulkingColony",
+  "title": "Skulking Colony",
+  "min_hp": 75,
+  "max_hp": 75,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    },
+    {
+      "id": "ZOOM_MOVE",
+      "title": "Zoom",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "block",
+          "amount": 13
+        }
+      ],
+      "effects": [
+        "Deal 16 damage",
+        "Gain 13 Block"
+      ]
+    },
+    {
+      "id": "INERTIA_MOVE",
+      "title": "Inertia",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "Apply 3 Strength"
+      ]
+    },
+    {
+      "id": "PIERCING_STABS_MOVE",
+      "title": "Piercing Stabs",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through: Smash → Zoom → Inertia → Piercing Stabs",
+  "powers_on_spawn": [
+    "HardenedShell (15)"
+  ]
+}

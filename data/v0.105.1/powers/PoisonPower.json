@@ -1,0 +1,9 @@
+{
+  "class_name": "PoisonPower",
+  "title": "Poison",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by [blue]1[/blue].",
+  "smart_description": "At the start of its turn, loses [blue]poison damage[/blue] HP, then reduce [gold]Poison[/gold] by [blue]1[/blue]. Poison damage equals the current poison stack.",
+  "notes": "Stack type is Counter. Each poison application increases damage taken. The power deals damage multiple times per turn if accelerant is present (triggering once per turn plus once for each Accelerant power on opponents, up to the poison count)."
+}

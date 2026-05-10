@@ -1,0 +1,24 @@
+{
+  "class_name": "TheScythe",
+  "title": "The Scythe",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13
+    },
+    {
+      "type": "Increase",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 13 damage.\nPermanently increase this card's damage by 3.",
+  "upgraded_description": "Deal 13 damage.\nPermanently increase this card's damage by 4.",
+  "notes": "This card permanently increases its own damage each time it is played. The damage increase persists across game sessions and upgrades."
+}

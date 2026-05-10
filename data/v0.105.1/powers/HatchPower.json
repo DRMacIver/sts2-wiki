@@ -1,0 +1,8 @@
+{
+  "class_name": "HatchPower",
+  "title": "Hatch",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Hatches after X turns.",
+  "smart_description": "Hatches after {Amount} {Amount:plural:turn|turns}."
+}

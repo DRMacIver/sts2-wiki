@@ -1,0 +1,22 @@
+{
+  "class_name": "Rally",
+  "title": "Rally",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "AllAllies",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 12,
+      "upgraded_value": 17
+    }
+  ],
+  "description": "ALL players gain +12 [gold]Block[/gold].",
+  "upgraded_description": "ALL players gain +17 [gold]Block[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Multiplayer-only card."
+}

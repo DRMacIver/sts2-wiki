@@ -1,0 +1,19 @@
+{
+  "class_name": "Reanimate",
+  "title": "Reanimate",
+  "character": "Necrobinder",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 20,
+      "upgraded_value": 25
+    }
+  ],
+  "description": "[gold]Summon[/gold] 20.",
+  "upgraded_description": "[gold]Summon[/gold] 25."
+}

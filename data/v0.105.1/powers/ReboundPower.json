@@ -1,0 +1,8 @@
+{
+  "class_name": "ReboundPower",
+  "title": "Rebound",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The next card you play this turn is placed on the top of your [gold]Draw Pile[/gold].",
+  "smart_description": "The next {Amount:plural:card|[blue]{}[/blue] cards} you play this turn {Amount:plural:is|are} placed on the top of your [gold]Draw Pile[/gold]."
+}

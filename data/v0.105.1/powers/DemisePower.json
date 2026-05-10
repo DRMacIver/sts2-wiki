@@ -1,0 +1,9 @@
+{
+  "class_name": "DemisePower",
+  "title": "Demise",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the end of its turn, this creature loses HP.",
+  "smart_description": "At the end of [gold]{OwnerName}[/gold]'s turn, it loses [blue]{Amount}[/blue] HP.",
+  "notes": "Deals unblockable, unpowered damage equal to the power stack amount. Damage is applied each turn regardless of block or power status."
+}

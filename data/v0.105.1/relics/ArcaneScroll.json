@@ -1,0 +1,8 @@
+{
+  "class_name": "ArcaneScroll",
+  "title": "Arcane Scroll",
+  "rarity": "Ancient",
+  "description": "Upon pickup, obtain a random Rare Card to add to your Deck.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "When obtained, adds one random Rare Card from the character's card pool to the deck."
+}

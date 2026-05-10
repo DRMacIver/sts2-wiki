@@ -1,0 +1,24 @@
+{
+  "class_name": "PullAggro",
+  "title": "Pull Aggro",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 4,
+      "upgraded_value": 5
+    },
+    {
+      "type": "Block",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "[gold]Summon[/gold] 4.\nGain 7 [gold]Block[/gold].",
+  "upgraded_description": "[gold]Summon[/gold] 5.\nGain 9 [gold]Block[/gold]."
+}

@@ -1,0 +1,24 @@
+{
+  "class_name": "SolarStrike",
+  "title": "Solar Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Stars",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 9 damage.\nGain 1 star.",
+  "upgraded_description": "Deal 10 damage.\nGain 2 stars."
+}

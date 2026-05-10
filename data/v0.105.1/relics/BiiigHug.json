@@ -1,0 +1,8 @@
+{
+  "class_name": "BiiigHug",
+  "title": "Biiig Hug",
+  "rarity": "Ancient",
+  "description": "Upon pickup, remove [blue]4[/blue] cards from your [gold]Deck[/gold]. Whenever you shuffle your [gold]Draw Pile[/gold], add a [gold]Soot[/gold] into your [gold]Draw Pile[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic generates Soot cards whenever the draw pile is shuffled, encouraging strategies that leverage Soot's effects. The initial deck thinning reduces deck size, which can have synergistic effects with other relics and cards."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "StrengthPotion",
+  "title": "Strength Potion",
+  "rarity": "Common",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Gain [blue]2[/blue] [gold]Strength[/gold]."
+}

@@ -1,0 +1,18 @@
+{
+  "class_name": "OneHpMonster",
+  "title": "Big Dummy",
+  "min_hp": 1,
+  "max_hp": 1,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NOTHING",
+      "title": "Nothing",
+      "intents": [{"type": "hidden"}],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Repeats Nothing (hidden) indefinitely.",
+  "powers_on_spawn": [],
+  "notes": "Test/debug monster. Uses BIG_DUMMY localization. Filtered out by generator."
+}

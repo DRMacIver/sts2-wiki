@@ -1,0 +1,8 @@
+{
+  "class_name": "TangledPower",
+  "title": "Tangled",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Attacks cost [blue]1[/blue] additional [gold]Energy[/gold] this turn.",
+  "smart_description": "Attacks cost an additional 1 energy this turn."
+}

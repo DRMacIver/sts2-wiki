@@ -1,0 +1,26 @@
+{
+  "class_name": "Loop",
+  "title": "Loop",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "At the start of your turn, trigger the passive ability of your rightmost Orb.",
+  "upgraded_description": "At the start of your turn, trigger the passive ability of your rightmost Orb 2 times.",
+  "referenced_powers": [
+    {
+      "class_name": "LoopPower",
+      "title": "Loop",
+      "slug": "loop"
+    }
+  ]
+}

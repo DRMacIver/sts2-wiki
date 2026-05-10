@@ -1,0 +1,23 @@
+{
+  "class_name": "Alignment",
+  "title": "Alignment",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Gain 2 Energy.",
+  "upgraded_description": "Gain 3 Energy.",
+  "x_cost": false,
+  "star_cost": 3,
+  "referenced_powers": [],
+  "notes": "Uses Star resource instead of standard energy cost."
+}

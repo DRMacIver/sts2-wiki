@@ -1,0 +1,10 @@
+{
+  "class_name": "NibbitsNormal",
+  "title": "A Pair of Nibbits",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Nibbit"],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "Two Nibbits spawn in separate slots (front and back), with the front Nibbit marked as front position."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "ShadowmeldPower",
+  "title": "Shadowmeld",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Double your [gold]Block[/gold] gain this turn.",
+  "notes": "Block gain is multiplied by 2^(number of stacks), giving exponential scaling. Removes itself at the end of the turn. In-game, the smart description shows the current stack count when the power is stacked multiple times."
+}

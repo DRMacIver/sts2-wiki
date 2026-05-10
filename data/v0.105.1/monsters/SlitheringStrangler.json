@@ -1,0 +1,55 @@
+{
+  "class_name": "SlitheringStrangler",
+  "title": "Slithering Strangler",
+  "min_hp": 54,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CONSTRICT",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Constrict"
+      ]
+    },
+    {
+      "id": "THWACK",
+      "title": "Thwack",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "block",
+          "amount": 5
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Gain 5 Block"
+      ]
+    },
+    {
+      "id": "LASH",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Constrict. Then randomly chooses between Thwack or Lash, both of which loop back to Constrict.",
+  "powers_on_spawn": [],
+  "notes": "The Slithering Strangler uses Constrict to apply its signature debuff to the player. Thwack provides defensiveness by combining damage with block generation. Lash is a pure damage option. The monster consistently cycles back to Constrict, creating a predictable rhythm punctuated by random attack variations."
+}

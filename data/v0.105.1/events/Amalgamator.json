@@ -1,0 +1,36 @@
+{
+  "class_name": "Amalgamator",
+  "title": "Amalgamator",
+  "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in—the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \"face\" is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\"One with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\"",
+  "options": [
+    {
+      "title": "Combine Strikes",
+      "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Combine Defends",
+      "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": [
+    "Hive"
+  ],
+  "conditions": [
+    "All players must have at least 2 removable basic Strike cards",
+    "All players must have at least 2 removable basic Defend cards"
+  ],
+  "notes": "The Amalgamator presents a deck refinement opportunity in the late game. Each option requires selecting and removing 2 basic Strike or Defend cards from your deck, which are then replaced by a single [gold]Ultimate Strike[/gold] or [gold]Ultimate Defend[/gold] card respectively. This reduces overall deck consistency but adds a powerful upgraded card. The event involves dramatic visual and audio effects (screen shake, metallic sounds) as the Amalgamator crafts the upgraded card.",
+  "card_refs": [
+    {
+      "class_name": "UltimateStrike",
+      "title": "Ultimate Strike",
+      "slug": "ultimate-strike"
+    },
+    {
+      "class_name": "UltimateDefend",
+      "title": "Ultimate Defend",
+      "slug": "ultimate-defend"
+    }
+  ],
+  "relic_refs": []
+}

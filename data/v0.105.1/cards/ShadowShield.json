@@ -1,0 +1,19 @@
+{
+  "class_name": "ShadowShield",
+  "title": "Shadow Shield",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 11,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Gain 11 [gold]Block[/gold].\n[gold]Channel[/gold] 1 [gold]Dark[/gold].",
+  "notes": "Channels a Dark Orb when played."
+}

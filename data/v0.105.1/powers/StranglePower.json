@@ -1,0 +1,8 @@
+{
+  "class_name": "StranglePower",
+  "title": "Strangle",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card this turn, this enemy loses [blue]2[/blue] HP.",
+  "smart_description": "Whenever you play a card this turn, this enemy loses [blue]2[/blue] HP."
+}

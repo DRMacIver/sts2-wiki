@@ -1,0 +1,20 @@
+{
+  "class_name": "Dredge",
+  "title": "Dredge",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3
+    }
+  ],
+  "description": "Put 3 cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "When upgraded, this card gains Retain."
+}

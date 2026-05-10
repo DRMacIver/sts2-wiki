@@ -1,0 +1,26 @@
+{
+  "class_name": "Dismantle",
+  "title": "Dismantle",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Deal 8 damage.\nIf the enemy is [gold]Vulnerable[/gold], hits twice.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

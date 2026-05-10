@@ -1,0 +1,8 @@
+{
+  "class_name": "RoyaltiesPower",
+  "title": "Royalties",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of combat, gain [blue]25[/blue] [gold]Gold[/gold].",
+  "smart_description": "At the end of combat, gain [blue]25[/blue] [gold]Gold[/gold]."
+}

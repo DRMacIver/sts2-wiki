@@ -1,0 +1,26 @@
+{
+  "class_name": "PunchOff",
+  "title": "Punch Off",
+  "description": "Two [gold]Punch Constructs[/gold] are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
+  "options": [
+    {
+      "title": "Nab",
+      "description": "Add [red]Injury[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "I Can Take Them",
+      "description": "Fight them for [gold]Greater Rewards[/gold]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["Floor 7 or higher"],
+  "notes": "This is a multi-stage event. If you choose [gold]Nab[/gold], you receive an [red]Injury[/red] curse and a random [gold]Relic[/gold]. You then get hit for damage and the event ends. If you choose [gold]I Can Take Them[/gold], the Punch Constructs stop their animation loop and you enter combat against them. Defeating them grants 1 [gold]Relic[/gold] and 1 [gold]Potion[/gold]. During the initial event display, two Punch Constructs perform continuous attack animations at each other.",
+  "card_refs": [
+    {
+      "class_name": "Injury",
+      "title": "Injury",
+      "slug": "injury"
+    }
+  ],
+  "relic_refs": []
+}

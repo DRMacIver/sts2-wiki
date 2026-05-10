@@ -1,0 +1,8 @@
+{
+  "class_name": "ArtOfWar",
+  "title": "Art of War",
+  "rarity": "Rare",
+  "description": "If you do not play any Attacks during your turn, gain an additional 1 energy next turn.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks whether any attacks were played during the current turn. If no attacks were played, grants 1 additional energy when energy resets next turn."
+}

@@ -1,0 +1,31 @@
+{
+  "class_name": "PanicButton",
+  "title": "Panic Button",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 30,
+      "upgraded_value": 40
+    },
+    {
+      "type": "Turns",
+      "base_value": 2
+    }
+  ],
+  "description": "Gain 30 [gold]Block[/gold].\nYou cannot gain [gold]Block[/gold] from cards for 2 turns.",
+  "upgraded_description": "Gain 40 [gold]Block[/gold].\nYou cannot gain [gold]Block[/gold] from cards for 2 turns.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "NoBlockPower",
+      "title": "No Block",
+      "slug": "no-block"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "AsleepPower",
+  "title": "Asleep",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "TODO",
+  "smart_description": "Awakens upon losing HP or at the end of the countdown (Amount represents remaining turns).",
+  "notes": "This power tracks remaining turns of sleep as a Counter. When the creature takes unblocked damage, it awakens immediately. When the counter reaches 0 on their turn end, the WakeUpMove is triggered. Associated PlatingPower is removed when awakening or when the counter is about to expire."
+}

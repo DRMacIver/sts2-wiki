@@ -1,0 +1,21 @@
+{
+  "class_name": "Bludgeon",
+  "title": "Bludgeon",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 32,
+      "upgraded_value": 42
+    }
+  ],
+  "description": "Deal 32 damage.",
+  "upgraded_description": "Deal 42 damage.",
+  "x_cost": false,
+  "referenced_powers": []
+}

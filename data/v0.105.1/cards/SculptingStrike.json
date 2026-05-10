@@ -1,0 +1,23 @@
+{
+  "class_name": "SculptingStrike",
+  "title": "Sculpting Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Deal 9 damage.\nAdd [gold]Ethereal[/gold] to a card in your [gold]Hand[/gold].",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "star_cost": null,
+  "referenced_powers": [],
+  "notes": "Selects a card in hand without Ethereal and applies the Ethereal keyword to it."
+}

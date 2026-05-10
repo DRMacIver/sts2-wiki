@@ -1,0 +1,8 @@
+{
+  "class_name": "AttackPotion",
+  "title": "Attack Potion",
+  "rarity": "Common",
+  "usage": "CombatOnly",
+  "target": "Self",
+  "description": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add into your [gold]Hand[/gold]. It's free to play this turn."
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "Wither",
+  "title": "Wither",
+  "character": "Status",
+  "energy_cost": -2,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": [
+    "Exhaust",
+    "Retain"
+  ],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 2
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], take 2 damage.",
+  "notes": "This card automatically damages the player at the end of turn if it remains in hand. Cannot be played and must be exhausted or removed from hand to prevent the damage."
+}

@@ -1,0 +1,23 @@
+{
+  "class_name": "SlipperyBridge",
+  "title": "Slippery Bridge",
+  "description": "While crossing a rickety wooden bridge, there is a sudden [blue][jitter]torrent of rain[/jitter][/blue]. [purple][sine]Massive gusts of wind[/sine][/purple] buffet you, threatening to end your journey.",
+  "options": [
+    {
+      "title": "Overcome",
+      "description": "[red][a random card from your deck][/red] is removed from your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Hold On",
+      "description": "Lose [red]3[/red] HP. The card in the above option is randomized."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": [
+    "Floor 7+",
+    "At least one removable card in deck"
+  ],
+  "notes": "This event presents a choice between removing a card and holding on. If you choose \"Hold On\", you take damage and the event loops to the next state with increased damage costs (4 HP, 5 HP, 6 HP, etc.). Each iteration also randomizes which card is offered for removal. The random card preferentially selects non-basic cards first, then expands to any removable card as cards are skipped. After 7 consecutive hold-ons (numbered HOLD_ON_0 through HOLD_ON_6), the event enters a loop (HOLD_ON_LOOP) that repeats indefinitely with the message \"The developer would like to inform you that there is no additional text for players who have held on this long. We apologize for the inconvenience.\" until you choose \"Overcome\". The \"Overcome\" option is always available and immediately ends the event by removing a random card from your deck.",
+  "card_refs": [],
+  "relic_refs": []
+}

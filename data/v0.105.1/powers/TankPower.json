@@ -1,0 +1,8 @@
+{
+  "class_name": "TankPower",
+  "title": "Tank",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Take double damage from enemies. Allies take half damage from enemies.",
+  "smart_description": "Take double damage from enemies. Allies take half damage from enemies."
+}

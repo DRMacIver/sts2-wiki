@@ -1,0 +1,25 @@
+{
+  "class_name": "Seance",
+  "title": "Seance",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Transform a card in your [gold]Draw Pile[/gold] into [gold]Soul[/gold].",
+  "upgraded_cost": 0,
+  "referenced_powers": [
+    {
+      "class_name": "Soul",
+      "title": "Soul",
+      "slug": "soul"
+    }
+  ]
+}

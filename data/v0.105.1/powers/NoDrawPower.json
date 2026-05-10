@@ -1,0 +1,8 @@
+{
+  "class_name": "NoDrawPower",
+  "title": "No Draw",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "You may not draw any more cards this turn.",
+  "smart_description": "You may not draw any more cards this turn."
+}

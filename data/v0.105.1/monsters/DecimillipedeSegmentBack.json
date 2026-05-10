@@ -1,0 +1,75 @@
+{
+  "class_name": "DecimillipedeSegmentBack",
+  "title": "Decimillipede Segment",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Trigger reattach mechanic"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with a random move (Writhe, Bulk, or Constrict based on segment position). Cycles: Constrict → Bulk → Writhe → Constrict... After death, performs Reattach once to restore health, then cycles through remaining moves randomly without repeating.",
+  "powers_on_spawn": [
+    "Reattach Power (25)"
+  ],
+  "notes": "Part of the Decimillipede multi-segment boss. Each segment's HP is adjusted to be unique (by +2 increments) to avoid duplicate maximum HP values among teammates. ReattachPower enables segments to heal and return to combat. The monster changes textures in Phobia Mode when alive vs dead. Different segment types (Back, Front, Middle) inherit this base behavior with variant attack animations."
+}

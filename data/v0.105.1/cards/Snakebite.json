@@ -1,0 +1,26 @@
+{
+  "class_name": "Snakebite",
+  "title": "Snakebite",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Poison",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Apply 7 [gold]Poison[/gold].",
+  "upgraded_description": "Apply 10 [gold]Poison[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

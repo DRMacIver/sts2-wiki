@@ -1,0 +1,19 @@
+{
+  "class_name": "ForgottenRitual",
+  "title": "Forgotten Ritual",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "If you [gold]Exhausted[/gold] a card this turn, gain 3 Energy.",
+  "x_cost": false
+}

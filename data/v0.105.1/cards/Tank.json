@@ -1,0 +1,22 @@
+{
+  "class_name": "Tank",
+  "title": "Tank",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Take double damage from enemies.\nAllies take half damage from enemies.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TankPower",
+      "title": "Tank",
+      "slug": "tank"
+    }
+  ],
+  "notes": "Multiplayer-only card. Applies Tank power with strength 1."
+}

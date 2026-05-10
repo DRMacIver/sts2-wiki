@@ -1,0 +1,20 @@
+{
+  "class_name": "DarkEmbrace",
+  "title": "Dark Embrace",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Whenever a card is [gold]Exhausted[/gold],\ndraw 1 card.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "DarkEmbracePower",
+      "title": "Dark Embrace",
+      "slug": "dark-embrace"
+    }
+  ]
+}

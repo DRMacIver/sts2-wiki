@@ -1,0 +1,28 @@
+{
+  "class_name": "Pagestorm",
+  "title": "Pagestorm",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [
+    "Ethereal"
+  ],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Whenever you draw an [gold]Ethereal[/gold] card, draw 1 card.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "PagestormPower",
+      "title": "Pagestorm",
+      "slug": "pagestorm"
+    }
+  ]
+}

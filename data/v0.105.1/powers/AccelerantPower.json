@@ -1,0 +1,9 @@
+{
+  "class_name": "AccelerantPower",
+  "title": "Accelerant",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Poison[/gold] is triggered an additional time.",
+  "smart_description": "[gold]Poison[/gold] is triggered [blue]{Amount}[/blue] additional {Amount:plural:time|times}.",
+  "notes": "Counter power that stacks - smart description shows the current counter value with proper pluralization. Related hover tip explains PoisonPower mechanics."
+}

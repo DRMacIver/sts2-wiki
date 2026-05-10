@@ -1,0 +1,20 @@
+{
+  "class_name": "Compact",
+  "title": "Compact",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 6,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Gain 6 [gold]Block[/gold].\n[gold]Transform[/gold] all Status cards in your [gold]Hand[/gold] into [gold]Fuel[/gold].",
+  "upgraded_description": "Gain 7 [gold]Block[/gold].\n[gold]Transform[/gold] all Status cards in your [gold]Hand[/gold] into [gold]Fuel+[/gold].",
+  "referenced_powers": []
+}

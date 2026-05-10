@@ -1,0 +1,13 @@
+{
+  "class_name": "Regret",
+  "title": "Regret",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], lose 1 HP for each card in your [gold]Hand[/gold].",
+  "notes": "This card has no upgrade levels. It is a passive curse that deals damage at the end of turn equal to the current hand size if the card is in hand."
+}

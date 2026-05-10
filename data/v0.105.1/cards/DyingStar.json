@@ -1,0 +1,33 @@
+{
+  "class_name": "DyingStar",
+  "title": "Dying Star",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 11
+    },
+    {
+      "type": "StrengthLoss",
+      "base_value": 9,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Deal 9 damage to ALL enemies. ALL enemies lose 9 [gold]Strength[/gold] this turn.",
+  "upgraded_description": "Deal 11 damage to ALL enemies. ALL enemies lose 11 [gold]Strength[/gold] this turn.",
+  "star_cost": 3,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "DyingStarPower",
+      "title": "Dying Star",
+      "slug": "dying-star"
+    }
+  ]
+}

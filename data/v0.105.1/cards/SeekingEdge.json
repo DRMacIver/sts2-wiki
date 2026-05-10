@@ -1,0 +1,28 @@
+{
+  "class_name": "SeekingEdge",
+  "title": "Seeking Edge",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Forge"],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 7,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "[gold]Forge[/gold] 7.\n[gold]Sovereign Blade[/gold] now deals damage to ALL enemies.",
+  "upgraded_description": "[gold]Forge[/gold] 11.\n[gold]Sovereign Blade[/gold] now deals damage to ALL enemies.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "SeekingEdgePower",
+      "title": "Seeking Edge",
+      "slug": "seeking-edge"
+    }
+  ],
+  "notes": "Applies SeekingEdgePower which modifies Sovereign Blade card behavior. Forged Sovereign Blade cards hit all enemies instead of a single target when this power is active."
+}

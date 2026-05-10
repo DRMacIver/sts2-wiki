@@ -1,0 +1,8 @@
+{
+  "class_name": "CountdownPower",
+  "title": "Countdown",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, apply [blue]6[/blue] [gold]Doom[/gold] to a random enemy.",
+  "smart_description": "At the start of your turn, apply [blue]{Amount}[/blue] [gold]Doom[/gold] to a random enemy."
+}

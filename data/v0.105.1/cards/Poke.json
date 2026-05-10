@@ -1,0 +1,22 @@
+{
+  "class_name": "Poke",
+  "title": "Poke",
+  "character": "Necrobinder",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 6 damage.",
+  "upgraded_description": "[gold]Osty[/gold] deals 9 damage.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Card only functions if Osty is present. Uses Osty's attack mechanics. Tagged with OstyAttack indicating it's part of the Osty summon system."
+}

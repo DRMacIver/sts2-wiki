@@ -1,0 +1,8 @@
+{
+  "class_name": "PotionOfCapacity",
+  "title": "Potion of Capacity",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "Self",
+  "description": "Gain [blue]2[/blue] [gold]Orb Slots[/gold]."
+}

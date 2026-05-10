@@ -1,0 +1,9 @@
+{
+  "class_name": "PersonalHivePower",
+  "title": "Personal Hive",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever this enemy is hit by an Attack, add [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
+  "smart_description": "Whenever this enemy is hit by an Attack, add [blue]1[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
+  "notes": "Applies to enemies. Counter increases with each stack, adding 1 Dazed card per hit per stack."
+}

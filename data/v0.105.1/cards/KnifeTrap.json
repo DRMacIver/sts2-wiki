@@ -1,0 +1,15 @@
+{
+  "class_name": "KnifeTrap",
+  "title": "Knife Trap",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [],
+  "description": "Play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.",
+  "upgraded_description": "[gold]Upgrade[/gold] and play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.",
+  "referenced_powers": [],
+  "notes": "Plays each Shiv from your Exhaust Pile on the target enemy. If upgraded, upgrades each Shiv before playing it. The number of Shivs played is dynamic based on how many Shivs are in your Exhaust Pile at the time of play."
+}

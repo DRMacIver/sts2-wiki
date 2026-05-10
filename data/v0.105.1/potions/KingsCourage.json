@@ -1,0 +1,9 @@
+{
+  "class_name": "KingsCourage",
+  "title": "King's Courage",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "[gold]Forge[/gold] [blue]15[/blue].",
+  "notes": "Combat-only potion that grants Forge to a targeted player character."
+}

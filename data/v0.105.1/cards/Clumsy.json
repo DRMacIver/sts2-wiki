@@ -1,0 +1,12 @@
+{
+  "class_name": "Clumsy",
+  "title": "Clumsy",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Unplayable", "Ethereal"],
+  "vars": [],
+  "description": ""
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "ColossusPower",
+  "title": "Colossus",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies this turn.",
+  "smart_description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies this turn.",
+  "notes": "Stack count determines how many turns the power lasts. The power duration decrements at the end of the player's turn. The 50% damage reduction is multiplicative and only applies to powered attacks from enemies with Vulnerable applied."
+}

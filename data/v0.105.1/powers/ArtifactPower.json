@@ -1,0 +1,9 @@
+{
+  "class_name": "ArtifactPower",
+  "title": "Artifact",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Negates[/gold] debuffs.",
+  "smart_description": "[gold]Negates[/gold] [blue]{Amount}[/blue] {Amount:plural:debuff|debuffs}.",
+  "notes": "Counter-type power that blocks incoming debuffs. Each time a debuff would be applied, it is negated and the counter decrements by 1. Scales in multiplayer by increasing the counter based on player count."
+}

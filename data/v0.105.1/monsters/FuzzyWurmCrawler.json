@@ -1,0 +1,50 @@
+{
+  "class_name": "FuzzyWurmCrawler",
+  "title": "Fuzzy Wurm Crawler",
+  "min_hp": 58,
+  "max_hp": 59,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FIRST_ACID_GOOP",
+      "title": "Acid Goop",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        }
+      ],
+      "effects": [
+        "Deal 6 damage"
+      ]
+    },
+    {
+      "id": "ACID_GOOP",
+      "title": "Acid Goop",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        }
+      ],
+      "effects": [
+        "Deal 6 damage"
+      ]
+    },
+    {
+      "id": "INHALE",
+      "title": "Inhale",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 7 Strength to self"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Acid Goop → Inhale → Acid Goop (repeats). First action uses FIRST_ACID_GOOP which is mechanically identical to ACID_GOOP.",
+  "powers_on_spawn": [],
+  "notes": "The Inhale move inflates the monster (IsPuffed state), changing its animation to an idle_loop_puffed animation. Acid Goop deflates it back to the normal idle_loop animation. This is purely cosmetic but changes how the monster appears during combat based on its most recent move."
+}

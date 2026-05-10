@@ -1,0 +1,19 @@
+{
+  "class_name": "Debt",
+  "title": "Debt",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Gold",
+      "base_value": 10
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], lose 10 [gold]Gold[/gold].",
+  "x_cost": false,
+  "notes": "This card has a turn-end effect that triggers when it remains in hand. It cannot be played (Unplayable keyword)."
+}

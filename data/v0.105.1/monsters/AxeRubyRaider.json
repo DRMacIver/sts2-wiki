@@ -1,0 +1,59 @@
+{
+  "class_name": "AxeRubyRaider",
+  "title": "Axe Raider",
+  "min_hp": 21,
+  "max_hp": 23,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SWING_1",
+      "title": "Swing 1",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "Gain 6 Block"
+      ]
+    },
+    {
+      "id": "SWING_2",
+      "title": "Swing 2",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "Gain 6 Block"
+      ]
+    },
+    {
+      "id": "BIG_SWING",
+      "title": "Big Swing",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Swing 1 → Swing 2 → Big Swing",
+  "powers_on_spawn": [],
+  "notes": "Swing 1 and Swing 2 are hidden from the bestiary display, showing only Big Swing. All damage values include ascension scaling."
+}

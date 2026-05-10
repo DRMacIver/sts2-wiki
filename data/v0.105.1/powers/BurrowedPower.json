@@ -1,0 +1,8 @@
+{
+  "class_name": "BurrowedPower",
+  "title": "Burrowed",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "[gold]Block[/gold] is not removed at the start of this creature's turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed.",
+  "smart_description": "[gold]Block[/gold] is not removed at the start of [gold]{OwnerName}[/gold]'s turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed."
+}

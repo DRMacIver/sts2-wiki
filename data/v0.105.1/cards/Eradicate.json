@@ -1,0 +1,20 @@
+{
+  "class_name": "Eradicate",
+  "title": "Eradicate",
+  "character": "Necrobinder",
+  "energy_cost": -1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Deal 11 damage X times.",
+  "upgraded_description": "Deal 14 damage X times.",
+  "x_cost": true
+}

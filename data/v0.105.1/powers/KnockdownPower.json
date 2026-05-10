@@ -1,0 +1,8 @@
+{
+  "class_name": "KnockdownPower",
+  "title": "Knockdown",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature takes [blue](stack count)[/blue] times the damage from other allies this turn.",
+  "smart_description": "Other allies deal [blue](stack count)[/blue] times more damage to this enemy this turn."
+}

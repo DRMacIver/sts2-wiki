@@ -1,0 +1,49 @@
+{
+  "class_name": "FossilStalker",
+  "title": "Fossil Stalker",
+  "min_hp": 54,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LATCH_MOVE",
+      "title": "Latch",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": ["Deal 14 damage"]
+    },
+    {
+      "id": "TACKLE_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 11 damage", "Apply 1 Frail"]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 4 damage", "2 hits"]
+    }
+  ],
+  "move_pattern": "Starts with Latch. Then randomly cycles between Latch, Tackle, or Lash with equal probability.",
+  "powers_on_spawn": ["Suck 3"],
+  "notes": "Tackle applies 1 Frail to targets, weakening their block effectiveness. Suck power is applied on spawn."
+}

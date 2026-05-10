@@ -1,0 +1,21 @@
+{
+  "class_name": "Bolas",
+  "title": "Bolas",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 3 damage.\nAt the start of your next turn, return this to your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "This card returns to your hand at the start of your next turn if it was played the previous round."
+}

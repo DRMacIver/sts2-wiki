@@ -1,0 +1,83 @@
+{
+  "class_name": "SoulFysh",
+  "title": "Soul Fysh",
+  "min_hp": 221,
+  "max_hp": 221,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BECKON_MOVE",
+      "title": "Beckon",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 2 Beckon cards to player's hand and discard"
+      ]
+    },
+    {
+      "id": "DE_GAS_MOVE",
+      "title": "De-Gas",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "GAZE_MOVE",
+      "title": "Gaze",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Add 1 Beckon to player's discard"
+      ]
+    },
+    {
+      "id": "FADE_MOVE",
+      "title": "Fade",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Intangible"
+      ]
+    },
+    {
+      "id": "SCREAM_MOVE",
+      "title": "Scream",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 15 damage",
+        "Apply 3 Vulnerable"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Beckon → De-Gas → Gaze → Fade → Scream → (repeats)",
+  "powers_on_spawn": [],
+  "notes": "Soul Fysh alternates between visible and invisible states. Fade makes it invisible and grants 2 Intangible. Scream makes it visible again. The monster gradually adds Beckon cards (status cards) to the player's deck through multiple moves, forcing the player to manage a larger hand over time. Vulnerable from Scream increases incoming damage."
+}

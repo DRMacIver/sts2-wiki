@@ -63,8 +63,8 @@ SKIP_MONSTERS = {
 # Some have Spine data but need manual rendering via tools/spine-renderer/.
 # Others genuinely have no skeleton data in the game files.
 KNOWN_MISSING_MONSTERS = {
+    "Aeonglass",  # New boss, no spine skel yet
     "Crusher",  # No spine skel
-    "Doormaker",  # No spine skel
     "FakeMerchantMonster",  # Has spine skel (fake_merchant_top) but not rendered
     "Flyconid",  # No spine skel
     "Ovicopter",  # Has spine skel but not rendered
@@ -78,6 +78,14 @@ KNOWN_MISSING_MONSTERS = {
 # brand-new beta cards whose atlas region is defined but not yet rendered.
 KNOWN_MISSING_CARDS = {
     "NotYet",  # v0.103.2 beta card; atlas region exists but extractor skipped it
+    "Wither",  # v0.105.1 status card; no atlas sprite
+}
+
+
+KNOWN_MISSING_RELICS = {
+    "FishingRod",  # v0.105.1 Ancient relic; not in atlas yet
+    "Kaleidoscope",  # v0.105.1 Ancient relic; not in atlas yet
+    "SilkenTress",  # v0.105.1 Ancient relic; not in atlas yet
 }
 
 
@@ -104,6 +112,8 @@ def check_relics(data_dir: Path, images_dir: Path) -> list[tuple[str, str]]:
     with open(data_dir / "relics.json") as f:
         relics = json.load(f)
     for relic in relics:
+        if relic["class_name"] in KNOWN_MISSING_RELICS:
+            continue
         image = relic.get("image", "")
         if not image:
             continue

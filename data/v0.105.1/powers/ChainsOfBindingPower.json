@@ -1,0 +1,8 @@
+{
+  "class_name": "ChainsOfBindingPower",
+  "title": "Chains of Binding",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "The first [blue]3[/blue] cards drawn each turn are Afflicted with [gold]Bound[/gold].",
+  "smart_description": "The first [blue]3[/blue] cards drawn each turn are Afflicted with [gold]Bound[/gold]."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "RegenPower",
+  "title": "Regen",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Regen[/gold] heals HP at the end of your turn. Each turn, [gold]Regen[/gold] is reduced by [blue]1[/blue].",
+  "smart_description": "At the end of your turn, heal HP equal to this power's stack, then reduce [gold]Regen[/gold] by [blue]1[/blue]."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "FresnelLens",
+  "title": "Fresnel Lens",
+  "rarity": "Event",
+  "description": "Whenever you add a card that gains [gold]Block[/gold] to your [gold]Deck[/gold], [gold]Enchant[/gold] it with [purple]Nimble[/purple] [blue]2[/blue].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Enchants eligible cards with Nimble whenever they gain Block and are added to your deck, either through rewards or direct deck additions. Cards must be capable of receiving the Nimble enchantment."
+}

@@ -1,0 +1,81 @@
+{
+  "class_name": "DecimillipedeSegmentMiddle",
+  "title": "Decimillipede Segment",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Reattach to the main creature"
+      ]
+    },
+    {
+      "id": "DEAD_MOVE",
+      "title": "Dead",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Cycles through Constrict, Bulk, and Writhe attacks in sequence. Starting move varies based on position. When a segment is defeated, it performs Reattach, then transitions to random selection of the three main moves.",
+  "powers_on_spawn": [
+    "Reattach Power (25)"
+  ],
+  "notes": "The Decimillipede is a multi-segment boss where each segment fights alongside the others. Segments have special HP adjustment mechanics to ensure unique HP values among all teammates. Segments coordinate visual attacks via AnimSegmentsAttack. The Reattach power is critical to the creature's mechanics - when a segment is defeated, Reattach allows it to rejoin the battle."
+}

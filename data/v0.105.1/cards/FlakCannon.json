@@ -1,0 +1,20 @@
+{
+  "class_name": "FlakCannon",
+  "title": "Flak Cannon",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "RandomEnemy",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].",
+  "upgraded_description": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal 11 damage to a random enemy for each card [gold]Exhausted[/gold].",
+  "referenced_powers": []
+}

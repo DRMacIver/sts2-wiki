@@ -1,0 +1,8 @@
+{
+  "class_name": "GravityPower",
+  "title": "Gravity",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card this turn, deal [blue]2[/blue] damage to ALL enemies.",
+  "smart_description": "Whenever you play a card this turn, deal [blue]2[/blue] damage to ALL enemies."
+}

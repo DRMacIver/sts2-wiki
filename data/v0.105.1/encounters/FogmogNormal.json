@@ -1,0 +1,10 @@
+{
+  "class_name": "FogmogNormal",
+  "title": "Fogmog",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Fogmog"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Has defined slots for both illusion and fogmog, with EyeWithTeeth listed as a possible monster, but only Fogmog is actually spawned in the current generation logic."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "PillarOfCreationPower",
+  "title": "Pillar of Creation",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you create a card, gain [blue]5[/blue] [gold]Block[/gold].",
+  "smart_description": "Whenever you create a card, gain [blue]5[/blue] [gold]Block[/gold]."
+}

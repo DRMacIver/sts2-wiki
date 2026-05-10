@@ -1,0 +1,23 @@
+{
+  "class_name": "Survivor",
+  "title": "Survivor",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Basic",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Gain 8 [gold]Block[/gold].\nDiscard 1 card.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "star_cost": null,
+  "referenced_powers": [],
+  "notes": "Grants block and forces discard of 1 card from hand during play."
+}

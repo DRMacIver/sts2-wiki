@@ -1,0 +1,8 @@
+{
+  "class_name": "Pantograph",
+  "title": "Pantograph",
+  "rarity": "Uncommon",
+  "description": "At the start of each [gold]Boss[/gold] combat, heal [green]25[/green] HP.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "The relic's status changes to 'Active' when approaching a boss room (when current map point is a child of the boss map point)."
+}

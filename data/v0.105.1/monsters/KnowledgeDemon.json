@@ -1,0 +1,75 @@
+{
+  "class_name": "KnowledgeDemon",
+  "title": "Knowledge Demon",
+  "min_hp": 399,
+  "max_hp": 399,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CURSE_OF_KNOWLEDGE_MOVE",
+      "title": "Curse of Knowledge",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Player chooses 1 status card to add to their deck",
+        "Disintegration deals 6-8 damage based on curse cycle"
+      ]
+    },
+    {
+      "id": "SLAP_MOVE",
+      "title": "Slap",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    },
+    {
+      "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+      "title": "Knowledge Overwhelming",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "PONDER_MOVE",
+      "title": "Ponder",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "heal",
+          "amount": 30
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "Heal 30 HP per player",
+        "Gain 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder → repeats. Knowledge Demon cycles through Curse of Knowledge 3 times (with a counter), then switches to repeating Slap → Knowledge Overwhelming → Ponder.",
+  "powers_on_spawn": [],
+  "notes": "Knowledge Demon's Curse of Knowledge move cycles through 3 stages (counter 0, 1, 2). At each stage, the player must choose between Disintegration and another status card (MindRot, Sloth, or WasteAway depending on stage). Disintegration's damage scales with the curse cycle (6 at stage 0, 7 at stage 1, 8 at stage 2). Knowledge Overwhelming causes the demon to enter a 'burnt' state which affects its animation. Ponder resets the burnt state. The move pattern changes after the counter reaches 3 - it no longer repeats Curse of Knowledge but instead repeats Slap → Knowledge Overwhelming → Ponder."
+}

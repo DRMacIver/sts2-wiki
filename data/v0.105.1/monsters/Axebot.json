@@ -1,0 +1,64 @@
+{
+  "class_name": "Axebot",
+  "title": "Axebot",
+  "min_hp": 76,
+  "max_hp": 86,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BOOT_UP_MOVE",
+      "title": "Boot Up",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 15
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 15 Block",
+        "Apply Strength to self (amount scales with stock usage)"
+      ]
+    },
+    {
+      "id": "ONE_TWO_MOVE",
+      "title": "The One-Two",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 10 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "HAMMER_UPPERCUT_MOVE",
+      "title": "Hammer Uppercut",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 14 damage",
+        "Apply 2 Weak",
+        "Apply 2 Frail"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Hammer Uppercut. Then alternates between The One-Two and Hammer Uppercut.",
+  "powers_on_spawn": [
+    "Stock (2)"
+  ],
+  "notes": "Axebot has a stock mechanic (defaults to 2). When stock is consumed or depleted, it may enter a different combat phase starting with Boot Up. The Strength gain from Boot Up scales inversely with remaining stock: Base 4 Strength × (2 - current stock). At max stock (2), gains 0 Strength. This encourages players to deplete the stock."
+}

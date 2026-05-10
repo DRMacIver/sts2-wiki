@@ -1,0 +1,8 @@
+{
+  "class_name": "CreativeAiPower",
+  "title": "Creative AI",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add a random Power into your [gold]Hand[/gold].",
+  "smart_description": "At the start of your turn, add {Amount:plural:a random Power|[blue]{}[/blue] random Powers} into your [gold]Hand[/gold]."
+}

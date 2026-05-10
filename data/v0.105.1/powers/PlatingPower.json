@@ -1,0 +1,9 @@
+{
+  "class_name": "PlatingPower",
+  "title": "Plating",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, gain [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]1[/blue] at the start of your turn.",
+  "smart_description": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]{Decrement}[/blue] at the start of your turn.",
+  "notes": "Counter-type power that grants Block each turn. The Decrement value is 1 by default, but scales to the number of players when applied to enemies in multiplayer encounters. This power also scales in multiplayer balance."
+}

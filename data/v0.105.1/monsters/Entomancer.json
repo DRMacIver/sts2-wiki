@@ -1,0 +1,55 @@
+{
+  "class_name": "Entomancer",
+  "title": "Entomancer",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BEES_MOVE",
+      "title": "Beeeees!",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 8
+        }
+      ],
+      "effects": [
+        "Deal 3 damage",
+        "8 hits"
+      ]
+    },
+    {
+      "id": "SPEAR_MOVE",
+      "title": "Spear!",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        }
+      ],
+      "effects": [
+        "Deal 20 damage"
+      ]
+    },
+    {
+      "id": "PHEROMONE_SPIT_MOVE",
+      "title": "Pheromone Spit",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 1 Hive (if current Hive < 3), or 2 Strength (if Hive ≥ 3)",
+        "Also applies 1 Strength when applying Hive"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through: Beeeees! → Spear! → Pheromone Spit → repeats",
+  "powers_on_spawn": [
+    "Hive"
+  ],
+  "notes": "Pheromone Spit has conditional scaling: if current Hive stacks are below 3, it applies 1 Hive and 1 Strength; once Hive reaches 3 or higher, it applies 2 Strength instead. This creates a scaling mechanic where the monster builds up Hive in early turns then switches to pure Strength scaling."
+}

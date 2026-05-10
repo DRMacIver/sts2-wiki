@@ -1,0 +1,10 @@
+{
+  "class_name": "LivingFogNormal",
+  "title": "Evil Gas",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["LivingFog"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Encounter features LivingFog with GasBomb enemies that spawn dynamically during combat. Has 5 bomb slots available in addition to the main fog enemy."
+}

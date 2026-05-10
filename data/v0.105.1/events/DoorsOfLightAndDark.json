@@ -1,0 +1,20 @@
+{
+  "class_name": "DoorsOfLightAndDark",
+  "title": "Doors of Light and Dark",
+  "description": "A doorway existed where none existed moments before...\n\nYou enter to find two shimmering doorways and a [gold]well-dressed doorman[/gold].\n\u201cFinally, a visitor! Please please! Choose a door, any door!\u201d\n\n[blue]Are we still in the Spire? How is this place so clean?[/blue]",
+  "options": [
+    {
+      "title": "Light Door",
+      "description": "[gold]Upgrade[/gold] [blue]2[/blue] random cards."
+    },
+    {
+      "title": "Dark Door",
+      "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "This event presents two mutually exclusive outcomes. The [gold]Light Door[/gold] upgrades up to 2 randomly selected [gold]upgradable[/gold] cards from your deck—only cards with upgrade capability are eligible. The [purple]Dark Door[/purple] opens a card selector to permanently remove any 1 card from your deck. Each choice leads to distinct flavor text reflecting your experience.",
+  "card_refs": [],
+  "relic_refs": []
+}

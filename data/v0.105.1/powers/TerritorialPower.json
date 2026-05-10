@@ -1,0 +1,8 @@
+{
+  "class_name": "TerritorialPower",
+  "title": "Territorial",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of its turn, gains [blue]1[/blue] [gold]Strength[/gold].",
+  "smart_description": "At the end of its turn, gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+}

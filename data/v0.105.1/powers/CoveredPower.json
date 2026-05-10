@@ -1,0 +1,9 @@
+{
+  "class_name": "CoveredPower",
+  "title": "Covered",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "An ally is covering you. All attacks that would be directed to you are redirected to them instead.",
+  "smart_description": "[gold]{Applier}[/gold] is covering you. All attacks that would be directed to you are redirected to them instead.",
+  "notes": "Single-instance buff that prevents damage to the owner by redirecting powered attacks to the applier. Automatically applies Intercept to the applier when activated. Removed if the applier dies or at the end of the enemy's turn."
+}

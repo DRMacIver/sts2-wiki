@@ -1,0 +1,8 @@
+{
+  "class_name": "FlameBarrierPower",
+  "title": "Flame Barrier",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you are attacked this turn, deal [blue]4[/blue] damage back.",
+  "smart_description": "Whenever you are attacked this turn, deal [blue]{Amount}[/blue] damage back."
+}

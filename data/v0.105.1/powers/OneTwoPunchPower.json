@@ -1,0 +1,8 @@
+{
+  "class_name": "OneTwoPunchPower",
+  "title": "One-Two Punch",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your next Attack is played an extra time this turn.",
+  "smart_description": "Your next {Amount:plural:Attack is|[blue]{}[/blue] Attacks are} played an extra time this turn."
+}

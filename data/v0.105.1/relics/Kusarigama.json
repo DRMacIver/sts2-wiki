@@ -1,0 +1,8 @@
+{
+  "class_name": "Kusarigama",
+  "title": "Kusarigama",
+  "rarity": "Uncommon",
+  "description": "Every time you play [blue]3[/blue] Attacks in a single turn, deal [blue]6[/blue] damage to a random enemy.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Displays a counter showing how many attacks played towards the next trigger. Resets at the end of each turn."
+}

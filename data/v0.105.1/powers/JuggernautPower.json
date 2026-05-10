@@ -1,0 +1,8 @@
+{
+  "class_name": "JuggernautPower",
+  "title": "Juggernaut",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you gain [gold]Block[/gold], deal [blue]5[/blue] damage to a random enemy.",
+  "smart_description": "Whenever you gain [gold]Block[/gold], deal [blue]{Amount}[/blue] damage to a random enemy."
+}

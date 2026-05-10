@@ -1,0 +1,8 @@
+{
+  "class_name": "NeurosurgePower",
+  "title": "Neurosurge",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, apply [blue]3[/blue] [gold]Doom[/gold] to yourself.",
+  "notes": "This power applies DoomPower to the owner each turn, with the amount equal to the power's stack counter."
+}

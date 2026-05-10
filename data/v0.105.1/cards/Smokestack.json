@@ -1,0 +1,26 @@
+{
+  "class_name": "Smokestack",
+  "title": "Smokestack",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Whenever you create a Status, deal 5 damage to ALL enemies.",
+  "upgraded_description": "Whenever you create a Status, deal 7 damage to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "SmokestackPower",
+      "title": "Smokestack",
+      "slug": "smokestack"
+    }
+  ]
+}

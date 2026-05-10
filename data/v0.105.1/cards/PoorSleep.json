@@ -1,0 +1,12 @@
+{
+  "class_name": "PoorSleep",
+  "title": "Poor Sleep",
+  "character": "Colorless",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Unplayable", "Retain"],
+  "vars": [],
+  "description": ""
+}

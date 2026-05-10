@@ -1,0 +1,9 @@
+{
+  "class_name": "ClarityPower",
+  "title": "Clarity",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your next turn, draw [blue]1[/blue] additional card.",
+  "smart_description": "At the start of your next [blue]2[/blue] turns, draw [blue]1[/blue] additional card.",
+  "notes": "Each stack grants +1 card draw for one turn, then decrements. Effects stack: 2 stacks = +2 cards over the next 2 turns, etc."
+}

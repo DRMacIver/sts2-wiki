@@ -1,0 +1,98 @@
+{
+  "class_name": "TestSubject",
+  "title": "Test Subject #C{Count}",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        }
+      ],
+      "effects": ["Deal 22 damage"]
+    },
+    {
+      "id": "SKULL_BASH_MOVE",
+      "title": "Skull Bash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 16 damage", "Apply 1 Vulnerable"]
+    },
+    {
+      "id": "MULTI_CLAW_MOVE",
+      "title": "Multi-Claw",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 11 damage", "3+ hits (hit count increases by 1 each use)"]
+    },
+    {
+      "id": "PHASE3_LACERATE_MOVE",
+      "title": "Lacerate",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 11 damage", "3 hits"]
+    },
+    {
+      "id": "BIG_POUNCE",
+      "title": "Big Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 45
+        }
+      ],
+      "effects": ["Deal 45 damage"]
+    },
+    {
+      "id": "BURNING_GROWL_MOVE",
+      "title": "Burning Growl",
+      "intents": [
+        {
+          "type": "status"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Add 5 Burn cards to player's discard", "Apply 3 Strength to self"]
+    },
+    {
+      "id": "RESPAWN_MOVE",
+      "title": "Respawn",
+      "intents": [
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Revive with increased HP", "Apply power based on respawn count"]
+    }
+  ],
+  "move_pattern": "Phase 1 (HP 111): Cycles Bite → Skull Bash → Bite. On death, revives as Phase 2. Phase 2 (HP 212): Cycles Multi-Claw (hit count increases by 1 each use, starting at 3). On second death, revives as Phase 3. Phase 3 (HP 313): Cycles Lacerate → Big Pounce → Burning Growl → Lacerate.",
+  "powers_on_spawn": ["Adaptable", "Enrage (3)"],
+  "notes": "Test Subject is a three-phase boss with respawning mechanics. It starts with Adaptable Power which grants revives. First form cycles Bite and Skull Bash. When defeated, Respawn triggers (scaling HP for multiplayer), applies Painful Stabs power, and transitions to Phase 2 where Multi-Claw hit count increases by 1 with each use. After the second defeat, revives as Phase 3, applies Nemesis power, removes Adaptable and Painful Stabs powers, and enters a final cycle of high-damage moves. Burning Growl adds Burn status cards to the player's discard pile and applies Strength to the monster itself. The monster progresses through three distinct forms with increasing power and complexity."
+}

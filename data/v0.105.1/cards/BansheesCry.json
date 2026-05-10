@@ -1,0 +1,24 @@
+{
+  "class_name": "BansheesCry",
+  "title": "Banshee's Cry",
+  "character": "Colorless",
+  "energy_cost": 9,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 33
+    },
+    {
+      "type": "Energy",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 33 damage to ALL enemies.\nCosts 2 Energy less for each [gold]Ethereal[/gold] card played this combat.",
+  "upgraded_cost": 7,
+  "x_cost": false,
+  "notes": "When this card enters combat, its cost is reduced by 2 for each Ethereal card already played this combat. Additionally, whenever another Ethereal card is played, this card's cost is reduced by 2 for the remainder of combat."
+}

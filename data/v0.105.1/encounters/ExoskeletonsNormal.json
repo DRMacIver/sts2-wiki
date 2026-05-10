@@ -1,0 +1,10 @@
+{
+  "class_name": "ExoskeletonsNormal",
+  "title": "Many Exoskeletons",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Exoskeleton"],
+  "total_monsters": 4,
+  "tags": ["Exoskeletons"],
+  "notes": "Four identical Exoskeletons occupy all four monster slots"
+}

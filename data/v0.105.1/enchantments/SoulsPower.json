@@ -1,0 +1,20 @@
+{
+  "class_name": "SoulsPower",
+  "title": "Soul's Power",
+  "description": "This card loses [gold]Exhaust[/gold].",
+  "card_type": "Any",
+  "restrictions": [
+    "Card must have Exhaust"
+  ],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "GraveOfTheForgotten",
+      "title": "Grave of the Forgotten",
+      "amount": 1
+    }
+  ],
+  "notes": "Removes the Exhaust keyword from the enchanted card on application."
+}

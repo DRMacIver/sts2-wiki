@@ -1,0 +1,25 @@
+{
+  "class_name": "Hemokinesis",
+  "title": "Hemokinesis",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 2
+    },
+    {
+      "type": "Damage",
+      "base_value": 15,
+      "upgraded_value": 20
+    }
+  ],
+  "description": "Lose 2 HP.\nDeal 15 damage.",
+  "upgraded_description": "Lose 2 HP.\nDeal 20 damage.",
+  "referenced_powers": [],
+  "x_cost": false
+}

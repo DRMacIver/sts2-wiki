@@ -1,0 +1,56 @@
+{
+  "class_name": "Toadpole",
+  "title": "Toadpole",
+  "min_hp": 22,
+  "max_hp": 26,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SPIKE_SPIT_MOVE",
+      "title": "Spike Spit",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 3
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 4 damage",
+        "3 hits",
+        "Reduce Thorns by 2"
+      ]
+    },
+    {
+      "id": "WHIRL_MOVE",
+      "title": "Whirl",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": [
+        "Deal 8 damage"
+      ]
+    },
+    {
+      "id": "SPIKEN_MOVE",
+      "title": "Spiken",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Thorns"
+      ]
+    }
+  ],
+  "move_pattern": "The move cycle depends on the IsFront property. If at front, the pattern is: Spiken → Spike Spit → Whirl (repeating). If not at front, the pattern is: Whirl → Spiken → Spike Spit (repeating). Thorns power affects animation states during combat.",
+  "powers_on_spawn": [],
+  "notes": "Toadpole uses Thorns as a core mechanic. Spiken applies 2 Thorns to itself, while Spike Spit removes 2 Thorns as a debuff effect. The presence of Thorns power modifies the monster's animation states, with separate animation sequences for buffed (with Thorns) and unbuffed states."
+}

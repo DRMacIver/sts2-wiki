@@ -1,0 +1,8 @@
+{
+  "class_name": "GamblingChip",
+  "title": "Gambling Chip",
+  "rarity": "Rare",
+  "description": "At the start of each combat, discard any number of cards then draw that many.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic activates only at the start of the first round of combat, allowing the player to select any number of cards from their hand to discard, and then draws that same number of cards."
+}

@@ -1,0 +1,72 @@
+{
+  "class_name": "LagavulinMatriarch",
+  "title": "Lagavulin Matriarch",
+  "min_hp": 233,
+  "max_hp": 233,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "SLASH_MOVE",
+      "title": "Slash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        }
+      ],
+      "effects": ["Deal 21 damage"]
+    },
+    {
+      "id": "SLASH2_MOVE",
+      "title": "Slash 2",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": ["Deal 14 damage", "Gain 14 Block"]
+    },
+    {
+      "id": "DISEMBOWEL_MOVE",
+      "title": "Disembowel",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 10 damage", "2 hits"]
+    },
+    {
+      "id": "SOUL_SIPHON_MOVE",
+      "title": "Soul Siphon",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply -2 Strength", "Apply -2 Dexterity", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts asleep with Plating and Asleep. Once awakened, cycles: Slash → Disembowel → Slash 2 → Soul Siphon",
+  "powers_on_spawn": ["Plating 12", "Asleep 3"],
+  "notes": "The monster enters combat in a sleep state and does nothing on its turns while asleep. When the Asleep power is removed (typically by the player's actions), it wakes up and begins attacking. At 50% HP, its shell visually opens its eyes as a warning indicator of its awakening status."
+}

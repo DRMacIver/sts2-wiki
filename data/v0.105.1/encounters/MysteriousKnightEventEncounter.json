@@ -1,0 +1,10 @@
+{
+  "class_name": "MysteriousKnightEventEncounter",
+  "title": "Mysterious Knight",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["MysteriousKnight"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Event encounter with a single Mysterious Knight"
+}

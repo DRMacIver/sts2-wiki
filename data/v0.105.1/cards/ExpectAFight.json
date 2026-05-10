@@ -1,0 +1,27 @@
+{
+  "class_name": "ExpectAFight",
+  "title": "Expect a Fight",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1,
+      "upgraded_value": 1
+    }
+  ],
+  "description": "Gain 1 Energy for each Attack in your [gold]Hand[/gold]. You cannot gain additional Energy this turn.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "NoEnergyGainPower",
+      "title": "No Energy Gain",
+      "slug": "no-energy-gain"
+    }
+  ],
+  "notes": "Gains energy equal to the number of Attack cards currently in hand (1 per attack). Applies No Energy Gain for the remainder of the turn, preventing any additional energy gain from other sources."
+}

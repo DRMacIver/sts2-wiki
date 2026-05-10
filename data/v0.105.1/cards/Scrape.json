@@ -1,0 +1,25 @@
+{
+  "class_name": "Scrape",
+  "title": "Scrape",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Cards",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 [energy].",
+  "x_cost": false,
+  "referenced_powers": []
+}

@@ -1,0 +1,68 @@
+{
+  "class_name": "DecimillipedeSegment",
+  "title": "Decimillipede",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 7 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Weak"]
+    },
+    {
+      "id": "DEAD_MOVE",
+      "title": "Dead",
+      "intents": [],
+      "effects": []
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": ["Trigger Reattach power"]
+    }
+  ],
+  "move_pattern": "Starter move depends on StarterMoveIdx (Writhe, Bulk, or Constrict). Main cycle: Constrict → Bulk → Writhe → Constrict. When defeated, enters Dead state then uses Reattach move. After Reattach, randomly selects from Writhe, Bulk, or Constrict (cannot repeat).",
+  "powers_on_spawn": ["Reattach"],
+  "notes": "DecimillipedeSegment is an abstract base class representing a segment of the Decimillipede boss. Each segment automatically adjusts its own HP in AfterAddedToRoom to avoid matching the HP of other teammate segments, ensuring unique HP values. The monster cycles through three core attack moves: Writhe (multi-hit), Bulk (damage + strength buff), and Constrict (damage + weak debuff). When defeated, it transitions to a Dead state before using Reattach to restore itself, after which it randomly selects its next move. The Reattach Power (amount 25) enables the segment's revival mechanic."
+}

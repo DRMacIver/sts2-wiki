@@ -1,0 +1,19 @@
+{
+  "class_name": "Hologram",
+  "title": "Hologram",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Gain 3 [gold]Block[/gold].\nPut a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "notes": "Upgrade removes the Exhaust keyword, making the card repeatable."
+}

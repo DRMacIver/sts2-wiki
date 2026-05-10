@@ -1,0 +1,18 @@
+{
+  "class_name": "Sow",
+  "title": "Sow",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Deal 8 damage to ALL enemies."
+}

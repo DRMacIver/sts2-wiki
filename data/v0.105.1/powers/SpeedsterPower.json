@@ -1,0 +1,8 @@
+{
+  "class_name": "SpeedsterPower",
+  "title": "Speedster",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you draw a card during your turn, deal [blue]1[/blue] damage to ALL enemies.",
+  "smart_description": "Whenever you draw a card during your turn, deal [blue]{Amount}[/blue] damage to ALL enemies."
+}

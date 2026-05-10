@@ -1,0 +1,8 @@
+{
+  "class_name": "DiamondDiademPower",
+  "title": "Diamond Diadem",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Enemies deal [blue]50%[/blue] less damage this turn.",
+  "smart_description": "Enemies deal [blue]50%[/blue] less damage this turn."
+}

@@ -1,0 +1,64 @@
+{
+  "class_name": "Aeonglass",
+  "title": "Aeonglass",
+  "min_hp": 535,
+  "max_hp": 535,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EBB_MOVE",
+      "title": "Ebb",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 32
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 32 damage",
+        "Apply 3 Ebb Power"
+      ]
+    },
+    {
+      "id": "EYE_LASERS_MOVE",
+      "title": "Eye Lasers",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 12,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "INCREASING_INTENSITY_MOVE",
+      "title": "Increasing Intensity",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Apply 4 Strength",
+        "Gain 33 Block",
+        "Strength scales up each turn"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Ebb → Eye Lasers → Increasing Intensity",
+  "powers_on_spawn": [
+    "Withering Presence (4 to player)",
+    "Artifact Power (3)"
+  ],
+  "notes": "Increasing Intensity applies Strength that scales each turn - starting at 4 and increasing by 1 each turn the move is used. This creates an escalating threat that forces the player to manage the monster's health and Strength buildup."
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "HammerTime",
+  "title": "Hammer Time",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you [gold]Forge[/gold], all allies [gold]Forge[/gold] as well.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "HammerTimePower",
+      "title": "Hammer Time",
+      "slug": "hammer-time"
+    }
+  ],
+  "notes": "Multiplayer-only card."
+}

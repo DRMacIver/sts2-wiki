@@ -1,0 +1,32 @@
+{
+  "class_name": "TwigSlimeM",
+  "title": "Twig Slime (M)",
+  "min_hp": 27,
+  "max_hp": 29,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "POKEY_POUNCE_MOVE",
+      "title": "Pokey Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "effects": ["Deal 12 damage"]
+    },
+    {
+      "id": "STICKY_SHOT_MOVE",
+      "title": "Sticky Shot",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": ["Add 1 Slimed to discard"]
+    }
+  ],
+  "move_pattern": "Starts with Sticky Shot. Then cycles between Sticky Shot and Pokey Pounce, strongly preferring Pokey Pounce and avoiding consecutive Sticky Shots.",
+  "powers_on_spawn": []
+}

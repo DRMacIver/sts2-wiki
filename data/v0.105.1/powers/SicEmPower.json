@@ -1,0 +1,8 @@
+{
+  "class_name": "SicEmPower",
+  "title": "Sic 'Em",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] [blue]3[/blue].",
+  "smart_description": "Whenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] [blue]3[/blue]."
+}

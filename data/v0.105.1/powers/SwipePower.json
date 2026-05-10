@@ -1,0 +1,8 @@
+{
+  "class_name": "SwipePower",
+  "title": "Swipe",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Upon killing this enemy, the stolen card is returned.",
+  "notes": "This power stores a card that was stolen from the player's deck. When the power owner dies, the stolen card is added back to the player's deck and offered as a special reward from the encounter."
+}

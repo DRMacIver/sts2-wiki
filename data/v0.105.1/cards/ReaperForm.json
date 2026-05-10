@@ -1,0 +1,28 @@
+{
+  "class_name": "ReaperForm",
+  "title": "Reaper Form",
+  "character": "Necrobinder",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever Attacks deal damage, apply that much [gold]Doom[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "ReaperFormPower",
+      "title": "Reaper Form",
+      "slug": "reaper-form"
+    },
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ],
+  "upgrade": {
+    "keywords_added": ["Retain"]
+  }
+}

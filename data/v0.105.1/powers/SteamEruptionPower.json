@@ -1,0 +1,7 @@
+{
+  "class_name": "SteamEruptionPower",
+  "title": "Steam Eruption",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When killed, deals damage at the end of your next turn."
+}

@@ -1,0 +1,10 @@
+{
+  "class_name": "ScrollsOfBitingWeak",
+  "title": "Scrolls of Biting",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["ScrollOfBiting"],
+  "total_monsters": 3,
+  "tags": ["Scrolls"],
+  "notes": "Each ScrollOfBiting monster is assigned a different StarterMoveIdx in a rotating pattern (0, 1, 2) based on a random initial value."
+}

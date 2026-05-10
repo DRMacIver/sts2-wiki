@@ -1,0 +1,69 @@
+{
+  "class_name": "FrogKnight",
+  "title": "Frog Knight",
+  "min_hp": 199,
+  "max_hp": 199,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TONGUE_LASH",
+      "title": "Tongue Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 14 damage",
+        "Apply 2 Frail"
+      ]
+    },
+    {
+      "id": "STRIKE_DOWN_EVIL",
+      "title": "Strike Down Evil",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 23
+        }
+      ],
+      "effects": [
+        "Deal 23 damage"
+      ]
+    },
+    {
+      "id": "FOR_THE_QUEEN",
+      "title": "For the Queen",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 5 Strength"
+      ]
+    },
+    {
+      "id": "BEETLE_CHARGE",
+      "title": "Beetle Charge",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 40
+        }
+      ],
+      "effects": [
+        "Deal 40 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Tongue Lash. Cycles through: Tongue Lash → Strike Down Evil → For the Queen. After For the Queen, if HP is below 50% and Beetle Charge hasn't been used yet, uses Beetle Charge (40 damage). Once Beetle Charge is used, it sets a flag preventing future use, and the pattern becomes: Tongue Lash → Strike Down Evil → For the Queen → Tongue Lash (repeating indefinitely).",
+  "powers_on_spawn": [
+    "Plating 19"
+  ],
+  "notes": "Frog Knight has conditional AI behavior based on health and a one-time Beetle Charge attack. The Beetle Charge is its most damaging move (40 damage) and serves as a threshold attack when the monster drops below 50% HP. Once used, it's gone for the remainder of the fight, forcing the enemy into a predictable three-move cycle."
+}

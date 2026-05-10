@@ -1,0 +1,32 @@
+{
+  "class_name": "Glitterstream",
+  "title": "Glitterstream",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 11,
+      "upgraded_value": 13
+    },
+    {
+      "type": "Block",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Gain 11 [gold]Block[/gold].\nNext turn, gain 5 [gold]Block[/gold].",
+  "upgraded_description": "Gain 13 [gold]Block[/gold].\nNext turn, gain 7 [gold]Block[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "BlockNextTurnPower",
+      "title": "Block Next Turn",
+      "slug": "block-next-turn"
+    }
+  ],
+  "notes": "Grants Block immediately and applies BlockNextTurnPower to gain additional Block next turn."
+}

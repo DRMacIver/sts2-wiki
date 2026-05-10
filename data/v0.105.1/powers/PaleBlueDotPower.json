@@ -1,0 +1,8 @@
+{
+  "class_name": "PaleBlueDotPower",
+  "title": "Pale Blue Dot",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "If you play enough cards in a turn, draw additional cards at the start of your next turn.",
+  "smart_description": "If you play [blue]5[/blue] or more cards in a turn, draw additional cards at the start of your next turn."
+}

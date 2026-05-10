@@ -1,0 +1,26 @@
+{
+  "class_name": "SwordSage",
+  "title": "Sword Sage",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Replay"],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Sovereign Blade[/gold] gains [gold]Replay[/gold].",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "SwordSagePower",
+      "title": "Sword Sage",
+      "slug": "sword-sage-power"
+    }
+  ],
+  "notes": "Applies Sword Sage power to self, which grants one Replay to each Sovereign Blade card in hand and that enter combat."
+}

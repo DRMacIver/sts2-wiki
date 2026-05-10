@@ -1,0 +1,23 @@
+{
+  "class_name": "Fuel",
+  "title": "Fuel",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Token",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Gain 1 Energy.\nDraw 1 card.",
+  "upgraded_description": "Gain 1 Energy.\nDraw 2 cards."
+}

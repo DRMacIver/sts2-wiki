@@ -1,0 +1,30 @@
+{
+  "class_name": "Reave",
+  "title": "Reave",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 9 damage.\nAdd a [gold]Soul[/gold] into your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Deal 11 damage.\nAdd a [gold]Soul+[/gold] into your [gold]Draw Pile[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "Soul",
+      "title": "Soul",
+      "slug": "soul"
+    }
+  ]
+}

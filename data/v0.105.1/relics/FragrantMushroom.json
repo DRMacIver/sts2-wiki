@@ -1,0 +1,8 @@
+{
+  "class_name": "FragrantMushroom",
+  "title": "Fragrant Mushroom",
+  "rarity": "Event",
+  "description": "Upon pickup, lose [blue]15[/blue] HP and [gold]Upgrade[/gold] [blue]2[/blue] random cards.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "The relic activates when obtained. It deals 15 unblockable, unpowered damage to the player and automatically upgrades 2 random upgradable cards from the player's deck. Only upgradable cards are eligible for selection."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "ReaperFormPower",
+  "title": "Reaper Form",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever Attacks deal damage, apply that much [gold]Doom[/gold].",
+  "smart_description": "Whenever Attacks deal damage, apply {Amount:plural:|[blue]{}[/blue] times }that much [gold]Doom[/gold]."
+}

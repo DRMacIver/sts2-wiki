@@ -1,0 +1,26 @@
+{
+  "class_name": "RocketPunch",
+  "title": "Rocket Punch",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 14
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's cost to 0 until played.",
+  "upgraded_description": "Deal 14 damage.\nDraw 2 cards.\nWhenever you create a Status, reduce this card's cost to 0 until played.",
+  "referenced_powers": [],
+  "notes": "Cost reduction triggered by AfterCardGeneratedForCombat hook when any Status is created by the player."
+}

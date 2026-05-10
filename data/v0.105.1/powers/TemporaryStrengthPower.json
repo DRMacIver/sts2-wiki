@@ -1,0 +1,9 @@
+{
+  "class_name": "TemporaryStrengthPower",
+  "title": "Temporary Strength",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Strength[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Strength[/gold] until the end of this turn.",
+  "notes": "Abstract class providing temporary Strength that lasts only until the end of the current turn. Title is dynamically derived from the originating source (Card, Potion, or Relic). Implements ITemporaryPower interface. Multiple instances can stack as stack type is Counter. The power internally applies a StrengthPower for its duration, then removes itself and applies negative Strength to counteract it at end of turn."
+}

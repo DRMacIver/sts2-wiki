@@ -1,0 +1,8 @@
+{
+  "class_name": "ParryPower",
+  "title": "Parry",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Sovereign Blade[/gold] now gains [gold]Block[/gold].",
+  "smart_description": "[gold]Sovereign Blade[/gold] now gains [blue]{Amount}[/blue] [gold]Block[/gold]."
+}

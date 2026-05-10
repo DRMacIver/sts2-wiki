@@ -1,0 +1,223 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Patch v0.105.1">
+  <div class="page-header">
+    <h1>v0.105.1 Balance Patch</h1>
+    <p class="subtitle">Changes from v0.103.2 &rarr; v0.105.1 &mdash; derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <p class="desc-text">
+      v0.105.1 replaces the Doormaker boss with a new boss, <a href={`${base}monsters/aeonglass/`}>Aeonglass</a>,
+      and reworks two Ironclad cards: <a href={`${base}cards/conflagration/`}>Conflagration</a> becomes a
+      multi-hit AoE and <a href={`${base}cards/drum-of-battle/`}>Drum of Battle</a> changes from a Power to
+      an Exhaust Skill. Several Regent cards receive block nerfs, Defect gets mixed tweaks, and three new
+      Ancient relics are added. Text and targeting polish across several Regent and Defect cards.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- CARDS                           -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="cards" style="margin-top: 2rem;">Card Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Type</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/wither/`}>Wither</a></td>
+          <td>Status</td>
+          <td>1-cost Status. <strong>Exhaust</strong>, <strong>Retain</strong>. "At the end of your turn, if this is in your Hand, take 2 damage."</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Major Reworks</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/conflagration/`}>Conflagration</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>"Deal X damage to ALL enemies. Deals 2 additional damage for each other Attack you've played this turn." Upgrade: 3 additional.</td>
+          <td>"Deal 2 damage to ALL enemies 4 times." Upgrade: 5 times.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/drum-of-battle/`}>Drum of Battle</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>0-cost <strong>Power</strong>. <strong>Exhaust</strong>. "Draw 2 cards. At the start of your turn, Exhaust the top card of your Draw Pile." Upgrade: draw 3.</td>
+          <td>1-cost <strong>Skill</strong>. <strong>Exhaust</strong>. "Draw 2 cards. When this card is Exhausted, gain 2 Energy." Upgrade: gain 3 Energy.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Stat Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/bulwark/`}>Bulwark</a></td><td class="char-regent">Regent</td><td>Block 13/16 &rarr; <strong>12/15</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/hyperbeam/`}>Hyperbeam</a></td><td class="char-defect">Defect</td><td>Damage 26/34 &rarr; <strong>28/36</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/patter/`}>Patter</a></td><td class="char-regent">Regent</td><td>Block 9/11 &rarr; <strong>8/10</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/reflect/`}>Reflect</a></td><td class="char-regent">Regent</td><td>Block 17/21 &rarr; <strong>16/20</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/royalties/`}>Royalties</a></td><td class="char-regent">Regent</td><td>Upgraded gold 35 &rarr; <strong>40</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/tesla-coil/`}>Tesla Coil</a></td><td class="char-defect">Defect</td><td>Upgraded damage 6 &rarr; <strong>4</strong>; upgrade now triggers Lightning twice.</td></tr>
+        <tr><td><a href={`${base}cards/untouchable/`}>Untouchable</a></td><td class="char-silent">Silent</td><td>Upgraded block 8 &rarr; <strong>9</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/uproar/`}>Uproar</a></td><td class="char-defect">Defect</td><td>Damage 5/7 &rarr; <strong>6/8</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/shatter/`}>Shatter</a></td><td class="char-defect">Defect</td><td>Now evokes all Orbs <strong>twice</strong> (was once).</td></tr>
+        <tr><td><a href={`${base}cards/sword-sage/`}>Sword Sage</a></td><td class="char-regent">Regent</td><td>Sovereign Blade now gains <strong>Replay</strong> instead of hitting an additional time.</td></tr>
+      </tbody>
+    </table>
+
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Text and targeting polish (no mechanical impact):
+      <a href={`${base}cards/neow-s-fury/`}>Neow's Fury</a> (wording: "put up to N cards"),
+      <a href={`${base}cards/pact-s-end/`}>Pact's End</a> (wording: "if you have" instead of "can only be played if"),
+      <a href={`${base}cards/parry/`}>Parry</a> (wording: "now gains" instead of "whenever you play"),
+      <a href={`${base}cards/reaper-form/`}>Reaper Form</a> (wording simplification),
+      <a href={`${base}cards/seven-stars/`}>Seven Stars</a> (template fix),
+      <a href={`${base}cards/sovereign-blade/`}>Sovereign Blade</a> (template rework),
+      <a href={`${base}cards/summon-forth/`}>Summon Forth</a> (effect order swapped).
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- POWERS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="powers" style="margin-top: 2rem;">Power Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Powers</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Type</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}powers/ebb/`}>Ebb</a></td>
+          <td>Debuff</td>
+          <td>Applied by the new Aeonglass boss.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/withering-presence/`}>Withering Presence</a></td>
+          <td>Buff</td>
+          <td>New buff power.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Powers</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Drum of Battle</td><td>Removed alongside the Drum of Battle card rework (no longer a Power card).</td></tr>
+        <tr><td>Grasp</td><td>Removed alongside the Doormaker boss.</td></tr>
+        <tr><td>Hunger</td><td>Removed alongside the Doormaker boss.</td></tr>
+        <tr><td>Scrutiny</td><td>Removed alongside the Doormaker boss.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- RELICS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="relics" style="margin-top: 2rem;">Relic Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Relics</h3>
+    <table class="stat-table">
+      <thead><tr><th>Relic</th><th>Rarity</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}relics/fishing-rod/`}>Fishing Rod</a></td>
+          <td>Ancient</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/kaleidoscope/`}>Kaleidoscope</a></td>
+          <td>Ancient</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/silken-tress/`}>Silken Tress</a></td>
+          <td>Ancient</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- MONSTERS                        -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="monsters" style="margin-top: 2rem;">Monster Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Boss</h3>
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}monsters/aeonglass/`}>Aeonglass</a></td>
+          <td>
+            535 HP. Starts with Artifact. Cycles: <strong>Ebb</strong> (32 damage + Ebb debuff) &rarr;
+            <strong>Eye Lasers</strong> (12 &times; 2 damage) &rarr;
+            <strong>Increasing Intensity</strong> (+Strength, 33 Block).
+            Replaces the Doormaker boss.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Boss</h3>
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Doormaker</td><td>Replaced by Aeonglass. Associated powers (Grasp, Hunger, Scrutiny) also removed.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Other Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}monsters/eye-with-teeth/`}>Eye with Teeth</a></td>
+          <td>Title casing fix: "Eye With Teeth" &rarr; "Eye with Teeth".</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ENCOUNTERS                      -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="encounters" style="margin-top: 2rem;">Encounter Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Encounter</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}encounters/aeonglass/`}>Aeonglass</a></td>
+          <td>New boss encounter replacing The Doormaker.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}encounters/axebot/`}>Axebot</a></td>
+          <td>Renamed from "Bot Buddies"; now spawns 1 Axebot instead of 2.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ANCIENTS                        -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="ancients" style="margin-top: 2rem;">Ancient Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Ancient</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}ancients/nonupeipe/`}>Nonupeipe</a></td>
+          <td>Brilliant Scarf relic wording: "The 5th card you play" &rarr; "The 5th card you play from your hand".</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}ancients/tezcatara/`}>Tezcatara</a></td>
+          <td>Seal of Gold moved down in offering order. Pumpkin Candle reworked: now extinguishes after a number of combats and can be Kindled at Rest Sites (was: extinguishes at start of Act 3).</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</BaseLayout>

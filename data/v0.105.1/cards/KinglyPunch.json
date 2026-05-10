@@ -1,0 +1,25 @@
+{
+  "class_name": "KinglyPunch",
+  "title": "Kingly Punch",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Increase",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Deal 8 damage.\nWhenever you draw this card, increase its damage by 4 this combat.",
+  "upgraded_description": "Deal 10 damage.\nWhenever you draw this card, increase its damage by 6 this combat.",
+  "referenced_powers": []
+}

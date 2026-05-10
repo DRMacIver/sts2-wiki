@@ -1,0 +1,21 @@
+{
+  "class_name": "Headbutt",
+  "title": "Headbutt",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Deal 9 damage.\nPut a card from your [gold]Discard Pile[/gold] on top of your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Deal 12 damage.\nPut a card from your [gold]Discard Pile[/gold] on top of your [gold]Draw Pile[/gold].",
+  "referenced_powers": [],
+  "notes": "Allows the player to select a card from the Discard Pile and place it on top of the Draw Pile during play."
+}

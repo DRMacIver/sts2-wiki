@@ -1,0 +1,8 @@
+{
+  "class_name": "NecroMasteryPower",
+  "title": "Necro Mastery",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever [gold]Osty[/gold] loses HP, ALL enemies lose that much HP as well.",
+  "smart_description": "Whenever [gold]Osty[/gold] loses HP, ALL enemies lose that much HP [blue]multiplied by this power's stack count[/blue]."
+}

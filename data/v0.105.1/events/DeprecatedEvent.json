@@ -1,0 +1,13 @@
+{
+  "class_name": "DeprecatedEvent",
+  "title": "Deprecated Event",
+  "description": "This event has been removed from the game.",
+  "options": [],
+  "acts": [],
+  "conditions": [
+    "Not available - event has been removed from the game"
+  ],
+  "notes": "This is a deprecated event class with no functionality. The event provides no options and cannot be encountered or interacted with during gameplay.",
+  "card_refs": [],
+  "relic_refs": []
+}

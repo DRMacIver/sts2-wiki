@@ -1,0 +1,8 @@
+{
+  "class_name": "LeadershipPower",
+  "title": "Leadership",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "All other allies deal [blue]1[/blue] additional damage.",
+  "smart_description": "All other allies deal [blue]{Amount}[/blue] additional damage."
+}

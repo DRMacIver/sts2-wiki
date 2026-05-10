@@ -1,0 +1,26 @@
+{
+  "class_name": "SleightOfFlesh",
+  "title": "Sleight of Flesh",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 9,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Whenever you apply a debuff to an enemy, they take 9 damage.",
+  "upgraded_description": "Whenever you apply a debuff to an enemy, they take 13 damage.",
+  "referenced_powers": [
+    {
+      "class_name": "SleightOfFleshPower",
+      "title": "Sleight of Flesh",
+      "slug": "sleight-of-flesh-power"
+    }
+  ]
+}

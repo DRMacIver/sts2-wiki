@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsLegion",
+  "title": "Pael's Legion",
+  "rarity": "Ancient",
+  "description": "Doubles [gold]Block[/gold] gained from a card, then goes to sleep for [blue]2[/blue] turns.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Summoned pet that doubles all Block gained from player cards. After triggering, enters a 2-turn cooldown where block doubling is disabled. Pet has animations for sleeping and waking during cooldown."
+}

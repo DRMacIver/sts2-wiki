@@ -38,13 +38,10 @@ MONSTER_NOTES: dict[str, str] = {
         "code uses SwipeDamage (15/13) instead. The actual damage dealt is higher than "
         "the intent icon indicates."
     ),
-    "Doormaker": (
-        "Starts the fight with 999,999,999 HP and an infinite health bar display. "
-        "On Dramatic Open, HP is set back to its real value, all existing powers "
-        "are removed, and debuffs are applied to each player. "
-        "In v0.101.0, the moves were reworked: Hunger exhausts cards you play, "
-        "Scrutiny prevents extra draws, and Grasp makes the first card each turn "
-        "cost 1 more Energy."
+    "Aeonglass": (
+        "Cycles through a fixed 3-move pattern: Ebb -> Eye Lasers -> Increasing Intensity. "
+        "Starts with Artifact. Ebb applies a debuff; Eye Lasers is a multi-hit attack; "
+        "Increasing Intensity grants Strength and Block."
     ),
     "Queen": (
         "Two-phase fight based on whether Torch Head Amalgam is alive:\n\n"

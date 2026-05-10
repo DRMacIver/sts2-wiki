@@ -1,0 +1,14 @@
+{
+  "class_name": "RubyRaidersNormal",
+  "title": "Ruby Raiders",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "AxeRubyRaider",
+    "AssassinRubyRaider",
+    "BruteRubyRaider"
+  ],
+  "total_monsters": 3,
+  "tags": [],
+  "notes": "Randomly selects 3 different raider types from: AxeRubyRaider, AssassinRubyRaider, BruteRubyRaider, CrossbowRubyRaider, or TrackerRubyRaider. Each raider type can appear at most once per encounter."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "Pocketwatch",
+  "title": "Pocketwatch",
+  "rarity": "Rare",
+  "description": "Whenever you play [blue]3[/blue] or fewer cards during your turn, draw [blue]3[/blue] additional cards at the start of your next turn.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "The relic tracks cards played each turn during combat. If you play 3 or fewer cards, you gain 3 additional card draw at the start of your next turn. The relic's display status shows as active (highlighted) when the card threshold is currently met."
+}

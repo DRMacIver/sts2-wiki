@@ -1,0 +1,20 @@
+{
+  "class_name": "Juggling",
+  "title": "Juggling",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Add a copy of the third [gold]Attack[/gold] you play each turn into your [gold]Hand[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "JugglingPower",
+      "title": "Juggling",
+      "slug": "juggling"
+    }
+  ],
+  "notes": "Applies JugglingPower which tracks attacks played each turn and generates a copy of the third attack card. Upgrade adds Innate keyword."
+}

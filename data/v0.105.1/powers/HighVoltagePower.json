@@ -1,0 +1,8 @@
+{
+  "class_name": "HighVoltagePower",
+  "title": "High Voltage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of this creature's turn, it gains [blue]2[/blue] [gold]Strength[/gold].",
+  "smart_description": "At the start of [gold]{OwnerName}'s[/gold] turn, it gains [blue]{Amount}[/blue] [gold]Strength[/gold]."
+}

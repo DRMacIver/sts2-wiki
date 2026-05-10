@@ -1,0 +1,8 @@
+{
+  "class_name": "DropletOfPrecognition",
+  "title": "Droplet of Precognition",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "Self",
+  "description": "Choose a card in your [gold]Draw Pile[/gold] and add it into your [gold]Hand[/gold]."
+}

@@ -1,0 +1,25 @@
+{
+  "class_name": "Supermassive",
+  "title": "Supermassive",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5
+    },
+    {
+      "type": "ExtraDamage",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 5 damage.\nDeals 3 additional damage for each card you created this combat.",
+  "upgraded_description": "Deal 5 damage.\nDeals 4 additional damage for each card you created this combat.",
+  "referenced_powers": [],
+  "notes": "Damage scales with the number of cards created by the player during this combat."
+}

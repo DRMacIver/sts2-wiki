@@ -1,0 +1,31 @@
+{
+  "class_name": "BeamCell",
+  "title": "Beam Cell",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 3 damage.\nApply 1 [gold]Vulnerable[/gold].",
+  "upgraded_description": "Deal 4 damage.\nApply 2 [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

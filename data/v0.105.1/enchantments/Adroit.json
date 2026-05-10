@@ -1,0 +1,18 @@
+{
+  "class_name": "Adroit",
+  "title": "Adroit",
+  "description": "Gain [blue]3[/blue] [gold]Block[/gold].",
+  "extra_card_text": "Gain 3 [gold]Block[/gold].",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "Kifuda",
+      "title": "Kifuda",
+      "amount": 3
+    }
+  ]
+}

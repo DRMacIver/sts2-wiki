@@ -1,0 +1,9 @@
+{
+  "class_name": "ChildOfTheStarsPower",
+  "title": "Child of the Stars",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [blue]1[/blue] [gold]Block[/gold] for each {singleStarIcon} spent.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Block[/gold] for each {singleStarIcon} spent.",
+  "notes": "Grants block whenever the owner spends star resources. The block gained per star equals the power's stack count (Amount)."
+}

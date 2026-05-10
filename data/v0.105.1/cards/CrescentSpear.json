@@ -1,0 +1,25 @@
+{
+  "class_name": "CrescentSpear",
+  "title": "Crescent Spear",
+  "character": "Regent",
+  "energy_cost": -2,
+  "star_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8
+    },
+    {
+      "type": "ExtraDamage",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a {singleStarIcon} cost.",
+  "x_cost": false,
+  "referenced_powers": []
+}

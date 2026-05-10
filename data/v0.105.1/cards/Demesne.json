@@ -1,0 +1,29 @@
+{
+  "class_name": "Demesne",
+  "title": "Demesne",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "At the start of your turn, gain 1 Energy and draw 1 additional card.",
+  "upgraded_cost": 2,
+  "referenced_powers": [
+    {
+      "class_name": "DemesnePower",
+      "title": "Demesne",
+      "slug": "demesne"
+    }
+  ]
+}

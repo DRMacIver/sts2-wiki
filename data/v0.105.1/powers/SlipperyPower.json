@@ -1,0 +1,7 @@
+{
+  "class_name": "SlipperyPower",
+  "title": "Slippery",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The next time this creature loses HP, it only loses [blue]1[/blue] HP instead."
+}

@@ -1,0 +1,69 @@
+{
+  "class_name": "HauntedShip",
+  "title": "Haunted Ship",
+  "min_hp": 67,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HAUNT_MOVE",
+      "title": "Haunt",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Apply 3 Weakness",
+        "Add 5 Dazed"
+      ]
+    },
+    {
+      "id": "RAMMING_SPEED_MOVE",
+      "title": "Ramming Speed",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": [
+        "Deal 11 damage"
+      ]
+    },
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": [
+        "Deal 14 damage"
+      ]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "3 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Haunt. Then randomly alternates between Ramming Speed, Swipe, and Stomp.",
+  "powers_on_spawn": [],
+  "notes": "Ramming Speed is hidden from the bestiary display. Haunt applies Weakness and Dazed cards to weaken the player's defenses."
+}

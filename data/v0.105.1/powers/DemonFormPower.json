@@ -1,0 +1,8 @@
+{
+  "class_name": "DemonFormPower",
+  "title": "Demon Form",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, gain [blue]2[/blue] [gold]Strength[/gold].",
+  "smart_description": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
+}

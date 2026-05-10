@@ -1,0 +1,26 @@
+{
+  "class_name": "Modded",
+  "title": "Modded",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Gain 1 Orb Slot.\nDraw 1 card. Increase this card's cost by 1.",
+  "upgraded_description": "Gain 1 Orb Slot.\nDraw 2 cards. Increase this card's cost by 1.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "This card increases its own energy cost by 1 when played, making it more expensive each time it's cast in a combat."
+}

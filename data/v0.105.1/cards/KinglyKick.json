@@ -1,0 +1,21 @@
+{
+  "class_name": "KinglyKick",
+  "title": "Kingly Kick",
+  "character": "Regent",
+  "energy_cost": 4,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 27,
+      "upgraded_value": 35
+    }
+  ],
+  "description": "Deal 27 damage.\nWhenever you draw this card, reduce its cost by 1.",
+  "upgraded_description": "Deal 35 damage.\nWhenever you draw this card, reduce its cost by 1.",
+  "referenced_powers": [],
+  "notes": "Whenever this card is drawn, its energy cost is reduced by 1 for the remainder of the combat."
+}

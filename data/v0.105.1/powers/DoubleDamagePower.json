@@ -1,0 +1,9 @@
+{
+  "class_name": "DoubleDamagePower",
+  "title": "Double Damage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This turn, Attacks deal double damage.",
+  "smart_description": "When duration extends beyond 1 turn, displays 'For the next [N] turns, Attacks deal double damage.' (where [N] is the duration count)",
+  "notes": "Counter stack type tracks power duration. Damage doubling applies only to Powered Attacks from the power owner or their pets."
+}

@@ -1,0 +1,23 @@
+{
+  "class_name": "Spite",
+  "title": "Spite",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5
+    },
+    {
+      "type": "Repeat",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 5 damage.\nIf you lost HP this turn,\nhits 2 times.",
+  "x_cost": false
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "SlumberingEssence",
+  "title": "Slumbering Essence",
+  "description": "If this card is in your hand at the end of turn, reduce its cost by [blue]1[/blue] until it is played.",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [],
+  "notes": "The cost reduction is applied via AddUntilPlayed(-1) each turn the card remains in hand at end of turn (BeforeFlush), so the cost decreases by 1 per turn it stays unplayed. The reduction resets when the card is played."
+}

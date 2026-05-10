@@ -1,0 +1,30 @@
+{
+  "class_name": "Countdown",
+  "title": "Countdown",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "CountdownPower",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "At the start of your turn, apply 6 [gold]Doom[/gold] to a random enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "CountdownPower",
+      "title": "Countdown",
+      "slug": "countdown"
+    },
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ]
+}

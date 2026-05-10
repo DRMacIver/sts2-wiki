@@ -1,0 +1,8 @@
+{
+  "class_name": "SilkenTress",
+  "title": "Silken Tress",
+  "rarity": "Ancient",
+  "description": "[gold]Enchant[/gold] all cards in the first card reward with [purple]Glam[/purple].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Applies the Glam enchantment to all eligible cards in the first card reward received. Uses up after one application. Provides hover tips relating to the Glam enchantment."
+}

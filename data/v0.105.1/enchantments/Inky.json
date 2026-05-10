@@ -1,0 +1,12 @@
+{
+  "class_name": "Inky",
+  "title": "Inky",
+  "description": "This card deals [blue]1[/blue] additional damage and applies [blue]1[/blue] [gold]Weak[/gold].",
+  "extra_card_text": "Apply [blue]1[/blue] [gold]Weak[/gold] (to ALL enemies if the card targets all enemies).",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [],
+  "notes": "Damage is only applied when the enchanted card is played with a powered attack (Move). Obtained via the BladeOfInk card, which creates Shiv cards and applies the Inky enchantment (amount: 1)."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "GhostSeed",
+  "title": "Ghost Seed",
+  "rarity": "Shop",
+  "description": "[gold]Strikes[/gold] and [gold]Defends[/gold] gain [gold]Ethereal[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Applies Ethereal to basic Strike and Defend cards. The effect is applied when entering combat and when cards enter combat. Only affects cards that don't already have Ethereal."
+}

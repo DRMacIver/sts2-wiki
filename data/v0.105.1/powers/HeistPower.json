@@ -1,0 +1,8 @@
+{
+  "class_name": "HeistPower",
+  "title": "Heist",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When killed, returns all the stolen [gold]Gold[/gold].",
+  "smart_description": "When killed, returns all the stolen [gold]Gold[/gold]."
+}

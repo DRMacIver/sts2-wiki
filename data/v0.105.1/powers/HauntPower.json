@@ -1,0 +1,8 @@
+{
+  "class_name": "HauntPower",
+  "title": "Haunt",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]3[/blue] HP.",
+  "smart_description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]3[/blue] HP."
+}

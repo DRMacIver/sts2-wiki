@@ -1,0 +1,31 @@
+{
+  "class_name": "Equilibrium",
+  "title": "Equilibrium",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 13,
+      "upgraded_value": 16
+    },
+    {
+      "type": "Turns",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 13 [gold]Block[/gold].\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
+  "upgraded_description": "Gain 16 [gold]Block[/gold].\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "RetainHandPower",
+      "title": "Retain Hand",
+      "slug": "retain-hand"
+    }
+  ],
+  "notes": "Applies RetainHandPower for 1 turn, retaining the entire hand at end of turn."
+}

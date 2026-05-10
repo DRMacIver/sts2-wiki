@@ -1,0 +1,8 @@
+{
+  "class_name": "MummifiedHand",
+  "title": "Mummified Hand",
+  "rarity": "Rare",
+  "description": "Whenever you play a Power, a random card in your Hand is free to play that turn.",
+  "flavor": "Details for this relic will be revealed in the future...",
+  "notes": "The relic selects a random card that costs energy or stars. If no such card exists, it checks again including cards affected by global modifiers. The effect applies for the current turn only."
+}

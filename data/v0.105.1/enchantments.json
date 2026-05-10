@@ -1,0 +1,344 @@
+[
+  {
+    "class_name": "Adroit",
+    "card_type": "Any",
+    "show_amount": true,
+    "has_extra_card_text": true,
+    "title": "Adroit",
+    "description": "Gain [blue]3[/blue] [gold]Block[/gold].",
+    "extra_card_text": "Gain 3 [gold]Block[/gold].",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "Kifuda",
+        "title": "Kifuda",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "class_name": "Clone",
+    "card_type": "Any",
+    "title": "Clone",
+    "description": "This card can be duplicated at [gold]Rest Sites[/gold].",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "PaelsGrowth",
+        "title": "Pael's Growth",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "class_name": "Corrupted",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Corrupted",
+    "description": "Deal [blue]50%[/blue] more damage, but lose [blue]2[/blue] HP.",
+    "extra_card_text": "Lose 2 HP.",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "Symbiote",
+        "title": "Symbiote",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Glam",
+    "card_type": "Any",
+    "title": "Glam",
+    "description": "This card has [gold]Replay[/gold] once per combat.",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "Glitter",
+        "title": "Glitter",
+        "amount": 1
+      },
+      {
+        "type": "relic",
+        "class_name": "SilkenTress",
+        "title": "Silken Tress",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Goopy",
+    "card_type": "Any",
+    "restrictions": [
+      "Defend-tagged cards only"
+    ],
+    "has_extra_card_text": true,
+    "title": "Goopy",
+    "description": "This card gains [gold]Exhaust[/gold]. When played, permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+    "extra_card_text": "Permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "PaelsClaw",
+        "title": "Pael's Claw",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Imbued",
+    "card_type": "Any",
+    "title": "Imbued",
+    "description": "This card is played automatically at the start of each combat.",
+    "extra_card_text": "Imbued.",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "ElectricShrymp",
+        "title": "Electric Shrymp",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Inky",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Inky",
+    "description": "This card deals [blue]{Damage}[/blue] additional damage and applies [blue]{WeakPower}[/blue] [gold]Weak[/gold].",
+    "extra_card_text": "Apply [blue]{WeakPower}[/blue] [gold]Weak[/gold]{TargetType:choose(AllEnemies): to ALL enemies|}.",
+    "sources": []
+  },
+  {
+    "class_name": "Instinct",
+    "card_type": "Any",
+    "title": "Instinct",
+    "description": "This card's attack damage is doubled.",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "TriBoomerang",
+        "title": "Tri-Boomerang",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Momentum",
+    "card_type": "Any",
+    "show_amount": true,
+    "has_extra_card_text": true,
+    "title": "Momentum",
+    "description": "Increase this card's attack damage by [blue]5[/blue] this combat when played.",
+    "extra_card_text": "Increase this card's damage by 5 this combat.",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "PunchDagger",
+        "title": "Punch Dagger",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "class_name": "Nimble",
+    "card_type": "Any",
+    "show_amount": true,
+    "title": "Nimble",
+    "description": "Increases [gold]Block[/gold] gained from this card by [blue]2[/blue].",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "SelfHelpBook",
+        "title": "Self-Help Book",
+        "amount": 2
+      },
+      {
+        "type": "relic",
+        "class_name": "FresnelLens",
+        "title": "Fresnel Lens",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "class_name": "PerfectFit",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Perfect Fit",
+    "description": "Whenever this would be shuffled into your [gold]Draw Pile[/gold], place it on the top instead.",
+    "extra_card_text": "Perfect Fit.",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "FieldOfManSizedHoles",
+        "title": "Field of Man-Sized Holes",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "RoyallyApproved",
+    "card_type": "Any",
+    "title": "Royally Approved",
+    "description": "This card has [gold]Innate[/gold] and [gold]Retain[/gold].",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "RoyalStamp",
+        "title": "Royal Stamp",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Sharp",
+    "card_type": "Any",
+    "show_amount": true,
+    "title": "Sharp",
+    "description": "Increases damage on this card by [blue]2-3[/blue].",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "SelfHelpBook",
+        "title": "Self-Help Book",
+        "amount": 2
+      },
+      {
+        "type": "relic",
+        "class_name": "GnarledHammer",
+        "title": "Gnarled Hammer",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "class_name": "Slither",
+    "card_type": "Any",
+    "restrictions": [
+      "Excludes X-cost cards",
+      "Excludes Unplayable cards"
+    ],
+    "title": "Slither",
+    "description": "When you draw this card, randomize its cost from [blue]0[/blue] to [blue]3[/blue].",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "WoodCarvings",
+        "title": "Wood Carvings",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "SlumberingEssence",
+    "card_type": "Any",
+    "title": "Slumbering Essence",
+    "description": "If this card is in your hand at the end of turn, reduce its cost by [blue]1[/blue] until it is played.",
+    "sources": []
+  },
+  {
+    "class_name": "SoulsPower",
+    "card_type": "Any",
+    "restrictions": [
+      "Cards with Exhaust only"
+    ],
+    "title": "Soul's Power",
+    "description": "This card loses [gold]Exhaust[/gold].",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "GraveOfTheForgotten",
+        "title": "Grave of the Forgotten",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Sown",
+    "card_type": "Any",
+    "has_extra_card_text": true,
+    "title": "Sown",
+    "description": "The first time you play this card each combat, gain 1 Energy.",
+    "extra_card_text": "Gain 1 Energy.",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "SapphireSeed",
+        "title": "Sapphire Seed",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Spiral",
+    "card_type": "Any",
+    "restrictions": [
+      "Defend-tagged cards only",
+      "Strike or Defend-tagged Basic cards only"
+    ],
+    "title": "Spiral",
+    "description": "This card gains [gold]Replay[/gold] [blue]1[/blue].",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "SpiralingWhirlpool",
+        "title": "Spiraling Whirlpool",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Steady",
+    "card_type": "Any",
+    "title": "Steady",
+    "description": "This card gains [gold]Retain[/gold].",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "WaterloggedScriptorium",
+        "title": "Waterlogged Scriptorium",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Swift",
+    "card_type": "Any",
+    "show_amount": true,
+    "has_extra_card_text": true,
+    "title": "Swift",
+    "description": "The first time you play this card, draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
+    "extra_card_text": "Draw {Amount} {Amount:plural:card|cards} the first time this is played.",
+    "sources": []
+  },
+  {
+    "class_name": "TezcatarasEmber",
+    "card_type": "Any",
+    "title": "Tezcatara's Ember",
+    "description": "Costs [blue]0[/blue], deals [blue]{Damage}[/blue] additional damage, and gains [gold]Eternal[/gold].",
+    "sources": [
+      {
+        "type": "relic",
+        "class_name": "NutritiousSoup",
+        "title": "Nutritious Soup",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "class_name": "Vigorous",
+    "card_type": "Any",
+    "show_amount": true,
+    "title": "Vigorous",
+    "description": "The first time this card is played, it deals [blue]8[/blue] additional damage.",
+    "sources": [
+      {
+        "type": "event",
+        "class_name": "StoneOfAllTime",
+        "title": "Stone of All Time",
+        "amount": 8
+      }
+    ]
+  }
+]

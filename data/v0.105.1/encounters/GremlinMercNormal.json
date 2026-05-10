@@ -1,0 +1,10 @@
+{
+  "class_name": "GremlinMercNormal",
+  "title": "Two Gremlins in a Trenchcoat",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["GremlinMerc"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "A single encounter where two gremlins operate as a unified trenchcoat-wearing entity."
+}

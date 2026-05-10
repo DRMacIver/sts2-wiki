@@ -1,0 +1,9 @@
+{
+  "class_name": "IntangiblePower",
+  "title": "Intangible",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Reduce all damage taken and HP loss to [blue]1[/blue] this turn.",
+  "smart_description": "Reduce all damage taken and HP loss to [blue]1[/blue]. Lasts for [blue](stack counter)[/blue] turns.",
+  "notes": "Damage cap is reduced to 1 unless the dealer has The Boot relic and the target is not the player creature, in which case it's 5. Ticks down at the end of each enemy turn."
+}

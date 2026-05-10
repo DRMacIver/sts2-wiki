@@ -1,0 +1,31 @@
+{
+  "class_name": "Parry",
+  "title": "Parry",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 10,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "[gold]Sovereign Blade[/gold] now gains 10 [gold]Block[/gold].",
+  "upgraded_description": "[gold]Sovereign Blade[/gold] now gains 14 [gold]Block[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "SovereignBlade",
+      "title": "Sovereign Blade",
+      "slug": "sovereign-blade"
+    },
+    {
+      "class_name": "ParryPower",
+      "title": "Parry Power",
+      "slug": "parry-power"
+    }
+  ]
+}

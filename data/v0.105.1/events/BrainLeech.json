@@ -1,0 +1,27 @@
+{
+  "class_name": "BrainLeech",
+  "title": "Brain Leech",
+  "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]\"SHARE KNOWLEDGE???\"[/sine][/purple]\n\nYou are unsure how to proceed...",
+  "options": [
+    {
+      "title": "Share Knowledge",
+      "description": "Choose [blue]1[/blue] of [blue]5[/blue] random cards to add to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Rip the Leech Off",
+      "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
+    }
+  ],
+  "acts": [
+    "Overgrowth",
+    "Underdocks",
+    "Hive",
+    "Glory"
+  ],
+  "conditions": [
+    "Acts 1-2 only"
+  ],
+  "notes": "The creature prompts you with a psychic question. Choosing [gold]Share Knowledge[/gold] allows the creature to feed on your knowledge, resulting in a new card being added to your deck. Choosing [gold]Rip the Leech Off[/gold] results in violent rejection, dealing [red]5[/red] HP damage but offering a Colorless card as compensation. Both choices conclude the event with different flavor text.",
+  "card_refs": [],
+  "relic_refs": []
+}

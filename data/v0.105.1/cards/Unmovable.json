@@ -1,0 +1,21 @@
+{
+  "class_name": "Unmovable",
+  "title": "Unmovable",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "The first time you gain [gold]Block[/gold] from a card each turn, double the amount gained.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "UnmovablePower",
+      "title": "Unmovable",
+      "slug": "unmovable"
+    }
+  ]
+}

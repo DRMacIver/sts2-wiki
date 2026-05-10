@@ -1,0 +1,74 @@
+{
+  "class_name": "InfestedPrism",
+  "title": "Infested Prism",
+  "min_hp": 215,
+  "max_hp": 215,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "JAB_MOVE",
+      "title": "Jab",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 24
+        }
+      ],
+      "effects": [
+        "Deal 24 damage"
+      ]
+    },
+    {
+      "id": "RADIATE_MOVE",
+      "title": "Radiate",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 18 damage",
+        "Gain 18 Block"
+      ]
+    },
+    {
+      "id": "WHIRLWIND_MOVE",
+      "title": "Whirlwind",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 10 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "PULSATE_MOVE",
+      "title": "Pulsate",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Gain 22 Block",
+        "Apply 5 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through: Jab → Radiate → Whirlwind → Pulsate",
+  "powers_on_spawn": [
+    "VitalSparkPower"
+  ]
+}

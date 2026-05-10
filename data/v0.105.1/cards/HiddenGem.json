@@ -1,0 +1,21 @@
+{
+  "class_name": "HiddenGem",
+  "title": "Hidden Gem",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Replay",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "A random card without [gold]Replay[/gold] in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] +2.",
+  "upgraded_description": "A random card without [gold]Replay[/gold] in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] +3.",
+  "referenced_powers": [],
+  "notes": "Cannot be generated in combat. Selects from Attack/Skill/Power cards preferentially. Filters cards that already have Replay or are unplayable."
+}

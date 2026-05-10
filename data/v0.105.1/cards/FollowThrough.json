@@ -1,0 +1,23 @@
+{
+  "class_name": "FollowThrough",
+  "title": "Follow Through",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Cards",
+      "base_value": 5
+    }
+  ],
+  "description": "Deal 7 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], hits an additional time.",
+  "x_cost": false
+}

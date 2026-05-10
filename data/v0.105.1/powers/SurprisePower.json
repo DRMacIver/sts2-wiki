@@ -1,0 +1,9 @@
+{
+  "class_name": "SurprisePower",
+  "title": "Surprise",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Something is off about this creature...",
+  "smart_description": "Something is off about this creature...",
+  "notes": "Triggers special death sequence: summons SneakyGremlin and FatGremlin, applies Heist powers to the FatGremlin. Prevents combat from ending when the power owner dies."
+}

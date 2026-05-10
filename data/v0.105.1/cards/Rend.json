@@ -1,0 +1,28 @@
+{
+  "class_name": "Rend",
+  "title": "Rend",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 15,
+      "upgraded_value": 18
+    },
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Deal 15 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+  "upgraded_description": "Deal 18 damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Counts unique debuffs excluding temporary powers."
+}

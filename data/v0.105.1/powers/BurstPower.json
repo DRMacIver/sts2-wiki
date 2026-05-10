@@ -1,0 +1,8 @@
+{
+  "class_name": "BurstPower",
+  "title": "Burst",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This turn, your next Skill is played an extra time.",
+  "smart_description": "Your next Skill is played an extra time for each stack of Burst this turn."
+}

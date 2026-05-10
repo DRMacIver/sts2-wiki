@@ -1,0 +1,26 @@
+{
+  "class_name": "Rupture",
+  "title": "Rupture",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Strength",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Whenever you lose HP on your turn, gain 1 [gold]Strength[/gold].",
+  "upgraded_description": "Whenever you lose HP on your turn, gain 2 [gold]Strength[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "RupturePower",
+      "title": "Rupture",
+      "slug": "rupture-power"
+    }
+  ]
+}

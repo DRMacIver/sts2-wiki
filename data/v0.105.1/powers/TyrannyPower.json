@@ -1,0 +1,9 @@
+{
+  "class_name": "TyrannyPower",
+  "title": "Tyranny",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, draw a card and [gold]Exhaust[/gold] a card from your [gold]Hand[/gold].",
+  "smart_description": "At the start of your turn, draw {Amount:plural:[blue]{}[/blue] card|[blue]{}[/blue] cards} and [gold]Exhaust[/gold] {Amount:plural:[blue]{}[/blue] card|[blue]{}[/blue] cards} from your [gold]Hand[/gold].",
+  "notes": "Counter stack type: each stack causes you to draw and exhaust one additional card. The smart description shows the dynamic amount based on current stacks."
+}

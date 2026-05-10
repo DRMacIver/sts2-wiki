@@ -1,0 +1,20 @@
+{
+  "class_name": "Cleanse",
+  "title": "Cleanse",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "[gold]Summon[/gold] 3.\n[gold]Exhaust[/gold] 1 card from your [gold]Draw Pile[/gold].",
+  "upgraded_description": "[gold]Summon[/gold] 5.\n[gold]Exhaust[/gold] 1 card from your [gold]Draw Pile[/gold].",
+  "notes": "Player selects which card from their draw pile to exhaust."
+}

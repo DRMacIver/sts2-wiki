@@ -1,0 +1,31 @@
+{
+  "class_name": "PaleBlueDot",
+  "title": "Pale Blue Dot",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    },
+    {
+      "type": "CardPlay",
+      "base_value": 5
+    }
+  ],
+  "description": "If you play 5 or more cards in a turn, draw 1 card at the start of your next turn.",
+  "upgraded_description": "If you play 5 or more cards in a turn, draw 2 cards at the start of your next turn.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "PaleBlueDotPower",
+      "title": "Pale Blue Dot",
+      "slug": "pale-blue-dot"
+    }
+  ]
+}

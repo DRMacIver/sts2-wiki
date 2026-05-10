@@ -1,0 +1,8 @@
+{
+  "class_name": "WhisperingEarring",
+  "title": "Whispering Earring",
+  "rarity": "Ancient",
+  "description": "Gain 1 energy at the start of each turn. Vakuu plays your first turn for you.",
+  "flavor": "Details for this relic will be revealed in the future...",
+  "notes": "On the first turn of combat, Vakuu (an AI algorithm) automatically plays cards from your hand in random order, up to a maximum of 13 cards. It will play cards as long as they are playable and the combat hasn't ended. The relic shows different messages based on whether it played the maximum number of cards (warning) or fewer (approval)."
+}

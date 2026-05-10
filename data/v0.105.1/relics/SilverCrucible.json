@@ -1,0 +1,8 @@
+{
+  "class_name": "SilverCrucible",
+  "title": "Silver Crucible",
+  "rarity": "Ancient",
+  "description": "The first [blue]3[/blue] card rewards you see are [gold]Upgraded[/gold]. The first Treasure Chest you open is [red]empty[/red].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic becomes Disabled after upgrading 3 card rewards and entering 1 Treasure Chest room."
+}

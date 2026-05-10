@@ -1,0 +1,20 @@
+{
+  "class_name": "FanOfKnives",
+  "title": "Fan of Knives",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "[gold]Shivs[/gold] now hit ALL enemies.\nAdd 4 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
+  "upgraded_description": "[gold]Shivs[/gold] now hit ALL enemies.\nAdd 5 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
+  "referenced_powers": []
+}

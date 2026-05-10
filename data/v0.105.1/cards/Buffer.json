@@ -1,0 +1,26 @@
+{
+  "class_name": "Buffer",
+  "title": "Buffer",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Prevent the next time you would lose HP.",
+  "upgraded_description": "Prevent the next 2 times you would lose HP.",
+  "referenced_powers": [
+    {
+      "class_name": "BufferPower",
+      "title": "Buffer",
+      "slug": "buffer"
+    }
+  ]
+}

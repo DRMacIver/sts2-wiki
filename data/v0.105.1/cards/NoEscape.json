@@ -1,0 +1,35 @@
+{
+  "class_name": "NoEscape",
+  "title": "No Escape",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "DoomThreshold",
+      "base_value": 10
+    },
+    {
+      "type": "DoomBase",
+      "base_value": 10,
+      "upgraded_value": 15
+    },
+    {
+      "type": "DoomExtra",
+      "base_value": 5
+    }
+  ],
+  "description": "Apply 10 [gold]Doom[/gold], plus an additional 5 [gold]Doom[/gold] for every 10 [gold]Doom[/gold] already on this enemy.",
+  "upgraded_description": "Apply 15 [gold]Doom[/gold], plus an additional 5 [gold]Doom[/gold] for every 10 [gold]Doom[/gold] already on this enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ],
+  "notes": "The actual Doom applied is calculated as: DoomBase + (DoomExtra × floor(CurrentDoom / DoomThreshold)). Shows dynamic hover tip with calculated Doom amount during targeting."
+}

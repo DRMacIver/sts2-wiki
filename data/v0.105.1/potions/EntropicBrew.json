@@ -1,0 +1,9 @@
+{
+  "class_name": "EntropicBrew",
+  "title": "Entropic Brew",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Fill all your empty potion slots with random potions.",
+  "notes": "Creates random potions out of combat to fill all empty potion slots."
+}

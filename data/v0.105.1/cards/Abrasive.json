@@ -1,0 +1,32 @@
+{
+  "class_name": "Abrasive",
+  "title": "Abrasive",
+  "character": "Silent",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Dexterity",
+      "base_value": 1
+    },
+    {
+      "type": "Thorns",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Gain 1 [gold]Dexterity[/gold].\nGain 4 [gold]Thorns[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "DexterityPower",
+      "title": "Dexterity"
+    },
+    {
+      "class_name": "ThornsPower",
+      "title": "Thorns"
+    }
+  ]
+}

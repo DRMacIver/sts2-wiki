@@ -1,0 +1,23 @@
+{
+  "class_name": "MinionSacrifice",
+  "title": "Minion Sacrifice",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Token",
+  "target": "Self",
+  "keywords": [
+    "Exhaust"
+  ],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Gain 9 [gold]Block[/gold].",
+  "upgraded_description": "Gain 12 [gold]Block[/gold].",
+  "referenced_powers": [],
+  "notes": "Minion-tagged token card created during gameplay"
+}

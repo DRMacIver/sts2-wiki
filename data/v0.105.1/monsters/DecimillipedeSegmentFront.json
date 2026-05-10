@@ -1,0 +1,81 @@
+{
+  "class_name": "DecimillipedeSegmentFront",
+  "title": "Decimillipede Segment",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Restore health via ReattachPower"
+      ]
+    },
+    {
+      "id": "DEAD_MOVE",
+      "title": "Dead",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Cycles through Constrict → Bulk → Writhe. When defeated, uses Reattach to revive, then randomly selects from Constrict, Bulk, or Writhe.",
+  "powers_on_spawn": [
+    "Reattach 25"
+  ],
+  "notes": "This is a segment of the Decimillipede boss and fights as part of the enemy team. Each segment in the fight has a unique max HP value (adjusted dynamically to prevent duplicates). When defeated, the ReattachPower allows the segment to heal itself and return to combat, cycling through random attacks from its normal rotation."
+}

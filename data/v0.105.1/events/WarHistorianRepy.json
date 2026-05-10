@@ -1,0 +1,32 @@
+{
+  "class_name": "WarHistorianRepy",
+  "title": "War Historian, Repy",
+  "description": "An academic is trapped in a [purple]hanging cage[/purple] next to a [gold]treasure chest[/gold].\n\nThe academic is muttering about [sine][orange]\"One-Time-Use Keys\"[/orange][/sine] while furiously writing something.\n\nLooks like you can unlock the [purple]cage[/purple] or the [gold]chest[/gold].",
+  "options": [
+    {
+      "title": "Unlock the Cage",
+      "description": "Lose [gold]Lantern Key[/gold]. Obtain [gold]History Course[/gold]."
+    },
+    {
+      "title": "Unlock the Chest",
+      "description": "Lose [gold]Lantern Key[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+    }
+  ],
+  "acts": ["DeprecatedAct", "Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["DISABLED — IsAllowed() returns false; this event never appears in the game"],
+  "notes": "[red]This event is currently disabled in the game.[/red]\n\nNormally, the event would function as follows: You must have a [gold]Lantern Key[/gold] card in your deck to make a choice. If you're playing single-player with [gold]2+ Lantern Keys[/gold], you get a second choice after your initial decision — you can then choose the option you didn't pick first. Each choice consumes one [gold]Lantern Key[/gold]. In multiplayer, all [gold]Lantern Keys[/gold] are consumed by your first choice and the event ends.",
+  "card_refs": [
+    {
+      "class_name": "LanternKey",
+      "title": "Lantern Key",
+      "slug": "lantern-key"
+    }
+  ],
+  "relic_refs": [
+    {
+      "class_name": "HistoryCourse",
+      "title": "History Course",
+      "slug": "history-course"
+    }
+  ]
+}

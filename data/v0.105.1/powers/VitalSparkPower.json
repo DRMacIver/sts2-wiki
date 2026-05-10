@@ -1,0 +1,8 @@
+{
+  "class_name": "VitalSparkPower",
+  "title": "Vital Spark",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first time this enemy takes Attack damage each turn, the attacker gains [blue]1[/blue] [gold]Energy[/gold].",
+  "smart_description": "The first time this enemy takes Attack damage each turn, the attacker gains 1 Energy."
+}

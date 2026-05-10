@@ -1,0 +1,20 @@
+{
+  "class_name": "DaggerThrow",
+  "title": "Dagger Throw",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Deal 9 damage.\nDraw 1 card.\nDiscard 1 card.",
+  "x_cost": false,
+  "referenced_powers": []
+}

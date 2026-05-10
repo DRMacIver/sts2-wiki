@@ -1,0 +1,51 @@
+{
+  "class_name": "SpinyToad",
+  "title": "Spiny Toad",
+  "min_hp": 121,
+  "max_hp": 124,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PROTRUDING_SPIKES_MOVE",
+      "title": "Protruding Spikes",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 5 Thorns"
+      ]
+    },
+    {
+      "id": "SPIKE_EXPLOSION_MOVE",
+      "title": "Spike Explosion",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 25
+        }
+      ],
+      "effects": [
+        "Deal 25 damage",
+        "Remove 5 Thorns"
+      ]
+    },
+    {
+      "id": "TONGUE_LASH_MOVE",
+      "title": "Tongue Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        }
+      ],
+      "effects": [
+        "Deal 19 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Protruding Spikes → Spike Explosion → Tongue Lash",
+  "powers_on_spawn": [],
+  "notes": "The Spiny Toad cycles through applying Thorns, then exploiting them for a damaging attack, then using a basic tongue attack. The Thorns are removed as part of the Spike Explosion execution, making the toad vulnerable (different animation state) after that move."
+}

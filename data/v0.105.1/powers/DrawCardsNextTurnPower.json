@@ -1,0 +1,8 @@
+{
+  "class_name": "DrawCardsNextTurnPower",
+  "title": "Draw Cards Next Turn",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your next turn, draw [blue]1[/blue] additional card.",
+  "smart_description": "At the start of your next turn, draw [blue]1[/blue] additional card."
+}

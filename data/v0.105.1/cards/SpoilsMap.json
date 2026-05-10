@@ -1,0 +1,18 @@
+{
+  "class_name": "SpoilsMap",
+  "title": "Spoils Map",
+  "character": "Quest",
+  "energy_cost": -1,
+  "type": "Quest",
+  "rarity": "Quest",
+  "target": "Self",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Gold",
+      "base_value": 600
+    }
+  ],
+  "description": "Marks a site of 600 extra [gold]Gold[/gold] in the next Act.",
+  "notes": "This is a special quest card that modifies the map of a specified act. It marks a treasure site to reward additional gold when completed."
+}

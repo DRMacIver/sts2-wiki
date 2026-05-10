@@ -1,0 +1,24 @@
+{
+  "class_name": "KnockoutBlow",
+  "title": "Knockout Blow",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 30,
+      "upgraded_value": 38
+    },
+    {
+      "type": "Stars",
+      "base_value": 5
+    }
+  ],
+  "description": "Deal 30 damage.\nIf this kills an enemy, gain 5 Stars.",
+  "referenced_powers": [],
+  "notes": "Gain Stars only if this card kills the target enemy."
+}

@@ -1,0 +1,25 @@
+{
+  "class_name": "Feral",
+  "title": "Feral",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1
+    }
+  ],
+  "description": "The first time you play a\n0{energyPrefix:energyIcons(1)} Attack each turn,\nreturn it to your [gold]Hand[/gold].",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "FeralPower",
+      "title": "Feral",
+      "slug": "feral"
+    }
+  ]
+}

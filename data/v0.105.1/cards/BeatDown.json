@@ -1,0 +1,22 @@
+{
+  "class_name": "BeatDown",
+  "title": "Beat Down",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Play 3 random Attacks from your [gold]Discard Pile[/gold].",
+  "upgraded_description": "Play 4 random Attacks from your [gold]Discard Pile[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Randomly selects Attacks from the Discard Pile, excluding Unplayable cards. Each selected card's own targeting and effects are maintained."
+}

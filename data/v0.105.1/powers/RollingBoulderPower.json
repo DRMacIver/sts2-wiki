@@ -1,0 +1,8 @@
+{
+  "class_name": "RollingBoulderPower",
+  "title": "Rolling Boulder",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, deal [blue]5[/blue] damage to ALL enemies and increase this damage by [blue]5[/blue].",
+  "smart_description": "At the start of your turn, deal [blue]5[/blue] damage to ALL enemies and increase this damage by [blue]5[/blue]."
+}

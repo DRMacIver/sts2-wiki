@@ -1,0 +1,18 @@
+{
+  "class_name": "Transfigure",
+  "title": "Transfigure",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1
+    }
+  ],
+  "description": "Add [gold]Replay[/gold] to a card in your [gold]Hand[/gold].\nIt costs an extra 1 Energy.",
+  "notes": "When played, select a card from hand. Add Replay to it and increase its energy cost by 1 for this combat (unless it costs X or is unplayable). Upgrade: removes Exhaust keyword."
+}

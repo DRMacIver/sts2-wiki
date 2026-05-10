@@ -1,0 +1,8 @@
+{
+  "class_name": "PyrePower",
+  "title": "Pyre",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [blue]1[/blue] [gold]Energy[/gold] at the start of each turn.",
+  "smart_description": "Gain [blue]1[/blue] [gold]Energy[/gold] at the start of each turn."
+}

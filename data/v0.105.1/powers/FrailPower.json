@@ -1,0 +1,9 @@
+{
+  "class_name": "FrailPower",
+  "title": "Frail",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "While Frail, gain [blue]25%[/blue] less [gold]Block[/gold] from cards.",
+  "smart_description": "Gain [blue]25%[/blue] less [gold]Block[/gold] from cards for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "notes": "Block reduction (25%) applies only to block from powered cards or monster moves. Debuff duration decrements at the end of each enemy turn."
+}

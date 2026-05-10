@@ -1,0 +1,8 @@
+{
+  "class_name": "PowderedDemise",
+  "title": "Powdered Demise",
+  "rarity": "Uncommon",
+  "usage": "Unknown",
+  "target": "Single",
+  "description": "Enemy loses [blue]9[/blue] HP at the end of each of its turns."
+}

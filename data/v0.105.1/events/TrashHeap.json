@@ -1,0 +1,37 @@
+{
+  "class_name": "TrashHeap",
+  "title": "Trash Heap",
+  "description": "You discover a towering pile of [red][jitter]scrapped weapons[/jitter][/red], [orange]discarded trinkets[/orange], and [purple][sine]other oddities[/sine][/purple]. The massive pile shifts and rumbles, as if growing from within...\n\nIf you scavenge from the surface, you may find some decent things. But if you really get in there, you may find some [gold]exotic treasures[/gold].",
+  "options": [
+    {
+      "title": "Dive In",
+      "description": "Lose [red]8[/red] HP. Obtain a random forgotten [gold]Relic[/gold] from the past."
+    },
+    {
+      "title": "Grab Random Junk",
+      "description": "Gain [blue]100[/blue] [gold]Gold[/gold]. Obtain a random forgotten card from the past."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["All players must have more than 5 HP"],
+  "notes": "This event offers two distinct paths with different risk-reward profiles. [gold]Dive In[/gold] requires taking 8 unblockable, unpowered damage but grants a rare relic from a curated pool of 5 relics (Darkstone Periapt, Dream Catcher, Hand Drill, Maw Bank, The Boot). [gold]Grab Random Junk[/gold] is the safer option, providing 100 Gold and adding a random forgotten card to your deck from a pool of 10 cards (Caltrops, Clash, Distraction, Dual Wield, Entrench, Hello World, Outmaneuver, Rebound, Rip and Tear, Stack).",
+  "card_refs": [
+    {"class_name": "Caltrops", "title": "Caltrops", "slug": "caltrops"},
+    {"class_name": "Clash", "title": "Clash", "slug": "clash"},
+    {"class_name": "Distraction", "title": "Distraction", "slug": "distraction"},
+    {"class_name": "DualWield", "title": "Dual Wield", "slug": "dual-wield"},
+    {"class_name": "Entrench", "title": "Entrench", "slug": "entrench"},
+    {"class_name": "HelloWorld", "title": "Hello World", "slug": "hello-world"},
+    {"class_name": "Outmaneuver", "title": "Outmaneuver", "slug": "outmaneuver"},
+    {"class_name": "Rebound", "title": "Rebound", "slug": "rebound"},
+    {"class_name": "RipAndTear", "title": "Rip and Tear", "slug": "rip-and-tear"},
+    {"class_name": "Stack", "title": "Stack", "slug": "stack"}
+  ],
+  "relic_refs": [
+    {"class_name": "DarkstonePeriapt", "title": "Darkstone Periapt", "slug": "darkstone-periapt"},
+    {"class_name": "DreamCatcher", "title": "Dream Catcher", "slug": "dream-catcher"},
+    {"class_name": "HandDrill", "title": "Hand Drill", "slug": "hand-drill"},
+    {"class_name": "MawBank", "title": "Maw Bank", "slug": "maw-bank"},
+    {"class_name": "TheBoot", "title": "The Boot", "slug": "the-boot"}
+  ]
+}

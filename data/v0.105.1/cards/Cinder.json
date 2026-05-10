@@ -1,0 +1,19 @@
+{
+  "class_name": "Cinder",
+  "title": "Cinder",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 18,
+      "upgraded_value": 24
+    }
+  ],
+  "description": "Deal 18 damage.\n[gold]Exhaust[/gold] 1 card at random.",
+  "x_cost": false
+}

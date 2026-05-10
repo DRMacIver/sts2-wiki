@@ -1,0 +1,8 @@
+{
+  "class_name": "DeprecatedPotion",
+  "title": "Deprecated Potion",
+  "rarity": "None",
+  "usage": "Unknown",
+  "target": "AnyEnemy",
+  "description": "This potion has been removed from the game."
+}

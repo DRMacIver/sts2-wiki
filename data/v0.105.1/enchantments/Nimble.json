@@ -1,0 +1,23 @@
+{
+  "class_name": "Nimble",
+  "title": "Nimble",
+  "description": "Increases [gold]Block[/gold] gained from this card by [blue]2[/blue].",
+  "card_type": "Any",
+  "restrictions": ["Card must gain Block"],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "SelfHelpBook",
+      "title": "Self-Help Book",
+      "amount": 2
+    },
+    {
+      "type": "relic",
+      "class_name": "FresnelLens",
+      "title": "Fresnel Lens",
+      "amount": 2
+    }
+  ]
+}

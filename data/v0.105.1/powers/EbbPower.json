@@ -1,0 +1,8 @@
+{
+  "class_name": "EbbPower",
+  "title": "Ebb",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Lose [blue]3[/blue] [gold]Strength[/gold] and [blue]3[/blue] [gold]Dexterity[/gold] this turn.",
+  "smart_description": "Lose [blue]3[/blue] [gold]Strength[/gold] and [blue]3[/blue] [gold]Dexterity[/gold] this turn."
+}

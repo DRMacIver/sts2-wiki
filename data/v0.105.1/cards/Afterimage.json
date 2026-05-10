@@ -1,0 +1,25 @@
+{
+  "class_name": "Afterimage",
+  "title": "Afterimage",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "Whenever you play a card, gain 1 [gold]Block[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "AfterimagePower",
+      "title": "Afterimage",
+      "slug": "afterimage"
+    }
+  ],
+  "notes": "Gains Innate keyword on upgrade."
+}

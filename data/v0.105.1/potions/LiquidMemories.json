@@ -1,0 +1,9 @@
+{
+  "class_name": "LiquidMemories",
+  "title": "Liquid Memories",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. It's free to play this turn.",
+  "notes": "Can only be used during combat."
+}

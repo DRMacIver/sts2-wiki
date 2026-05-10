@@ -1,0 +1,21 @@
+{
+  "class_name": "Turbo",
+  "title": "TURBO",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Gain 2 Energy.\nAdd a [gold]Void[/gold] into your [gold]Discard Pile[/gold].",
+  "upgraded_description": "Gain 3 Energy.\nAdd a [gold]Void[/gold] into your [gold]Discard Pile[/gold].",
+  "referenced_powers": [],
+  "notes": "Creates and adds a Void card to the discard pile."
+}

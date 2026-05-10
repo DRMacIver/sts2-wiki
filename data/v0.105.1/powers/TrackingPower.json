@@ -1,0 +1,9 @@
+{
+  "class_name": "TrackingPower",
+  "title": "Tracking",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Weak[/gold] enemies take [blue]2[/blue] times more damage from Attacks.",
+  "smart_description": "[gold]Weak[/gold] enemies take [blue]{Amount}[/blue] times more damage from Attacks.",
+  "notes": "Applies a damage multiplier only when the owner or their pets deal Attack damage to a Weak target. The multiplier value (typically 2) is stored as the power's stack counter."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "ConstrictPower",
+  "title": "Constrict",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "While the Slithering Strangler is alive, at the end of your turn, take [blue]1[/blue] damage.",
+  "smart_description": "While the Slithering Strangler is alive, at the end of your turn, take [blue]damage equal to the stack count[/blue].",
+  "notes": "Removes itself when the Slithering Strangler dies. Damage dealt equals the stack count."
+}

@@ -1,0 +1,82 @@
+{
+  "class_name": "ThievingHopper",
+  "title": "Thieving Hopper",
+  "min_hp": 84,
+  "max_hp": 84,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "THIEVERY_MOVE",
+      "title": "Thievery",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 19 damage",
+        "Steal 1 card"
+      ]
+    },
+    {
+      "id": "FLUTTER_MOVE",
+      "title": "Flutter",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 5 Flutter",
+        "Enter Hovering state"
+      ]
+    },
+    {
+      "id": "HAT_TRICK_MOVE",
+      "title": "Hat Trick",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 23
+        }
+      ],
+      "effects": [
+        "Deal 23 damage"
+      ]
+    },
+    {
+      "id": "NAB_MOVE",
+      "title": "Nab",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage"
+      ]
+    },
+    {
+      "id": "ESCAPE_MOVE",
+      "title": "Escape",
+      "intents": [
+        {
+          "type": "escape"
+        }
+      ],
+      "effects": [
+        "Escape from combat"
+      ]
+    }
+  ],
+  "move_pattern": "Thievery → Flutter → Hat Trick → Nab → Escape (repeats Escape indefinitely)",
+  "powers_on_spawn": [
+    "Escape Artist (5)"
+  ],
+  "notes": "Starts combat with Escape Artist power, granting it 5 escape charges. The Thievery move targets cards from the player's draw and discard piles based on rarity priority (preferring Uncommon and Common cards). The Flutter move enters a Hovering state that changes the monster's animations and audio effects for subsequent actions. Once the monster reaches the Escape move in its cycle, it will repeatedly attempt to escape until successful."
+}

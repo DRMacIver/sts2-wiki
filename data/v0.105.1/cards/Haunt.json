@@ -1,0 +1,32 @@
+{
+  "class_name": "Haunt",
+  "title": "Haunt",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Whenever you play a [gold]Soul[/gold], a random enemy loses 6 HP.",
+  "upgraded_description": "Whenever you play a [gold]Soul[/gold], a random enemy loses 8 HP.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "HauntPower",
+      "title": "Haunt",
+      "slug": "haunt"
+    },
+    {
+      "class_name": "Soul",
+      "title": "Soul",
+      "slug": "soul"
+    }
+  ]
+}

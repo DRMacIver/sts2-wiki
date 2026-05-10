@@ -1,0 +1,12 @@
+{
+  "class_name": "SludgeSpinnerWeak",
+  "title": "Sludge Spinner",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": [
+    "SludgeSpinner"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Weak encounter variant with a single Sludge Spinner"
+}

@@ -1,0 +1,29 @@
+{
+  "class_name": "Bully",
+  "title": "Bully",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "ExtraDamage",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description_template": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Vulnerable[/gold] on the enemy.",
+  "description_plain": "Deal X damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
+  "description_html": "Deal X damage.<br>Deals 2 additional damage for each <span class=\"desc-gold\">Vulnerable</span> on the enemy.",
+  "upgraded_description_plain": "Deal X damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
+  "upgraded_description_html": "Deal X damage.<br>Deals 3 additional damage for each <span class=\"desc-gold\">Vulnerable</span> on the enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

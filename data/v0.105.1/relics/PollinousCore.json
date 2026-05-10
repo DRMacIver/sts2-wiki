@@ -1,0 +1,8 @@
+{
+  "class_name": "PollinousCore",
+  "title": "Pollinous Core",
+  "rarity": "Event",
+  "description": "Every [blue]4[/blue] turns, draw [blue]2[/blue] additional cards.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks turns in combat. When the turn counter reaches 4, triggers card draw boost on the next hand draw phase, then resets the counter. Shows a counter indicating progress toward activation. Has visual activation feedback."
+}

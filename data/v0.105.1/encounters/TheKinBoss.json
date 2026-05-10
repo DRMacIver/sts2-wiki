@@ -1,0 +1,14 @@
+{
+  "class_name": "TheKinBoss",
+  "title": "The Kin",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": [
+    "KinFollower",
+    "KinFollower",
+    "KinPriest"
+  ],
+  "total_monsters": 3,
+  "tags": [],
+  "notes": "The first KinFollower (slot1) starts with its Dance ability active."
+}

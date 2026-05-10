@@ -1,0 +1,9 @@
+{
+  "class_name": "BeaconOfHopePower",
+  "title": "Beacon of Hope",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
+  "smart_description": "Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
+  "notes": "Triggers whenever the owner gains Block. Distributes 50% of the gained Block amount to other alive player creatures on the same side (excluding the owner). Only triggers if the amount to distribute is at least 1 point, and prevents recursive triggering during a single block gain event."
+}

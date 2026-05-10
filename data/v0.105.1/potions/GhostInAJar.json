@@ -1,0 +1,8 @@
+{
+  "class_name": "GhostInAJar",
+  "title": "Ghost in a Jar",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]1[/blue] [gold]Intangible[/gold]."
+}

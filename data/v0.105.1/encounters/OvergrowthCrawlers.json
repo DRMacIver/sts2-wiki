@@ -1,0 +1,9 @@
+{
+  "class_name": "OvergrowthCrawlers",
+  "title": "Overgrowth Crawlers",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["ShrinkerBeetle", "FuzzyWurmCrawler"],
+  "total_monsters": 2,
+  "tags": ["Shrinker", "Crawler"]
+}

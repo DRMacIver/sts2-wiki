@@ -1,0 +1,25 @@
+{
+  "class_name": "RightHandHand",
+  "title": "Right Hand Hand",
+  "character": "Necrobinder",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    },
+    {
+      "type": "Energy",
+      "base_value": 2
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 4 damage.\nWhenever you play a card that costs 2 Energy or more, return this to your [gold]Hand[/gold] from the [gold]Discard Pile[/gold].",
+  "upgraded_description": "[gold]Osty[/gold] deals 6 damage.\nWhenever you play a card that costs 2 Energy or more, return this to your [gold]Hand[/gold] from the [gold]Discard Pile[/gold].",
+  "referenced_powers": [],
+  "notes": "Returns to hand whenever you play a card that costs 2 Energy or more from your Discard Pile. Does not deal damage if Osty is missing."
+}

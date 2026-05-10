@@ -1,0 +1,45 @@
+{
+  "class_name": "ScrollOfBiting",
+  "title": "Scroll of Biting",
+  "min_hp": 33,
+  "max_hp": 39,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHOMP",
+      "title": "Chomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    },
+    {
+      "id": "CHEW",
+      "title": "Chew",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "MORE_TEETH",
+      "title": "More Teeth",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 2 Strength"]
+    }
+  ],
+  "move_pattern": "Cycles: Chomp → More Teeth → Chew. After each Chew, randomly selects Chomp or repeats Chew (with higher probability for Chew). Starting move varies by instance.",
+  "powers_on_spawn": ["Apply 2 Paper Cuts"],
+  "notes": null
+}

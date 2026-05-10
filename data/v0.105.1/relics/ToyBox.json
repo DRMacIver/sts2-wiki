@@ -1,0 +1,8 @@
+{
+  "class_name": "ToyBox",
+  "title": "Toy Box",
+  "rarity": "Ancient",
+  "description": "Upon pickup, obtain [blue]4[/blue] [gold]Wax Relics[/gold]. Every [blue]3[/blue] combats, your left-most [gold]Wax Relic[/gold] will melt away.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Grants 4 Wax Relics on pickup. Every 3 combats, the left-most Wax Relic melts away. Becomes disabled once all 4 Wax Relics have melted (after 12 combats)."
+}

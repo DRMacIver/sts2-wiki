@@ -1,0 +1,21 @@
+{
+  "class_name": "GoldAxe",
+  "title": "Gold Axe",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 0
+    }
+  ],
+  "description": "Deal damage equal to the number of cards played this combat.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Damage is calculated dynamically equal to the number of cards played this combat. Upgrade grants Retain keyword, allowing this card to remain in hand after being played."
+}
+

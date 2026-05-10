@@ -1,0 +1,49 @@
+{
+  "class_name": "BygoneEffigy",
+  "title": "Bygone Effigy",
+  "min_hp": 132,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "WAKE_MOVE",
+      "title": "Wake",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 10 Strength"
+      ]
+    },
+    {
+      "id": "SLASHES_MOVE",
+      "title": "Slashes",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": [
+        "Deal 15 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts asleep. Wakes up with +10 Strength buff. Then repeatedly uses Slashes.",
+  "powers_on_spawn": [
+    "Slow"
+  ],
+  "notes": "Monster enters combat with Slow applied and begins with SleepIntent on the first turn. After sleeping, it awakens with a +10 Strength buff and then cycles through repeated Slashes attacks."
+}

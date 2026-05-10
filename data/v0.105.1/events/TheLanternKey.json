@@ -1,0 +1,26 @@
+{
+  "class_name": "TheLanternKey",
+  "title": "The Lantern Key",
+  "description": "You come upon a faintly glowing key and go to pick it up.\n\n\"Been looking all over for that key! Now if you don't mind...\"\n\nThis person looks like bad news but maybe it's not good to be judgy.",
+  "options": [
+    {
+      "title": "Return the Key",
+      "description": "Gain [blue]100[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Keep the Key",
+      "description": "Fight to obtain the Key."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "This is a branching event with two paths. Choosing \"Return the Key\" grants 100 [gold]Gold[/gold] and immediately ends the event. Choosing \"Keep the Key\" displays the stranger's menacing response, then presents a \"Fight\" option that triggers a combat encounter with the Mysterious Knight. If you win the combat, you receive the [gold]Lantern Key[/gold] card as a reward. The event does not resume after the combat encounter completes.",
+  "card_refs": [
+    {
+      "class_name": "LanternKey",
+      "title": "Lantern Key",
+      "slug": "lantern-key"
+    }
+  ],
+  "relic_refs": []
+}

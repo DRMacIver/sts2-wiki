@@ -1,0 +1,9 @@
+{
+  "class_name": "NoBlockPower",
+  "title": "No Block",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "You cannot gain [gold]Block[/gold] from cards.",
+  "smart_description": "You cannot gain [gold]Block[/gold] from cards for {Amount:plural:[blue]{}[/blue] turn|[blue]{}[/blue] turns}.",
+  "notes": "Decrements by 1 at the end of each of the owner's turns. Reduces the effectiveness of block-granting cards to 0, unless they have the Unpowered flag."
+}

@@ -1,0 +1,13 @@
+{
+  "class_name": "KaiserCrabBoss",
+  "title": "Kaiser Crab",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": [
+    "Crusher",
+    "Rocket"
+  ],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "Boss encounter with custom background and music. Spawns Crusher and Rocket in separate designated slots. Has custom camera scaling (0.75x) and offset adjustments."
+}

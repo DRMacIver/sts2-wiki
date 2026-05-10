@@ -1,0 +1,14 @@
+{
+  "class_name": "Anointed",
+  "title": "Anointed",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Put every [gold]Rare[/gold] card from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "On upgrade: adds [gold]Retain[/gold] keyword"
+}

@@ -1,0 +1,36 @@
+{
+  "class_name": "Trial",
+  "title": "The Trial",
+  "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n\"Entrant [blue][a random 3-digit number][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].\"",
+  "options": [
+    {
+      "title": "Accept",
+      "description": "Serve as today's Decider."
+    },
+    {
+      "title": "Reject",
+      "description": "[red]You are not allowed to Reject.[/red]"
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This is a multi-branch event. After accepting as Decider, you face one of three randomly-selected trial scenarios, each with a Guilty or Innocent verdict choice:\n\n**Merchant Trial**: A merchant accused of [red]murder[/red]. [green]Guilty[/green] verdict adds [red]Regret[/red] to your deck and grants 2 random relics. [green]Innocent[/green] verdict adds [red]Shame[/red] to your deck and upgrades 2 of your cards.\n\n**Noble Trial**: A [gold]powerful noble[/gold] facing [purple]corruption charges[/purple]. [green]Guilty[/green] verdict heals you 10 HP. [green]Innocent[/green] verdict adds [red]Regret[/red] to your deck and grants 300 [gold]Gold[/gold].\n\n**Nondescript Trial**: A woman charged with [red]theft[/red] and [purple]con-artistry[/purple]. Both [green]Guilty[/green] and [green]Innocent[/green] verdicts add [red]Doubt[/red] to your deck. [green]Guilty[/green] grants 2 card rewards, while [green]Innocent[/green] transforms 2 of your cards.\n\nAttempting to Reject initially shows a warning page with the Grand Arbiter threatening death. You can still accept or Double Down to abandon the run entirely.",
+  "card_refs": [
+    {
+      "class_name": "Regret",
+      "title": "Regret",
+      "slug": "regret"
+    },
+    {
+      "class_name": "Shame",
+      "title": "Shame",
+      "slug": "shame"
+    },
+    {
+      "class_name": "Doubt",
+      "title": "Doubt",
+      "slug": "doubt"
+    }
+  ],
+  "relic_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "InfiniteBlades",
+  "title": "Infinite Blades",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "At the start of your turn, add 1 [gold]Shiv[/gold] into your [gold]Hand[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "InfiniteBladesPower",
+      "title": "Infinite Blades",
+      "slug": "infinite-blades"
+    }
+  ],
+  "notes": "Upgrade adds Innate keyword"
+}

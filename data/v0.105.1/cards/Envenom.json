@@ -1,0 +1,31 @@
+{
+  "class_name": "Envenom",
+  "title": "Envenom",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Poison",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Whenever an Attack deals unblocked damage, apply 1 [gold]Poison[/gold].",
+  "upgraded_description": "Whenever an Attack deals unblocked damage, apply 2 [gold]Poison[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "EnvenomPower",
+      "title": "Envenom",
+      "slug": "envenom"
+    },
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

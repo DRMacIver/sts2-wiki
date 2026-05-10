@@ -1,0 +1,9 @@
+{
+  "class_name": "HailstormPower",
+  "title": "Hailstorm",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, if you have [gold]Frost[/gold], deal [blue]6[/blue] damage to ALL enemies.",
+  "smart_description": "At the end of your turn, if you have [gold]Frost[/gold], deal [blue]6[/blue] damage to ALL enemies.",
+  "notes": "Requires at least 1 Frost Orb to trigger."
+}

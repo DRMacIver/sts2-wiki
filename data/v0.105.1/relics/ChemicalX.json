@@ -1,0 +1,8 @@
+{
+  "class_name": "ChemicalX",
+  "title": "Chemical X",
+  "rarity": "Shop",
+  "description": "The effects of your cost [blue]X[/blue] cards are increased by [blue]2[/blue].",
+  "flavor": "WARNING: Do not combine with sugar, spice, and everything nice.",
+  "notes": "Increases the X value of cost-X cards by 2 when played. Triggers for any card that costs X or has a star cost X."
+}

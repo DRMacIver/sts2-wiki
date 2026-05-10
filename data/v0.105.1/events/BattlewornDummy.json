@@ -1,0 +1,24 @@
+{
+  "class_name": "BattlewornDummy",
+  "title": "Battleworn Dummy",
+  "description": "As you approach, it begins to rumble and fizzle and lights up brilliantly!\n\n\"[jitter]BZZZT![/jitter] TIME TO TRAIN!!! YOU HAVE [blue]3 TURNS[/blue] TO DEFEAT ME!\nCHOOSE A SETTING OR FACE [red]LETHAL HUMILIATION[/red].\nHere are the options:\"\n\nAfter the terrifying message, the dummy carefully reads out detailed instructions.\n\nWhat do you choose?",
+  "options": [
+    {
+      "title": "Setting 1",
+      "description": "Fight a [blue]{Setting1Hp}[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+    },
+    {
+      "title": "Setting 2",
+      "description": "Fight a [blue]{Setting2Hp}[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+    },
+    {
+      "title": "Setting 3",
+      "description": "Fight a [blue]{Setting3Hp}[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "[gold]Mandatory Combat Event[/gold]: You must defeat the dummy within [blue]3 turns[/blue] or [red]lose the event[/red]. Each of the three settings scales the dummy's HP based on the number of players and the current act. On victory, you receive the reward for your chosen setting. If the time limit expires, you are humiliated and sent away.",
+  "card_refs": [],
+  "relic_refs": []
+}

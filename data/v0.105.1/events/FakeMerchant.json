@@ -1,0 +1,71 @@
+{
+  "class_name": "FakeMerchant",
+  "title": "The Merchant???",
+  "description": "Placeholder",
+  "options": [],
+  "acts": [
+    "Overgrowth",
+    "Underdocks",
+    "Hive",
+    "Glory"
+  ],
+  "conditions": [
+    "Act 2 or higher",
+    "Requires 100+ Gold OR Foul Potion in inventory",
+    "Single player only"
+  ],
+  "notes": "This is a custom merchant event with a visual shop interface rather than standard event options. The merchant sells relics at a fixed price of 50 Gold each. The event's inventory contains 6 randomly selected relics from a pool of 9: [gold]Fake Anchor[/gold], [gold]Fake Blood Vial[/gold], [gold]Fake Happy Flower[/gold], [gold]Fake Lee's Waffle[/gold], [gold]Fake Mango[/gold], [gold]Fake Orichalcum[/gold], [gold]Fake Snecko Eye[/gold], [gold]Fake Strike Dummy[/gold], and [gold]Fake Venerable Tea Set[/gold]. Throwing a [red]Foul Potion[/red] at the merchant triggers combat with the [gold]Fake Merchant Event Encounter[/gold]. All relics that remain unsold after combat are awarded as rewards along with the [gold]Fake Merchant's Rug[/gold] relic.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "FakeAnchor",
+      "title": "Anchor???",
+      "slug": "anchor"
+    },
+    {
+      "class_name": "FakeBloodVial",
+      "title": "Blood Vial???",
+      "slug": "blood-vial"
+    },
+    {
+      "class_name": "FakeHappyFlower",
+      "title": "Happy Flower???",
+      "slug": "happy-flower"
+    },
+    {
+      "class_name": "FakeLeesWaffle",
+      "title": "Lee's Waffle???",
+      "slug": "lee-s-waffle"
+    },
+    {
+      "class_name": "FakeMango",
+      "title": "Mango???",
+      "slug": "mango"
+    },
+    {
+      "class_name": "FakeOrichalcum",
+      "title": "Orichalcum???",
+      "slug": "orichalcum"
+    },
+    {
+      "class_name": "FakeSneckoEye",
+      "title": "Snecko Eye???",
+      "slug": "snecko-eye"
+    },
+    {
+      "class_name": "FakeStrikeDummy",
+      "title": "Strike Dummy???",
+      "slug": "strike-dummy"
+    },
+    {
+      "class_name": "FakeVenerableTeaSet",
+      "title": "Venerable Tea Set???",
+      "slug": "venerable-tea-set"
+    },
+    {
+      "class_name": "FakeMerchantsRug",
+      "title": "The Merchant's Rug???",
+      "slug": "the-merchant-s-rug"
+    }
+  ]
+}

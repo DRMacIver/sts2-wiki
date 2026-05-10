@@ -1,0 +1,9 @@
+{
+  "class_name": "SmoggyPower",
+  "title": "Smoggy",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "You can only play [blue]1[/blue] Skill per turn.",
+  "smart_description": "You can only play [blue]1[/blue] Skill per turn.",
+  "notes": "After you play a Skill, this power applies Smog affliction to all Skills without afflictions. Any Skills that enter combat during a turn where a Skill was already played also receive Smog. All Smog afflictions clear at end of turn."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "FlutterPower",
+  "title": "Flutter",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Receives [gold]50%[/gold] less damage from Attacks.",
+  "smart_description": "Receives [blue]50%[/blue] less damage from Attacks. Deal attack damage [blue]{Amount}[/blue] {Amount:plural:time|times} to [gold]Stun[/gold] it."
+}

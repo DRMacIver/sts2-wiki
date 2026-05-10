@@ -1,0 +1,8 @@
+{
+  "class_name": "TemporaryDexterityPower",
+  "title": "Temporary Dexterity",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Dexterity[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Dexterity[/gold] until the end of this turn."
+}

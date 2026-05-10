@@ -1,0 +1,9 @@
+{
+  "class_name": "OblivionPower",
+  "title": "Oblivion",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, this enemy gains [blue]1[/blue] [gold]Doom[/gold].",
+  "smart_description": "Whenever you play a card, this enemy gains [blue]{Amount}[/blue] [gold]Doom[/gold].",
+  "notes": "Applies Doom equal to the power's stack count for each card played. The power is instanced per applier and removes itself at the end of the player's turn."
+}

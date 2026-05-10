@@ -1,0 +1,22 @@
+{
+  "class_name": "TheSealedThrone",
+  "title": "The Sealed Throne",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you play a card, gain {singleStarIcon}.",
+  "x_cost": false,
+  "star_cost": 3,
+  "referenced_powers": [
+    {
+      "class_name": "TheSealedThronePower",
+      "title": "The Sealed Throne",
+      "slug": "the-sealed-throne"
+    }
+  ],
+  "notes": "Power card with Star cost. Upgrade adds Innate keyword."
+}

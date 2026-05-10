@@ -1,0 +1,7 @@
+{
+  "class_name": "StratagemPower",
+  "title": "Stratagem",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you shuffle your [gold]Draw Pile[/gold], choose [blue]1[/blue] card from it to put into your [gold]Hand[/gold]."
+}

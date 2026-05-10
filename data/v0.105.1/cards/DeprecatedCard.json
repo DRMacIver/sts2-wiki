@@ -1,0 +1,14 @@
+{
+  "class_name": "DeprecatedCard",
+  "title": "Deprecated Card",
+  "character": "Status",
+  "energy_cost": 0,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[blue]This card was removed in a recent update.[/blue]\nDraw 1 card.\nRemove this from your [gold]Deck[/gold].",
+  "referenced_powers": [],
+  "notes": "This card removes itself from the deck when played. It is not shown in the card library."
+}

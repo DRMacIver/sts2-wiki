@@ -1,0 +1,33 @@
+{
+  "class_name": "ToughEgg",
+  "title": "Tough Egg",
+  "min_hp": 15,
+  "max_hp": 19,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HATCH_MOVE",
+      "title": "HATCH",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": ["Transform into Hatchling", "Gain 20-23 HP"]
+    },
+    {
+      "id": "NIBBLE_MOVE",
+      "title": "Nibble",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": ["Deal 5 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Hatch. After transformation, only uses Nibble attacks.",
+  "powers_on_spawn": ["HatchPower"],
+  "notes": "The Tough Egg is a transforming monster that begins as an egg with 15-19 HP protected by HatchPower. On its first turn, the Hatch move triggers a transformation into a Hatchling form with 20-23 HP, and the move pattern switches to cycling Nibble attacks. The monster's title changes to 'Hatchling' after hatching. All non-Minion powers are removed during the transformation."
+}

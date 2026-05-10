@@ -1,0 +1,10 @@
+{
+  "class_name": "InfestedPrismsElite",
+  "title": "Infested Prism",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["InfestedPrism"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": ""
+}

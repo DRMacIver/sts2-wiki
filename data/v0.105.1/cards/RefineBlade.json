@@ -1,0 +1,31 @@
+{
+  "class_name": "RefineBlade",
+  "title": "Refine Blade",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 9,
+      "upgraded_value": 13
+    },
+    {
+      "type": "Energy",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Forge[/gold] 9.\nNext turn, gain 1 Energy.",
+  "upgraded_description": "[gold]Forge[/gold] 13.\nNext turn, gain 1 Energy.",
+  "referenced_powers": [
+    {
+      "class_name": "EnergyNextTurnPower",
+      "title": "Energy Next Turn",
+      "slug": "energy-next-turn"
+    }
+  ],
+  "notes": "Applies the Forge effect with 9 base resources (13 upgraded). Grants 1 Energy on the following turn via EnergyNextTurnPower."
+}

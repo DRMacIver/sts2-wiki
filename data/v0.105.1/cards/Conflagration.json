@@ -1,0 +1,25 @@
+{
+  "class_name": "Conflagration",
+  "title": "Conflagration",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 2
+    },
+    {
+      "type": "Repeat",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 2 damage to ALL enemies 4 times.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Uses ground fire visual effects. Hits with blunt attack VFX and heavy attack sound effect."
+}

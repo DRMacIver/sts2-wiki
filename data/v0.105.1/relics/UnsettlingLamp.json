@@ -1,0 +1,8 @@
+{
+  "class_name": "UnsettlingLamp",
+  "title": "Unsettling Lamp",
+  "rarity": "Rare",
+  "description": "Each combat, the first time you play a card that [gold]Debuffs[/gold] an enemy, double its effect.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks the first card played in each combat that applies a debuff effect. Once identified, all debuff effects applied by that specific card during the same combat are doubled. Resets after combat ends or once the triggering card is played."
+}

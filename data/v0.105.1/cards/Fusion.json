@@ -1,0 +1,15 @@
+{
+  "class_name": "Fusion",
+  "title": "Fusion",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Channel[/gold] 1 [gold]Plasma[/gold].",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": []
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "DisintegrationPower",
+  "title": "Disintegration",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, take [blue]5[/blue] damage.",
+  "smart_description": "At the end of your turn, take [blue]{Amount}[/blue] damage."
+}

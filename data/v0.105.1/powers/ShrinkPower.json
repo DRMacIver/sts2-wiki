@@ -1,0 +1,9 @@
+{
+  "class_name": "ShrinkPower",
+  "title": "Shrink",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature's Attacks deal 30% less damage for the next 3 turns.",
+  "smart_description": "Shows the name of the creature that applied this power (if any). The owner's Attacks deal 30% less damage for the remaining duration. Effect decreases by 1 each turn and removes when reaching 0 (or persists if infinite).",
+  "notes": "When applied, scales the owner's model to 50% size over 0.75 seconds. Reverts to normal size when removed. If the applier dies while this power is active, the power is removed. DamageDecrease is always 30%."
+}

@@ -1,0 +1,7 @@
+{
+  "class_name": "BackAttackRightPower",
+  "title": "Back Attack",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Deals [blue]50%[/blue] more damage when it is attacking you from behind."
+}

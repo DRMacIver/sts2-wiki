@@ -1,0 +1,8 @@
+{
+  "class_name": "RagePower",
+  "title": "Rage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play an Attack this turn, gain [blue]3[/blue] [gold]Block[/gold].",
+  "smart_description": "Whenever you play an Attack this turn, gain [blue]3[/blue] [gold]Block[/gold]."
+}

@@ -1,0 +1,10 @@
+{
+  "class_name": "TurretOperatorWeak",
+  "title": "Turret Operator",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["LivingShield", "TurretOperator"],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "Weak variant of the Turret Operator encounter."
+}

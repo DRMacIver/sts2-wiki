@@ -1,0 +1,21 @@
+{
+  "class_name": "Stack",
+  "title": "Stack",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 0,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold].",
+  "upgraded_description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold] +3.",
+  "referenced_powers": [],
+  "notes": "Block gained is calculated dynamically based on the current number of cards in the Discard Pile, plus the bonus value (0 base, 3 upgraded)."
+}

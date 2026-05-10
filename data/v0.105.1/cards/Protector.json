@@ -1,0 +1,23 @@
+{
+  "class_name": "Protector",
+  "title": "Protector",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Special",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 10 damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
+  "upgraded_description": "[gold]Osty[/gold] deals 15 damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Requires Osty to be alive to deal damage. Damage scales with Osty's Max HP."
+}

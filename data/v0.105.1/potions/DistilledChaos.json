@@ -1,0 +1,8 @@
+{
+  "class_name": "DistilledChaos",
+  "title": "Distilled Chaos",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Play the top [blue]3[/blue] cards of your [gold]Draw Pile[/gold]."
+}

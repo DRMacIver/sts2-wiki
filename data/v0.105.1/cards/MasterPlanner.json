@@ -1,0 +1,20 @@
+{
+  "class_name": "MasterPlanner",
+  "title": "Master Planner",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Sly"],
+  "vars": [],
+  "description": "When you play a Skill, it gains [gold]Sly[/gold].",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "MasterPlannerPower",
+      "title": "Master Planner",
+      "slug": "master-planner"
+    }
+  ]
+}

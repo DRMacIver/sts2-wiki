@@ -1,0 +1,10 @@
+{
+  "class_name": "HunterKillerNormal",
+  "title": "Hunter Killer",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["HunterKiller"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Single-monster encounter."
+}

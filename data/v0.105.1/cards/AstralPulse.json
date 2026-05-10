@@ -1,0 +1,22 @@
+{
+  "class_name": "AstralPulse",
+  "title": "Astral Pulse",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 18
+    }
+  ],
+  "description": "Deal 14 damage to ALL enemies.",
+  "upgraded_description": "Deal 18 damage to ALL enemies.",
+  "x_cost": false,
+  "star_cost": 3,
+  "referenced_powers": []
+}

@@ -1,0 +1,35 @@
+{
+  "class_name": "TheLegendsWereTrue",
+  "title": "The Legends Were True",
+  "description": "Entering into a pitch dark chamber, a sudden light pierces the darkness from above, just as the door slams behind you.\n\nIlluminated before you appears to be a podium with a map on it. You feel compelled to take it.\n\nSuspicious.",
+  "options": [
+    {
+      "title": "Nab the Map",
+      "description": "Receive the [gold]Spoils Map[/gold]."
+    },
+    {
+      "title": "Slowly Find an Exit",
+      "description": "Lose [red]8[/red] HP. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+    }
+  ],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Act 1 only",
+    "All players must have at least one card in their deck",
+    "All players must have at least 10 HP"
+  ],
+  "notes": "Choosing to nab the map adds [gold]Spoils Map[/gold] to your deck. Choosing to slowly find an exit takes [red]8[/red] unblockable, unpowered damage in exchange for a random potion from your character's potion pool combined with the shared potion pool.",
+  "card_refs": [
+    {
+      "class_name": "SpoilsMap",
+      "title": "Spoils Map",
+      "slug": "spoils-map"
+    }
+  ],
+  "relic_refs": []
+}

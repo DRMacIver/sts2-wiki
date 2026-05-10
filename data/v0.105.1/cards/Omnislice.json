@@ -1,0 +1,22 @@
+{
+  "class_name": "Omnislice",
+  "title": "Omnislice",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Deal 8 damage.\nDamage ALL other enemies equal to the damage dealt.",
+  "upgraded_description": "Deal 11 damage.\nDamage ALL other enemies equal to the damage dealt.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Deals damage to a single target, then applies splash damage to all other enemies on the same side equal to the damage dealt to the initial target."
+}

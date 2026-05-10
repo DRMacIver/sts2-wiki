@@ -1,0 +1,31 @@
+{
+  "class_name": "SpiralingWhirlpool",
+  "title": "Spiraling Whirlpool",
+  "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
+  "options": [
+    {
+      "title": "Observe",
+      "description": "[gold]Enchant[/gold] a Basic [gold]Strike[/gold] or [gold]Defend[/gold] with [purple]Spiral[/purple]."
+    },
+    {
+      "title": "Drink",
+      "description": "Heal [green][33% of max HP][/green] HP."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["Must have at least one Basic Strike or Defend card in deck"],
+  "notes": "The Observe option allows you to enchant a single Basic Strike or Defend card with [purple]Spiral[/purple], a special enchantment fitting the Corruption theme of Underdocks. The Drink option heals you for 33% of your maximum HP and plays out the event's meditative flavor text.",
+  "card_refs": [
+    {
+      "class_name": "Strike",
+      "title": "Strike",
+      "slug": "strike"
+    },
+    {
+      "class_name": "Defend",
+      "title": "Defend",
+      "slug": "defend"
+    }
+  ],
+  "relic_refs": []
+}

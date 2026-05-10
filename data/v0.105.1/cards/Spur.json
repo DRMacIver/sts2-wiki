@@ -1,0 +1,23 @@
+{
+  "class_name": "Spur",
+  "title": "Spur",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 3,
+      "upgraded_value": 5
+    },
+    {
+      "type": "Heal",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "[gold]Summon[/gold] 3.\n[gold]Osty[/gold] heals 5 HP."
+}

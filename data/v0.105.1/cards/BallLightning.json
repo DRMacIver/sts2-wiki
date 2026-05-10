@@ -1,0 +1,21 @@
+{
+  "class_name": "BallLightning",
+  "title": "Ball Lightning",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Deal 7 damage.\n[gold]Channel[/gold] 1 [gold]Lightning[/gold].",
+  "upgraded_description": "Deal 10 damage.\n[gold]Channel[/gold] 1 [gold]Lightning[/gold].",
+  "referenced_powers": [],
+  "notes": "Channels a Lightning Orb when played."
+}

@@ -1,0 +1,58 @@
+{
+  "class_name": "Tunneler",
+  "title": "Tunneler",
+  "min_hp": 92,
+  "max_hp": 92,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    },
+    {
+      "id": "BURROW_MOVE",
+      "title": "Burrow",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block",
+          "amount": 37
+        }
+      ],
+      "effects": ["Apply Burrowed", "Gain 37 Block"]
+    },
+    {
+      "id": "BELOW_MOVE",
+      "title": "Attack from Below",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 26
+        }
+      ],
+      "effects": ["Deal 26 damage"]
+    },
+    {
+      "id": "DIZZY_MOVE",
+      "title": "Dizzy",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": ["Clear stun status"]
+    }
+  ],
+  "move_pattern": "Cycles: Bite → Burrow → Attack from Below (repeats). When stunned, transitions to Dizzy move to wake up and return to Bite.",
+  "powers_on_spawn": [],
+  "notes": "Tunneler has stun mechanics where external conditions can trigger a stunned state. The Dizzy move is used to recover from stun status. During Burrow, the monster applies Burrowed power which affects visual and animation state."
+}

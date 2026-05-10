@@ -1,0 +1,21 @@
+{
+  "class_name": "BurningPact",
+  "title": "Burning Pact",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "[gold]Exhaust[/gold] 1 card.\nDraw 2 cards.",
+  "upgraded_description": "[gold]Exhaust[/gold] 1 card.\nDraw 3 cards.",
+  "referenced_powers": [],
+  "notes": "Player selects a card from hand to exhaust. If no card is selected, the draw still occurs."
+}

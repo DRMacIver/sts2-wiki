@@ -1,0 +1,7 @@
+{
+  "class_name": "HexPower",
+  "title": "Hex",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "While Spectral Knight is alive, ALL your cards are [gold]Ethereal[/gold]."
+}

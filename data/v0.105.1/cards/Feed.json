@@ -1,0 +1,26 @@
+{
+  "class_name": "Feed",
+  "title": "Feed",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 12
+    },
+    {
+      "type": "MaxHp",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 10 damage.\nIf [gold]Fatal[/gold], raise your Max HP by 3.",
+  "upgraded_description": "Deal 12 damage.\nIf [gold]Fatal[/gold], raise your Max HP by 4.",
+  "x_cost": false,
+  "notes": "Gain max HP only if the attack is fatal (kills the target). Cannot be generated in combat."
+}

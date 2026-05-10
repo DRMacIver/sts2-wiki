@@ -1,0 +1,24 @@
+{
+  "class_name": "SeekerStrike",
+  "title": "Seeker Strike",
+  "character": "Seeker",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 12
+    },
+    {
+      "type": "Cards",
+      "base_value": 3
+    }
+  ],
+  "description": "Deal 9 damage.\nChoose 1 of 3 cards in your [gold]Draw Pile[/gold] to add into your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 12 damage.\nChoose 1 of 3 cards in your [gold]Draw Pile[/gold] to add into your [gold]Hand[/gold].",
+  "notes": "Shuffles the draw pile before selecting cards for consistency."
+}

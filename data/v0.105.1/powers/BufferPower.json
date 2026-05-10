@@ -1,0 +1,8 @@
+{
+  "class_name": "BufferPower",
+  "title": "Buffer",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Prevent the next time you would lose HP.",
+  "smart_description": "Prevent the next {Amount:plural:time|[blue]{}[/blue] times} you would lose HP."
+}

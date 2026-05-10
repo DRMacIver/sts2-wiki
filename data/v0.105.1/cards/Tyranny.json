@@ -1,0 +1,21 @@
+{
+  "class_name": "Tyranny",
+  "title": "Tyranny",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "At the start of your turn, draw 1 card and [gold]Exhaust[/gold] 1 card from your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TyrannyPower",
+      "title": "Tyranny",
+      "slug": "tyranny"
+    }
+  ],
+  "notes": "Upgraded card gains Innate keyword"
+}

@@ -1,0 +1,36 @@
+{
+  "class_name": "Prowess",
+  "title": "Prowess",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Strength",
+      "base_value": 1,
+      "upgraded_value": 2
+    },
+    {
+      "type": "Dexterity",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Gain 1 [gold]Strength[/gold].\nGain 1 [gold]Dexterity[/gold].",
+  "upgraded_description": "Gain 2 [gold]Strength[/gold].\nGain 2 [gold]Dexterity[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    },
+    {
+      "class_name": "DexterityPower",
+      "title": "Dexterity",
+      "slug": "dexterity"
+    }
+  ]
+}

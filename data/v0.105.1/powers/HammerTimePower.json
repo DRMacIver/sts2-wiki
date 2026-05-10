@@ -1,0 +1,9 @@
+{
+  "class_name": "HammerTimePower",
+  "title": "Hammer Time",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Whenever you [gold]Forge[/gold], all allies [gold]Forge[/gold] as well.",
+  "smart_description": "Whenever you [gold]Forge[/gold], all allies [gold]Forge[/gold] as well.",
+  "notes": "Triggers on the owner's forge action, causing all other alive allies to forge with the same amount. Prevents infinite loops by skipping if the source is already a HammerTimePower."
+}

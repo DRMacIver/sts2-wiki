@@ -1,0 +1,31 @@
+{
+  "class_name": "Oblivion",
+  "title": "Oblivion",
+  "character": "Necrobinder",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Doom",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Whenever you play a card this turn, apply 3 [gold]Doom[/gold] to the enemy.",
+  "upgraded_description": "Whenever you play a card this turn, apply 4 [gold]Doom[/gold] to the enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "OblivionPower",
+      "title": "Oblivion",
+      "slug": "oblivion"
+    },
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ]
+}

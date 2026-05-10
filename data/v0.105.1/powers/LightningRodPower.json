@@ -1,0 +1,8 @@
+{
+  "class_name": "LightningRodPower",
+  "title": "Lightning Rod",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of the next [blue]2[/blue] turns, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold].",
+  "smart_description": "At the start of the next [blue]2[/blue] turns, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold]."
+}

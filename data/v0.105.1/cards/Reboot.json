@@ -1,0 +1,20 @@
+{
+  "class_name": "Reboot",
+  "title": "Reboot",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Shuffle ALL your cards into your [gold]Draw Pile[/gold].\nDraw 4 cards.",
+  "upgraded_description": "Shuffle ALL your cards into your [gold]Draw Pile[/gold].\nDraw 6 cards.",
+  "referenced_powers": []
+}

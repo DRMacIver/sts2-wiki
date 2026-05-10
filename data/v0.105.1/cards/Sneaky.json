@@ -1,0 +1,27 @@
+{
+  "class_name": "Sneaky",
+  "title": "Sneaky",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Whenever another player attacks an enemy, gain 1 [gold]Block[/gold].",
+  "upgraded_description": "Whenever another player attacks an enemy, gain 2 [gold]Block[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "SneakyPower",
+      "title": "Sneaky",
+      "slug": "sneaky"
+    }
+  ],
+  "notes": "Multiplayer-only card. Triggers whenever any other player attacks an enemy."
+}

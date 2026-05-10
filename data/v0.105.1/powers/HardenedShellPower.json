@@ -1,0 +1,9 @@
+{
+  "class_name": "HardenedShellPower",
+  "title": "Hardened Shell",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This creature cannot lose more than [blue]15[/blue] HP each turn.",
+  "smart_description": "[gold]The affected creature[/gold] cannot lose more than [blue]15[/blue] HP each turn.",
+  "notes": "Tracks cumulative damage taken each turn. When damage exceeds the threshold, the creature's HP display is set to show infinite HP with numbers. Resets at the start of the player's turn."
+}

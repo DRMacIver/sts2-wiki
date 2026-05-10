@@ -1,0 +1,20 @@
+{
+  "class_name": "Afterlife",
+  "title": "Afterlife",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "[gold]Summon[/gold] 6.",
+  "upgraded_description": "[gold]Summon[/gold] 9.",
+  "x_cost": false
+}

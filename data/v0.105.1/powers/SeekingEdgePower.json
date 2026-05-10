@@ -1,0 +1,8 @@
+{
+  "class_name": "SeekingEdgePower",
+  "title": "Seeking Edge",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "[gold]Sovereign Blade[/gold] now hits ALL enemies.",
+  "smart_description": "[gold]Sovereign Blade[/gold] now hits ALL enemies."
+}

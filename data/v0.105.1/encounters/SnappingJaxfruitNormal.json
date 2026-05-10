@@ -1,0 +1,14 @@
+{
+  "class_name": "SnappingJaxfruitNormal",
+  "title": "Overgrowth Flora",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "SnappingJaxfruit",
+    "Flyconid"
+  ],
+  "total_monsters": 2,
+  "tags": [
+    "Mushroom"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "class_name": "Flyconid",
+  "title": "Flyconid",
+  "min_hp": 51,
+  "max_hp": 53,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "VULNERABLE_SPORES_MOVE",
+      "title": "Vulnerable Spores",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Vulnerable"
+      ]
+    },
+    {
+      "id": "FRAIL_SPORES_MOVE",
+      "title": "Frail Spores",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 2 Frail"
+      ]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "effects": [
+        "Deal 12 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with random selection: Frail Spores (weighted 2) or Smash (weighted 1). Then cycles through: Vulnerable Spores (weighted 3), Frail Spores (weighted 2), or Smash (weighted 1).",
+  "powers_on_spawn": [],
+  "notes": ""
+}

@@ -1,0 +1,28 @@
+{
+  "class_name": "BrightestFlame",
+  "title": "Brightest Flame",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    },
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    },
+    {
+      "type": "HpLoss",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 2 Energy.\nDraw 2 cards.\nLose 1 Max HP.",
+  "upgraded_description": "Gain 3 Energy.\nDraw 3 cards.\nLose 1 Max HP."
+}

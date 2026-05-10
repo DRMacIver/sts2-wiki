@@ -1,0 +1,9 @@
+{
+  "class_name": "InterceptPower",
+  "title": "Intercept",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "You are covering another player. All attacks that would be directed towards them are redirected towards you.",
+  "smart_description": "You are covering [gold]{Covering}[/gold]. All attacks that would be directed towards them are redirected towards you.",
+  "notes": "Damage taken is multiplied by (number of covered creatures + 1). The power automatically removes itself at the end of the enemy's turn. The {Covering} variable dynamically displays the names of all covered players."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "LiquidBronze",
+  "title": "Liquid Bronze",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]3[/blue] [gold]Thorns[/gold]."
+}

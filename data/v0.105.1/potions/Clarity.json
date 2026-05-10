@@ -1,0 +1,8 @@
+{
+  "class_name": "Clarity",
+  "title": "Clarity Extract",
+  "rarity": "Uncommon",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Draw [blue]1[/blue] card. At the start of your next [blue]3[/blue] turns, draw [blue]1[/blue] additional card."
+}

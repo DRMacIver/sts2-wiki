@@ -1,0 +1,16 @@
+{
+  "class_name": "BowlbugsWeak",
+  "title": "Bowlbugs",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": [
+    "BowlbugRock",
+    "BowlbugEgg",
+    "BowlbugNectar"
+  ],
+  "total_monsters": 2,
+  "tags": [
+    "Workers"
+  ],
+  "notes": "Spawns BowlbugRock and one randomly selected monster from BowlbugEgg or BowlbugNectar."
+}

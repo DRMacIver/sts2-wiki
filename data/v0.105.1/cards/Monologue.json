@@ -1,0 +1,25 @@
+{
+  "class_name": "Monologue",
+  "title": "Monologue",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "Whenever you play a card this turn, gain +1 [gold]Strength[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    }
+  ],
+  "notes": "Upgrade: Adds Retain keyword."
+}

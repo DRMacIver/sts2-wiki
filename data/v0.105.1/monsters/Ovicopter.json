@@ -1,0 +1,67 @@
+{
+  "class_name": "Ovicopter",
+  "title": "Ovicopter",
+  "min_hp": 126,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LAY_EGGS_MOVE",
+      "title": "Lay Eggs",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Summon up to 3 ToughEggs",
+        "Apply Minion to each"
+      ]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "TENDERIZER_MOVE",
+      "title": "Tenderizer",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Vulnerable"
+      ]
+    },
+    {
+      "id": "NUTRITIONAL_PASTE_MOVE",
+      "title": "Nutritional Paste",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 4 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Lay Eggs. Cycles: Lay Eggs → Smash → Tenderizer → decision point. At the decision point: if 3 or fewer allies are alive, repeats Lay Eggs; if 4 or more alive, uses Nutritional Paste → Smash → Tenderizer → back to decision point.",
+  "powers_on_spawn": [],
+  "notes": "Ovicopter summons ToughEgg allies with Minion power to reinforce its position. Its move pattern is adaptive: when it has accumulated too many allies (more than 3), it stops summoning and instead self-buffs with Strength to increase damage output. Tenderizer move is hidden from bestiary preview."
+}

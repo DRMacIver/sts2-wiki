@@ -1,0 +1,27 @@
+{
+  "class_name": "Lethality",
+  "title": "Lethality",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 50,
+      "upgraded_value": 75
+    }
+  ],
+  "description": "The first Attack each turn deals 50% additional damage.",
+  "upgraded_description": "The first Attack each turn deals 75% additional damage.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "LethalityPower",
+      "title": "Lethality",
+      "slug": "lethality"
+    }
+  ]
+}

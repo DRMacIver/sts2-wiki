@@ -1,0 +1,27 @@
+{
+  "class_name": "Fasten",
+  "title": "Fasten",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Gain an additional 5 [gold]Block[/gold] from Defend cards.",
+  "upgraded_description": "Gain an additional 7 [gold]Block[/gold] from Defend cards.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "FastenPower",
+      "title": "Fasten",
+      "slug": "fasten"
+    }
+  ]
+}

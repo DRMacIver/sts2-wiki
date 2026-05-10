@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsEye",
+  "title": "Pael's Eye",
+  "rarity": "Ancient",
+  "description": "The first time each combat you end your turn without playing cards, [gold]Exhaust[/gold] your [gold]Hand[/gold], and take an extra turn.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic has special interaction with Whispering Earring — on the first turn of combat, if you have both relics, Pael's Eye will consider a card to have been played even if no manual plays occurred."
+}

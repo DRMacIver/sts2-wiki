@@ -1,0 +1,21 @@
+{
+  "class_name": "TrashToTreasure",
+  "title": "Trash to Treasure",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you create a Status, [gold]Channel[/gold] 1 random Orb.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TrashToTreasurePower",
+      "title": "Trash to Treasure",
+      "slug": "trash-to-treasure"
+    }
+  ],
+  "notes": "Upgrade adds Innate keyword."
+}

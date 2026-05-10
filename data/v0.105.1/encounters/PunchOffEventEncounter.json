@@ -1,0 +1,10 @@
+{
+  "class_name": "PunchOffEventEncounter",
+  "title": "Punch Constructs",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["PunchConstruct", "PunchConstruct"],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "Two PunchConstruct enemies: one starts with StrongPunch ability and both have randomized HP reduction (2-10) at encounter start. This appears to be an encounter where the player interrupts a match between two constructs."
+}

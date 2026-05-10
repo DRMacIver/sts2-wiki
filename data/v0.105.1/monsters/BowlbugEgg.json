@@ -1,0 +1,27 @@
+{
+  "class_name": "BowlbugEgg",
+  "title": "Bowlbug (Egg)",
+  "min_hp": 23,
+  "max_hp": 24,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "block",
+          "amount": 8
+        }
+      ],
+      "effects": ["Deal 8 damage", "Gain 8 Block"]
+    }
+  ],
+  "move_pattern": "Repeats Bite every turn.",
+  "powers_on_spawn": [],
+  "notes": null
+}

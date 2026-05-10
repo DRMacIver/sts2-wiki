@@ -1,0 +1,8 @@
+{
+  "class_name": "PlowPower",
+  "title": "Plow",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "The first time this creature's HP reaches [blue]150[/blue] or below, it becomes [gold]Stunned[/gold].",
+  "smart_description": "The first time the creature's HP reaches [blue]150[/blue] or below, it becomes [gold]Stunned[/gold] and loses all its [gold]Strength[/gold]."
+}

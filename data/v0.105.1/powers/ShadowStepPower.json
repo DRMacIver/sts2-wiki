@@ -1,0 +1,9 @@
+{
+  "class_name": "ShadowStepPower",
+  "title": "Shadow Step",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Next turn, Attacks deal double damage.",
+  "smart_description": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns after this one}, Attacks deal double damage.",
+  "notes": "This is a counter-type buff that applies DoubleDamagePower on the next turn, equal to its current stack amount, then removes itself."
+}

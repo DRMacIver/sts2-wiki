@@ -1,0 +1,8 @@
+{
+  "class_name": "TouchOfOrobas",
+  "title": "Touch of Orobas",
+  "rarity": "Ancient",
+  "description": "Upon pickup, replace your starter Relic with an Ancient version.",
+  "flavor": "Details for this relic will be revealed in the future...",
+  "notes": "This relic upgrades your starter relic to an Ancient version. The specific upgraded relic depends on your starter relic: Burning Blood → Black Blood, Ring of the Snake → Ring of the Drake, Divine Right → Divine Destiny, Bound Phylactery → Phylactery Unbound, Cracked Core → Infused Core. Other starter relics upgrade to Circlet."
+}

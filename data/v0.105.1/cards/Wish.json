@@ -1,0 +1,14 @@
+{
+  "class_name": "Wish",
+  "title": "Wish",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Put a card from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
+  "upgraded_keywords": ["Exhaust", "Retain"],
+  "notes": "Allows player to select any card from the draw pile and add it to their hand. On upgrade, cards are Retained (played automatically next turn unless discarded)."
+}

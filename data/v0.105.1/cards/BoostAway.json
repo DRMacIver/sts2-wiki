@@ -1,0 +1,25 @@
+{
+  "class_name": "BoostAway",
+  "title": "Boost Away",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Gain 6 [gold]Block[/gold].\nAdd a [gold]Dazed[/gold] into your [gold]Discard Pile[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "Dazed",
+      "title": "Dazed",
+      "slug": "dazed"
+    }
+  ]
+}

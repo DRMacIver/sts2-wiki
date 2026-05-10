@@ -1,0 +1,8 @@
+{
+  "class_name": "FeelNoPainPower",
+  "title": "Feel No Pain",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever a card is Exhausted, gain [blue]3[/blue] [gold]Block[/gold].",
+  "smart_description": "Whenever a card is [gold]Exhausted[/gold], gain [blue]3[/blue] [gold]Block[/gold]."
+}

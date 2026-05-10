@@ -1,0 +1,12 @@
+{
+  "class_name": "SlitheringStranglerNormal",
+  "title": "Strangler and Friend",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "SlitheringStrangler",
+    "SnappingJaxfruit"
+  ],
+  "tags": [],
+  "notes": "This encounter randomly spawns the SlitheringStrangler with one of three secondary enemy options: a SnappingJaxfruit (2 total monsters), one Medium Slime - LeafSlimeM or TwigSlimeM (2 total monsters), or two Small Slimes from LeafSlimeS and TwigSlimeS (3 total monsters)."
+}

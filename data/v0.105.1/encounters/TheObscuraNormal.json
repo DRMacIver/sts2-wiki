@@ -1,0 +1,10 @@
+{
+  "class_name": "TheObscuraNormal",
+  "title": "The Obscura",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["TheObscura"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Encounter defines both 'illusion' and 'obscura' slots; GenerateMonsters only spawns the Obscura monster in the 'obscura' slot. The illusion mechanic appears to be handled separately through the encounter's scene system."
+}

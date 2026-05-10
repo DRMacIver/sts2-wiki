@@ -1,0 +1,9 @@
+{
+  "class_name": "ConsumingShadowPower",
+  "title": "Consuming Shadow",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, [gold]Evoke[/gold] your leftmost Orb.",
+  "smart_description": "At the end of your turn, [gold]Evoke[/gold] your {Amount:plural:|[blue]{}[/blue]} leftmost {Amount:plural:Orb|Orbs}.",
+  "notes": "Counter stack type increases the number of orbs evoked per turn. Each stack will trigger one evoke action for your leftmost orb."
+}

@@ -1,0 +1,25 @@
+{
+  "class_name": "SentryMode",
+  "title": "Sentry Mode",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1
+    }
+  ],
+  "description": "At the start of your turn, add 1 [gold]Sweeping Gaze[/gold] into your [gold]Hand[/gold].",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "SentryModePower",
+      "title": "Sentry Mode",
+      "slug": "sentry-mode"
+    }
+  ]
+}

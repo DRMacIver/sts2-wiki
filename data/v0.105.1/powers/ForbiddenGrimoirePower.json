@@ -1,0 +1,8 @@
+{
+  "class_name": "ForbiddenGrimoirePower",
+  "title": "Forbidden Grimoire",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of combat, remove a card from your [gold]Deck[/gold].",
+  "smart_description": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold]."
+}

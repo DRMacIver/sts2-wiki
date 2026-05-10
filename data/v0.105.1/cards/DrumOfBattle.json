@@ -1,0 +1,27 @@
+{
+  "class_name": "DrumOfBattle",
+  "title": "Drum of Battle",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 2
+    },
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Draw 2 cards.\nWhen this card is [gold]Exhausted[/gold], gain 2 Energy.",
+  "upgraded_description": "Draw 2 cards.\nWhen this card is [gold]Exhausted[/gold], gain 3 Energy.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "When this card is Exhausted, gain Energy. The trigger activates whether the card was Exhausted naturally or by card effects."
+}

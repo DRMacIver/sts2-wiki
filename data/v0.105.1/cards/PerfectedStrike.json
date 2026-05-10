@@ -1,0 +1,25 @@
+{
+  "class_name": "PerfectedStrike",
+  "title": "Perfected Strike",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6
+    },
+    {
+      "type": "Damage",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 6 damage. Deals 2 additional damage for ALL your cards containing [gold]Strike[/gold].",
+  "upgraded_description": "Deal 6 damage. Deals 3 additional damage for ALL your cards containing [gold]Strike[/gold].",
+  "referenced_powers": [],
+  "notes": "Total damage is calculated as base damage (6) plus 2 (or 3 when upgraded) multiplied by the number of Strike cards you own."
+}

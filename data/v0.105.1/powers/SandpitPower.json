@@ -1,0 +1,9 @@
+{
+  "class_name": "SandpitPower",
+  "title": "Sandpit",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "A power used by The Insatiable.",
+  "smart_description": "{Amount:plural:When [gold]The Insatiable[/gold] takes its turn|In [blue]{}[/blue] turns}, you will be eaten and die.",
+  "notes": "This is a countdown power applied by The Insatiable. When the stack reaches 0, it triggers The Insatiable's finishing attack, killing the player and their Osty."
+}

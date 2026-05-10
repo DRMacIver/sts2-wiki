@@ -1,0 +1,12 @@
+{
+  "class_name": "FossilStalkerNormal",
+  "title": "Fossil Stalker",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "FossilStalker"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Single monster encounter. IsWeak and Tags properties are not overridden in this class definition."
+}

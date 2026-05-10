@@ -1,0 +1,28 @@
+{
+  "class_name": "TagTeam",
+  "title": "Tag Team",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 11 damage.\nThe next Attack another player plays on the enemy is played an extra time.",
+  "upgraded_description": "Deal 15 damage.\nThe next Attack another player plays on the enemy is played an extra time.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TagTeamPower",
+      "title": "Tag Team",
+      "slug": "tag-team"
+    }
+  ],
+  "notes": "MultiplayerOnly: This card can only be played in multiplayer mode."
+}

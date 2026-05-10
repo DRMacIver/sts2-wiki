@@ -1,0 +1,9 @@
+{
+  "class_name": "RitualPower",
+  "title": "Ritual",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Strength[/gold] at the end of your turn.",
+  "smart_description": "At the end of {OnPlayer:your|its} turn, {OnPlayer:gain|gains} [blue]{Amount}[/blue] [gold]Strength[/gold].",
+  "notes": "When first applied by an enemy, it does not grant Strength on that turn's end. On subsequent turns (or when applied by the player), it grants Strength equal to its stack count at turn end."
+}

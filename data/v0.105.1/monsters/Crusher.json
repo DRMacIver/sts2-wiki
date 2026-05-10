@@ -1,0 +1,73 @@
+{
+  "class_name": "Crusher",
+  "title": "Crusher",
+  "min_hp": 219,
+  "max_hp": 219,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "THRASH_MOVE",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": ["Deal 14 damage"]
+    },
+    {
+      "id": "ENLARGING_STRIKE_MOVE",
+      "title": "Enlarging Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": ["Deal 4 damage"]
+    },
+    {
+      "id": "BUG_STING_MOVE",
+      "title": "Bug Sting",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 7 damage", "2 hits", "Apply 2 Weak", "Apply 2 Frail"]
+    },
+    {
+      "id": "ADAPT_MOVE",
+      "title": "Adapt",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength"]
+    },
+    {
+      "id": "GUARDED_STRIKE_MOVE",
+      "title": "Guarded Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": ["Deal 14 damage", "Gain 18 Block"]
+    }
+  ],
+  "move_pattern": "Cycles: Thrash → Enlarging Strike → Bug Sting → Adapt → Guarded Strike",
+  "powers_on_spawn": ["Back Attack (Left)", "Crab Rage"],
+  "notes": "Boss-level monster with fixed HP at 219. Cycles through five moves: Thrash and Guarded Strike both deal 14 damage, Enlarging Strike deals 4 damage, Bug Sting deals 7 damage in 2 hits while applying 2 Weak and 2 Frail to the player, and Adapt grants itself 3 Strength. Guarded Strike also grants the monster 18 Block."
+}

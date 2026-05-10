@@ -1,0 +1,25 @@
+{
+  "class_name": "Arsenal",
+  "title": "Arsenal",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "Whenever you create a card, gain 1 [gold]Strength[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "ArsenalPower",
+      "title": "Arsenal",
+      "slug": "arsenal-power"
+    }
+  ],
+  "notes": "Upgrade adds Innate keyword."
+}

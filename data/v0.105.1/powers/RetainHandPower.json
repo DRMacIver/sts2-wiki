@@ -1,0 +1,9 @@
+{
+  "class_name": "RetainHandPower",
+  "title": "Retain Hand",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Retain[/gold] your [gold]Hand[/gold] for the next [blue]2[/blue] turns.",
+  "smart_description": "[gold]Retain[/gold] your [gold]Hand[/gold] {Amount:plural:this turn|for the next [blue]{}[/blue] turns}.",
+  "notes": "Smart description uses localization template that resolves based on stack count: singular form 'this turn' for 1 stack, plural form 'for the next [blue]N[/blue] turns' for N > 1 stacks."
+}

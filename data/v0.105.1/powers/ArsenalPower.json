@@ -1,0 +1,8 @@
+{
+  "class_name": "ArsenalPower",
+  "title": "Arsenal",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you create a card, gain [blue]1[/blue] [gold]Strength[/gold].",
+  "smart_description": "Whenever you create a card, gain [blue]1[/blue] [gold]Strength[/gold]."
+}

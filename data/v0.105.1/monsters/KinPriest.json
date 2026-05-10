@@ -1,0 +1,73 @@
+{
+  "class_name": "KinPriest",
+  "title": "Kin Priest",
+  "min_hp": 199,
+  "max_hp": 199,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ORB_OF_FRAILTY_MOVE",
+      "title": "Orb of Frailty",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Frail"
+      ]
+    },
+    {
+      "id": "ORB_OF_WEAKNESS_MOVE",
+      "title": "Orb of Weakness",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "BEAM_MOVE",
+      "title": "Soul Beam",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 3 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "RITUAL_MOVE",
+      "title": "Dark Ritual",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Orb of Frailty → Orb of Weakness → Soul Beam → Dark Ritual",
+  "powers_on_spawn": [],
+  "notes": "Kin Priest fights alongside KinFollower allies. When a follower dies, the Kin Priest reacts with a music parameter update. When all followers are dead, the Kin Priest speaks a response line. The Dark Ritual move plays a jittered speech line on first use only."
+}
