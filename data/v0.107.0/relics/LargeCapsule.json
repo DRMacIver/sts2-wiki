@@ -1,0 +1,8 @@
+{
+  "class_name": "LargeCapsule",
+  "title": "Large Capsule",
+  "rarity": "Ancient",
+  "description": "Upon pickup, obtain 2 random Relics. Add an additional Strike and Defend to your Deck.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Obtains 2 random relics from the pool upon acquisition, then adds one character-specific Basic Strike and one character-specific Basic Defend card to the deck."
+}

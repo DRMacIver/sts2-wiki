@@ -1,0 +1,17 @@
+{
+  "class_name": "Quasar",
+  "title": "Quasar",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Choose 1 of 3 random Colorless cards to add into your [gold]Hand[/gold].",
+  "upgraded_description": "Choose 1 of 3 random [gold]Upgraded[/gold] Colorless cards to add into your [gold]Hand[/gold].",
+  "star_cost": 2,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Generates 3 random Colorless cards and allows the player to choose 1 to add to hand. If upgraded, the generated cards are also upgraded."
+}

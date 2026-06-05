@@ -1,0 +1,25 @@
+{
+  "class_name": "Claw",
+  "title": "Claw",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Increase",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 3 damage.\nIncrease the damage of ALL Claw cards by 2 this combat.",
+  "referenced_powers": [],
+  "notes": "Playing this card permanently increases the damage of all your other Claw cards by the Increase amount for the rest of combat."
+}

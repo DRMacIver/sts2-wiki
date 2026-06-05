@@ -1,0 +1,20 @@
+{
+  "class_name": "Calamity",
+  "title": "Calamity",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
+  "upgraded_cost": 2,
+  "referenced_powers": [
+    {
+      "class_name": "CalamityPower",
+      "title": "Calamity",
+      "slug": "calamity"
+    }
+  ]
+}

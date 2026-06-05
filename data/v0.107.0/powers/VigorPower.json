@@ -1,0 +1,9 @@
+{
+  "class_name": "VigorPower",
+  "title": "Vigor",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your next Attack deals additional damage.",
+  "smart_description": "Your next Attack deals additional damage equal to your current Vigor stack.",
+  "notes": "Each stack of Vigor grants bonus damage to the next Attack. Consumes one stack per Attack."
+}

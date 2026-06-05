@@ -1,0 +1,8 @@
+{
+  "class_name": "HeartOfIron",
+  "title": "Heart of Iron",
+  "rarity": "Uncommon",
+  "usage": "Drink",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]7[/blue] [gold]Plating[/gold]."
+}

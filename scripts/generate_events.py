@@ -14,6 +14,48 @@ def slugify(name: str) -> str:
     return s.strip("-")
 
 
+def load_generated_ref_map(content_dir: str) -> dict[str, dict[str, str]]:
+    """Build a class_name -> {title, slug} map from already-generated content
+    markdown files. The page slug is the filename stem, which already accounts
+    for collision dedup (e.g. FakeAnchor -> "anchor-fakeanchor"). Used so that
+    event card_refs / relic_refs link to the real page slugs rather than the
+    guessed slugs produced by the LLM extractor."""
+    ref_map: dict[str, dict[str, str]] = {}
+    if not os.path.isdir(content_dir):
+        return ref_map
+    for fname in os.listdir(content_dir):
+        if not fname.endswith(".md"):
+            continue
+        slug = fname.removesuffix(".md")
+        class_name = ""
+        title = ""
+        with open(os.path.join(content_dir, fname)) as f:
+            for line in f:
+                if line.startswith("class_name:"):
+                    class_name = line.split(":", 1)[1].strip().strip('"')
+                elif line.startswith("title:"):
+                    title = line.split(":", 1)[1].strip().strip('"')
+                elif line.startswith("---") and class_name:
+                    break
+        if class_name:
+            ref_map[class_name] = {"title": title or class_name, "slug": slug}
+    return ref_map
+
+
+def resolve_refs(refs: list[dict], ref_map: dict[str, dict[str, str]]) -> list[dict]:
+    """Rewrite each ref's title/slug to the canonical generated-page values,
+    keyed by class_name. Refs whose class_name has no generated page are left
+    unchanged."""
+    resolved = []
+    for ref in refs:
+        cname = ref.get("class_name", "")
+        if cname in ref_map:
+            resolved.append({"class_name": cname, **ref_map[cname]})
+        else:
+            resolved.append(ref)
+    return resolved
+
+
 def escape_yaml(value: str) -> str:
     if not value:
         return '""'
@@ -543,6 +585,13 @@ def main() -> None:
             events_by_class[cname] = entity_data
     events = list(events_by_class.values())
 
+    # Build canonical class_name -> {title, slug} maps from the already-generated
+    # card and relic content (generate-cards / generate-relics run before this
+    # step), so event card_refs / relic_refs link to the real page slugs.
+    content_root = os.path.dirname(output_dir)
+    card_ref_map = load_generated_ref_map(os.path.join(content_root, "cards"))
+    relic_ref_map = load_generated_ref_map(os.path.join(content_root, "relics"))
+
     # Load override directory path
     overrides_dir = os.path.join(os.path.dirname(os.path.dirname(data_dir)), "overrides", "events")
 
@@ -633,8 +682,10 @@ def main() -> None:
             notes = event["notes"]
         if notes:
             lines.append(f"notes: {escape_yaml(render_description_html(notes))}")
-        lines.append(f"card_refs: {json.dumps(event.get('card_refs', []))}")
-        lines.append(f"relic_refs: {json.dumps(event.get('relic_refs', []))}")
+        card_refs = resolve_refs(event.get("card_refs", []), card_ref_map)
+        relic_refs = resolve_refs(event.get("relic_refs", []), relic_ref_map)
+        lines.append(f"card_refs: {json.dumps(card_refs)}")
+        lines.append(f"relic_refs: {json.dumps(relic_refs)}")
         lines.append("---")
         lines.append("")
 

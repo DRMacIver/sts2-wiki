@@ -1,0 +1,9 @@
+{
+  "class_name": "GigantificationPower",
+  "title": "Gigantification",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The next Attack you play deals triple damage.",
+  "smart_description": "The next [blue]Amount[/blue] Attacks you play deal triple damage (when stacked multiple times).",
+  "notes": "This is a counter-type power that decrements after each Attack is played. Each counter grants a 3x damage multiplier to the next powered Attack. The smart description dynamically shows the number of remaining counters."
+}

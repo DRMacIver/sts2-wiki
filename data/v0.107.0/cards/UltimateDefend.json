@@ -1,0 +1,21 @@
+{
+  "class_name": "UltimateDefend",
+  "title": "Ultimate Defend",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 11,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Gain 11 [gold]Block[/gold].",
+  "upgraded_description": "Gain 15 [gold]Block[/gold].",
+  "x_cost": false,
+  "referenced_powers": []
+}

@@ -1,0 +1,18 @@
+{
+  "class_name": "Instinct",
+  "title": "Instinct",
+  "description": "This card's attack damage is doubled.",
+  "card_type": "Attack",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "TriBoomerang",
+      "title": "Tri-Boomerang",
+      "amount": 1
+    }
+  ],
+  "notes": "The damage doubling only applies to powered attacks (attacks with a standard damage value). Non-powered attacks (e.g. those using special damage calculations) are unaffected."
+}

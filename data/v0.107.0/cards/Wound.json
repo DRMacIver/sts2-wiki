@@ -1,0 +1,12 @@
+{
+  "class_name": "Wound",
+  "title": "Wound",
+  "character": "Status",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [],
+  "description": ""
+}

@@ -1,0 +1,36 @@
+{
+  "class_name": "FakeMerchant",
+  "title": "The Merchant???",
+  "description": "Placeholder",
+  "options": [
+    {
+      "title": "Browse and Purchase",
+      "description": "The merchant has a randomly-selected inventory of 6 relics from their pool. Each relic costs [gold]50 Gold[/gold]."
+    },
+    {
+      "title": "Throw Foul Potion",
+      "description": "If you have a [gold]Foul Potion[/gold], you can throw it at the merchant, triggering a combat encounter. Defeating the merchant grants you the [gold]Merchant's Rug[/gold] relic plus all remaining unsold relics from their inventory.",
+      "requires": "Requires: Foul Potion in your inventory"
+    }
+  ],
+  "acts": ["DeprecatedAct", "Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [
+    "Act 2+",
+    "Single player only",
+    "At least 100 Gold OR have a Foul Potion"
+  ],
+  "notes": "This is a shop event with a unique twist. The merchant has 6 randomly-selected relics from a fixed pool of 9 available for purchase. If you throw a [gold]Foul Potion[/gold], the merchant becomes hostile and you enter combat. Winning the fight grants the [gold]Merchant's Rug[/gold] relic plus all of the merchant's remaining inventory (including both purchased and unsold relics). The merchant reacts to various player actions with unique dialogue lines.",
+  "card_refs": [],
+  "relic_refs": [
+    {"class_name": "FakeAnchor", "title": "Fake Anchor", "slug": "fake-anchor"},
+    {"class_name": "FakeBloodVial", "title": "Fake Blood Vial", "slug": "fake-blood-vial"},
+    {"class_name": "FakeHappyFlower", "title": "Fake Happy Flower", "slug": "fake-happy-flower"},
+    {"class_name": "FakeLeesWaffle", "title": "Lee's Waffle", "slug": "lees-waffle"},
+    {"class_name": "FakeMango", "title": "Fake Mango", "slug": "fake-mango"},
+    {"class_name": "FakeOrichalcum", "title": "Fake Orichalcum", "slug": "fake-orichalcum"},
+    {"class_name": "FakeSneckoEye", "title": "Fake Snecko Eye", "slug": "fake-snecko-eye"},
+    {"class_name": "FakeStrikeDummy", "title": "Fake Strike Dummy", "slug": "fake-strike-dummy"},
+    {"class_name": "FakeVenerableTeaSet", "title": "Fake Venerable Tea Set", "slug": "fake-venerable-tea-set"},
+    {"class_name": "FakeMerchantsRug", "title": "Merchant's Rug", "slug": "merchants-rug"}
+  ]
+}

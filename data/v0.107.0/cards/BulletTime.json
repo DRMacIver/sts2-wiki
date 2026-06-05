@@ -1,0 +1,20 @@
+{
+  "class_name": "BulletTime",
+  "title": "Bullet Time",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "You cannot draw additional cards this turn. ALL cards in your [gold]Hand[/gold] are free to play this turn.",
+  "upgraded_cost": 2,
+  "referenced_powers": [
+    {
+      "class_name": "NoDrawPower",
+      "title": "No Draw",
+      "slug": "no-draw"
+    }
+  ]
+}

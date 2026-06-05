@@ -1,0 +1,10 @@
+{
+  "class_name": "TheInsatiableBoss",
+  "title": "The Insatiable",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": ["TheInsatiable"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Boss encounter with custom background, ambient effects, and camera scaling (0.9x). Features custom music track (event:/music/act2_boss_the_insatiable)."
+}

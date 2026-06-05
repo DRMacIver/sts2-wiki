@@ -1,0 +1,22 @@
+{
+  "class_name": "TheArchitect",
+  "title": "The Architect",
+  "description": "[Dialogue-based event - localization data not available]",
+  "options": [
+    {
+      "title": "Continue/Respond",
+      "description": "[Dialogue-driven options - content varies based on loaded dialogue]"
+    },
+    {
+      "title": "Proceed",
+      "description": "[Final option] Complete the encounter and win the run"
+    }
+  ],
+  "acts": [],
+  "conditions": [
+    "Post-victory encounter with The Architect"
+  ],
+  "notes": "[purple]Dialogue-Based Event[/purple]\n\nThis event features dynamic dialogue with The Architect, a special combat encounter. Key mechanics:\n\n• [gold]Character-Specific Dialogue[/gold]: Different dialogue variations for Ironclad, Silent, Defect, Necrobinder, and Regent\n• [gold]Progressive Dialogue[/gold]: Dialogue lines selected based on character visit count and total run wins (SaveManager progress tracking)\n• [gold]Interactive Dialogue System[/gold]: Each dialogue line generates a button (Continue/Respond depending on speaker)\n• [gold]Combat Interactions[/gold]: Dialogue can trigger attacks from player or Architect at the start or end of the encounter\n• [gold]Run Completion[/gold]: Choosing to Proceed after dialogue completes the run with a victory\n\n[red]NOTE[/red]: Full dialogue content and actual option descriptions cannot be extracted - localization data file is empty. The event's complete text and branches depend on loaded dialogue from the localization system.",
+  "card_refs": [],
+  "relic_refs": []
+}

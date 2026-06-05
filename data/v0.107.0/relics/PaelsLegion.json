@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsLegion",
+  "title": "Pael's Legion",
+  "rarity": "Ancient",
+  "description": "Doubles [gold]Block[/gold] gained from a card, then goes to sleep for [blue]2[/blue] turns.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic doubles the block gained from any card played while active. After a card with block is played, it enters a 2-turn cooldown state (sleeping) before becoming active again. Summons a pet creature that plays animations based on the relic's state (BlockTrigger when doubling, SleepTrigger when cooling down, WakeUpTrigger when reactivating)."
+}

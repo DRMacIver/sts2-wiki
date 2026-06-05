@@ -1,0 +1,21 @@
+{
+  "class_name": "Bury",
+  "title": "Bury",
+  "character": "Necrobinder",
+  "energy_cost": 4,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 52,
+      "upgraded_value": 63
+    }
+  ],
+  "description": "Deal 52 damage.",
+  "upgraded_description": "Deal 63 damage.",
+  "x_cost": false,
+  "referenced_powers": []
+}

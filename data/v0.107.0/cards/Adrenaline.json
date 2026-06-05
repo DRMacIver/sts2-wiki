@@ -1,0 +1,24 @@
+{
+  "class_name": "Adrenaline",
+  "title": "Adrenaline",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1,
+      "upgraded_value": 2
+    },
+    {
+      "type": "Cards",
+      "base_value": 2
+    }
+  ],
+  "description": "Gain 1 Energy.\nDraw 2 cards.",
+  "upgraded_description": "Gain 2 Energy.\nDraw 2 cards.",
+  "x_cost": false
+}

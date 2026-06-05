@@ -1,0 +1,18 @@
+{
+  "class_name": "SecondWind",
+  "title": "Second Wind",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "[gold]Exhaust[/gold] all non-Attack cards in your [gold]Hand[/gold]. Gain 5 [gold]Block[/gold] for each card [gold]Exhausted[/gold]."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "SignalBoostPower",
+  "title": "Signal Boost",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your next Power is played an extra time.",
+  "smart_description": "Your next Power is played an extra time."
+}

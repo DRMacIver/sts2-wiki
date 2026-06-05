@@ -1,0 +1,9 @@
+{
+  "class_name": "DiamondDiademPower",
+  "title": "Diamond Diadem",
+  "power_type": "Buff",
+  "stack_type": "None",
+  "description": "Enemies deal [blue]50%[/blue] less damage this turn.",
+  "smart_description": "Enemies deal [blue]50%[/blue] less damage this turn.",
+  "notes": "Removes itself automatically at the end of the enemy's turn."
+}

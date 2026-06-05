@@ -1,0 +1,25 @@
+{
+  "class_name": "Melancholy",
+  "title": "Melancholy",
+  "character": "Necrobinder",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 13,
+      "upgraded_value": 17
+    },
+    {
+      "type": "Energy",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 13 [gold]Block[/gold].\nReduce this card's cost by 1 whenever ANYONE dies.",
+  "upgraded_description": "Gain 17 [gold]Block[/gold].\nReduce this card's cost by 1 whenever ANYONE dies.",
+  "x_cost": false,
+  "referenced_powers": []
+}

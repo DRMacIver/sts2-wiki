@@ -1,0 +1,20 @@
+{
+  "class_name": "Prepared",
+  "title": "Prepared",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Draw 1 card.\nDiscard 1 card.",
+  "upgraded_description": "Draw 2 cards.\nDiscard 2 cards.",
+  "x_cost": false
+}

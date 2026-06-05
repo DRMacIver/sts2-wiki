@@ -1,0 +1,8 @@
+{
+  "class_name": "PotionOfBinding",
+  "title": "Potion of Binding",
+  "rarity": "Uncommon",
+  "usage": "Drink",
+  "target": "AllEnemies",
+  "description": "Apply [blue]+1[/blue] [gold]Weak[/gold] and [blue]+1[/blue] [gold]Vulnerable[/gold] to ALL enemies."
+}

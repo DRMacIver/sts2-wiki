@@ -1,0 +1,46 @@
+{
+  "class_name": "Inklet",
+  "title": "Inklet",
+  "min_hp": 12,
+  "max_hp": 18,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "JAB_MOVE",
+      "title": "Jab",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": ["Deal 4 damage"]
+    },
+    {
+      "id": "WHIRLWIND_MOVE",
+      "title": "Whirlwind",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 3 damage, 3 hits"]
+    },
+    {
+      "id": "PIERCING_GAZE_MOVE",
+      "title": "Piercing Gaze",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": ["Deal 11 damage"]
+    }
+  ],
+  "move_pattern": "Starts with either Jab or Whirlwind depending on position. Jab leads to a random choice between Piercing Gaze and Whirlwind. Both Whirlwind and Piercing Gaze lead back to Jab.",
+  "powers_on_spawn": ["Slippery"],
+  "notes": "Piercing Gaze is a hidden move that does not appear in the Bestiary. The monster's starting move depends on whether it is positioned as a middle Inklet."
+}

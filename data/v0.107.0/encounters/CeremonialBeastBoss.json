@@ -1,0 +1,10 @@
+{
+  "class_name": "CeremonialBeastBoss",
+  "title": "Ceremonial Beast",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": ["CeremonialBeast"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Boss encounter with custom background and music. Utilizes Ringing affliction overlay."
+}

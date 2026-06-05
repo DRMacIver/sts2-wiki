@@ -1,0 +1,19 @@
+{
+  "class_name": "MinionDiveBomb",
+  "title": "Minion Dive Bomb",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 16
+    }
+  ],
+  "description": "Deal 13 damage.",
+  "upgraded_description": "Deal 16 damage."
+}

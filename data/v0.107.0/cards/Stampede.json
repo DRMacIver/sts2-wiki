@@ -1,0 +1,26 @@
+{
+  "class_name": "Stampede",
+  "title": "Stampede",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1
+    }
+  ],
+  "description": "At the end of your turn, 1 random Attack in your [gold]Hand[/gold] is played against a random enemy.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "StampedePower",
+      "title": "Stampede",
+      "slug": "stampede-power"
+    }
+  ]
+}

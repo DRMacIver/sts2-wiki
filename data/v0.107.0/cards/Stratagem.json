@@ -1,0 +1,21 @@
+{
+  "class_name": "Stratagem",
+  "title": "Stratagem",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you shuffle your [gold]Draw Pile[/gold], choose a card from it to put into your [gold]Hand[/gold].",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "StratagemPower",
+      "title": "Stratagem",
+      "slug": "stratagem"
+    }
+  ]
+}

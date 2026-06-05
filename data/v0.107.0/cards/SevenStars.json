@@ -1,0 +1,26 @@
+{
+  "class_name": "SevenStars",
+  "title": "Seven Stars",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7
+    },
+    {
+      "type": "Repeat",
+      "base_value": 7
+    }
+  ],
+  "description": "Deal 7 damage to ALL enemies 7 times.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "star_cost": 7,
+  "referenced_powers": [],
+  "notes": "Card costs both energy and Star resource. Upgrade reduces energy cost."
+}

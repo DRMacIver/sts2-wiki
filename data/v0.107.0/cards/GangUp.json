@@ -1,0 +1,26 @@
+{
+  "class_name": "GangUp",
+  "title": "Gang Up",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5
+    },
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
+  "upgraded_description": "Deal 5 damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Multiplayer-only card. Damage scales with the number of attacks other players have made against the target this turn."
+}

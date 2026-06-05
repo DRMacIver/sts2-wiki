@@ -1,0 +1,8 @@
+{
+  "class_name": "EnvenomPower",
+  "title": "Envenom",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you deal unblocked attack damage, apply [blue]1[/blue] [gold]Poison[/gold].",
+  "smart_description": "Whenever you deal unblocked attack damage, apply [blue]1[/blue] [gold]Poison[/gold]."
+}

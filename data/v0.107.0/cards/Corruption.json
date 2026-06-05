@@ -1,0 +1,25 @@
+{
+  "class_name": "Corruption",
+  "title": "Corruption",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Special",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1
+    }
+  ],
+  "description": "Skills cost 0.\nWhenever you play a Skill, [gold]Exhaust[/gold] it.",
+  "upgraded_cost": 2,
+  "referenced_powers": [
+    {
+      "class_name": "CorruptionPower",
+      "title": "Corruption",
+      "slug": "corruption"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "class_name": "MeteorStrike",
+  "title": "Meteor Strike",
+  "character": "Defect",
+  "energy_cost": 5,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 24,
+      "upgraded_value": 30
+    }
+  ],
+  "description": "Deal 24 damage.\n[gold]Channel[/gold] 3 [gold]Plasma[/gold].",
+  "referenced_powers": []
+}

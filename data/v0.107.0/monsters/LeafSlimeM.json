@@ -1,0 +1,37 @@
+{
+  "class_name": "LeafSlimeM",
+  "title": "Leaf Slime (M)",
+  "min_hp": 33,
+  "max_hp": 36,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STICKY_SHOT",
+      "title": "Sticky Shot",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 2 Slimed to discard pile"
+      ]
+    },
+    {
+      "id": "CLUMP_SHOT",
+      "title": "Clump Shot",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Alternates between Sticky Shot and Clump Shot, starting with Sticky Shot",
+  "powers_on_spawn": [],
+  "notes": "Sticky Shot adds Slimed status cards to the player's discard pile. These are added to combat during the turn they're discarded."
+}

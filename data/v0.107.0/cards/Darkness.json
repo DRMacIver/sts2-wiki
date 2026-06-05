@@ -1,0 +1,15 @@
+{
+  "class_name": "Darkness",
+  "title": "Darkness",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Channel[/gold] 1 [gold]Dark[/gold].\nTrigger the passive ability of all [gold]Dark[/gold] Orbs.",
+  "upgraded_description": "[gold]Channel[/gold] 1 [gold]Dark[/gold].\nTrigger the passive ability of all [gold]Dark[/gold] Orbs twice.",
+  "referenced_powers": [],
+  "notes": "Channels a Dark Orb and then triggers its passive ability for all Dark Orbs in the queue. Upgrade makes the passive trigger twice instead of once."
+}

@@ -1,0 +1,19 @@
+{
+  "class_name": "MasterOfStrategy",
+  "title": "Master of Strategy",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Draw 3 cards.",
+  "upgraded_description": "Draw 4 cards."
+}

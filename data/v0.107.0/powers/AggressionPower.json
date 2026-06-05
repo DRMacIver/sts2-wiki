@@ -1,0 +1,9 @@
+{
+  "class_name": "AggressionPower",
+  "title": "Aggression",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, put a random Attack from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] it for the rest of combat.",
+  "smart_description": "At the start of your turn, put [blue]1[/blue] random Attack from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] it for the rest of combat.",
+  "notes": "Counter-type stack power. Effect scales with power stacks: each stack level pulls that many Attacks from the Discard Pile into Hand and Upgrades them. Only pulls Attack-type cards; safely handles cases where Discard Pile is empty or has insufficient Attacks."
+}

@@ -1,0 +1,47 @@
+{
+  "class_name": "Fogmog",
+  "title": "Fogmog",
+  "min_hp": 78,
+  "max_hp": 78,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ILLUSION_MOVE",
+      "title": "Illusory Spores",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": ["Summon EyeWithTeeth"]
+    },
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Thwack",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Strength"]
+    },
+    {
+      "id": "HEADBUTT_MOVE",
+      "title": "Headbutt",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Illusory Spores. Then cycles through Thwack. After each Thwack, randomly uses either another Thwack followed by Headbutt (40%) or just Headbutt (60%), then returns to Thwack.",
+  "powers_on_spawn": [],
+  "notes": "Fogmog summons an EyeWithTeeth companion on its opening move. The monster gains 1 Strength each time it uses Thwack, making it progressively more dangerous as the fight continues."
+}

@@ -1,0 +1,40 @@
+{
+  "class_name": "WarHistorianRepy",
+  "title": "War Historian, Repy",
+  "description": "An academic is trapped in a [purple]hanging cage[/purple] next to a [gold]treasure chest[/gold].\n\nThe academic is muttering about [sine][orange]\"One-Time-Use Keys\"[/orange][/sine] while furiously writing something.\n\nLooks like you can unlock the [purple]cage[/purple] or the [gold]chest[/gold].",
+  "options": [
+    {
+      "title": "Unlock the Cage",
+      "description": "Lose [gold]Lantern Key[/gold]. Obtain [gold]History Course[/gold]."
+    },
+    {
+      "title": "Unlock the Chest",
+      "description": "Lose [gold]Lantern Key[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+    }
+  ],
+  "acts": [
+    "DeprecatedAct",
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Never normally appears (IsAllowed returns false)"
+  ],
+  "notes": "This event has a special secondary mechanic: if the player has Lantern Key cards in their deck AND is playing in single-player mode, they receive a second choice screen after their initial selection, allowing them to unlock the other item (cage or chest) using another Lantern Key. If playing in multiplayer or if no Lantern Keys remain in the deck, the event ends immediately after the first choice.\n\nChoosing to unlock the cage sets a game flag (FreedRepy) and grants the History Course relic. Choosing the chest offers 2 random potions and 2 random relics. The secondary choice allows securing both rewards if conditions are met.",
+  "card_refs": [
+    {
+      "class_name": "LanternKey",
+      "title": "Lantern Key",
+      "slug": "lantern-key"
+    }
+  ],
+  "relic_refs": [
+    {
+      "class_name": "HistoryCourse",
+      "title": "History Course",
+      "slug": "history-course"
+    }
+  ]
+}

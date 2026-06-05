@@ -1,0 +1,21 @@
+{
+  "class_name": "Scare",
+  "title": "Scare",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [
+    "Exhaust"
+  ],
+  "vars": [],
+  "description": "Apply 1 [gold]Weak[/gold] to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    }
+  ]
+}

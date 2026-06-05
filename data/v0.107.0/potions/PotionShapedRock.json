@@ -1,0 +1,8 @@
+{
+  "class_name": "PotionShapedRock",
+  "title": "Potion-Shaped Rock",
+  "rarity": "Token",
+  "usage": "CombatOnly",
+  "target": "AnyEnemy",
+  "description": "Deal [blue]15[/blue] damage."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "BlurPower",
+  "title": "Blur",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Block[/gold] is not removed at the start of your next turn.",
+  "smart_description": "[gold]Block[/gold] is not removed at the start of your next {Amount:plural:turn|{} turns}."
+}

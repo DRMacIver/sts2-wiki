@@ -1,0 +1,20 @@
+{
+  "class_name": "PrimalForce",
+  "title": "Primal Force",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Transform all Attacks in your [gold]Hand[/gold] into [gold]Giant Rock[/gold].",
+  "upgraded_description": "Transform all Attacks in your [gold]Hand[/gold] into [gold]Giant Rock+[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "GiantRock",
+      "title": "Giant Rock",
+      "slug": "giant-rock"
+    }
+  ]
+}

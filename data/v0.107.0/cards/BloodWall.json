@@ -1,0 +1,24 @@
+{
+  "class_name": "BloodWall",
+  "title": "Blood Wall",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 2
+    },
+    {
+      "type": "Block",
+      "base_value": 16,
+      "upgraded_value": 20
+    }
+  ],
+  "description": "Lose 2 HP.\nGain 16 [gold]Block[/gold].",
+  "upgraded_description": "Lose 2 HP.\nGain 20 [gold]Block[/gold].",
+  "referenced_powers": []
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "StampedePower",
+  "title": "Stampede",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, [blue]1[/blue] random Attack in your [gold]Hand[/gold] is played against a random enemy.",
+  "smart_description": "At the end of your turn, [blue]2[/blue] random Attacks in your [gold]Hand[/gold] are played against a random enemy.",
+  "notes": "Counter-type power: the amount of attacks automatically played scales with stack count. At 1 stack, 1 attack is played; at 2 stacks, 2 attacks are played, etc. Only plays Attacks that are not marked as Unplayable. Triggers at the end of your turn after all other actions."
+}

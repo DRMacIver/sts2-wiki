@@ -1,0 +1,9 @@
+{
+  "class_name": "TemporaryDexterityPower",
+  "title": "Temporary Dexterity",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Dexterity[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Dexterity[/gold] until the end of this turn.",
+  "notes": "Abstract base class. The displayed title is derived from the origin model (card, potion, or relic) that applies it. Applies temporary Dexterity until end of turn, which is removed at end of turn and converted to permanent Dexterity. Stack type Counter means each application is tracked separately. Can be negative (debuff) based on IsPositive property."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "GuardedPower",
+  "title": "Guarded",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Take half damage from enemies.",
+  "smart_description": "Take half damage from enemies. Removed if [gold]{Applier.StringValue}[/gold] dies.",
+  "notes": "Reduces incoming damage from powered attacks to 50%. Automatically removed if the applier dies."
+}

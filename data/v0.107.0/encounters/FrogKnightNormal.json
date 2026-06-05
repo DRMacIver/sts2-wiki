@@ -1,0 +1,9 @@
+{
+  "class_name": "FrogKnightNormal",
+  "title": "Frog Knight",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["FrogKnight"],
+  "total_monsters": 1,
+  "tags": []
+}

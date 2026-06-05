@@ -1,0 +1,56 @@
+{
+  "class_name": "VineShambler",
+  "title": "Vine Shambler",
+  "min_hp": 64,
+  "max_hp": 64,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 7 damage, 2 hits"
+      ]
+    },
+    {
+      "id": "GRASPING_VINES_MOVE",
+      "title": "Grasping Vines",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Tangled"
+      ]
+    },
+    {
+      "id": "CHOMP_MOVE",
+      "title": "Chomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through: Swipe → Grasping Vines → Chomp",
+  "powers_on_spawn": [],
+  "notes": "Grasping Vines applies Tangled power to the player, disabling one card from their hand each turn"
+}

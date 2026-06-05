@@ -1,0 +1,67 @@
+{
+  "class_name": "PhantasmalGardener",
+  "title": "Phantasmal Gardener",
+  "min_hp": 27,
+  "max_hp": 32,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": [
+        "Deal 5 damage"
+      ]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": [
+        "Deal 7 damage"
+      ]
+    },
+    {
+      "id": "FLAIL_MOVE",
+      "title": "Flail",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 1 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "ENLARGE_MOVE",
+      "title": "Enlarge",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through moves in sequence: Bite → Lash → Flail → Enlarge (repeating). Starting move depends on combat slot position.",
+  "powers_on_spawn": [
+    "Apply 7 Skittish"
+  ],
+  "notes": "The Phantasmal Gardener's size scales up with each Enlarge move used (formula: 1.0 + 0.1 × ln(EnlargeTriggers + 1)). It starts with different slot-based appearances (tall/short skins) and its visual scale affects attack animations. Skittish power determines different hit animations—extended hurt animation plays unless Skittish blocked damage that turn."
+}

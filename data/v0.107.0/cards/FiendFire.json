@@ -1,0 +1,19 @@
+{
+  "class_name": "FiendFire",
+  "title": "Fiend Fire",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nDeal 7 damage for each card [gold]Exhausted[/gold].",
+  "notes": "Exhausts all cards in your hand and deals damage equal to the Damage value for each card exhausted."
+}

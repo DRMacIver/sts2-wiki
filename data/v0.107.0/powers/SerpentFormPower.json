@@ -1,0 +1,8 @@
+{
+  "class_name": "SerpentFormPower",
+  "title": "Serpent Form",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, deal [blue]4[/blue] damage to a random enemy.",
+  "smart_description": "Whenever you play a card, deal [blue]{Amount}[/blue] damage to a random enemy."
+}

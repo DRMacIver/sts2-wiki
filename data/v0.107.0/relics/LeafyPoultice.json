@@ -1,0 +1,8 @@
+{
+  "class_name": "LeafyPoultice",
+  "title": "Leafy Poultice",
+  "rarity": "Ancient",
+  "description": "Upon pickup, [gold]Transform[/gold] [blue]1[/blue] of your [gold]Strikes[/gold] and [blue]1[/blue] of your [gold]Defends[/gold] and lose [blue]12[/blue] Max HP.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Transforms exactly 1 Strike (Basic rarity) and 1 Defend (Basic rarity) card from your deck. If either card type is not found in your deck, only the available card is transformed."
+}

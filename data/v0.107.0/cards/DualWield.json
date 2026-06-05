@@ -1,0 +1,21 @@
+{
+  "class_name": "DualWield",
+  "title": "Dual Wield",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Choose an Attack or Power card. Add a copy of that card into your [gold]Hand[/gold].",
+  "upgraded_description": "Choose an Attack or Power card. Add 2 copies of that card into your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Selects an Attack or Power card from your hand and creates copies of it. The upgrade increases the number of copies from 1 to 2."
+}

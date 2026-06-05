@@ -1,0 +1,20 @@
+{
+  "class_name": "ParticleWall",
+  "title": "Particle Wall",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Replay"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Gain 9 [gold]Block[/gold].\nReturn this card to your [gold]Hand[/gold].",
+  "upgraded_description": "Gain 12 [gold]Block[/gold].\nReturn this card to your [gold]Hand[/gold].",
+  "star_cost": 2
+}

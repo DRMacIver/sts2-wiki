@@ -1,0 +1,19 @@
+{
+  "class_name": "Charge",
+  "title": "CHARGE!!",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2
+    }
+  ],
+  "description": "Choose 2 cards in your [gold]Draw Pile[/gold] to [gold]Transform[/gold] into\n[gold]Minion Dive Bombs[/gold].",
+  "upgraded_description": "Choose 2 cards in your [gold]Draw Pile[/gold] to [gold]Transform[/gold] into\n[gold]Minion Dive Bombs+[/gold].",
+  "referenced_powers": []
+}

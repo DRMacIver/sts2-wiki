@@ -1,0 +1,9 @@
+{
+  "class_name": "SlumberPower",
+  "title": "Slumber",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Awakens upon taking turns or losing HP 3 times.",
+  "smart_description": "Awakens upon taking turns or losing HP, with counter decreasing by 1 each time.",
+  "notes": "Counter decrements on unblocked damage received or at the end of each turn. Triggers the creature's wake-up move when counter reaches 0."
+}

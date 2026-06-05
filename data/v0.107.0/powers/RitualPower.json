@@ -1,0 +1,8 @@
+{
+  "class_name": "RitualPower",
+  "title": "Ritual",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Strength[/gold] at the end of your turn.",
+  "smart_description": "At the end of your turn, gain [blue]Strength[/blue] equal to the current Ritual stack."
+}

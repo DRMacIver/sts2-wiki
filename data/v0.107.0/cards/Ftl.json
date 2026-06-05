@@ -1,0 +1,31 @@
+{
+  "class_name": "Ftl",
+  "title": "FTL",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 6
+    },
+    {
+      "type": "PlayMax",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 5 damage.\nIf you have played fewer than 3 cards this turn, draw 1 card.",
+  "upgraded_description": "Deal 6 damage.\nIf you have played fewer than 4 cards this turn, draw 1 card.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Conditional card draw triggers when this card is one of the first three cards played in a turn."
+}

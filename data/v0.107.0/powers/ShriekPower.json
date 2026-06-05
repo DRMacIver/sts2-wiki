@@ -1,0 +1,8 @@
+{
+  "class_name": "ShriekPower",
+  "title": "Shriek",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "The first time this creature's HP reaches [blue]50%[/blue] or below, it becomes [gold]Stunned[/gold].",
+  "notes": "This power triggers once when the owner's HP falls to or below the Amount threshold (typically 50% of max HP). When triggered, the owner is stunned and the power is removed immediately. The Counter stack type indicates this power tracks remaining activations. Allows negative stacks."
+}

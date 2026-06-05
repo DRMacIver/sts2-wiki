@@ -1,0 +1,8 @@
+{
+  "class_name": "FastenPower",
+  "title": "Fasten",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain an additional [blue]4[/blue] [gold]Block[/gold] from Defend cards.",
+  "smart_description": "Gain an additional [blue]{Amount}[/blue] [gold]Block[/gold] from Defend cards."
+}

@@ -1,0 +1,15 @@
+{
+  "class_name": "Largesse",
+  "title": "Largesse",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [],
+  "description": "Another player adds 1 random Colorless card to their [gold]Hand[/gold].",
+  "upgraded_description": "Another player adds 1 random [gold]Upgraded[/gold] Colorless card to their [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Multiplayer only. This card generates a random Colorless card from the unlocked pool and adds it to another player's hand. If upgraded, the generated card is also upgraded."
+}

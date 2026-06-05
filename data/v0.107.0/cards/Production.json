@@ -1,0 +1,20 @@
+{
+  "class_name": "Production",
+  "title": "Production",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Gain 2 Energy.",
+  "upgraded_description": "Gain 3 Energy.",
+  "x_cost": false
+}

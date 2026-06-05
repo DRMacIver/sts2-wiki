@@ -1,0 +1,26 @@
+{
+  "class_name": "NecroMastery",
+  "title": "Necro Mastery",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 5,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "[gold]Summon[/gold] 5.\nWhenever [gold]Osty[/gold] loses HP,\nALL enemies lose that much HP as well.",
+  "upgraded_description": "[gold]Summon[/gold] 8.\nWhenever [gold]Osty[/gold] loses HP,\nALL enemies lose that much HP as well.",
+  "referenced_powers": [
+    {
+      "class_name": "NecroMasteryPower",
+      "title": "Necro Mastery",
+      "slug": "necro-mastery-power"
+    }
+  ]
+}

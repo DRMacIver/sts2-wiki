@@ -1,0 +1,8 @@
+{
+  "class_name": "TrashToTreasurePower",
+  "title": "Trash to Treasure",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you create a Status, [gold]Channel[/gold] [blue]1[/blue] random Orb.",
+  "smart_description": "Whenever you create a Status, [gold]Channel[/gold] {Amount:plural:[blue]{}[/blue] random Orb|[blue]{}[/blue] random Orbs}."
+}

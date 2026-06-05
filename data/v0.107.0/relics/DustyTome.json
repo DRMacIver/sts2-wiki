@@ -1,0 +1,8 @@
+{
+  "class_name": "DustyTome",
+  "title": "Dusty Tome",
+  "rarity": "Ancient",
+  "description": "Upon pickup, obtain an [gold]Ancient Card[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Grants an upgraded Ancient Card to your deck upon pickup. The specific card is randomly selected from the character's pool of unlocked Ancient cards."
+}

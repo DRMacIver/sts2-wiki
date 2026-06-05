@@ -1,0 +1,20 @@
+{
+  "class_name": "Nostalgia",
+  "title": "Nostalgia",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "The first Attack or Skill you play each turn is placed on top of your [gold]Draw Pile[/gold].",
+  "upgraded_cost": 0,
+  "referenced_powers": [
+    {
+      "class_name": "NostalgiaPower",
+      "title": "Nostalgia",
+      "slug": "nostalgia"
+    }
+  ]
+}

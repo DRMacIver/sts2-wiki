@@ -1,0 +1,22 @@
+{
+  "class_name": "AllForOne",
+  "title": "All for One",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Deal 10 damage.\nPut ALL 0-cost cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 14 damage.\nPut ALL 0-cost cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Only 0-cost Attack, Skill, and Power type cards from the discard pile are put into hand. X-cost cards are excluded."
+}

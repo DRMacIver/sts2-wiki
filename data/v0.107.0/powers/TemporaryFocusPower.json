@@ -1,0 +1,8 @@
+{
+  "class_name": "TemporaryFocusPower",
+  "title": "Temporary Focus",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Focus[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Focus[/gold] until the end of this turn."
+}

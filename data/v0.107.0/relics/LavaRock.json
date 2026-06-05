@@ -1,0 +1,8 @@
+{
+  "class_name": "LavaRock",
+  "title": "Lava Rock",
+  "rarity": "Ancient",
+  "description": "The Act 1 Boss drops [blue]2[/blue] [gold]Relics[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers when claiming rewards from an Act 1 boss room. Adds 2 additional Relics to the reward pool, then becomes Disabled."
+}

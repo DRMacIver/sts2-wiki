@@ -40,8 +40,9 @@ MONSTER_NOTES: dict[str, str] = {
     ),
     "Aeonglass": (
         "Cycles through a fixed 3-move pattern: Ebb -> Eye Lasers -> Increasing Intensity. "
-        "Starts with Artifact. Ebb applies a debuff; Eye Lasers is a multi-hit attack; "
-        "Increasing Intensity grants Strength and Block."
+        "Starts with Artifact. Ebb deals 32 damage and gains 33 Block; Eye Lasers is a "
+        "multi-hit attack; Increasing Intensity grants Strength and adds a Wither to your "
+        "discard pile."
     ),
     "Queen": (
         "Two-phase fight based on whether Torch Head Amalgam is alive:\n\n"
@@ -116,9 +117,8 @@ MONSTER_NOTES: dict[str, str] = {
     ),
     "Vantom": ("Dismember adds 3 Wound to Discard pile. Starts with 9 stacks of Slippery."),
     "HauntedShip": (
-        "Starts with Haunt (adds Dazed to Discard). Ramming Speed applies Weak. "
-        "Move selection alternates between attack rounds (odd turns) and "
-        "Haunt rounds (even turns). Haunt can only be used once per combat."
+        "Starts with Haunt (adds Dazed to Discard), then cycles Swipe -> Stomp -> Swipe. "
+        "Haunt can only be used once per combat."
     ),
     "GremlinMerc": (
         "Uses Thievery power (amount 20) — steals gold on every attack move. "

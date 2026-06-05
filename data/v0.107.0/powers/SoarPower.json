@@ -1,0 +1,8 @@
+{
+  "class_name": "SoarPower",
+  "title": "Soar",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Receives [gold]50%[/gold] less attack damage until it lands.",
+  "smart_description": "Receives [blue]50%[/blue] less attack damage until it lands."
+}

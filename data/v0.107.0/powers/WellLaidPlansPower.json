@@ -1,0 +1,8 @@
+{
+  "class_name": "WellLaidPlansPower",
+  "title": "Well-Laid Plans",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, [gold]Retain[/gold] up to [blue]1[/blue] card.",
+  "notes": "This is a Counter-type power that stacks. Each stack allows you to retain one additional card at the end of your turn."
+}

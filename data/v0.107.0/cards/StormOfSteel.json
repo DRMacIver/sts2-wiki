@@ -1,0 +1,15 @@
+{
+  "class_name": "StormOfSteel",
+  "title": "Storm of Steel",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Discard your Hand.\nAdd 1 Shiv into your Hand for each card discarded.",
+  "upgraded_description": "Discard your Hand.\nAdd 1 Shiv+ into your Hand for each card discarded.",
+  "referenced_powers": [],
+  "notes": "Creates Shiv or Shiv+ cards equal to the number of cards discarded. The exact number depends on hand size at play time."
+}

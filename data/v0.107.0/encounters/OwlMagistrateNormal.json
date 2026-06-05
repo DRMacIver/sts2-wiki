@@ -1,0 +1,10 @@
+{
+  "class_name": "OwlMagistrateNormal",
+  "title": "Owl Magistrate",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["OwlMagistrate"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Single monster encounter"
+}

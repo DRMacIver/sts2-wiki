@@ -1,0 +1,22 @@
+{
+  "class_name": "Barrage",
+  "title": "Barrage",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage for each [gold]Channeled[/gold] Orb.",
+  "upgraded_description": "Deal 7 damage for each [gold]Channeled[/gold] Orb.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Hits multiple times—once for each Channeled Orb currently in your Orb queue."
+}

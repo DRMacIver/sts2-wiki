@@ -1,0 +1,8 @@
+{
+  "class_name": "MachineLearningPower",
+  "title": "Machine Learning",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, draw [blue]1[/blue] additional card.",
+  "smart_description": "At the start of your turn, draw [blue]{Amount}[/blue] additional {Amount:plural:card|cards}."
+}

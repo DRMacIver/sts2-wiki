@@ -1,0 +1,24 @@
+{
+  "class_name": "Ricochet",
+  "title": "Ricochet",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3
+    },
+    {
+      "type": "Repeat",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 3 damage to a random enemy 4 times.",
+  "upgraded_description": "Deal 3 damage to a random enemy 5 times.",
+  "x_cost": false
+}

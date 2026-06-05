@@ -1,0 +1,20 @@
+{
+  "class_name": "Reap",
+  "title": "Reap",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 27,
+      "upgraded_value": 33
+    }
+  ],
+  "description": "Deal 27 damage.",
+  "upgraded_description": "Deal 33 damage.",
+  "x_cost": false
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "RipAndTear",
+  "title": "Rip and Tear",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 7 damage to a random enemy twice.",
+  "referenced_powers": [],
+  "notes": "Targets a random enemy and deals damage twice to that target."
+}

@@ -1,0 +1,55 @@
+{
+  "class_name": "Seapunk",
+  "title": "Seapunk",
+  "min_hp": 47,
+  "max_hp": 49,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SEA_KICK_MOVE",
+      "title": "Sea Kick",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    },
+    {
+      "id": "SPINNING_KICK_MOVE",
+      "title": "Spinning Kick",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 2,
+          "hits": 4
+        }
+      ],
+      "effects": [
+        "Deal 2 damage",
+        "4 hits"
+      ]
+    },
+    {
+      "id": "BUBBLE_BURP_MOVE",
+      "title": "Bubble Burp",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Gain 8 Block",
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Sea Kick → Spinning Kick → Bubble Burp",
+  "powers_on_spawn": []
+}

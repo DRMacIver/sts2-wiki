@@ -1,0 +1,27 @@
+{
+  "class_name": "EndOfDays",
+  "title": "End of Days",
+  "character": "Necrobinder",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Doom",
+      "base_value": 29,
+      "upgraded_value": 37
+    }
+  ],
+  "description": "Apply 29 [gold]Doom[/gold] to ALL enemies.\nKill enemies with at least as much [gold]Doom[/gold] as HP.",
+  "upgraded_description": "Apply 37 [gold]Doom[/gold] to ALL enemies.\nKill enemies with at least as much [gold]Doom[/gold] as HP.",
+  "referenced_powers": [
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ],
+  "notes": "Instantly kills enemies that have Doom equal to or greater than their current HP."
+}

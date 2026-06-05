@@ -1,0 +1,8 @@
+{
+  "class_name": "PrecariousShears",
+  "title": "Precarious Shears",
+  "rarity": "Ancient",
+  "description": "Upon pickup, remove [blue]2[/blue] cards from your [gold]Deck[/gold] and lose [blue]16[/blue] HP.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Upon pickup, you select 2 cards to remove from your deck and take 16 damage. This is a high-risk relic that provides deck refinement at a significant health cost."
+}

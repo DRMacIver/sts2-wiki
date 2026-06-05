@@ -1,0 +1,8 @@
+{
+  "class_name": "RetainHandPower",
+  "title": "Retain Hand",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Retain[/gold] your [gold]Hand[/gold] for the next [blue]2[/blue] turns.",
+  "smart_description": "[gold]Retain[/gold] your [gold]Hand[/gold] {Amount:plural:this turn|for the next [blue]{}[/blue] turns}."
+}

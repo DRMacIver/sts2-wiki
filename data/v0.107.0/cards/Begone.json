@@ -1,0 +1,20 @@
+{
+  "class_name": "Begone",
+  "title": "BEGONE!",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Choose a card in your [gold]Hand[/gold] to [gold]Transform[/gold] into [gold]Minion Strike[/gold].",
+  "upgraded_description": "Choose a card in your [gold]Hand[/gold] to [gold]Transform[/gold] into [gold]Minion Strike+[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "MinionStrike",
+      "title": "Minion Strike",
+      "slug": "minion-strike"
+    }
+  ]
+}

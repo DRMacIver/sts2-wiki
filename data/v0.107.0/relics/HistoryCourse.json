@@ -1,0 +1,7 @@
+{
+  "class_name": "HistoryCourse",
+  "title": "History Course",
+  "rarity": "Event",
+  "description": "At the start of your turn, play a copy of your last played Attack or Skill.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+}

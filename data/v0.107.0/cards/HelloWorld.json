@@ -1,0 +1,20 @@
+{
+  "class_name": "HelloWorld",
+  "title": "Hello World",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "At the start of your turn, add a random Common card into your [gold]Hand[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "HelloWorldPower",
+      "title": "Hello World",
+      "slug": "hello-world"
+    }
+  ],
+  "notes": "Upgrade adds Innate keyword"
+}

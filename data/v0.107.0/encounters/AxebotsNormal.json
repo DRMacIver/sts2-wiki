@@ -1,0 +1,9 @@
+{
+  "class_name": "AxebotsNormal",
+  "title": "Axebot",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Axebot"],
+  "total_monsters": 1,
+  "tags": []
+}

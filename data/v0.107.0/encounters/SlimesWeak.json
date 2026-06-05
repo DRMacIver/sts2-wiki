@@ -1,0 +1,17 @@
+{
+  "class_name": "SlimesWeak",
+  "title": "Group of Slimes",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": [
+    "LeafSlimeS",
+    "TwigSlimeS",
+    "LeafSlimeM",
+    "TwigSlimeM"
+  ],
+  "total_monsters": 3,
+  "tags": [
+    "Slimes"
+  ],
+  "notes": "Spawns 3 slimes: 2 small slimes (one of each type: LeafSlimeS and TwigSlimeS) and 1 medium slime (randomly selected from LeafSlimeM or TwigSlimeM)"
+}

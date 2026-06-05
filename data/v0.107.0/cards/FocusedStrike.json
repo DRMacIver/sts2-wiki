@@ -1,0 +1,30 @@
+{
+  "class_name": "FocusedStrike",
+  "title": "Focused Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Strike"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Focus",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 9 damage.\nGain 1 [gold]Focus[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "FocusPower",
+      "title": "Focus",
+      "slug": "focus"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "WeakPower",
+  "title": "Weak",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Weakened creatures deal [blue]25%[/blue] less damage with Attacks.",
+  "smart_description": "Attacks deal [blue]25%[/blue] less damage for [blue][counter][/blue] [counter:plural:turn|turns].",
+  "notes": "Reduces the damage multiplicative value of the power's owner's powered attacks to 75% (25% reduction). Interacts with PaperKrane relic and DebilitatePower for additional modifications. Decrements by 1 at the end of each enemy turn."
+}

@@ -1,0 +1,25 @@
+{
+  "class_name": "MakeItSo",
+  "title": "Make It So",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Cards",
+      "base_value": 3
+    }
+  ],
+  "description": "Deal 6 damage.\nEvery 3 Skills you play in a turn, put this into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "This card triggers its effect in the AfterCardPlayedLate phase, returning to hand whenever the skill count milestone is reached. It must be in a pile other than Hand to trigger (prevents infinite loops)."
+}

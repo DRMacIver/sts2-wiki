@@ -1,0 +1,40 @@
+{
+  "class_name": "FallingStar",
+  "title": "Falling Star",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "star_cost": 2,
+  "type": "Attack",
+  "rarity": "Basic",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 12
+    },
+    {
+      "type": "Weak",
+      "base_value": 1
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 8 damage.\nApply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold].",
+  "upgraded_description": "Deal 12 damage.\nApply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

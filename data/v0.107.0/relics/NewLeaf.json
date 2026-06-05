@@ -1,0 +1,8 @@
+{
+  "class_name": "NewLeaf",
+  "title": "New Leaf",
+  "rarity": "Ancient",
+  "description": "Upon pickup, [gold]Transform[/gold] [blue]1[/blue] card.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Upon obtaining this relic, allows selecting 1 card from your deck to transform into a random card of the same cost."
+}

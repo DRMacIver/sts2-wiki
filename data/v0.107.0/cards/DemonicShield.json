@@ -1,0 +1,18 @@
+{
+  "class_name": "DemonicShield",
+  "title": "Demonic Shield",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 1
+    }
+  ],
+  "description": "Lose 1 HP. Give another player [gold]Block[/gold] equal to your [gold]Block[/gold].",
+  "notes": "Multiplayer only. Upgrade removes Exhaust keyword, allowing the card to be replayed."
+}

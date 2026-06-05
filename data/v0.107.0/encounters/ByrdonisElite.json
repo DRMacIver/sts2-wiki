@@ -1,0 +1,12 @@
+{
+  "class_name": "ByrdonisElite",
+  "title": "Byrdonis",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": [
+    "Byrdonis"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": null
+}

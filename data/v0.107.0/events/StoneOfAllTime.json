@@ -1,0 +1,20 @@
+{
+  "class_name": "StoneOfAllTime",
+  "title": "Stone of All Time",
+  "description": "A massive boulder sits in the middle of an abandoned courtyard.\n\nA plaque reads:\n[gold][b]Stone of All Time[/b][/gold].\n\nIts presence, shape, and adornments indicate that this courtyard was built around this [blue]Stone[/blue] and that it has never moved from this spot.",
+  "options": [
+    {
+      "title": "Drink and Lift",
+      "description": "Lose [red]a random Potion[/red]. Gain [blue]10[/blue] Max HP.",
+      "requires": "Requires a Potion."
+    },
+    {
+      "title": "Push",
+      "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue].",
+      "requires": "Requires an Attack."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Act 2 only", "All players must have at least one Potion"],
+  "notes": "The potion consumed by [gold]Drink and Lift[/gold] is chosen [red]randomly[/red] from your inventory — you do not get to choose which potion is sacrificed. During this event, potions cannot be used or discarded, preventing players from removing unwanted potions before making their choice.\n\nThe HP loss from [gold]Push[/gold] is [red]unblockable[/red] and [red]unpowered[/red] — it cannot be blocked by armor or modified by powers.\n\nThe [gold]Push[/gold] option is additionally locked if your deck contains no cards that [purple]Vigorous[/purple] can be applied to, even if the event otherwise spawns.\n\nRegardless of which option is chosen, the outcome text reads \"Nothing happens\" — the [blue]Stone[/blue] does not move."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "SandpitPower",
+  "title": "Sandpit",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "A power used by The Insatiable.",
+  "smart_description": "When 1 turn remains: 'When [gold]The Insatiable[/gold] takes its turn, you will be eaten and die.' When multiple turns remain: 'In [blue]N[/blue] turns, you will be eaten and die.'",
+  "notes": "Counter power that decrements each enemy turn. When the counter reaches zero, triggers The Insatiable's eating animation and instantly kills the player and all pets. Dynamically repositions the player and pets closer to the monster as the counter decreases, creating a visual sense of doom approaching."
+}

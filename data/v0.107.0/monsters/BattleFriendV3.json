@@ -1,0 +1,20 @@
+{
+  "class_name": "BattleFriendV3",
+  "title": "Battle Friend V3.0",
+  "min_hp": 300,
+  "max_hp": 300,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Repeats: Nothing",
+  "powers_on_spawn": [
+    "Battleworn Dummy Time Limit (3)"
+  ],
+  "notes": "A companion monster that performs no actions in combat. The Battleworn Dummy Time Limit power restricts the companion to 3 turns of existence."
+}

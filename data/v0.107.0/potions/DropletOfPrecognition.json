@@ -1,0 +1,9 @@
+{
+  "class_name": "DropletOfPrecognition",
+  "title": "Droplet of Precognition",
+  "rarity": "Rare",
+  "usage": "Unknown",
+  "target": "Self",
+  "description": "Choose a card in your [gold]Draw Pile[/gold] and add it into your [gold]Hand[/gold].",
+  "notes": "Combat-only potion that allows searching and selecting a card from your Draw Pile to add directly to your Hand in combat. Useful for tutoring specific cards when you need them."
+}

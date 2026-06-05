@@ -1,0 +1,9 @@
+{
+  "class_name": "BlockNextTurnPower",
+  "title": "Block Next Turn",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your next turn, gain [blue]4[/blue] [gold]Block[/gold].",
+  "smart_description": "At the start of your next turn, gain [blue]4[/blue] [gold]Block[/gold].",
+  "notes": "Grants Block at the start of the next turn after the player's block is fully cleared."
+}

@@ -1,0 +1,27 @@
+{
+  "class_name": "Burst",
+  "title": "Burst",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "This turn, your next Skill is played an extra time.",
+  "upgraded_description": "This turn, your next 2 Skills are played an extra time.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "BurstPower",
+      "title": "Burst",
+      "slug": "burst"
+    }
+  ]
+}

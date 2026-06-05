@@ -1,0 +1,31 @@
+{
+  "class_name": "PrepTime",
+  "title": "Prep Time",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Vigor",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "At the start of your turn, gain 4 [gold]Vigor[/gold].",
+  "upgraded_description": "At the start of your turn, gain 6 [gold]Vigor[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "PrepTimePower",
+      "title": "Prep Time",
+      "slug": "prep-time"
+    },
+    {
+      "class_name": "VigorPower",
+      "title": "Vigor",
+      "slug": "vigor"
+    }
+  ]
+}

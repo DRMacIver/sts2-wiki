@@ -1,0 +1,8 @@
+{
+  "class_name": "LastingCandy",
+  "title": "Lasting Candy",
+  "rarity": "Uncommon",
+  "description": "Every other combat, your card rewards gain an additional Power.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers on every other combat (when total combats seen is even). Displays counter showing activation state."
+}

@@ -1,0 +1,32 @@
+{
+  "class_name": "Cruelty",
+  "title": "Cruelty",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 25,
+      "upgraded_value": 50
+    }
+  ],
+  "description": "[gold]Vulnerable[/gold] enemies take an additional 25% damage.",
+  "upgraded_description": "[gold]Vulnerable[/gold] enemies take an additional 50% damage.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "CrueltyPower",
+      "title": "Cruelty",
+      "slug": "cruelty"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

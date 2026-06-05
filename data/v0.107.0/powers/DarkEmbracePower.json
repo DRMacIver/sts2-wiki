@@ -1,0 +1,9 @@
+{
+  "class_name": "DarkEmbracePower",
+  "title": "Dark Embrace",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]1[/blue] card.",
+  "smart_description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
+  "notes": "Tracks Ethereal exhausts separately. When a card is exhausted by the Ethereal keyword, draws are deferred until end of turn where they are multiplied by the accumulated Ethereal count. Non-Ethereal exhausts draw cards immediately."
+}

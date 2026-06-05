@@ -1,0 +1,8 @@
+{
+  "class_name": "EnergyPotion",
+  "title": "Energy Potion",
+  "rarity": "Common",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Gain 2 energy."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "LoomingFruit",
+  "title": "Looming Fruit",
+  "rarity": "Ancient",
+  "description": "Upon pickup, raise your Max HP by [blue]31[/blue].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Icon varies based on player unique ID (cosmetic effect)."
+}

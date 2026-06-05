@@ -1,0 +1,25 @@
+{
+  "class_name": "Misery",
+  "title": "Misery",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 7 damage.\nApply any debuffs on the enemy to ALL other enemies.",
+  "upgraded_description": "Deal 9 damage.\nApply any debuffs on the enemy to ALL other enemies.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "star_cost": null,
+  "referenced_powers": [],
+  "keywords_upgraded": ["Retain"],
+  "notes": "On upgrade, gains Retain keyword. Applies copies of any debuffs from the targeted enemy to all other enemies in combat."
+}

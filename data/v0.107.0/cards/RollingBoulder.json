@@ -1,0 +1,31 @@
+{
+  "class_name": "RollingBoulder",
+  "title": "Rolling Boulder",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Magic",
+      "base_value": 5
+    }
+  ],
+  "description": "At the start of your turn, deal 5 damage to ALL enemies and increase this damage by 5.",
+  "upgraded_description": "At the start of your turn, deal 10 damage to ALL enemies and increase this damage by 5.",
+  "referenced_powers": [
+    {
+      "class_name": "RollingBoulderPower",
+      "title": "Rolling Boulder",
+      "slug": "rolling-boulder"
+    }
+  ],
+  "notes": "This power stacks its damage each turn, creating an exponentially more dangerous threat the longer it remains on the player. The upgrade increases the initial damage from 5 to 10."
+}

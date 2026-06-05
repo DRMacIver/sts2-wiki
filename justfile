@@ -7,7 +7,7 @@ sts2_pck := sts2_app / "Contents/Resources/Slay the Spire 2.pck"
 sts2_release := sts2_app / "Contents/Resources/release_info.json"
 
 # Game version (auto-detected or override)
-version := env("STS2_VERSION", "v0.105.1")
+version := env("STS2_VERSION", "v0.107.0")
 
 # Default: full build
 default: check build
@@ -198,9 +198,9 @@ build-all-versions:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    VERSIONS="v0.98.2 v0.99.1 v0.100.0 v0.101.0 v0.103.2 v0.105.1"
-    LATEST="v0.105.1"
-    ALL_VERSIONS="v0.105.1,v0.103.2,v0.101.0,v0.100.0,v0.99.1,v0.98.2"
+    VERSIONS="v0.98.2 v0.99.1 v0.100.0 v0.101.0 v0.103.2 v0.105.1 v0.107.0"
+    LATEST="v0.107.0"
+    ALL_VERSIONS="v0.107.0,v0.105.1,v0.103.2,v0.101.0,v0.100.0,v0.99.1,v0.98.2"
     DIST_FINAL="site/dist-final"
 
     rm -rf "$DIST_FINAL"

@@ -1,0 +1,13 @@
+{
+  "class_name": "Zap",
+  "title": "Zap",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Basic",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Channel[/gold] 1 [gold]Lightning[/gold].",
+  "upgraded_cost": 0
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "FlickFlack",
+  "title": "Flick-Flack",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Deal 6 damage to ALL enemies.",
+  "upgraded_description": "Deal 8 damage to ALL enemies.",
+  "x_cost": false
+}

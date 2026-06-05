@@ -1,0 +1,25 @@
+{
+  "class_name": "HandOfGreed",
+  "title": "Hand of Greed",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 20,
+      "upgraded_value": 25
+    },
+    {
+      "type": "Gold",
+      "base_value": 20,
+      "upgraded_value": 25
+    }
+  ],
+  "description": "Deal 20 damage.\nIf [gold]Fatal[/gold], gain 20 [gold]Gold[/gold].",
+  "x_cost": false,
+  "notes": "Grants gold reward if the attack kills an enemy with the Fatal property."
+}

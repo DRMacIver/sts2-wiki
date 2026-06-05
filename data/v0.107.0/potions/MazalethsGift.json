@@ -1,0 +1,8 @@
+{
+  "class_name": "MazalethsGift",
+  "title": "Mazaleth's Gift",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]1[/blue] [gold]Ritual[/gold]."
+}

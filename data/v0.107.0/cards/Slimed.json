@@ -1,0 +1,17 @@
+{
+  "class_name": "Slimed",
+  "title": "Slimed",
+  "character": "Status",
+  "energy_cost": 1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Draw 1 card."
+}

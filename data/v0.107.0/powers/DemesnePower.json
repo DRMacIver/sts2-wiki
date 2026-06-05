@@ -1,0 +1,8 @@
+{
+  "class_name": "DemesnePower",
+  "title": "Demesne",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, gain [blue]1[/blue] [gold]Energy[/gold] and draw [blue]1[/blue] additional card.",
+  "notes": "A Counter power that scales with each stack. Each additional stack increases both the energy gained and cards drawn per turn by 1."
+}

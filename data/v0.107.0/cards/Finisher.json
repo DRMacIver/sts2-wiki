@@ -1,0 +1,19 @@
+{
+  "class_name": "Finisher",
+  "title": "Finisher",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Deal 6 damage for each Attack already played this turn.",
+  "x_cost": false
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "IceLance",
+  "title": "Ice Lance",
+  "character": "Silent",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 19,
+      "upgraded_value": 24
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3
+    }
+  ],
+  "description": "Deal 19 damage.\n[gold]Channel[/gold] 3 [gold]Frost[/gold].",
+  "upgraded_description": "Deal 24 damage.\n[gold]Channel[/gold] 3 [gold]Frost[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "FrostOrb",
+      "title": "Frost",
+      "slug": "frost"
+    }
+  ]
+}

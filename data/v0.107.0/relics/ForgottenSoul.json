@@ -1,0 +1,8 @@
+{
+  "class_name": "ForgottenSoul",
+  "title": "Forgotten Soul",
+  "rarity": "Event",
+  "description": "Whenever you [gold]Exhaust[/gold] a card, deal [blue]1[/blue] damage to a random enemy.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers after any card owned by you is exhausted. Selects a random hittable enemy and deals 1 damage. If there are no hittable enemies, no damage is dealt."
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "ForbiddenGrimoire",
+  "title": "Forbidden Grimoire",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": ["Eternal"],
+  "vars": [],
+  "description": "At the end of combat, you may remove a card from your [gold]Deck[/gold].",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "ForbiddenGrimoirePower",
+      "title": "Forbidden Grimoire",
+      "slug": "forbidden-grimoire"
+    }
+  ]
+}

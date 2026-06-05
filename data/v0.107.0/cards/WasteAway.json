@@ -1,0 +1,25 @@
+{
+  "class_name": "WasteAway",
+  "title": "Waste Away",
+  "character": "Status",
+  "energy_cost": -2,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "PowerIntensity",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 1 less Energy per turn.",
+  "referenced_powers": [
+    {
+      "class_name": "WasteAwayPower",
+      "title": "Waste Away",
+      "slug": "waste-away-power"
+    }
+  ],
+  "notes": "Status card applied to the player as a debuff. Cannot be upgraded or randomly generated in combat. Implements KnowledgeDemon.IChoosable for choice scenarios."
+}

@@ -1,0 +1,49 @@
+{
+  "class_name": "TheAdversaryMkTwo",
+  "title": "The Adversary Mk 2",
+  "min_hp": 200,
+  "max_hp": 200,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BASH_MOVE",
+      "title": "Bash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": ["Deal 13 damage"]
+    },
+    {
+      "id": "FLAME_BEAM_MOVE",
+      "title": "Flame Beam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    },
+    {
+      "id": "BARRAGE_MOVE",
+      "title": "Barrage",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 2
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 9 damage, 2 hits", "Apply 3 Strength"]
+    }
+  ],
+  "move_pattern": "Cycles: Bash → Flame Beam → Barrage",
+  "powers_on_spawn": ["Artifact"],
+  "notes": ""
+}

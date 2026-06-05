@@ -1,0 +1,8 @@
+{
+  "class_name": "PanachePower",
+  "title": "Panache",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "If you play [blue]5[/blue] cards this turn, deal damage to ALL enemies.",
+  "notes": "This is a stack-aware power that tracks card plays within a turn. The counter starts at 5 and decrements by 1 each time the player plays a card. When the counter reaches 0, the power deals its damage value to all enemies and resets the counter to 5. The counter also resets at the end of each turn. The damage amount is determined by the power's Amount property, which varies based on the power instance applied to the creature."
+}

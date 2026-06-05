@@ -1,0 +1,26 @@
+{
+  "class_name": "FeelNoPain",
+  "title": "Feel No Pain",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Whenever a card is [gold]Exhausted[/gold], gain 3 [gold]Block[/gold].",
+  "upgraded_description": "Whenever a card is [gold]Exhausted[/gold], gain 4 [gold]Block[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "FeelNoPainPower",
+      "title": "Feel No Pain",
+      "slug": "feel-no-pain"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "Outbreak",
+  "title": "Outbreak",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "OutbreakPower",
+      "base_value": 11,
+      "upgraded_value": 15
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3
+    }
+  ],
+  "description": "Every 3 times you apply [gold]Poison[/gold], deal 11 damage to ALL enemies.",
+  "upgraded_description": "Every 3 times you apply [gold]Poison[/gold], deal 15 damage to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "OutbreakPower",
+      "title": "Outbreak",
+      "slug": "outbreak"
+    }
+  ]
+}

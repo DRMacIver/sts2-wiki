@@ -1,0 +1,8 @@
+{
+  "class_name": "RadiantTincture",
+  "title": "Radiant Tincture",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "Gain 1 energy. Gain 1 additional energy at the start of your next 3 turns with [blue]Radiance[/blue]."
+}

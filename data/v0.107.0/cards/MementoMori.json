@@ -1,0 +1,27 @@
+{
+  "class_name": "MementoMori",
+  "title": "Memento Mori",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 5,
+      "name": "ExtraDamage"
+    }
+  ],
+  "description": "Deal 9 damage.\nDeals 4 additional damage for each card discarded this turn.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Damage scales with cards discarded during the current turn. The extra damage is applied once per card discarded, so if 3 cards were discarded this turn, an additional 12 damage is dealt (4 × 3)."
+}

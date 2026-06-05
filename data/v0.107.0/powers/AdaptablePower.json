@@ -1,0 +1,9 @@
+{
+  "class_name": "AdaptablePower",
+  "title": "Adaptable",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When this creature would be defeated, it instead revives even stronger.",
+  "smart_description": "When [gold]{OwnerName}[/gold] would be defeated, it instead revives even stronger.",
+  "notes": "Revive mechanic that prevents creature removal from combat after defeat. The power persists after the owner's death and allows the creature to continue combat instead of being eliminated."
+}

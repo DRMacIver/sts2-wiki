@@ -1,0 +1,8 @@
+{
+  "class_name": "ThieveryPower",
+  "title": "Thievery",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Steals [gold]Gold[/gold] when Attacking.",
+  "smart_description": "Steals [blue]{Amount}[/blue] [gold]Gold[/gold] when Attacking."
+}

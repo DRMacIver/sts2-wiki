@@ -1,0 +1,20 @@
+{
+  "class_name": "ByrdSwoop",
+  "title": "Byrd Swoop",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 18
+    }
+  ],
+  "description": "Deal 14 damage.",
+  "upgraded_description": "Deal 18 damage.",
+  "notes": "Uses Byrdpip (Regent's pet) for attack animation."
+}

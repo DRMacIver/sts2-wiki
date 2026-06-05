@@ -1,0 +1,74 @@
+{
+  "class_name": "DecimillipedeSegmentBack",
+  "title": "Decimillipede Segment",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage, 2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Heal and reattach to main body"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Constrict → Bulk → Writhe → Constrict. Starting move varies by segment position. When killed, enters Dead state, then Reattach, then repeats cycle.",
+  "powers_on_spawn": [
+    "Reattach (25)"
+  ],
+  "notes": "Part of the Decimillipede multi-enemy encounter. Each segment generates a unique HP value to avoid duplicates. When a segment dies, it reattaches to the main body and rejoins combat with the move cycle continuing."
+}

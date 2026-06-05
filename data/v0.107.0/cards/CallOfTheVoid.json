@@ -1,0 +1,25 @@
+{
+  "class_name": "CallOfTheVoid",
+  "title": "Call of the Void",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "At the start of your turn, add 1 random card into your [gold]Hand[/gold]. It gains [gold]Ethereal[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "CallOfTheVoidPower",
+      "title": "Call of the Void",
+      "slug": "call-of-the-void"
+    }
+  ],
+  "notes": "Upgrade adds the Innate keyword."
+}

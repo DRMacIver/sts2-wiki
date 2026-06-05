@@ -1,0 +1,8 @@
+{
+  "class_name": "StockPower",
+  "title": "Stock",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When killed, a new Axebot is summoned in its place.",
+  "notes": "When the creature with this power dies, a new Axebot is summoned with its stack count reduced by 1. The power prevents combat from ending while active."
+}

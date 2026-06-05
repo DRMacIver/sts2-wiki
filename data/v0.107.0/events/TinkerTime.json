@@ -1,0 +1,66 @@
+{
+  "class_name": "TinkerTime",
+  "title": "Tinker Time",
+  "description": "Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\n\n\u201cYes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?\u201d",
+  "options": [
+    {
+      "title": "Accept",
+      "description": "Create a custom [gold]Mad Science[/gold] card to add to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Weapon",
+      "description": "Make an Attack."
+    },
+    {
+      "title": "Protector",
+      "description": "Make a Skill."
+    },
+    {
+      "title": "Gadget",
+      "description": "Make a Power."
+    },
+    {
+      "title": "Sapping",
+      "description": "Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold]."
+    },
+    {
+      "title": "Violence",
+      "description": "Hits [blue]2[/blue] additional times."
+    },
+    {
+      "title": "Choking",
+      "description": "Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP."
+    },
+    {
+      "title": "Energized",
+      "description": "Gain [blue]2[/blue] Energy."
+    },
+    {
+      "title": "Wisdom",
+      "description": "Draw [blue]3[/blue] cards."
+    },
+    {
+      "title": "Chaos",
+      "description": "Add a random card into your [gold]Hand[/gold]. It\u2019s free to play this turn."
+    },
+    {
+      "title": "Expertise",
+      "description": "Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold]."
+    },
+    {
+      "title": "Curious",
+      "description": "Powers cost [blue]1[/blue] Energy less."
+    },
+    {
+      "title": "Improvement",
+      "description": "At the end of combat, [gold]Upgrade[/gold] a random card."
+    }
+  ],
+  "acts": [
+    "Glory"
+  ],
+  "conditions": [],
+  "notes": "This is a three-step event. First, choose a card type (shown 2 of 3 at random). Then choose a rider effect (shown 2 of 3 at random from the type-specific pool). The resulting [gold]Mad Science[/gold] card combines both.\n\n[gold]Attack (Weapon) riders[/gold]: Sapping, Violence, Choking\n[gold]Skill (Protector) riders[/gold]: Energized, Wisdom, Chaos\n[gold]Power (Gadget) riders[/gold]: Expertise, Curious, Improvement\n\nThe base Attack deals [blue]12[/blue] damage; the base Skill gains [blue]8[/blue] Block. When a Violence Attack is played, it hits [blue]3[/blue] times total (original + 2 extra).",
+  "card_refs": [],
+  "relic_refs": []
+}

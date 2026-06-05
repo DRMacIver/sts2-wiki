@@ -1,0 +1,23 @@
+{
+  "class_name": "Refract",
+  "title": "Refract",
+  "character": "Defect",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 12
+    },
+    {
+      "type": "Repeat",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 9 damage twice.\n[gold]Channel[/gold] 2 [gold]Glass[/gold].",
+  "x_cost": false
+}

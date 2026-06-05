@@ -1,0 +1,33 @@
+{
+  "class_name": "SewerClam",
+  "title": "Sewer Clam",
+  "min_hp": 58,
+  "max_hp": 58,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "JET_MOVE",
+      "title": "Jet",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": ["Deal 11 damage"]
+    },
+    {
+      "id": "PRESSURIZE_MOVE",
+      "title": "Pressurize",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 4 Strength"]
+    }
+  ],
+  "move_pattern": "Alternates between Jet and Pressurize, starting with Jet",
+  "powers_on_spawn": ["Plating (9)"],
+  "notes": "Gains Plating on entry which reduces incoming damage. Cycles between attacking with Jet and buffing itself with Strength."
+}

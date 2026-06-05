@@ -1,0 +1,8 @@
+{
+  "class_name": "JugglingPower",
+  "title": "Juggling",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Add a copy of the third Attack you play each turn into your [gold]Hand[/gold].",
+  "smart_description": "Add copies of the third Attack you play each turn into your [gold]Hand[/gold] (amount equals this power's stacks)."
+}

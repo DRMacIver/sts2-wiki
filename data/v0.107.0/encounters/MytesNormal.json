@@ -1,0 +1,10 @@
+{
+  "class_name": "MytesNormal",
+  "title": "Mass of Mytes",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Myte"],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "Two Myte monsters spawn in named slots. Uses custom scene with camera scaled to 0.9x and 50-unit downward offset."
+}

@@ -1,0 +1,10 @@
+{
+  "class_name": "InkletsNormal",
+  "title": "Inklets",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Inklet"],
+  "total_monsters": 3,
+  "tags": [],
+  "notes": "The middle Inklet has the MiddleInklet property set to true, which affects its behavior."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "LizardTail",
+  "title": "Lizard Tail",
+  "rarity": "Rare",
+  "description": "When your HP would be reduced to [blue]0[/blue], heal to [green]50%[/green] of your Max HP instead (works once).",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "One-time use relic that prevents death by healing the player to 50% of max HP. After use, the relic becomes disabled."
+}

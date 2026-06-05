@@ -1,0 +1,18 @@
+{
+  "class_name": "Clone",
+  "title": "Clone",
+  "description": "This card can be duplicated at [gold]Rest Sites[/gold].",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "PaelsGrowth",
+      "title": "Pael's Growth",
+      "amount": 4
+    }
+  ],
+  "notes": "Cards with Clone can be duplicated via the rest site option added by Pael's Growth. The rest site option clones all Clone-enchanted cards in your deck simultaneously."
+}

@@ -1,0 +1,28 @@
+{
+  "class_name": "TheGambit",
+  "title": "The Gambit",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 50,
+      "upgraded_value": 75
+    }
+  ],
+  "description": "Gain 50 [gold]Block[/gold].\nIf you take unblocked attack damage this combat, die.",
+  "upgraded_description": "Gain 75 [gold]Block[/gold].\nIf you take unblocked attack damage this combat, die.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TheGambitPower",
+      "title": "The Gambit",
+      "slug": "the-gambit"
+    }
+  ],
+  "notes": "Applying TheGambitPower creates a losing condition: if you take any unblocked attack damage during this combat, you lose immediately."
+}

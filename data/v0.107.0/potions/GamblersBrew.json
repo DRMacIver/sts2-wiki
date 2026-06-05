@@ -1,0 +1,8 @@
+{
+  "class_name": "GamblersBrew",
+  "title": "Gambler's Brew",
+  "rarity": "Uncommon",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Discard any number of cards, then draw that many."
+}

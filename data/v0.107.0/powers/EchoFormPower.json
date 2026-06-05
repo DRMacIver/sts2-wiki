@@ -1,0 +1,8 @@
+{
+  "class_name": "EchoFormPower",
+  "title": "Echo Form",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first card you play each turn is played an extra time.",
+  "smart_description": "The first {Amount:plural:card you play each turn is|[blue]{}[/blue] cards you play each turn are} played an extra time."
+}

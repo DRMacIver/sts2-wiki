@@ -1,0 +1,25 @@
+{
+  "class_name": "EchoForm",
+  "title": "Echo Form",
+  "character": "Defect",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1
+    }
+  ],
+  "description": "The first card you play each turn is played an extra time.",
+  "upgraded_keywords": [],
+  "referenced_powers": [
+    {
+      "class_name": "EchoFormPower",
+      "title": "Echo Form",
+      "slug": "echo-form"
+    }
+  ]
+}

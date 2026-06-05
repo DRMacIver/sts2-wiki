@@ -1,0 +1,16 @@
+{
+  "class_name": "Alchemize",
+  "title": "Alchemize",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Procure a random potion.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Cannot be generated in combat."
+}

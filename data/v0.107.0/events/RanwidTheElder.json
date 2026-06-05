@@ -1,0 +1,31 @@
+{
+  "class_name": "RanwidTheElder",
+  "title": "Ranwid the Elder",
+  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\u201cWe meet once more... it's me, Ranwid!\u201d[/sine]\n\nYou do not know this man.",
+  "options": [
+    {
+      "title": "Give Potion",
+      "description": "Obtain a random [gold]Relic[/gold].",
+      "requires": "You don't have any Potions that can be given."
+    },
+    {
+      "title": "Give 100 Gold",
+      "description": "Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "Give Relic",
+      "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
+      "requires": "You don't have any Relics that can be given."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [
+    "Act 2+ only",
+    "At least 100 Gold",
+    "At least 1 Potion",
+    "At least 1 tradable Relic"
+  ],
+  "notes": "The [gold]Give Potion[/gold] and [gold]Give Relic[/gold] option titles dynamically display the name of a specific randomly-chosen item from your inventory. For the relic trade, only [blue]tradable[/blue] relics are eligible to give. During the event, potions cannot be manually discarded. All three options award a relic drawn from the front of the relic reward pool. Giving a [gold]Relic[/gold] trades [blue]1[/blue] tradable relic for [blue]2[/blue] new relics.",
+  "card_refs": [],
+  "relic_refs": []
+}

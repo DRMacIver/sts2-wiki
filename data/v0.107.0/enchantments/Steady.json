@@ -1,0 +1,17 @@
+{
+  "class_name": "Steady",
+  "title": "Steady",
+  "description": "This card gains [gold]Retain[/gold].",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "WaterloggedScriptorium",
+      "title": "Waterlogged Scriptorium",
+      "amount": 1
+    }
+  ]
+}

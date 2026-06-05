@@ -1,0 +1,22 @@
+{
+  "class_name": "HandTrick",
+  "title": "Hand Trick",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Gain 7 [gold]Block[/gold].\nAdd [gold]Sly[/gold] to a Skill in your [gold]Hand[/gold] this turn.",
+  "upgraded_description": "Gain 10 [gold]Block[/gold].\nAdd [gold]Sly[/gold] to a Skill in your [gold]Hand[/gold] this turn.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Choose a Skill card in your Hand to apply Sly to it for the current turn only."
+}

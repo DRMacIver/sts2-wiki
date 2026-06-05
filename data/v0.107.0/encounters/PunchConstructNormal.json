@@ -1,0 +1,11 @@
+{
+  "class_name": "PunchConstructNormal",
+  "title": "Punch Construct",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "PunchConstruct"
+  ],
+  "total_monsters": 1,
+  "tags": []
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "SurprisePower",
+  "title": "Surprise",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Something is off about this creature...",
+  "smart_description": "Something is off about this creature...",
+  "notes": "Triggers on owner death: summons a SneakyGremlin and a FatGremlin. The FatGremlin gains HeistPower based on any ThieveryPower the owner had, stealing gold from the thievery target."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "EssenceOfDarkness",
+  "title": "Essence of Darkness",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "[gold]Channel[/gold] a [gold]Dark[/gold] for each of your [gold]Orb Slots[/gold].",
+  "notes": "Channels a Dark Orb for each available Orb Slot capacity"
+}

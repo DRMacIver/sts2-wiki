@@ -1,0 +1,10 @@
+{
+  "class_name": "SkulkingColonyElite",
+  "title": "Skulking Colony",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["SkulkingColony"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": null
+}

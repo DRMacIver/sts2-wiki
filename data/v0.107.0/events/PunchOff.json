@@ -1,0 +1,26 @@
+{
+  "class_name": "PunchOff",
+  "title": "Punch Off",
+  "description": "Two [gold]Punch Constructs[/gold] are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
+  "options": [
+    {
+      "title": "Nab",
+      "description": "Add [red]Injury[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "I Can Take Them",
+      "description": "Fight them for [gold]Greater Rewards[/gold]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["Floor 6 or later"],
+  "notes": "Choosing [gold]I Can Take Them[/gold] initiates combat against the two Punch Constructs. [gold]Greater Rewards[/gold] consist of 1 [gold]Relic[/gold] and 1 [gold]Potion[/gold] per player after victory.",
+  "card_refs": [
+    {
+      "class_name": "Injury",
+      "title": "Injury",
+      "slug": "injury"
+    }
+  ],
+  "relic_refs": []
+}

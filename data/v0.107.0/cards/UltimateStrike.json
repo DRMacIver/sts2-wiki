@@ -1,0 +1,24 @@
+{
+  "class_name": "UltimateStrike",
+  "title": "Ultimate Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Strike"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 20
+    }
+  ],
+  "description": "Deal 14 damage.",
+  "upgraded_description": "Deal 20 damage.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "star_cost": null,
+  "referenced_powers": [],
+  "notes": ""
+}

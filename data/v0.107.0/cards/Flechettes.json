@@ -1,0 +1,22 @@
+{
+  "class_name": "Flechettes",
+  "title": "Flechettes",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage for each Skill in your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 7 damage for each Skill in your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Hits scale with the number of Skills in your hand."
+}

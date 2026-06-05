@@ -1,0 +1,26 @@
+{
+  "class_name": "Pyre",
+  "title": "Pyre",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Gain 1 Energy at the start of each turn.",
+  "upgraded_description": "Gain 2 Energy at the start of each turn.",
+  "referenced_powers": [
+    {
+      "class_name": "PyrePower",
+      "title": "Pyre",
+      "slug": "pyre"
+    }
+  ]
+}

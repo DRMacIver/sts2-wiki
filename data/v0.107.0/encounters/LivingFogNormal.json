@@ -1,0 +1,10 @@
+{
+  "class_name": "LivingFogNormal",
+  "title": "Living Fog",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["LivingFog"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Living Fog spawns gas bombs during combat. Five gas bomb slots are reserved on the field alongside the main enemy."
+}

@@ -1,0 +1,65 @@
+{
+  "class_name": "Aeonglass",
+  "title": "Aeonglass",
+  "min_hp": 535,
+  "max_hp": 535,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EBB_MOVE",
+      "title": "Ebb",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 32
+        },
+        {
+          "type": "block",
+          "amount": 33
+        }
+      ],
+      "effects": [
+        "Deal 32 damage",
+        "Gain 33 Block"
+      ]
+    },
+    {
+      "id": "EYE_LASERS_MOVE",
+      "title": "Eye Lasers",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 12,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "INCREASING_INTENSITY_MOVE",
+      "title": "Increasing Intensity",
+      "intents": [
+        {
+          "type": "status"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Add 2 Wither to discard",
+        "Apply Strength (scaling, starts at 4)",
+        "Upgrade all existing Wither cards"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Ebb → Eye Lasers → Increasing Intensity",
+  "powers_on_spawn": [
+    "Withering Presence (6)",
+    "Artifact (3)"
+  ],
+  "notes": "Increasing Intensity applies scaling Strength, starting at 4 and increasing by 1 each use. Also upgrades all existing Wither cards in the player's hand when used."
+}

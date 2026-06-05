@@ -1,0 +1,8 @@
+{
+  "class_name": "TheHuntPower",
+  "title": "The Hunt",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [blue]1[/blue] additional card reward at the end of combat.",
+  "smart_description": "Gain [blue]1[/blue] additional card reward at the end of combat."
+}

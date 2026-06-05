@@ -1,0 +1,24 @@
+{
+  "class_name": "IronWave",
+  "title": "Iron Wave",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    },
+    {
+      "type": "Block",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Gain 5 [gold]Block[/gold].\nDeal 5 damage.",
+  "upgraded_description": "Gain 7 [gold]Block[/gold].\nDeal 7 damage."
+}

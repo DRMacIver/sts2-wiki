@@ -1,0 +1,19 @@
+{
+  "class_name": "Lift",
+  "title": "Lift",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 11,
+      "upgraded_value": 16
+    }
+  ],
+  "description": "Give another player 11 [gold]Block[/gold].",
+  "notes": "Multiplayer only card."
+}

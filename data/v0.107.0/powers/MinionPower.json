@@ -1,0 +1,8 @@
+{
+  "class_name": "MinionPower",
+  "title": "Minion",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Minions abandon combat without their leader.",
+  "smart_description": "Minions abandon combat without their leader."
+}

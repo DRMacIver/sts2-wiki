@@ -1,0 +1,21 @@
+{
+  "class_name": "Purity",
+  "title": "Purity",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Retain", "Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Exhaust up to 3 cards in your [gold]Hand[/gold].",
+  "upgraded_description": "Exhaust up to 5 cards in your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Allows selection of up to the specified number of cards from hand to exhaust."
+}

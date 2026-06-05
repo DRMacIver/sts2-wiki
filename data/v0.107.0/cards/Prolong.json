@@ -1,0 +1,21 @@
+{
+  "class_name": "Prolong",
+  "title": "Prolong",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Next turn, gain [gold]Block[/gold] equal to your current [gold]Block[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "BlockNextTurnPower",
+      "title": "Block Next Turn",
+      "slug": "block-next-turn"
+    }
+  ],
+  "notes": "Upgrade removes Exhaust keyword."
+}

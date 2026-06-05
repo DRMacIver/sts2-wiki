@@ -1,0 +1,27 @@
+{
+  "class_name": "Bulwark",
+  "title": "Bulwark",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 12,
+      "upgraded_value": 15
+    },
+    {
+      "type": "Forge",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Gain 12 [gold]Block[/gold].\n[gold]Forge[/gold] 10.",
+  "upgraded_description": "Gain 15 [gold]Block[/gold].\n[gold]Forge[/gold] 13.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Upgrades increase Block by 3 and Forge by 3."
+}

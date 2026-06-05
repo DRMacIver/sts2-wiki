@@ -1,0 +1,44 @@
+{
+  "class_name": "LivingShield",
+  "title": "Living Shield",
+  "min_hp": 65,
+  "max_hp": 65,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SHIELD_SLAM_MOVE",
+      "title": "Shield Slam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        }
+      ],
+      "effects": [
+        "Deal 6 damage"
+      ]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 18 damage",
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Shield Slam. While allies are present, repeats Shield Slam. When all allies are defeated, switches to Smash and repeats it indefinitely.",
+  "powers_on_spawn": [
+    "Rampart (25)"
+  ],
+  "notes": "Living Shield's behavior is conditional based on ally count. While it has allies fighting alongside it, it uses Shield Slam exclusively. Once all allies are defeated, it switches to Smash, which deals increased damage and applies Strength each turn, becoming increasingly dangerous."
+}

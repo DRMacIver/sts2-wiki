@@ -1,0 +1,274 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Patch v0.107.0">
+  <div class="page-header">
+    <h1>v0.107.0 Balance Patch</h1>
+    <p class="subtitle">Changes from v0.105.1 &rarr; v0.107.0 &mdash; derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <p class="desc-text">
+      v0.107.0 is a broad balance pass. The Silent loses <strong>Follow Through</strong> and gains a new
+      0-cost AoE Weak skill, <a href={`${base}cards/scare/`}>Scare</a>, while
+      <a href={`${base}cards/predator/`}>Predator</a> drops to Common. A handful of cards see damage and
+      cost buffs (<a href={`${base}cards/synthesis/`}>Synthesis</a>,
+      <a href={`${base}cards/unrelenting/`}>Unrelenting</a>, <a href={`${base}cards/pounce/`}>Pounce</a>,
+      <a href={`${base}cards/monarch-s-gaze/`}>Monarch's Gaze</a>,
+      <a href={`${base}cards/fusion/`}>Fusion</a>), while <a href={`${base}cards/shatter/`}>Shatter</a> and
+      <a href={`${base}cards/astral-pulse/`}>Astral Pulse</a> are reworked into multi-hit attacks.
+      The <strong>Ebb</strong> debuff is removed (Aeonglass now blocks instead), a new <strong>Tainted</strong>
+      debuff is introduced, and the <a href={`${base}monsters/infested-prism/`}>Infested Prism</a> elite gets a
+      sizeable HP and damage nerf.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- CARDS                           -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="cards" style="margin-top: 2rem;">Card Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/scare/`}>Scare</a></td>
+          <td class="char-silent">Silent</td>
+          <td>0-cost Uncommon Skill. <strong>Exhaust</strong>. "Apply 1 Weak to ALL enemies." Upgrade removes Exhaust.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Follow Through</td>
+          <td class="char-silent">Silent</td>
+          <td>Common Attack removed ("Deal 7 damage. If you have 5 or more other cards in your Hand, hits an additional time.").</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Reworks</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/astral-pulse/`}>Astral Pulse</a></td>
+          <td class="char-regent">Regent</td>
+          <td>"Deal 14 damage to ALL enemies." (upgrade 18)</td>
+          <td>"Deal 6 damage to ALL enemies twice." (upgrade 8&times;2)</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/shatter/`}>Shatter</a></td>
+          <td class="char-defect">Defect</td>
+          <td>"Deal 11 damage to ALL enemies. Evoke all Orbs twice." (upgrade 15)</td>
+          <td>"Deal 7 damage to ALL enemies. Evoke all Orbs twice." (upgrade 11) &mdash; damage nerf.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/fusion/`}>Fusion</a></td>
+          <td class="char-defect">Defect</td>
+          <td>2-cost. No keyword.</td>
+          <td>1-cost, now <strong>Exhaust</strong> (upgrade removes Exhaust).</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/wither/`}>Wither</a></td>
+          <td>Status</td>
+          <td>1-cost, <strong>Exhaust</strong> + <strong>Retain</strong>, take 2 damage at end of turn if in Hand.</td>
+          <td><strong>Unplayable</strong>, take 3 damage at end of turn if in Hand.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/howl-from-beyond/`}>Howl from Beyond</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>Auto-plays from Exhaust Pile at the <strong>start</strong> of your turn.</td>
+          <td>Auto-plays from Exhaust Pile at the <strong>end</strong> of your turn.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/the-sealed-throne/`}>The Sealed Throne</a></td>
+          <td class="char-regent">Regent</td>
+          <td>Gained <strong>Innate</strong> on upgrade.</td>
+          <td>No longer gains Innate.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Rarity &amp; Cost Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/predator/`}>Predator</a></td><td class="char-silent">Silent</td><td>Rarity Uncommon &rarr; <strong>Common</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/monarch-s-gaze/`}>Monarch's Gaze</a></td><td class="char-regent">Regent</td><td>Cost 3 &rarr; <strong>2</strong> Energy.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Stat Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/synthesis/`}>Synthesis</a></td><td class="char-defect">Defect</td><td>Damage 12/18 &rarr; <strong>14/20</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/unrelenting/`}>Unrelenting</a></td><td class="char-ironclad">Ironclad</td><td>Damage 12/18 &rarr; <strong>14/20</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/pounce/`}>Pounce</a></td><td class="char-silent">Silent</td><td>Damage 12/18 &rarr; <strong>14/20</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/juggernaut/`}>Juggernaut</a></td><td class="char-ironclad">Ironclad</td><td>Damage 5/7 &rarr; <strong>6/8</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/furnace/`}>Furnace</a></td><td class="char-regent">Regent</td><td>Forge 4/6 &rarr; <strong>5/7</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/death-march/`}>Death March</a></td><td class="char-necrobinder">Necrobinder</td><td>Extra damage per card drawn 3/4 &rarr; <strong>4/6</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/sic-em/`}>Sic 'Em</a></td><td class="char-necrobinder">Necrobinder</td><td>Summon 2/3 &rarr; <strong>3/4</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/debilitate/`}>Debilitate</a></td><td class="char-necrobinder">Necrobinder</td><td>Double-effectiveness duration 3/4 &rarr; <strong>2/3</strong> turns (nerf).</td></tr>
+        <tr><td><a href={`${base}cards/fasten/`}>Fasten</a></td><td>Colorless</td><td>Extra Block from Defend cards 5/7 &rarr; <strong>4/6</strong> (nerf).</td></tr>
+        <tr><td><a href={`${base}cards/reflect/`}>Reflect</a></td><td class="char-regent">Regent</td><td>Block 16 &rarr; <strong>15</strong> (upgrade unchanged at 20).</td></tr>
+        <tr><td><a href={`${base}cards/minion-sacrifice/`}>Minion Sacrifice</a></td><td>Token</td><td>Block 9/12 &rarr; <strong>8/11</strong> (nerf).</td></tr>
+      </tbody>
+    </table>
+
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Text and targeting polish (no mechanical impact):
+      <a href={`${base}cards/exterminate/`}>Exterminate</a> (wording reorder),
+      <a href={`${base}cards/sacrifice/`}>Sacrifice</a> (now shows calculated Block in combat).
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- POWERS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="powers" style="margin-top: 2rem;">Power Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Power</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Type</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}powers/tainted/`}>Tainted</a></td>
+          <td>Debuff</td>
+          <td>"Take additional damage from Attacks this turn." Applied by the reworked Vital Spark.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Power</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Ebb</td><td>Removed &mdash; Aeonglass's Ebb move now grants Block instead of applying the debuff.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Changed Powers</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}powers/vital-spark/`}>Vital Spark</a></td>
+          <td>"The first time this enemy takes Attack damage each turn, the attacker gains 1 Energy."</td>
+          <td>"ALL Skills are Tainted 2."</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/hardened-shell/`}>Hardened Shell</a></td>
+          <td>Caps HP loss at 15 per turn.</td>
+          <td>Caps HP loss at <strong>20</strong> per turn.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/withering-presence/`}>Withering Presence</a></td>
+          <td>"Every 4 non-Status cards you play, add a Wither to your Hand."</td>
+          <td>"Every <strong>6</strong> cards you play, add a Wither to your Hand."</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/high-voltage/`}>High Voltage</a></td>
+          <td>Gains 2 Strength at the <strong>start</strong> of its turn.</td>
+          <td>Gains 2 Strength at the <strong>end</strong> of its turn.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/juggernaut/`}>Juggernaut</a></td>
+          <td>Deal 5 damage to a random enemy on gaining Block.</td>
+          <td>Deal <strong>6</strong> damage to a random enemy on gaining Block.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Wording polish (no mechanical impact):
+      <a href={`${base}powers/territorial/`}>Territorial</a> (owner-name template),
+      <a href={`${base}powers/consuming-shadow/`}>Consuming Shadow</a> (spacing fix).
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- RELICS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="relics" style="margin-top: 2rem;">Relic Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Relic</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}relics/scroll-boxes/`}>Scroll Boxes</a></td>
+          <td>"Upon pickup, lose all Gold and choose 1 of 2 packs of cards to add to your Deck."</td>
+          <td>"Upon pickup, choose 1 of 2 packs of cards to add to your Deck." (no longer costs Gold)</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/silken-tress/`}>Silken Tress</a></td>
+          <td>"Enchant all cards in the first card reward with Glam."</td>
+          <td>"Upon pickup, lose all Gold. Enchant all cards in the first card reward with Glam." (now costs Gold)</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/jeweled-mask/`}>Jeweled Mask</a></td>
+          <td>"At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play."</td>
+          <td>Wording clarified: now specifies "each combat" and "free to play this combat".</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- MONSTERS                        -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="monsters" style="margin-top: 2rem;">Monster Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}monsters/infested-prism/`}>Infested Prism</a></td>
+          <td>HP 215 &rarr; <strong>171</strong>; Jab 24 &rarr; 17, Radiate 18 &rarr; 13. Significant nerf.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/aeonglass/`}>Aeonglass</a></td>
+          <td>Ebb move no longer applies the Ebb debuff; now deals 32 damage and gains 33 Block.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/skulking-colony/`}>Skulking Colony</a></td>
+          <td>HP 75 &rarr; <strong>80</strong>; move pattern reworked (now opens with Zoom and double-Zoom).</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/haunted-ship/`}>Haunted Ship</a></td>
+          <td>Move pattern changed: after Haunt now uses Swipe &rarr; Stomp &rarr; Swipe.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/punch-construct/`}>Punch Construct</a></td>
+          <td>Cycle order changed: READY &rarr; Fast Punch &rarr; Strong Punch.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/tough-egg/`}>Tough Egg</a></td>
+          <td>Move title casing fix ("HATCH" &rarr; "Hatch").</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ENCOUNTERS                      -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="encounters" style="margin-top: 2rem;">Encounter Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Encounter</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}encounters/living-fog/`}>Living Fog</a></td>
+          <td>Renamed from "Evil Gas" to "Living Fog".</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</BaseLayout>

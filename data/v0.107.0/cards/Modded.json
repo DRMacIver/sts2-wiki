@@ -1,0 +1,24 @@
+{
+  "class_name": "Modded",
+  "title": "Modded",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Gain 1 Orb Slot.\nDraw 1 card. Increase this card's cost by 1.",
+  "referenced_powers": [],
+  "notes": "Increases the card's energy cost by 1 when played, permanently in the current combat."
+}

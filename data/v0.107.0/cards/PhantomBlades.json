@@ -1,0 +1,26 @@
+{
+  "class_name": "PhantomBlades",
+  "title": "Phantom Blades",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "[gold]Shivs[/gold] gain [gold]Retain[/gold].\nThe first [gold]Shiv[/gold] you play each turn deals 9 additional damage.",
+  "upgraded_description": "[gold]Shivs[/gold] gain [gold]Retain[/gold].\nThe first [gold]Shiv[/gold] you play each turn deals 12 additional damage.",
+  "referenced_powers": [
+    {
+      "class_name": "PhantomBladesPower",
+      "title": "Phantom Blades",
+      "slug": "phantom-blades"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "HuddleUp",
+  "title": "Huddle Up",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "All",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "ALL players draw 2 cards.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Multiplayer-only card. Causes all players currently in the game to draw cards, not just the player playing the card."
+}

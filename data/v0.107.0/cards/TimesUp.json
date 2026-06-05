@@ -1,0 +1,35 @@
+{
+  "class_name": "TimesUp",
+  "title": "Time's Up",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Calculation",
+      "base_value": 0
+    },
+    {
+      "type": "ExtraDamage",
+      "base_value": 1
+    },
+    {
+      "type": "CalculatedDamage",
+      "base_value": 0,
+      "notes": "Calculated as target's Doom amount + ExtraDamage"
+    }
+  ],
+  "description": "Deal damage equal to the enemy's [gold]Doom[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ],
+  "notes": "Upgrade adds Retain keyword. Damage is calculated dynamically based on the target's Doom power amount."
+}

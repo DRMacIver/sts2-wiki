@@ -1,0 +1,7 @@
+{
+  "class_name": "PaperCutsPower",
+  "title": "Paper Cuts",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever this creature deals unblocked attack damage to you, you lose [blue]1[/blue] [gold]Max HP[/gold]."
+}

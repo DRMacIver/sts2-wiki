@@ -1,0 +1,42 @@
+{
+  "class_name": "ColossalFlower",
+  "title": "Colossal Flower",
+  "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine][rainbow freq=0.3 sat=0.8 val=1]color-shifting petals[/rainbow][/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
+  "options": [
+    {
+      "title": "Extract Nectar",
+      "description": "Gain [blue]35[/blue] [gold]Gold[/gold]. (Available at first encounter)"
+    },
+    {
+      "title": "Reach Deeper",
+      "description": "Enter deeper. Lose [red]5[/red] HP. (First layer - petals are [red]razor sharp[/red])"
+    },
+    {
+      "title": "Extract Nectar",
+      "description": "Gain [blue]75[/blue] [gold]Gold[/gold]. (Available after first dig)"
+    },
+    {
+      "title": "Reach Deeper",
+      "description": "Enter even deeper. Lose [red]6[/red] HP. (Second layer - [purple]toxins[/purple] numb the pain)"
+    },
+    {
+      "title": "Extract Nectar",
+      "description": "Gain [blue]135[/blue] [gold]Gold[/gold]. (Available after second dig - high-quality [gold]nectar[/gold])"
+    },
+    {
+      "title": "Enter the Center",
+      "description": "Lose [red]7[/red] HP. Obtain [gold]Pollinous Core[/gold] relic. (Final layer - kills the flower, rendering nectar worthless)"
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": ["All players must have at least 19 HP"],
+  "notes": "[gold]Multi-stage Branching Event:[/gold] This event presents a series of escalating choices:\n\n[blue]Stage 1:[/blue] Extract [blue]35[/blue] [gold]Gold[/gold] or push past [red]razor-sharp petals[/red] (lose [red]5[/red] HP).\n\n[blue]Stage 2:[/blue] You encounter a [purple]tingling substance[/purple] that seems to numb the pain. Extract [blue]75[/blue] [gold]Gold[/gold] or go deeper again (lose [red]6[/red] HP).\n\n[blue]Stage 3 (Final):[/blue] The tingling becomes a [red]throbbing weakness[/red]. Your last choice: Extract [blue]135[/blue] [gold]Gold[/gold] or enter the flower's center to obtain the [gold]Pollinous Core[/gold] relic (lose [red]7[/red] HP). Obtaining the relic kills the flower and renders all remaining nectar worthless—the relic becomes your only reward.\n\nChoosing to extract at [red]any stage[/red] immediately ends the event.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "PollinousCore",
+      "title": "Pollinous Core",
+      "slug": "pollinous-core"
+    }
+  ]
+}

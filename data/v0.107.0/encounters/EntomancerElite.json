@@ -1,0 +1,9 @@
+{
+  "class_name": "EntomancerElite",
+  "title": "Entomancer",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["Entomancer"],
+  "total_monsters": 1,
+  "tags": []
+}

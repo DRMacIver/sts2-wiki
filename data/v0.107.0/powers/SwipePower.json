@@ -1,0 +1,7 @@
+{
+  "class_name": "SwipePower",
+  "title": "Swipe",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Upon killing this enemy, the stolen card is returned."
+}

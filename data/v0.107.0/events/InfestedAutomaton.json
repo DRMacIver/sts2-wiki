@@ -1,0 +1,20 @@
+{
+  "class_name": "InfestedAutomaton",
+  "title": "Infested Automaton",
+  "description": "There's a chamber filled with [red]dead robots[/red].\n\nA lone automaton still has a [sine][aqua]faintly glowing core[/aqua][/sine] but it's engulfed by a grotesque, organic growth and doesn't respond.",
+  "options": [
+    {
+      "title": "Study",
+      "description": "Obtain a random [gold]Power[/gold]."
+    },
+    {
+      "title": "Touch the Core",
+      "description": "Obtain a random [gold]0 cost card[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "Both options grant a card from your character's card pool. Study grants any Power-type card. Touch the Core grants specifically cards with a 0 Energy cost that do not use variable (X) costs. Card selection uses default reward odds for non-combat card creation.",
+  "card_refs": [],
+  "relic_refs": []
+}

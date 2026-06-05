@@ -1,0 +1,8 @@
+{
+  "class_name": "StarNextTurnPower",
+  "title": "Star Next Turn",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain 1 {singleStarIcon} next turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] {singleStarIcon} next turn."
+}

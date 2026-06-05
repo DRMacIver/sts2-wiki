@@ -1,0 +1,40 @@
+{
+  "class_name": "Neurosurge",
+  "title": "Neurosurge",
+  "character": "Necrobinder",
+  "energy_cost": 0,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Cards",
+      "base_value": 2
+    },
+    {
+      "type": "Doom",
+      "base_value": 3
+    }
+  ],
+  "description": "Gain 3 Energy.\nDraw 2 cards.\nAt the start of your turn, apply 3 [gold]Doom[/gold] to yourself.",
+  "upgraded_description": "Gain 4 Energy.\nDraw 2 cards.\nAt the start of your turn, apply 3 [gold]Doom[/gold] to yourself.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "NeurosurgePower",
+      "title": "Neurosurge",
+      "slug": "neurosurge"
+    },
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ]
+}

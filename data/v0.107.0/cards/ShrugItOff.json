@@ -1,0 +1,25 @@
+{
+  "class_name": "ShrugItOff",
+  "title": "Shrug It Off",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 8,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 8 [gold]Block[/gold].\nDraw 1 card.",
+  "upgraded_description": "Gain 11 [gold]Block[/gold].\nDraw 1 card.",
+  "referenced_powers": [],
+  "notes": "GainsBlock: true"
+}

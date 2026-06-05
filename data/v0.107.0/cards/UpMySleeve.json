@@ -1,0 +1,22 @@
+{
+  "class_name": "UpMySleeve",
+  "title": "Up My Sleeve",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Add 3 [gold]Shivs[/gold] into your [gold]Hand[/gold].\nReduce this card's cost by 1.",
+  "upgraded_description": "Add 4 [gold]Shivs[/gold] into your [gold]Hand[/gold].\nReduce this card's cost by 1.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "This card's cost is permanently reduced by 1 each time it's played during a combat. The cost reduction is applied via EnergyCost.AddThisCombat()."
+}

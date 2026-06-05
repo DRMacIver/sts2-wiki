@@ -1,0 +1,8 @@
+{
+  "class_name": "EscapeArtistPower",
+  "title": "Escape Artist",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Exits the combat after 4 turns.",
+  "smart_description": "Tries to escape the combat {Amount:plural:this turn|after [blue]{}[/blue] turns}."
+}

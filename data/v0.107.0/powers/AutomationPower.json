@@ -1,0 +1,8 @@
+{
+  "class_name": "AutomationPower",
+  "title": "Automation",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Every [blue]10[/blue] cards you draw, gain [gold]Energy[/gold].",
+  "smart_description": "Every [blue]10[/blue] cards you draw, gain Energy."
+}

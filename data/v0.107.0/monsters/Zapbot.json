@@ -1,0 +1,27 @@
+{
+  "class_name": "Zapbot",
+  "title": "Zapbot",
+  "min_hp": 19,
+  "max_hp": 24,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ZAP",
+      "title": "Zap",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": [
+        "Deal 15 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats Zap every turn",
+  "powers_on_spawn": [
+    "High Voltage"
+  ],
+  "notes": "Gains High Voltage (2) on spawn. Uses Armor damage SFX type."
+}

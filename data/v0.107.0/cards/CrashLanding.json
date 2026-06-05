@@ -1,0 +1,22 @@
+{
+  "class_name": "CrashLanding",
+  "title": "Crash Landing",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 21,
+      "upgraded_value": 26
+    }
+  ],
+  "description": "Deal 21 damage to ALL enemies.\nFill your [gold]Hand[/gold] with [gold]Debris[/gold].",
+  "upgraded_description": "Deal 26 damage to ALL enemies.\nFill your [gold]Hand[/gold] with [gold]Debris[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Fills all remaining hand slots with Debris cards (Status cards with Exhaust keyword). The number of Debris cards generated equals the difference between max hand size and current hand size."
+}

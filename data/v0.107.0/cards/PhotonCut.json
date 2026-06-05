@@ -1,0 +1,29 @@
+{
+  "class_name": "PhotonCut",
+  "title": "Photon Cut",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    },
+    {
+      "type": "Repeat",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 10 damage.\nDraw 1 card.\nPut 1 card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "referenced_powers": [],
+  "notes": "Requires selecting 1 card from your hand to put on top of your draw pile."
+}

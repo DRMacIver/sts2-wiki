@@ -1,0 +1,39 @@
+{
+  "class_name": "TrackerRubyRaider",
+  "title": "Tracker Raider",
+  "min_hp": 22,
+  "max_hp": 26,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TRACK_MOVE",
+      "title": "Track",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Frail"
+      ]
+    },
+    {
+      "id": "HOUNDS_MOVE",
+      "title": "Unleash the Hounds",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 9
+        }
+      ],
+      "effects": [
+        "Deal 1 damage",
+        "9 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Track, then cycles Unleash the Hounds",
+  "powers_on_spawn": [],
+  "notes": "Track move is hidden from bestiary display."
+}

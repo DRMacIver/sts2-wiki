@@ -1,0 +1,20 @@
+{
+  "class_name": "Prophesize",
+  "title": "Prophesize",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Draw 6 cards.",
+  "upgraded_description": "Draw 9 cards.",
+  "x_cost": false
+}

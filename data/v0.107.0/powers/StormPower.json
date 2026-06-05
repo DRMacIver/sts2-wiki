@@ -1,0 +1,9 @@
+{
+  "class_name": "StormPower",
+  "title": "Storm",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a Power, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold].",
+  "smart_description": "Whenever you play a Power, [gold]Channel[/gold] [blue](stacks)[/blue] [gold]Lightning[/gold].",
+  "notes": "Counter-type power that stacks. Each time you play a Power card, you Channel Lightning equal to the current stack amount of this power."
+}

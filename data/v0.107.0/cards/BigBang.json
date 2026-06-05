@@ -1,0 +1,31 @@
+{
+  "class_name": "BigBang",
+  "title": "Big Bang",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    },
+    {
+      "type": "Energy",
+      "base_value": 1
+    },
+    {
+      "type": "Stars",
+      "base_value": 1
+    },
+    {
+      "type": "Forge",
+      "base_value": 5
+    }
+  ],
+  "description": "Draw 1 card.\nGain 1 Energy.\nGain 1 Star.\n[gold]Forge[/gold] 5.",
+  "upgraded_keywords": ["Exhaust", "Innate"],
+  "x_cost": false
+}

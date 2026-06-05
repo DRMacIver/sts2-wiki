@@ -1,0 +1,22 @@
+{
+  "class_name": "EchoingSlash",
+  "title": "Echoing Slash",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Deal 10 damage to ALL enemies.\nRepeat this effect for each enemy killed.",
+  "upgraded_description": "Deal 13 damage to ALL enemies.\nRepeat this effect for each enemy killed.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Repeats the damage effect for each enemy defeated during the attack."
+}

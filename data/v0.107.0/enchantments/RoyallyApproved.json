@@ -1,0 +1,17 @@
+{
+  "class_name": "RoyallyApproved",
+  "title": "Royally Approved",
+  "description": "This card has [gold]Innate[/gold] and [gold]Retain[/gold].",
+  "card_type": "Attack or Skill",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "RoyalStamp",
+      "title": "Royal Stamp",
+      "amount": 1
+    }
+  ]
+}

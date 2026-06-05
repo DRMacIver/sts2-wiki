@@ -1,0 +1,20 @@
+{
+  "class_name": "JungleMazeAdventure",
+  "title": "Jungle Maze Adventure",
+  "description": "In a clearing, you run into a [green]Ragtag Group of Adventurers[/green] looking down and gesturing at a [purple]gigantic maze[/purple].\n\nThey offer to join forces with you in an [b]Epic Quest[/b] to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with [red][jitter]deadly traps[/jitter][/red] and [orange][sine]guardians[/sine][/orange].\n\nIt would be easier if you work together, but then you would have to split the loot.",
+  "options": [
+    {
+      "title": "Join Forces",
+      "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Solo Quest",
+      "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "Both gold rewards have dynamic variance applied during the event (±15 gold), so Join Forces yields 35–65 Gold while Solo Quest yields 135–165 Gold. The 18 HP damage taken in Solo Quest is unblockable and unpowered, making it a true HP cost rather than blockable damage.\n\n**If you Join Forces:** Everyone's face immediately lights up. One of the adventurers turns out to be a bard! You merrily waltz into the maze as [aqua]Aquid the squid wizard[/aqua] effortlessly disarms traps, while you and the [red]Grathorian fighter[/red] take out the [orange]spiky club-wielding guards[/orange] with ease. This was the most joyous adventure of your life and you've made some truly [gold][sine]Great Memories[/sine][/gold].\n\n**If you go Solo:** Feeling misanthropic, you wordlessly walk past their now-frowning faces. One of them even [jitter][purple]shakes their fist[/purple][/jitter] at you. The maze is not welcoming. You fall into a spike trap, you are struck by a massive log with spikes, and [orange]feisty creatures with spiky clubs[/orange] fight you along the entire journey. You are sick of spikes, and consider teamwork for the next adventure.\n\nThe solo path also plays animated visual effects (random blunt/slash/heavy attack VFX) with audio cues during the damage phase.",
+  "card_refs": [],
+  "relic_refs": []
+}

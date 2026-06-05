@@ -1,0 +1,9 @@
+{
+  "class_name": "InfestedPower",
+  "title": "Infested",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Upon dying, summons... something.",
+  "smart_description": "Upon dying, summons... something.",
+  "notes": "When the power owner dies, triggers the elite second phase music and summons 4 Wrigglers to the battlefield, each starting stunned."
+}

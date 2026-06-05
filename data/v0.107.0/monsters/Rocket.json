@@ -1,0 +1,79 @@
+{
+  "class_name": "Rocket",
+  "title": "Rocket",
+  "min_hp": 209,
+  "max_hp": 209,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TARGETING_RETICLE_MOVE",
+      "title": "Targeting Reticle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": [
+        "Deal 4 damage"
+      ]
+    },
+    {
+      "id": "PRECISION_BEAM_MOVE",
+      "title": "Precision Beam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        }
+      ],
+      "effects": [
+        "Deal 20 damage"
+      ]
+    },
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength"
+      ]
+    },
+    {
+      "id": "LASER_MOVE",
+      "title": "Laser",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 35
+        }
+      ],
+      "effects": [
+        "Deal 35 damage"
+      ]
+    },
+    {
+      "id": "RECHARGE_MOVE",
+      "title": "Recharge",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": [
+        "Sleep"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Targeting Reticle → Precision Beam → Charge Up → Laser → Recharge → (repeats)",
+  "powers_on_spawn": [
+    "Surrounded",
+    "Back Attack Right",
+    "Crab Rage"
+  ],
+  "notes": "Right-side arm of the Kaiser Crab boss. Builds up strength with Charge Up before unleashing a powerful Laser attack, then Recharge to end its turn. The move cycle ensures it gains a Strength buff every 4 turns before attacking with its most powerful ability."
+}

@@ -1,0 +1,14 @@
+{
+  "class_name": "Guards",
+  "title": "GUARDS!!!",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Transform[/gold] any number of cards in your [gold]Hand[/gold] into [gold]Minion Sacrifice[/gold].",
+  "upgraded_description": "[gold]Transform[/gold] any number of cards in your [gold]Hand[/gold] into [gold]Minion Sacrifice+[/gold].",
+  "notes": "When played, allows selecting any number of cards in hand to transform into Minion Sacrifice tokens. If this card is upgraded, the created tokens will be upgraded as well."
+}

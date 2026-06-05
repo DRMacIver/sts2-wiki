@@ -1,0 +1,21 @@
+{
+  "class_name": "Whirlwind",
+  "title": "Whirlwind",
+  "character": "Ironclad",
+  "energy_cost": -1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Deal 5 damage to ALL enemies X times.",
+  "upgraded_description": "Deal 8 damage to ALL enemies X times.",
+  "x_cost": true,
+  "referenced_powers": []
+}

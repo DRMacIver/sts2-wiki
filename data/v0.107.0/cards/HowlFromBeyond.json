@@ -1,0 +1,20 @@
+{
+  "class_name": "HowlFromBeyond",
+  "title": "Howl from Beyond",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 16,
+      "upgraded_value": 21
+    }
+  ],
+  "description": "Deal 16 (↑5) damage to ALL enemies.\nAt the end of your turn, if this is in your [gold]Exhaust Pile[/gold], play it.",
+  "x_cost": false,
+  "notes": "Automatically replays from the Exhaust Pile at the end of your turn."
+}

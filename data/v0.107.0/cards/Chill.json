@@ -1,0 +1,14 @@
+{
+  "class_name": "Chill",
+  "title": "Chill",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Channel[/gold] 1 [gold]Frost[/gold] for each enemy.",
+  "x_cost": false,
+  "notes": "Upgrade removes Exhaust keyword, allowing the card to be played repeatedly in a turn"
+}

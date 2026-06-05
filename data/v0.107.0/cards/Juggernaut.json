@@ -1,0 +1,27 @@
+{
+  "class_name": "Juggernaut",
+  "title": "Juggernaut",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Whenever you gain [gold]Block[/gold], deal 6 damage to a random enemy.",
+  "upgraded_description": "Whenever you gain [gold]Block[/gold], deal 8 damage to a random enemy.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "JuggernautPower",
+      "title": "Juggernaut",
+      "slug": "juggernaut"
+    }
+  ]
+}

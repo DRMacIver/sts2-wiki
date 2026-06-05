@@ -1,0 +1,8 @@
+{
+  "class_name": "PagestormPower",
+  "title": "Pagestorm",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you draw an [gold]Ethereal[/gold] card, draw [blue]1[/blue] card.",
+  "smart_description": "Whenever you draw an [gold]Ethereal[/gold] card, draw [blue]1[/blue] card."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "TaintedPower",
+  "title": "Tainted",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Take additional damage from Attacks this turn.",
+  "smart_description": "Take [blue]{Amount}[/blue] additional damage from Attacks this turn."
+}

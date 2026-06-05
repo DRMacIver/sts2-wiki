@@ -1,0 +1,18 @@
+{
+  "class_name": "Wither",
+  "title": "Wither",
+  "character": "Status",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], take 3 damage.",
+  "notes": "This card has a FakeUpgrade mechanic that increases damage by 3 (not standard upgrades). MaxUpgradeLevel is 0."
+}

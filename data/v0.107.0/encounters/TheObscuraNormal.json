@@ -1,0 +1,10 @@
+{
+  "class_name": "TheObscuraNormal",
+  "title": "The Obscura",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["TheObscura"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Encounter defines an 'illusion' slot but does not populate it in current spawn logic. Parafright is listed in AllPossibleMonsters but never spawned."
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "Backstab",
+  "title": "Backstab",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Exhaust", "Innate"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 11 damage.",
+  "upgraded_description": "Deal 15 damage.",
+  "x_cost": false
+}

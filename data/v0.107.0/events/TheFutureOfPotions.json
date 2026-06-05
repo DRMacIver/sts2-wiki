@@ -1,0 +1,18 @@
+{
+  "class_name": "TheFutureOfPotions",
+  "title": "The Future of Potions?",
+  "description": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?",
+  "options": [
+    {
+      "title": "Insert [potion rarity] Potion",
+      "description": "Lose [gold][your potion][/gold]. Obtain an [gold]Upgraded[/gold] [gold][matching rarity] [random card type][/gold]."
+    }
+  ],
+  "acts": ["DeprecatedAct", "Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [
+    "All players must have at least 2 potions"
+  ],
+  "notes": "This event generates options dynamically based on your potions. You can perform this conversion up to 3 times (or once per potion, whichever is fewer). Each option allows you to sacrifice one of your potions to receive an [gold]Upgraded[/gold] card.\n\n[gold]Card Rarity[/gold]: The generated card's rarity matches your potion's rarity (Common/Token potions → Common cards, Uncommon → Uncommon, Rare/Event → Rare).\n\n[gold]Card Type[/gold]: The card type is randomly selected from Attack, Skill, or Power. However, Common and Token potions can only generate Attack or Skill cards—never Power.\n\n[gold]Automation[/gold]: All generated cards are automatically [gold]Upgraded[/gold].",
+  "card_refs": [],
+  "relic_refs": []
+}

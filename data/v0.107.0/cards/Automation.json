@@ -1,0 +1,25 @@
+{
+  "class_name": "Automation",
+  "title": "Automation",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1
+    }
+  ],
+  "description": "Every 10 cards you draw, gain 1 Energy.",
+  "upgraded_cost": 0,
+  "referenced_powers": [
+    {
+      "class_name": "AutomationPower",
+      "title": "Automation",
+      "slug": "automation"
+    }
+  ]
+}

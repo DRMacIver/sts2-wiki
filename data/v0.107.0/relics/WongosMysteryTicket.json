@@ -1,0 +1,8 @@
+{
+  "class_name": "WongosMysteryTicket",
+  "title": "Wongo's Mystery Ticket",
+  "rarity": "Event",
+  "description": "Receive [blue]3[/blue] random [gold]Relics[/gold] after [blue]5[/blue] combats.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Relic displays a counter showing remaining combats until activation. Upon triggering after 5 combats, it adds 3 random relics to the player's rewards and becomes disabled."
+}

@@ -1,0 +1,7 @@
+{
+  "class_name": "PlatingPower",
+  "title": "Plating",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, gain [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]1[/blue] at the start of your turn."
+}

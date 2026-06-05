@@ -1,0 +1,72 @@
+{
+  "class_name": "SkulkingColony",
+  "title": "Skulking Colony",
+  "min_hp": 80,
+  "max_hp": 80,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ZOOM_MOVE",
+      "title": "Zoom",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage"
+      ]
+    },
+    {
+      "id": "ZOOM_MOVE_2",
+      "title": "Zoom",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage"
+      ]
+    },
+    {
+      "id": "INERTIA_MOVE",
+      "title": "Inertia",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "Apply 4 Strength"
+      ]
+    },
+    {
+      "id": "PIERCING_STABS_MOVE",
+      "title": "Piercing Stabs",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Zoom → Zoom → Inertia → Piercing Stabs",
+  "powers_on_spawn": [
+    "Hardened Shell (20)"
+  ],
+  "notes": "Inertia applies Strength to itself. Starts combat with Hardened Shell applied."
+}

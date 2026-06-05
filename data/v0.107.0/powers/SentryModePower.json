@@ -1,0 +1,8 @@
+{
+  "class_name": "SentryModePower",
+  "title": "Sentry Mode",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add [blue]1[/blue] [gold]Sweeping Gaze[/gold] into your [gold]Hand[/gold].",
+  "notes": "Scales with stacks: each stack adds 1 additional Sweeping Gaze. The smartDescription would show the variable number based on current stack count."
+}

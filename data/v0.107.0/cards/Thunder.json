@@ -1,0 +1,25 @@
+{
+  "class_name": "Thunder",
+  "title": "Thunder",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Whenever you [gold]Evoke Lightning[/gold], deal 6 damage to each enemy hit.",
+  "referenced_powers": [
+    {
+      "class_name": "ThunderPower",
+      "title": "Thunder Power",
+      "slug": "thunder-power"
+    }
+  ]
+}

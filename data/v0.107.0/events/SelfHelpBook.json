@@ -1,0 +1,37 @@
+{
+  "class_name": "SelfHelpBook",
+  "title": "Self-Help Book",
+  "description": "On the floor lies a tome,\n\"Top 3 Ways to Conquer the Spire\"\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
+  "options": [
+    {
+      "title": "Read the Back",
+      "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]Sharp[/purple] [blue]2[/blue].",
+      "requires": "You don't have any Attacks that can be [gold]Enchanted[/gold]."
+    },
+    {
+      "title": "Read a Random Passage",
+      "description": "Choose a Skill to [gold]Enchant[/gold] with [purple]Nimble[/purple] [blue]2[/blue].",
+      "requires": "You don't have any Skills that can be [gold]Enchanted[/gold]."
+    },
+    {
+      "title": "Read the Entire Book",
+      "description": "Choose a Power to [gold]Enchant[/gold] with [purple]Swift[/purple] [blue]2[/blue].",
+      "requires": "You don't have any Powers that can be [gold]Enchanted[/gold]."
+    },
+    {
+      "title": "Move On",
+      "description": "You don't have any cards that can be Enchanted."
+    }
+  ],
+  "acts": [
+    "DeprecatedAct",
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [],
+  "notes": "This event presents the player with a choice to Enchant one of three card types from their deck. Each option is locked if the player lacks that card type:\n\n- [gold]Read the Back[/gold]: Requires at least one Attack card to Enchant with Sharp (+2)\n- [gold]Read a Random Passage[/gold]: Requires at least one Skill card to Enchant with Nimble (+2)\n- [gold]Read the Entire Book[/gold]: Requires at least one Power card to Enchant with Swift (+2)\n\nIf the player has no enchantable cards of any type, they can only Move On (skip the event). Otherwise, locked options are presented grayed out with their lock condition text displayed.",
+  "card_refs": [],
+  "relic_refs": []
+}

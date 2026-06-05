@@ -1,0 +1,23 @@
+{
+  "class_name": "CelestialMight",
+  "title": "Celestial Might",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 6 damage 3 times.",
+  "upgraded_description": "Deal 6 damage 4 times."
+}

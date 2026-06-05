@@ -1,0 +1,25 @@
+{
+  "class_name": "Noisebot",
+  "title": "Noisebot",
+  "min_hp": 19,
+  "max_hp": 24,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NOISE_MOVE",
+      "title": "Noise",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add Dazed to discard pile",
+        "Add Dazed to draw pile"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats Noise every turn",
+  "powers_on_spawn": [],
+  "notes": "Noisebot adds Dazed status cards to the player's deck each turn, polluting both discard and draw piles with useless cards."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "TheLostAndForgottenNormal",
+  "title": "Lost and Forgotten",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["TheLost", "TheForgotten"],
+  "total_monsters": 2,
+  "tags": []
+}

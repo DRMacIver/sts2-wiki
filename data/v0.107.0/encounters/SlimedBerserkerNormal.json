@@ -1,0 +1,9 @@
+{
+  "class_name": "SlimedBerserkerNormal",
+  "title": "Slimed Berserker",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["SlimedBerserker"],
+  "total_monsters": 1,
+  "tags": []
+}

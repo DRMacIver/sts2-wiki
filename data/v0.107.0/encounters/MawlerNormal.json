@@ -1,0 +1,12 @@
+{
+  "class_name": "MawlerNormal",
+  "title": "Mawler",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "Mawler"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Single Mawler encounter - a standard monster fight."
+}

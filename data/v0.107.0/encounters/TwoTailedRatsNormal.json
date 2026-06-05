@@ -1,0 +1,10 @@
+{
+  "class_name": "TwoTailedRatsNormal",
+  "title": "Two-Tailed Rats",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["TwoTailedRat"],
+  "total_monsters": 3,
+  "tags": [],
+  "notes": "Three rats with different starter moves, cycled based on RNG"
+}

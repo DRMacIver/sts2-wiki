@@ -1,0 +1,23 @@
+{
+  "class_name": "EyeWithTeeth",
+  "title": "Eye with Teeth",
+  "min_hp": 6,
+  "max_hp": 6,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DISTRACT_MOVE",
+      "title": "Distract",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 3
+        }
+      ],
+      "effects": ["Add 3 Dazed cards to discard"]
+    }
+  ],
+  "move_pattern": "Repeats Distract each turn",
+  "powers_on_spawn": ["IllusionPower"],
+  "notes": "Applies IllusionPower on spawn. Uses Distract repeatedly to add Dazed cards to the player's discard pile."
+}

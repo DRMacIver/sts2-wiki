@@ -1,0 +1,39 @@
+{
+  "class_name": "Comet",
+  "title": "Comet",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 33,
+      "upgraded_value": 44
+    },
+    {
+      "type": "Weak",
+      "base_value": 3
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 3
+    }
+  ],
+  "description": "Deal 33 damage.\nApply 3 [gold]Weak[/gold].\nApply 3 [gold]Vulnerable[/gold].",
+  "star_cost": 5,
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

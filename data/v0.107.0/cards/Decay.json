@@ -1,0 +1,18 @@
+{
+  "class_name": "Decay",
+  "title": "Decay",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 2
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], take 2 damage.",
+  "x_cost": false
+}
