@@ -1,0 +1,18 @@
+{
+  "class_name": "EscapePlan",
+  "title": "Escape Plan",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Draw 1 card.\nIf you draw a Skill, gain 3 [gold]Block[/gold]."
+}

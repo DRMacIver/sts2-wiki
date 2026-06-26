@@ -1,0 +1,9 @@
+{
+  "class_name": "ShacklingPotion",
+  "title": "Shackling Potion",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AllEnemies",
+  "description": "ALL enemies lose [blue]7[/blue] [gold]Strength[/gold] this turn.",
+  "notes": "Combat-only potion that applies a strength debuff to all enemies."
+}

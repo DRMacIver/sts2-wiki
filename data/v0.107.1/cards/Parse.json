@@ -1,0 +1,19 @@
+{
+  "class_name": "Parse",
+  "title": "Parse",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Draw 3 cards.",
+  "x_cost": false
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "Eidolon",
+  "title": "Eidolon",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nIf 9 cards were [gold]Exhausted[/gold] this way, gain 1 [gold]Intangible[/gold].",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "IntangiblePower",
+      "title": "Intangible",
+      "slug": "intangible"
+    }
+  ]
+}

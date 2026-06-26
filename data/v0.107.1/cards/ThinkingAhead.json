@@ -1,0 +1,18 @@
+{
+  "class_name": "ThinkingAhead",
+  "title": "Thinking Ahead",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2
+    }
+  ],
+  "description": "Draw 2 cards.\nPut 1 card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "x_cost": false
+}

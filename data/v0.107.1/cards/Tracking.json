@@ -1,0 +1,21 @@
+{
+  "class_name": "Tracking",
+  "title": "Tracking",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Weak[/gold] enemies take double damage from Attacks.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "TrackingPower",
+      "title": "Tracking",
+      "slug": "tracking"
+    }
+  ],
+  "notes": "Applies 2 stacks of Tracking Power when played, or 1 additional stack if already has the power."
+}

@@ -1,0 +1,10 @@
+{
+  "class_name": "GlobeHeadNormal",
+  "title": "A Lone Globe Head",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["GlobeHead"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Encounters a single GlobeHead monster with Galvanized affliction mechanics."
+}

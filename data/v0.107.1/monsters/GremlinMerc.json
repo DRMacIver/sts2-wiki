@@ -1,0 +1,69 @@
+{
+  "class_name": "GremlinMerc",
+  "title": "Gremlin Merc",
+  "min_hp": 51,
+  "max_hp": 53,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "GIMME_MOVE",
+      "title": "Gimme",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "2 hits",
+        "Steal from each player"
+      ]
+    },
+    {
+      "id": "DOUBLE_SMASH_MOVE",
+      "title": "Double Smash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "2 hits",
+        "Apply 2 Weak to all players",
+        "Steal from each player"
+      ]
+    },
+    {
+      "id": "HEHE_MOVE",
+      "title": "Hehe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 2 Strength to self",
+        "Steal from each player"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Gimme → Double Smash → Hehe",
+  "powers_on_spawn": [
+    "Surprise",
+    "Thievery"
+  ],
+  "notes": "Applies Thievery power to each player on spawn. Every move triggers Steal() on all active Thievery instances, enabling the monster to steal resources from players throughout combat."
+}

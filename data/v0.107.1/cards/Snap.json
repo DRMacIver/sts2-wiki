@@ -1,0 +1,21 @@
+{
+  "class_name": "Snap",
+  "title": "Snap",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 7 damage.\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
+  "upgraded_description": "[gold]Osty[/gold] deals 10 damage.\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Requires Osty to be present. Uses Osty's attack damage instead of player damage. Adds the Retain keyword to a selected card in hand."
+}

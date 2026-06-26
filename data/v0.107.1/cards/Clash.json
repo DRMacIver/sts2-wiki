@@ -1,0 +1,22 @@
+{
+  "class_name": "Clash",
+  "title": "Clash",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 18
+    }
+  ],
+  "description": "Can only be played if every card in your [gold]Hand[/gold] is an Attack.\nDeal 14 damage.",
+  "upgraded_description": "Can only be played if every card in your [gold]Hand[/gold] is an Attack.\nDeal 18 damage.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Can only be played if every card in your hand is an Attack. This condition is checked by the IsPlayable property and enables the gold glow when playable."
+}

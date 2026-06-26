@@ -1,0 +1,19 @@
+{
+  "class_name": "HelixDrill",
+  "title": "Helix Drill",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 3 damage for each 1 Energy previously spent this turn. (Hits vary based on energy spent.)",
+  "notes": "Hit count is dynamically calculated based on the total energy spent this turn, excluding this card's cost. The card scales in damage output with energy expenditure, potentially dealing significant damage when played after other high-cost actions."
+}

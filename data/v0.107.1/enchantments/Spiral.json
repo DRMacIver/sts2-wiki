@@ -1,0 +1,21 @@
+{
+  "class_name": "Spiral",
+  "title": "Spiral",
+  "description": "This card gains [gold]Replay[/gold] [blue]1[/blue].",
+  "card_type": "Any",
+  "restrictions": [
+    "Basic rarity only",
+    "Must have Strike or Defend tag"
+  ],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "SpiralingWhirlpool",
+      "title": "Spiraling Whirlpool",
+      "amount": 1
+    }
+  ],
+  "notes": "Increases the enchanted card's play count by 1, giving it Replay 1 (the card replays once each time it is played)."
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "Bash",
+  "title": "Bash",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Basic",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 8 damage.\nApply 2 [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

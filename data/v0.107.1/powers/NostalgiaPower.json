@@ -1,0 +1,8 @@
+{
+  "class_name": "NostalgiaPower",
+  "title": "Nostalgia",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first Attack or Skill you play each turn is placed on top of your [gold]Draw Pile[/gold].",
+  "smart_description": "The first {Amount:plural:Attack or Skill|{} Attacks or Skills} you play each turn {Amount:plural:is|are} placed on top of your [gold]Draw Pile[/gold]."
+}

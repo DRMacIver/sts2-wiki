@@ -1,0 +1,8 @@
+{
+  "class_name": "SwordOfStone",
+  "title": "Sword of Stone",
+  "rarity": "Event",
+  "description": "Transforms into a powerful [gold]Relic[/gold] after defeating [blue]5[/blue] [gold]Elites[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic displays a counter tracking elite defeats. After defeating 5 elites in combat, it automatically transforms into Sword of Jade."
+}

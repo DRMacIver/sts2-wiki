@@ -1,0 +1,7 @@
+{
+  "class_name": "ConquerorPower",
+  "title": "Conqueror",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "[gold]Sovereign Blade[/gold] deals double damage to the enemy this turn."
+}

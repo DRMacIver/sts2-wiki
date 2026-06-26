@@ -1,0 +1,9 @@
+{
+  "class_name": "FocusPower",
+  "title": "Focus",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Increases the effectiveness of Orbs.",
+  "smart_description": "{Amount:cond:<0?Decreases|Increases} the effectiveness of Orbs by [blue]{Amount:abs()}[/blue].",
+  "notes": "This power can have negative stacks (AllowNegative: true). It modifies the value of player Orbs by the Amount — if Focus has a negative stack, Orbs become less effective."
+}

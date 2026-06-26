@@ -1,0 +1,8 @@
+{
+  "class_name": "PowerCell",
+  "title": "Power Cell",
+  "rarity": "Rare",
+  "description": "At the start of each combat, add [blue]2[/blue] zero-cost cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This effect only triggers on Turn 1 or earlier of the first turn. It selects zero-cost cards from the Draw Pile and adds them directly to your Hand at combat start."
+}

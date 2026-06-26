@@ -1,0 +1,22 @@
+{
+  "class_name": "Rattle",
+  "title": "Rattle",
+  "character": "Token",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 7 damage. Hits an additional time for each other time he has attacked this turn.",
+  "upgraded_description": "[gold]Osty[/gold] deals 9 damage. Hits an additional time for each other time he has attacked this turn.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Hit count is calculated as 1 + (number of times Osty has attacked this turn). This means if Osty has already attacked once this turn, Rattle will hit twice; if twice, it will hit three times, etc."
+}

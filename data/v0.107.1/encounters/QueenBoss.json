@@ -1,0 +1,10 @@
+{
+  "class_name": "QueenBoss",
+  "title": "Queen",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": ["TorchHeadAmalgam", "Queen"],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "Final boss encounter with custom scene and music."
+}

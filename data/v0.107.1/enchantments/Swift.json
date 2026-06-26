@@ -1,0 +1,31 @@
+{
+  "class_name": "Swift",
+  "title": "Swift",
+  "description": "The first time you play this card, draw [blue]1-3[/blue] cards.",
+  "extra_card_text": "Draw 1-3 cards the first time this is played.",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "WingCharm",
+      "title": "Wing Charm",
+      "amount": 1
+    },
+    {
+      "type": "event",
+      "class_name": "SelfHelpBook",
+      "title": "Self-Help Book",
+      "amount": 2
+    },
+    {
+      "type": "relic",
+      "class_name": "BeautifulBracelet",
+      "title": "Beautiful Bracelet",
+      "amount": 3
+    }
+  ],
+  "notes": "The enchantment triggers only once per card play sequence — after drawing on the first play, the status is set to Disabled, preventing further triggers."
+}

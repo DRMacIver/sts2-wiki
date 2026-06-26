@@ -1,0 +1,10 @@
+{
+  "class_name": "CorpseSlugsWeak",
+  "title": "Corpse Slugs",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["CorpseSlug", "CorpseSlug"],
+  "total_monsters": 2,
+  "tags": ["Slugs"],
+  "notes": "Two corpse slugs spawn, each starting with different moves to add variety to the encounter."
+}

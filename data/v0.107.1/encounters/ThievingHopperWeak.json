@@ -1,0 +1,9 @@
+{
+  "class_name": "ThievingHopperWeak",
+  "title": "Thieving Hopper",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["ThievingHopper"],
+  "total_monsters": 1,
+  "tags": ["Thieves"]
+}

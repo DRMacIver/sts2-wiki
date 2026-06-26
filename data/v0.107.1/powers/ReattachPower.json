@@ -1,0 +1,9 @@
+{
+  "class_name": "ReattachPower",
+  "title": "Reattach",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "If other segments are still alive, revives in [blue]2[/blue] turns with [blue]25[/blue] HP.",
+  "smart_description": "If other segments are still alive, revives in [blue]2[/blue] turns with [blue]25[/blue] HP.",
+  "notes": "Owner cannot be hit while reviving. Power persists after death to enable revival if other segments remain alive. Only triggers fatal when all other segments are dead."
+}

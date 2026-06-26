@@ -1,0 +1,20 @@
+{
+  "class_name": "Hellraiser",
+  "title": "Hellraiser",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you draw a card containing \"Strike\", it is played against a random enemy.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "HellraiserPower",
+      "title": "Hellraiser",
+      "slug": "hellraiser"
+    }
+  ]
+}

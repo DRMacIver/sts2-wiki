@@ -1,0 +1,24 @@
+{
+  "class_name": "DrainPower",
+  "title": "Drain Power",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 12
+    },
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 10 damage.\n[gold]Upgrade[/gold] 2 random cards in your [gold]Discard Pile[/gold].",
+  "notes": "Upgrades random cards from your discard pile when played."
+}

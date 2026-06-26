@@ -1,0 +1,26 @@
+{
+  "class_name": "DeadlyPoison",
+  "title": "Deadly Poison",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Poison",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Apply 5 [gold]Poison[/gold].",
+  "upgraded_description": "Apply 7 [gold]Poison[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "BattleTrance",
+  "title": "Battle Trance",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Draw 3 cards.\nYou cannot draw additional cards this turn.",
+  "upgraded_description": "Draw 4 cards.\nYou cannot draw additional cards this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "NoDrawPower",
+      "title": "No Draw",
+      "slug": "no-draw"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "DanseMacabrePower",
+  "title": "Danse Macabre",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card that costs [blue]2[/blue] Energy or more, gain [blue]7[/blue] [gold]Block[/gold].",
+  "smart_description": "Whenever you play a card that costs [blue]2[/blue] Energy or more, gain [blue]7[/blue] [gold]Block[/gold]."
+}

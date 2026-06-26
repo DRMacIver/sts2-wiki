@@ -1,0 +1,20 @@
+{
+  "class_name": "Barricade",
+  "title": "Barricade",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Block[/gold] is not removed at the start of your turn.",
+  "upgraded_cost": 2,
+  "referenced_powers": [
+    {
+      "class_name": "BarricadePower",
+      "title": "Barricade",
+      "slug": "barricade"
+    }
+  ]
+}

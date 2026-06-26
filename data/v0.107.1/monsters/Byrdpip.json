@@ -1,0 +1,18 @@
+{
+  "class_name": "Byrdpip",
+  "title": "Byrdpip",
+  "min_hp": 9999,
+  "max_hp": 9999,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Loops on Nothing indefinitely — the companion takes no actions.",
+  "powers_on_spawn": [],
+  "notes": "Byrdpip is a pet companion with no visible health bar and 9999 HP. It takes no actions during combat. Its appearance (skin) is determined by the Byrdpip relic equipped by the player."
+}

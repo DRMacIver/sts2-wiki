@@ -1,0 +1,16 @@
+{
+  "class_name": "KnightsElite",
+  "title": "Knight Gang",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": [
+    "FlailKnight",
+    "SpectralKnight",
+    "MagiKnight"
+  ],
+  "total_monsters": 3,
+  "tags": [
+    "Knights"
+  ],
+  "notes": "Features custom scene rendering with adjusted camera scaling (0.87x) and offset. Contains Hexed affliction overlay asset."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "IntangiblePower",
+  "title": "Intangible",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Reduce all damage taken and HP loss to 1 this turn.",
+  "smart_description": "Reduce all damage taken and HP loss to 1. Lasts for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "notes": "This power acts as a damage cap, limiting all damage taken to exactly 1 per hit. It also reduces HP loss to 1. Decrements by 1 at the end of each enemy turn."
+}

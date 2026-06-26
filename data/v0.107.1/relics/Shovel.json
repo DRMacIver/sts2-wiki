@@ -1,0 +1,8 @@
+{
+  "class_name": "Shovel",
+  "title": "Shovel",
+  "rarity": "Rare",
+  "description": "You can now dig at [gold]Rest Sites[/gold] to obtain a random [gold]Relic[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Only available before Act 3 treasure chest. Adds a dig option at rest sites."
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "ColdSnap",
+  "title": "Cold Snap",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 6 damage.\n[gold]Channel[/gold] 1 [gold]Frost[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Channels 1 Frost orb when played."
+}

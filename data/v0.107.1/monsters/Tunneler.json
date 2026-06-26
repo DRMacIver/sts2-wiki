@@ -1,0 +1,58 @@
+{
+  "class_name": "Tunneler",
+  "title": "Tunneler",
+  "min_hp": 92,
+  "max_hp": 92,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    },
+    {
+      "id": "BURROW_MOVE",
+      "title": "Burrow",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block",
+          "amount": 37
+        }
+      ],
+      "effects": ["Apply 1 Burrowed", "Gain 37 Block"]
+    },
+    {
+      "id": "BELOW_MOVE",
+      "title": "Attack from Below",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 26
+        }
+      ],
+      "effects": ["Deal 26 damage"]
+    },
+    {
+      "id": "DIZZY_MOVE",
+      "title": "Still Dizzy",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Opens with Bite. Then cycles: Burrow → Attack from Below (repeats). When stunned, transitions to Still Dizzy to clear the stun and return to the start of the cycle.",
+  "powers_on_spawn": [],
+  "notes": "Tunneler gains the Burrowed power during Burrow, which provides Block and changes the monster's appearance and animations. Still Dizzy is a hidden move (not shown in bestiary) triggered when the monster is stunned; it clears the stun status and plays a wake-up animation. Attack from Below is performed from a hidden state with special visual positioning effects."
+}

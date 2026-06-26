@@ -1,0 +1,13 @@
+{
+  "class_name": "Entrench",
+  "title": "Entrench",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Double your [gold]Block[/gold].",
+  "upgraded_cost": 1
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "ShipInABottle",
+  "title": "Ship in a Bottle",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "Grants [10] block and applies block for the next turn.",
+  "notes": "Applies BlockNextTurnPower for sustained block generation across consecutive turns. This potion can only be used during combat encounters."
+}

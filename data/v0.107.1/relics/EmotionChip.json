@@ -1,0 +1,8 @@
+{
+  "class_name": "EmotionChip",
+  "title": "Emotion Chip",
+  "rarity": "Rare",
+  "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Activates when the player receives unblocked damage. At the start of the next turn, if damage was taken, triggers the passive ability of every Orb in the orb queue sequentially."
+}

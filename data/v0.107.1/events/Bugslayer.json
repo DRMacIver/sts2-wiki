@@ -1,0 +1,31 @@
+{
+  "class_name": "Bugslayer",
+  "title": "Bugslayer",
+  "description": "As you're fending off a [jitter][red]swarm of aggressive insects[/red][/jitter] you suddenly notice a [gold]Mighty Rugged Warrior-Man[/gold] fighting beside you this whole time!\n\nThe insects, sensing defeat, scatter. You turn to your fellow fighter.\n\u201cWould you like any tips on exterminating these pests?\u201d\n\nHow polite. You nod and accept his offer.",
+  "options": [
+    {
+      "title": "Learn Extermination Technique",
+      "description": "Add [gold]Exterminate[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Learn Squash Technique",
+      "description": "Add [gold]Squash[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "This event offers a straightforward choice between two event-exclusive attack cards. [gold]Exterminate[/gold] is a multi-hit attack dealing damage to all enemies, while [gold]Squash[/gold] is a single-target attack that also applies [gold]Vulnerable[/gold]. Both cards are immediately added to your deck upon selection.",
+  "card_refs": [
+    {
+      "class_name": "Exterminate",
+      "title": "Exterminate",
+      "slug": "exterminate"
+    },
+    {
+      "class_name": "Squash",
+      "title": "Squash",
+      "slug": "squash"
+    }
+  ],
+  "relic_refs": []
+}

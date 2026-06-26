@@ -1,0 +1,7 @@
+{
+  "class_name": "FanOfKnivesPower",
+  "title": "Fan of Knives",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "[gold]Shivs[/gold] hit ALL enemies."
+}

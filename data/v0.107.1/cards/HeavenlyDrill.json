@@ -1,0 +1,24 @@
+{
+  "class_name": "HeavenlyDrill",
+  "title": "Heavenly Drill",
+  "character": "Ironclad",
+  "energy_cost": -1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Energy",
+      "base_value": 4
+    }
+  ],
+  "description": "Deal 8 damage X times.\nDouble X if it's 4 or more.",
+  "upgraded_description": "Deal 10 damage X times.\nDouble X if it's 4 or more.",
+  "x_cost": true
+}

@@ -1,0 +1,19 @@
+{
+  "class_name": "Folly",
+  "title": "Folly",
+  "character": "Curse",
+  "energy_cost": -2,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": [
+    "Unplayable",
+    "Eternal",
+    "Innate",
+    "Ethereal"
+  ],
+  "vars": [],
+  "description": "",
+  "x_cost": false,
+  "notes": "Cannot be upgraded (MaxUpgradeLevel = 0)"
+}

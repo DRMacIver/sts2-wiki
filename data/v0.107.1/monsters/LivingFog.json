@@ -1,0 +1,59 @@
+{
+  "class_name": "LivingFog",
+  "title": "Living Fog",
+  "min_hp": 82,
+  "max_hp": 82,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ADVANCED_GAS",
+      "title": "Advanced Gas",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Smoggy Power"
+      ]
+    },
+    {
+      "id": "BLOAT",
+      "title": "Bloat",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        },
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Summon 1 GasBomb",
+        "Deal 6 damage"
+      ]
+    },
+    {
+      "id": "SUPER_GAS_BLAST",
+      "title": "Super Gas Blast",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Advanced Gas, then cycles between Bloat and Super Gas Blast",
+  "powers_on_spawn": [],
+  "notes": "Living Fog summons GasBomb minions during the Bloat attack. The Bloat amount can increase during combat if the encounter mechanics modify the _bloatAmount field."
+}

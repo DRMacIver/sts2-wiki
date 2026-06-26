@@ -1,0 +1,23 @@
+{
+  "class_name": "Nightmare",
+  "title": "Nightmare",
+  "character": "Silent",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [
+    "Exhaust"
+  ],
+  "vars": [],
+  "description": "Choose a card.\nNext turn, add 3 copies of that card into your [gold]Hand[/gold].",
+  "upgraded_cost": 2,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "NightmarePower",
+      "title": "Nightmare",
+      "slug": "nightmare-power"
+    }
+  ]
+}

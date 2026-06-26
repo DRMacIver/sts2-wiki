@@ -1,0 +1,24 @@
+{
+  "class_name": "PommelStrike",
+  "title": "Pommel Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Strike"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 9 damage.\nDraw 1 card.",
+  "upgraded_description": "Deal 10 damage.\nDraw 2 cards."
+}

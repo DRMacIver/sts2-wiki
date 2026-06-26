@@ -1,0 +1,7 @@
+{
+  "class_name": "MasterPlannerPower",
+  "title": "Master Planner",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When you play a Skill, it gains [gold]Sly[/gold]."
+}

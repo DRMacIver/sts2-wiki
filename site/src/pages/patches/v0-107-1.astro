@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Patch v0.107.1">
+  <div class="page-header">
+    <h1>v0.107.1 Main-Branch Update</h1>
+    <p class="subtitle">Changes from v0.107.0 &rarr; v0.107.1 &mdash; derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <p class="desc-text">
+      v0.107.1 is Mega Crit's second major <strong>main-branch</strong> release &mdash; "4 patches in 1" that
+      promotes the entire beta line to the default branch. Because this wiki already tracked the beta builds
+      (<a href={`${base}patches/v0-105-1/`}>v0.105.1</a> and
+      <a href={`${base}patches/v0-107-0/`}>v0.107.0</a>), almost all of the content and balance changes in the
+      official notes &mdash; the new <a href={`${base}monsters/aeonglass/`}>Aeonglass</a> Act 3 boss replacing
+      Doormaker, the reworked <a href={`${base}monsters/infested-prism/`}>Infested Prism</a>, the
+      <a href={`${base}cards/scare/`}>Scare</a> rework, and dozens of card tweaks &mdash; were already present
+      in the wiki's data. A field-by-field diff of the decompiled game data between v0.107.0 and v0.107.1 shows
+      <strong>no balance or content changes</strong>: identical cards, monsters, relics, potions, powers,
+      events, and encounters.
+    </p>
+
+    <p class="desc-text">
+      The one change that genuinely affects gameplay for <em>everyone</em> &mdash; and the headline item in the
+      data &mdash; is the <strong>RNG rework</strong>. Two features that are new to all players this patch
+      (<strong>Steam Workshop</strong> support and the <strong>Bestiary</strong>) are engine/UI features with no
+      representation in the entity data this wiki extracts.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- RNG REWORK                      -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="rng" style="margin-top: 2rem;">RNG Rework</h2>
+
+    <p class="desc-text">
+      Each run drives several independent pseudo-random number generators (deck draw, combat rewards, event
+      choices, etc.), each seeded from the run seed. The old seeding strategy left those generators
+      <strong>correlated</strong>: knowing one outcome (e.g. your first act) let you predict an unrelated one
+      (e.g. the curse from Neow's Bones), halving the effective pool. v0.107.1 replaces the PRNG with the modern
+      <strong>xoshiro256**</strong> algorithm, producing evenly distributed, human-undetectable results.
+    </p>
+
+    <p class="desc-text">
+      In the decompiled source this shows up as RNG construction being centralised: per-relic seed arithmetic
+      like <code>new Rng((uint)(RunState.Rng.Seed + NetId + GetDeterministicHashCode("FurCoat")))</code> is
+      replaced by <code>new Rng(base.Owner, base.Id)</code>. It changes which outcomes a given seed produces, but
+      not any card, relic, or enemy stats. The beta-fix notes also call out fewer cases of daily runs diverging
+      based on a player's network ID.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- NEW FEATURES                    -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="features" style="margin-top: 2rem;">New Features (not data-visible)</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Feature</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Steam Workshop</strong></td>
+          <td>Official Workshop support &mdash; browse and install mods directly, auto-synced across devices. The integrated mod loader has existed since launch; this exposes it.</td>
+        </tr>
+        <tr>
+          <td><strong>The Bestiary</strong></td>
+          <td>New Compendium screen listing encountered monsters with their moves and animations. More stats and lore planned.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ALREADY DOCUMENTED              -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="already-documented" style="margin-top: 2rem;">Already in the Wiki</h2>
+
+    <p class="desc-text">
+      The official v0.107.1 notes are a consolidation of the beta patches. The balance and content changes they
+      list were extracted into this wiki as they landed during the beta. See the corresponding patch pages for
+      the data-level detail:
+    </p>
+
+    <ul class="desc-text">
+      <li>
+        <a href={`${base}patches/v0-107-0/`}>v0.107.0</a> &mdash; Scare replaces Follow Through, Predator to
+        Common, Shatter and Astral Pulse reworks, Ebb removed / Tainted added, Infested Prism nerf, and many
+        card stat changes.
+      </li>
+      <li>
+        <a href={`${base}patches/v0-105-1/`}>v0.105.1</a> &mdash; Doormaker boss replaced by Aeonglass,
+        Conflagration and Drum of Battle reworks, Regent block nerfs, three new Ancient (Neow) relics, Axebot
+        encounter reduced to a single bot.
+      </li>
+    </ul>
+
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 1rem;">
+      Beyond the RNG rework, v0.107.1's own contribution over v0.107.0 is non-data: bug fixes, crash fixes,
+      multiplayer state-divergence fixes, controller-navigation polish, new art/audio, and additional
+      translations. None of these alter the extracted entity stats, so they are not itemised here.
+    </p>
+
+  </div>
+</BaseLayout>

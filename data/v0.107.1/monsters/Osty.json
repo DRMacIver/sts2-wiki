@@ -1,0 +1,18 @@
+{
+  "class_name": "Osty",
+  "title": "Osty",
+  "min_hp": 1,
+  "max_hp": 1,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Does nothing every turn.",
+  "powers_on_spawn": [],
+  "notes": "Osty is a companion creature (pet) with 1 HP. Has no health bar visibility unless alive. Can have a 'revive' animation state suggesting it can be brought back to life. Belongs to the player."
+}

@@ -1,0 +1,16 @@
+{
+  "class_name": "Enlightenment",
+  "title": "Enlightenment",
+  "character": "Event",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": [
+    "Exhaust"
+  ],
+  "vars": [],
+  "description": "Reduce the cost of ALL cards in your [gold]Hand[/gold] to 1 this turn.",
+  "upgraded_description": "Reduce the cost of ALL cards in your [gold]Hand[/gold] to 1 this combat.",
+  "x_cost": false
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "Deflect",
+  "title": "Deflect",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 4,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Gain 4 [gold]Block[/gold].",
+  "upgraded_description": "Gain 7 [gold]Block[/gold].",
+  "x_cost": false
+}

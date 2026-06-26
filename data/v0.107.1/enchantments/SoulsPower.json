@@ -1,0 +1,20 @@
+{
+  "class_name": "SoulsPower",
+  "title": "Soul's Power",
+  "description": "This card loses Exhaust.",
+  "card_type": "Any",
+  "restrictions": [
+    "Card must have Exhaust keyword"
+  ],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "GraveOfTheForgotten",
+      "title": "Grave of the Forgotten",
+      "amount": 1
+    }
+  ],
+  "notes": "When enchanted, the card loses its Exhaust keyword, allowing it to be played multiple times per combat."
+}

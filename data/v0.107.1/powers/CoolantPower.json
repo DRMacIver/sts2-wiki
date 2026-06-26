@@ -1,0 +1,8 @@
+{
+  "class_name": "CoolantPower",
+  "title": "Coolant",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, gain [blue]3[/blue] [gold]Block[/gold] for each unique Orb you have.",
+  "smart_description": "At the start of your turn, gain [blue]3[/blue] [gold]Block[/gold] for each unique Orb you have."
+}

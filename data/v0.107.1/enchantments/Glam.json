@@ -1,0 +1,24 @@
+{
+  "class_name": "Glam",
+  "title": "Glam",
+  "description": "This card has [gold]Replay[/gold] once per combat.",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "SilkenTress",
+      "title": "Silken Tress",
+      "amount": 1
+    },
+    {
+      "type": "relic",
+      "class_name": "Glitter",
+      "title": "Glitter",
+      "amount": 1
+    }
+  ],
+  "notes": "Enchanted card can be replayed once per combat. After being played once, the enchantment becomes disabled for the rest of the combat."
+}

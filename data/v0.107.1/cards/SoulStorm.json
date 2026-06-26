@@ -1,0 +1,23 @@
+{
+  "class_name": "SoulStorm",
+  "title": "Soul Storm",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9
+    },
+    {
+      "type": "ExtraDamage",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 9 damage.\nDeals 2 additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
+  "x_cost": false
+}

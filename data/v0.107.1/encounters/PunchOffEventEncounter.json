@@ -1,0 +1,10 @@
+{
+  "class_name": "PunchOffEventEncounter",
+  "title": "Punch Constructs",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["PunchConstruct"],
+  "total_monsters": 2,
+  "tags": [],
+  "notes": "One PunchConstruct starts with FastPunch ability. Both constructs spawn with randomized starting HP reductions (2-10 range)."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "PoisonPower",
+  "title": "Poison",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by [blue]1[/blue].",
+  "smart_description": "At the start of the poisoned creature's turn, it loses [blue]Poison[/blue] HP, then [gold]Poison[/gold] is reduced by [blue]1[/blue]."
+}

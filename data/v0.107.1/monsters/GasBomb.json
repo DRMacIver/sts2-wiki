@@ -1,0 +1,28 @@
+{
+  "class_name": "GasBomb",
+  "title": "Gas Bomb",
+  "min_hp": 8,
+  "max_hp": 8,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EXPLODE_MOVE",
+      "title": "Explode",
+      "intents": [
+        {
+          "type": "death_blow",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Die"
+      ]
+    }
+  ],
+  "move_pattern": "Uses Explode once, then dies",
+  "powers_on_spawn": [
+    "Minion"
+  ],
+  "notes": "Gas Bomb is a minion enemy that immediately explodes when attacking, dealing 9 damage to the player before dying. It has only one move available."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "Fortifier",
+  "title": "Fortifier",
+  "rarity": "Uncommon",
+  "usage": "Drink",
+  "target": "AnyPlayer",
+  "description": "Triple your [gold]Block[/gold]."
+}

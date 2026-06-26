@@ -1,0 +1,41 @@
+{
+  "class_name": "GammaBlast",
+  "title": "Gamma Blast",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 18
+    },
+    {
+      "type": "Weak",
+      "base_value": 2
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 13 damage.\nApply 2 [gold]Weak[/gold].\nApply 2 [gold]Vulnerable[/gold].",
+  "upgraded_description": "Deal 18 damage.\nApply 2 [gold]Weak[/gold].\nApply 2 [gold]Vulnerable[/gold].",
+  "star_cost": 3,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

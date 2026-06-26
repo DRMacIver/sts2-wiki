@@ -1,0 +1,20 @@
+{
+  "class_name": "JackOfAllTrades",
+  "title": "Jack of All Trades",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Add 1 random Colorless card into your [gold]Hand[/gold].",
+  "upgraded_description": "Add 2 random Colorless cards into your [gold]Hand[/gold].",
+  "x_cost": false
+}

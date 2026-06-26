@@ -1,0 +1,26 @@
+{
+  "class_name": "GuidingStar",
+  "title": "Guiding Star",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12,
+      "upgraded_value": 13
+    },
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 12 damage.\nDraw 2 cards.",
+  "upgraded_description": "Deal 13 damage.\nDraw 3 cards.",
+  "x_cost": false,
+  "star_cost": 2
+}

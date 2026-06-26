@@ -1,0 +1,26 @@
+{
+  "class_name": "Storm",
+  "title": "Storm",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Whenever you play a Power, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
+  "upgraded_description": "Whenever you play a Power, [gold]Channel[/gold] 2 [gold]Lightning[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "StormPower",
+      "title": "Storm",
+      "slug": "storm"
+    }
+  ]
+}

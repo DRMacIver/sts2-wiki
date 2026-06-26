@@ -1,0 +1,8 @@
+{
+  "class_name": "VitalSparkPower",
+  "title": "Vital Spark",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "ALL [gold]Skills[/gold] are [gold]Tainted[/gold] [blue]2[/blue].",
+  "smart_description": "ALL [gold]Skills[/gold] are [gold]Tainted[/gold] [blue]2[/blue]."
+}

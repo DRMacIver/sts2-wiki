@@ -1,0 +1,8 @@
+{
+  "class_name": "ViciousPower",
+  "title": "Vicious",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you apply [gold]Vulnerable[/gold], draw [blue]1[/blue] card.",
+  "smart_description": "Whenever you apply [gold]Vulnerable[/gold], draw [blue]1[/blue] card."
+}

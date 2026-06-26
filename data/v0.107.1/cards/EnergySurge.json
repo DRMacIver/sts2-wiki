@@ -1,0 +1,20 @@
+{
+  "class_name": "EnergySurge",
+  "title": "Energy Surge",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllAllies",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "ALL players gain 2 Energy.",
+  "x_cost": false,
+  "notes": "Multiplayer-only card."
+}

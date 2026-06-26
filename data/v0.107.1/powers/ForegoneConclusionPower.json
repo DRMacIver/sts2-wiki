@@ -1,0 +1,8 @@
+{
+  "class_name": "ForegoneConclusionPower",
+  "title": "Foregone Conclusion",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Next turn, put [blue]3[/blue] cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
+  "smart_description": "Next turn, put [blue]{Amount}[/blue] cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold]."
+}

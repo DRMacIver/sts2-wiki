@@ -1,0 +1,25 @@
+{
+  "class_name": "SpoilsOfBattle",
+  "title": "Spoils of Battle",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 5,
+      "upgraded_value": 8
+    },
+    {
+      "type": "Cards",
+      "base_value": 2
+    }
+  ],
+  "description": "[gold]Forge[/gold] 5.\nDraw 2 cards.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Upgrade increases Forge value from 5 to 8."
+}

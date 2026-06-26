@@ -1,0 +1,9 @@
+{
+  "class_name": "ShrinkerBeetleWeak",
+  "title": "Shrinker Beetle",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["ShrinkerBeetle"],
+  "total_monsters": 1,
+  "tags": ["Shrinker"]
+}

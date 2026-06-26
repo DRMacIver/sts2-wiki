@@ -1,0 +1,19 @@
+{
+  "class_name": "Imbued",
+  "title": "Imbued",
+  "description": "This card is played automatically at the start of each combat.",
+  "extra_card_text": "Imbued.",
+  "card_type": "Skill",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "ElectricShrymp",
+      "title": "Electric Shrymp",
+      "amount": 1
+    }
+  ],
+  "notes": "The enchanted card is placed at the bottom of the draw pile and will be automatically played at the start of turn 1 of each combat."
+}

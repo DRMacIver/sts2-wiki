@@ -1,0 +1,22 @@
+{
+  "class_name": "Thrash",
+  "title": "Thrash",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Deal 4 damage twice.\n[gold]Exhaust[/gold] a random Attack in your [gold]Hand[/gold] and add its damage to this card.",
+  "upgraded_description": "Deal 6 damage twice.\n[gold]Exhaust[/gold] a random Attack in your [gold]Hand[/gold] and add its damage to this card.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Exhausts a random Attack card from your hand and adds its damage to this card's total for the rest of combat."
+}

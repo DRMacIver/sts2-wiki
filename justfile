@@ -7,7 +7,7 @@ sts2_pck := sts2_app / "Contents/Resources/Slay the Spire 2.pck"
 sts2_release := sts2_app / "Contents/Resources/release_info.json"
 
 # Game version (auto-detected or override)
-version := env("STS2_VERSION", "v0.107.0")
+version := env("STS2_VERSION", "v0.107.1")
 
 # Default: full build
 default: check build
@@ -47,7 +47,7 @@ detect-version:
 
 decompile:
     #!/usr/bin/env bash
-    export DOTNET_ROOT="${DOTNET_ROOT:-$(dirname $(dirname $(readlink -f $(which dotnet) 2>/dev/null || echo /opt/homebrew/Cellar/dotnet/10.0.103/libexec/dotnet)))}"
+    export DOTNET_ROOT="${DOTNET_ROOT:-$(dirname $(dirname $(readlink -f $(which dotnet) 2>/dev/null || echo /opt/homebrew/Cellar/dotnet/10.0.107/libexec/dotnet)))}"
     if [ -d "decompiled/{{version}}" ]; then
         echo "Already decompiled: {{version}}"
     else
@@ -198,9 +198,9 @@ build-all-versions:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    VERSIONS="v0.98.2 v0.99.1 v0.100.0 v0.101.0 v0.103.2 v0.105.1 v0.107.0"
-    LATEST="v0.107.0"
-    ALL_VERSIONS="v0.107.0,v0.105.1,v0.103.2,v0.101.0,v0.100.0,v0.99.1,v0.98.2"
+    VERSIONS="v0.98.2 v0.99.1 v0.100.0 v0.101.0 v0.103.2 v0.105.1 v0.107.0 v0.107.1"
+    LATEST="v0.107.1"
+    ALL_VERSIONS="v0.107.1,v0.107.0,v0.105.1,v0.103.2,v0.101.0,v0.100.0,v0.99.1,v0.98.2"
     DIST_FINAL="site/dist-final"
 
     rm -rf "$DIST_FINAL"

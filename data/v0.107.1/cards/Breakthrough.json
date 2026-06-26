@@ -1,0 +1,23 @@
+{
+  "class_name": "Breakthrough",
+  "title": "Breakthrough",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 13
+    },
+    {
+      "type": "HpLoss",
+      "base_value": 1
+    }
+  ],
+  "description": "Lose 1 HP.\nDeal 9 damage to ALL enemies.",
+  "notes": "Sacrifices 1 HP to deal unblockable, unpowered damage to all enemies."
+}

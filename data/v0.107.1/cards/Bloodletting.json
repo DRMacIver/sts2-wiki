@@ -1,0 +1,26 @@
+{
+  "class_name": "Bloodletting",
+  "title": "Bloodletting",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 3
+    },
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Lose 3 HP.\nGain 2 Energy.",
+  "upgraded_description": "Lose 3 HP.\nGain 3 Energy.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Damage dealt is unblockable and unpowered."
+}

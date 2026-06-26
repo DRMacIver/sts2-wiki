@@ -1,0 +1,10 @@
+{
+  "class_name": "AeonglassBoss",
+  "title": "Aeonglass",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": ["Aeonglass"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Boss encounter with custom boss theme and camera adjustments."
+}

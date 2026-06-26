@@ -1,0 +1,8 @@
+{
+  "class_name": "MindRotPower",
+  "title": "Mind Rot",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Draw [blue]1[/blue] fewer card each turn.",
+  "smart_description": "Draw [blue]{Amount}[/blue] fewer {Amount:plural:card|cards} each turn."
+}

@@ -1,0 +1,10 @@
+{
+  "class_name": "FlyconidNormal",
+  "title": "Shroom and Slime",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Flyconid", "LeafSlimeM", "TwigSlimeM"],
+  "total_monsters": 2,
+  "tags": ["Mushroom", "Slimes"],
+  "notes": "Spawns one random medium slime (either LeafSlimeM or TwigSlimeM) alongside a Flyconid."
+}

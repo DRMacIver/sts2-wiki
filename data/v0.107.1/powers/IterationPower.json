@@ -1,0 +1,8 @@
+{
+  "class_name": "IterationPower",
+  "title": "Iteration",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first time you draw a Status each turn, draw more cards.",
+  "smart_description": "The first time you draw a Status each turn, draw [blue]1[/blue] card."
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "Thunderclap",
+  "title": "Thunderclap",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 7
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 4 damage and apply 1 [gold]Vulnerable[/gold] to ALL enemies.",
+  "upgraded_description": "Deal 7 damage and apply 1 [gold]Vulnerable[/gold] to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

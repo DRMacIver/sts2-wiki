@@ -1,0 +1,20 @@
+{
+  "class_name": "Defile",
+  "title": "Defile",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 17
+    }
+  ],
+  "description": "Deal 13 damage.",
+  "x_cost": false,
+  "referenced_powers": []
+}

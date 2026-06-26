@@ -1,0 +1,25 @@
+{
+  "class_name": "Hotfix",
+  "title": "Hotfix",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Focus",
+      "base_value": 2
+    }
+  ],
+  "description": "Gain 2 [gold]Focus[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "FocusPower",
+      "title": "Focus",
+      "slug": "focus-power"
+    }
+  ],
+  "notes": "Upgraded: removes Exhaust keyword."
+}

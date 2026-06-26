@@ -1,0 +1,8 @@
+{
+  "class_name": "ChosenCheese",
+  "title": "The Chosen Cheese",
+  "rarity": "Event",
+  "description": "At the end of combat, gain [blue]your Max HP[/blue].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers at the end of each combat encounter."
+}

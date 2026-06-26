@@ -1,0 +1,8 @@
+{
+  "class_name": "FeralPower",
+  "title": "Feral",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first time you play a 0{energyPrefix:energyIcons(1)} Attack each turn, return it to your [gold]Hand[/gold].",
+  "smart_description": "The first {Amount:plural:time|[blue]{}[/blue] times} you play a 0{energyPrefix:energyIcons(1)} Attack each turn, return it to your [gold]Hand[/gold]."
+}

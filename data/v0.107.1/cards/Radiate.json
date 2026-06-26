@@ -1,0 +1,24 @@
+{
+  "class_name": "Radiate",
+  "title": "Radiate",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Stars",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 3 damage to ALL enemies for each 1 star gained this turn.",
+  "x_cost": false,
+  "referenced_powers": []
+}

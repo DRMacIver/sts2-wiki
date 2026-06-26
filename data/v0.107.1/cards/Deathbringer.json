@@ -1,0 +1,35 @@
+{
+  "class_name": "Deathbringer",
+  "title": "Deathbringer",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Doom",
+      "base_value": 21,
+      "upgraded_value": 26
+    },
+    {
+      "type": "Weak",
+      "base_value": 1
+    }
+  ],
+  "description": "Apply 21 [gold]Doom[/gold] and 1 [gold]Weak[/gold] to ALL enemies.",
+  "upgraded_description": "Apply 26 [gold]Doom[/gold] and 1 [gold]Weak[/gold] to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    },
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    }
+  ]
+}

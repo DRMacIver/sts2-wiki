@@ -1,0 +1,24 @@
+{
+  "class_name": "Severance",
+  "title": "Severance",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 18
+    }
+  ],
+  "description": "Deal 13 damage. Add a [gold]Soul[/gold] into your [gold]Draw Pile[/gold], [gold]Hand[/gold], and [gold]Discard Pile[/gold].",
+  "upgraded_description": "Deal 18 damage. Add a [gold]Soul[/gold] into your [gold]Draw Pile[/gold], [gold]Hand[/gold], and [gold]Discard Pile[/gold].",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "star_cost": null,
+  "referenced_powers": [],
+  "notes": "Adds 3 Soul tokens distributed across different piles (Draw, Discard, Hand)."
+}

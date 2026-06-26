@@ -1,0 +1,23 @@
+{
+  "class_name": "DecisionsDecisions",
+  "title": "Decisions, Decisions",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 5
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3
+    }
+  ],
+  "description": "Draw 3 cards.\nChoose a Skill in your [gold]Hand[/gold] and play it 3 times.",
+  "star_cost": 6
+}

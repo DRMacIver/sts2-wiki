@@ -1,0 +1,33 @@
+{
+  "class_name": "TwigSlimeM",
+  "title": "Twig Slime (M)",
+  "min_hp": 27,
+  "max_hp": 29,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "POKEY_POUNCE_MOVE",
+      "title": "Pokey Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "effects": ["Deal 12 damage"]
+    },
+    {
+      "id": "STICKY_SHOT_MOVE",
+      "title": "Sticky Shot",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Add 1 Slimed to discard"]
+    }
+  ],
+  "move_pattern": "Starts with Sticky Shot, then alternates between Pokey Pounce and Sticky Shot with Sticky Shot unable to repeat consecutively",
+  "powers_on_spawn": [],
+  "notes": "Monster has Phobia Spine Skin (takes 1 less damage from all attacks). Sticky Shot adds Slimed status cards to the player's discard pile."
+}

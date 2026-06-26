@@ -1,0 +1,20 @@
+{
+  "class_name": "Shatter",
+  "title": "Shatter",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": ["Evoke"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Deal 7 damage to ALL enemies.\n[gold]Evoke[/gold] all of your Orbs twice.",
+  "upgraded_description": "Deal 11 damage to ALL enemies.\n[gold]Evoke[/gold] all of your Orbs twice.",
+  "referenced_powers": []
+}

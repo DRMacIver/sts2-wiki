@@ -1,0 +1,8 @@
+{
+  "class_name": "SilkenTress",
+  "title": "Silken Tress",
+  "rarity": "Ancient",
+  "description": "Upon pickup, lose all [gold]Gold[/gold]. [gold]Enchant[/gold] all cards in the first card reward with [purple]Glam[/purple].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Single-use relic. Upon obtaining, immediately loses all of the player's gold. When the first card reward is offered, all eligible cards in that reward are enchanted with Glam, and the relic becomes permanently disabled."
+}

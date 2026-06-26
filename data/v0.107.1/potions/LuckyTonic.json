@@ -1,0 +1,9 @@
+{
+  "class_name": "LuckyTonic",
+  "title": "Lucky Tonic",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]1[/blue] [gold]Buffer[/gold].",
+  "notes": "Applies BufferPower to any player character. Combat use only."
+}

@@ -1,0 +1,55 @@
+{
+  "class_name": "Fabricator",
+  "title": "Fabricator",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FABRICATE_MOVE",
+      "title": "Fabricate",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Spawn a Defensive Bot (Guardbot or Noisebot)",
+        "Spawn an Aggro Bot (Zapbot or Stabbot)"
+      ]
+    },
+    {
+      "id": "FABRICATING_STRIKE_MOVE",
+      "title": "Fabricating Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        },
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Deal 21 damage",
+        "Spawn an Aggro Bot (Zapbot or Stabbot)"
+      ]
+    },
+    {
+      "id": "DISINTEGRATE_MOVE",
+      "title": "Disintegrate",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    }
+  ],
+  "move_pattern": "While the Fabricator has fewer than 4 allies, it randomly alternates between Fabricate and Fabricating Strike. Once 4 allies are present, it only uses Disintegrate.",
+  "powers_on_spawn": [],
+  "notes": "FABRICATING_STRIKE_MOVE is hidden from the Bestiary. The Fabricator has a minion cap - it spawns minions (Zapbot, Stabbot, Guardbot, or Noisebot) until 4 allies are alive, then switches to pure damage with Disintegrate. Each spawned minion receives the Minion power."
+}

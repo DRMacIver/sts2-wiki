@@ -1,0 +1,8 @@
+{
+  "class_name": "SummonNextTurnPower",
+  "title": "Summon Next Turn",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your next turn, [gold]Summon[/gold] [blue]2[/blue].",
+  "smart_description": "At the start of your next turn, [gold]Summon[/gold] [blue]2[/blue]."
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "SapphireSeed",
+  "title": "Sapphire Seed",
+  "description": "You narrowly avoid stepping on a bright, sharp... seed? Its unmistakable color gives away that it's a [aqua]Sapphire Seed[/aqua]! Weren't these incredible seeds supposed to be extinct!?\n\nLegends say that consuming one can greatly [gold]amplify your endurance[/gold], but what if you plant and nourish it instead?",
+  "options": [
+    {
+      "title": "Consume",
+      "description": "Heal [green]9[/green] HP. [gold]Upgrade[/gold] a card in your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Plant and Nourish",
+      "description": "[gold]Enchant[/gold] a card with [purple]Sown[/purple]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "The [purple]Sown[/purple] enchantment can only be applied to cards that are compatible with it. The Plant and Nourish option will display only compatible cards from your deck.",
+  "card_refs": [],
+  "relic_refs": []
+}

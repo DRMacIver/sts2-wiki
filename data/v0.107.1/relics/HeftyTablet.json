@@ -1,0 +1,8 @@
+{
+  "class_name": "HeftyTablet",
+  "title": "Hefty Tablet",
+  "rarity": "Ancient",
+  "description": "Upon pickup, choose [blue]1[/blue] of [blue]3[/blue] Rare cards to add to your [gold]Deck[/gold], and add [blue]1[/blue] [red]Injury[/red] to your [gold]Deck[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Upon obtaining this relic, triggers an interactive choice where you select 1 card from 3 offered Rare cards, then 1 Injury card is automatically added to your deck."
+}

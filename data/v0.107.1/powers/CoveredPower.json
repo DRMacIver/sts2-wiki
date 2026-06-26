@@ -1,0 +1,8 @@
+{
+  "class_name": "CoveredPower",
+  "title": "Covered",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "An ally is covering you. All attacks that would be directed to you are redirected to them instead.",
+  "smart_description": "[gold]{Applier}[/gold] is covering you. All attacks that would be directed to you are redirected to them instead."
+}

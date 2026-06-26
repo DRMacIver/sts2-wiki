@@ -1,0 +1,13 @@
+{
+  "class_name": "ConstructMenagerieNormal",
+  "title": "Construct Menagerie",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "PunchConstruct",
+    "CubexConstruct"
+  ],
+  "total_monsters": 3,
+  "tags": [],
+  "notes": "Spawns 1 Punch Construct and 2 Cubex Constructs"
+}

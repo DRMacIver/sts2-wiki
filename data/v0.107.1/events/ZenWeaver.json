@@ -1,0 +1,32 @@
+{
+  "class_name": "ZenWeaver",
+  "title": "Zen Weaver",
+  "description": "You walk through a spider web and [jitter][red]PANIC[/red][/jitter]!\nBut then, a [sine][blue]wave of calm[/blue][/sine] washes over you...\n\n[sine]\u201cCalm down. I need you to quit fussing up my web.\u201d[/sine]\n\nHow did you calm down so quickly?\nAn [orange]itsy bitsy[/orange] spider abseils down to meet you. It seems willing to impart some techniques for [gold]gold[/gold].",
+  "options": [
+    {
+      "title": "Breathing Techniques",
+      "description": "Pay [red]50[/red] [gold]Gold[/gold]. Add [blue]2[/blue] [gold]Enlightenment[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Emotional Awareness",
+      "description": "Pay [red]125[/red] [gold]Gold[/gold]. Remove [blue]1[/blue] card from your [gold]Deck[/gold].",
+      "requires": "At least 125 Gold"
+    },
+    {
+      "title": "Arachnid Acupuncture",
+      "description": "Pay [red]250[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold].",
+      "requires": "At least 250 Gold"
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": ["At least 125 Gold"],
+  "notes": "This event offers three ways to spend gold to modify your deck. [gold]Breathing Techniques[/gold] is always available and adds enlightenment cards, while the other two options are conditionally locked based on your current gold. Each choice shows a different continuation page with flavor-appropriate descriptions.",
+  "card_refs": [
+    {
+      "class_name": "Enlightenment",
+      "title": "Enlightenment",
+      "slug": "enlightenment"
+    }
+  ],
+  "relic_refs": []
+}

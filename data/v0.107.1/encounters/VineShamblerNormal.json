@@ -1,0 +1,10 @@
+{
+  "class_name": "VineShamblerNormal",
+  "title": "Vine Shambler",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["VineShambler"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "References Entangled affliction overlay, indicating the Vine Shambler applies entanglement effects."
+}

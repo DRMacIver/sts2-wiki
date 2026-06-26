@@ -1,0 +1,26 @@
+{
+  "class_name": "GeneticAlgorithm",
+  "title": "Genetic Algorithm",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 1,
+      "upgraded_value": 1
+    },
+    {
+      "type": "Increase",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Gain 1 [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by 3.",
+  "upgraded_description": "Gain 1 [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by 4.",
+  "referenced_powers": [],
+  "notes": "This card maintains state across the run. Each time it's played, it gains a permanent +Block increase, so future plays grant more Block. Initial block gain is 1, which increases by the Increase value (3/4) with each play."
+}

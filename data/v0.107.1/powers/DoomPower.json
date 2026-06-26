@@ -1,0 +1,8 @@
+{
+  "class_name": "DoomPower",
+  "title": "Doom",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies.",
+  "smart_description": "At the end of the {OnPlayer:player|enemy} turn, if [gold]{OwnerName}[/gold] has [blue]{Amount}[/blue] or less HP, it dies."
+}

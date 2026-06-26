@@ -1,0 +1,23 @@
+{
+  "class_name": "MinionStrike",
+  "title": "Minion Strike",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 6 damage.\nDraw 1 card.",
+  "referenced_powers": []
+}

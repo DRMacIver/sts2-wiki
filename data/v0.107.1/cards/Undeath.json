@@ -1,0 +1,22 @@
+{
+  "class_name": "Undeath",
+  "title": "Undeath",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Gain 7 [gold]Block[/gold].\nAdd a copy of this card into your [gold]Discard Pile[/gold].",
+  "upgraded_description": "Gain 9 [gold]Block[/gold].\nAdd a copy of this card into your [gold]Discard Pile[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Self-duplicating card that creates a copy in the Discard Pile when played. This allows the card to be used multiple times over consecutive turns if the copy is not exhausted."
+}

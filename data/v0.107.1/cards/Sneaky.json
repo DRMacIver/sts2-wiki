@@ -1,0 +1,28 @@
+{
+  "class_name": "Sneaky",
+  "title": "Sneaky",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Whenever another player attacks an enemy, gain 1 [gold]Block[/gold].",
+  "upgraded_description": "Whenever another player attacks an enemy, gain 2 [gold]Block[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "SneakyPower",
+      "title": "Sneaky",
+      "slug": "sneaky"
+    }
+  ],
+  "notes": "Multiplayer only."
+}

@@ -1,0 +1,17 @@
+{
+  "class_name": "BowlbugsNormal",
+  "title": "Bowlbug Swarm",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "BowlbugRock",
+    "BowlbugEgg",
+    "BowlbugSilk",
+    "BowlbugNectar"
+  ],
+  "total_monsters": 3,
+  "tags": [
+    "Workers"
+  ],
+  "notes": "BowlbugRock is always the first monster. Two additional workers are randomly selected from the available worker types (BowlbugEgg, BowlbugSilk, BowlbugNectar), with each worker type appearing at most once per encounter."
+}

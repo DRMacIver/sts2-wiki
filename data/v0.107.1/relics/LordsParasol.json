@@ -1,0 +1,8 @@
+{
+  "class_name": "LordsParasol",
+  "title": "Lord's Parasol",
+  "rarity": "Ancient",
+  "description": "When you encounter the [gold]Merchant[/gold], immediately obtain EVERYTHING he sells.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Automatically triggers when entering a merchant room, purchasing all character cards, colorless cards, relics, and potions without cost."
+}

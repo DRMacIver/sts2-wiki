@@ -1,0 +1,19 @@
+{
+  "class_name": "Corrupted",
+  "title": "Corrupted",
+  "description": "Deal [blue]50%[/blue] more damage, but lose [blue]2[/blue] HP.",
+  "extra_card_text": "Lose 2 HP.",
+  "card_type": "Attack",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "Symbiote",
+      "title": "Symbiote",
+      "amount": 1
+    }
+  ],
+  "notes": "The 50% damage bonus only applies to powered attacks (IsPoweredAttack). The 2 HP loss on play is unblockable and unpowered (does not trigger strength/power effects)."
+}

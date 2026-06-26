@@ -1,0 +1,8 @@
+{
+  "class_name": "FirePotion",
+  "title": "Fire Potion",
+  "rarity": "Common",
+  "usage": "CombatOnly",
+  "target": "AnyEnemy",
+  "description": "Deal [blue]20[/blue] damage."
+}

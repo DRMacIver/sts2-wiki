@@ -1,0 +1,23 @@
+{
+  "class_name": "Fetch",
+  "title": "Fetch",
+  "character": "Osty",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 6
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 3 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+  "notes": "Glows red if Osty is missing. Glows gold if not yet played this turn. The card draw effect only triggers once per turn (on the first play)."
+}

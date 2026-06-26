@@ -1,0 +1,21 @@
+{
+  "class_name": "LunarBlast",
+  "title": "Lunar Blast",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 4 damage for each Skill already played this turn.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Hits once for each Skill card played by the player this turn."
+}

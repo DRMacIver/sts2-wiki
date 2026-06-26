@@ -1,0 +1,13 @@
+{
+  "class_name": "CalculatedGamble",
+  "title": "Calculated Gamble",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Discard your [gold]Hand[/gold],\nthen draw that many cards.",
+  "notes": "Upgrade adds Retain keyword"
+}

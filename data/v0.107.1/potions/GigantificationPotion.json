@@ -1,0 +1,8 @@
+{
+  "class_name": "GigantificationPotion",
+  "title": "Gigantification Potion",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "The next Attack you play deals triple damage."
+}

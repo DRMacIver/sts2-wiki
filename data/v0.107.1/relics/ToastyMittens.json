@@ -1,0 +1,8 @@
+{
+  "class_name": "ToastyMittens",
+  "title": "Toasty Mittens",
+  "rarity": "Ancient",
+  "description": "At the start of your turn, [gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/gold] and gain [blue]1[/blue] [gold]Strength[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "On the first turn of combat, this relic prioritizes exhausting non-Innate cards from your Draw Pile. On subsequent turns, it exhausts from the top of the Draw Pile. Each card exhausted grants 1 Strength."
+}

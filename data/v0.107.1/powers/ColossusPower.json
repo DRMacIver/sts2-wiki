@@ -1,0 +1,9 @@
+{
+  "class_name": "ColossusPower",
+  "title": "Colossus",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies this turn.",
+  "smart_description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies {Amount:plural:this turn|for [blue]{}[/blue] turns}.",
+  "notes": "Damage reduction only applies to powered attacks from enemies with Vulnerable power. The counter decrements at the end of the enemy turn."
+}

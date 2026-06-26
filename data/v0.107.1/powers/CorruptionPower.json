@@ -1,0 +1,8 @@
+{
+  "class_name": "CorruptionPower",
+  "title": "Corruption",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Skills cost [blue]0[/blue].\nWhenever you play a Skill, [gold]Exhaust[/gold] it.",
+  "notes": "This power makes all Skills in your hand cost 0 energy and automatically exhausts them after playing."
+}

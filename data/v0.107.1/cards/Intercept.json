@@ -1,0 +1,27 @@
+{
+  "class_name": "Intercept",
+  "title": "Intercept",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyAlly",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Gain 9 [gold]Block[/gold].\nRedirect all incoming attacks that would be dealt to another player this turn to you.",
+  "upgraded_description": "Gain 13 [gold]Block[/gold].\nRedirect all incoming attacks that would be dealt to another player this turn to you.",
+  "referenced_powers": [
+    {
+      "class_name": "CoveredPower",
+      "title": "Covered",
+      "slug": "covered"
+    }
+  ],
+  "notes": "Multiplayer only. Applies Covered to the targeted ally."
+}

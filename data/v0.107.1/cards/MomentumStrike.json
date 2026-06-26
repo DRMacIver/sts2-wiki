@@ -1,0 +1,19 @@
+{
+  "class_name": "MomentumStrike",
+  "title": "Momentum Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Strike"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Deal 10 damage.\nReduce this card's cost to 0.",
+  "notes": "After playing this card, its cost is set to 0 for the rest of combat (Momentum effect)."
+}

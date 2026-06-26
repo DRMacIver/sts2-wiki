@@ -1,0 +1,8 @@
+{
+  "class_name": "SneckoOil",
+  "title": "Snecko Oil",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Draw [blue]7[/blue] cards. Randomize the cost of cards in your [gold]Hand[/gold] this turn."
+}

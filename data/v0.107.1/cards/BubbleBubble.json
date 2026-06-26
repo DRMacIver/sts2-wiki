@@ -1,0 +1,27 @@
+{
+  "class_name": "BubbleBubble",
+  "title": "Bubble Bubble",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Poison",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "If the enemy has [gold]Poison[/gold], apply 9 [gold]Poison[/gold].",
+  "upgraded_description": "If the enemy has [gold]Poison[/gold], apply 12 [gold]Poison[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

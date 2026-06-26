@@ -1,0 +1,27 @@
+{
+  "class_name": "DarkShackles",
+  "title": "Dark Shackles",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "StrengthLoss",
+      "base_value": 9,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Enemy loses 9 [gold]Strength[/gold] this turn.",
+  "upgraded_description": "Enemy loses 15 [gold]Strength[/gold] this turn.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    }
+  ]
+}

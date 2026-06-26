@@ -1,0 +1,24 @@
+{
+  "class_name": "ShiningStrike",
+  "title": "Shining Strike",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Stars",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 8 damage.\nGain 2 Stars.\nPut this card on top of your [gold]Draw Pile[/gold].",
+  "referenced_powers": [],
+  "notes": "If not exhausted, the card is placed on top of your Draw Pile after playing."
+}

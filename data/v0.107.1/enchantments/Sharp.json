@@ -1,0 +1,24 @@
+{
+  "class_name": "Sharp",
+  "title": "Sharp",
+  "description": "Increases damage on this card by [blue]2-3[/blue].",
+  "card_type": "Attack",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "SelfHelpBook",
+      "title": "Self Help Book",
+      "amount": 2
+    },
+    {
+      "type": "relic",
+      "class_name": "GnarledHammer",
+      "title": "Gnarled Hammer",
+      "amount": 3
+    }
+  ],
+  "notes": "The damage bonus only applies to powered attacks (cards where IsPoweredAttack() is true)."
+}

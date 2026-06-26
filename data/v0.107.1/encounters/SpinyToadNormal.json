@@ -1,0 +1,10 @@
+{
+  "class_name": "SpinyToadNormal",
+  "title": "Spiny Toad",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["SpinyToad"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": null
+}

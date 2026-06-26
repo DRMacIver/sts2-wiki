@@ -1,0 +1,10 @@
+{
+  "class_name": "MechaKnightElite",
+  "title": "Mecha Knight",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["MechaKnight"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Special camera adjustments: scaling 0.9, offset down 50"
+}

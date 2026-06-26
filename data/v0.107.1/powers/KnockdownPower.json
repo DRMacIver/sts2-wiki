@@ -1,0 +1,9 @@
+{
+  "class_name": "KnockdownPower",
+  "title": "Knockdown",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature takes [blue]{Amount}[/blue] times the damage from other players this turn.",
+  "smart_description": "Other allies deal [blue]{Amount}[/blue] times more damage to this enemy this turn.",
+  "notes": "Debuff that increases damage taken from allies. Automatically removed at the end of the turn."
+}

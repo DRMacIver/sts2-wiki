@@ -1,0 +1,9 @@
+{
+  "class_name": "TunnelerWeak",
+  "title": "Tunneler",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["Tunneler"],
+  "total_monsters": 1,
+  "tags": ["Burrower"]
+}

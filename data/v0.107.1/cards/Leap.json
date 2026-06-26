@@ -1,0 +1,21 @@
+{
+  "class_name": "Leap",
+  "title": "Leap",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Gain 9 [gold]Block[/gold].",
+  "upgraded_description": "Gain 12 [gold]Block[/gold].",
+  "x_cost": false,
+  "referenced_powers": []
+}

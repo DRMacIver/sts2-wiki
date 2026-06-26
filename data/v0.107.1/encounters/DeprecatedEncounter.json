@@ -1,0 +1,10 @@
+{
+  "class_name": "DeprecatedEncounter",
+  "title": "Deprecated Encounter",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [],
+  "total_monsters": 0,
+  "tags": [],
+  "notes": "Debug encounter for deprecated/removed monsters. Spawns no monsters."
+}

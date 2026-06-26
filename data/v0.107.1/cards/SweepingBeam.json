@@ -1,0 +1,24 @@
+{
+  "class_name": "SweepingBeam",
+  "title": "Sweeping Beam",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 6 damage to ALL enemies.\nDraw 1 card.",
+  "x_cost": false,
+  "referenced_powers": []
+}

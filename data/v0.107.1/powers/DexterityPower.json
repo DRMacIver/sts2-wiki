@@ -1,0 +1,8 @@
+{
+  "class_name": "DexterityPower",
+  "title": "Dexterity",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Dexterity improves [gold]Block[/gold] gained from cards.",
+  "smart_description": "{Amount:cond:<0?Decreases|Increases} [gold]Block[/gold] gained from cards by [blue]{Amount:abs()}[/blue]."
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "BorrowedTime",
+  "title": "Borrowed Time",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 4,
+      "upgraded_value": 6
+    },
+    {
+      "type": "Energy",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 4 Energy.\nCards cost an additional 1 Energy this turn.",
+  "upgraded_description": "Gain 6 Energy.\nCards cost an additional 1 Energy this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "BorrowedTimePower",
+      "title": "Borrowed Time",
+      "slug": "borrowed-time"
+    }
+  ]
+}

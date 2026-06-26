@@ -1,0 +1,22 @@
+{
+  "class_name": "Stardust",
+  "title": "Stardust",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage to a random enemy X times.",
+  "upgraded_description": "Deal 7 damage to a random enemy X times.",
+  "x_cost": true,
+  "star_cost": -1,
+  "referenced_powers": []
+}

@@ -1,0 +1,22 @@
+{
+  "class_name": "BootSequence",
+  "title": "Boot Sequence",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [
+    "Innate",
+    "Exhaust"
+  ],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Gain 10 [gold]Block[/gold].",
+  "x_cost": false
+}

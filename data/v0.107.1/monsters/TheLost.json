@@ -1,0 +1,45 @@
+{
+  "class_name": "TheLost",
+  "title": "The Lost",
+  "min_hp": 99,
+  "max_hp": 99,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DEBILITATING_SMOG",
+      "title": "Debilitating Smog",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Reduce 2 Strength",
+        "Gain 2 Strength"
+      ]
+    },
+    {
+      "id": "EYE_LASERS",
+      "title": "Eye Lasers",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Debilitating Smog → Eye Lasers",
+  "powers_on_spawn": [
+    "Possess Strength"
+  ],
+  "notes": "The monster steals Strength from the player and gains Strength for itself on Debilitating Smog. Enters combat with Possess Strength power."
+}

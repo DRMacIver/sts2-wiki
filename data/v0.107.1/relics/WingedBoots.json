@@ -1,0 +1,8 @@
+{
+  "class_name": "WingedBoots",
+  "title": "Winged Boots",
+  "rarity": "Ancient",
+  "description": "You may ignore paths when choosing the next rooms to travel to [blue]3[/blue] times.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Allows ignoring path restrictions (traveling to non-adjacent map nodes) up to 3 times per run. Each usage decrements the counter. Only works in single-player runs."
+}

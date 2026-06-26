@@ -1,0 +1,21 @@
+{
+  "class_name": "Bombardment",
+  "title": "Bombardment",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 18,
+      "upgraded_value": 24
+    }
+  ],
+  "description": "Deal 18 damage.\nAt the start of your turn, if this is in your [gold]Exhaust Pile[/gold], play it.",
+  "upgraded_description": "Deal 24 damage.\nAt the start of your turn, if this is in your [gold]Exhaust Pile[/gold], play it.",
+  "referenced_powers": [],
+  "notes": "Automatically plays from Exhaust Pile at the start of your turn."
+}

@@ -1,0 +1,24 @@
+{
+  "class_name": "Finesse",
+  "title": "Finesse",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 4,
+      "upgraded_value": 7
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 4 [gold]Block[/gold].\nDraw 1 card.",
+  "upgraded_description": "Gain 7 [gold]Block[/gold].\nDraw 1 card.",
+  "referenced_powers": []
+}

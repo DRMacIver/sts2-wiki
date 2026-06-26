@@ -1,0 +1,9 @@
+{
+  "class_name": "HelloWorldPower",
+  "title": "Hello World",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add [blue]1[/blue] random Common card into your [gold]Hand[/gold].",
+  "smart_description": "At the start of your turn, add [blue]{Amount}[/blue] random Common {Amount:plural:card|cards} into your [gold]Hand[/gold].",
+  "notes": "Triggers during the hand draw phase. The smart description shows the effect scales with stack count, displaying the correct singular/plural form for 'card/cards'."
+}

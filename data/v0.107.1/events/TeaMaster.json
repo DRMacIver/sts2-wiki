@@ -1,0 +1,48 @@
+{
+  "class_name": "TeaMaster",
+  "title": "Tea Master",
+  "description": "You stumble into a dimly lit shack and find yourself immersed in a very peaceful space containing an obsessive variety of tea.\n\nThe man inside gestures to a selection of [green]teas[/green], each neatly labeled with a [gold]premium price[/gold].",
+  "options": [
+    {
+      "title": "Bone Tea",
+      "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next combat, [gold]Upgrade[/gold] your starting hand.",
+      "requires": "Requires [blue]50[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Ember Tea",
+      "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]5[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold].",
+      "requires": "Requires [blue]150[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Tea of Discourtesy",
+      "description": "At the start of the next combat, shuffle [blue]2[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Acts 1-2 only", "At least 150 Gold"],
+  "notes": "The three tea options provide special relics with different passive effects. [gold]Bone Tea[/gold] and [gold]Ember Tea[/gold] require gold and provide beneficial effects for future combats. [gold]Tea of Discourtesy[/gold] is free but afflicts your next combat with Dazed cards.",
+  "card_refs": [
+    {
+      "class_name": "Dazed",
+      "title": "Dazed",
+      "slug": "dazed"
+    }
+  ],
+  "relic_refs": [
+    {
+      "class_name": "BoneTea",
+      "title": "Bone Tea",
+      "slug": "bone-tea"
+    },
+    {
+      "class_name": "EmberTea",
+      "title": "Ember Tea",
+      "slug": "ember-tea"
+    },
+    {
+      "class_name": "TeaOfDiscourtesy",
+      "title": "Tea of Discourtesy",
+      "slug": "tea-of-discourtesy"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "class_name": "DecimillipedeSegmentMiddle",
+  "title": "Decimillipede Segment",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage, 2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Restore to full HP"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with one of three moves (Constrict, Bulk, or Writhe based on segment index). Cycles through Constrict → Bulk → Writhe → Constrict repeatedly. When defeated, enters Dead state followed by mandatory Reattach move (which heals to full), then randomly selects from Constrict, Bulk, or Writhe without repeating.",
+  "powers_on_spawn": [
+    "Reattach Power (amount: 25)"
+  ],
+  "notes": "This is a middle segment of the Decimillipede boss encounter. Each segment has a unique HP value that is automatically adjusted during initialization to ensure all segments have different maximum HP values. The segment enters a 'dead' state when reduced to 0 HP but continues fighting through the Reattach mechanic. The Reattach Power is marked to execute once before transitioning to random move selection, ensuring the segment always heals to full after being defeated."
+}

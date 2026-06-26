@@ -1,0 +1,17 @@
+{
+  "class_name": "SlimesNormal",
+  "title": "Swarm of Slimes",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "TwigSlimeM",
+    "LeafSlimeM",
+    "LeafSlimeS",
+    "TwigSlimeS"
+  ],
+  "total_monsters": 4,
+  "tags": [
+    "Slimes"
+  ],
+  "notes": "Encounter composition varies randomly: TwigSlimeM and LeafSlimeM are always present, while the two small slime slots randomly swap between (LeafSlimeS, TwigSlimeS) and (TwigSlimeS, LeafSlimeS)."
+}

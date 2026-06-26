@@ -1,0 +1,8 @@
+{
+  "class_name": "VoidFormPower",
+  "title": "Void Form",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first [blue]2[/blue] cards you play each turn are free to play.",
+  "smart_description": "The first [blue]2[/blue] cards you play each turn are free to play."
+}

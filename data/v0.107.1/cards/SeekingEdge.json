@@ -1,0 +1,26 @@
+{
+  "class_name": "SeekingEdge",
+  "title": "Seeking Edge",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 7,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "[gold]Forge[/gold] 7.\n[gold]Sovereign Blade[/gold] now deals damage to ALL enemies.",
+  "upgraded_description": "[gold]Forge[/gold] 11.\n[gold]Sovereign Blade[/gold] now deals damage to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "SeekingEdgePower",
+      "title": "Seeking Edge",
+      "slug": "seeking-edge"
+    }
+  ]
+}

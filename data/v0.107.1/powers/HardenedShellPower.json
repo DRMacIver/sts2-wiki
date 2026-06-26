@@ -1,0 +1,8 @@
+{
+  "class_name": "HardenedShellPower",
+  "title": "Hardened Shell",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This creature cannot lose more than [blue]20[/blue] HP each turn.",
+  "smart_description": "[gold]{OwnerName}[/gold] cannot lose more than [blue]{Amount}[/blue] HP each turn."
+}

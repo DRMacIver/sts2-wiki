@@ -1,0 +1,8 @@
+{
+  "class_name": "WitheringPresencePower",
+  "title": "Withering Presence",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Every [blue]6[/blue] cards you play, add a [gold]Wither[/gold] to your [gold]Hand[/gold].",
+  "smart_description": "Every [blue]6[/blue] cards you play, add a [gold]Wither[/gold] to your [gold]Hand[/gold]."
+}

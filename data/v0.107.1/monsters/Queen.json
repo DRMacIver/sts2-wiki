@@ -1,0 +1,78 @@
+{
+  "class_name": "Queen",
+  "title": "Queen",
+  "min_hp": 419,
+  "max_hp": 419,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PUPPET_STRINGS_MOVE",
+      "title": "Puppet Strings",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 3 Chains of Binding"]
+    },
+    {
+      "id": "YOU_ARE_MINE_MOVE",
+      "title": "You Are Mine",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 99 Frail", "Apply 99 Weak", "Apply 99 Vulnerable"]
+    },
+    {
+      "id": "BURN_BRIGHT_FOR_ME_MOVE",
+      "title": "Burn Bright for Me",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": ["Apply 1 Strength to teammates", "Gain 20 Block"]
+    },
+    {
+      "id": "OFF_WITH_YOUR_HEAD_MOVE",
+      "title": "Off with Your Head",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 5
+        }
+      ],
+      "effects": ["Deal 4 damage", "5 hits"]
+    },
+    {
+      "id": "EXECUTION_MOVE",
+      "title": "Execution",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": ["Deal 18 damage"]
+    },
+    {
+      "id": "ENRAGE_MOVE",
+      "title": "Enrage",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 2 Strength"]
+    }
+  ],
+  "move_pattern": "Opens with Puppet Strings → You Are Mine. While Amalgam is alive, cycles Burn Bright for Me repeatedly. After Amalgam dies, shifts to Off with Your Head → Execution → Enrage → Off with Your Head (repeats).",
+  "powers_on_spawn": [],
+  "notes": "Queen fights alongside TorchHeadAmalgam. When the Amalgam is alive, she focuses on buffing her team with Burn Bright for Me (applying Strength to all teammates and gaining Block). Once the Amalgam dies, her behavior shifts to an aggressive attack cycle: Off with Your Head (5-hit attack), Execution, and Enrage (self-buff with Strength). She opens combat with Puppet Strings (applies Chains of Binding) and You Are Mine (applies three heavy debuffs: 99 Frail, 99 Weak, and 99 Vulnerable)."
+}

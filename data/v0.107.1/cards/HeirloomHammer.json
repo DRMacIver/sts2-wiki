@@ -1,0 +1,26 @@
+{
+  "class_name": "HeirloomHammer",
+  "title": "Heirloom Hammer",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 20,
+      "upgraded_value": 25
+    },
+    {
+      "type": "Repeat",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 20 damage.\nChoose a Colorless card in your [gold]Hand[/gold]. Add a copy of that card into your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 25 damage.\nChoose a Colorless card in your [gold]Hand[/gold]. Add a copy of that card into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Allows copying one Colorless card from hand during this turn."
+}

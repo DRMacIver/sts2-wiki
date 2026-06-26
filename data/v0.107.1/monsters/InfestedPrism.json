@@ -1,0 +1,80 @@
+{
+  "class_name": "InfestedPrism",
+  "title": "Infested Prism",
+  "min_hp": 171,
+  "max_hp": 171,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "JAB_MOVE",
+      "title": "Jab",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "RADIATE_MOVE",
+      "title": "Radiate",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "Gain 13 Block"
+      ]
+    },
+    {
+      "id": "WHIRLWIND_MOVE",
+      "title": "Whirlwind",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "PULSATE_MOVE",
+      "title": "Pulsate",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 10
+        },
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 10 damage",
+        "Gain 22 Block",
+        "Apply 3 Vital Spark"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles Jab → Radiate → Whirlwind → Pulsate",
+  "powers_on_spawn": [
+    "Vital Spark"
+  ],
+  "notes": "Vital Spark power is applied on spawn (3 stacks) and increased by 3 stacks each time Pulsate is used, allowing the power to grow throughout combat."
+}

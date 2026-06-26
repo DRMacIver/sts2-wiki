@@ -1,0 +1,8 @@
+{
+  "class_name": "FairyInABottle",
+  "title": "Fairy in a Bottle",
+  "rarity": "Rare",
+  "usage": "Automatic",
+  "target": "Self",
+  "description": "When your HP would be reduced to [blue]0[/blue], instead this potion is discarded and you heal to [blue]30%[/blue] of your Max HP."
+}

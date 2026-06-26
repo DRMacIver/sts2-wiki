@@ -1,0 +1,26 @@
+{
+  "class_name": "Panache",
+  "title": "Panache",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Every time you play 5 cards in a single turn, deal 10 damage to ALL enemies.",
+  "upgraded_description": "Every time you play 5 cards in a single turn, deal 14 damage to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "PanachePower",
+      "title": "Panache",
+      "slug": "panache"
+    }
+  ]
+}

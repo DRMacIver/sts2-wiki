@@ -1,0 +1,11 @@
+{
+  "class_name": "SoulNexusElite",
+  "title": "Soul Nexus",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": [
+    "SoulNexus"
+  ],
+  "total_monsters": 1,
+  "tags": []
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "Whistle",
+  "title": "Whistle",
+  "character": "Event",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 33,
+      "upgraded_value": 44
+    }
+  ],
+  "description": "Deal 33 damage.\n[gold]Stun[/gold] the enemy.",
+  "upgraded_description": "Deal 44 damage.\n[gold]Stun[/gold] the enemy.",
+  "x_cost": false,
+  "referenced_powers": []
+}

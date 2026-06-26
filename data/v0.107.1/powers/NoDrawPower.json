@@ -1,0 +1,9 @@
+{
+  "class_name": "NoDrawPower",
+  "title": "No Draw",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "You may not draw any more cards this turn.",
+  "smart_description": "You may not draw any more cards this turn.",
+  "notes": "Prevents the player from drawing cards (except from hand draw effects). Automatically removes itself at the end of the player's turn."
+}

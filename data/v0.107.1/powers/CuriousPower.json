@@ -1,0 +1,9 @@
+{
+  "class_name": "CuriousPower",
+  "title": "Curious",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Powers cost [blue]1[/blue] energy less.",
+  "smart_description": "Powers cost [blue]X[/blue] energy less, where X equals the power's current stack count.",
+  "notes": "Counter-based power that stacks. Each instance reduces Power card energy costs by 1 (clamped to minimum 0). Only affects Power cards owned by the creature with this power."
+}

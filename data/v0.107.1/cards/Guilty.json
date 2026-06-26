@@ -1,0 +1,21 @@
+{
+  "class_name": "Guilty",
+  "title": "Guilty",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": [
+    "Unplayable"
+  ],
+  "vars": [
+    {
+      "type": "Combats",
+      "base_value": 5
+    }
+  ],
+  "description": "Removed from your [gold]Deck[/gold] after 5 combats.",
+  "referenced_powers": [],
+  "notes": "This card is removed from the deck after it appears in 5 combats. The Combats variable tracks remaining appearances before removal."
+}

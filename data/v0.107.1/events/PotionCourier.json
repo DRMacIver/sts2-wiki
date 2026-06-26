@@ -1,0 +1,27 @@
+{
+  "class_name": "PotionCourier",
+  "title": "Potion Courier",
+  "description": "There is a [sine]sour[/sine] smell in the air and shortly after, you find a [gold]Potion Courier[/gold] collapsed on the ground.\nUnmoving. Lifeless. [jitter]Dead!?[/jitter]\nWhile their belongings have been ransacked, there is a batch of [green][sine]Foul Smelling Potions[/sine][/green] with a note: \"Recipient: Merchant\".",
+  "options": [
+    {
+      "title": "Grab Potions",
+      "description": "Procure [blue]3[/blue] [gold]Foul Potions[/gold]."
+    },
+    {
+      "title": "Ransack",
+      "description": "Procure [blue]1[/blue] random [gold]Uncommon Potion[/gold]."
+    }
+  ],
+  "acts": [
+    "Overgrowth",
+    "Underdocks",
+    "Hive",
+    "Glory"
+  ],
+  "conditions": [
+    "Act 2+"
+  ],
+  "notes": "The [gold]Grab Potions[/gold] option awards [blue]3[/blue] [green]Foul Potions[/green]. The [gold]Ransack[/gold] option selects a random [gold]Uncommon Potion[/gold] from the combined pool of your character's potion pool and the shared potion pool, allowing flexibility in your potion rewards.",
+  "card_refs": [],
+  "relic_refs": []
+}

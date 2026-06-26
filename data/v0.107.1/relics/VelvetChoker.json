@@ -1,0 +1,8 @@
+{
+  "class_name": "VelvetChoker",
+  "title": "Velvet Choker",
+  "rarity": "Ancient",
+  "description": "Gain 1 energy at the start of each turn. You cannot play more than [blue]6[/blue] cards per turn.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This Ancient relic provides +1 max energy but severely restricts card plays to a maximum of 6 per turn. The card play counter resets at the start of each turn and after combat ends. The relic tracks active card plays and will prevent playing additional cards once the limit is reached."
+}

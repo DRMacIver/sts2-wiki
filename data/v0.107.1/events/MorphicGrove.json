@@ -1,0 +1,23 @@
+{
+  "class_name": "MorphicGrove",
+  "title": "Morphic Grove",
+  "description": "You enter a grove of [green]crystalline trees[/green], and they begin to [jitter]quiver excitedly[/jitter]!\nA chorus of [sine]hellos and welcomes[/sine] bombard you as a group of [aqua]Morphics[/aqua] [jitter]burst[/jitter] forth from trees.\n\nOne of the [aqua]Morphics[/aqua] is fidgeting in the corner, clearly not as sociable as the others.\n\nApproach the group or the loner?",
+  "options": [
+    {
+      "title": "Group",
+      "description": "Lose [red]ALL[/red] of your [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards."
+    },
+    {
+      "title": "Loner",
+      "description": "Gain [green]5[/green] Max HP."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [
+    "At least 100 Gold",
+    "At least 2 transformable cards in deck"
+  ],
+  "notes": "Choosing the Group option requires losing all your Gold in exchange for transforming 2 cards from your deck. The chosen cards are randomly transformed into different cards.",
+  "card_refs": [],
+  "relic_refs": []
+}

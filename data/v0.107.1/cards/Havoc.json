@@ -1,0 +1,14 @@
+{
+  "class_name": "Havoc",
+  "title": "Havoc",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Play the top card of your [gold]Draw Pile[/gold] and [gold]Exhaust[/gold] it.",
+  "upgraded_cost": 0,
+  "x_cost": false
+}

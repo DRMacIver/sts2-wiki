@@ -1,0 +1,81 @@
+{
+  "class_name": "CeremonialBeast",
+  "title": "Ceremonial Beast",
+  "min_hp": 262,
+  "max_hp": 262,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STAMP_MOVE",
+      "title": "Stamp",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 160 Plow"]
+    },
+    {
+      "id": "PLOW_MOVE",
+      "title": "Plow",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 20 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "STUN_MOVE",
+      "title": "Stun",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "BEAST_CRY_MOVE",
+      "title": "Beast Cry",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 1 Ringing"]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": ["Deal 17 damage"]
+    },
+    {
+      "id": "CRUSH_MOVE",
+      "title": "Crush",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 19 damage", "Apply 4 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Stamp, then uses Plow repeatedly. After being stunned, enters second phase and cycles Beast Cry → Stomp → Crush.",
+  "powers_on_spawn": [],
+  "notes": "Two-phase combat system. Phase 1: Stamp → Plow (repeating). Phase 2 (triggered by stun): Beast Cry → Stomp → Crush (repeating). The STUN_MOVE has MustPerformOnceBeforeTransitioning=true, ensuring a controlled transition between phases. Special animation handling prevents regular hurt animation while stunned or mid-Plow-charge."
+}

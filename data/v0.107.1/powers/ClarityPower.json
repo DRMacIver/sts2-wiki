@@ -1,0 +1,7 @@
+{
+  "class_name": "ClarityPower",
+  "title": "Clarity",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your next turn, draw [blue]1[/blue] additional card."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "TheBombPower",
+  "title": "The Bomb",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of [blue]3[/blue] turns, deal [blue]40[/blue] damage to ALL enemies.",
+  "smart_description": "At the end of [blue]3[/blue] turns, deal [blue]40[/blue] damage to ALL enemies.",
+  "notes": "Counter-type power that decrements by 1 each turn. When the counter reaches 1 at the end of a turn, it detonates, dealing 40 damage to all hittable enemies, then removes itself. The visual countdown makes the duration clear during combat."
+}

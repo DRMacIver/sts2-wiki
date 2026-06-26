@@ -1,0 +1,19 @@
+{
+  "class_name": "Slice",
+  "title": "Slice",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 6 damage.",
+  "upgraded_description": "Deal 9 damage."
+}

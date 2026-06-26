@@ -1,0 +1,48 @@
+{
+  "class_name": "TheForgotten",
+  "title": "The Forgotten",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "MIASMA",
+      "title": "Miasma",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "block",
+          "amount": 8
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Steal 2 Dexterity from player",
+        "Gain 8 Block",
+        "Apply 2 Dexterity to itself"
+      ]
+    },
+    {
+      "id": "DREAD",
+      "title": "Dread",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": [
+        "Deal 15 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles between Miasma and Dread. Starts with Miasma.",
+  "powers_on_spawn": [
+    "Possess Speed"
+  ],
+  "notes": "Dread damage scales with the monster's Dexterity power—each use of Miasma steals 2 Dexterity from the player and applies 2 to the monster, making subsequent Dread attacks progressively more dangerous. The monster begins combat with Possess Speed, increasing its action speed."
+}

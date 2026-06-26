@@ -1,0 +1,8 @@
+{
+  "class_name": "FocusPotion",
+  "title": "Focus Potion",
+  "rarity": "Common",
+  "usage": "Unknown",
+  "target": "Self",
+  "description": "Gain [blue]2[/blue] [gold]Focus[/gold]."
+}

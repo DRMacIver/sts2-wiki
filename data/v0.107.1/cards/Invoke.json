@@ -1,0 +1,29 @@
+{
+  "class_name": "Invoke",
+  "title": "Invoke",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 2,
+      "upgraded_value": 3
+    },
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Next turn, [gold]Summon[/gold] 2 and gain 2.",
+  "upgraded_description": "Next turn, [gold]Summon[/gold] 3 and gain 3.",
+  "x_cost": false,
+  "referenced_powers": [
+    {"class_name": "SummonNextTurnPower"},
+    {"class_name": "EnergyNextTurnPower"}
+  ]
+}

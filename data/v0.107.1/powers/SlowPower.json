@@ -1,0 +1,9 @@
+{
+  "class_name": "SlowPower",
+  "title": "Slow",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, this enemy receives [blue]10%[/blue] more damage from Attacks this turn.",
+  "smart_description": "Whenever you play a card, {OnPlayer:you receive|this enemy receives} [blue]10%[/blue] more damage from Attacks this turn.{Amount:plural:|| (Receives [blue]{Amount}%[/blue] more damage)}",
+  "notes": "Counter increments each time a card is played. Each stack increases damage taken from Attacks by 10%. The counter resets at the start of the next turn (beginning of the owner's turn)."
+}

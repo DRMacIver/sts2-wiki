@@ -1,0 +1,9 @@
+{
+  "class_name": "ShrinkPower",
+  "title": "Shrink",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature's Attacks deal [blue]30%[/blue] less damage for the next 3 turns.",
+  "smart_description": "{ApplierName.StringValue:cond:While {} is alive, your|[gold]{OwnerName}'s[/gold]} Attacks deal [blue]{DamageDecrease}%[/blue] less damage{Amount:cond:==1? next turn|>1? for the next [blue]{}[/blue] turns|}.",
+  "notes": "Shrink causes visual scaling of 0.5x when applied and restores normal scale (1x) when removed. The power automatically decrements each turn unless applied infinitely. If the applier dies, this power is removed from the target."
+}

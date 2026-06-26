@@ -1,0 +1,9 @@
+{
+  "class_name": "ToricToughnessPower",
+  "title": "Toric Toughness",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [blue]5[/blue] [gold]Block[/gold] at the start of the next [blue]2[/blue] turns.",
+  "smart_description": "Gain [blue]{Block:diff()}[/blue] [gold]Block[/gold] at the start of the next [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "notes": "Triggers when the owner's block is cleared. Grants block based on the power's Block dynamic variable and decrements the turn counter."
+}

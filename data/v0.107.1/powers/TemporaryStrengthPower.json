@@ -1,0 +1,7 @@
+{
+  "class_name": "TemporaryStrengthPower",
+  "title": "Temporary Strength",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Strength[/gold] until the end of this turn."
+}

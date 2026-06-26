@@ -1,0 +1,27 @@
+{
+  "class_name": "Shiv",
+  "title": "Shiv",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Deal 4 damage.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "FanOfKnivesPower",
+      "title": "Fan of Knives",
+      "slug": "fan-of-knives"
+    }
+  ],
+  "notes": "Target changes to all enemies if the card owner has Fan of Knives power. When owned by Silent, uses special throw animation."
+}

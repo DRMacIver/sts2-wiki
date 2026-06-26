@@ -1,0 +1,25 @@
+{
+  "class_name": "Rampage",
+  "title": "Rampage",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9
+    },
+    {
+      "type": "Magic",
+      "base_value": 5,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 9 damage.\nIncrease this card's damage by 5 this combat.",
+  "upgraded_description": "Deal 9 damage.\nIncrease this card's damage by 9 this combat.",
+  "referenced_powers": [],
+  "notes": "This card's damage increases by the Increase value each time it's played within the same combat, making it a scaling attack that gets progressively stronger."
+}

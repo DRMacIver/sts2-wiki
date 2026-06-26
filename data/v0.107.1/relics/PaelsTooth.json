@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsTooth",
+  "title": "Pael's Tooth",
+  "rarity": "Ancient",
+  "description": "Upon pickup, remove [blue]5[/blue] cards from your [gold]Deck[/gold]. After each combat, randomly add [blue]1[/blue] back [gold]Upgraded[/gold].\n\nCards devoured:\n- (List of removed card titles)",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Relic stores up to 5 removed cards (only upgradable cards can be selected). After each combat where the player survives, one random removed card is restored to the deck and immediately upgraded. The relic becomes disabled once all cards have been restored. Card titles are displayed dynamically based on which cards were removed."
+}

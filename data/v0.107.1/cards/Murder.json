@@ -1,0 +1,21 @@
+{
+  "class_name": "Murder",
+  "title": "Murder",
+  "character": "Silent",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal damage equal to 1 + 1 for each card drawn this combat.",
+  "upgraded_cost": 2,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "CalculatedDamage = 1 + (1 × cards drawn this combat). Damage scales with how many cards have been drawn."
+}

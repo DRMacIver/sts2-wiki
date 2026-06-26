@@ -1,0 +1,9 @@
+{
+  "class_name": "UnmovablePower",
+  "title": "Unmovable",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first time you gain [gold]Block[/gold] from a card each turn, double the amount gained.",
+  "smart_description": "The first {Amount:plural:time|[blue]{}[/blue] times} you gain [gold]Block[/gold] from a card each turn, double the amount gained.",
+  "notes": "Doubles block gained from cards, but only for the first Amount instances of block gain per turn. Applies only to the player, not monsters. Only affects block gained from card plays and monster moves (not other sources)."
+}

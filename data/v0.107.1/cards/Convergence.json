@@ -1,0 +1,40 @@
+{
+  "class_name": "Convergence",
+  "title": "Convergence",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 1
+    },
+    {
+      "type": "Stars",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Next turn,\ngain 1 Energy and 1 Star.\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
+  "upgraded_description": "Next turn,\ngain 1 Energy and 2 Stars.\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "RetainHandPower",
+      "title": "Retain Hand",
+      "slug": "retain-hand"
+    },
+    {
+      "class_name": "EnergyNextTurnPower",
+      "title": "Energy Next Turn",
+      "slug": "energy-next-turn"
+    },
+    {
+      "class_name": "StarNextTurnPower",
+      "title": "Star Next Turn",
+      "slug": "star-next-turn"
+    }
+  ]
+}

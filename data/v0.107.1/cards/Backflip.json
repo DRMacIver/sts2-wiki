@@ -1,0 +1,24 @@
+{
+  "class_name": "Backflip",
+  "title": "Backflip",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 5,
+      "upgraded_value": 8
+    },
+    {
+      "type": "Cards",
+      "base_value": 2
+    }
+  ],
+  "description": "Gain 5 [gold]Block[/gold].\nDraw 2 cards.",
+  "upgraded_description": "Gain 8 [gold]Block[/gold].\nDraw 2 cards.",
+  "x_cost": false
+}

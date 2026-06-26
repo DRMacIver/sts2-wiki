@@ -1,0 +1,9 @@
+{
+  "class_name": "ExplosiveAmpoule",
+  "title": "Explosive Ampoule",
+  "rarity": "Common",
+  "usage": "CombatOnly",
+  "target": "AllEnemies",
+  "description": "Deal [blue]10[/blue] damage to ALL enemies.",
+  "notes": "Only hits enemies that are currently vulnerable to damage (excludes invulnerable or otherwise unhittable enemies)."
+}

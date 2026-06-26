@@ -1,0 +1,19 @@
+{
+  "class_name": "Impervious",
+  "title": "Impervious",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 30,
+      "upgraded_value": 40
+    }
+  ],
+  "description": "Gain 30 [gold]Block[/gold].",
+  "referenced_powers": []
+}

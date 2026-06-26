@@ -1,0 +1,10 @@
+{
+  "class_name": "ScrollsOfBitingNormal",
+  "title": "Many Scrolls of Biting",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["ScrollOfBiting"],
+  "total_monsters": 4,
+  "tags": ["Scrolls"],
+  "notes": "Four ScrollOfBiting enemies with randomized starting moves. The first three scrolls have different starter moves (indices rotate through 0, 1, 2), while the fourth always starts with move index 2."
+}

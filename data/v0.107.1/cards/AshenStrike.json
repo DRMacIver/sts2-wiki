@@ -1,0 +1,24 @@
+{
+  "class_name": "AshenStrike",
+  "title": "Ashen Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6
+    },
+    {
+      "type": "ExtraDamage",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 6 damage.\nDeals 3 additional damage for each card in your [gold]Exhaust Pile[/gold].",
+  "upgraded_description": "Deal 6 damage.\nDeals 4 additional damage for each card in your [gold]Exhaust Pile[/gold].",
+  "referenced_powers": []
+}

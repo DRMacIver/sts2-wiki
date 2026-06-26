@@ -1,0 +1,9 @@
+{
+  "class_name": "FriendshipPower",
+  "title": "Friendship",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [blue]1[/blue] [gold]Energy[/gold] at the start of each turn.",
+  "smart_description": "Gain [gold]Energy[/gold] at the start of each turn, amount equal to stacks.",
+  "notes": "This power increases maximum Energy available each turn, allowing more skills to be played. Each stack of this Counter-type power grants an additional point of Energy per turn."
+}

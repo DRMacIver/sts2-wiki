@@ -1,0 +1,9 @@
+{
+  "class_name": "BoneBrew",
+  "title": "Bone Brew",
+  "rarity": "Uncommon",
+  "usage": "Unknown",
+  "target": "Self",
+  "description": "[gold]Summon[/gold] [blue]15[/blue].",
+  "notes": "Combat-only potion. Summons 15 creatures when used."
+}

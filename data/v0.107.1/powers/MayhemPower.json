@@ -1,0 +1,8 @@
+{
+  "class_name": "MayhemPower",
+  "title": "Mayhem",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, play the top card of your [gold]Draw Pile[/gold].",
+  "smart_description": "At the start of your turn, play the {Amount:plural:top card|next [blue]{}[/blue] top cards} of your [gold]Draw Pile[/gold]."
+}

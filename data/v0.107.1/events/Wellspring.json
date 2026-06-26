@@ -1,0 +1,26 @@
+{
+  "class_name": "Wellspring",
+  "title": "Wellspring",
+  "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
+  "options": [
+    {
+      "title": "Bottle",
+      "description": "Procure [blue]1[/blue] random [gold]Potion[/gold]."
+    },
+    {
+      "title": "Bathe",
+      "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "Bathing offers a pact: sacrifice one deck card to add a [red]Guilty[/red] curse. Bottling up the water yields a random potion with no cost.",
+  "card_refs": [
+    {
+      "class_name": "Guilty",
+      "title": "Guilty",
+      "slug": "guilty"
+    }
+  ],
+  "relic_refs": []
+}

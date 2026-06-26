@@ -1,0 +1,8 @@
+{
+  "class_name": "InfernoPower",
+  "title": "Inferno",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, lose [blue]1[/blue] HP. Whenever you lose HP on your turn, deal [blue]4[/blue] damage to ALL enemies.",
+  "smart_description": "At the start of your turn, lose [blue]1[/blue] HP. Whenever you lose HP on your turn, deal [blue]4[/blue] damage to ALL enemies."
+}

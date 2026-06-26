@@ -1,0 +1,19 @@
+{
+  "class_name": "Sown",
+  "title": "Sown",
+  "description": "The first time you play this card each combat, gain 1 Energy.",
+  "extra_card_text": "Gain 1 Energy.",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "SapphireSeed",
+      "title": "Sapphire Seed",
+      "amount": 1
+    }
+  ],
+  "notes": "The enchantment triggers on the first play of the card each combat, then enters a Disabled state for the remainder of combat. While Disabled, the extra card text is hidden."
+}

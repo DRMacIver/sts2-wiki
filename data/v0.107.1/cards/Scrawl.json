@@ -1,0 +1,14 @@
+{
+  "class_name": "Scrawl",
+  "title": "Scrawl",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "upgraded_keywords": ["Exhaust", "Retain"],
+  "vars": [],
+  "description": "Draw cards until your [gold]Hand[/gold] is full.",
+  "referenced_powers": []
+}

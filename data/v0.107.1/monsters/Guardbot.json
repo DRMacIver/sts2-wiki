@@ -1,0 +1,23 @@
+{
+  "class_name": "Guardbot",
+  "title": "Guardbot",
+  "min_hp": 17,
+  "max_hp": 21,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "GUARD_MOVE",
+      "title": "Guard",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 15
+        }
+      ],
+      "effects": ["Give 15 Block to all Fabricators"]
+    }
+  ],
+  "move_pattern": "Always repeats Guard.",
+  "powers_on_spawn": [],
+  "notes": "Guard gives 15 Block to all Fabricator monsters in the same combat, not to itself. Guardbot acts as a support monster protecting Fabricators."
+}

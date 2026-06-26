@@ -1,0 +1,8 @@
+{
+  "class_name": "AccuracyPower",
+  "title": "Accuracy",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Shivs[/gold] deal additional damage.",
+  "smart_description": "[gold]Shivs[/gold] deal [blue]bonus[/blue] additional damage equal to this power's current stack count."
+}

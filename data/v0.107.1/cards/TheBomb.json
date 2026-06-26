@@ -1,0 +1,32 @@
+{
+  "class_name": "TheBomb",
+  "title": "The Bomb",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Turns",
+      "base_value": 3
+    },
+    {
+      "type": "Damage",
+      "base_value": 40,
+      "upgraded_value": 50
+    }
+  ],
+  "description": "At the end of 3 turns, deal 40 damage to ALL enemies.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TheBombPower",
+      "title": "The Bomb",
+      "slug": "the-bomb"
+    }
+  ],
+  "notes": "Applies TheBombPower to the player, which detonates after a set number of turns."
+}

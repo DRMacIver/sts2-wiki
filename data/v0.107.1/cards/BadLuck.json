@@ -1,0 +1,18 @@
+{
+  "class_name": "BadLuck",
+  "title": "Bad Luck",
+  "character": "Colorless",
+  "energy_cost": -2,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Eternal", "Unplayable"],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 13
+    }
+  ],
+  "description": "At the end of your turn, if this is in your Hand, lose 13 HP.",
+  "notes": "This card cannot be played. It activates at the end of turn if it remains in hand, dealing damage equal to its HpLoss value."
+}

@@ -1,0 +1,7 @@
+{
+  "class_name": "LoopPower",
+  "title": "Loop",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, trigger the passive ability of your next Orb."
+}

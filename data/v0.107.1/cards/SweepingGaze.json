@@ -1,0 +1,21 @@
+{
+  "class_name": "SweepingGaze",
+  "title": "Sweeping Gaze",
+  "character": "Osty",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "RandomEnemy",
+  "keywords": ["Ethereal", "Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 10 damage to a random enemy.",
+  "upgraded_description": "[gold]Osty[/gold] deals 15 damage to a random enemy.",
+  "x_cost": false,
+  "notes": "Card requires Osty to be present to play. Targets a random enemy."
+}

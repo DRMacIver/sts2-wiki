@@ -1,0 +1,32 @@
+{
+  "class_name": "SwordSage",
+  "title": "Sword Sage",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Replay"],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Sovereign Blade[/gold] gains [gold]Replay[/gold] +1.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "SwordSagePower",
+      "title": "Sword Sage",
+      "slug": "sword-sage"
+    },
+    {
+      "class_name": "SovereignBlade",
+      "title": "Sovereign Blade",
+      "slug": "sovereign-blade"
+    }
+  ],
+  "notes": "Grants the Sovereign Blade power the Replay keyword."
+}

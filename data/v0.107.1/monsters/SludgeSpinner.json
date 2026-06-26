@@ -1,0 +1,59 @@
+{
+  "class_name": "SludgeSpinner",
+  "title": "Sludge Spinner",
+  "min_hp": 41,
+  "max_hp": 42,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "OIL_SPRAY_MOVE",
+      "title": "Oil Spray",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "SLAM_MOVE",
+      "title": "Slam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "effects": [
+        "Deal 12 damage"
+      ]
+    },
+    {
+      "id": "RAGE_MOVE",
+      "title": "Rage",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Randomly cycles between Oil Spray, Slam, and Rage (no consecutive repeats). Rage is hidden from the bestiary but still used in combat.",
+  "powers_on_spawn": [],
+  "notes": "The Rage move is hidden from the bestiary display (ShouldShowMoveInBestiary returns false for RAGE_MOVE), meaning players won't see this move listed when viewing the monster in the bestiary, but it will still be used during combat."
+}

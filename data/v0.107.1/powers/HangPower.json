@@ -1,0 +1,9 @@
+{
+  "class_name": "HangPower",
+  "title": "Hang",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "All [gold]Hangs[/gold] deal [blue]2[/blue] times more damage to this enemy.",
+  "smart_description": "All [gold]Hangs[/gold] deal [blue]{Amount}[/blue] times more damage to this enemy.",
+  "notes": "Counter-type debuff that scales with stack amount. Multiplies the damage of all Hang cards played against the affected enemy."
+}

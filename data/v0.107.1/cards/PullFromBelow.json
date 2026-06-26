@@ -1,0 +1,22 @@
+{
+  "class_name": "PullFromBelow",
+  "title": "Pull from Below",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage for each [gold]Ethereal[/gold] card played this combat.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "The damage is multiplied by the total number of Ethereal cards played by the player during this combat. During combat, displays how many times the attack will hit based on cards played so far."
+}

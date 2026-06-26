@@ -1,0 +1,8 @@
+{
+  "class_name": "FakeOrichalcum",
+  "title": "Orichalcum???",
+  "rarity": "Event",
+  "description": "If you end your turn without [gold]Block[/gold], gain [blue]3[/blue] [gold]Block[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Trigger occurs during the very early turn end phase if block reaches 0. Block is granted during the normal turn end phase, before turn start resets the state."
+}

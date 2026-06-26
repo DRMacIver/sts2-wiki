@@ -1,0 +1,11 @@
+{
+  "class_name": "BattlewornDummyEventEncounter",
+  "title": "Battleworn Dummy",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "BattleFriendV1"
+  ],
+  "tags": [],
+  "notes": "Event encounter that spawns a single Battle Friend. The specific variant (V1, V2, or V3) is determined by the encounter's Setting enum at runtime. No rewards are given upon completion."
+}

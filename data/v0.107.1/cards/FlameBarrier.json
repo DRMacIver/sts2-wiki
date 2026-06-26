@@ -1,0 +1,30 @@
+{
+  "class_name": "FlameBarrier",
+  "title": "Flame Barrier",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 12,
+      "upgraded_value": 16
+    },
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Gain 12 [gold]Block[/gold].\nWhenever you are attacked this turn, deal 4 damage back.",
+  "referenced_powers": [
+    {
+      "class_name": "FlameBarrierPower",
+      "title": "Flame Barrier",
+      "slug": "flame-barrier"
+    }
+  ]
+}

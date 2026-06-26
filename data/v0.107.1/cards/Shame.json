@@ -1,0 +1,25 @@
+{
+  "class_name": "Shame",
+  "title": "Shame",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Frail",
+      "base_value": 1
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], gain +1 [gold]Frail[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "FrailPower",
+      "title": "Frail",
+      "slug": "frail"
+    }
+  ],
+  "notes": "Applies Frail at the end of turn if in hand. If the player doesn't already have Frail, the next duration tick is skipped."
+}

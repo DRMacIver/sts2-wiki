@@ -1,0 +1,26 @@
+{
+  "class_name": "Unrelenting",
+  "title": "Unrelenting",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 20
+    }
+  ],
+  "description": "Deal 14 damage.\nThe next Attack you play costs 0 Energy.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "FreeAttackPower",
+      "title": "Free Attack",
+      "slug": "free-attack"
+    }
+  ]
+}

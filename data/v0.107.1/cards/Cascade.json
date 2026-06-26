@@ -1,0 +1,14 @@
+{
+  "class_name": "Cascade",
+  "title": "Cascade",
+  "character": "Ironclad",
+  "energy_cost": -1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Play the top X cards of your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Play the top X+1 cards of your [gold]Draw Pile[/gold].",
+  "x_cost": true
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "DevourLife",
+  "title": "Devour Life",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "DevourLifePower",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Whenever you play a [gold]Soul[/gold], [gold]Summon[/gold] 1.",
+  "upgraded_description": "Whenever you play a [gold]Soul[/gold], [gold]Summon[/gold] 2.",
+  "referenced_powers": [
+    {
+      "class_name": "DevourLifePower",
+      "title": "Devour Life",
+      "slug": "devour-life"
+    }
+  ]
+}

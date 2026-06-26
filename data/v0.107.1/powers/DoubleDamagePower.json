@@ -1,0 +1,9 @@
+{
+  "class_name": "DoubleDamagePower",
+  "title": "Double Damage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This turn, Attacks deal double damage.",
+  "smart_description": "{Amount:plural:This turn|For the next [blue]{}[/blue] turns}, Attacks deal double damage.",
+  "notes": "Doubles damage dealt by powered Attacks. Decrements by 1 at the end of each turn for the creature that owns the power."
+}

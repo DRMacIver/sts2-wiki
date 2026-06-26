@@ -1,0 +1,13 @@
+{
+  "class_name": "LanternKey",
+  "title": "Lantern Key",
+  "character": "Quest",
+  "energy_cost": -1,
+  "type": "Quest",
+  "rarity": "Quest",
+  "target": "Self",
+  "keywords": ["Unplayable"],
+  "vars": [],
+  "description": "Unlocks a special event in the next Act.",
+  "notes": "In Act 3, this card modifies the next encountered event to the War Historian event. Cannot be upgraded."
+}

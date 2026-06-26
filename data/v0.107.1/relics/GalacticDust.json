@@ -1,0 +1,8 @@
+{
+  "class_name": "GalacticDust",
+  "title": "Galactic Dust",
+  "rarity": "Uncommon",
+  "description": "For every [blue]10[/blue] ⭐ spent, gain [blue]10[/blue] [gold]Block[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks total stars spent. When the spent amount reaches a multiple of 10, grants 10 Block and resets the counter. The relic's display counter shows progress toward the next trigger."
+}

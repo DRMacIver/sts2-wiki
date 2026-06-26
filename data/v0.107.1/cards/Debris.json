@@ -1,0 +1,13 @@
+{
+  "class_name": "Debris",
+  "title": "Debris",
+  "character": "Status",
+  "energy_cost": 1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "",
+  "notes": "Status effect with no effect. Exhausts when obtained."
+}

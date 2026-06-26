@@ -1,0 +1,13 @@
+{
+  "class_name": "Mimic",
+  "title": "Mimic",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Gain [gold]Block[/gold] equal to the [gold]Block[/gold] on another player.",
+  "x_cost": false
+}

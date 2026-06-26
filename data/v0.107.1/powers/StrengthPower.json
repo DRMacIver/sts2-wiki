@@ -1,0 +1,9 @@
+{
+  "class_name": "StrengthPower",
+  "title": "Strength",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Strength adds additional damage to Attacks.",
+  "smart_description": "{Amount:cond:<0?Decreases|Increases} attack damage by [blue]{Amount:abs()}[/blue].",
+  "notes": "Allows negative stacks (AllowNegative = true), so Strength can become a debuff when applied with negative intensity. The smart description dynamically shows 'Increases' or 'Decreases' based on the current stack value."
+}

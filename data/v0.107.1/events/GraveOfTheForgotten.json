@@ -1,0 +1,35 @@
+{
+  "class_name": "GraveOfTheForgotten",
+  "title": "Grave of the Forgotten",
+  "description": "There is a single grave with a [jitter][aqua]roiling blue flame[/aqua][/jitter]...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it [sine]begging[/sine] to journey with you.\n\nBut perhaps it's better for it to face the [red]truth[/red]?",
+  "options": [
+    {
+      "title": "Confront with Truth",
+      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Soul's Power[/purple].",
+      "requires": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
+    },
+    {
+      "title": "Accept the Forgotten Soul",
+      "description": "Obtain [gold]Forgotten Soul[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [
+    "All players must have at least one card that can be enchanted with [purple]Soul's Power[/purple]"
+  ],
+  "notes": "The [purple]Soul's Power[/purple] enchantment removes the [gold]Exhaust[/gold] keyword from any card it's applied to. The [gold]Forgotten Soul[/gold] relic deals damage to a random enemy whenever you [gold]Exhaust[/gold] a card, creating interesting synergy with both event choices. The [red]Decay[/red] curse is unplayable and damages you at the end of your turn whenever it's in your [gold]Hand[/gold].",
+  "card_refs": [
+    {
+      "class_name": "Decay",
+      "title": "Decay",
+      "slug": "decay"
+    }
+  ],
+  "relic_refs": [
+    {
+      "class_name": "ForgottenSoul",
+      "title": "Forgotten Soul",
+      "slug": "forgotten-soul"
+    }
+  ]
+}

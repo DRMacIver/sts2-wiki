@@ -1,0 +1,20 @@
+{
+  "class_name": "Stomp",
+  "title": "Stomp",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 12 damage to ALL enemies.\nCosts 1 less energy for each Attack played this turn.",
+  "x_cost": false,
+  "referenced_powers": []
+}

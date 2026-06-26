@@ -1,0 +1,25 @@
+{
+  "class_name": "CaptureSpirit",
+  "title": "Capture Spirit",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Enemy loses 3 HP.\nAdd 3 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Enemy loses 4 HP.\nAdd 4 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+  "x_cost": false
+}

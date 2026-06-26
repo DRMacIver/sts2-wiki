@@ -1,0 +1,32 @@
+{
+  "class_name": "SicEm",
+  "title": "Sic 'Em",
+  "character": "Token",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 6
+    },
+    {
+      "type": "Summon",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 5 damage.\nWhenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] 3.",
+  "upgraded_description": "[gold]Osty[/gold] deals 6 damage.\nWhenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] 4.",
+  "referenced_powers": [
+    {
+      "class_name": "SicEmPower",
+      "title": "Sic 'Em",
+      "slug": "sic-em-power"
+    }
+  ],
+  "notes": "Card used by Osty companion. The power is applied to the target enemy whenever Osty hits them during this turn. Card glows red if Osty is missing."
+}

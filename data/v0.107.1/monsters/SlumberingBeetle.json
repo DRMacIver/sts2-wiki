@@ -1,0 +1,36 @@
+{
+  "class_name": "SlumberingBeetle",
+  "title": "Slumbering Beetle",
+  "min_hp": 89,
+  "max_hp": 89,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SNORE_MOVE",
+      "title": "Snore",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "ROLL_OUT_MOVE",
+      "title": "Roll Out",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 18 damage", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Cycles between Snore (while has Slumber power) and Roll Out. Once Slumber power ends, repeatedly uses Roll Out.",
+  "powers_on_spawn": ["Plating (18)", "Slumber (3)"],
+  "notes": "The monster starts asleep with Slumber and Plating powers. The move pattern is controlled by a conditional state machine that checks if the beetle still has Slumber power. While sleeping, it uses Snore (a do-nothing move). Once the Slumber power expires after 3 turns, it transitions to repeatedly using Roll Out. The Plating power is removed during the wake-up animation sequence."
+}

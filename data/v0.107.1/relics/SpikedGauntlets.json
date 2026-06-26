@@ -1,0 +1,8 @@
+{
+  "class_name": "SpikedGauntlets",
+  "title": "Spiked Gauntlets",
+  "rarity": "Ancient",
+  "description": "Gain 1 energy at the start of each turn. Powers cost 1 more energy.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Power cost increase only applies in combat to cards owned by the relic owner."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "CorrosiveWavePower",
+  "title": "Corrosive Wave",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you draw a card this turn, apply [blue]2[/blue] [gold]Poison[/gold] to ALL enemies.",
+  "smart_description": "Whenever you draw a card this turn, apply [blue]2[/blue] [gold]Poison[/gold] to ALL enemies."
+}

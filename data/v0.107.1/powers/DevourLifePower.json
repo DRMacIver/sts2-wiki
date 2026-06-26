@@ -1,0 +1,8 @@
+{
+  "class_name": "DevourLifePower",
+  "title": "Devour Life",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a [gold]Soul[/gold], [gold]Summon[/gold] [blue]1[/blue].",
+  "smart_description": "Whenever you play a [gold]Soul[/gold], [gold]Summon[/gold] [blue]1[/blue]."
+}

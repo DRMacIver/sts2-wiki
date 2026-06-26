@@ -1,0 +1,8 @@
+{
+  "class_name": "SkittishPower",
+  "title": "Skittish",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first time this creature is hit each turn, it gains [blue]1[/blue] [gold]Block[/gold].",
+  "smart_description": "The first time [gold]{OwnerName}[/gold] is hit each turn, it gains [blue]{Amount}[/blue] [gold]Block[/gold]."
+}

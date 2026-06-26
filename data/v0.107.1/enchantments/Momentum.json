@@ -1,0 +1,19 @@
+{
+  "class_name": "Momentum",
+  "title": "Momentum",
+  "description": "Increase this card's attack damage by [blue]5[/blue] this combat when played.",
+  "extra_card_text": "Increase this card's damage by 5 this combat.",
+  "card_type": "Attack",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "PunchDagger",
+      "title": "Punch Dagger",
+      "amount": 5
+    }
+  ],
+  "notes": "Each time the enchanted card is played, its damage increases by 5 for the remainder of combat (cumulative). The bonus only applies to powered attacks."
+}

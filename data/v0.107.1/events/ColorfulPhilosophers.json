@@ -1,0 +1,34 @@
+{
+  "class_name": "ColorfulPhilosophers",
+  "title": "Colorful Philosophers",
+  "description": "Before you is a rather epic sight.\nYou see 3 different colored statues towering over a dais, having a [jitter][red]heated debate[/red][/jitter] over the philosophical implications of color.\n\nAs you listen in, you get a sense that the most important question at hand is which color truly is [gold]THE BEST[/gold].\n\nYou chime in with your thoughts.",
+  "options": [
+    {
+      "title": "Red",
+      "description": "Obtain [blue]3[/blue] Ironclad cards."
+    },
+    {
+      "title": "Green",
+      "description": "Obtain [blue]3[/blue] Silent cards."
+    },
+    {
+      "title": "Blue",
+      "description": "Obtain [blue]3[/blue] Defect cards."
+    },
+    {
+      "title": "Pink",
+      "description": "Obtain [blue]3[/blue] Necrobinder cards."
+    },
+    {
+      "title": "Orange",
+      "description": "Obtain [blue]3[/blue] Regent cards."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [
+    "All players have unlocked multiple character card pools"
+  ],
+  "notes": "The event presents 3 out of 5 possible character color options. Your current character's color is excluded from the available choices. Each option grants [blue]3[/blue] cards from the selected character's card pool: one common rarity, one uncommon rarity, and one rare rarity.",
+  "card_refs": [],
+  "relic_refs": []
+}

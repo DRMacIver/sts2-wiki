@@ -1,0 +1,8 @@
+{
+  "class_name": "PandorasBox",
+  "title": "Pandora's Box",
+  "rarity": "Ancient",
+  "description": "Transform ALL Strikes and Defends.",
+  "flavor": "Details for this relic will be revealed in the future...",
+  "notes": "Upon pickup, transforms all Strike and Defend cards in your deck into random cards. Displays a modal showing all transformed cards."
+}

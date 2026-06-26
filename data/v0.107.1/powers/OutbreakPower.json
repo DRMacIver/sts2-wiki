@@ -1,0 +1,8 @@
+{
+  "class_name": "OutbreakPower",
+  "title": "Outbreak",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Every [blue]10[/blue] times you apply [gold]Poison[/gold], deal damage to ALL enemies.",
+  "notes": "Tracks poison applications as a counter (0-2 before reset). Triggers damage to all enemies when 3 poison applications are made by the owner, with damage based on the power's configured Amount value. Note: The localization description states 10, but the code threshold is 3 (this may be a localization version mismatch)."
+}

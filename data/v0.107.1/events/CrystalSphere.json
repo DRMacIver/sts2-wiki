@@ -1,0 +1,34 @@
+{
+  "class_name": "CrystalSphere",
+  "title": "Crystal Sphere",
+  "description": "[sine][blue]\"I predicted you'd enter...!\"[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]\"Your destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!\"[/blue][/sine]\n\"Okay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well,\" she says while bringing out pen and parchment.",
+  "options": [
+    {
+      "title": "Uncover Future",
+      "description": "Pay [red]51-99[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
+    },
+    {
+      "title": "Payment Plan",
+      "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
+    }
+  ],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "All players have at least 100 Gold",
+    "Act 2 or later only"
+  ],
+  "notes": "This event features a minigame where you reveal tiles in a crystal sphere. The [gold]Uncover Future[/gold] option has a variable cost: the base cost is 50 Gold, but an additional 1-49 Gold is added randomly at the start of the event (for a total of 51-99 Gold). The [gold]Payment Plan[/gold] option trades a [red]Debt[/red] curse for more divinations (6 instead of 3). Both options allow you to reveal tiles in the Crystal Sphere and receive items at the end of the session. Items are revealed progressively during the minigame.",
+  "card_refs": [
+    {
+      "class_name": "Debt",
+      "title": "Debt",
+      "slug": "debt"
+    }
+  ],
+  "relic_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "Metamorphosis",
+  "title": "Metamorphosis",
+  "character": "Event",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Add 3 random Attacks into your [gold]Draw Pile[/gold]. They're free to play this combat.",
+  "referenced_powers": [],
+  "notes": "Added Attacks are free to play this combat only."
+}

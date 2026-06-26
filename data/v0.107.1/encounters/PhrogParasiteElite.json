@@ -1,0 +1,10 @@
+{
+  "class_name": "PhrogParasiteElite",
+  "title": "Phrog Parasite",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["PhrogParasite"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Combat encounter featuring the Phrog Parasite supported by spawning Wrigglers through the Infection card mechanic. The encounter has slots for up to 4 additional Wrigglers that spawn during combat."
+}
