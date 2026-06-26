@@ -4,13 +4,13 @@ Static Astro site generated from decompiled Slay the Spire 2 game data.
 
 ## DOTNET_ROOT Fix
 
-The `ilspycmd` tool requires `DOTNET_ROOT` to point to the dotnet libexec directory, NOT the bin directory. On macOS with Homebrew:
+The `ilspycmd` tool requires `DOTNET_ROOT` to point to the dotnet libexec directory, NOT the bin directory. On macOS with Homebrew (use whatever version is under the Cellar — check `ls /opt/homebrew/Cellar/dotnet/`, it bumps over time):
 
 ```bash
-export DOTNET_ROOT=/opt/homebrew/Cellar/dotnet/10.0.103/libexec
+export DOTNET_ROOT=/opt/homebrew/Cellar/dotnet/10.0.107/libexec
 ```
 
-Set this before running `just decompile` or any ilspycmd commands. The justfile's auto-detection does not reliably find the correct path.
+Set this before running `just decompile` or any ilspycmd commands. The justfile's auto-detection does not reliably find the correct path, and its hardcoded fallback goes stale when Homebrew updates dotnet.
 
 ## Commands
 
