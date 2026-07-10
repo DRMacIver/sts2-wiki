@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Patch v0.108.0">
+  <div class="page-header">
+    <h1>v0.108.0 Update</h1>
+    <p class="subtitle">Changes from v0.107.1 &rarr; v0.108.0 &mdash; derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <p class="desc-text">
+      The headline of v0.108.0 is a batch of <strong>15 new multiplayer cards</strong> &mdash; every one of them
+      references other players ("Give another player 5 Strength", "ALL players draw 2 cards", "EVERYONE'S 0-cost
+      Attacks deal 3 additional damage"), building out the co-op mode's card pool across all five characters plus
+      Colorless. Eight new powers support them. Alongside that comes a round of card balance changes (including
+      reworks of <a href={`${base}cards/outbreak/`}>Outbreak</a> and <a href={`${base}cards/fuel/`}>Fuel</a>, and a
+      systemic change from "double damage" effects to percentage-based ones), two rarity swaps, and a full
+      re-render of the card art at visibly higher quality &mdash; nearly every card image in the game changed.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- NEW MULTIPLAYER CARDS           -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="new-cards" style="margin-top: 2rem;">New Multiplayer Cards</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Rarity</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/blaze/`}>Blaze</a></td><td>Ironclad</td><td>Uncommon</td><td>2 ⚡ — Give another player 5 (7) Strength.</td></tr>
+        <tr><td><a href={`${base}cards/midnight/`}>Midnight</a></td><td>Ironclad</td><td>Rare</td><td>12 ⚡ — Deal 99 (120) damage. Costs 1 less for each card Exhausted this combat by ANYONE.</td></tr>
+        <tr><td><a href={`${base}cards/outrage/`}>Outrage</a></td><td>Ironclad</td><td>Uncommon</td><td>0 ⚡ — Deal 9 (13) damage. Add a copy of this card into EVERYONE'S Discard Pile.</td></tr>
+        <tr><td><a href={`${base}cards/blade-symphony/`}>Blade Symphony</a></td><td>Silent</td><td>Uncommon</td><td>1 ⚡ — Add 2 (3) Shivs to ALL players' Hands.</td></tr>
+        <tr><td><a href={`${base}cards/concoct/`}>Concoct</a></td><td>Silent</td><td>Uncommon</td><td>0 ⚡ — Choose another player. Their unblocked Attacks apply 3 (4) Poison this turn.</td></tr>
+        <tr><td><a href={`${base}cards/fade/`}>Fade</a></td><td>Silent</td><td>Uncommon</td><td>0 ⚡ — Another player gains 6 (9) Dexterity this turn.</td></tr>
+        <tr><td><a href={`${base}cards/hibernate/`}>Hibernate</a></td><td>Defect</td><td>Uncommon</td><td>2 ⚡ — This turn your Frost grants ALL allies Block. Channel 2 (3) Frost.</td></tr>
+        <tr><td><a href={`${base}cards/imitation-learning/`}>Imitation Learning</a></td><td>Defect</td><td>Rare</td><td>1 ⚡ — The next 2 (3) times a chosen player plays a Power, you play a copy.</td></tr>
+        <tr><td><a href={`${base}cards/one-for-all/`}>One for All</a></td><td>Defect</td><td>Rare</td><td>1 ⚡ — EVERYONE'S 0-cost Attacks deal 3 (4) additional damage.</td></tr>
+        <tr><td><a href={`${base}cards/cacophony/`}>Cacophony</a></td><td>Necrobinder</td><td>Rare</td><td>2 ⚡ — Every 33 cards drawn by ALL players, deal 66 (99) damage to a random enemy.</td></tr>
+        <tr><td><a href={`${base}cards/soulbound/`}>Soulbound</a></td><td>Necrobinder</td><td>Uncommon</td><td>1 ⚡ — Choose an ally. Whenever you create a Soul, add a Soul to their Draw Pile.</td></tr>
+        <tr><td><a href={`${base}cards/underworld/`}>Underworld</a></td><td>Necrobinder</td><td>Uncommon</td><td>2 ⚡ — Whenever other players deal attack damage this turn, apply that much Doom.</td></tr>
+        <tr><td><a href={`${base}cards/constellation/`}>Constellation</a></td><td>Regent</td><td>Uncommon</td><td>0 ⚡ — Another player draws 1 card, gains 1 Energy, and gains 9 (12) Block.</td></tr>
+        <tr><td><a href={`${base}cards/plot/`}>Plot</a></td><td>Regent</td><td>Uncommon</td><td>1 ⚡ — Next turn, ALL players draw 2 (3) cards.</td></tr>
+        <tr><td><a href={`${base}cards/the-ball/`}>The Ball</a></td><td>Colorless</td><td>Uncommon</td><td>1 ⚡ — Deal 10 damage. Grows by 15 (25) this combat and passes to a random ally.</td></tr>
+      </tbody>
+    </table>
+
+    <p class="desc-text" style="font-size: 0.9rem;">
+      Eight new powers back these cards: Cacophony, Concoct, Fade, Hibernate, Imitation Learning, One for All,
+      Soulbound, and Underworld.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- REWORKS                         -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="reworks" style="margin-top: 2rem;">Reworks</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/outbreak/`}>Outbreak</a></td>
+          <td>Every 3 times you apply Poison, deal 11 (15) damage to ALL enemies.</td>
+          <td><strong>Whenever</strong> you apply Poison, deal 3 (4) damage to ALL enemies.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/fuel/`}>Fuel</a> <em>(Token)</em></td>
+          <td>Gain 1 Energy. Draw 1 (2) card.</td>
+          <td>Gain 1 (2) Energy &mdash; the card draw is gone; the upgrade now grants Energy.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/tank/`}>Tank</a></td>
+          <td>Take double damage; allies take half damage.</td>
+          <td>Percentage-based: take 50% more damage; allies take 50% less.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/tracking/`}>Tracking</a></td>
+          <td>Weak enemies take double damage from Attacks.</td>
+          <td>Weak enemies take 50% more damage from Attacks.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/helix-drill/`}>Helix Drill</a></td>
+          <td>Counts Energy "previously spent this turn".</td>
+          <td>Counts Energy "spent on <strong>other cards</strong> this turn".</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="desc-text" style="font-size: 0.9rem;">
+      The Tank/Tracking changes are part of a systemic shift: the underlying Guarded, Tank, and Tracking powers all
+      moved from "double/half damage" to configurable percentages (currently 50%).
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- BALANCE CHANGES                 -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="balance" style="margin-top: 2rem;">Card Balance Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/devastate/`}>Devastate</a></td><td>Damage 30 (40) &rarr; <strong>35 (45)</strong></td></tr>
+        <tr><td><a href={`${base}cards/flick-flack/`}>Flick-Flack</a></td><td>AoE damage 6 (8) &rarr; <strong>7 (9)</strong></td></tr>
+        <tr><td><a href={`${base}cards/howl-from-beyond/`}>Howl from Beyond</a></td><td>AoE damage 16 (21) &rarr; <strong>18 (24)</strong></td></tr>
+        <tr><td><a href={`${base}cards/momentum-strike/`}>Momentum Strike</a></td><td>Damage 10 (13) &rarr; <strong>11 (15)</strong></td></tr>
+        <tr><td><a href={`${base}cards/reave/`}>Reave</a></td><td>Damage 9 (11) &rarr; <strong>10 (13)</strong></td></tr>
+        <tr><td><a href={`${base}cards/haunt/`}>Haunt</a></td><td>HP loss per Soul 6 (8) &rarr; <strong>7 (9)</strong></td></tr>
+        <tr><td><a href={`${base}cards/soul-storm/`}>Soul Storm</a></td><td>Bonus damage per Soul 2 (3) &rarr; <strong>4 (6)</strong></td></tr>
+        <tr><td><a href={`${base}cards/setup-strike/`}>Setup Strike</a></td><td>Strength gain 2 (3) &rarr; <strong>3 (4)</strong></td></tr>
+        <tr><td><a href={`${base}cards/anticipate/`}>Anticipate</a></td><td>Upgraded Dexterity 3 &rarr; <strong>4</strong></td></tr>
+        <tr><td><a href={`${base}cards/colossus/`}>Colossus</a></td><td>Block 5 (8) &rarr; <strong>4 (7)</strong></td></tr>
+        <tr><td><a href={`${base}cards/crimson-mantle/`}>Crimson Mantle</a></td><td>Block 8 (10) &rarr; <strong>7 (10)</strong></td></tr>
+        <tr><td><a href={`${base}cards/minion-sacrifice/`}>Minion Sacrifice</a> <em>(Token)</em></td><td>Block 8 (11) &rarr; <strong>7 (10)</strong></td></tr>
+        <tr><td><a href={`${base}cards/beacon-of-hope/`}>Beacon of Hope</a></td><td>Cost 1 &rarr; <strong>2</strong> Energy</td></tr>
+        <tr><td><a href={`${base}cards/resonance/`}>Resonance</a></td><td>Star cost 3 &rarr; <strong>2</strong></td></tr>
+        <tr><td><a href={`${base}cards/flanking/`}>Flanking</a></td><td>Rarity Uncommon &rarr; <strong>Rare</strong></td></tr>
+        <tr><td><a href={`${base}cards/ignition/`}>Ignition</a></td><td>Rarity Rare &rarr; <strong>Uncommon</strong></td></tr>
+        <tr><td><a href={`${base}cards/shatter/`}>Shatter</a></td><td>Gained <strong>Exhaust</strong></td></tr>
+        <tr><td><a href={`${base}cards/legion-of-bone/`}>Legion of Bone</a></td><td>Lost <strong>Exhaust</strong></td></tr>
+        <tr><td><a href={`${base}cards/shining-strike/`}>Shining Strike</a></td><td>Lost <strong>Exhaust</strong></td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- MONSTERS / RELICS / ENCOUNTERS  -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="other" style="margin-top: 2rem;">Monsters, Relics &amp; Encounters</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Entity</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}monsters/torch-head-amalgam/`}>Torch Head Amalgam</a></td><td>Tackle damage 19 &rarr; <strong>22</strong> (both Tackle moves)</td></tr>
+        <tr><td><a href={`${base}relics/divine-destiny/`}>Divine Destiny</a></td><td>Stars 6 &rarr; <strong>7</strong></td></tr>
+        <tr><td><a href={`${base}relics/silken-tress/`}>Silken Tress</a></td><td>Description clarified ("the first card reward" &rarr; "your first card reward")</td></tr>
+        <tr><td>Battleworn Dummy <em>(event encounter)</em></td><td>Split into three variants (V1/V2/V3) replacing the single encounter</td></tr>
+        <tr><td><a href={`${base}encounters/strangler-and-friend/`}>Strangler and Friend</a> / <a href={`${base}encounters/overgrowth-flora/`}>Overgrowth Flora</a></td><td>Gained the <strong>Jaxfruit</strong> encounter tag (Strangler also gained <strong>Slimes</strong>)</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ART & ENGINE                    -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="art" style="margin-top: 2rem;">Art &amp; Engine</h2>
+
+    <p class="desc-text">
+      Nearly the entire card-art atlas was <strong>re-rendered at visibly higher quality</strong> this patch &mdash;
+      side-by-side comparison shows sharper linework and redrawn details on hundreds of cards. The wiki's card
+      images have been updated to match. New art also landed for several previously placeholder ("beta") cards,
+      and new relic icons for Fishing Rod, Kaleidoscope, and Silken Tress.
+    </p>
+
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 1rem;">
+      Event scripts were touched broadly this patch, but almost all of it is engine-level refactoring with no
+      gameplay effect. One data-visible exception: Punch-Off's bonus combat rewards are now granted to the event
+      owner rather than duplicated for every player &mdash; in line with the patch's multiplayer focus.
+    </p>
+
+  </div>
+</BaseLayout>
