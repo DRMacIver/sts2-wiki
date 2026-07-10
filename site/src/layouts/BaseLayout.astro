@@ -1,13 +1,17 @@
 ---
+import versionsManifest from '../versions.json';
+
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const version = import.meta.env.PUBLIC_STS2_VERSION || 'v0.107.1';
-const allVersions = (import.meta.env.PUBLIC_STS2_ALL_VERSIONS || 'v0.107.1').split(',');
-const latest = import.meta.env.PUBLIC_STS2_LATEST || 'v0.107.1';
+// Fallbacks (local dev without env vars) come from versions.json, which is
+// generated from the data/ directory by scripts/versions.py.
+const version = import.meta.env.PUBLIC_STS2_VERSION || versionsManifest.latest;
+const allVersions = (import.meta.env.PUBLIC_STS2_ALL_VERSIONS || versionsManifest.all.join(',')).split(',');
+const latest = import.meta.env.PUBLIC_STS2_LATEST || versionsManifest.latest;
 
 ---
 
@@ -57,8 +61,12 @@ const latest = import.meta.env.PUBLIC_STS2_LATEST || 'v0.107.1';
           const latestVer = versionSelect.dataset.latest;
           let path = window.location.pathname;
 
-          // Strip the current version prefix from the path
-          const siteBase = '/sts2-wiki/';
+          // Strip the current version prefix from the path. For non-latest
+          // versions the Astro base already ends with "<version>/", so remove
+          // it to recover the root site base.
+          const siteBase = current !== latestVer && base.endsWith(current + '/')
+            ? base.slice(0, -(current.length + 1))
+            : base;
           let pagePath = path.startsWith(siteBase) ? path.slice(siteBase.length) : path;
 
           // If current version is not latest, strip the version prefix

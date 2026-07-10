@@ -56,6 +56,7 @@ def main() -> None:
     powers_dir = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Models.Powers")
     powers: list[dict] = []
 
+    loc_missing: list[str] = []
     for class_name, content in read_cs_files(powers_dir):
         power = parse_power_file(class_name, content)
         if not power:
@@ -74,6 +75,7 @@ def main() -> None:
             power["title"] = class_name.removesuffix("Power")
             power["description"] = ""
             power["smart_description"] = ""
+            loc_missing.append(class_name)
 
         powers.append(power)
 
@@ -85,13 +87,10 @@ def main() -> None:
     debuffs = sum(1 for p in powers if p.get("type") == "Debuff")
     print(f"  Buffs: {buffs}, Debuffs: {debuffs}")
 
-    unmatched = [
-        p for p in powers if p.get("title") == p.get("class_name", "").removesuffix("Power")
-    ]
-    if unmatched:
-        print(f"\nWARNING: {len(unmatched)} powers without localization:")
-        for p in unmatched[:10]:
-            print(f"  {p['class_name']}")
+    if loc_missing:
+        print(f"\nWARNING: {len(loc_missing)} powers without localization:")
+        for name in loc_missing[:10]:
+            print(f"  {name}")
 
 
 if __name__ == "__main__":

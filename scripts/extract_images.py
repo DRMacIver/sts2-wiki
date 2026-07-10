@@ -107,6 +107,50 @@ def decode_ctex(data: bytes) -> Image.Image | None:
     return None
 
 
+def _visible_bytes(img: Image.Image) -> bytes:
+    """Bytes representing only what a viewer can see: alpha-composited RGB + alpha.
+
+    Block-compressed atlases (BC7 etc.) decode to arbitrary RGB garbage in fully
+    and partially transparent pixels, and that garbage varies between game builds
+    even when the visible sprite is unchanged. Compositing over black weights RGB
+    by alpha, so invisible differences compare equal.
+    """
+    black = Image.new("RGBA", img.size, (0, 0, 0, 255))
+    composited = Image.alpha_composite(black, img)
+    return composited.tobytes() + img.getchannel("A").tobytes()
+
+
+def find_ctex_path(pck_index: dict[str, tuple[int, int]], tex_base: str) -> str | None:
+    """Find the .ctex PCK path for a texture image like "card_atlas_1".
+
+    Matches the exact basename ("card_atlas_1.png-<hash>...") so that e.g.
+    card_atlas_1 never matches a card_atlas_10 path.
+    """
+    pattern = re.compile(rf"(?:^|/){re.escape(tex_base)}\.png-")
+    for pck_file_path in pck_index:
+        if pck_file_path.endswith(".ctex") and pattern.search(pck_file_path):
+            return pck_file_path
+    return None
+
+
+def save_if_changed(img: Image.Image, out_path: str) -> bool:
+    """Save img as PNG unless a visually identical file already exists.
+
+    PNG re-encodes are byte-different even when the content is unchanged, which
+    creates git noise when re-running extraction. Comparing visible pixels lets
+    every atlas (including card_atlas) be extracted on every run safely.
+    """
+    if os.path.exists(out_path):
+        try:
+            existing = Image.open(out_path).convert("RGBA")
+            if existing.size == img.size and _visible_bytes(existing) == _visible_bytes(img):
+                return False
+        except Exception:
+            pass  # unreadable existing file — overwrite it
+    img.save(out_path, "PNG")
+    return True
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract images from Godot PCK")
     parser.add_argument("pck_path", help="Path to the .pck file")
@@ -115,7 +159,7 @@ def main() -> None:
     parser.add_argument(
         "--atlases",
         nargs="*",
-        default=["power_atlas", "relic_atlas", "potion_atlas", "intent_atlas"],
+        default=["power_atlas", "relic_atlas", "potion_atlas", "intent_atlas", "card_atlas"],
         help="Atlas names to extract",
     )
     args = parser.parse_args()
@@ -178,11 +222,7 @@ def main() -> None:
             tex_base = os.path.splitext(tex_image_name)[0]  # "card_atlas_0"
 
             # Find the .ctex file for this specific texture image
-            ctex_path = None
-            for pck_file_path in pck_index:
-                if tex_base in pck_file_path and pck_file_path.endswith(".ctex"):
-                    ctex_path = pck_file_path
-                    break
+            ctex_path = find_ctex_path(pck_index, tex_base)
 
             if not ctex_path:
                 print(f"  Skipping {tex_image_name}: no .ctex found in PCK")
@@ -223,15 +263,14 @@ def main() -> None:
                 out_name = os.path.splitext(filename)[0] + ".png"
                 out_path = os.path.join(atlas_output, out_name)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
-                cropped.save(out_path, "PNG")
-                count += 1
+                if save_if_changed(cropped, out_path):
+                    count += 1
 
-            print(f"  Extracted {count} sprites from {tex_image_name}")
+            print(f"  Wrote {count} new/changed sprites from {tex_image_name}")
             atlas_total += count
 
-        print(f"  Total for {atlas_name}: {atlas_total} sprites")
+        print(f"  Total for {atlas_name}: {atlas_total} new/changed sprites")
         total += atlas_total
-        total += count
 
     # Extract sprite_font icons (star_icon, energy icons, gold_icon, etc.)
     # Each .png.import in images/packed/sprite_fonts/ points at a .ctex in .godot/imported/
@@ -259,8 +298,8 @@ def main() -> None:
             continue
         # Output file name from original .png.import path
         name = os.path.basename(pck_file_path).removesuffix(".import")
-        img.save(os.path.join(sprite_font_dir, name), "PNG")
-        sf_count += 1
+        if save_if_changed(img, os.path.join(sprite_font_dir, name)):
+            sf_count += 1
     if sf_count:
         print(f"  Extracted {sf_count} sprite font icons")
         total += sf_count
@@ -280,8 +319,8 @@ def main() -> None:
                     # Remove hash suffix: name.png-hash.ctex -> name.png
                     name = base.split("-")[0] if "-" in base else base
                     name = name.removesuffix(".ctex").removesuffix(".png") + ".png"
-                    img.save(os.path.join(card_portrait_dir, name), "PNG")
-                    portrait_count += 1
+                    if save_if_changed(img, os.path.join(card_portrait_dir, name)):
+                        portrait_count += 1
 
     if portrait_count:
         print(f"  Extracted {portrait_count} card portraits")

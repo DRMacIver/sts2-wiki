@@ -35,7 +35,46 @@ def render_description_html(desc: str) -> str:
 
 def strip_tags(desc: str) -> str:
     """Strip game rich text tags for plain text."""
-    return re.sub(r"\[/?[^\]]*\]", "", desc)
+    from scripts.common import strip_rich_text
+
+    return strip_rich_text(desc)
+
+
+def resolve_placeholders(desc: str) -> str:
+    """Resolve {placeholder} template expressions in a power description.
+
+    Icon tokens ({singleStarIcon} etc.) and icon-producing calls like
+    {Amount:energyIcons()} are preserved/normalized so rich_text_to_html can
+    render them; unknown value placeholders degrade to "X" or are stripped.
+    """
+    from scripts.common import _ICON_IMAGES
+
+    for _ in range(3):
+        # Resolve innermost {} (empty braces used as value ref in plurals)
+        new_desc = desc.replace("{}", "X")
+        # Handle {Name:plural:singular|plural} — use the plural form
+        new_desc = re.sub(
+            r"\{(\w+):plural:([^|]*)\|([^}]*)\}",
+            lambda m: m.group(3),
+            new_desc,
+        )
+        # Icon-producing calls: normalize to plain icon tokens
+        new_desc = re.sub(r"\{\w+:energyIcons\([^)]*\)\}", "{colorlessEnergyIcon}", new_desc)
+        new_desc = re.sub(r"\{\w+:starIcons\([^)]*\)\}", "{singleStarIcon}", new_desc)
+        # Then resolve {Amount} etc.
+        new_desc = re.sub(r"\{Amount\}", "X", new_desc)
+        new_desc = re.sub(r"\{Amount:[^}]*\}", "X", new_desc)
+        # Strip any other remaining placeholders — except icon tokens, which
+        # rich_text_to_html renders as <img> (stripping them garbles the text)
+        new_desc = re.sub(
+            r"\{([^}]*)\}",
+            lambda m: m.group(0) if m.group(1) in _ICON_IMAGES else "",
+            new_desc,
+        )
+        if new_desc == desc:
+            break
+        desc = new_desc
+    return desc
 
 
 def main() -> None:
@@ -89,25 +128,7 @@ def main() -> None:
         if not desc or desc == "TODO":
             desc = smart_desc
 
-        # Multi-pass resolution to handle nested braces
-        # (rich_text_to_html handles {singleStarIcon} → img tag; keep it as-is here)
-        for _ in range(3):
-            # Resolve innermost {} (empty braces used as value ref in plurals)
-            new_desc = desc.replace("{}", "X")
-            # Handle {Name:plural:singular|plural} — use plural form with X
-            new_desc = re.sub(
-                r"\{(\w+):plural:([^|]*)\|([^}]*)\}",
-                lambda m: m.group(3).replace("X", "X") if "X" in m.group(3) else m.group(3),
-                new_desc,
-            )
-            # Then resolve {Amount} etc.
-            new_desc = re.sub(r"\{Amount\}", "X", new_desc)
-            new_desc = re.sub(r"\{Amount:[^}]*\}", "X", new_desc)
-            # Strip any other remaining simple placeholders
-            new_desc = re.sub(r"\{[^}]*\}", "", new_desc)
-            if new_desc == desc:
-                break
-            desc = new_desc
+        desc = resolve_placeholders(desc)
 
         # Keep smart_description as-is; rich_text_to_html handles icon placeholders
         smart_desc_processed = smart_desc

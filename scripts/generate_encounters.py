@@ -24,6 +24,19 @@ def escape_yaml(value: str) -> str:
     return value
 
 
+def compute_total_monsters(enc: dict, test_monster_classes: set[str]) -> int:
+    """Monster count for an encounter.
+
+    A curated per-entity `total_monsters` (from LLM extraction, e.g. "2 Chompers"
+    when the monster list only names Chomper once) is authoritative; otherwise
+    count the non-test entries in the monster list.
+    """
+    curated = enc.get("total_monsters")
+    if curated:
+        return int(curated)
+    return len([m for m in enc.get("monsters", []) if m not in test_monster_classes])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate encounter content files")
     parser.add_argument("data_dir", help="Path to versioned data directory")
@@ -79,9 +92,26 @@ def main() -> None:
             p.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
+    from scripts.gen_common import load_override
+
     count = 0
     for enc in encounters:
         slug = slugify(enc.get("title", enc["class_name"]))
+
+        # Merge curated override (frontmatter fields into the entity, body kept
+        # as extra page content). An override "monsters" list of dicts is
+        # already-resolved refs and replaces the computed monster_refs.
+        override = load_override(data_dir, "encounters", slug)
+        override_body = ""
+        override_monster_refs: list[dict] | None = None
+        if override:
+            fields, override_body = override
+            monsters_field = fields.get("monsters")
+            if isinstance(monsters_field, list) and all(
+                isinstance(m, dict) for m in monsters_field
+            ):
+                override_monster_refs = fields.pop("monsters")  # type: ignore[assignment]
+            enc.update(fields)
 
         # Skip encounters that only contain test monsters
         enc_monsters = enc.get("monsters", [])
@@ -110,8 +140,10 @@ def main() -> None:
                 }
             )
 
-        # Total monster count before dedup (e.g., 2 Axebots = 2, not 1)
-        total_monsters = len([m for m in enc_monsters if m not in test_monster_classes])
+        if override_monster_refs is not None:
+            monster_refs = override_monster_refs
+
+        total_monsters = compute_total_monsters(enc, test_monster_classes)
 
         lines = ["---"]
         lines.append(f"title: {escape_yaml(enc.get('title', enc['class_name']))}")
@@ -128,6 +160,8 @@ def main() -> None:
         # Add notes as content body if present
         if enc.get("notes"):
             lines.append(enc.get("notes"))
+        if override_body:
+            lines.append(override_body)
 
         filepath = out / f"{slug}.md"
         if filepath.exists():

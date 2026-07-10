@@ -11,13 +11,13 @@ import sys
 from pathlib import Path
 
 
-def find_internal_links(html: str, base_url: str) -> list[str]:
-    """Extract all internal href values from HTML content."""
+def find_internal_urls(html: str, base_url: str, attr: str) -> list[str]:
+    """Extract internal URL values of an attribute (href/src) from HTML content."""
     links: list[str] = []
-    for match in re.finditer(r'href="([^"]*)"', html):
+    for match in re.finditer(rf'{attr}="([^"]*)"', html):
         href = match.group(1)
         # Skip external links, anchors, mailto, javascript
-        if href.startswith(("http://", "https://", "mailto:", "javascript:", "#")):
+        if href.startswith(("http://", "https://", "mailto:", "javascript:", "#", "data:")):
             continue
         # Must start with base URL to be an internal link
         if href.startswith(base_url):
@@ -90,20 +90,34 @@ def main() -> None:
     print(f"Scanning {len(html_files)} HTML files...")
 
     broken: list[tuple[str, str]] = []
+    broken_images: dict[str, int] = {}
     checked = 0
+    checked_images = 0
 
     for html_file in html_files:
         content = html_file.read_text()
-        links = find_internal_links(content, base_url)
         rel_path = html_file.relative_to(dist_dir)
 
-        for href in links:
+        for href in find_internal_urls(content, base_url, "href"):
             checked += 1
             resolved = resolve_link(dist_dir, base_url, href)
             if resolved is None:
                 broken.append((str(rel_path), href))
 
-    print(f"Checked {checked} internal links")
+        # Images are non-fatal: pages intentionally hide missing images via
+        # onerror for known game-data gaps, but the misses should be visible
+        # in the build log rather than silently swallowed.
+        for src in find_internal_urls(content, base_url, "src"):
+            checked_images += 1
+            if resolve_link(dist_dir, base_url, src) is None:
+                broken_images[src] = broken_images.get(src, 0) + 1
+
+    print(f"Checked {checked} internal links, {checked_images} image references")
+
+    if broken_images:
+        print(f"\nWARNING: {len(broken_images)} distinct missing image target(s):")
+        for src, n in sorted(broken_images.items()):
+            print(f"  {src} (referenced {n}x)")
 
     if broken:
         print(f"\n{len(broken)} broken link(s) found:\n")

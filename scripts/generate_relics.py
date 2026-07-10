@@ -121,6 +121,11 @@ def main() -> None:
             p.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
+    # Process real relics before Fake* event doppelgangers so that on a slug
+    # collision (slugify("Mango???") == slugify("Mango")) the real relic owns
+    # the canonical URL and the fake gets the -classname suffix.
+    relics.sort(key=lambda r: (r["class_name"].startswith("Fake"), r["class_name"]))
+
     count = 0
     for relic in relics:
         slug = slugify(relic["title"])

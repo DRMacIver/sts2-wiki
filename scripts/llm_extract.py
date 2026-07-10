@@ -24,6 +24,9 @@ from claude_agent_sdk import (
     query,
 )
 
+from scripts.common import class_name_to_loc_key
+from scripts.versions import latest_version
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LOGS_DIR = PROJECT_ROOT / "logs" / "llm_extract"
 
@@ -134,7 +137,7 @@ def load_localization(loc_dir: str, loc_type: str) -> dict[str, str]:
 
 def get_loc_entries_for_entity(loc_data: dict[str, str], class_name: str) -> dict[str, str]:
     """Extract localization entries relevant to a specific entity."""
-    key = re.sub(r"([a-z])([A-Z])", r"\1_\2", class_name).upper()
+    key = class_name_to_loc_key(class_name)
     entries = {k: v for k, v in loc_data.items() if k.startswith(f"{key}.")}
     if not entries:
         for k, v in loc_data.items():
@@ -445,19 +448,21 @@ The source file is at: {source_path}
         else:
             await _run_agent()
     except Exception as e:
+        # Never cache after an agent failure: the entity file (if present) may be
+        # stale data from an earlier run, and caching the new key would make it
+        # look up-to-date forever.
         log(f"[error] {e}")
-        if entity_file.exists():
-            print(f"  Warning: [{class_name}] agent error (entity file was created): {e}")
-        else:
-            print(f"  Error: [{class_name}] agent failed and entity file not created: {e}")
-            log_file.close()
-            return
+        print(f"  Error: [{class_name}] agent failed, not caching: {e}")
+        return
     finally:
         log_file.close()
 
     print(f"  Transcript: {log_path.relative_to(PROJECT_ROOT)}")
 
-    # Update cache
+    # Update cache — but only when the agent actually produced the entity file.
+    if not entity_file.exists():
+        print(f"  Error: [{class_name}] agent finished without writing {entity_file}, not caching")
+        return
     cache[entity_cache_key] = {
         "cache_key": cache_key,
         "last_processed": str(Path(source_path).stat().st_mtime),
@@ -468,7 +473,11 @@ The source file is at: {source_path}
 async def async_main() -> None:
     parser = argparse.ArgumentParser(description="LLM-based game data extraction")
     parser.add_argument("--type", required=True, choices=list(ENTITY_TYPE_DIRS.keys()))
-    parser.add_argument("--version", default="v0.101.0")
+    parser.add_argument(
+        "--version",
+        default=None,
+        help="Game version (default: latest under data/)",
+    )
     parser.add_argument("--entity", help="Process a single entity by class name")
     parser.add_argument("--force", action="store_true", help="Ignore cache")
     parser.add_argument(
@@ -485,7 +494,7 @@ async def async_main() -> None:
     args = parser.parse_args()
 
     entity_type = args.type
-    version = args.version
+    version = args.version or latest_version()
     decompiled_dir = str(PROJECT_ROOT / "decompiled" / version)
     loc_dir = str(PROJECT_ROOT / "extracted" / version / "localization" / "eng")
 

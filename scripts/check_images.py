@@ -79,13 +79,15 @@ KNOWN_MISSING_MONSTERS = {
 KNOWN_MISSING_CARDS = {
     "NotYet",  # v0.103.2 beta card; atlas region exists but extractor skipped it
     "Wither",  # v0.105.1 status card; no atlas sprite
+    "MadScience",  # Shapeshifting card; art ships as mad_science_{attack,skill,power} variants
 }
 
 
-KNOWN_MISSING_RELICS = {
-    "FishingRod",  # v0.105.1 Ancient relic; not in atlas yet
-    "Kaleidoscope",  # v0.105.1 Ancient relic; not in atlas yet
-    "SilkenTress",  # v0.105.1 Ancient relic; not in atlas yet
+KNOWN_MISSING_RELICS: set[str] = set()
+
+
+KNOWN_MISSING_POWERS = {
+    "UnderworldPower",  # v0.108.0 multiplayer power; icon not in power_atlas yet
 }
 
 
@@ -95,7 +97,7 @@ def check_cards(data_dir: Path, images_dir: Path) -> list[tuple[str, str]]:
     with open(data_dir / "cards.json") as f:
         cards = json.load(f)
     for card in cards:
-        if card["class_name"] in KNOWN_MISSING_CARDS:
+        if card["class_name"] in KNOWN_MISSING_CARDS or "Deprecated" in card["class_name"]:
             continue
         char_dir = card["character"].lower()
         filename = pascal_to_snake(card["class_name"])
@@ -162,6 +164,8 @@ def check_powers(data_dir: Path, images_dir: Path) -> list[tuple[str, str]]:
     with open(data_dir / "powers.json") as f:
         powers = json.load(f)
     for power in powers:
+        if power["class_name"] in KNOWN_MISSING_POWERS:
+            continue
         filename = pascal_to_snake(power["class_name"])
         path = images_dir / "power_atlas" / f"{filename}.png"
         if not path.exists():

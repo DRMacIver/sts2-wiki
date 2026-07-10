@@ -175,9 +175,25 @@ def _render_icon_html(name: str, base_url: str = "/sts2-wiki/") -> str:
     )
 
 
+# [lb]/[rb] are the game's escapes for literal square brackets. They are swapped
+# to sentinels before tag processing so they survive the residual-tag strip.
+_LB_SENTINEL = "\x00LB\x00"
+_RB_SENTINEL = "\x00RB\x00"
+
+# Known non-color markup tags to strip (some carry attributes, e.g.
+# [rainbow freq=0.3] or [font_size=28]). Prose in square brackets — e.g.
+# "[your top relic]" in event text — must NOT be stripped, so this is an
+# explicit list rather than a catch-all.
+_NOISE_TAG_RE = re.compile(
+    r"\[/?(?:sine|wave|shake|b|i|jitter|center|thinky_dots"
+    r"|rainbow(?:\s[^\]]*)?|font_size(?:=[^\]]*)?)\]"
+)
+_COLOR_TAG_STRIP_RE = re.compile(r"\[/?(?:gold|red|blue|green|orange|purple|aqua|pink)\]")
+
+
 def rich_text_to_html(text: str, base_url: str = "/sts2-wiki/") -> str:
     """Convert game rich text tags to HTML spans."""
-    html = text
+    html = text.replace("[lb]", _LB_SENTINEL).replace("[rb]", _RB_SENTINEL)
     # Replace {iconName} placeholders with <img> tags
     for name in _ICON_IMAGES:
         html = html.replace("{" + name + "}", _render_icon_html(name, base_url))
@@ -189,21 +205,28 @@ def rich_text_to_html(text: str, base_url: str = "/sts2-wiki/") -> str:
             rf"\[{tag}\](.*?)\[/{tag}\]",
             rf'<span class="{css_class}">\1</span>',
             html,
+            flags=re.DOTALL,
         )
-    html = re.sub(r"\[/?(?:sine|wave|shake|b|i|jitter|center|thinky_dots)\]", "", html)
+    # Strip known formatting tags (and any unbalanced color tags) rather than
+    # leaking them into the page. Unknown bracketed text is kept: it may be prose.
+    html = _NOISE_TAG_RE.sub("", html)
+    html = _COLOR_TAG_STRIP_RE.sub("", html)
+    html = html.replace(_LB_SENTINEL, "[").replace(_RB_SENTINEL, "]")
     html = html.replace("\n", "<br>")
     return html
 
 
 def strip_rich_text(text: str) -> str:
     """Strip all game rich text tags for plain text."""
-    result = text
+    result = text.replace("[lb]", _LB_SENTINEL).replace("[rb]", _RB_SENTINEL)
     # Convert icon placeholders to readable text
     for name, (alt, _) in _ICON_IMAGES.items():
         result = result.replace("{" + name + "}", alt)
     result = result.replace("[star]", "\u2605")
     result = result.replace("[energy]", "Energy")
-    return re.sub(r"\[/?[^\]]*\]", "", result)
+    result = _NOISE_TAG_RE.sub("", result)
+    result = _COLOR_TAG_STRIP_RE.sub("", result)
+    return result.replace(_LB_SENTINEL, "[").replace(_RB_SENTINEL, "]")
 
 
 def decompiled_dir(base: str, namespace: str) -> str:

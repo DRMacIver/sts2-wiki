@@ -6,15 +6,21 @@ sts2_dll := sts2_app / "Contents/Resources/data_sts2_macos_arm64/sts2.dll"
 sts2_pck := sts2_app / "Contents/Resources/Slay the Spire 2.pck"
 sts2_release := sts2_app / "Contents/Resources/release_info.json"
 
-# Game version (auto-detected or override)
-version := env("STS2_VERSION", "v0.107.1")
+# Game version: STS2_VERSION override, else latest extracted version under data/
+version := env("STS2_VERSION", `python3 -c "from scripts.versions import latest_version; print(latest_version())"`)
 
 # Default: full build
 default: check build
 
 # --- Sanity checks ---
 
-check: check-format check-types check-content check-links check-images
+check: check-format check-types test check-consistency check-content check-links check-images
+
+test:
+    uv run pytest tests/
+
+check-consistency:
+    uv run python -m scripts.check_consistency data/{{version}}
 
 check-format:
     uv run ruff check scripts/
@@ -47,7 +53,9 @@ detect-version:
 
 decompile:
     #!/usr/bin/env bash
-    export DOTNET_ROOT="${DOTNET_ROOT:-$(dirname $(dirname $(readlink -f $(which dotnet) 2>/dev/null || echo /opt/homebrew/Cellar/dotnet/10.0.107/libexec/dotnet)))}"
+    # ilspycmd needs DOTNET_ROOT pointing at the Homebrew libexec dir, which sits
+    # next to the bin dir that `which dotnet` resolves into.
+    export DOTNET_ROOT="${DOTNET_ROOT:-$(dirname $(dirname $(readlink -f $(which dotnet))))/libexec}"
     if [ -d "decompiled/{{version}}" ]; then
         echo "Already decompiled: {{version}}"
     else
@@ -193,14 +201,19 @@ build: extract generate build-site
 preview:
     cd site && npm run dev
 
-# Build all versions into a merged dist-final directory
+# Regenerate the committed versions manifest (site fallback) from data/ dirs
+update-versions:
+    uv run python -m scripts.versions --write
+
+# Build all versions into a merged dist-final directory.
+# The version list is derived from data/ — no manual list to maintain.
 build-all-versions:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    VERSIONS="v0.98.2 v0.99.1 v0.100.0 v0.101.0 v0.103.2 v0.105.1 v0.107.0 v0.107.1"
-    LATEST="v0.107.1"
-    ALL_VERSIONS="v0.107.1,v0.107.0,v0.105.1,v0.103.2,v0.101.0,v0.100.0,v0.99.1,v0.98.2"
+    VERSIONS="$(uv run python -m scripts.versions --list-asc)"
+    LATEST="$(uv run python -m scripts.versions --latest)"
+    ALL_VERSIONS="$(uv run python -m scripts.versions --all-desc)"
     DIST_FINAL="site/dist-final"
 
     rm -rf "$DIST_FINAL"
@@ -247,3 +260,21 @@ build-all-versions:
 
 # Full update from game files
 update: decompile extract-pck extract extract-images generate build-site
+
+# Everything automatable for a new game version. Set STS2_VERSION explicitly
+# (the default `version` derives from data/, which won't include a version
+# that hasn't been extracted yet):
+#   STS2_VERSION=$(just detect-version) just new-patch
+# Afterwards: diff the data (`just diff-latest`), write the patch-notes page
+# (site/src/pages/patches/) and update patches/index.astro, then `just check`.
+new-patch: decompile extract-pck extract extract-images llm-extract update-versions generate build-site
+    @echo ""
+    @echo "=== new-patch done for {{version}} ==="
+    @echo "Manual steps remaining:"
+    @echo "  1. just diff-latest   # review data changes"
+    @echo "  2. Write site/src/pages/patches/<version>.astro + update patches/index.astro"
+    @echo "  3. just check"
+
+# Diff the two most recent extracted versions
+diff-latest:
+    uv run python -m scripts.diff_versions "data/$(uv run python -m scripts.versions --previous)" "data/$(uv run python -m scripts.versions --latest)"

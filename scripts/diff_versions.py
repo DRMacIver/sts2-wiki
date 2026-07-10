@@ -24,17 +24,52 @@ def key_of(entry: dict) -> str:
     )
 
 
+def load_entity_dir(path: str) -> list[dict]:
+    """Load all per-entity JSON files in a directory as a list of entities."""
+    entities = []
+    for fname in sorted(os.listdir(path)):
+        if fname.endswith(".json"):
+            with open(os.path.join(path, fname)) as f:
+                entities.append(json.load(f))
+    return entities
+
+
+def load_kind(version_dir: str, fname: str) -> list[dict] | None:
+    """Load one entity kind: the aggregate file, with per-entity JSON merged over
+    it (per-entity data is what the generators actually render for most fields).
+
+    Events have no aggregate file and exist only per-entity.
+    """
+    agg_path = os.path.join(version_dir, fname)
+    entity_dir = os.path.join(version_dir, fname.removesuffix(".json"))
+
+    by_key: dict[str, dict] = {}
+    if os.path.exists(agg_path):
+        by_key = {key_of(e): e for e in load(agg_path)}
+    if os.path.isdir(entity_dir):
+        for entity in load_entity_dir(entity_dir):
+            key = key_of(entity)
+            if key in by_key:
+                by_key[key] = {**by_key[key], **entity}
+            else:
+                by_key[key] = entity
+    if not by_key:
+        return None
+    return list(by_key.values())
+
+
 def diff_file(old_dir: str, new_dir: str, fname: str) -> None:
-    old_path = os.path.join(old_dir, fname)
-    new_path = os.path.join(new_dir, fname)
-    if not (os.path.exists(old_path) and os.path.exists(new_path)):
-        old_exists = os.path.exists(old_path)
-        new_exists = os.path.exists(new_path)
-        print(f"## {fname}: MISSING in one version (old={old_exists}, new={new_exists})")
+    old_entities = load_kind(old_dir, fname)
+    new_entities = load_kind(new_dir, fname)
+    if old_entities is None or new_entities is None:
+        print(
+            f"## {fname}: MISSING in one version "
+            f"(old={old_entities is not None}, new={new_entities is not None})"
+        )
         return
 
-    old = {key_of(e): e for e in load(old_path)}
-    new = {key_of(e): e for e in load(new_path)}
+    old = {key_of(e): e for e in old_entities}
+    new = {key_of(e): e for e in new_entities}
 
     added = sorted(set(new) - set(old))
     removed = sorted(set(old) - set(new))

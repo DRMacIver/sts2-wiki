@@ -53,10 +53,10 @@ def parse_enchantment_file(class_name: str, content: str) -> dict | None:
     if can_enchant:
         body = can_enchant.group(1)
         restrictions: list[str] = []
-        if "CardTag.Defend" in body:
-            restrictions.append("Defend-tagged cards only")
         if "CardTag.Strike" in body and "CardTag.Defend" in body:
             restrictions.append("Strike or Defend-tagged Basic cards only")
+        elif "CardTag.Defend" in body:
+            restrictions.append("Defend-tagged cards only")
         elif "CardTag.Strike" in body:
             restrictions.append("Strike-tagged cards only")
         if "CardRarity.Basic" in body:
@@ -113,46 +113,72 @@ def find_enchantment_sources(
         if not os.path.isdir(source_dir):
             continue
         for class_name, content in read_cs_files(source_dir):
-            # Pattern 1: CardCmd.Enchant<EnchName>(card, Nm)
-            for m in re.finditer(r"CardCmd\.Enchant<(\w+)>\(\w+,\s*(\w+)\)", content):
-                ench_name = m.group(1)
-                amount_str = _strip_cs_suffix(m.group(2))
-                amount = int(amount_str) if amount_str.isdigit() else None
-                _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
-
-            # Pattern 2: CardCmd.Enchant(enchObj, card, Nm) or with DynamicVars
-            for m in re.finditer(r"CardCmd\.Enchant\([^,]+,\s*\w+,\s*(\w+)\)", content):
-                amount_str = _strip_cs_suffix(m.group(1))
-                amount = int(amount_str) if amount_str.isdigit() else None
-                # Find which enchantment type from nearby context
-                for em in re.finditer(r"ModelDb\.Enchantment<(\w+)>", content):
-                    ench_name = em.group(1)
-                    _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
-                    break
-
-            # Pattern 3: DynamicVar amounts used in Enchant calls
-            # Find lines like: CardCmd.Enchant(..., base.DynamicVars["VarName"].BaseValue)
-            for m in re.finditer(r'Enchant.*?DynamicVars\["(\w+)"\]', content):
-                var_name = m.group(1)
-                # Resolve the DynamicVar's default value
-                var_m = re.search(rf'DynamicVar\("{var_name}",\s*(\d+)m?\)', content)
-                if not var_m:
-                    continue
-                var_val = int(var_m.group(1))
-                # Find which enchantment is nearby
-                # Look for Enchantment<Type> near this Enchant call
-                context = content[max(0, m.start() - 500) : m.end() + 200]
-                ench_m = re.search(r"Enchantment<(\w+)>", context)
-                if ench_m:
+            file_sources = find_enchantment_sources_in_content(
+                content, source_type, class_name, loc_data
+            )
+            for ench_name, entries in file_sources.items():
+                for entry in entries:
                     _add_source(
-                        sources, ench_m.group(1), source_type, class_name, loc_data, var_val
+                        sources, ench_name, source_type, class_name, loc_data, entry.get("amount")
                     )
 
-            # Pattern 4: SelectAndEnchant<EnchName>(amount, ...)
-            for m in re.finditer(r"SelectAndEnchant<(\w+)>\((\d+)", content):
-                ench_name = m.group(1)
-                amount = int(m.group(2))
-                _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
+    return sources
+
+
+def find_enchantment_sources_in_content(
+    content: str,
+    source_type: str,
+    class_name: str,
+    loc_data: dict[str, str],
+) -> dict[str, list[dict]]:
+    """Find enchantment applications in a single decompiled source file."""
+    sources: dict[str, list[dict]] = {}
+
+    # Pattern 1: CardCmd.Enchant<EnchName>(card, Nm)
+    for m in re.finditer(r"CardCmd\.Enchant<(\w+)>\(\w+,\s*(\w+)\)", content):
+        ench_name = m.group(1)
+        amount_str = _strip_cs_suffix(m.group(2))
+        amount = int(amount_str) if amount_str.isdigit() else None
+        _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
+
+    # Pattern 2: CardCmd.Enchant(enchObj, card, Nm) or with DynamicVars.
+    # The enchantment type is resolved from the nearest ModelDb.Enchantment<T>
+    # *before* the call (falling back to just after), so a file referencing two
+    # enchantment types attributes each amount to the right one.
+    for m in re.finditer(r"CardCmd\.Enchant\([^,]+,\s*\w+,\s*(\w+)\)", content):
+        amount_str = _strip_cs_suffix(m.group(1))
+        amount = int(amount_str) if amount_str.isdigit() else None
+        preceding = list(re.finditer(r"ModelDb\.Enchantment<(\w+)>", content[: m.start()]))
+        if preceding:
+            ench_name = preceding[-1].group(1)
+        else:
+            following = re.search(r"ModelDb\.Enchantment<(\w+)>", content[m.end() :])
+            if not following:
+                continue
+            ench_name = following.group(1)
+        _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
+
+    # Pattern 3: DynamicVar amounts used in Enchant calls
+    # Find lines like: CardCmd.Enchant(..., base.DynamicVars["VarName"].BaseValue)
+    for m in re.finditer(r'Enchant.*?DynamicVars\["(\w+)"\]', content):
+        var_name = m.group(1)
+        # Resolve the DynamicVar's default value
+        var_m = re.search(rf'DynamicVar\("{var_name}",\s*(\d+)m?\)', content)
+        if not var_m:
+            continue
+        var_val = int(var_m.group(1))
+        # Find which enchantment is nearby
+        # Look for Enchantment<Type> near this Enchant call
+        context = content[max(0, m.start() - 500) : m.end() + 200]
+        ench_m = re.search(r"Enchantment<(\w+)>", context)
+        if ench_m:
+            _add_source(sources, ench_m.group(1), source_type, class_name, loc_data, var_val)
+
+    # Pattern 4: SelectAndEnchant<EnchName>(amount, ...)
+    for m in re.finditer(r"SelectAndEnchant<(\w+)>\((\d+)", content):
+        ench_name = m.group(1)
+        amount = int(m.group(2))
+        _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
 
     return sources
 

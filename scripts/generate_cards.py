@@ -133,11 +133,13 @@ def main() -> None:
         cards = json.load(f)
 
     # Fields the LLM extractor cannot reliably determine from a single card
-    # source file, because they depend on how other files reference this card
-    # (e.g. which CardPool it belongs to). For these, the aggregate value
-    # produced by extract_cards.py is authoritative and must not be clobbered
-    # by per-entity data.
-    _AGGREGATE_AUTHORITATIVE = {"character"}
+    # source file — either because they depend on how other files reference this
+    # card (e.g. which CardPool it belongs to) or because they come straight from
+    # the base() constructor and the LLM uses a different, lossier vocabulary
+    # (target "Single" vs "AnyEnemy"/"RandomEnemy", energy_cost -1 for X-cost).
+    # For these, the aggregate value produced by extract_cards.py is
+    # authoritative and must not be clobbered by per-entity data.
+    _AGGREGATE_AUTHORITATIVE = {"character", "energy_cost", "type", "rarity", "target"}
 
     # Load per-entity JSON overrides
     per_entity_dir = os.path.join(data_dir, "cards")
@@ -197,7 +199,20 @@ def main() -> None:
             card["notes"] = note
 
         slug = slugify(card["title"])
+
+        # Merge curated override (frontmatter fields into the entity, body kept
+        # as extra page content)
+        from scripts.gen_common import load_override
+
+        override = load_override(data_dir, "cards", slug)
+        override_body = ""
+        if override:
+            fields, override_body = override
+            card.update(fields)
+
         md = generate_card_markdown(card, power_titles=power_titles)
+        if override_body:
+            md += override_body + "\n"
         filepath = out / f"{slug}.md"
 
         # Handle duplicate slugs (e.g., Defend Ironclad vs Defend Silent)

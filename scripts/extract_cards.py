@@ -66,9 +66,11 @@ def parse_card_file(class_name: str, content: str) -> dict:
     """Parse a decompiled card .cs file to extract key properties."""
     card: dict = {"class_name": class_name}
 
-    # Extract constructor: base(cost, CardType.X, CardRarity.Y, TargetType.Z)
+    # Extract constructor: base(cost, CardType.X, CardRarity.Y, TargetType.Z, ...)
+    # Trailing optional args (e.g. shouldShowInCardLibrary: false on MadScience)
+    # must not prevent the match.
     m = re.search(
-        r":\s*base\((-?\d+),\s*CardType\.(\w+),\s*CardRarity\.(\w+),\s*TargetType\.(\w+)\)",
+        r":\s*base\((-?\d+),\s*CardType\.(\w+),\s*CardRarity\.(\w+),\s*TargetType\.(\w+)",
         content,
     )
     if m:
@@ -130,15 +132,14 @@ def compute_upgraded_vars(card: dict) -> list[dict]:
     vars_list = card.get("vars", [])
     upgrades = card.get("upgrades", [])
 
-    # Build a lookup of upgrade amounts by var name
+    # Build a lookup of upgrade amounts by var name. A var can be upgraded by
+    # multiple UpgradeValueBy calls, so amounts accumulate.
     upgrade_amounts: dict[str, int] = {}
     for u in upgrades:
         if "var" in u:
             var_name = u["var"]
-            # Map DynamicVars property names to var types
-            # e.g., "Damage" -> "Damage", "Vulnerable" -> "Vulnerable"
             # The var name from UpgradeValueBy corresponds to the DynamicVars property
-            upgrade_amounts[var_name] = u["amount"]
+            upgrade_amounts[var_name] = upgrade_amounts.get(var_name, 0) + u["amount"]
 
     result = []
     for v in vars_list:
@@ -413,8 +414,12 @@ def main() -> None:
     for class_name, content in read_cs_files(cards_dir):
         card = parse_card_file(class_name, content)
 
-        # Skip if we couldn't parse the constructor (not a real card)
+        # Skip if we couldn't parse the constructor (not a real card) — but warn
+        # loudly if the file looks like a concrete card, so parser gaps are
+        # visible instead of silently dropping cards from the wiki.
         if "energy_cost" not in card:
+            if re.search(rf"sealed class {class_name} : \w*CardModel", content):
+                print(f"WARNING: {class_name} looks like a card but its constructor didn't parse")
             continue
 
         # Character assignment
