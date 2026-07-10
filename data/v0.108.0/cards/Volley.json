@@ -1,0 +1,20 @@
+{
+  "class_name": "Volley",
+  "title": "Volley",
+  "character": "Colorless",
+  "energy_cost": -1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Deal 10 damage to a random enemy X times.",
+  "upgraded_description": "Deal 14 damage to a random enemy X times.",
+  "x_cost": true
+}
