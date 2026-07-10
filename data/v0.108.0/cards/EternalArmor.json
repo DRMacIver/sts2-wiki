@@ -1,0 +1,26 @@
+{
+  "class_name": "EternalArmor",
+  "title": "Eternal Armor",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Plating",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Gain +9 [gold]Plating[/gold].",
+  "upgraded_description": "Gain +12 [gold]Plating[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "PlatingPower",
+      "title": "Plating",
+      "slug": "plating-power"
+    }
+  ]
+}

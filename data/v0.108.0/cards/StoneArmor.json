@@ -1,0 +1,26 @@
+{
+  "class_name": "StoneArmor",
+  "title": "Stone Armor",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "PlatingPower",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Gain 4 [gold]Plating[/gold].",
+  "upgraded_description": "Gain 6 [gold]Plating[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "PlatingPower",
+      "title": "Plating",
+      "slug": "plating"
+    }
+  ]
+}

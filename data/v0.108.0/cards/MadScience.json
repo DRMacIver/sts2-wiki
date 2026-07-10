@@ -1,0 +1,96 @@
+{
+  "class_name": "MadScience",
+  "title": "Mad Science",
+  "character": "Event",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AnyEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12
+    },
+    {
+      "type": "Block",
+      "base_value": 8
+    },
+    {
+      "type": "Weak",
+      "base_value": 2
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 2
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3
+    },
+    {
+      "type": "Strangle",
+      "base_value": 6
+    },
+    {
+      "type": "Energy",
+      "base_value": 2
+    },
+    {
+      "type": "Cards",
+      "base_value": 3
+    },
+    {
+      "type": "Strength",
+      "base_value": 2
+    },
+    {
+      "type": "Dexterity",
+      "base_value": 2
+    },
+    {
+      "type": "Reduction",
+      "base_value": 1
+    }
+  ],
+  "description": "This transforming event card can be any type (Attack, Skill, or Power) based on TinkerTimeType. [gold]Base effects:[/gold] As an Attack, deal 12 damage. As a Skill, gain 8 [gold]Block[/gold]. If a TinkerTime Rider is attached, additional effects apply: [gold]Sapping[/gold]: Apply 2 [gold]Weak[/gold] and 2 [gold]Vulnerable[/gold]. [gold]Choking[/gold]: Whenever you play a card this turn, the enemy loses 6 HP. [gold]Energized[/gold]: Gain 2 [gold]Energy[/gold]. [gold]Wisdom[/gold]: Draw 3 cards. [gold]Chaos[/gold]: Add a random card to your hand; it's free to play this turn. [gold]Expertise[/gold]: Gain 2 [gold]Strength[/gold] and 2 [gold]Dexterity[/gold]. [gold]Curious[/gold]: Powers cost 1 [gold]Energy[/gold] less. [gold]Improvement[/gold]: At the end of combat, [gold]Upgrade[/gold] a random card.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    },
+    {
+      "class_name": "StranglePower",
+      "title": "Strangle",
+      "slug": "strangle"
+    },
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    },
+    {
+      "class_name": "DexterityPower",
+      "title": "Dexterity",
+      "slug": "dexterity"
+    },
+    {
+      "class_name": "CuriousPower",
+      "title": "Curious",
+      "slug": "curious"
+    },
+    {
+      "class_name": "ImprovementPower",
+      "title": "Improvement",
+      "slug": "improvement"
+    }
+  ],
+  "notes": "Mad Science is a transformer card that is created with a random CardType (Attack, Skill, or Power) and an optional TinkerTime RiderEffect. The card dynamically changes its behavior based on these properties. Target is AnyEnemy for Attack mode, Self for Skill/Power modes. Upgrade adds [gold]Innate[/gold] keyword. This card should not appear in standard card libraries."
+}

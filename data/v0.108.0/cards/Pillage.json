@@ -1,0 +1,20 @@
+{
+  "class_name": "Pillage",
+  "title": "Pillage",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 6 damage.\nDraw cards until you draw a non-Attack card.",
+  "referenced_powers": [],
+  "notes": "Continues drawing cards from your deck until a non-Attack card is drawn, stopping if hand reaches maximum capacity."
+}

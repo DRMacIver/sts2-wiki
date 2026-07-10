@@ -1,0 +1,58 @@
+{
+  "class_name": "TheObscura",
+  "title": "The Obscura",
+  "min_hp": 129,
+  "max_hp": 129,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ILLUSION_MOVE",
+      "title": "Illusion",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": ["Summon Parafright"]
+    },
+    {
+      "id": "PIERCING_GAZE_MOVE",
+      "title": "Piercing Gaze",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": ["Deal 11 damage"]
+    },
+    {
+      "id": "SAIL_MOVE",
+      "title": "Sail",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength to teammates"]
+    },
+    {
+      "id": "HARDENING_STRIKE_MOVE",
+      "title": "Hardening Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "block",
+          "amount": 7
+        }
+      ],
+      "effects": ["Deal 7 damage", "Gain 7 Block"]
+    }
+  ],
+  "move_pattern": "Starts with Illusion. Then randomly cycles between Piercing Gaze, Sail, and Hardening Strike, with each move appearing once before the cycle resets.",
+  "powers_on_spawn": [],
+  "notes": "Piercing Gaze is hidden from the bestiary. Illusion summons Parafright to fight alongside The Obscura. Animation states change based on whether the monster has summoned its ally."
+}

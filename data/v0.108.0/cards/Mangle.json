@@ -1,0 +1,31 @@
+{
+  "class_name": "Mangle",
+  "title": "Mangle",
+  "character": "Ironclad",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 15,
+      "upgraded_value": 20
+    },
+    {
+      "type": "StrengthLoss",
+      "base_value": 10,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 15 damage.\nEnemy loses 10 [gold]Strength[/gold] this turn.",
+  "upgraded_description": "Deal 20 damage.\nEnemy loses 15 [gold]Strength[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "ManglePower",
+      "title": "Mangle",
+      "slug": "mangle"
+    }
+  ]
+}

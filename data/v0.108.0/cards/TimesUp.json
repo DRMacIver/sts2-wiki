@@ -1,0 +1,24 @@
+{
+  "class_name": "TimesUp",
+  "title": "Time's Up",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 0
+    }
+  ],
+  "description": "Deal damage equal to the enemy's [gold]Doom[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ]
+}

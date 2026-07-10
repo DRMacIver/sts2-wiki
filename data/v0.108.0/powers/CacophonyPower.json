@@ -1,0 +1,8 @@
+{
+  "class_name": "CacophonyPower",
+  "title": "Cacophony",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Every 33 cards drawn by ALL players, deal damage to a random enemy.",
+  "smart_description": "After [blue]{Cards}[/blue] {Cards:plural:card is drawn by ANY player|cards are drawn across ALL players}, deal [blue]{Amount}[/blue] damage to a random enemy."
+}

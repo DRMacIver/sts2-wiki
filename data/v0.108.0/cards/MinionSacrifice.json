@@ -1,0 +1,20 @@
+{
+  "class_name": "MinionSacrifice",
+  "title": "Minion Sacrifice",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Token",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Gain 7 [gold]Block[/gold].",
+  "upgraded_description": "Gain 10 [gold]Block[/gold].",
+  "x_cost": false
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "Outrage",
+  "title": "Outrage",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Deal 9 damage. Add a copy of this card into EVERYONE'S [gold]Discard Pile[/gold].",
+  "upgraded_description": "Deal 13 damage. Add a copy of this card into EVERYONE'S [gold]Discard Pile[/gold].",
+  "notes": "Multiplayer only. Adds a copy of this card to the discard pile of every other player in the combat."
+}

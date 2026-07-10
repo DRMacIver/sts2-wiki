@@ -1,0 +1,28 @@
+{
+  "class_name": "Salvo",
+  "title": "Salvo",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [
+    "Retain"
+  ],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12,
+      "upgraded_value": 16
+    }
+  ],
+  "description": "Deal 12 damage.\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
+  "upgraded_description": "Deal 16 damage.\n[gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "RetainHandPower",
+      "title": "Retain Hand",
+      "slug": "retain-hand"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "class_name": "SignalBoost",
+  "title": "Signal Boost",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1
+    }
+  ],
+  "description": "The next Power you play is played an additional time.",
+  "upgraded_cost": 0,
+  "referenced_powers": [
+    {
+      "class_name": "SignalBoostPower",
+      "title": "Signal Boost",
+      "slug": "signal-boost"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "TheSmith",
+  "title": "The Smith",
+  "character": "Colorless",
+  "energy_cost": -2,
+  "star_cost": 4,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 30,
+      "upgraded_value": 40
+    }
+  ],
+  "description": "[gold]Forge[/gold] 30.",
+  "upgraded_description": "[gold]Forge[/gold] 40.",
+  "x_cost": false
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "ArchaicTooth",
+  "title": "Archaic Tooth",
+  "rarity": "Ancient",
+  "character": "Ironclad",
+  "description": "Upon pickup, [gold]Transform[/gold] a starter card into an [gold]ancient version[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic transforms one of five specific Ironclad starter cards into its ancient equivalent. The starter-to-ancient card mappings are: Bash → Break, Neutralize → Suppress, Unleash → Protector, Falling Star → Meteor Shower, Dualcast → Quadcast. The transformation preserves card upgrades and any enchantments applied to the original card."
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "SpectrumShift",
+  "title": "Spectrum Shift",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 1
+    }
+  ],
+  "description": "At the start of your turn, add 1 random Colorless card into your [gold]Hand[/gold].",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "SpectrumShiftPower",
+      "title": "Spectrum Shift",
+      "slug": "spectrum-shift"
+    }
+  ]
+}

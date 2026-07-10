@@ -1,0 +1,9 @@
+{
+  "class_name": "FlexPotion",
+  "title": "Flex Potion",
+  "rarity": "Common",
+  "usage": "Drink",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]5[/blue] [gold]Strength[/gold]. At the end of your turn, lose [blue]5[/blue] [gold]Strength[/gold].",
+  "notes": "Grants a temporary Strength buff that is removed at the end of your turn."
+}

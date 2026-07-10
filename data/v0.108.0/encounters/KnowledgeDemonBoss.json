@@ -1,0 +1,10 @@
+{
+  "class_name": "KnowledgeDemonBoss",
+  "title": "Knowledge Demon",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": ["KnowledgeDemon"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Boss encounter with custom camera scaling (0.85x) and offset. Uses custom background and special BGM (event:/music/act2_boss_knowledge_demon)."
+}

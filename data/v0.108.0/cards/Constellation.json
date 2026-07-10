@@ -1,0 +1,30 @@
+{
+  "class_name": "Constellation",
+  "title": "Constellation",
+  "character": "Event",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    },
+    {
+      "type": "Energy",
+      "base_value": 1
+    },
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Another player draws 1 card, gains 1 Energy, and gains 9 [gold]Block[/gold].",
+  "upgraded_description": "Another player draws 1 card, gains 1 Energy, and gains 12 [gold]Block[/gold].",
+  "star_cost": 2,
+  "x_cost": false,
+  "notes": "Multiplayer-only card."
+}

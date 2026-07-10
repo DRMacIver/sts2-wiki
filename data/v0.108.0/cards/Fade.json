@@ -1,0 +1,27 @@
+{
+  "class_name": "Fade",
+  "title": "Fade",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyAlly",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Dexterity",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Another player gains 6 [gold]Dexterity[/gold] this turn.",
+  "upgraded_description": "Another player gains 9 [gold]Dexterity[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "FadePower",
+      "title": "Fade",
+      "slug": "fade"
+    }
+  ],
+  "notes": "Multiplayer-only card. Grants Dexterity to a targeted ally for one turn via FadePower."
+}

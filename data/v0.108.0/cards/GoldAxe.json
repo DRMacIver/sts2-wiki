@@ -1,0 +1,19 @@
+{
+  "class_name": "GoldAxe",
+  "title": "Gold Axe",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 0
+    }
+  ],
+  "description": "Deal damage equal to the number of cards played this combat.",
+  "x_cost": false,
+  "notes": "Damage scales with the total number of cards played during this combat. When upgraded, gains Retain to stay in your hand after playing."
+}

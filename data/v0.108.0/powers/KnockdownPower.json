@@ -1,0 +1,9 @@
+{
+  "class_name": "KnockdownPower",
+  "title": "Knockdown",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature takes damage from other players [blue]multiplied by the knockdown counter[/blue] this turn.",
+  "smart_description": "Other allies deal [blue]increased damage multiplied by the knockdown counter[/blue] to this enemy this turn.",
+  "notes": "Single-turn stacking debuff that removes itself at the end of the owner's turn. Multiplies damage taken from other players (excluding the player who applied this power). Only affects powered attacks."
+}

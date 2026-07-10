@@ -1,0 +1,9 @@
+{
+  "class_name": "StrengthPower",
+  "title": "Strength",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Strength adds additional damage to Attacks.",
+  "smart_description": "Dynamically shows 'Increases attack damage by [amount]' when positive or 'Decreases attack damage by [amount]' when negative, where [amount] is the absolute value of Strength.",
+  "notes": "Can have negative values. Only applies to powered attacks dealt by the owner."
+}

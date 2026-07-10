@@ -1,0 +1,9 @@
+{
+  "class_name": "IllusionPower",
+  "title": "Illusion",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When this dies, it revives next turn at full HP.",
+  "smart_description": "When this dies, it revives next turn at full HP.",
+  "notes": "Applies Minion power when applied. On death, creature is stunned and revives with full HP next turn via a heal action. While reviving, the creature cannot be hit. Creature remains in combat after death."
+}

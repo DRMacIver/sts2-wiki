@@ -1,0 +1,10 @@
+{
+  "class_name": "ChompersNormal",
+  "title": "An Automaton Pair",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Chomper"],
+  "total_monsters": 2,
+  "tags": ["Chomper"],
+  "notes": "One Chomper is configured to attack first (ScreamFirst=true)."
+}

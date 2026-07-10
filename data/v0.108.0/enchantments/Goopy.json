@@ -1,0 +1,19 @@
+{
+  "class_name": "Goopy",
+  "title": "Goopy",
+  "description": "This card gains [gold]Exhaust[/gold]. When played, permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+  "extra_card_text": "Permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+  "card_type": "Skill",
+  "restrictions": ["Defend cards only"],
+  "stackable": true,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "PaelsClaw",
+      "title": "Pael's Claw",
+      "amount": 1
+    }
+  ],
+  "notes": "Each time the enchanted card is played, it permanently gains 1 additional block for all subsequent plays. The card also gains the Exhaust keyword, making it consume itself when played."
+}

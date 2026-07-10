@@ -1,0 +1,35 @@
+{
+  "class_name": "BlackHole",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "vars": [
+    {
+      "type": "BlackHole",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "upgrades": [
+    {
+      "var": "BlackHolePower",
+      "amount": 1
+    }
+  ],
+  "referenced_powers": [
+    {
+      "class_name": "BlackHolePower",
+      "title": "Black Hole",
+      "slug": "black-hole"
+    }
+  ],
+  "character": "Regent",
+  "loc_key": "BLACK_HOLE",
+  "title": "Black Hole",
+  "description_template": "Whenever you spend or gain {singleStarIcon}, deal {BlackHolePower:diff()} damage to ALL enemies.",
+  "description_plain": "Whenever you spend or gain ♦, deal 3 damage to ALL enemies.",
+  "description_html": "Whenever you spend or gain [star], deal 3 damage to ALL enemies.",
+  "upgraded_description_plain": "Whenever you spend or gain ♦, deal 4 damage to ALL enemies.",
+  "upgraded_description_html": "Whenever you spend or gain [star], deal 4 damage to ALL enemies."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "TemporaryFocusPower",
+  "title": "[Title varies by source]",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Focus[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Focus[/gold] until the end of this turn.",
+  "notes": "Abstract base class. Title is inherited from the source (card, potion, or relic) that applies this power. A debuff variant exists (TEMPORARY_FOCUS_DOWN) that applies negative Focus instead. This power is removed at the end of the turn after applying or removing the equivalent Focus to the owner."
+}

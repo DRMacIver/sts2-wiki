@@ -1,0 +1,21 @@
+{
+  "class_name": "Defile",
+  "title": "Defile",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 17
+    }
+  ],
+  "description": "Deal 13 damage.",
+  "upgraded_description": "Deal 17 damage.",
+  "referenced_powers": [],
+  "notes": null
+}

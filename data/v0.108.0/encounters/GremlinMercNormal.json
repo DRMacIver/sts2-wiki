@@ -1,0 +1,10 @@
+{
+  "class_name": "GremlinMercNormal",
+  "title": "Two Gremlins in a Trenchcoat",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["GremlinMerc"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Scene-based encounter. Spawns with single GremlinMerc initially. Additional gremlins (FatGremlin, SneakyGremlin) appear via scene mechanics. Gold drops are variable: 100% normal, 50% if FatGremlin escapes without stealing gold, 0% if gold was stolen."
+}

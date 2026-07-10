@@ -1,0 +1,23 @@
+{
+  "class_name": "FlashOfSteel",
+  "title": "Flash of Steel",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 8
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 5 damage.\nDraw 1 card.",
+  "upgraded_description": "Deal 8 damage.\nDraw 1 card."
+}

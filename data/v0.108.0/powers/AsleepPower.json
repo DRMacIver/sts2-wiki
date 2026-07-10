@@ -1,0 +1,9 @@
+{
+  "class_name": "AsleepPower",
+  "title": "Asleep",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[LOCALIZATION PENDING]",
+  "smart_description": "Awakens upon losing HP or {Amount:plural:next turn|after [blue]{}[/blue] turns}.",
+  "notes": "Counts down each turn. Wakes up immediately if the owner takes unblocked damage. When count reaches 0, triggers the owner's wake-up move."
+}

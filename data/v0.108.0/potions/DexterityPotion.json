@@ -1,0 +1,8 @@
+{
+  "class_name": "DexterityPotion",
+  "title": "Dexterity Potion",
+  "rarity": "Common",
+  "usage": "Drink",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]2[/blue] [gold]Dexterity[/gold]."
+}

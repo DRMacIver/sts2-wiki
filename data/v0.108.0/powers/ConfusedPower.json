@@ -1,0 +1,8 @@
+{
+  "class_name": "ConfusedPower",
+  "title": "Confused",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "The costs of your cards are randomized on draw, from [blue]0[/blue] to [blue]3[/blue].",
+  "smart_description": "The costs of your cards are randomized on draw, from [blue]0[/blue] to [blue]3[/blue]."
+}

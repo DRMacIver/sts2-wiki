@@ -1,0 +1,24 @@
+{
+  "class_name": "Guardbot",
+  "title": "Guardbot",
+  "min_hp": 17,
+  "max_hp": 21,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "GUARD_MOVE",
+      "title": "Guard",
+      "intents": [
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "All Fabricator allies gain 15 Block"
+      ]
+    }
+  ],
+  "move_pattern": "Repeatedly uses Guard",
+  "powers_on_spawn": [],
+  "notes": "Guardbot's Guard move provides defensive support to Fabricator allies. In multi-bot encounters, it acts as a protective support unit."
+}

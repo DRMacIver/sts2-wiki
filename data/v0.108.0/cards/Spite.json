@@ -1,0 +1,24 @@
+{
+  "class_name": "Spite",
+  "title": "Spite",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5
+    },
+    {
+      "type": "Repeat",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 5 damage.\nIf you lost HP this turn,\nhits 2 times.",
+  "upgraded_description": "Deal 5 damage.\nIf you lost HP this turn,\nhits 3 times.",
+  "notes": "Glows golden when you've taken damage this turn. Hits the upgraded number of times only if you've lost HP this turn; otherwise always hits once."
+}

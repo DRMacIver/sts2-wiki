@@ -1,0 +1,8 @@
+{
+  "class_name": "CalcifyPower",
+  "title": "Calcify",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Osty's[/gold] attacks deal additional damage.",
+  "smart_description": "[gold]Osty's[/gold] attacks deal [blue]{Amount}[/blue] additional damage."
+}

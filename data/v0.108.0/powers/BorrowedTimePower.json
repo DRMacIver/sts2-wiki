@@ -1,0 +1,8 @@
+{
+  "class_name": "BorrowedTimePower",
+  "title": "Borrowed Time",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Cards cost an additional Energy this turn.",
+  "smart_description": "Cards cost an additional {Amount:energyIcons()} this turn."
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "SlitheringStranglerNormal",
+  "title": "Strangler and Friend",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "SlitheringStrangler",
+    "SnappingJaxfruit",
+    "LeafSlimeS",
+    "TwigSlimeS",
+    "LeafSlimeM",
+    "TwigSlimeM"
+  ],
+  "total_monsters": 2,
+  "tags": [
+    "Jaxfruit",
+    "Slimes"
+  ],
+  "notes": "SlitheringStrangler always appears with one of three possible secondary enemies: SnappingJaxfruit (1), a random medium slime (1), or two random small slimes (2). Total monster count is 2 or 3 depending on the secondary enemy spawned."
+}

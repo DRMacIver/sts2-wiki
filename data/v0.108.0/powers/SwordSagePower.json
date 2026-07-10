@@ -1,0 +1,9 @@
+{
+  "class_name": "SwordSagePower",
+  "title": "Sword Sage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Sovereign Blade[/gold] gains [gold]Replay[/gold] [blue]1[/blue].",
+  "smart_description": "[gold]Sovereign Blade[/gold] gains [gold]Replay[/gold] [blue]{Amount}[/blue].",
+  "notes": "Each stack of this power grants one additional Replay to Sovereign Blade cards. When the power is applied or modified, all cards in combat are updated retroactively."
+}

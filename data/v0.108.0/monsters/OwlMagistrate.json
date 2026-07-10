@@ -1,0 +1,70 @@
+{
+  "class_name": "OwlMagistrate",
+  "title": "Owl Magistrate",
+  "min_hp": 247,
+  "max_hp": 247,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "MAGISTRATE_SCRUTINY",
+      "title": "Magistrate Scrutiny",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "PECK_ASSAULT",
+      "title": "Peck Assault",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 6
+        }
+      ],
+      "effects": [
+        "Deal 4 damage",
+        "6 hits"
+      ]
+    },
+    {
+      "id": "JUDICIAL_FLIGHT",
+      "title": "Judicial Flight",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply Soar"
+      ]
+    },
+    {
+      "id": "VERDICT",
+      "title": "Verdict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 36
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 36 damage",
+        "Apply 4 Vulnerable",
+        "Remove Soar"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles continuously: Magistrate Scrutiny → Peck Assault → Judicial Flight → Verdict",
+  "powers_on_spawn": [],
+  "notes": "Owl Magistrate uses a flying mechanic: Judicial Flight applies Soar and the monster takes flight. Verdict removes the Soar effect and the monster lands, dealing high damage (36). The cycle repeats indefinitely."
+}

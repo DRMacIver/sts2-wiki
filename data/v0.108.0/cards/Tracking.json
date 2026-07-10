@@ -1,0 +1,27 @@
+{
+  "class_name": "Tracking",
+  "title": "Tracking",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Weak[/gold] enemies take 50% more damage from Attacks.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TrackingPower",
+      "title": "Tracking",
+      "slug": "tracking"
+    },
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    }
+  ],
+  "notes": "Grants Tracking, making your attacks deal 50% more damage to enemies with Weak."
+}

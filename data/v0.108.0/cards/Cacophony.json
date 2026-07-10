@@ -1,0 +1,33 @@
+{
+  "class_name": "Cacophony",
+  "title": "Cacophony",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 33
+    },
+    {
+      "type": "Damage",
+      "base_value": 66,
+      "upgraded_value": 99
+    }
+  ],
+  "description": "Every 33 cards drawn by ALL players, deal 66 damage to a random enemy.",
+  "upgraded_description": "Every 33 cards drawn by ALL players, deal 99 damage to a random enemy.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "CacophonyPower",
+      "title": "Cacophony",
+      "slug": "cacophony-power"
+    }
+  ],
+  "notes": "Multiplayer-only card. Triggers whenever any player draws cards in the game session."
+}

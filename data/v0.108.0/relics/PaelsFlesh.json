@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsFlesh",
+  "title": "Pael's Flesh",
+  "rarity": "Ancient",
+  "description": "Gain an additional 1 Energy at the start of your [blue]3rd[/blue] turn, and every turn after that.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "The relic displays the current turn number as a counter during combat. It becomes Active (glows) when the 3rd turn begins and returns to Normal status after combat ends."
+}

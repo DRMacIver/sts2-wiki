@@ -1,0 +1,10 @@
+{
+  "class_name": "HauntedShipNormal",
+  "title": "Haunted Ship",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["HauntedShip"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": null
+}

@@ -1,0 +1,13 @@
+{
+  "class_name": "Enthralled",
+  "title": "Enthralled",
+  "character": "Curse",
+  "energy_cost": 2,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": ["Eternal"],
+  "vars": [],
+  "description": "If this is in your [gold]Hand[/gold], it must be played before other cards.",
+  "notes": "When Enthralled is in hand, the player cannot play any other cards until Enthralled is played first."
+}

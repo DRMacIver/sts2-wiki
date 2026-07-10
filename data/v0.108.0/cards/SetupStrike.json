@@ -1,0 +1,31 @@
+{
+  "class_name": "SetupStrike",
+  "title": "Setup Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Strength",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 7 damage.\nGain 3 [gold]Strength[/gold] this turn.",
+  "upgraded_description": "Deal 9 damage.\nGain 4 [gold]Strength[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "SetupStrikePower",
+      "title": "Setup Strike",
+      "slug": "setup-strike-power"
+    }
+  ]
+}

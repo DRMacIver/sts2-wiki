@@ -1,0 +1,19 @@
+{
+  "class_name": "IAmInvincible",
+  "title": "I Am Invincible",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Gain 10 [gold]Block[/gold].\nAt the end of your turn, if this is on top of your [gold]Draw Pile[/gold], play it.",
+  "notes": "This card automatically plays itself at the end of your turn if it's on top of your Draw Pile. When it plays, it is exhausted (removed from the run)."
+}

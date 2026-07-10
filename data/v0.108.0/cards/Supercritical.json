@@ -1,0 +1,19 @@
+{
+  "class_name": "Supercritical",
+  "title": "Supercritical",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Gain 4 Energy.",
+  "upgraded_description": "Gain 6 Energy."
+}

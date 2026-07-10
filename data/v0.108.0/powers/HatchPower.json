@@ -1,0 +1,9 @@
+{
+  "class_name": "HatchPower",
+  "title": "Hatch",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Hatches after X turns.",
+  "smart_description": "Hatches after [amount] turn(s).",
+  "notes": "Counter-type power that decrements by 1 each turn at the end of the side turn phase. The smart description displays the current counter value dynamically (e.g., 'Hatches after 3 turn(s).')."
+}

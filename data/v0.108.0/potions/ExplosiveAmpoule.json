@@ -1,0 +1,8 @@
+{
+  "class_name": "ExplosiveAmpoule",
+  "title": "Explosive Ampoule",
+  "rarity": "Common",
+  "usage": "CombatOnly",
+  "target": "AllEnemies",
+  "description": "Deal [blue]10[/blue] damage to ALL enemies."
+}

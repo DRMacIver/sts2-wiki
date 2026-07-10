@@ -1,0 +1,34 @@
+{
+  "class_name": "FatGremlin",
+  "title": "Fat Gremlin",
+  "min_hp": 14,
+  "max_hp": 18,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SPAWNED_MOVE",
+      "title": "Wake Up",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "FLEE_MOVE",
+      "title": "Flee",
+      "intents": [
+        {
+          "type": "escape"
+        }
+      ],
+      "effects": [
+        "Escape from combat"
+      ]
+    }
+  ],
+  "move_pattern": "Starts stunned (Wake Up). Then immediately escapes.",
+  "powers_on_spawn": [],
+  "notes": "Fat Gremlin always appears stunned on the first turn and immediately flees on the second turn. It displays different animation variants depending on whether it has the Heist power."
+}

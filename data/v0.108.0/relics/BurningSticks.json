@@ -1,0 +1,8 @@
+{
+  "class_name": "BurningSticks",
+  "title": "Burning Sticks",
+  "rarity": "Shop",
+  "description": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it into your [gold]Hand[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers once per combat on the first Skill you Exhaust. Creates a duplicate of the exhausted Skill and adds it directly to your hand."
+}

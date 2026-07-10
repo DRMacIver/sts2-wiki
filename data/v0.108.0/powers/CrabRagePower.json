@@ -1,0 +1,8 @@
+{
+  "class_name": "CrabRagePower",
+  "title": "Crab Rage",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When an ally dies, this creature gains [blue]5[/blue] [gold]Strength[/gold] and [blue]99[/blue] [gold]Block[/gold].",
+  "notes": "Triggers when an ally on the same side dies. Applies Strength and Block to the owner, then removes itself. Does not trigger on the owner's own death."
+}

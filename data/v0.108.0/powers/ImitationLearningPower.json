@@ -1,0 +1,9 @@
+{
+  "class_name": "ImitationLearningPower",
+  "title": "Imitation Learning",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When another player plays a Power, you play a copy of it.",
+  "smart_description": "The next [Amount:plural:time|[blue]{Amount}[/blue] times] [gold]{TargetPlayer}[/gold] plays a Power, you play a copy of it.",
+  "notes": "Triggers when the target player plays a Power card. Each trigger decrements the counter by 1. The power maintains a dynamic reference to the target player's identity."
+}

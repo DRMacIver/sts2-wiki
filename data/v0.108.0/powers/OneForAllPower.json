@@ -1,0 +1,9 @@
+{
+  "class_name": "OneForAllPower",
+  "title": "One for All",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your [blue]0[/blue] Energy Attacks deal more damage.",
+  "smart_description": "Your [blue]0[/blue] Energy Attacks deal [blue]X[/blue] more damage.",
+  "notes": "Bonus damage equals the number of power stacks. Only applies to 0-energy attacks (powered attacks with no energy cost)."
+}

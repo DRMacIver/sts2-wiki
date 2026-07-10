@@ -1,0 +1,9 @@
+{
+  "class_name": "HighVoltagePower",
+  "title": "High Voltage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of this creature's turn, it gains [blue]2[/blue] [gold]Strength[/gold].",
+  "smart_description": "At the end of [gold]the creature's[/gold] turn, it gains [blue]per stack[/blue] [gold]Strength[/gold].",
+  "notes": "Counter-type power that stacks. Each stack independently triggers at the end of the creature's turn, applying Strength to the power's owner."
+}

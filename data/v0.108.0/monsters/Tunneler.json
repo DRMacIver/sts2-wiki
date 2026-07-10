@@ -1,0 +1,58 @@
+{
+  "class_name": "Tunneler",
+  "title": "Tunneler",
+  "min_hp": 92,
+  "max_hp": 92,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    },
+    {
+      "id": "BURROW_MOVE",
+      "title": "Burrow",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block",
+          "amount": 37
+        }
+      ],
+      "effects": ["Apply 1 Burrowed", "Gain 37 Block"]
+    },
+    {
+      "id": "BELOW_MOVE",
+      "title": "Attack from Below",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 26
+        }
+      ],
+      "effects": ["Deal 26 damage"]
+    },
+    {
+      "id": "DIZZY_MOVE",
+      "title": "Dizzy",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Main cycle: Bite → Burrow → Below → Below (repeats). When stunned, Dizzy is used for stun recovery before returning to Bite.",
+  "powers_on_spawn": [],
+  "notes": "Tunneler has a stun and burrow mechanic. When stunned, the monster enters a dizzy/stunned visual state with altered animations. All normal moves reset the stun status. The Burrowed power, applied during the Burrow move, changes the monster's visual appearance and animation states (switching to hidden forms). The Below move attacks from underground with special positioning and animation. Damage values scale with ascension difficulty (Bite: 15/13, Below: 26/23, Block gain: 37/32)."
+}

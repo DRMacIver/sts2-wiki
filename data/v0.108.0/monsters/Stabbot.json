@@ -1,0 +1,29 @@
+{
+  "class_name": "Stabbot",
+  "title": "Stabbot",
+  "min_hp": 19,
+  "max_hp": 24,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STAB_MOVE",
+      "title": "Stab",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "Apply 1 Frail"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats: Stab",
+  "powers_on_spawn": [],
+  "notes": "Basic stabbing enemy with no special mechanics."
+}

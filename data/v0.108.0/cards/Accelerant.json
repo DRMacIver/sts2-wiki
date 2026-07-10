@@ -1,0 +1,26 @@
+{
+  "class_name": "Accelerant",
+  "title": "Accelerant",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Repeat",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "[gold]Poison[/gold] is triggered 1 additional time.",
+  "upgraded_description": "[gold]Poison[/gold] is triggered 2 additional times.",
+  "referenced_powers": [
+    {
+      "class_name": "AccelerantPower",
+      "title": "Accelerant",
+      "slug": "accelerant"
+    }
+  ]
+}

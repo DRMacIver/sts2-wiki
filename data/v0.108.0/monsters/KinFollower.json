@@ -1,0 +1,45 @@
+{
+  "class_name": "KinFollower",
+  "title": "Kin Follower",
+  "min_hp": 62,
+  "max_hp": 63,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "QUICK_SLASH_MOVE",
+      "title": "Quick Slash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": ["Deal 5 damage"]
+    },
+    {
+      "id": "BOOMERANG_MOVE",
+      "title": "Boomerang",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 2,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 2 damage", "2 hits"]
+    },
+    {
+      "id": "POWER_DANCE_MOVE",
+      "title": "Power Dance",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength"]
+    }
+  ],
+  "move_pattern": "Cycles: Quick Slash → Boomerang → Power Dance → repeat. Normally starts with Quick Slash, but can start with Power Dance if configured.",
+  "powers_on_spawn": ["Minion Power"],
+  "notes": "Kin Follower is a minion unit that gains scaling damage through Power Dance, which applies Strength to itself. The Strength stacks each time the move is used."
+}

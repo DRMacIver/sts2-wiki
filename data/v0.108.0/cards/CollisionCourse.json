@@ -1,0 +1,21 @@
+{
+  "class_name": "CollisionCourse",
+  "title": "Collision Course",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 11 damage.\nAdd a [gold]Debris[/gold] into your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 15 damage.\nAdd a [gold]Debris[/gold] into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": []
+}

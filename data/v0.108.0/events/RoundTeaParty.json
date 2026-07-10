@@ -1,0 +1,26 @@
+{
+  "class_name": "RoundTeaParty",
+  "title": "The Round Tea Party",
+  "description": "You find an [orange]invitation[/orange] for a [blue]\"Sir Galalot\"[/blue] to a tea party and decide to show up in his stead.\n\nUpon entering an unassuming rotunda, you find yourself in the midst of [gold]commanders[/gold], [aqua]generals[/aqua], [red]warlords[/red], and [blue]mercenaries[/blue] having... tea?\nThe gigantic knight donning a [gold]golden crown[/gold] speaks.\n\n[jitter]\"Thou art late for [b]Tea[/b]?!\"[/jitter]",
+  "options": [
+    {
+      "title": "Enjoy Your Tea",
+      "description": "Obtain [red]Royal Poison[/red]. [green]Heal to full HP.[/green]"
+    },
+    {
+      "title": "Pick a Fight",
+      "description": "Lose [red]11[/red] HP. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": ["All players must have at least 12 HP"],
+  "notes": "This event features two distinct outcomes: [green]Enjoy Tea[/green] provides immediate full healing and the Royal Poison relic; [red]Pick a Fight[/red] triggers a forced continuation where you take 11 HP of [b]unblockable, unpowered[/b] damage and obtain a random relic from the relic pool. The damage cannot be prevented by block or reduced by powers.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "RoyalPoison",
+      "title": "Royal Poison",
+      "slug": "royal-poison"
+    }
+  ]
+}

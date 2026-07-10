@@ -1,0 +1,8 @@
+{
+  "class_name": "SpeedPotion",
+  "title": "Speed Potion",
+  "rarity": "Common",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Gain [blue]5[/blue] [gold]Dexterity[/gold]. At the end of your turn, lose [blue]5[/blue] [gold]Dexterity[/gold]."
+}

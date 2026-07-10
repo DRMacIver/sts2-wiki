@@ -1,0 +1,48 @@
+{
+  "class_name": "Entomancer",
+  "title": "Entomancer",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BEES_MOVE",
+      "title": "Beeeees!",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 8
+        }
+      ],
+      "effects": ["Deal 3 damage", "8 hits"]
+    },
+    {
+      "id": "SPEAR_MOVE",
+      "title": "Spear!",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        }
+      ],
+      "effects": ["Deal 20 damage"]
+    },
+    {
+      "id": "PHEROMONE_SPIT_MOVE",
+      "title": "Agitate Swarm",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "If Hive stacks < 3: Apply 1 Personal Hive and 1 Strength",
+        "If Hive stacks ≥ 3: Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Beeeees! → Spear! → Agitate Swarm → Beeeees!",
+  "powers_on_spawn": ["Personal Hive"],
+  "notes": "Personal Hive is a stacking power that determines Pheromone Spit behavior. When stacks reach 3, the move shifts from building hives to applying raw Strength instead, making the Entomancer increasingly dangerous as combat progresses."
+}

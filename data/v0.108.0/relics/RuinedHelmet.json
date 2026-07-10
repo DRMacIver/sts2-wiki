@@ -1,0 +1,8 @@
+{
+  "class_name": "RuinedHelmet",
+  "title": "Ruined Helmet",
+  "rarity": "Rare",
+  "description": "The first time you gain [gold]Strength[/gold] each combat, double the amount gained.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks whether the doubling effect has been used each combat. Only applies to positive Strength gains to the relic owner. Resets after combat ends."
+}

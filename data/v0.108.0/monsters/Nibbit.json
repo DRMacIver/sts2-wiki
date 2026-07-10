@@ -1,0 +1,55 @@
+{
+  "class_name": "Nibbit",
+  "title": "Nibbit",
+  "min_hp": 44,
+  "max_hp": 48,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BUTT_MOVE",
+      "title": "Butt",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    },
+    {
+      "id": "SLICE_MOVE",
+      "title": "Hesitant Slice",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "block",
+          "amount": 6
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Gain 6 Block"
+      ]
+    },
+    {
+      "id": "HISS_MOVE",
+      "title": "Hiss",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Move sequence depends on positioning: When alone, cycles Butt → Slice → Hiss. When in a group and in front, cycles Slice → Hiss → Butt. When in a group and not in front, cycles Hiss → Butt → Slice.",
+  "powers_on_spawn": [],
+  "notes": "Nibbit's behavior changes based on its position and whether it fights alone. The IsFront and IsAlone properties determine which initial move it starts with, but all three moves are always part of the cycle. Slice is hidden from the bestiary display."
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "Skim",
+  "title": "Skim",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Draw 3 cards.",
+  "upgraded_description": "Draw 4 cards.",
+  "referenced_powers": []
+}

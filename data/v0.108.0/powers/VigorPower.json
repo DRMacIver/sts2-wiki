@@ -1,0 +1,9 @@
+{
+  "class_name": "VigorPower",
+  "title": "Vigor",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your next Attack deals additional damage.",
+  "smart_description": "{OnPlayer:Your|[gold]{OwnerName}'s[/gold]} next Attack deals [blue]{Amount}[/blue] additional damage.",
+  "notes": "Consumes 1 stack per attack that applies Vigor damage. Vigor damage is only applied to powered attacks from cards."
+}

@@ -1,0 +1,24 @@
+{
+  "class_name": "Conflagration",
+  "title": "Conflagration",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemies",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 2
+    },
+    {
+      "type": "Repeat",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 2 damage to ALL enemies 4 times.",
+  "upgraded_description": "Deal 2 damage to ALL enemies 5 times.",
+  "x_cost": false
+}

@@ -1,0 +1,18 @@
+{
+  "class_name": "Wither",
+  "title": "Wither",
+  "character": "Colorless",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], take 3 damage.",
+  "notes": "Wither is a Status card that triggers a passive effect at the end of each turn if it remains in hand. The card cannot be played and will automatically damage the player each turn it is retained."
+}

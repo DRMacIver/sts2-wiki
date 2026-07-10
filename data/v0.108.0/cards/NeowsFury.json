@@ -1,0 +1,26 @@
+{
+  "class_name": "NeowsFury",
+  "title": "Neow's Fury",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 14
+    },
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 10 damage.\nPut up to 2 cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 14 damage.\nPut up to 3 cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Card cannot be generated in combat. When played, it adds up to N cards from the discard pile to your hand, limited by available hand space (maximum 10 cards total)."
+}

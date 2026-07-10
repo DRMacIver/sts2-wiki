@@ -1,0 +1,27 @@
+{
+  "class_name": "RelicTrader",
+  "title": "Relic Trader",
+  "description": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n\"Welcome! What're ya trading?\"\nThe figure inquires as he flares open his cloak to reveal a slew of [sine][purple]suspicious wares[/purple][/sine].",
+  "options": [
+    {
+      "title": "Take the Top One",
+      "description": "Trade [gold][your top relic][/gold] for [gold][a new relic][/gold]."
+    },
+    {
+      "title": "Take the Middle One",
+      "description": "Trade [gold][your middle relic][/gold] for [gold][a new relic][/gold]."
+    },
+    {
+      "title": "Take the Bottom One",
+      "description": "Trade [gold][your bottom relic][/gold] for [gold][a new relic][/gold]."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": [
+    "Act 2+ only (cannot appear in Act 1)",
+    "All players must own at least 5 tradable relics"
+  ],
+  "notes": "This event always offers three relic trades. The three relics you can trade away are [purple]randomly selected[/purple] from your collection of tradable relics (shuffled order), and the three replacement relics are pulled from the front of the standard relic pool. Only relics marked as [gold]tradable[/gold] in their properties are eligible for trade. Each trade immediately removes the old relic and adds the new one to your collection.",
+  "card_refs": [],
+  "relic_refs": []
+}

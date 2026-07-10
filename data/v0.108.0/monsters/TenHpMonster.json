@@ -1,0 +1,22 @@
+{
+  "class_name": "TenHpMonster",
+  "title": "Big Dummy",
+  "min_hp": 10,
+  "max_hp": 10,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NOTHING",
+      "title": "Nothing",
+      "intents": [
+        {
+          "type": "hidden"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Loops the Nothing move forever (hidden intent, does nothing).",
+  "powers_on_spawn": [],
+  "notes": "Test/debug monster. Has exactly 10 HP. Its title references the BIG_DUMMY localization key. Its only move does nothing and loops indefinitely."
+}

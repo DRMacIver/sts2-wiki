@@ -1,0 +1,8 @@
+{
+  "class_name": "BlockPotion",
+  "title": "Block Potion",
+  "rarity": "Common",
+  "usage": "CombatOnly",
+  "target": "Self",
+  "description": "Gain 12 Block."
+}

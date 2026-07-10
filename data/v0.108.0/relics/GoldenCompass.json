@@ -1,0 +1,8 @@
+{
+  "class_name": "GoldenCompass",
+  "title": "Golden Compass",
+  "rarity": "Ancient",
+  "description": "Upon pickup, replace the [gold]Act[/gold] [blue]2[/blue] Map with a single special path.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "When obtained, this relic replaces the map of the act it was picked up in with a special single-path map. All unknown rooms become Event rooms on that act."
+}

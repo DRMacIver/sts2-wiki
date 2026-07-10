@@ -1,0 +1,49 @@
+{
+  "class_name": "PunchConstruct",
+  "title": "Punch Construct",
+  "min_hp": 60,
+  "max_hp": 60,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "READY_MOVE",
+      "title": "READY",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 10
+        }
+      ],
+      "effects": ["Gain 10 Block"]
+    },
+    {
+      "id": "FAST_PUNCH_MOVE",
+      "title": "Fast Punch",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 6 damage", "2 hits", "Apply 1 Frail"]
+    },
+    {
+      "id": "STRONG_PUNCH_MOVE",
+      "title": "Strong Punch",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    }
+  ],
+  "move_pattern": "Cycles: Ready → Fast Punch → Strong Punch → Ready. Can start with Fast Punch depending on configuration.",
+  "powers_on_spawn": ["Artifact"],
+  "notes": "Punch Construct has two configurable properties: StartsWithFastPunch (changes opening move) and StartingHpReduction (reduces initial HP when set, used for different encounter difficulties)."
+}

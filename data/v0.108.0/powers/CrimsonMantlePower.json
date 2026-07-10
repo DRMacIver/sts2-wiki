@@ -1,0 +1,8 @@
+{
+  "class_name": "CrimsonMantlePower",
+  "title": "Crimson Mantle",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, lose HP and gain [gold]Block[/gold].",
+  "smart_description": "At the start of your turn, lose [blue]{SelfDamage}[/blue] HP and gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+}

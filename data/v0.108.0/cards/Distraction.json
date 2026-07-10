@@ -1,0 +1,13 @@
+{
+  "class_name": "Distraction",
+  "title": "Distraction",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Add a random Skill into your [gold]Hand[/gold]. It's free to play this turn.",
+  "upgraded_cost": 0
+}

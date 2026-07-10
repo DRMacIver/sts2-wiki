@@ -1,0 +1,26 @@
+{
+  "class_name": "SpiritGrafter",
+  "title": "Spirit Grafter",
+  "description": "Above, a cocoon is [jitter]shaking and wriggling[/jitter], about to burst forth!\n\n...it stops wriggling. [orange][sine]The cocoon ignites[/sine][/orange]! [jitter]What is going on?[/jitter]\nIn a flash of [gold]light[/gold] and [red]flame[/red], a [orange]Spirit Grafter[/orange] rushes into you, threatening to merge with your being to become complete.",
+  "options": [
+    {
+      "title": "Let It In",
+      "description": "Heal [green]25[/green] HP. Add [gold]Metamorphosis[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Rejection",
+      "description": "Lose [red]10[/red] HP. [gold]Upgrade[/gold] a card."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "This event concludes with different follow-up descriptions based on the player's choice. Choosing [gold]Let It In[/gold] displays: 'The [orange]Spirit Grafter[/orange] merges with you. The vital kindred spirit swiftly [green]heals[/green] you up. You are [blue]reborn[/blue].' Choosing [gold]Rejection[/gold] displays: 'The [orange]Spirit Grafter[/orange] is easily stopped by your will. However, it repeatedly flies into you, desperate for a host. Its strength runs out and it dissolves with a [purple][sine]poof[/sine][/purple]. [sine]A fleeting spirit.[/sine]' The Rejection option allows the player to select one card from their deck to upgrade before taking the HP damage.",
+  "card_refs": [
+    {
+      "class_name": "Metamorphosis",
+      "title": "Metamorphosis",
+      "slug": "metamorphosis"
+    }
+  ],
+  "relic_refs": []
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "Tank",
+  "title": "Tank",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "DamageIncrease",
+      "base_value": 1.5
+    },
+    {
+      "type": "DamageDecrease",
+      "base_value": 0.5
+    }
+  ],
+  "description": "Take 50% more damage from enemies.\nAllies take 50% less damage from enemies.",
+  "upgraded_cost": 0,
+  "referenced_powers": [
+    {
+      "class_name": "TankPower",
+      "title": "Tank",
+      "slug": "tank"
+    }
+  ],
+  "notes": "Multiplayer-only card. Applies Tank Power which modifies damage taken and allies' damage taken."
+}

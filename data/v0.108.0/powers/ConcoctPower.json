@@ -1,0 +1,8 @@
+{
+  "class_name": "ConcoctPower",
+  "title": "Concoct",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you deal unblocked attack damage this turn, apply [blue]3[/blue] [gold]Poison[/gold].",
+  "smart_description": "Whenever you deal unblocked attack damage this turn, apply [blue]{Amount}[/blue] [gold]Poison[/gold]."
+}

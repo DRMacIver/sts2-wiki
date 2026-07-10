@@ -1,0 +1,26 @@
+{
+  "class_name": "MementoMori",
+  "title": "Memento Mori",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 9 damage.\nDeals 4 additional damage for each card discarded this turn.",
+  "upgraded_description": "Deal 11 damage.\nDeals 5 additional damage for each card discarded this turn.",
+  "referenced_powers": [],
+  "notes": "CalculatedDamage is calculated as base damage plus additional damage per card discarded this turn, making this card scale with discard synergy."
+}

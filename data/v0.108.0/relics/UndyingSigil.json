@@ -1,0 +1,8 @@
+{
+  "class_name": "UndyingSigil",
+  "title": "Undying Sigil",
+  "rarity": "Shop",
+  "description": "Enemies with at least as much [gold]Doom[/gold] as HP deal [blue]50%[/blue] less damage.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic passively modifies damage taken from enemies. When an enemy has accumulated Doom equal to or greater than their remaining HP, they deal 50% less damage. Additionally, the presence of this relic causes Doom to trigger at the start of an enemy's turn instead of at the end, allowing enemies to die from Doom before they can attack."
+}

@@ -1,0 +1,10 @@
+{
+  "class_name": "PhrogParasiteElite",
+  "title": "Phrog Parasite",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["PhrogParasite"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Encounter has 5 monster slots defined (phrog + 4 wrigglers), but only spawns PhrogParasite at encounter start. Additional wrigglers spawn conditionally during combat based on PhrogParasite mechanics. The encounter uses the Infection card as an extra asset overlay."
+}

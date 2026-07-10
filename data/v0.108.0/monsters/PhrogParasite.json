@@ -1,0 +1,35 @@
+{
+  "class_name": "PhrogParasite",
+  "title": "Phrog Parasite",
+  "min_hp": 66,
+  "max_hp": 68,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INFECT_MOVE",
+      "title": "Infect",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 3
+        }
+      ],
+      "effects": ["Add 3 Infection cards"]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 4
+        }
+      ],
+      "effects": ["Deal 5 damage", "4 hits"]
+    }
+  ],
+  "move_pattern": "Alternates between Infect and Lash, starting with Infect",
+  "powers_on_spawn": ["Infested"],
+  "notes": "The monster applies Infested power to itself upon entering combat. Infect adds Infection cards to the player's deck, fouling their hand with unplayable cards."
+}

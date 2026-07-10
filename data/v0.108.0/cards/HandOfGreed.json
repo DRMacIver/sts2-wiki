@@ -1,0 +1,27 @@
+{
+  "class_name": "HandOfGreed",
+  "title": "Hand of Greed",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 20,
+      "upgraded_value": 25
+    },
+    {
+      "type": "Gold",
+      "base_value": 20,
+      "upgraded_value": 25
+    }
+  ],
+  "description": "Deal 20 damage. If [gold]Fatal[/gold], gain 20 [gold]Gold[/gold].",
+  "upgraded_description": "Deal 25 damage. If [gold]Fatal[/gold], gain 25 [gold]Gold[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Triggers gold gain only if the attack deals fatal damage to the target."
+}

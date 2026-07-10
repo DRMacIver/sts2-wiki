@@ -1,0 +1,16 @@
+{
+  "class_name": "TunnelerNormal",
+  "title": "Tunneling Twosome",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "Chomper",
+    "Tunneler"
+  ],
+  "total_monsters": 2,
+  "tags": [
+    "Burrower",
+    "Chomper"
+  ],
+  "notes": "The Chomper spawns with ScreamFirst enabled, causing it to scream on its first turn."
+}

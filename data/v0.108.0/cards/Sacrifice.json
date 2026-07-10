@@ -1,0 +1,21 @@
+{
+  "class_name": "Sacrifice",
+  "title": "Sacrifice",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 0
+    }
+  ],
+  "description": "If [gold]Osty[/gold] is alive, he dies and you gain [gold]Block[/gold] equal to double his Max HP.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Calculated Block gain: 2x Osty's Max HP. Can only be played if Osty is alive."
+}

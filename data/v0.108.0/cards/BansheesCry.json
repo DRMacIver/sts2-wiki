@@ -1,0 +1,24 @@
+{
+  "class_name": "BansheesCry",
+  "title": "Banshee's Cry",
+  "character": "Ironclad",
+  "energy_cost": 9,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "All",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 33
+    },
+    {
+      "type": "Energy",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 33 damage to ALL enemies.\nCosts 2 Energy less for each [gold]Ethereal[/gold] card played this combat.",
+  "upgraded_cost": 7,
+  "x_cost": false,
+  "notes": "Energy cost is dynamically reduced during combat: each Ethereal card played by the owner reduces this card's cost by 2 Energy for the remainder of combat."
+}

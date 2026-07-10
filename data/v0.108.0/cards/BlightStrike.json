@@ -1,0 +1,25 @@
+{
+  "class_name": "BlightStrike",
+  "title": "Blight Strike",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Deal 8 damage.\nApply [gold]Doom[/gold] equal to damage dealt.",
+  "referenced_powers": [
+    {
+      "class_name": "DoomPower",
+      "title": "Doom",
+      "slug": "doom"
+    }
+  ]
+}

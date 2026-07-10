@@ -1,0 +1,26 @@
+{
+  "class_name": "WaterloggedScriptorium",
+  "title": "Waterlogged Scriptorium",
+  "description": "Navigating the murky passages, you stumble upon a [aqua]withered figure[/aqua] working a small shop. The multitude of shelves are [sine]stuffed[/sine] full of damp scrolls and parchment.\n\nNoticing a patron has entered, the [aqua]scribe-shopkeeper[/aqua] snaps to attention and gestures at some [gold]implements[/gold] arranged on a desk.",
+  "options": [
+    {
+      "title": "Bloody Ink",
+      "description": "Gain [green]6[/green] Max HP."
+    },
+    {
+      "title": "Tentacle Quill",
+      "description": "Pay [red]55[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] a card with [purple]Steady[/purple].",
+      "requires": "Requires [blue]55[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Prickly Sponge",
+      "description": "Pay [red]99[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] cards with [purple]Steady[/purple].",
+      "requires": "Requires [blue]99[/blue] [gold]Gold[/gold]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["Requires 55 Gold"],
+  "notes": "The [purple]Steady[/purple] enchantment causes enchanted cards to be retained in your hand with a 1-copy discount after being played. When selecting cards to enchant, the game prompts you to choose from your deck.",
+  "card_refs": [],
+  "relic_refs": []
+}

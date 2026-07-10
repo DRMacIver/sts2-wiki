@@ -1,0 +1,8 @@
+{
+  "class_name": "RadiancePower",
+  "title": "Radiance",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain an additional [gold]Energy[/gold] next turn.",
+  "smart_description": "Gain additional {Energy:energyIcons()} {Amount:plural:next turn|for the next [blue]{}[/blue] turns}."
+}

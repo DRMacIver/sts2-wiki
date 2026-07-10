@@ -1,0 +1,25 @@
+{
+  "class_name": "Disintegration",
+  "title": "Disintegration",
+  "character": "Status",
+  "energy_cost": -2,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 6
+    }
+  ],
+  "description": "At the end of your turn, take 6 damage.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "DisintegrationPower",
+      "title": "Disintegration",
+      "slug": "disintegration-power"
+    }
+  ]
+}

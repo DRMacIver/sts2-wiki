@@ -1555,7 +1555,7 @@
     "pool": "Regent",
     "loc_key": "GALACTIC_DUST",
     "title": "Galactic Dust",
-    "description": "For every {Stars} {singleStarIcon} spent, gain {Block} Block.",
+    "description": "For every {Stars} Star spent, gain {Block} Block.",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "character": "Regent"
   },
@@ -2437,7 +2437,7 @@
     "pool": "Regent",
     "loc_key": "MINI_REGENT",
     "title": "Mini Regent",
-    "description": "The first time you spend {singleStarIcon} each turn, gain {StrengthPower} Strength.",
+    "description": "The first time you spend Star each turn, gain {StrengthPower} Strength.",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "character": "Regent"
   },

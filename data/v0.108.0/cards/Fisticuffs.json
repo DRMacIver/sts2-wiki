@@ -1,0 +1,22 @@
+{
+  "class_name": "Fisticuffs",
+  "title": "Fisticuffs",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 7 damage.\nGain [gold]Block[/gold] equal to damage dealt.",
+  "upgraded_cost": null,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": null
+}

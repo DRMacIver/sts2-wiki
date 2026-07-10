@@ -1,0 +1,20 @@
+{
+  "class_name": "RoyalGamble",
+  "title": "Royal Gamble",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Stars",
+      "base_value": 9
+    }
+  ],
+  "description": "Gain 9 {singleStarIcon}.",
+  "x_cost": false,
+  "star_cost": 5,
+  "notes": "Upgrade adds Retain keyword."
+}

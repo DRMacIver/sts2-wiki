@@ -1,0 +1,31 @@
+{
+  "class_name": "Concoct",
+  "title": "Concoct",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyAlly",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Poison",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Choose another player. Whenever their Attacks deal unblocked damage this turn, they apply 3 [gold]Poison[/gold].",
+  "upgraded_description": "Choose another player. Whenever their Attacks deal unblocked damage this turn, they apply 4 [gold]Poison[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "ConcoctPower",
+      "title": "Concoct",
+      "slug": "concoct-power"
+    },
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

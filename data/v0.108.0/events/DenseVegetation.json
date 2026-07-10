@@ -1,0 +1,22 @@
+{
+  "class_name": "DenseVegetation",
+  "title": "Dense Vegetation",
+  "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]\"You are lost, unprepared, and the inevitability of death is approaching.\"[/purple][/sine]\n\nWhat do you do?",
+  "options": [
+    {
+      "title": "Trudge On",
+      "description": "Gain [blue]61-99[/blue] [gold]Gold[/gold]. Lose [red]8[/red] HP."
+    },
+    {
+      "title": "Rest",
+      "description": "Heal [green]varies based on current HP[/green] HP. Fight some [red]enemies[/red]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [
+    "Multiplayer only: All players must have more than 8 HP to encounter this event"
+  ],
+  "notes": "Selecting [gold]Trudge On[/gold] immediately costs 8 HP but grants 61-99 Gold and concludes the event with a narrative description of your journey through the jungle. Selecting [gold]Rest[/gold] heals you, but awakens a creature that ambushes you during sleep, forcing a combat encounter. The amount healed by REST is calculated as a portion of your missing HP.",
+  "card_refs": [],
+  "relic_refs": []
+}

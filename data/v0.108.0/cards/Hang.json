@@ -1,0 +1,26 @@
+{
+  "class_name": "Hang",
+  "title": "Hang",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Deal 10 damage.\nDouble the damage ALL Hang cards deal to this enemy.",
+  "upgraded_description": "Deal 13 damage.\nDouble the damage ALL Hang cards deal to this enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "HangPower",
+      "title": "Hang",
+      "slug": "hang"
+    }
+  ]
+}

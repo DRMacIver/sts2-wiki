@@ -1,0 +1,27 @@
+{
+  "class_name": "Veilpiercer",
+  "title": "Veilpiercer",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Ethereal"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Deal 10 damage.\nThe next [gold]Ethereal[/gold] card you play costs 0 Energy.",
+  "upgraded_description": "Deal 13 damage.\nThe next [gold]Ethereal[/gold] card you play costs 0 Energy.",
+  "referenced_powers": [
+    {
+      "class_name": "VeilpiercerPower",
+      "title": "Veilpiercer",
+      "slug": "veilpiercer"
+    }
+  ],
+  "x_cost": false
+}

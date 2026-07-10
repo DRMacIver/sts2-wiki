@@ -1,0 +1,8 @@
+{
+  "class_name": "CurlUpPower",
+  "title": "Curl Up",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When damaged, rolls up and gains block. (Once per combat)",
+  "smart_description": "Gains [blue]{Amount}[/blue] [gold]Block[/gold] upon first being hit."
+}

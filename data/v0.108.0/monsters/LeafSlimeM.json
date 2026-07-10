@@ -1,0 +1,33 @@
+{
+  "class_name": "LeafSlimeM",
+  "title": "Leaf Slime (M)",
+  "min_hp": 33,
+  "max_hp": 36,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CLUMP_SHOT",
+      "title": "Clump Shot",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": ["Deal 9 damage"]
+    },
+    {
+      "id": "STICKY_SHOT",
+      "title": "Sticky Shot",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 2
+        }
+      ],
+      "effects": ["Add 2 Slimed to discard"]
+    }
+  ],
+  "move_pattern": "Starts with Sticky Shot. Alternates between Sticky Shot and Clump Shot.",
+  "powers_on_spawn": []
+}

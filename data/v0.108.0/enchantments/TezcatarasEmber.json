@@ -1,0 +1,17 @@
+{
+  "class_name": "TezcatarasEmber",
+  "title": "Tezcatara's Ember",
+  "description": "Costs [blue]0[/blue], deals [blue]3[/blue] additional damage, and gains [gold]Eternal[/gold].",
+  "card_type": "Attack",
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "NutritiousSoup",
+      "title": "Nutritious Soup",
+      "amount": 1
+    }
+  ],
+  "notes": "Enchanted card's energy cost is set to 0 and gains the Eternal keyword. Adds damage equal to the amount only when the attack is powered."
+}

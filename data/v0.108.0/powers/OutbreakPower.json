@@ -1,0 +1,9 @@
+{
+  "class_name": "OutbreakPower",
+  "title": "Outbreak",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you apply [gold]Poison[/gold], deal damage to ALL enemies.",
+  "smart_description": "Whenever you apply [gold]Poison[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies.",
+  "notes": "This power activates whenever Poison is applied to an enemy. The damage dealt to all enemies equals the current stack count of Outbreak."
+}

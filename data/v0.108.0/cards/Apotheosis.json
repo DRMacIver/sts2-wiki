@@ -1,0 +1,16 @@
+{
+  "class_name": "Apotheosis",
+  "title": "Apotheosis",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "keywords": ["Exhaust", "Innate"],
+  "vars": [],
+  "description": "[gold]Upgrade[/gold] ALL your cards.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Upgrades all other upgradable cards in your deck."
+}

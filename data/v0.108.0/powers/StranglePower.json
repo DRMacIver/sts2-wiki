@@ -1,0 +1,9 @@
+{
+  "class_name": "StranglePower",
+  "title": "Strangle",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card this turn, this enemy loses [blue]2[/blue] HP.",
+  "smart_description": "Whenever you play a card this turn, this enemy loses [blue]{Amount}[/blue] HP.",
+  "notes": "Applies only during the current turn. Each card played by the player triggers damage equal to the power's stack value. Automatically removes at end of turn."
+}

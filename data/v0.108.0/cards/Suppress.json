@@ -1,0 +1,30 @@
+{
+  "class_name": "Suppress",
+  "title": "Suppress",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": ["Innate"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 17
+    },
+    {
+      "type": "Weak",
+      "base_value": 3,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 11 damage.\nApply 3 [gold]Weak[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    }
+  ]
+}

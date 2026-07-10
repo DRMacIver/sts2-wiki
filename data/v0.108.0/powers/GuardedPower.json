@@ -1,0 +1,9 @@
+{
+  "class_name": "GuardedPower",
+  "title": "Guarded",
+  "power_type": "Buff",
+  "stack_type": "None",
+  "description": "Take [blue]50%[/blue] less damage from enemies.",
+  "smart_description": "Take [blue]50%[/blue] less damage from enemies. Removed if [gold]{Applier}[/gold] dies.",
+  "notes": "Reduces damage taken from powered attacks only. Automatically removed when the creature that applied this power dies."
+}

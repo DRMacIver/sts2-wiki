@@ -1,0 +1,27 @@
+{
+  "class_name": "TheBall",
+  "title": "The Ball",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Increase",
+      "base_value": 15,
+      "upgraded_value": 25
+    }
+  ],
+  "description": "Deal 10 damage.\nIncrease this card's damage by 15 this combat and give it to a random ally.",
+  "upgraded_description": "Deal 10 damage.\nIncrease this card's damage by 25 this combat and give it to a random ally.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Multiplayer only. After being played as the last card in a series, this card is given to a random alive ally player. If discarded normally, it goes to the Draw pile instead."
+}

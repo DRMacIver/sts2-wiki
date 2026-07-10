@@ -1,0 +1,25 @@
+{
+  "class_name": "Sloth",
+  "title": "Sloth",
+  "character": "Status",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Limit",
+      "base_value": 3
+    }
+  ],
+  "description": "You cannot play more than 3 cards each turn.",
+  "referenced_powers": [
+    {
+      "class_name": "SlothPower",
+      "title": "Sloth",
+      "slug": "sloth-power"
+    }
+  ],
+  "notes": "Status card applied as part of the Sloth demon effect. Cannot be generated in combat."
+}

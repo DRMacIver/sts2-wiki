@@ -1,0 +1,16 @@
+{
+  "class_name": "Writhe",
+  "title": "Writhe",
+  "character": "Curse",
+  "energy_cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "keywords": [
+    "Innate",
+    "Unplayable"
+  ],
+  "vars": [],
+  "description": "",
+  "referenced_powers": []
+}

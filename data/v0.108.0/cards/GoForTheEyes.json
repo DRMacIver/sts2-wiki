@@ -1,0 +1,31 @@
+{
+  "class_name": "GoForTheEyes",
+  "title": "Go for the Eyes",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Weak",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 3 damage.\nIf the enemy intends to attack, apply 1 [gold]Weak[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    }
+  ],
+  "x_cost": false
+}

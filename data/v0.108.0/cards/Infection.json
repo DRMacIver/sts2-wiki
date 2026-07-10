@@ -1,0 +1,17 @@
+{
+  "class_name": "Infection",
+  "title": "Infection",
+  "character": "Status",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], take 3 damage."
+}

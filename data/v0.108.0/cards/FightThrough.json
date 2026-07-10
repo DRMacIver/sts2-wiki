@@ -1,0 +1,20 @@
+{
+  "class_name": "FightThrough",
+  "title": "Fight Through",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 13,
+      "upgraded_value": 17
+    }
+  ],
+  "description": "Gain 13 [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] into your [gold]Discard Pile[/gold].",
+  "upgraded_description": "Gain 17 [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] into your [gold]Discard Pile[/gold].",
+  "referenced_powers": []
+}

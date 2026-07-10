@@ -1,0 +1,8 @@
+{
+  "class_name": "SurroundedPower",
+  "title": "Surrounded",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "Receive [blue]50%[/blue] more damage if attacked from behind. Use targeting cards or potions to change your orientation.",
+  "notes": "Tracks a facing direction (Left or Right). The wearer receives 50% increased damage from enemies with the opposite back attack power (BackAttackLeftPower when facing right, BackAttackRightPower when facing left). Direction automatically updates when the wearer plays targeting cards or uses potions on enemies, or after enemy deaths if all remaining hittable enemies have the same back attack power type."
+}

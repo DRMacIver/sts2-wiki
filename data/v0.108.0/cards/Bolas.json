@@ -1,0 +1,20 @@
+{
+  "class_name": "Bolas",
+  "title": "Bolas",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 3 damage.\nAt the start of your next turn, return this to your [gold]Hand[/gold].",
+  "x_cost": false,
+  "notes": "Returns to hand at the start of the next turn after being played, rather than being exhausted."
+}

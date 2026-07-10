@@ -1,0 +1,31 @@
+{
+  "class_name": "BouncingFlask",
+  "title": "Bouncing Flask",
+  "character": "Silent",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Poison",
+      "base_value": 3
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Apply 3 [gold]Poison[/gold] to a random enemy 3 times.",
+  "upgraded_description": "Apply 3 [gold]Poison[/gold] to a random enemy 4 times.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

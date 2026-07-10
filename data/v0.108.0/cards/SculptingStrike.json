@@ -1,0 +1,20 @@
+{
+  "class_name": "SculptingStrike",
+  "title": "Sculpting Strike",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Deal 9 damage.\nAdd [gold]Ethereal[/gold] to a card in your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Applies Ethereal to a randomly selected card in hand (excluding cards that already have Ethereal)."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "GigantificationPower",
+  "title": "Gigantification",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The next Attack you play deals triple damage.",
+  "smart_description": "The next {Amount:plural:Attack you play deals|[blue]{}[/blue] Attacks you play deal} triple damage."
+}

@@ -1,0 +1,51 @@
+{
+  "class_name": "SpinyToad",
+  "title": "Spiny Toad",
+  "min_hp": 121,
+  "max_hp": 124,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PROTRUDING_SPIKES_MOVE",
+      "title": "Protruding Spikes",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 5 Thorns"
+      ]
+    },
+    {
+      "id": "SPIKE_EXPLOSION_MOVE",
+      "title": "Spike Explosion",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 25
+        }
+      ],
+      "effects": [
+        "Deal 25 damage",
+        "Remove 5 Thorns"
+      ]
+    },
+    {
+      "id": "TONGUE_LASH_MOVE",
+      "title": "Tongue Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        }
+      ],
+      "effects": [
+        "Deal 19 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Protruding Spikes → Spike Explosion → Tongue Lash",
+  "powers_on_spawn": [],
+  "notes": "The Spiny Toad cycles between gaining and removing Thorns. On the first turn, it gains 5 Thorns with Protruding Spikes, becoming spiky. On the second turn, it explodes for 25 damage while losing the 5 Thorns. On the third turn, it uses a normal tongue attack for 19 damage. This pattern repeats. The monster has separate animations for its spiky and unspiked states."
+}

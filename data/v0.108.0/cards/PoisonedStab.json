@@ -1,0 +1,30 @@
+{
+  "class_name": "PoisonedStab",
+  "title": "Poisoned Stab",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 8
+    },
+    {
+      "type": "Poison",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 6 damage.\nApply 3 [gold]Poison[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "PoisonPower",
+      "title": "Poison",
+      "slug": "poison"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "class_name": "Tempest",
+  "title": "Tempest",
+  "character": "Defect",
+  "energy_cost": -1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "[gold]Channel[/gold] X [gold]Lightning[/gold].",
+  "upgraded_description": "[gold]Channel[/gold] X+1 [gold]Lightning[/gold].",
+  "x_cost": true,
+  "referenced_powers": []
+}

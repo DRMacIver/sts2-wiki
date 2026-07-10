@@ -1,0 +1,31 @@
+{
+  "class_name": "BeatIntoShape",
+  "title": "Beat into Shape",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    },
+    {
+      "type": "Forge",
+      "base_value": 5,
+      "upgraded_value": 7
+    },
+    {
+      "type": "Forge",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage.\n[gold]Forge[/gold] based on powered attacks dealt to this enemy this turn.\n[gold]Forges[/gold] an additional 5 for every hit from this card.",
+  "upgraded_description": "Deal 7 damage.\n[gold]Forge[/gold] based on powered attacks dealt to this enemy this turn.\n[gold]Forges[/gold] an additional 7 for every hit from this card.",
+  "referenced_powers": [],
+  "notes": "Forge amount is calculated as the count of powered attacks dealt to the target this turn, then decremented by 5 (upgraded: 7) for each hit from this card's attack."
+}

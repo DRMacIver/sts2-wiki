@@ -1,0 +1,9 @@
+{
+  "class_name": "LethalityPower",
+  "title": "Lethality",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first Attack each turn deals 50% additional damage.",
+  "smart_description": "The first Attack each turn deals [blue]{Amount}%[/blue] additional damage.",
+  "notes": "Only applies the damage bonus to the first Attack card played each turn by the power's owner."
+}

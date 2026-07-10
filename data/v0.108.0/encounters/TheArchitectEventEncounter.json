@@ -1,0 +1,10 @@
+{
+  "class_name": "TheArchitectEventEncounter",
+  "title": "The Architect",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Architect"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Has custom background"
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "Furnace",
+  "title": "Furnace",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "At the start of your turn, [gold]Forge[/gold] 5.",
+  "upgraded_description": "At the start of your turn, [gold]Forge[/gold] 7.",
+  "referenced_powers": [
+    {
+      "class_name": "FurnacePower",
+      "title": "Furnace",
+      "slug": "furnace"
+    }
+  ]
+}

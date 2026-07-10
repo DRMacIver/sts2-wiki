@@ -1,0 +1,8 @@
+{
+  "class_name": "StockPower",
+  "title": "Stock",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When killed, a new Axebot is summoned in its place.",
+  "notes": "Each revival decrements the counter by 1. When this power ends or reaches 0 stacks, the owner cannot be revived."
+}

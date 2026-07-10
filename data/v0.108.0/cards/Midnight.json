@@ -1,0 +1,20 @@
+{
+  "class_name": "Midnight",
+  "title": "Midnight",
+  "character": "Colorless",
+  "energy_cost": 12,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 99,
+      "upgraded_value": 120
+    }
+  ],
+  "description": "Deal 99 damage.\nCosts 1 less Energy for each card [gold]Exhausted[/gold] this combat by ANYONE.",
+  "upgraded_description": "Deal 120 damage.\nCosts 1 less Energy for each card [gold]Exhausted[/gold] this combat by ANYONE.",
+  "notes": "Multiplayer-only card. Cost is reduced by 1 for each card exhausted in combat by any player, tracked across all players in combat."
+}

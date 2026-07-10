@@ -1,0 +1,20 @@
+{
+  "class_name": "AdaptiveStrike",
+  "title": "Adaptive Strike",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Strike"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 18,
+      "upgraded_value": 23
+    }
+  ],
+  "description": "Deal 18 damage.\nAdd a 0 Energy copy of this card into your [gold]Discard Pile[/gold].",
+  "upgraded_description": "Deal 23 damage.\nAdd a 0 Energy copy of this card into your [gold]Discard Pile[/gold].",
+  "notes": "Creates a zero-cost copy in the Discard Pile when played."
+}

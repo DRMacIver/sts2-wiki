@@ -1,0 +1,26 @@
+{
+  "class_name": "Accuracy",
+  "title": "Accuracy",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "[gold]Shivs[/gold] deal 4 additional damage.",
+  "upgraded_description": "[gold]Shivs[/gold] deal 6 additional damage.",
+  "referenced_powers": [
+    {
+      "class_name": "AccuracyPower",
+      "title": "Accuracy",
+      "slug": "accuracy"
+    }
+  ]
+}

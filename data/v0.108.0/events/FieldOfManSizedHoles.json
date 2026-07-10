@@ -1,0 +1,26 @@
+{
+  "class_name": "FieldOfManSizedHoles",
+  "title": "Field of Man-Sized Holes",
+  "description": "The sudden sight of a massive field, [jitter]gouged with large outlines of bodies[/jitter], stops you in your tracks.\n\nOne of these outlines matches your own.\n\n[sine][orange]It's perfect...[/orange][/sine]",
+  "options": [
+    {
+      "title": "Resist",
+      "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Enter Your Hole",
+      "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": ["At least one card in your deck can be enchanted with Perfect Fit"],
+  "notes": "This event offers two thematically distinct choices with rich narrative payoffs:\n\n[gold]**If you choose 'Enter Your Hole':**[/gold] You enchant a selected card with [purple]Perfect Fit[/purple]. The event then reveals: 'It's a snug fit, but you squeeze yourself into the hole... The further you go, the [sine][purple]darker it becomes[/purple][/sine]. Eventually, you see a [gold]faint light[/gold] grow brighter and reveal the other side. You step out unchanged, but now understand the [green]intimate secrets of life[/green].'\n\n[gold]**If you choose 'Resist':**[/gold] You select [blue]2[/blue] cards to remove from your deck and gain [red]Normality[/red]. The event concludes with existential doubt: 'You walk past all the holes, even the one carved [orange]perfectly in your shape[/orange]... Why didn't I go inside? What would have happened? Have I been in that hole before? Who made these holes?\n\n[sine][red]What is... who... where?[/red][/sine]'",
+  "card_refs": [
+    {
+      "class_name": "Normality",
+      "title": "Normality",
+      "slug": "normality"
+    }
+  ],
+  "relic_refs": []
+}

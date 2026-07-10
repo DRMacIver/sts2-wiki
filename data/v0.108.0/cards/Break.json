@@ -1,0 +1,30 @@
+{
+  "class_name": "Break",
+  "title": "Break",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 20,
+      "upgraded_value": 30
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 20 damage.\nApply 5 [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

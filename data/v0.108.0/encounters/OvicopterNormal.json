@@ -1,0 +1,12 @@
+{
+  "class_name": "OvicopterNormal",
+  "title": "Ovicopter",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "Ovicopter"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Encounter has custom scene with multiple slots (5 egg slots + 1 ovicopter slot). ToughEgg is listed in AllPossibleMonsters but only Ovicopter is spawned in the encounter."
+}

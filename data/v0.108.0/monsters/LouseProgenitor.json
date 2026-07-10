@@ -1,0 +1,63 @@
+{
+  "class_name": "LouseProgenitor",
+  "title": "Louse Progenitor",
+  "min_hp": 138,
+  "max_hp": 141,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WEB_CANNON_MOVE",
+      "title": "Web Cannon",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 10
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 10 damage",
+        "Apply 2 Frail",
+        "Uncurl if curled"
+      ]
+    },
+    {
+      "id": "CURL_AND_GROW_MOVE",
+      "title": "Curl and Grow",
+      "intents": [
+        {
+          "type": "block"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 18 Block",
+        "Apply 5 Strength",
+        "Curl"
+      ]
+    },
+    {
+      "id": "POUNCE_MOVE",
+      "title": "Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage",
+        "Uncurl if curled"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Web Cannon (10 damage, 2 Frail) → Curl and Grow (18 block, 5 Strength) → Pounce (16 damage) → repeats. Web Cannon and Pounce uncurl the monster before attacking.",
+  "powers_on_spawn": [
+    "Curl Up Power (18 block)"
+  ],
+  "notes": "The Louse Progenitor uses a curling mechanic. It begins combat curled with Curl Up Power active. Web Cannon and Pounce both uncurl the monster before they execute their attacks. After Pounce, it curls again during Curl and Grow, gaining block and strength while protected."
+}

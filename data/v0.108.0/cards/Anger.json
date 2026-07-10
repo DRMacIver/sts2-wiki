@@ -1,0 +1,19 @@
+{
+  "class_name": "Anger",
+  "title": "Anger",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Deal 6 damage.\nAdd a copy of this card into your [gold]Discard Pile[/gold].",
+  "x_cost": false
+}

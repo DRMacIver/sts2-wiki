@@ -1,0 +1,35 @@
+{
+  "class_name": "Abrasive",
+  "title": "Abrasive",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Sly"],
+  "vars": [
+    {
+      "type": "Thorns",
+      "base_value": 4,
+      "upgraded_value": 6
+    },
+    {
+      "type": "Dexterity",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain +1 [gold]Dexterity[/gold].\nGain +4 [gold]Thorns[/gold].",
+  "upgraded_description": "Gain +1 [gold]Dexterity[/gold].\nGain +6 [gold]Thorns[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "DexterityPower",
+      "title": "Dexterity",
+      "slug": "dexterity"
+    },
+    {
+      "class_name": "ThornsPower",
+      "title": "Thorns",
+      "slug": "thorns"
+    }
+  ]
+}

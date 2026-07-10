@@ -1,0 +1,23 @@
+{
+  "class_name": "TheScythe",
+  "title": "The Scythe",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13
+    },
+    {
+      "type": "Increase",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 13 damage.\nPermanently increase this card's damage by 4.",
+  "upgraded_description": "Deal 13 damage.\nPermanently increase this card's damage by 5."
+}

@@ -1,0 +1,31 @@
+{
+  "class_name": "Assassinate",
+  "title": "Assassinate",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Innate", "Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 10 damage.\nApply 1 [gold]Vulnerable[/gold].",
+  "upgraded_description": "Deal 13 damage.\nApply 2 [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

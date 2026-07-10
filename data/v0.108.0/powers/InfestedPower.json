@@ -1,0 +1,8 @@
+{
+  "class_name": "InfestedPower",
+  "title": "Infested",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Upon dying, summons... something.",
+  "smart_description": "Upon dying, summons... something."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "FuzzyWurmCrawlerWeak",
+  "title": "Fuzzy Wurm Crawler",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["FuzzyWurmCrawler"],
+  "total_monsters": 1,
+  "tags": ["Crawler"]
+}

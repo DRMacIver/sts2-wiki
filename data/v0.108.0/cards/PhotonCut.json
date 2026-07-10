@@ -1,0 +1,27 @@
+{
+  "class_name": "PhotonCut",
+  "title": "Photon Cut",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 13
+    },
+    {
+      "type": "Cards",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 10 damage.\nDraw 1 card.\nPut 1 card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Deal 13 damage.\nDraw 2 cards.\nPut 1 card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Player must select a card from their hand to place on top of the draw pile."
+}

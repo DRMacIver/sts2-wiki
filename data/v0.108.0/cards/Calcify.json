@@ -1,0 +1,26 @@
+{
+  "class_name": "Calcify",
+  "title": "Calcify",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "[gold]Osty's[/gold] attacks deal +4 additional damage.",
+  "upgraded_description": "[gold]Osty's[/gold] attacks deal +6 additional damage.",
+  "referenced_powers": [
+    {
+      "class_name": "CalcifyPower",
+      "title": "Calcify",
+      "slug": "calcify"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "class_name": "Dominate",
+  "title": "Dominate",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Vulnerable",
+      "base_value": 1,
+      "upgraded_value": 2
+    },
+    {
+      "type": "Strength",
+      "base_value": 1
+    }
+  ],
+  "description": "Apply 1 [gold]Vulnerable[/gold].\nGain 1 [gold]Strength[/gold] for each [gold]Vulnerable[/gold] on the enemy.",
+  "upgraded_description": "Apply 2 [gold]Vulnerable[/gold].\nGain 1 [gold]Strength[/gold] for each [gold]Vulnerable[/gold] on the enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    },
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    }
+  ]
+}

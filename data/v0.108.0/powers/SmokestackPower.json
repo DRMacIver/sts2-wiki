@@ -1,0 +1,8 @@
+{
+  "class_name": "SmokestackPower",
+  "title": "Smokestack",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you create a Status, deal damage to ALL enemies.",
+  "smart_description": "Whenever you create a Status, deal [blue]{Amount}[/blue] damage to ALL enemies."
+}

@@ -1,0 +1,34 @@
+{
+  "class_name": "KnowThyPlace",
+  "title": "Know Thy Place",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Weak",
+      "base_value": 1
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 1
+    }
+  ],
+  "description": "Apply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ],
+  "notes": "Upgraded version removes the Exhaust keyword."
+}

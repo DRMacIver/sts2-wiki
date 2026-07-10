@@ -1,0 +1,9 @@
+{
+  "class_name": "DoomPower",
+  "title": "Doom",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies.",
+  "smart_description": "At the end of the {OnPlayer:player|enemy} turn, if [gold]{OwnerName}[/gold] has [blue]{Amount}[/blue] or less HP, it dies.",
+  "notes": "A death-threat power: when the Doom counter reaches or exceeds the target's current HP, the creature dies at the end of its turn. The smart description updates to show the actual threshold dynamically."
+}

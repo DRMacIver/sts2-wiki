@@ -1,0 +1,23 @@
+{
+  "class_name": "DramaticEntrance",
+  "title": "Dramatic Entrance",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [
+    "Exhaust",
+    "Innate"
+  ],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 11 damage to ALL enemies.",
+  "referenced_powers": [],
+  "notes": "Plays a full-screen visual effect on activation."
+}

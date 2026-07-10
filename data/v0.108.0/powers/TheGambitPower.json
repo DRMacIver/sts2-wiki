@@ -1,0 +1,8 @@
+{
+  "class_name": "TheGambitPower",
+  "title": "The Gambit",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "If you take unblocked attack damage this combat, die.",
+  "smart_description": "If you take unblocked attack damage this combat, die."
+}

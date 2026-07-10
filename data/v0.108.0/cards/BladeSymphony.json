@@ -1,0 +1,21 @@
+{
+  "class_name": "BladeSymphony",
+  "title": "Blade Symphony",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "All",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Add 2 [gold]Shivs[/gold] to ALL player's [gold]Hands[/gold].",
+  "upgraded_description": "Add 3 [gold]Shivs[/gold] to ALL player's [gold]Hands[/gold].",
+  "referenced_powers": [],
+  "notes": "Multiplayer-only card. Provides hover tip information about Shivs."
+}

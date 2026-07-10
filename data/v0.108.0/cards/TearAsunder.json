@@ -1,0 +1,19 @@
+{
+  "class_name": "TearAsunder",
+  "title": "Tear Asunder",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.",
+  "referenced_powers": []
+}

@@ -1,0 +1,19 @@
+{
+  "class_name": "FranticEscape",
+  "title": "Frantic Escape",
+  "character": "Status",
+  "energy_cost": 1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Get farther away.\nIncrease [gold]Sandpit[/gold] by 1.\nIncrease the cost of this card by 1.",
+  "referenced_powers": [
+    {
+      "class_name": "SandpitPower",
+      "title": "Sandpit",
+      "slug": "sandpit"
+    }
+  ]
+}

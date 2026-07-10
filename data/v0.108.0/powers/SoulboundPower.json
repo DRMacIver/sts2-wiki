@@ -1,0 +1,8 @@
+{
+  "class_name": "SoulboundPower",
+  "title": "Soulbound",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever the source of this power creates a [gold]Soul[/gold], add a [gold]Soul[/gold] to your [gold]Draw Pile[/gold].",
+  "smart_description": "Whenever the source of this power creates a [gold]Soul[/gold], add [gold]Souls[/gold] to your [gold]Draw Pile[/gold] equal to this power's current stack."
+}

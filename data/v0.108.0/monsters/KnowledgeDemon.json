@@ -1,0 +1,76 @@
+{
+  "class_name": "KnowledgeDemon",
+  "title": "Knowledge Demon",
+  "min_hp": 399,
+  "max_hp": 399,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CURSE_OF_KNOWLEDGE",
+      "title": "Curse of Knowledge",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Player chooses a card to add to their deck",
+        "1st use: Choose between Disintegration (6 damage) or Mind Rot",
+        "2nd use: Choose between Disintegration (7 damage) or Sloth",
+        "3rd use: Choose between Disintegration (8 damage) or Waste Away"
+      ]
+    },
+    {
+      "id": "SLAP",
+      "title": "Slap",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    },
+    {
+      "id": "KNOWLEDGE_OVERWHELMING",
+      "title": "Knowledge Overwhelming",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "PONDER",
+      "title": "Ponder",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "Heal 30 HP per player",
+        "Apply 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder. After Curse of Knowledge is used 3 times, the pattern shifts to: Slap → Knowledge Overwhelming → Ponder (repeats indefinitely)",
+  "powers_on_spawn": [],
+  "notes": "Curse of Knowledge forces each player to choose a debuff card to add to their deck; the available choices and damage values scale with each use. The monster enters a 'burnt' state after Knowledge Overwhelming, altering its visual animations. Ponder heals the demon for HP based on active player count (30 HP × number of players) and grants itself Strength to increase future damage."
+}

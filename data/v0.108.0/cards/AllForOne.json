@@ -1,0 +1,20 @@
+{
+  "class_name": "AllForOne",
+  "title": "All for One",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Deal 10 damage.\nPut ALL 0-cost cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Selectively puts 0-cost Attack, Skill, and Power cards from the Discard Pile into your Hand."
+}

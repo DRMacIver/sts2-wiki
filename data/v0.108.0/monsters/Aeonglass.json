@@ -1,0 +1,64 @@
+{
+  "class_name": "Aeonglass",
+  "title": "Aeonglass",
+  "min_hp": 535,
+  "max_hp": 535,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EBB_MOVE",
+      "title": "Ebb",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 32
+        },
+        {
+          "type": "block",
+          "amount": 33
+        }
+      ],
+      "effects": [
+        "Deal 32 damage",
+        "Gain 33 Block"
+      ]
+    },
+    {
+      "id": "EYE_LASERS_MOVE",
+      "title": "Eye Lasers",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 12,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "INCREASING_INTENSITY_MOVE",
+      "title": "Increasing Intensity",
+      "intents": [
+        {
+          "type": "status"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Add 2 Wither to discard",
+        "Apply 4 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Ebb → Eye Lasers → Increasing Intensity repeatedly",
+  "powers_on_spawn": [
+    "ArtifactPower (3)",
+    "Applies WitheringPresencePower (6) to player"
+  ],
+  "notes": "Increasing Intensity scales the Strength buff each turn, starting at 4 Strength and increasing by 1 each use. Wither cards added to the player's deck are automatically upgraded to match the current upgrade count. The monster gains 3 Artifact on spawn for additional durability."
+}

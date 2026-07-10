@@ -1,0 +1,21 @@
+{
+  "class_name": "BeaconOfHope",
+  "title": "Beacon of Hope",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
+  "upgraded_description": "Innate. Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "BeaconOfHopePower",
+      "title": "Beacon of Hope",
+      "slug": "beacon-of-hope"
+    }
+  ],
+  "notes": "Multiplayer-only card. The effect is implemented in BeaconOfHopePower."
+}

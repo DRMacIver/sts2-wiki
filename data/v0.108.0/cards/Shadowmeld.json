@@ -1,0 +1,25 @@
+{
+  "class_name": "Shadowmeld",
+  "title": "Shadowmeld",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1
+    }
+  ],
+  "description": "Double your [gold]Block[/gold] gain this turn.",
+  "upgraded_cost": 0,
+  "referenced_powers": [
+    {
+      "class_name": "ShadowmeldPower",
+      "title": "Shadowmeld",
+      "slug": "shadowmeld"
+    }
+  ]
+}

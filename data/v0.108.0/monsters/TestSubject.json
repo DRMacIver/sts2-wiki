@@ -1,0 +1,98 @@
+{
+  "class_name": "TestSubject",
+  "title": "Test Subject #C{Count}",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        }
+      ],
+      "effects": ["Deal 22 damage"]
+    },
+    {
+      "id": "SKULL_BASH_MOVE",
+      "title": "Skull Bash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 16 damage", "Apply 1 Vulnerable"]
+    },
+    {
+      "id": "MULTI_CLAW_MOVE",
+      "title": "Multi-Claw",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 11 damage", "3 hits, increases by 1 each turn"]
+    },
+    {
+      "id": "BIG_POUNCE",
+      "title": "Big Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 45
+        }
+      ],
+      "effects": ["Deal 45 damage"]
+    },
+    {
+      "id": "BURNING_GROWL_MOVE",
+      "title": "Burning Growl",
+      "intents": [
+        {
+          "type": "status"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Add 5 Burn to discard", "Apply 3 Strength"]
+    },
+    {
+      "id": "PHASE3_LACERATE_MOVE",
+      "title": "Lacerate",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 11 damage", "3 hits"]
+    },
+    {
+      "id": "RESPAWN_MOVE",
+      "title": "Respawn",
+      "intents": [
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Revive to next form HP", "Apply Painful Stabs (1st respawn) or Nemesis (2nd respawn)"]
+    }
+  ],
+  "move_pattern": "Phase 1: Alternates Bite and Skull Bash. On first defeat: Respawns with 212 HP and Painful Stabs, enters Phase 2. Phase 2: Repeatedly uses Multi-Claw with hit count increasing each turn (3, 4, 5, ...). On second defeat: Respawns with 313 HP and Nemesis, enters Phase 3. Phase 3: Cycles Lacerate → Big Pounce → Burning Growl.",
+  "powers_on_spawn": ["Adaptable", "Enrage"],
+  "notes": "Multi-phase monster with respawning mechanics through Adaptable power. Form 1: 111 HP. Form 2: 212 HP after first respawn (gains Painful Stabs power). Form 3: 313 HP after second respawn (gains Nemesis power, loses Adaptable and Painful Stabs). Multi-Claw attack escalates in power during Phase 2, increasing hit count by 1 each turn (3→4→5→...). Monster title includes a counter that increments with each defeat (Test Subject Kill Count + 8). After 2 respawns, cannot revive further and disappears from Doom mechanics."
+}

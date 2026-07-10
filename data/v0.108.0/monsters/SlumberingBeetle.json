@@ -1,0 +1,42 @@
+{
+  "class_name": "SlumberingBeetle",
+  "title": "Slumbering Beetle",
+  "min_hp": 89,
+  "max_hp": 89,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SNORE_MOVE",
+      "title": "Snore",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "ROLL_OUT_MOVE",
+      "title": "Roll Out",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 18 damage",
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Snore. While asleep (has Slumber power), continues using Snore. After waking up (Slumber power removed), switches to Roll Out and repeats it.",
+  "powers_on_spawn": [
+    "Plating (18)",
+    "Slumber (3)"
+  ],
+  "notes": "The Slumbering Beetle awakens when its Slumber power is removed, typically through player actions or effects. Upon waking, it loses its Plating power and begins rolling out repeatedly with increasing Strength."
+}

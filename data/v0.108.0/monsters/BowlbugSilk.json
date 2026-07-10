@@ -1,0 +1,34 @@
+{
+  "class_name": "BowlbugSilk",
+  "title": "Bowlbug (Silk)",
+  "min_hp": 41,
+  "max_hp": 44,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "THRASH_MOVE",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 5 damage, 2 hits"]
+    },
+    {
+      "id": "TOXIC_SPIT_MOVE",
+      "title": "Toxic Spit",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 1 Weak"]
+    }
+  ],
+  "move_pattern": "Starts with Toxic Spit. Then alternates: Thrash → Toxic Spit → Thrash → Toxic Spit...",
+  "powers_on_spawn": [],
+  "notes": "Thrash hits all enemies twice for 5 damage per hit (10 total). Toxic Spit applies 1 Weak to the leftmost enemy."
+}

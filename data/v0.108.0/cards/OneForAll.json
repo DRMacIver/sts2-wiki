@@ -1,0 +1,28 @@
+{
+  "class_name": "OneForAll",
+  "title": "One for All",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "All",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "EVERYONE'S 0 1 Energy Attacks deal 3 additional damage.",
+  "upgraded_description": "EVERYONE'S 0 1 Energy Attacks deal 4 additional damage.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "OneForAllPower",
+      "title": "One for All",
+      "slug": "one-for-all-power"
+    }
+  ],
+  "notes": "Multiplayer-only card that applies One for All Power to all allies in combat."
+}

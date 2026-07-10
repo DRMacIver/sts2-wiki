@@ -1,0 +1,24 @@
+{
+  "class_name": "PreciseCut",
+  "title": "Precise Cut",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 13,
+      "upgraded_value": 16
+    },
+    {
+      "type": "Damage",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 13 damage.\nDeals 2 less damage for each other card in your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Damage output scales inversely with hand size: reduced by 2 for each card in hand besides this one."
+}

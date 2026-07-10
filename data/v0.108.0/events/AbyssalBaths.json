@@ -1,0 +1,28 @@
+{
+  "class_name": "AbyssalBaths",
+  "title": "Abyssal Baths",
+  "description": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with [blue]salt[/blue] and something [green]unmistakably organic[/green].\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
+  "options": [
+    {
+      "title": "Immerse",
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+    },
+    {
+      "title": "Abstain",
+      "description": "Heal [green]10[/green] HP."
+    },
+    {
+      "title": "Linger",
+      "description": "Gain [green]2[/green] Max HP. Take [red]damage[/red] (increases with each use)."
+    },
+    {
+      "title": "Exit Baths",
+      "description": "Exit the baths."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "The Abyssal Baths features an escalating loop mechanic. Choosing [green]Immerse[/green] enters a repeatable cycle with [green]Linger[/green] and [green]Exit[/green] options. Each [green]Linger[/green] increases damage by 1 for the next iteration, starting at 3 damage for the initial [green]Immerse[/green] and 4 for the first [green]Linger[/green]. All damage is [red]Unblockable[/red] and cannot be reduced by powers. Both [green]Immerse[/green] and [green]Linger[/green] grant 2 Max HP while simultaneously dealing damage. When the next [green]Linger[/green] would kill the player, a death warning page displays, but you can still attempt it or [green]Exit[/green] safely.",
+  "card_refs": [],
+  "relic_refs": []
+}

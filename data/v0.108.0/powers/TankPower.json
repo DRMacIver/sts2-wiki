@@ -1,0 +1,9 @@
+{
+  "class_name": "TankPower",
+  "title": "Tank",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Take [blue]50%[/blue] more damage from enemies. Allies take [blue]50%[/blue] less damage from enemies.",
+  "smart_description": "Take [blue]50%[/blue] more damage from enemies. Allies take [blue]50%[/blue] less damage from enemies.",
+  "notes": "When applied to an ally, automatically applies Guarded to all other alive player allies, providing them protection while this unit takes increased damage."
+}

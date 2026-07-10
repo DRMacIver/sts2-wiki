@@ -1,0 +1,13 @@
+{
+  "class_name": "Soot",
+  "title": "Soot",
+  "character": "Status",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [],
+  "description": "",
+  "notes": "Status card that cannot be generated in combat. Has no upgrades."
+}

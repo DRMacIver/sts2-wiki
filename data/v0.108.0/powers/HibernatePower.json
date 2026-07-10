@@ -1,0 +1,9 @@
+{
+  "class_name": "HibernatePower",
+  "title": "Hibernate",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "This turn, your [gold]Frost[/gold] grants ALL allies [gold]Block[/gold].",
+  "smart_description": "Duration-aware text: 'This turn' if 1 turn remains, else 'For the next [blue]N[/blue] turns'. Your [gold]Frost[/gold] grants ALL allies [gold]Block[/gold].",
+  "notes": "This power doesn't directly affect the player — instead, Frost orbs check for its presence and modify their behavior accordingly. The power automatically decrements at the end of each player turn."
+}

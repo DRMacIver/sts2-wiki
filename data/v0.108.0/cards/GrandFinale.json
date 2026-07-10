@@ -1,0 +1,21 @@
+{
+  "class_name": "GrandFinale",
+  "title": "Grand Finale",
+  "character": "Silent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 60,
+      "upgraded_value": 75
+    }
+  ],
+  "description": "Can only be played if there are no cards in your [gold]Draw Pile[/gold]. Deal 60 damage to ALL enemies.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Card can only be played when Draw Pile is empty."
+}

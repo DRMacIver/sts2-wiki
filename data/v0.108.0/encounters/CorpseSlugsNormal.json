@@ -1,0 +1,10 @@
+{
+  "class_name": "CorpseSlugsNormal",
+  "title": "Many Corpse Slugs",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["CorpseSlug", "CorpseSlug", "CorpseSlug"],
+  "total_monsters": 3,
+  "tags": ["Slugs"],
+  "notes": "Each Corpse Slug starts with a different move selection."
+}

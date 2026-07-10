@@ -1,0 +1,19 @@
+{
+  "class_name": "PerfectFit",
+  "title": "Perfect Fit",
+  "description": "Whenever this would be shuffled into your [gold]Draw Pile[/gold], place it on the top instead.",
+  "extra_card_text": "Perfect Fit.",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "FieldOfManSizedHoles",
+      "title": "Field of Man-Sized Holes",
+      "amount": 1
+    }
+  ],
+  "notes": "The enchantment intercepts the shuffle step: whenever the deck is reshuffled (excluding the initial shuffle at the start of combat), this card is moved to the top of the draw pile (position 0) rather than a random position."
+}

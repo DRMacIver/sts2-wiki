@@ -1,0 +1,9 @@
+{
+  "class_name": "OrobicAcid",
+  "title": "Orobic Acid",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Add a random Attack, Skill, and Power into your [gold]Hand[/gold]. They're free to play this turn.",
+  "notes": "CombatOnly potion. Adds one random card of each type (Attack, Skill, Power) to hand and makes them free to play for the current turn."
+}

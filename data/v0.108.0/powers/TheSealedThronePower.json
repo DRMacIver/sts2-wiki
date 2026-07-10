@@ -1,0 +1,8 @@
+{
+  "class_name": "TheSealedThronePower",
+  "title": "The Sealed Throne",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, gain a star.",
+  "smart_description": "Whenever you play a card, gain stars equal to this power's stacks."
+}

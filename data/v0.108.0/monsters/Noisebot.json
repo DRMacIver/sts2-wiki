@@ -1,0 +1,21 @@
+{
+  "class_name": "Noisebot",
+  "title": "Noisebot",
+  "min_hp": 19,
+  "max_hp": 24,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NOISE_MOVE",
+      "title": "Noise",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Add 2 Dazed cards to player's deck"]
+    }
+  ],
+  "move_pattern": "Repeats: Noise",
+  "powers_on_spawn": []
+}

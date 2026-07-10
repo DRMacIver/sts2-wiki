@@ -1,0 +1,26 @@
+{
+  "class_name": "Reflections",
+  "title": "Reflections snoitcelfeR",
+  "description": "What is this? Something feels wrong here...\n[sine]...ereh gnorw sleef gnihtemoS ?siht si tahW[/sine]",
+  "options": [
+    {
+      "title": "Touch a Mirror",
+      "description": "[red]Downgrade[/red] [blue]2[/blue] random cards. [green]Upgrade[/green] [blue]4[/blue] random cards."
+    },
+    {
+      "title": "Shatter",
+      "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "[gold]Touch a Mirror[/gold] downgrades up to 2 randomly selected cards that are already upgraded, and upgrades up to 4 randomly selected cards that are still upgradable. Fewer cards are affected if your deck doesn't have enough eligible cards in each category.\n\n[gold]Shatter[/gold] duplicates every card currently in your deck (doubling its size) and adds [purple]Bad Luck[/purple] as a curse card.",
+  "card_refs": [
+    {
+      "class_name": "BadLuck",
+      "title": "Bad Luck",
+      "slug": "bad-luck"
+    }
+  ],
+  "relic_refs": []
+}

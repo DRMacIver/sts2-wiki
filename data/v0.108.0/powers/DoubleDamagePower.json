@@ -1,0 +1,9 @@
+{
+  "class_name": "DoubleDamagePower",
+  "title": "Double Damage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This turn, Attacks deal double damage.",
+  "smart_description": "1 stack: This turn, Attacks deal double damage. Multiple stacks: For the next N turns, Attacks deal double damage.",
+  "notes": "Decrements by 1 at the end of each turn. Only applies damage multiplier to powered attacks from the owner or their pets."
+}

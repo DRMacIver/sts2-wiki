@@ -1,0 +1,68 @@
+{
+  "class_name": "PhantasmalGardener",
+  "title": "Phantasmal Gardener",
+  "min_hp": 27,
+  "max_hp": 32,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": [
+        "Deal 5 damage"
+      ]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": [
+        "Deal 7 damage"
+      ]
+    },
+    {
+      "id": "FLAIL_MOVE",
+      "title": "Flail",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 1 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "ENLARGE_MOVE",
+      "title": "Enlarge",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength",
+        "Increase scale"
+      ]
+    }
+  ],
+  "move_pattern": "Move depends on starting slot position. Cycles: Bite → Lash → Flail → Enlarge → (repeat). Note: Lash move is not shown in bestiary display.",
+  "powers_on_spawn": [
+    "Skittish (7)"
+  ],
+  "notes": "Phantasmal Gardener scales up with each Enlarge move used, with scale increasing logarithmically based on the number of times Enlarge has been triggered. Starting move depends on its slot position: first slot starts with Flail, second with Bite, third with Lash, fourth with Enlarge."
+}

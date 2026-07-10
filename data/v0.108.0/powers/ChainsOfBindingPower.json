@@ -1,0 +1,9 @@
+{
+  "class_name": "ChainsOfBindingPower",
+  "title": "Chains of Binding",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "The first [blue]3[/blue] cards drawn each turn are Afflicted with [gold]Bound[/gold].",
+  "smart_description": "The first [blue]{Amount}[/blue] cards drawn each turn are Afflicted with [gold]Bound[/gold].",
+  "notes": "Stack-type is Counter. The power tracks how many cards have been afflicted with Bound each turn, and prevents any additional cards from being afflicted once the limit is reached. Bound affliction is cleared at the end of the turn."
+}

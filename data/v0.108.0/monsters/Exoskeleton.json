@@ -1,0 +1,54 @@
+{
+  "class_name": "Exoskeleton",
+  "title": "Exoskeleton",
+  "min_hp": 25,
+  "max_hp": 29,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SKITTER_MOVE",
+      "title": "Skitter",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 4
+        }
+      ],
+      "effects": [
+        "Deal 1 damage",
+        "4 hits"
+      ]
+    },
+    {
+      "id": "MANDIBLES_MOVE",
+      "title": "Mandibles",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage"
+      ]
+    },
+    {
+      "id": "ENRAGE_MOVE",
+      "title": "Enrage",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Initial move depends on slot position. Then cycles through random selections between Skitter and Mandibles, with Enrage following each Mandibles attack.",
+  "powers_on_spawn": [
+    "Hard to Kill 9"
+  ],
+  "notes": "Behavior is conditional on monster slot position. In slot 1 starts with Skitter, slot 2 with Mandibles, slot 3 with Enrage, and slot 4 with a random choice. Subsequent move cycling follows the same pattern regardless of starting position: random choice between Skitter/Mandibles, with Enrage always following Mandibles before the next random selection."
+}

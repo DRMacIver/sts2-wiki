@@ -1,0 +1,14 @@
+{
+  "class_name": "DecimillipedeElite",
+  "title": "The Decimillipede",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": [
+    "DecimillipedeSegmentFront",
+    "DecimillipedeSegmentMiddle",
+    "DecimillipedeSegmentBack"
+  ],
+  "total_monsters": 3,
+  "tags": [],
+  "notes": "The Decimillipede consists of three segments that work together. Each segment is assigned a different starting move based on RNG, rotating through a sequence of three moves."
+}

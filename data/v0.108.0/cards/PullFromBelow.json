@@ -1,0 +1,22 @@
+{
+  "class_name": "PullFromBelow",
+  "title": "Pull from Below",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [
+    "Ethereal"
+  ],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage for each [gold]Ethereal[/gold] card played this combat.",
+  "x_cost": false,
+  "notes": "The actual damage dealt scales with the number of Ethereal cards played this combat. CalculatedHits dynamically counts the number of Ethereal cards played from the combat history."
+}

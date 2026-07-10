@@ -1,0 +1,84 @@
+{
+  "class_name": "SoulFysh",
+  "title": "Soul Fysh",
+  "min_hp": 221,
+  "max_hp": 221,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BECKON_MOVE",
+      "title": "Beckon",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 1 Beckon card to draw pile",
+        "Add 1 Beckon card to discard pile"
+      ]
+    },
+    {
+      "id": "DE_GAS_MOVE",
+      "title": "De-Gas",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "GAZE_MOVE",
+      "title": "Gaze",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Add 1 Beckon card to discard"
+      ]
+    },
+    {
+      "id": "FADE_MOVE",
+      "title": "Fade",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 2 Intangible"
+      ]
+    },
+    {
+      "id": "SCREAM_MOVE",
+      "title": "Scream",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 15 damage",
+        "Apply 3 Vulnerable"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through: Beckon → De-Gas → Gaze → Fade → Scream, then repeats",
+  "powers_on_spawn": [],
+  "notes": "Soul Fysh uses an invisibility mechanic: becomes invisible (gains 2 Intangible) during Fade, then reappears when using Scream. Beckon and Gaze both add Beckon status cards that pollute the player's deck, affecting available card draws."
+}

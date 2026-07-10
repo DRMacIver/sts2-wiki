@@ -1,0 +1,8 @@
+{
+  "class_name": "FreeSkillPower",
+  "title": "Free Skill",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The next Skill you play costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+  "smart_description": "The next {Amount:plural:Skill|[blue]{}[/blue] Skills} you play {Amount:plural:costs|cost} [blue]0[/blue] {energyPrefix:energyIcons(1)}."
+}

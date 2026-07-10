@@ -1,0 +1,9 @@
+{
+  "class_name": "FlameBarrierPower",
+  "title": "Flame Barrier",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you are attacked this turn, deal [blue]4[/blue] damage back.",
+  "smart_description": "Whenever you are attacked this turn, deal [blue]4[/blue] damage back.",
+  "notes": "Reflected damage only triggers on powered attacks. Power removes at the end of the opponent's turn."
+}

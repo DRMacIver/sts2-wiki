@@ -1,0 +1,20 @@
+{
+  "class_name": "Soulbound",
+  "title": "Soulbound",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "upgraded_keywords": ["Innate"],
+  "vars": [],
+  "description": "Choose an ally.\nWhenever you create a [gold]Soul[/gold], add a [gold]Soul[/gold] to their [gold]Draw Pile[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "SoulboundPower",
+      "title": "Soulbound",
+      "slug": "soulbound"
+    }
+  ]
+}

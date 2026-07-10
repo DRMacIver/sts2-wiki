@@ -1,0 +1,16 @@
+{
+  "class_name": "Stoke",
+  "title": "Stoke",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nAdd 1 random card into your [gold]Hand[/gold] for each card [gold]Exhausted[/gold].",
+  "upgraded_description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nAdd 1 random [gold]Upgraded[/gold] card into your [gold]Hand[/gold] for each card [gold]Exhausted[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "When upgraded, the generated random cards are automatically upgraded before being added to hand."
+}

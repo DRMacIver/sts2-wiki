@@ -1,0 +1,40 @@
+{
+  "class_name": "ToughEgg",
+  "title": "Tough Egg",
+  "min_hp": 15,
+  "max_hp": 19,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HATCH_MOVE",
+      "title": "Hatch",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Transform into Hatchling",
+        "Gain 20-23 HP"
+      ]
+    },
+    {
+      "id": "NIBBLE_MOVE",
+      "title": "Nibble",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": [
+        "Deal 5 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Hatch, then repeatedly uses Nibble",
+  "powers_on_spawn": [
+    "Hatch"
+  ],
+  "notes": "Tough Egg hatches into a Hatchling on its first move. The monster's title changes to 'Hatchling' after hatching, and its HP resets to a new random value between 20-23. After transformation, it only uses Nibble attacks in a repeating loop."
+}

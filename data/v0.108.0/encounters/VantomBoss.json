@@ -1,0 +1,10 @@
+{
+  "class_name": "VantomBoss",
+  "title": "Vantom",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": ["Vantom"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Boss encounter with custom camera scaling (0.9x) and positioning. Uses custom music track 'event:/music/act1_boss_vantom'."
+}

@@ -1,0 +1,53 @@
+{
+  "class_name": "HauntedShip",
+  "title": "Haunted Ship",
+  "min_hp": 67,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": [
+        "Deal 14 damage"
+      ]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "HAUNT_MOVE",
+      "title": "Haunt",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Weak",
+        "Add 5 Dazed to discard"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Haunt. Then cycles: Swipe → Stomp → Swipe → Stomp...",
+  "powers_on_spawn": [],
+  "notes": "Haunt is a special debuff move that applies Weak to the player and adds Dazed cards to the player's discard pile."
+}

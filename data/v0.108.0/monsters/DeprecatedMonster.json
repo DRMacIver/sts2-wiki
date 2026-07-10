@@ -1,0 +1,22 @@
+{
+  "class_name": "DeprecatedMonster",
+  "title": "Deprecated Monster",
+  "min_hp": 0,
+  "max_hp": 0,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STUB",
+      "title": "Stub",
+      "intents": [
+        {
+          "type": "hidden"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Repeats Stub indefinitely (self-loop).",
+  "powers_on_spawn": [],
+  "notes": "Placeholder/deprecated monster with 0 HP and a single hidden stub move that loops forever. Not intended for actual combat."
+}

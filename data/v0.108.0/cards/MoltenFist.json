@@ -1,0 +1,25 @@
+{
+  "class_name": "MoltenFist",
+  "title": "Molten Fist",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Deal 10 damage.\nDouble the enemy's [gold]Vulnerable[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

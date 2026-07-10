@@ -1,0 +1,8 @@
+{
+  "class_name": "MiniatureCannon",
+  "title": "Miniature Cannon",
+  "rarity": "Uncommon",
+  "description": "[gold]Upgraded[/gold] Attacks deal [blue]3[/blue] additional damage.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Damage bonus only applies when: the attack is a powered attack, the card is upgraded, and the card source belongs to the relic owner."
+}

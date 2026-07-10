@@ -1,0 +1,9 @@
+{
+  "class_name": "ConquerorPower",
+  "title": "Conqueror",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "[gold]Sovereign Blade[/gold] deals double damage to the enemy this turn.",
+  "smart_description": "[gold]Sovereign Blade[/gold] deals double damage to [gold]{OwnerName}[/gold] {Amount:plural:this turn|for the next [blue]{}[/blue] turns}.",
+  "notes": "Counters the Sovereign Blade card's damage multiplier. Only applies the 2x damage bonus when: (1) the card source is SovereignBlade, (2) the attack is a powered attack, and (3) the target is the power owner. The counter decrements by 1 at the end of each turn the owner participates in."
+}

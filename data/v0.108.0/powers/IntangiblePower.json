@@ -1,0 +1,9 @@
+{
+  "class_name": "IntangiblePower",
+  "title": "Intangible",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Reduce all damage taken and HP loss to [blue]1[/blue] this turn.",
+  "smart_description": "Reduce all damage taken and HP loss to [blue]1[/blue]. Lasts for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "notes": "Decrements at the end of each enemy turn. Caps all incoming damage and HP loss effects at 1, including block loss calculations."
+}

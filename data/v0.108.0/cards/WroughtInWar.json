@@ -1,0 +1,25 @@
+{
+  "class_name": "WroughtInWar",
+  "title": "Wrought in War",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Forge",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 7 damage.\n[gold]Forge[/gold] 7.",
+  "referenced_powers": [],
+  "x_cost": false
+}

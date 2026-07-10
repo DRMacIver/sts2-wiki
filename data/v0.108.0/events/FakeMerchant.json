@@ -1,0 +1,81 @@
+{
+  "class_name": "FakeMerchant",
+  "title": "The Merchant???",
+  "description": "Placeholder",
+  "options": [
+    {
+      "title": "Browse Merchant",
+      "description": "View the merchant's inventory of relics. Each relic costs [gold]50[/gold] Gold."
+    },
+    {
+      "title": "Throw Foul Potion",
+      "description": "Throw a Foul Potion at the merchant to start a combat encounter. You will receive [gold]FakeMerchantsRug[/gold] and all relics in the merchant's inventory.",
+      "requires": "Requires Foul Potion"
+    }
+  ],
+  "acts": [
+    "Overgrowth",
+    "Underdocks",
+    "Hive",
+    "Glory"
+  ],
+  "conditions": [
+    "Act 2 only",
+    "Single player only",
+    "At least 100 Gold or has a Foul Potion"
+  ],
+  "notes": "This is an interactive merchant event with a custom interface. The merchant stocks 6 randomly-selected relics from a pool of 9: Fake Anchor, Fake Blood Vial, Fake Happy Flower, Fake Lees Waffle, Fake Mango, Fake Orichalcum, Fake Snecko Eye, Fake Strike Dummy, and Fake Venerable Tea Set. Each relic costs [gold]50[/gold] Gold. If the player throws a Foul Potion (obtained from the Foul Apothecary event or as a combat reward), they will face the merchant in combat. Upon victory, they receive the [gold]Fake Merchant's Rug[/gold] relic plus all relics that were in the merchant's inventory.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "FakeAnchor",
+      "title": "Fake Anchor",
+      "slug": "fake-anchor"
+    },
+    {
+      "class_name": "FakeBloodVial",
+      "title": "Fake Blood Vial",
+      "slug": "fake-blood-vial"
+    },
+    {
+      "class_name": "FakeHappyFlower",
+      "title": "Fake Happy Flower",
+      "slug": "fake-happy-flower"
+    },
+    {
+      "class_name": "FakeLeesWaffle",
+      "title": "Fake Lees Waffle",
+      "slug": "fake-lees-waffle"
+    },
+    {
+      "class_name": "FakeMango",
+      "title": "Fake Mango",
+      "slug": "fake-mango"
+    },
+    {
+      "class_name": "FakeOrichalcum",
+      "title": "Fake Orichalcum",
+      "slug": "fake-orichalcum"
+    },
+    {
+      "class_name": "FakeSneckoEye",
+      "title": "Fake Snecko Eye",
+      "slug": "fake-snecko-eye"
+    },
+    {
+      "class_name": "FakeStrikeDummy",
+      "title": "Fake Strike Dummy",
+      "slug": "fake-strike-dummy"
+    },
+    {
+      "class_name": "FakeVenerableTeaSet",
+      "title": "Fake Venerable Tea Set",
+      "slug": "fake-venerable-tea-set"
+    },
+    {
+      "class_name": "FakeMerchantsRug",
+      "title": "Fake Merchant's Rug",
+      "slug": "fake-merchants-rug"
+    }
+  ]
+}

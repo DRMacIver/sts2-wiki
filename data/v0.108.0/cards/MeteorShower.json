@@ -1,0 +1,40 @@
+{
+  "class_name": "MeteorShower",
+  "title": "Meteor Shower",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 21
+    },
+    {
+      "type": "Weak",
+      "base_value": 2
+    },
+    {
+      "type": "Vulnerable",
+      "base_value": 2
+    }
+  ],
+  "description": "Deal 14 damage to ALL enemies.\nApply 2 [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.",
+  "star_cost": 2,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    },
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ]
+}

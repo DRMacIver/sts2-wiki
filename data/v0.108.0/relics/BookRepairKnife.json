@@ -1,0 +1,8 @@
+{
+  "class_name": "BookRepairKnife",
+  "title": "Book Repair Knife",
+  "rarity": "Uncommon",
+  "description": "Whenever a non-Minion enemy dies to [gold]Doom[/gold], heal [green]3[/green] HP.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Heals for 3 HP for each non-Minion enemy that dies to Doom. The heal amount multiplies by the number of qualifying enemies killed in a single turn."
+}

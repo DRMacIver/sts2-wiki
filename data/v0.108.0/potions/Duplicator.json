@@ -1,0 +1,8 @@
+{
+  "class_name": "Duplicator",
+  "title": "Duplicator",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "Self",
+  "description": "This turn, your next card is played an extra time."
+}

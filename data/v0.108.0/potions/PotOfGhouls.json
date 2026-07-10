@@ -1,0 +1,8 @@
+{
+  "class_name": "PotOfGhouls",
+  "title": "Pot of Ghouls",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Self",
+  "description": "Add 2 Souls into your Hand."
+}

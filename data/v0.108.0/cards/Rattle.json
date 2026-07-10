@@ -1,0 +1,20 @@
+{
+  "class_name": "Rattle",
+  "title": "Rattle",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 7 damage. Hits an additional time for each other time he has attacked this turn.",
+  "x_cost": false,
+  "notes": "The number of hits is calculated dynamically based on how many times Osty has attacked in the current turn."
+}

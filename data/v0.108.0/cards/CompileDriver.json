@@ -1,0 +1,20 @@
+{
+  "class_name": "CompileDriver",
+  "title": "Compile Driver",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Deal 7 damage.\nDraw 1 card for each unique Orb you have.",
+  "upgraded_description": "Deal 10 damage.\nDraw 1 card for each unique Orb you have.",
+  "notes": "Draws cards equal to the number of unique Orbs currently in the Orb Queue. The exact number is calculated and displayed in combat."
+}

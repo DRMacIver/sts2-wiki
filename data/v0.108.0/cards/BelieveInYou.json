@@ -1,0 +1,22 @@
+{
+  "class_name": "BelieveInYou",
+  "title": "Believe in You",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Energy",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Another player gains 2 Energy.",
+  "upgraded_description": "Another player gains 3 Energy.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Multiplayer only card. Targets an allied player to give them energy."
+}

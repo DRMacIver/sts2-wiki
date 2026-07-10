@@ -1,0 +1,8 @@
+{
+  "class_name": "SoldiersStew",
+  "title": "Soldier's Stew",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "All cards containing [gold]Strike[/gold] gain [blue]1[/blue] [gold]Replay[/gold] this combat."
+}

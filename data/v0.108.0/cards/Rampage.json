@@ -1,0 +1,22 @@
+{
+  "class_name": "Rampage",
+  "title": "Rampage",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 9
+    },
+    {
+      "type": "Increase",
+      "base_value": 5,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "Deal 9 damage.\nIncrease this card's damage by 5 this combat."
+}

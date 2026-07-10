@@ -1,0 +1,24 @@
+{
+  "class_name": "MachineLearning",
+  "title": "Machine Learning",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Innate"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "At the start of your turn, draw 1 additional card.",
+  "referenced_powers": [
+    {
+      "class_name": "MachineLearningPower",
+      "title": "Machine Learning",
+      "slug": "machine-learning"
+    }
+  ]
+}

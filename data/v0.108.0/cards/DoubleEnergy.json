@@ -1,0 +1,15 @@
+{
+  "class_name": "DoubleEnergy",
+  "title": "Double Energy",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "Double your Energy.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": []
+}

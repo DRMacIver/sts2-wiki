@@ -1,0 +1,9 @@
+{
+  "class_name": "LeadershipPower",
+  "title": "Leadership",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "All other allies deal [blue]1[/blue] additional damage.",
+  "smart_description": "All other allies deal [blue]{Amount}[/blue] additional damage.",
+  "notes": "Increases damage dealt by all allied creatures except the power owner. Each instance of this power increases the damage bonus by 1 for powered attacks."
+}

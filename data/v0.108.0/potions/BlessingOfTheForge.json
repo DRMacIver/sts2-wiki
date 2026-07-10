@@ -1,0 +1,9 @@
+{
+  "class_name": "BlessingOfTheForge",
+  "title": "Blessing of the Forge",
+  "rarity": "Uncommon",
+  "usage": "Unknown",
+  "target": "Self",
+  "description": "[gold]Upgrade[/gold] all cards in your [gold]Hand[/gold] for the rest of combat.",
+  "notes": "Potion usage type is CombatOnly (can only be used during combat). Upgrades all upgradable cards in hand."
+}

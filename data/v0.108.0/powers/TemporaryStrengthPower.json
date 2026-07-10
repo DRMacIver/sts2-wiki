@@ -1,0 +1,9 @@
+{
+  "class_name": "TemporaryStrengthPower",
+  "title": "Temporary Strength",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [gold]Strength[/gold] until the end of this turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Strength[/gold] until the end of this turn.",
+  "notes": "Abstract base class for temporary strength powers. Title is derived from the origin model that applies it (card, potion, or relic). The Amount variable in smartDescription is filled at runtime based on the amount applied. This power removes itself at the end of the turn and applies the inverse strength to undo the buff. See also: TemporaryStrengthDown for the debuff variant."
+}

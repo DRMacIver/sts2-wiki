@@ -1,0 +1,9 @@
+{
+  "class_name": "SubroutinePower",
+  "title": "Subroutine",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a Power, gain energy.",
+  "smart_description": "Whenever you play a Power, gain energy equal to this power's stack.",
+  "notes": "Each stack of Subroutine grants 1 energy when you play a Power card. Only triggers on Power cards played by the player."
+}

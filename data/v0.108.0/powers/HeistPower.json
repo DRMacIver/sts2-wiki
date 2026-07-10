@@ -1,0 +1,9 @@
+{
+  "class_name": "HeistPower",
+  "title": "Heist",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "When killed, returns all the stolen [gold]Gold[/gold].",
+  "smart_description": "When killed, returns all the stolen [gold]Gold[/gold].",
+  "notes": "Triggered on the power owner's death. Returns stolen gold as a reward in the current combat room and marks loot as returned in the map's history."
+}

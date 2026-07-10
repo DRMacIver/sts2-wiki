@@ -1,0 +1,8 @@
+{
+  "class_name": "RippleBasin",
+  "title": "Ripple Basin",
+  "rarity": "Uncommon",
+  "description": "If you did not play any Attacks during your turn, gain [blue]4[/blue] [gold]Block[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "The relic activates at the start of your turn and disarms if you play any Attack card. At the end of your turn, if no Attacks were played, you gain 4 Block and the relic flashes to indicate it triggered."
+}

@@ -1,0 +1,14 @@
+{
+  "class_name": "SeapunkNormal",
+  "title": "Underdocks Wildlife",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "CalcifiedCultist",
+    "Seapunk"
+  ],
+  "total_monsters": 2,
+  "tags": [
+    "Seapunk"
+  ]
+}

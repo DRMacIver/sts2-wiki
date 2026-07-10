@@ -1,0 +1,24 @@
+{
+  "class_name": "GangUp",
+  "title": "Gang Up",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5
+    },
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage. Deals 5 additional damage for each time another player has attacked the enemy this turn.",
+  "upgraded_description": "Deal 5 damage. Deals 7 additional damage for each time another player has attacked the enemy this turn.",
+  "notes": "Multiplayer Only. Damage scales with the number of times other players on your side have attacked the same enemy this turn."
+}

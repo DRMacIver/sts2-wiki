@@ -1,0 +1,8 @@
+{
+  "class_name": "CureAll",
+  "title": "Cure All",
+  "rarity": "Uncommon",
+  "usage": "Unknown",
+  "target": "AnyPlayer",
+  "description": "Gain 1 energy. Draw [blue]2[/blue] cards."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "Glitter",
+  "title": "Glitter",
+  "rarity": "Ancient",
+  "description": "[gold]Enchant[/gold] all card rewards with [purple]Glam[/purple].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Applies the Glam enchantment to all compatible card rewards during the reward phase. Only cards that can accept the Glam enchantment will be modified."
+}

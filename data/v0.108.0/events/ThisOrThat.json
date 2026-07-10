@@ -1,0 +1,26 @@
+{
+  "class_name": "ThisOrThat",
+  "title": "This or That?",
+  "description": "Arms suddenly jut out from a nearby hole, clutching a [gold]suspicious bag of riches[/gold] and a clearly [purple]cursed relic[/purple].\n\n[jitter][blue]\"This... or That?\"[/blue][/jitter]\na scratched-up voice whispers from below.",
+  "options": [
+    {
+      "title": "This",
+      "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "That",
+      "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": [],
+  "notes": "The Gold reward for choosing 'This' is randomized between 41-69 each time the event is encountered. After either choice, follow-up text appears describing what happens: choosing 'This' results in a frantic struggle with a mysterious third hand, while choosing 'That' leads to ghostly laughter and fire before the entity vanishes.",
+  "card_refs": [
+    {
+      "class_name": "Clumsy",
+      "title": "Clumsy",
+      "slug": "clumsy"
+    }
+  ],
+  "relic_refs": []
+}

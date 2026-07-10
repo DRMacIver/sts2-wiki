@@ -1,0 +1,19 @@
+{
+  "class_name": "Shiv",
+  "title": "Shiv",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 6
+    }
+  ],
+  "description": "Deal 4 damage.",
+  "x_cost": false
+}

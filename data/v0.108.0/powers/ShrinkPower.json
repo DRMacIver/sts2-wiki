@@ -1,0 +1,9 @@
+{
+  "class_name": "ShrinkPower",
+  "title": "Shrink",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature's Attacks deal [blue]30%[/blue] less damage for the next 3 turns.",
+  "smart_description": "{ApplierName.StringValue:cond:While {} is alive, your|[gold]{OwnerName}'s[/gold]} Attacks deal [blue]30%[/blue] less damage{Amount:cond:==1? next turn|>1? for the next [blue]{}[/blue] turns|}.",
+  "notes": "Shrinks the affected creature to 50% scale visually. Removed when the applier dies."
+}

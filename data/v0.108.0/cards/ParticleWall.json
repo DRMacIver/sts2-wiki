@@ -1,0 +1,22 @@
+{
+  "class_name": "ParticleWall",
+  "title": "Particle Wall",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Gain 9 [gold]Block[/gold].\nReturn this card to your [gold]Hand[/gold].",
+  "upgraded_description": "Gain 12 [gold]Block[/gold].\nReturn this card to your [gold]Hand[/gold].",
+  "star_cost": 2,
+  "x_cost": false,
+  "notes": "This card costs Stars instead of Energy. When played, it returns to your hand at the bottom of the deck instead of going to the discard pile."
+}

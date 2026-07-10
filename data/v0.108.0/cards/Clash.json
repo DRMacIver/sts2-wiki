@@ -1,0 +1,20 @@
+{
+  "class_name": "Clash",
+  "title": "Clash",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 14,
+      "upgraded_value": 18
+    }
+  ],
+  "description": "Can only be played if every card in your [gold]Hand[/gold] is an Attack.\nDeal 14 damage.",
+  "upgraded_description": "Can only be played if every card in your [gold]Hand[/gold] is an Attack.\nDeal 18 damage.",
+  "notes": "Can only be played when all cards in your hand are Attacks."
+}

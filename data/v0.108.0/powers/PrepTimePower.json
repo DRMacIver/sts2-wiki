@@ -1,0 +1,8 @@
+{
+  "class_name": "PrepTimePower",
+  "title": "Prep Time",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, gain [blue]4[/blue] [gold]Vigor[/gold].",
+  "smart_description": "At the start of your turn, gain [blue]4[/blue] [gold]Vigor[/gold]."
+}

@@ -1,0 +1,33 @@
+{
+  "class_name": "DampCultist",
+  "title": "Damp Cultist",
+  "min_hp": 52,
+  "max_hp": 54,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INCANTATION_MOVE",
+      "title": "Incantation",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 6 Ritual"]
+    },
+    {
+      "id": "DARK_STRIKE_MOVE",
+      "title": "Dark Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 3
+        }
+      ],
+      "effects": ["Deal 3 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Incantation, then Dark Strike loops indefinitely",
+  "powers_on_spawn": [],
+  "notes": "Ritual increases damage dealt by the monster. The cultist buffs itself with Ritual on the first turn, then alternates Dark Strike attacks for the rest of combat."
+}

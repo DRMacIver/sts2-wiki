@@ -1,0 +1,8 @@
+{
+  "class_name": "BottledPotential",
+  "title": "Bottled Potential",
+  "rarity": "Rare",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "Shuffle ALL your cards into your [gold]Draw Pile[/gold]. Draw [blue]5[/blue] cards."
+}

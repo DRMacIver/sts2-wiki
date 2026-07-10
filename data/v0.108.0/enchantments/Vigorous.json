@@ -1,0 +1,18 @@
+{
+  "class_name": "Vigorous",
+  "title": "Vigorous",
+  "description": "The first time this card is played, it deals [blue]8[/blue] additional damage.",
+  "card_type": "Attack",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "StoneOfAllTime",
+      "title": "Stone of All Time",
+      "amount": 8
+    }
+  ],
+  "notes": "The enchantment only applies the first time the card is played (status becomes Disabled after first play). Only applies to powered attacks."
+}

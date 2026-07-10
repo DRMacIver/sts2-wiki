@@ -1,0 +1,8 @@
+{
+  "class_name": "EnergyNextTurnPower",
+  "title": "Energy Next Turn",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain additional [gold]Energy[/gold] next turn.",
+  "smart_description": "Gain [blue]{Amount}[/blue] additional {energyPrefix:energyIcons(1)} next turn."
+}

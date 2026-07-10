@@ -1,0 +1,73 @@
+{
+  "class_name": "LagavulinMatriarch",
+  "title": "Lagavulin Matriarch",
+  "min_hp": 233,
+  "max_hp": 233,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "SLASH_MOVE",
+      "title": "Slash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        }
+      ],
+      "effects": ["Deal 21 damage"]
+    },
+    {
+      "id": "SLASH2_MOVE",
+      "title": "Slash 2",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "block",
+          "amount": 14
+        }
+      ],
+      "effects": ["Deal 14 damage", "Gain 14 Block"]
+    },
+    {
+      "id": "DISEMBOWEL_MOVE",
+      "title": "Disembowel",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 10 damage", "2 hits"]
+    },
+    {
+      "id": "SOUL_SIPHON_MOVE",
+      "title": "Soul Siphon",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply -2 Strength to all enemies", "Apply -2 Dexterity to all enemies", "Apply +2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts asleep and remains in Sleep state for 3 turns (AsleepPower duration). After waking up, cycles: Slash → Disembowel → Slash 2 → Soul Siphon → Slash (repeats).",
+  "powers_on_spawn": ["PlatingPower", "AsleepPower"],
+  "notes": "Begins the fight asleep with PlatingPower (12 durability) and AsleepPower (3 durability). While asleep, Sleep move does nothing and the monster takes no action each turn. When damage reduces HP below 50%, an eyes-open animation plays as a visual indicator of vulnerability. Soul Siphon is a soul-stealing move that applies -2 Strength and -2 Dexterity to all enemies while buffing itself with +2 Strength."
+}

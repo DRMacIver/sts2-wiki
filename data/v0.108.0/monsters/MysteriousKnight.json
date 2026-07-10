@@ -1,0 +1,45 @@
+{
+  "class_name": "MysteriousKnight",
+  "title": "Mysterious Knight",
+  "min_hp": 108,
+  "max_hp": 108,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WAR_CHANT",
+      "title": "War Chant",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength"]
+    },
+    {
+      "id": "FLAIL_MOVE",
+      "title": "Flail",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 10 damage", "2 hits"]
+    },
+    {
+      "id": "RAM_MOVE",
+      "title": "Ram",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": ["Deal 17 damage"]
+    }
+  ],
+  "move_pattern": "Randomly cycles between War Chant, Flail, and Ram. Starts with Ram.",
+  "powers_on_spawn": ["Strength 6", "Plating 6"],
+  "notes": "Enhanced variant of Flail Knight with higher spawn powers (Strength 6 and Plating 6 instead of just Strength 3 from War Chant)."
+}

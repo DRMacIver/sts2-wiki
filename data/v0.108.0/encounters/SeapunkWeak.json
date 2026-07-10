@@ -1,0 +1,9 @@
+{
+  "class_name": "SeapunkWeak",
+  "title": "Seapunk",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["Seapunk"],
+  "total_monsters": 1,
+  "tags": ["Seapunk"]
+}

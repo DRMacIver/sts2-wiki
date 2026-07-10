@@ -1,0 +1,19 @@
+{
+  "class_name": "Pinpoint",
+  "title": "Pinpoint",
+  "character": "Silent",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 15,
+      "upgraded_value": 19
+    }
+  ],
+  "description": "Deal 15 damage.\nCosts 1 less Energy for each Skill played this turn.",
+  "x_cost": false
+}

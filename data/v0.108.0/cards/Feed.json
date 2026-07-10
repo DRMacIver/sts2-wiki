@@ -1,0 +1,26 @@
+{
+  "class_name": "Feed",
+  "title": "Feed",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 12
+    },
+    {
+      "type": "MaxHp",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 10 damage.\nIf [gold]Fatal[/gold], raise your Max HP by 3.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Max HP gain triggers only if the target dies while affected by Fatal."
+}

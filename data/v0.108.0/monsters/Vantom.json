@@ -1,0 +1,71 @@
+{
+  "class_name": "Vantom",
+  "title": "Vantom",
+  "min_hp": 183,
+  "max_hp": 183,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INK_BLOT_MOVE",
+      "title": "Ink Blot",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": [
+        "Deal 8 damage"
+      ]
+    },
+    {
+      "id": "INKY_LANCE_MOVE",
+      "title": "Inky Lance",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "DISMEMBER_MOVE",
+      "title": "Dismember",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 30
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 30 damage",
+        "Add 3 Wounds to discard"
+      ]
+    },
+    {
+      "id": "PREPARE_MOVE",
+      "title": "Prepare",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through: Ink Blot → Inky Lance → Dismember → Prepare",
+  "powers_on_spawn": [
+    "Slippery (9)"
+  ],
+  "notes": "Vantom gains Slippery on spawn, reducing all damage taken. Dismember is the primary damage move at 30 damage and also adds 3 Wounds to the player's discard pile. The monster progressively charges up its attack animation through the move cycle. A music parameter system escalates through the sequence as Vantom cycles through its moves."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "CrueltyPower",
+  "title": "Cruelty",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Vulnerable enemies take additional damage.",
+  "smart_description": "[gold]Vulnerable[/gold] enemies take an additional [blue]{Amount}%[/blue] damage."
+}

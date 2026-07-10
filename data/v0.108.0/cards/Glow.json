@@ -1,0 +1,30 @@
+{
+  "class_name": "Glow",
+  "title": "Glow",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Stars",
+      "base_value": 1,
+      "upgraded_value": 2
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 1 Star.\nDraw 1 card.\nNext turn, draw 1 card.",
+  "upgraded_description": "Gain 2 Stars.\nDraw 1 card.\nNext turn, draw 1 card.",
+  "referenced_powers": [
+    {
+      "class_name": "DrawCardsNextTurnPower",
+      "title": "Draw Cards Next Turn",
+      "slug": "draw-cards-next-turn"
+    }
+  ]
+}

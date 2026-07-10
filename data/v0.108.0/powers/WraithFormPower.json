@@ -1,0 +1,8 @@
+{
+  "class_name": "WraithFormPower",
+  "title": "Wraith Form",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, lose [blue]1[/blue] [gold]Dexterity[/gold].",
+  "smart_description": "At the start of your turn, lose [blue]1[/blue] [gold]Dexterity[/gold]."
+}

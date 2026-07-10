@@ -1,0 +1,26 @@
+{
+  "class_name": "SunkenStatue",
+  "title": "The Sunken Statue",
+  "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
+  "options": [
+    {
+      "title": "Grab the Sword",
+      "description": "Obtain the [gold]Sword of Stone[/gold]."
+    },
+    {
+      "title": "Dive into the Water",
+      "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
+    }
+  ],
+  "acts": ["Underdocks", "Overgrowth"],
+  "conditions": [],
+  "notes": "The gold reward has a variance of ±10, so the actual amount received can range from 101 to 121 gold. The HP loss from diving is [red]unblockable[/red] damage.",
+  "relic_refs": [
+    {
+      "class_name": "SwordOfStone",
+      "title": "Sword of Stone",
+      "slug": "sword-of-stone"
+    }
+  ],
+  "card_refs": []
+}

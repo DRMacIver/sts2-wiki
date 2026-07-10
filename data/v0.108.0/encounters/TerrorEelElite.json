@@ -1,0 +1,10 @@
+{
+  "class_name": "TerrorEelElite",
+  "title": "Terror Eel",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["TerrorEel"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Camera zoom: 0.9x"
+}

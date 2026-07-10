@@ -1,0 +1,10 @@
+{
+  "class_name": "SewerClamNormal",
+  "title": "Sewer Clam",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["SewerClam"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": ""
+}

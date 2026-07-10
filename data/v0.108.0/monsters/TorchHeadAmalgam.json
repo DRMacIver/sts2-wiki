@@ -1,0 +1,68 @@
+{
+  "class_name": "TorchHeadAmalgam",
+  "title": "Torch Head Amalgam",
+  "min_hp": 211,
+  "max_hp": 211,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TACKLE_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        }
+      ],
+      "effects": ["Deal 22 damage"]
+    },
+    {
+      "id": "TACKLE_2_MOVE",
+      "title": "Tackle 2",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        }
+      ],
+      "effects": ["Deal 22 damage"]
+    },
+    {
+      "id": "BEAM_MOVE",
+      "title": "Beam",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 8 damage", "3 hits"]
+    },
+    {
+      "id": "TACKLE_3_MOVE",
+      "title": "Tackle 3",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    },
+    {
+      "id": "TACKLE_4_MOVE",
+      "title": "Tackle 4",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Tackle → Tackle 2 → Beam. Then cycles: Tackle 3 → Tackle 4 → Beam",
+  "powers_on_spawn": ["Minion"],
+  "notes": "Applies Minion power when entering combat. The attack pattern uses two strong tackles followed by a multi-hit beam, then repeats with two weaker tackles and another beam."
+}

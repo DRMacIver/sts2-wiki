@@ -1,0 +1,22 @@
+{
+  "class_name": "GatherLight",
+  "title": "Gather Light",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 8,
+      "upgraded_value": 11
+    },
+    {
+      "type": "Stars",
+      "base_value": 1
+    }
+  ],
+  "description": "Gain 8 [gold]Block[/gold].\nGain 1 Star."
+}

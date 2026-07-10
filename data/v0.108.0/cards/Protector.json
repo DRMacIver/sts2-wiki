@@ -1,0 +1,27 @@
+{
+  "class_name": "Protector",
+  "title": "Protector",
+  "character": "Token",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 15
+    },
+    {
+      "type": "OstyDamage",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 11 + Osty's Max HP damage.",
+  "upgraded_description": "[gold]Osty[/gold] deals 16 + Osty's Max HP damage.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Damage calculation includes base damage from the card plus damage contributed by Osty, with additional scaling based on Osty's Max HP. Costs 0 energy after upgrade."
+}

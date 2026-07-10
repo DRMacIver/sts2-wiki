@@ -1,0 +1,9 @@
+{
+  "class_name": "BarricadePower",
+  "title": "Barricade",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "[gold]Block[/gold] is not removed at the start of this creature's turn.",
+  "smart_description": "[gold]Block[/gold] is not removed at the start of your turn.",
+  "notes": "Smart description is context-aware: when applied to the player, shows 'your turn'; when applied to a monster, shows the monster's name. Resolved to player perspective for wiki documentation. The power's effect is enforced in ShouldClearBlock() method—Block is only preserved if the power owner is the affected creature, preventing block removal on their turn only."
+}

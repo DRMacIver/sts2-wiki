@@ -1,0 +1,25 @@
+{
+  "class_name": "Fetch",
+  "title": "Fetch",
+  "character": "Osty",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 6
+    },
+    {
+      "type": "Cards",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 3 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+  "upgraded_description": "[gold]Osty[/gold] deals 6 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+  "x_cost": false,
+  "referenced_powers": []
+}

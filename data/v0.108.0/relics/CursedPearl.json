@@ -1,0 +1,8 @@
+{
+  "class_name": "CursedPearl",
+  "title": "Cursed Pearl",
+  "rarity": "Ancient",
+  "description": "Upon pickup, receive [red]Greed[/red]. Gain [blue]333[/blue] [gold]Gold[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Adds Greed curse to deck when obtained, triggering additional negative effects."
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "CrescentSpear",
+  "title": "Crescent Spear",
+  "character": "Regent",
+  "energy_cost": 1,
+  "star_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8
+    },
+    {
+      "type": "Damage",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 2 damage for each card with a star cost in your deck.",
+  "upgraded_description": "Deal 3 damage for each card with a star cost in your deck.",
+  "referenced_powers": [],
+  "notes": "Calculated damage scales linearly with the count of star-cost cards in your entire deck, including this card itself. The 8-value base appears to be vestigial or used in a calculation context not directly visible from the card code."
+}

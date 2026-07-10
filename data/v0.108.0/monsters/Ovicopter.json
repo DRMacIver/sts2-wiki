@@ -1,0 +1,66 @@
+{
+  "class_name": "Ovicopter",
+  "title": "Ovicopter",
+  "min_hp": 126,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LAY_EGGS_MOVE",
+      "title": "Lay Eggs",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Summon up to 3 Tough Eggs"
+      ]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "TENDERIZER_MOVE",
+      "title": "Tenderizer",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Vulnerable"
+      ]
+    },
+    {
+      "id": "NUTRITIONAL_PASTE_MOVE",
+      "title": "Nutritional Paste",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 4 Strength to self"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Lay Eggs. Then cycles: Smash → Tenderizer → conditional branch. When 3 or fewer eggs are alive, returns to Lay Eggs. When 4 or more eggs are alive, uses Nutritional Paste instead of Lay Eggs to buff with Strength.",
+  "powers_on_spawn": [],
+  "notes": "Ovicopter summons ToughEgg minions through the Lay Eggs move, but only while it has 3 or fewer alive allies. Once it reaches 4 alive minions, it stops summoning and instead uses Nutritional Paste to grant itself Strength, forcing the player to deal with both the eggs and the buffed Ovicopter. Tenderizer is not displayed in the bestiary despite being part of its move rotation."
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "TheHunt",
+  "title": "The Hunt",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [
+    "Exhaust"
+  ],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 10 damage.\nIf [gold]Fatal[/gold], gain an additional card reward.",
+  "upgraded_description": "Deal 15 damage.\nIf [gold]Fatal[/gold], gain an additional card reward.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "TheHuntPower",
+      "title": "The Hunt",
+      "slug": "the-hunt"
+    }
+  ],
+  "notes": "Applies The Hunt power when the target is killed. Cannot be generated in combat; only obtained as a card reward."
+}

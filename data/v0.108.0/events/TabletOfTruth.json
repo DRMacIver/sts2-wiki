@@ -1,0 +1,21 @@
+{
+  "class_name": "TabletOfTruth",
+  "title": "Tablet of Truth",
+  "description": "You defeat a pair of [blue]Guardian Kin[/blue] and make your way into a protected vault.\n\nInside is a [purple][sine]tablet with familiar inscriptions[/sine][/purple]. Your intuition tells you that this language can be deciphered rather easily... However, once you begin deciphering you'll be locked in.\n\nThe tablet gives off a soothing energy and you can smash it to receive its [green]healing energies[/green] instead.",
+  "options": [
+    {
+      "title": "Decipher",
+      "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card.",
+      "requires": "You would die."
+    },
+    {
+      "title": "Smash",
+      "description": "Heal [green]20[/green] HP."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "This is a multi-stage event with 5 levels of deciphering. Once you choose to decipher, you enter a loop where each stage requires increasing Max HP loss and you can choose to continue or give up after each stage:\n\n**Stage Progression:**\n- **Stage 1**: Lose 3 Max HP, [gold]upgrade[/gold] 1 random card\n- **Stage 2**: Lose 6 Max HP, [gold]upgrade[/gold] 1 random card  \n- **Stage 3**: Lose 12 Max HP, [gold]upgrade[/gold] 1 random card\n- **Stage 4**: Lose 24 Max HP, [gold]upgrade[/gold] 1 random card\n- **Stage 5** (Final): Lose all remaining Max HP (MaxHp - 1), [gold]upgrade ALL cards[/gold] in your deck, reveal the [gold]Final Word[/gold]: \"[b]Air[/b]\"\n\nThe Decipher option becomes locked if the HP cost would reduce your Max HP to 0 or below. If you survive all 5 stages, the full truth of the tablet is revealed: simply the word \"Air\".",
+  "card_refs": [],
+  "relic_refs": []
+}

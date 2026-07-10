@@ -1,0 +1,53 @@
+{
+  "class_name": "BygoneEffigy",
+  "title": "Bygone Effigy",
+  "min_hp": 132,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "WAKE_MOVE",
+      "title": "Wake",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 10 Strength"]
+    },
+    {
+      "id": "SLEEP_MOVE_2",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "SLASHES_MOVE",
+      "title": "Slashes",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    }
+  ],
+  "move_pattern": "Starts asleep. Wakes on first turn (applies 10 Strength). Then repeatedly uses Slashes.",
+  "powers_on_spawn": ["Slow"],
+  "notes": "Monster begins the encounter asleep. Upon its first turn, it wakes and gains 10 Strength, also triggering the elite second phase music (on non-test runs). After waking, it cycles exclusively through Slashes. SLEEP_MOVE_2 is defined in the state machine but is unreachable during normal combat."
+}

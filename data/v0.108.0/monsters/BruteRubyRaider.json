@@ -1,0 +1,33 @@
+{
+  "class_name": "BruteRubyRaider",
+  "title": "Brute Raider",
+  "min_hp": 31,
+  "max_hp": 34,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BEAT_MOVE",
+      "title": "Beat",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": ["Deal 8 damage"]
+    },
+    {
+      "id": "ROAR_MOVE",
+      "title": "Roar",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength"]
+    }
+  ],
+  "move_pattern": "Alternates between Beat and Roar",
+  "powers_on_spawn": [],
+  "notes": "Roar move is hidden from the bestiary despite being used in combat."
+}

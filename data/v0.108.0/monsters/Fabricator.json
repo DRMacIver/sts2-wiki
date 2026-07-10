@@ -1,0 +1,55 @@
+{
+  "class_name": "Fabricator",
+  "title": "Fabricator",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FABRICATE_MOVE",
+      "title": "Fabricate",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Spawn 1 defensive minion",
+        "Spawn 1 aggressive minion"
+      ]
+    },
+    {
+      "id": "FABRICATING_STRIKE_MOVE",
+      "title": "Fabricating Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        },
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Deal 21 damage",
+        "Spawn 1 aggressive minion"
+      ]
+    },
+    {
+      "id": "DISINTEGRATE_MOVE",
+      "title": "Disintegrate",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles based on minion count. While fewer than 4 minions are alive: randomly alternates between Fabricate and Fabricating Strike. When 4 minions are alive: uses Disintegrate instead.",
+  "powers_on_spawn": [],
+  "notes": "Fabricator spawns minions to fight alongside it. Fabricate spawns both a defensive minion (Guardbot or Noisebot) and an aggressive minion (Zapbot or Stabbot). Fabricating Strike spawns only an aggressive minion. The Fabricator prioritizes spawning moves while it has fewer than 4 minions, but switches to Disintegrate once at 4 minions. Avoids spawning the same minion type twice in succession."
+}

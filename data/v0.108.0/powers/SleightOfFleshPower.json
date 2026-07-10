@@ -1,0 +1,8 @@
+{
+  "class_name": "SleightOfFleshPower",
+  "title": "Sleight of Flesh",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you apply a debuff to an enemy, they take [blue]13[/blue] damage.",
+  "smart_description": "Whenever you apply a debuff to an enemy, they take [blue]{Amount}[/blue] damage."
+}

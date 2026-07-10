@@ -1,0 +1,8 @@
+{
+  "class_name": "VulnerablePower",
+  "title": "Vulnerable",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Vulnerable creatures take [blue]50%[/blue] more damage from Attacks.",
+  "smart_description": "Receive [blue]50%[/blue] more damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+}

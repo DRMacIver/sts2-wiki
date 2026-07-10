@@ -1,0 +1,20 @@
+{
+  "class_name": "Flatten",
+  "title": "Flatten",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12,
+      "upgraded_value": 16
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 12 damage. This card costs 0 Energy if [gold]Osty[/gold] has attacked this turn.",
+  "upgraded_description": "[gold]Osty[/gold] deals 16 damage. This card costs 0 Energy if [gold]Osty[/gold] has attacked this turn.",
+  "notes": "Card cost is reduced to 0 for the turn if Osty has attacked this turn. Glows red if Osty is missing."
+}

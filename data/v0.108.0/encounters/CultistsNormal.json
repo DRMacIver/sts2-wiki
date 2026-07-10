@@ -1,0 +1,12 @@
+{
+  "class_name": "CultistsNormal",
+  "title": "Cultists",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "CalcifiedCultist",
+    "DampCultist"
+  ],
+  "total_monsters": 2,
+  "tags": []
+}

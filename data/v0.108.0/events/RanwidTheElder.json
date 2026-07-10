@@ -1,0 +1,31 @@
+{
+  "class_name": "RanwidTheElder",
+  "title": "Ranwid the Elder",
+  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\"We meet once more... it's me, Ranwid!\"[/sine]\n\nYou do not know this man.",
+  "options": [
+    {
+      "title": "Give [a potion you own]",
+      "description": "Obtain a random [gold]Relic[/gold].",
+      "requires": "You don't have any Potions that can be given."
+    },
+    {
+      "title": "Give 100 Gold",
+      "description": "Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "Give [a tradable relic you own]",
+      "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
+      "requires": "You don't have any Relics that can be given."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": [
+    "Act 2+",
+    "At least 100 Gold",
+    "At least 1 Potion",
+    "At least 1 tradable Relic"
+  ],
+  "notes": "This event offers three options to trade resources for random relics. The game randomly selects a potion or relic from your collection and displays it in the option title using dynamic variables. Potions are locked during the event and can only be used after it ends. Each choice results in a different flavor text page before the event concludes.",
+  "card_refs": [],
+  "relic_refs": []
+}

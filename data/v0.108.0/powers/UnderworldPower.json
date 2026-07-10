@@ -1,0 +1,8 @@
+{
+  "class_name": "UnderworldPower",
+  "title": "Underworld",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever other players deal attack damage this turn, apply that much [gold]Doom[/gold].",
+  "smart_description": "Whenever other players deal attack damage this turn, apply{Amount:plural:| [blue]{}[/blue] times} that much [gold]Doom[/gold]."
+}

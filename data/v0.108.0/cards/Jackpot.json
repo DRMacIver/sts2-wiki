@@ -1,0 +1,25 @@
+{
+  "class_name": "Jackpot",
+  "title": "Jackpot",
+  "character": "Colorless",
+  "energy_cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 25,
+      "upgraded_value": 30
+    },
+    {
+      "type": "Cards",
+      "base_value": 3
+    }
+  ],
+  "description": "Deal 25 damage.\nAdd 3 random 0 Energy cards into your Hand.",
+  "upgraded_description": "Deal 30 damage.\nAdd 3 random [gold]Upgraded[/gold] 0 Energy cards into your Hand.",
+  "referenced_powers": [],
+  "notes": "When this card is upgraded, the randomly generated 0-cost cards are also upgraded."
+}

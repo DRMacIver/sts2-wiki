@@ -1,0 +1,8 @@
+{
+  "class_name": "ReflectPower",
+  "title": "Reflect",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Blocked damage is reflected to your attacker.",
+  "smart_description": "Blocked damage is reflected to your attacker for [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
+}

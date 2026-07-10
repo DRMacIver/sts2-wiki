@@ -1,0 +1,19 @@
+{
+  "class_name": "Catastrophe",
+  "title": "Catastrophe",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Play 2 random cards from your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Play 3 random cards from your [gold]Draw Pile[/gold]."
+}

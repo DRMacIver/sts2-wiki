@@ -1,0 +1,94 @@
+{
+  "class_name": "Queen",
+  "title": "Queen",
+  "min_hp": 419,
+  "max_hp": 419,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PUPPET_STRINGS_MOVE",
+      "title": "Puppet Strings",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Chains of Binding"
+      ]
+    },
+    {
+      "id": "YOU_ARE_MINE_MOVE",
+      "title": "You Are Mine",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 99 Frail",
+        "Apply 99 Weak",
+        "Apply 99 Vulnerable"
+      ]
+    },
+    {
+      "id": "BURN_BRIGHT_FOR_ME_MOVE",
+      "title": "Burn Bright for Me",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Apply 1 Strength to all teammates",
+        "Gain 20 Block"
+      ]
+    },
+    {
+      "id": "OFF_WITH_YOUR_HEAD_MOVE",
+      "title": "Off with Your Head",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 5
+        }
+      ],
+      "effects": [
+        "Deal 4 damage",
+        "5 hits"
+      ]
+    },
+    {
+      "id": "EXECUTION_MOVE",
+      "title": "Execution",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    },
+    {
+      "id": "ENRAGE_MOVE",
+      "title": "Enrage",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Puppet Strings, then You Are Mine. While the Amalgam is alive, repeats Burn Bright for Me. After the Amalgam dies, enters the attack cycle: Off with Your Head → Execution → Enrage (repeats).",
+  "powers_on_spawn": [],
+  "notes": "Queen fights alongside a TorchHeadAmalgam companion that must be defeated to trigger a phase transition. While the Amalgam lives, she repeats Burn Bright for Me, buffing her ally with Strength and gaining Block herself. You Are Mine is devastating, applying extreme amounts of Frail/Weak/Vulnerable (99 each) to neutralize the player. After the Amalgam dies, she enters an aggressive attack cycle where Enrage grants her Strength each turn, making the fight progressively harder."
+}

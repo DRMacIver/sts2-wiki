@@ -1,0 +1,21 @@
+{
+  "class_name": "Flanking",
+  "title": "Flanking",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [],
+  "description": "The enemy takes double attack damage from other players this turn.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "FlankingPower",
+      "title": "Flanking",
+      "slug": "flanking"
+    }
+  ],
+  "notes": "Multiplayer only."
+}

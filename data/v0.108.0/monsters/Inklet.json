@@ -1,0 +1,46 @@
+{
+  "class_name": "Inklet",
+  "title": "Inklet",
+  "min_hp": 12,
+  "max_hp": 18,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "JAB_MOVE",
+      "title": "Jab",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": ["Deal 4 damage"]
+    },
+    {
+      "id": "WHIRLWIND_MOVE",
+      "title": "Whirlwind",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 3 damage", "3 hits"]
+    },
+    {
+      "id": "PIERCING_GAZE_MOVE",
+      "title": "Piercing Gaze",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": ["Deal 11 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Jab (or Whirlwind if MiddleInklet variant). After Jab, randomly chooses between Piercing Gaze or Whirlwind with equal probability. Both Piercing Gaze and Whirlwind return to Jab.",
+  "powers_on_spawn": ["Slippery"],
+  "notes": "Piercing Gaze is a hidden move and is not displayed in the bestiary. The MiddleInklet property determines whether the monster starts with Whirlwind instead of Jab."
+}

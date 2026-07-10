@@ -1,0 +1,9 @@
+{
+  "class_name": "FlutterPower",
+  "title": "Flutter",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Receives [gold]50%[/gold] less damage from Attacks.",
+  "smart_description": "Receives [blue]50%[/blue] less damage from Attacks. Deal attack damage [blue]{Amount}[/blue] {Amount:plural:time|times} to [gold]Stun[/gold] it.",
+  "notes": "A Thieving Hopper power. Reduces damage from powered attacks by 50%. Counts down with each attack received; when the counter reaches 0, the creature is Stunned and stops hovering."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "FurCoat",
+  "title": "Fur Coat",
+  "rarity": "Ancient",
+  "description": "Upon pickup, mark 7 random combats. Enemies in those rooms have 1 HP.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic marks 7 random combat or elite rooms on the act where it is obtained. When entering a marked combat, all enemies in that room have their HP set to 1. If enemies are added to combat after combat starts in a marked room, their HP is also set to 1. Marked rooms remain active only for the current act."
+}

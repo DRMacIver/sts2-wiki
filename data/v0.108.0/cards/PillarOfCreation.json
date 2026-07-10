@@ -1,0 +1,25 @@
+{
+  "class_name": "PillarOfCreation",
+  "title": "Pillar of Creation",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Whenever you create a card, gain 3 Block.",
+  "referenced_powers": [
+    {
+      "class_name": "PillarOfCreationPower",
+      "title": "Pillar of Creation",
+      "slug": "pillar-of-creation"
+    }
+  ]
+}

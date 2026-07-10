@@ -1,0 +1,20 @@
+{
+  "class_name": "Slither",
+  "title": "Slither",
+  "description": "When you draw this card, randomize its cost from [blue]0[/blue] to [blue]3[/blue].",
+  "card_type": "Any",
+  "restrictions": [
+    "Cannot be applied to Unplayable cards",
+    "Cannot be applied to X-cost cards"
+  ],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "WoodCarvings",
+      "title": "Wood Carvings",
+      "amount": 1
+    }
+  ]
+}

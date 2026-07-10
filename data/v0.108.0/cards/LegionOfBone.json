@@ -1,0 +1,18 @@
+{
+  "class_name": "LegionOfBone",
+  "title": "Legion of Bone",
+  "character": "Necrobinder",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "All",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Summon",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "ALL players [gold]Summon[/gold] 6."
+}

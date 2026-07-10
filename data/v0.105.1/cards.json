@@ -4855,6 +4855,24 @@
     "description_html": "Lose 1 HP.<br>Give another player <span class=\"desc-gold\">Block</span> equal to your <span class=\"desc-gold\">Block</span>."
   },
   {
+    "class_name": "DeprecatedCard",
+    "energy_cost": 0,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "keywords": [
+      "Exhaust"
+    ],
+    "character": "Deprecated",
+    "loc_key": "DEPRECATED_CARD",
+    "title": "Deprecated Card",
+    "description_template": "[blue]This card was removed in a recent update.[/blue]\nDraw 1 card.\nRemove this from your [gold]Deck[/gold].",
+    "vars": [],
+    "description_plain": "This card was removed in a recent update.\nDraw 1 card.\nRemove this from your Deck.",
+    "description_html": "<span class=\"desc-blue\">This card was removed in a recent update.</span><br>Draw 1 card.<br>Remove this from your <span class=\"desc-gold\">Deck</span>.",
+    "deprecated": true
+  },
+  {
     "class_name": "Devastate",
     "energy_cost": 1,
     "type": "Attack",
@@ -9876,6 +9894,83 @@
     "description_template": "At the start of your turn, draw {Cards:diff()} additional {Cards:plural:card|cards}.",
     "description_plain": "At the start of your turn, draw 1 additional card.",
     "description_html": "At the start of your turn, draw 1 additional card."
+  },
+  {
+    "class_name": "MadScience",
+    "energy_cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "keywords": [
+      "Innate"
+    ],
+    "vars": [
+      {
+        "type": "Damage",
+        "base_value": 12
+      },
+      {
+        "type": "Block",
+        "base_value": 8
+      },
+      {
+        "type": "ViolenceHits",
+        "base_value": 3
+      },
+      {
+        "type": "CuriousReduction",
+        "base_value": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "action": "add_keyword",
+        "keyword": "Innate"
+      }
+    ],
+    "referenced_powers": [
+      {
+        "class_name": "STRENGTH_POWER",
+        "title": "Strength",
+        "slug": "strength"
+      },
+      {
+        "class_name": "DEXTERITY_POWER",
+        "title": "Dexterity",
+        "slug": "dexterity"
+      },
+      {
+        "class_name": "CURIOUS_POWER",
+        "title": "Curious",
+        "slug": "curious"
+      },
+      {
+        "class_name": "IMPROVEMENT_POWER",
+        "title": "Improvement",
+        "slug": "improvement"
+      },
+      {
+        "class_name": "WEAK_POWER",
+        "title": "Weak",
+        "slug": "weak"
+      },
+      {
+        "class_name": "VULNERABLE_POWER",
+        "title": "Vulnerable",
+        "slug": "vulnerable"
+      },
+      {
+        "class_name": "STRANGLE_POWER",
+        "title": "Strangle",
+        "slug": "strangle"
+      }
+    ],
+    "character": "Event",
+    "loc_key": "MAD_SCIENCE",
+    "title": "Mad Science",
+    "description_template": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].||???}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It's free to play this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???|???}}",
+    "description_plain": "XX",
+    "description_html": "XX"
   },
   {
     "class_name": "MakeItSo",

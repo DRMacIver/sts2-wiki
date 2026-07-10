@@ -1,0 +1,29 @@
+{
+  "class_name": "SovereignBlade",
+  "title": "Sovereign Blade",
+  "character": "Token",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "Single",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10
+    },
+    {
+      "type": "Repeat",
+      "base_value": 1
+    },
+    {
+      "type": "Block",
+      "base_value": 0
+    }
+  ],
+  "description": "Deal 10 damage.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Gains [gold]Block[/gold] equal to current Parry amount. Targets all enemies if affected by Seeking Edge."
+}

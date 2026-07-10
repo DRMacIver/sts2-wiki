@@ -1,0 +1,26 @@
+{
+  "class_name": "Royalties",
+  "title": "Royalties",
+  "character": "Merchant",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Gold",
+      "base_value": 30,
+      "upgraded_value": 40
+    }
+  ],
+  "description": "At the end of combat, gain 30 [gold]Gold[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "RoyaltiesPower",
+      "title": "Royalties",
+      "slug": "royalties-power"
+    }
+  ]
+}

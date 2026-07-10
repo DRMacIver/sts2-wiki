@@ -1,0 +1,8 @@
+{
+  "class_name": "PoisonPotion",
+  "title": "Poison Potion",
+  "rarity": "Common",
+  "usage": "Apply",
+  "target": "AnyEnemy",
+  "description": "Apply [blue]6[/blue] [gold]Poison[/gold]."
+}

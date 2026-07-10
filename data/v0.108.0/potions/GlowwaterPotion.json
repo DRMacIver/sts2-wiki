@@ -1,0 +1,8 @@
+{
+  "class_name": "GlowwaterPotion",
+  "title": "Glowwater Potion",
+  "rarity": "Event",
+  "usage": "CombatOnly",
+  "target": "Self",
+  "description": "[gold]Exhaust[/gold] your [gold]Hand[/gold]. Draw [blue]10[/blue] cards."
+}

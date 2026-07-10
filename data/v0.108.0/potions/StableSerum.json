@@ -1,0 +1,9 @@
+{
+  "class_name": "StableSerum",
+  "title": "Stable Serum",
+  "rarity": "Uncommon",
+  "usage": "Drink",
+  "target": "AnyPlayer",
+  "description": "[gold]Retain[/gold] your [gold]Hand[/gold] for [blue]2[/blue] turns.",
+  "notes": "Can only be used during combat. Grants Retain Hand power for 2 turns."
+}

@@ -1,0 +1,24 @@
+{
+  "class_name": "Trial",
+  "title": "The Trial",
+  "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n\"Entrant [blue][a number from 101 to 999][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].\"",
+  "options": [
+    {
+      "title": "Accept",
+      "description": "Serve as today's Decider."
+    },
+    {
+      "title": "Reject",
+      "description": "[red]You are not allowed to Reject.[/red]"
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This is a multi-stage branching event with three possible paths:\n\n[gold]**Stage 1: Initial Decision**[/gold]\nAccept the role of Decider or attempt to Reject (the Reject option has ironic flavor text suggesting you cannot refuse, but you can choose it).\n\n[gold]**Stage 2: Random Trial Scenario (if you Accept)**[/gold]\nYou randomly encounter one of three trial cases, each with equal probability:\n\n[blue]**Merchant Trial (33%):**[/blue] A [green]wealthy merchant[/green] accused of [red]murder[/red] by a rival. Evidence is thin; you sense innocence, but the crowd demands blood.\n- [green]DECIDE: Guilty[/green] → Add [red]Regret[/red] curse to Deck, obtain 2 random Relics\n- [green]DECIDE: Innocent[/green] → Add [red]Shame[/red] curse to Deck, upgrade 2 cards\n\n[blue]**Noble Trial (33%):**[/blue] A [gold]powerful noble[/gold] faces [purple]corruption charges[/purple]. A note in your pocket offers a bribe for ruling innocence.\n- [green]DECIDE: Guilty[/green] → Heal 10 HP (the noble is beheaded)\n- [green]DECIDE: Innocent[/green] → Add [red]Regret[/red] curse to Deck, obtain 300 Gold\n\n[blue]**Nondescript Trial (33%):**[/blue] A [orange]woman with a hard-to-read face[/orange] accused of [red]theft[/red] and [purple]con-artistry[/purple]. She speaks convincingly, but witnesses attest to her guilt. Both sides are compelling.\n- [green]DECIDE: Guilty[/green] → Add [red]Doubt[/red] curse to Deck, gain 2 card rewards\n- [green]DECIDE: Innocent[/green] → Add [red]Doubt[/red] curse to Deck, transform 2 cards\n\n[gold]**Stage 3: Rejection Path (if you Reject at Stage 1)**[/gold]\nThe [gold]Grand Arbiter[/gold] declares you cannot refuse and threatens death. You can either Accept and serve as Decider, or Double Down on your refusal and face lethal repercussions (which immediately kills you).\n\n[gold]**Outcome:**[/gold] Regardless of your ruling in any trial, the crowd's reaction to your decision is described. After all options are resolved, the event concludes with your decision being formally recorded by the court.",
+  "card_refs": [
+    {"class_name": "Regret", "title": "Regret", "slug": "regret"},
+    {"class_name": "Shame", "title": "Shame", "slug": "shame"},
+    {"class_name": "Doubt", "title": "Doubt", "slug": "doubt"}
+  ],
+  "relic_refs": []
+}

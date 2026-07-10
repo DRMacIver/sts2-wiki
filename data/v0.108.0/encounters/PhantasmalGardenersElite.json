@@ -1,0 +1,10 @@
+{
+  "class_name": "PhantasmalGardenersElite",
+  "title": "Phantasmal Gardeners",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["PhantasmalGardener"],
+  "total_monsters": 4,
+  "tags": [],
+  "notes": ""
+}

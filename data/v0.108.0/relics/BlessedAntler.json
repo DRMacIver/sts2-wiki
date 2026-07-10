@@ -1,0 +1,8 @@
+{
+  "class_name": "BlessedAntler",
+  "title": "Blessed Antler",
+  "rarity": "Ancient",
+  "description": "Gain 1 energy at the start of each turn. At the start of each combat, shuffle [blue]3[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Increases maximum energy by 1. On the first turn of each combat, adds 3 Dazed cards to your draw pile with a visual flash effect."
+}

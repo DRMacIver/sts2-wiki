@@ -1,0 +1,13 @@
+{
+  "class_name": "ByrdonisEgg",
+  "title": "Byrdonis Egg",
+  "character": "Quest",
+  "energy_cost": -1,
+  "type": "Quest",
+  "rarity": "Quest",
+  "target": "None",
+  "keywords": ["Unplayable"],
+  "vars": [],
+  "description": "Can be hatched at a [gold]Rest Site[/gold].",
+  "notes": "Special quest item that adds a hatch option to Rest Site interactions."
+}

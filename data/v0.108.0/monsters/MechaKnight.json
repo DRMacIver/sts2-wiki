@@ -1,0 +1,58 @@
+{
+  "class_name": "MechaKnight",
+  "title": "Mecha Knight",
+  "min_hp": 320,
+  "max_hp": 320,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHARGE_MOVE",
+      "title": "Charge",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 30
+        }
+      ],
+      "effects": ["Deal 30 damage"]
+    },
+    {
+      "id": "FLAMETHROWER_MOVE",
+      "title": "Flamethrower",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": ["Add 4 Burn to hand"]
+    },
+    {
+      "id": "WINDUP_MOVE",
+      "title": "Windup",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 15
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Gain 15 Block", "Apply 5 Strength"]
+    },
+    {
+      "id": "HEAVY_CLEAVE_MOVE",
+      "title": "Heavy Cleave",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 40
+        }
+      ],
+      "effects": ["Deal 40 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Charge, then cycles: Flamethrower → Windup → Heavy Cleave → Flamethrower → ...",
+  "powers_on_spawn": ["Artifact (3)"],
+  "notes": "After Windup is used, the monster enters a 'wound up' state which affects its animations until Heavy Cleave is used, at which point the wound-up state resets."
+}

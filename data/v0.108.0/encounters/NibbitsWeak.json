@@ -1,0 +1,10 @@
+{
+  "class_name": "NibbitsWeak",
+  "title": "A Lone Nibbit",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["Nibbit"],
+  "total_monsters": 1,
+  "tags": ["Nibbit"],
+  "notes": "A single Nibbit encounter with the IsAlone property enabled."
+}

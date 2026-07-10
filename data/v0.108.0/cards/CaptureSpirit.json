@@ -1,0 +1,30 @@
+{
+  "class_name": "CaptureSpirit",
+  "title": "Capture Spirit",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Enemy loses 3 HP.\nAdd 3 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "Soul",
+      "title": "Soul",
+      "slug": "soul"
+    }
+  ]
+}

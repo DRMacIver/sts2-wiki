@@ -1,0 +1,8 @@
+{
+  "class_name": "WeakPotion",
+  "title": "Weak Potion",
+  "rarity": "Common",
+  "usage": "Throw",
+  "target": "AnyEnemy",
+  "description": "Apply [blue]3[/blue] [gold]Weak[/gold]."
+}

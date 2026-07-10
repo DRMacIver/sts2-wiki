@@ -1,0 +1,8 @@
+{
+  "class_name": "Claws",
+  "title": "Claws",
+  "rarity": "Ancient",
+  "description": "Upon pickup, [gold]Transform[/gold] up to [blue]6[/blue] cards into [gold]Maul[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "When obtained, you select up to 6 cards from your deck to transform into Maul. Transformed cards preserve their upgrade status if Maul is upgradable. If the original cards had enchantments, those enchantments are also applied to the transformed Maul cards (if compatible)."
+}

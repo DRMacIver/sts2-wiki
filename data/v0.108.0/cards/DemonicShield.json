@@ -1,0 +1,23 @@
+{
+  "class_name": "DemonicShield",
+  "title": "Demonic Shield",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyAlly",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "HpLoss",
+      "base_value": 1
+    },
+    {
+      "type": "Block",
+      "base_value": 0,
+      "notes": "Calculated as owner's current Block value at play time"
+    }
+  ],
+  "description": "Lose 1 HP. Give another player Block equal to your Block. (In combat: Gives your current Block.)",
+  "notes": "Multiplayer-only card. Targets another player's creature. Block given is dynamically calculated based on the card owner's Block stat at the time of play."
+}

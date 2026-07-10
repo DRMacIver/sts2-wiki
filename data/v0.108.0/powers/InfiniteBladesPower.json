@@ -1,0 +1,8 @@
+{
+  "class_name": "InfiniteBladesPower",
+  "title": "Infinite Blades",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add a [gold]Shiv[/gold] into your [gold]Hand[/gold].",
+  "smart_description": "At the start of your turn, add {Amount:plural:a [gold]Shiv[/gold]|[blue]{}[/blue] [gold]Shivs[/gold]} into your [gold]Hand[/gold]."
+}

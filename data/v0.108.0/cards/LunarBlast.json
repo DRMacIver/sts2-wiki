@@ -1,0 +1,19 @@
+{
+  "class_name": "LunarBlast",
+  "title": "Lunar Blast",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 4 damage for each Skill already played this turn.",
+  "notes": "In combat, displays the calculated number of hits based on Skills played this turn: (Hits N time/times). The card uses CalculatedHits multiplier to count Skills matching: happenedThisTurn && CardType == Skill && Owner == self."
+}

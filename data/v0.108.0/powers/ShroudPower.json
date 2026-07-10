@@ -1,0 +1,8 @@
+{
+  "class_name": "ShroudPower",
+  "title": "Shroud",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you apply [gold]Doom[/gold], gain [blue]3[/blue] [gold]Block[/gold].",
+  "smart_description": "Whenever you apply [gold]Doom[/gold], gain [blue]3[/blue] [gold]Block[/gold]."
+}

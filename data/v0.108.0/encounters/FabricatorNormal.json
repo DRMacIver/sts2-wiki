@@ -1,0 +1,10 @@
+{
+  "class_name": "FabricatorNormal",
+  "title": "Fabricator",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": ["Fabricator"],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Fabricator is the primary enemy. Additional bots (from defenseSpawns and aggroSpawns) are spawned dynamically during combat rather than at encounter start. The encounter has a custom scene with adjusted camera scaling (0.85x) and offset."
+}

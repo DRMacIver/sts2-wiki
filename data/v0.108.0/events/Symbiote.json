@@ -1,0 +1,21 @@
+{
+  "class_name": "Symbiote",
+  "title": "Symbiote",
+  "description": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n[sine]Approach...[/sine]",
+  "options": [
+    {
+      "title": "Approach",
+      "description": "[gold]Enchant[/gold] an Attack with [purple]Corrupted[/purple].",
+      "requires": "None of your Attacks can be Enchanted."
+    },
+    {
+      "title": "Kill with Fire",
+      "description": "Choose a card to [gold]Transform[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Act 2+ only"],
+  "notes": "The Approach option enchants a single Attack card from your deck with Corrupted, which increases its damage by [blue]50%[/blue] but costs [blue]2[/blue] HP each time it's played. If you have no Attack cards that can be enchanted, this option is locked.\n\nThe Kill with Fire option transforms one card in your deck into a random card.\n\nAfter either choice, the polyp either latches onto you and disappears mysteriously, or burns away to ashes.",
+  "card_refs": [],
+  "relic_refs": []
+}

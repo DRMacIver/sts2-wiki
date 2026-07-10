@@ -1,0 +1,20 @@
+{
+  "class_name": "Skewer",
+  "title": "Skewer",
+  "character": "Colorless",
+  "energy_cost": -1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Deal 8 damage X times.",
+  "upgraded_description": "Deal 11 damage X times.",
+  "x_cost": true
+}

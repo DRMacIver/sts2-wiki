@@ -1,0 +1,20 @@
+{
+  "class_name": "Uproar",
+  "title": "Uproar",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 8
+    }
+  ],
+  "description": "Deal 6 damage twice.\nPlay a random Attack from your [gold]Draw Pile[/gold].",
+  "referenced_powers": [],
+  "notes": "Plays a random Attack from the Draw Pile, preferring one without the Unplayable keyword. If no valid Attack is found, plays any Attack from the Draw Pile."
+}

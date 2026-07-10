@@ -1,0 +1,13 @@
+{
+  "class_name": "Rainbow",
+  "title": "Rainbow",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Channel[/gold] 1 [gold]Lightning[/gold].\n[gold]Channel[/gold] 1 [gold]Frost[/gold].\n[gold]Channel[/gold] 1 [gold]Dark[/gold].",
+  "notes": "Upgrade removes Exhaust keyword."
+}

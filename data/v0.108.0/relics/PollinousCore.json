@@ -1,0 +1,8 @@
+{
+  "class_name": "PollinousCore",
+  "title": "Pollinous Core",
+  "rarity": "Event",
+  "description": "Every [blue]4[/blue] turns, draw [blue]2[/blue] additional cards.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Every 4 turns, this relic grants +2 card draw for that turn. The turn counter resets after the bonus is applied. The relic displays an 'Active' status indicator one turn before it triggers."
+}

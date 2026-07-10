@@ -1,0 +1,33 @@
+{
+  "class_name": "SneakyGremlin",
+  "title": "Sneaky Gremlin",
+  "min_hp": 11,
+  "max_hp": 15,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SPAWNED_MOVE",
+      "title": "Wake Up",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": ["Stun"]
+    },
+    {
+      "id": "TACKLE_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 10
+        }
+      ],
+      "effects": ["Deal 10 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Wake Up (stunned), then repeatedly uses Tackle",
+  "powers_on_spawn": [],
+  "notes": "Sneaky Gremlin begins combat in a stunned state. On its first turn, it uses Wake Up to recover from stun and prepare for combat. After waking, it repeatedly cycles through Tackle attacks."
+}

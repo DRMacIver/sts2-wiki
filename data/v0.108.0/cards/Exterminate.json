@@ -1,0 +1,24 @@
+{
+  "class_name": "Exterminate",
+  "title": "Exterminate",
+  "character": "Event",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    },
+    {
+      "type": "Repeat",
+      "base_value": 4
+    }
+  ],
+  "description": "Deal 3 damage to ALL enemies 4 times.",
+  "upgraded_description": "Deal 4 damage to ALL enemies 4 times.",
+  "referenced_powers": []
+}

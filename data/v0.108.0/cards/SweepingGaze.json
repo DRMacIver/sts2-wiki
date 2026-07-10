@@ -1,0 +1,18 @@
+{
+  "class_name": "SweepingGaze",
+  "title": "Sweeping Gaze",
+  "character": "Token",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "RandomEnemy",
+  "keywords": ["Ethereal", "Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 10 damage to a random enemy."
+}

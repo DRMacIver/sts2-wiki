@@ -1,0 +1,33 @@
+{
+  "class_name": "HighFive",
+  "title": "High Five",
+  "character": "Token",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 13
+    },
+    {
+      "type": "VulnerablePower",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "[gold]Osty[/gold] deals 11 damage\nand applies 2 [gold]Vulnerable[/gold]\nto ALL enemies.",
+  "upgraded_description": "[gold]Osty[/gold] deals 13 damage\nand applies 3 [gold]Vulnerable[/gold]\nto ALL enemies.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "VulnerablePower",
+      "title": "Vulnerable",
+      "slug": "vulnerable"
+    }
+  ],
+  "notes": "Card is only playable when Osty is present. Glows red when Osty is missing as a visual indicator."
+}

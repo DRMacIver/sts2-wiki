@@ -1,0 +1,81 @@
+{
+  "class_name": "DecimillipedeSegment",
+  "title": "Decimillipede",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "DEAD_MOVE",
+      "title": "Dead",
+      "intents": [],
+      "effects": []
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Reattach to combat"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through three attacks in order: Writhe → Constrict → Bulk. When killed, enters Dead state, then performs Reattach to heal and return to combat, followed by random selection from the three main attacks.",
+  "powers_on_spawn": [
+    "Reattach"
+  ],
+  "notes": "Part of the Decimillipede multi-segment encounter. When multiple segments enter combat, each adjusts its max HP to a unique even value to prevent duplicates. Has a Reattach power (25 stacks) that manages respawning. All segments coordinate their attack animations together. Not shown in the compendium and won't fade after death."
+}

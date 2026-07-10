@@ -1,0 +1,18 @@
+{
+  "class_name": "Toxic",
+  "title": "Toxic",
+  "character": "Status",
+  "energy_cost": 1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5
+    }
+  ],
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], take 5 damage.",
+  "notes": "Status card with no upgrades (MaxUpgradeLevel = 0)."
+}

@@ -1,0 +1,14 @@
+{
+  "class_name": "Voltaic",
+  "title": "Voltaic",
+  "character": "Defect",
+  "energy_cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.",
+  "referenced_powers": [],
+  "notes": "Channels a variable number of Lightning orbs equal to the number of Lightning orbs already channeled this combat."
+}

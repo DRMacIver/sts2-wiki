@@ -1,0 +1,8 @@
+{
+  "class_name": "BloodPotion",
+  "title": "Blood Potion",
+  "rarity": "Common",
+  "usage": "Drink",
+  "target": "Single",
+  "description": "Heal for [green]20%[/green] of your Max HP."
+}

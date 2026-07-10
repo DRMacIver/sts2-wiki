@@ -1,0 +1,8 @@
+{
+  "class_name": "TrackingPower",
+  "title": "Tracking",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Weak[/gold] enemies take [blue]50%[/blue] more damage from Attacks.",
+  "smart_description": "[gold]Weak[/gold] enemies take [blue]{Amount}%[/blue] more damage from Attacks."
+}

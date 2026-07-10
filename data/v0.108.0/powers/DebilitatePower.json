@@ -1,0 +1,9 @@
+{
+  "class_name": "DebilitatePower",
+  "title": "Debilitate",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as effective for the next [blue]2[/blue] turns.",
+  "smart_description": "[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as effective {Amount:plural:this turn|for the next [blue]{}[/blue] turns}.",
+  "notes": "Counter power that decrements each turn. The smart_description dynamically shows the remaining duration: 'this turn' when 1 turn remains, 'for the next X turns' otherwise. This power doubles the effectiveness of Vulnerable and Weak by inverting their reduction formula."
+}

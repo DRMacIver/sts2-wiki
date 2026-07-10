@@ -1,0 +1,21 @@
+{
+  "class_name": "ThrummingHatchet",
+  "title": "Thrumming Hatchet",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 11,
+      "upgraded_value": 14
+    }
+  ],
+  "description": "Deal 11 damage.\nAt the start of your next turn, return this to your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 14 damage.\nAt the start of your next turn, return this to your [gold]Hand[/gold].",
+  "referenced_powers": [],
+  "notes": "Returns to hand at the start of your next turn if played."
+}

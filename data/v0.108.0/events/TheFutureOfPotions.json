@@ -1,0 +1,24 @@
+{
+  "class_name": "TheFutureOfPotions",
+  "title": "The Future of Potions?",
+  "description": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?",
+  "options": [
+    {
+      "title": "Insert [your potion's rarity] Potion",
+      "description": "Lose [gold][your potion][/gold]. Obtain an [gold]Upgraded[/gold] [gold][matching-rarity] [random-type][/gold]."
+    }
+  ],
+  "acts": [
+    "DeprecatedAct",
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "All players must have at least 2 potions"
+  ],
+  "notes": "This event generates dynamic options: up to 3 choices are offered, one for each of the player's first 3 potions. Each option allows converting a potion into an Upgraded card.\n\n[gold]Potion-to-Card Rarity Mapping:[/gold]\n- Rare/Event potion → [gold]Rare[/gold] card\n- Uncommon potion → [gold]Uncommon[/gold] card\n- Common/Token potion → [gold]Common[/gold] card\n\n[gold]Card Type Selection:[/gold] For each potion, a random card type is chosen from Attack, Skill, or Power. Common and Token potions are restricted to Attack or Skill (no Power cards). Rare and Event potions can get any type.\n\n[gold]Reward:[/gold] After selecting a potion to convert, the player receives a 3-card reward choice from cards matching the target rarity and type. All cards in the reward are automatically Upgraded.\n\n[gold]Event Lock:[/gold] While this event is active, the player cannot use or remove potions.",
+  "card_refs": [],
+  "relic_refs": []
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "NoEnergyGainPower",
+  "title": "No Energy Gain",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "You cannot gain additional {energyPrefix:energyIcons(1)} this turn.",
+  "smart_description": "You cannot gain additional {energyPrefix:energyIcons(1)} this turn."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "PotionOfDoom",
+  "title": "Potion of Doom",
+  "rarity": "Common",
+  "usage": "Unknown",
+  "target": "AnyEnemy",
+  "description": "Apply [blue]33[/blue] [gold]Doom[/gold].",
+  "notes": "Can only be used during combat. Applies Doom power to a single enemy."
+}

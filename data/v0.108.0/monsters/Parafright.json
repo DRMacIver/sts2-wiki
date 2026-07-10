@@ -1,0 +1,27 @@
+{
+  "class_name": "Parafright",
+  "title": "Parafright",
+  "min_hp": 21,
+  "max_hp": 21,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLAM_MOVE",
+      "title": "Slam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats Slam indefinitely",
+  "powers_on_spawn": [
+    "Illusion"
+  ],
+  "notes": "Spawns with Illusion power, which manages its holographic revive mechanics. Has no death sound effect."
+}

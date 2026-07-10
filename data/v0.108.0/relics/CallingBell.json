@@ -1,0 +1,8 @@
+{
+  "class_name": "CallingBell",
+  "title": "Calling Bell",
+  "rarity": "Ancient",
+  "description": "Upon pickup, obtain a unique [red]Curse[/red] and [blue]3[/blue] [gold]Relics[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Adds CurseOfTheBell to your deck and offers 3 random relics (one Common, one Uncommon, one Rare) as a reward upon pickup."
+}

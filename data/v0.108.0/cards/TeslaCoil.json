@@ -1,0 +1,20 @@
+{
+  "class_name": "TeslaCoil",
+  "title": "Tesla Coil",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Deal 3 damage.\nTrigger all Lightning against the enemy.",
+  "upgraded_description": "Deal 4 damage.\nTrigger all Lightning against the enemy twice.",
+  "x_cost": false
+}

@@ -1,0 +1,81 @@
+{
+  "class_name": "CeremonialBeast",
+  "title": "Ceremonial Beast",
+  "min_hp": 262,
+  "max_hp": 262,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STAMP_MOVE",
+      "title": "Stamp",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 160 Plow"]
+    },
+    {
+      "id": "PLOW_MOVE",
+      "title": "Plow",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 20 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "STUN_MOVE",
+      "title": "Stun",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "BEAST_CRY_MOVE",
+      "title": "Beast Cry",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 1 Ringing"]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": ["Deal 17 damage"]
+    },
+    {
+      "id": "CRUSH_MOVE",
+      "title": "Crush",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 19 damage", "Apply 4 Strength"]
+    }
+  ],
+  "move_pattern": "Phase 1: Stamp → repeats Plow. Phase 2 (after player stun trigger): Stun → cycles Beast Cry → Stomp → Crush",
+  "powers_on_spawn": [],
+  "notes": "Two-phase monster with distinct move patterns. Phase 1 begins with a single Stamp action that applies Plow power, then repeatedly uses Plow (which increases the monster's Strength each time). When the player removes the Plow power through card effects, the monster is stunned and enters Phase 2, where it cycles through Beast Cry (applies Ringing), Stomp, and Crush attacks, with Crush applying additional Strength."
+}
