@@ -113,8 +113,9 @@ def main() -> None:
 
     count = 0
     for power in powers:
-        # Fix CamelCase titles that lack localization
-        title = power["title"]
+        # Fix CamelCase titles that lack localization (a per-entity file may
+        # have title: null — fall back to the class name)
+        title = power.get("title") or power["class_name"].removesuffix("Power")
         if title == title.replace(" ", "") and any(c.isupper() for c in title[1:]):
             # CamelCase → "Camel Case"
             title = re.sub(r"([a-z])([A-Z])", r"\1 \2", title)

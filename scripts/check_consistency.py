@@ -84,12 +84,17 @@ def load_json(path: Path) -> object:
         return json.load(f)
 
 
-def iter_entity_files(version_dir: Path, kind: str):
+def iter_entity_files(version_dir: Path, kind: str, errors: list[str] | None = None):
     entity_dir = version_dir / kind
     if not entity_dir.is_dir():
         return
     for path in sorted(entity_dir.glob("*.json")):
-        data = load_json(path)
+        try:
+            data = load_json(path)
+        except json.JSONDecodeError as e:
+            if errors is not None:
+                errors.append(f"{kind}/{path.name}: invalid JSON ({e})")
+            continue
         if isinstance(data, dict):
             yield path, data
 
@@ -139,7 +144,7 @@ def main() -> None:
     entity_class_names: dict[str, set[str]] = {}
     for kind in KINDS:
         seen: set[str] = set()
-        for path, entity in iter_entity_files(version_dir, kind):
+        for path, entity in iter_entity_files(version_dir, kind, errors):
             cname = entity.get("class_name")
             if cname != path.stem:
                 errors.append(f"{kind}/{path.name}: class_name {cname!r} != filename")

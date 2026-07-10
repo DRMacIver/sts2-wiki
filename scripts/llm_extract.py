@@ -459,9 +459,14 @@ The source file is at: {source_path}
 
     print(f"  Transcript: {log_path.relative_to(PROJECT_ROOT)}")
 
-    # Update cache — but only when the agent actually produced the entity file.
+    # Update cache — but only when the agent actually produced a valid entity file.
     if not entity_file.exists():
         print(f"  Error: [{class_name}] agent finished without writing {entity_file}, not caching")
+        return
+    try:
+        json.loads(entity_file.read_text())
+    except json.JSONDecodeError as e:
+        print(f"  Error: [{class_name}] agent wrote invalid JSON ({e}), not caching")
         return
     cache[entity_cache_key] = {
         "cache_key": cache_key,

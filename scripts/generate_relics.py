@@ -128,6 +128,10 @@ def main() -> None:
 
     count = 0
     for relic in relics:
+        # Skip deprecated stubs (mirrors generate_cards)
+        if "Deprecated" in relic["class_name"]:
+            continue
+
         slug = slugify(relic["title"])
 
         from scripts.common import rich_text_to_html, strip_rich_text
